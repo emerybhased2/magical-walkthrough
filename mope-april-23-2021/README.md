@@ -112,6 +112,44 @@ logs/fetch.log, errors.log, validation.log
 
 `archive/`, `working/` and `logs/` are git-ignored. Downloaded game files stay local.
 
+## Rebuilding a readable client.js (`rebuild_client_js.py`)
+
+No archive this project uses holds the 2021 `client.js`. `rebuild_client_js.py`
+starts from a real archived copy instead and produces a readable version that is
+checked to behave the same as the original:
+
+```bash
+python rebuild_client_js.py --list                 # archived client.js captures (non-Wayback)
+python rebuild_client_js.py                        # newest: 2025-12-10 (hex-obfuscated build)
+python rebuild_client_js.py --closest-to-target    # nearest 2021-04-23: the 2018-04-21 build
+python rebuild_client_js.py --all-captures         # 2017, 2018, 2025-09, 2025-12
+python rebuild_client_js.py --input path/to/client.js
+```
+
+Steps:
+
+1. Fetch the original bytes from the archive and check the capture timestamp. The
+   original is kept read-only under `archive/client-js/<timestamp>_<provider>/`.
+2. De-obfuscate with edits guided by the JavaScript syntax tree (tree-sitter):
+   decode `\x..`/`\u....` string escapes, turn `obj['name']` into `obj.name`, unquote
+   `{'name': …}` keys, turn hex numbers into decimal, and replace `![]`/`!![]` with
+   `false`/`true`.
+3. Beautify with jsbeautifier.
+4. Verify that the rebuilt syntax tree equals the original's, allowing only those
+   rewrites, and run `node --check` when node is installed. The script writes nothing
+   if verification fails.
+
+Output: `working/client-js/<timestamp>_<provider>/client.js` (with a header that
+records the source, sha256 and date gap) plus `rebuild_report.json`. The report
+includes the client's own `$config` block when present: in the 2025 build that is
+`gameVersion`, `useDevAccountServer`/`devAccountServerUrl`, the sign-in provider IDs
+and the `gameServers` list. `--beautify-only`, `--utf8`, `--indent N` and `--no-verify`
+adjust the output.
+
+These builds are **not** the April 23, 2021 client. The 2018 build is 3.0 years
+before the target and the 2025 builds are 4.4–4.6 years after it. Treat them as
+references for structure and protocol, not as the historical baseline.
+
 ## Tests
 
 ```bash
@@ -120,4 +158,6 @@ python -m unittest discover -s tests -v
 
 The tests run offline. They cover the date policy, path containment, the Common Crawl
 `cluster.idx` binary search, WARC parsing, revisit resolution, redirect and Memento
-refusal, reference extraction and region/endpoint detection.
+refusal, reference extraction and region/endpoint detection. For the client rebuild
+they cover string escape decoding, every rewrite and its edge cases, and the
+tree-equivalence check.
