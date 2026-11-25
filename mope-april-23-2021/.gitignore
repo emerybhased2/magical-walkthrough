@@ -6,3 +6,6 @@ logs/
 .venv/
 __pycache__/
 *.pyc
+
+# Additional fetched snapshots (data stays local)
+snapshots/

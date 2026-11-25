@@ -161,3 +161,24 @@ The tests run offline. They cover the date policy, path containment, the Common 
 refusal, reference extraction and region/endpoint detection. For the client rebuild
 they cover string escape decoding, every rewrite and its edge cases, and the
 tree-equivalence check.
+
+## Phase 2 — client reverse engineering (2025-12-10 baseline)
+
+Phase 2 uses the complete same-day **2025-12-10** Arquivo.pt snapshot (`snapshots/2025-12-10/`,
+git-ignored). No 2021 `client.js` exists outside the Wayback Machine. The April 2021 archive
+stays unchanged as the historical record. Findings for tasks 8–13 are in
+[`phase2/README.md`](phase2/README.md), with a generated opcode reference in
+[`phase2/OPCODES.md`](phase2/OPCODES.md).
+
+| Script | Task | What it does |
+|---|---|---|
+| `extract_client_protocol.py` | 9–13 | Reads the syntax tree of the rebuilt client and inventories opcodes, message layouts and field names, the dispatcher, HTTP/WebSocket endpoints, `$config` and regions. Writes JSON plus `OPCODES.md`. |
+| `phase2_probe_client.py` | 8 | Serves the snapshot as `http://local.mope.io/` in headless Chromium with no production traffic. Records requests, console output and errors, and every WebSocket frame the client sends. |
+| `shims/turnstile_local.js` | 8 | Local stand-in for Cloudflare Turnstile. The 2025 page only starts `client.js` from Turnstile's `onload` callback. Local testing only. |
+
+```bash
+python fetch_mope_archive.py --date 2025-12-10 --output snapshots/2025-12-10 --provider arquivo --all
+python rebuild_client_js.py --output snapshots/2025-12-10 --timestamp 20251210042757 --provider arquivo
+python extract_client_protocol.py --project snapshots/2025-12-10
+python phase2_probe_client.py --project snapshots/2025-12-10 --click-play
+```

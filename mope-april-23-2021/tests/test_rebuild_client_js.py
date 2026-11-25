@@ -52,6 +52,18 @@ class RebuildTests(unittest.TestCase):
             self.assertIn(expected, text)
         self.assertEqual(stats["boolean_idioms"], 3)
 
+    def test_computed_member_names(self):
+        src = (b"class A extends B{static['type']=1;['send'](){}['constructor'](){}get['x'](){return 1}"
+               b"static['prototype'](){}};o={['k']:1,['__proto__']:2,['a-b']:3};")
+        out, stats = rb.deobfuscate(src, rb.make_parser())
+        text = out.decode()
+        for expected in ("static type=1", "send(){}", "['constructor'](){}", "get x()",
+                         "static['prototype']", "{k:1,['__proto__']:2,['a-b']:3}"):
+            self.assertIn(expected, text)
+        self.assertEqual(stats["computed_member_names"], 4)
+        _, details = rb.rebuild_source(src)
+        self.assertTrue(details["verification"]["rebuilt_vs_original"]["equivalent"])
+
     def test_rebuild_is_verified(self):
         pretty, details = rb.rebuild_source(self.SOURCE)
         self.assertTrue(details["verification"]["rebuilt_vs_original"]["equivalent"])

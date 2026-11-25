@@ -1,0 +1,1336 @@
+{
+  "generated_at": "2026-11-25T23:19:37Z",
+  "probe_version": "1.2.0",
+  "project": "/home/user/magical-walkthrough/mope-april-23-2021/snapshots/2025-12-10",
+  "served_from": "/home/user/magical-walkthrough/mope-april-23-2021/snapshots/2025-12-10/working/client/mope.io",
+  "url": "http://local.mope.io/",
+  "observed_seconds": 20.0,
+  "shims": true,
+  "page_state": {
+    "href": "http://local.mope.io/",
+    "title": "mope.io",
+    "client_js_ran": true,
+    "game_version": 296,
+    "server_groups": [
+      {
+        "label": "New York, USA (Ping ?ms)",
+        "options": [
+          "New York 1 [... players ]"
+        ]
+      },
+      {
+        "label": "Dallas, USA (Ping ?ms)",
+        "options": [
+          "Dallas 1 [... players ]"
+        ]
+      },
+      {
+        "label": "Los Angeles, USA (Ping ?ms)",
+        "options": [
+          "Los Angeles 1 [... players ]"
+        ]
+      },
+      {
+        "label": "Sao Paulo, Brazil (Ping ?ms)",
+        "options": [
+          "Sao Paulo 1 [... players ]"
+        ]
+      },
+      {
+        "label": "Frankfurt, Germany (Ping ?ms)",
+        "options": [
+          "Frankfurt 1 [... players ]"
+        ]
+      },
+      {
+        "label": "Paris, France (Ping ?ms)",
+        "options": [
+          "Paris 1 [... players ]"
+        ]
+      },
+      {
+        "label": "Stockholm, Sweden (Ping ?ms)",
+        "options": [
+          "Stockholm 1 [... players ]"
+        ]
+      },
+      {
+        "label": "Singapore, Singapore (Ping ?ms)",
+        "options": [
+          "Singapore 1 [... players ]"
+        ]
+      },
+      {
+        "label": "Sydney, Australia (Ping ?ms)",
+        "options": [
+          "Sydney 1 [... players ]"
+        ]
+      }
+    ],
+    "connecting_overlay": "flex/visible",
+    "start_menu": "flex/visible",
+    "play_button": "inline-block/visible",
+    "canvas": true,
+    "connecting_text": "(New York 1)",
+    "clicked_play": true,
+    "after_play": {
+      "href": "http://local.mope.io/",
+      "title": "mope.io",
+      "client_js_ran": true,
+      "game_version": 296,
+      "server_groups": [
+        {
+          "label": "New York, USA (Ping ?ms)",
+          "options": [
+            "New York 1 [... players ]"
+          ]
+        },
+        {
+          "label": "Dallas, USA (Ping ?ms)",
+          "options": [
+            "Dallas 1 [... players ]"
+          ]
+        },
+        {
+          "label": "Los Angeles, USA (Ping ?ms)",
+          "options": [
+            "Los Angeles 1 [... players ]"
+          ]
+        },
+        {
+          "label": "Sao Paulo, Brazil (Ping ?ms)",
+          "options": [
+            "Sao Paulo 1 [... players ]"
+          ]
+        },
+        {
+          "label": "Frankfurt, Germany (Ping ?ms)",
+          "options": [
+            "Frankfurt 1 [... players ]"
+          ]
+        },
+        {
+          "label": "Paris, France (Ping ?ms)",
+          "options": [
+            "Paris 1 [... players ]"
+          ]
+        },
+        {
+          "label": "Stockholm, Sweden (Ping ?ms)",
+          "options": [
+            "Stockholm 1 [... players ]"
+          ]
+        },
+        {
+          "label": "Singapore, Singapore (Ping ?ms)",
+          "options": [
+            "Singapore 1 [... players ]"
+          ]
+        },
+        {
+          "label": "Sydney, Australia (Ping ?ms)",
+          "options": [
+            "Sydney 1 [... players ]"
+          ]
+        }
+      ],
+      "connecting_overlay": "flex/visible",
+      "start_menu": "flex/visible",
+      "play_button": "inline-block/visible",
+      "canvas": true,
+      "connecting_text": "(New York 1)"
+    }
+  },
+  "summary": {
+    "requests": 40,
+    "requests_by_type": {
+      "document": 2,
+      "stylesheet": 1,
+      "script": 16,
+      "image": 11,
+      "fetch": 4,
+      "xhr": 4,
+      "media": 2
+    },
+    "local_missing": 3,
+    "blocked_external": 18,
+    "served_external_from_snapshot": 1,
+    "shimmed": 1,
+    "websockets": 10,
+    "frames_from_client": 38,
+    "console_errors_and_warnings": 22,
+    "page_errors": 4
+  },
+  "navigations": [
+    {
+      "t": 0.49,
+      "url": "http://local.mope.io/"
+    }
+  ],
+  "local_missing": [
+    "/audio/click.mp3",
+    "/none",
+    "/updates.json"
+  ],
+  "blocked_external_hosts": {
+    "prod-accounts.mathstudyguides.com": 4,
+    "apis.google.com": 3,
+    "api.adinplay.com": 3,
+    "s.nitropay.com": 1,
+    "static.cloudflareinsights.com": 1,
+    "www.googletagmanager.com": 1,
+    "b.scorecardresearch.com": 1,
+    "www.youtube.com": 1,
+    "connect.facebook.net": 1,
+    "accounts.google.com": 1,
+    "appleid.cdn-apple.com": 1
+  },
+  "blocked_external": [
+    {
+      "t": 0.5,
+      "url": "https://s.nitropay.com/ads-2206.js",
+      "type": "script",
+      "method": "GET",
+      "post_data": null
+    },
+    {
+      "t": 0.5,
+      "url": "https://apis.google.com/js/api:client.js",
+      "type": "script",
+      "method": "GET",
+      "post_data": null
+    },
+    {
+      "t": 0.54,
+      "url": "https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015",
+      "type": "script",
+      "method": "GET",
+      "post_data": null
+    },
+    {
+      "t": 0.54,
+      "url": "https://www.googletagmanager.com/gtag/js?id=UA-36494583-11",
+      "type": "script",
+      "method": "GET",
+      "post_data": null
+    },
+    {
+      "t": 0.55,
+      "url": "http://b.scorecardresearch.com/beacon.js",
+      "type": "script",
+      "method": "GET",
+      "post_data": null
+    },
+    {
+      "t": 0.59,
+      "url": "https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.pt_PT.zAEm3Mc612E.O/m=ytsubscribe/rt=j/sv=1/d=1/ed=1/rs=AHpOoo_usfALTodiJTmaKoz57As804ws7A/cb=gapi.loaded_0?le=scs,fedcm_migration_mod",
+      "type": "script",
+      "method": "GET",
+      "post_data": null
+    },
+    {
+      "t": 0.59,
+      "url": "https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.pt_PT.zAEm3Mc612E.O/m=auth/exm=ytsubscribe/rt=j/sv=1/d=1/ed=1/rs=AHpOoo_usfALTodiJTmaKoz57As804ws7A/cb=gapi.loaded_1?le=scs,fedcm_migration_mod",
+      "type": "script",
+      "method": "GET",
+      "post_data": null
+    },
+    {
+      "t": 0.59,
+      "url": "https://www.youtube.com/subscribe_embed?usegapi=1&channelid=UCwafGcuGGypkqpV7eZdmlSw&layout=default&theme=dark&count=default&origin=http%3A%2F%2Flocal.mope.io&gsrc=3p&ic=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.pt_PT.zAEm3Mc612E.O%2Fd%3D1%2Frs%3DAHpOoo_usfALTodiJTmaKoz57As804ws7A%2Fm%3D__features__",
+      "type": "document",
+      "method": "GET",
+      "post_data": null
+    },
+    {
+      "t": 0.81,
+      "url": "https://api.adinplay.com/libs/aiptag/pub/LBS/mope.io/tag.min.js",
+      "type": "fetch",
+      "method": "GET",
+      "post_data": null
+    },
+    {
+      "t": 0.81,
+      "url": "https://api.adinplay.com/libs/aiptag/pub/LBS/mope.io/tag.min.js",
+      "type": "fetch",
+      "method": "GET",
+      "post_data": null
+    },
+    {
+      "t": 0.81,
+      "url": "https://prod-accounts.mathstudyguides.com/servers/get",
+      "type": "xhr",
+      "method": "GET",
+      "post_data": null
+    },
+    {
+      "t": 0.82,
+      "url": "https://connect.facebook.net/en_US/sdk.js",
+      "type": "script",
+      "method": "GET",
+      "post_data": null
+    },
+    {
+      "t": 0.82,
+      "url": "https://accounts.google.com/gsi/client?hl=en&_=1795648751775",
+      "type": "script",
+      "method": "GET",
+      "post_data": null
+    },
+    {
+      "t": 0.82,
+      "url": "https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js?_=1795648751776",
+      "type": "script",
+      "method": "GET",
+      "post_data": null
+    },
+    {
+      "t": 0.82,
+      "url": "https://prod-accounts.mathstudyguides.com/xsolla/getPackets",
+      "type": "xhr",
+      "method": "GET",
+      "post_data": null
+    },
+    {
+      "t": 0.82,
+      "url": "https://prod-accounts.mathstudyguides.com/xsolla/getVip",
+      "type": "xhr",
+      "method": "GET",
+      "post_data": null
+    },
+    {
+      "t": 0.82,
+      "url": "https://prod-accounts.mathstudyguides.com/shop/get",
+      "type": "xhr",
+      "method": "GET",
+      "post_data": null
+    },
+    {
+      "t": 20.77,
+      "url": "https://api.adinplay.com/libs/aiptag/pub/LBS/mope.io/tag.min.js",
+      "type": "fetch",
+      "method": "GET",
+      "post_data": null
+    }
+  ],
+  "served_external": [
+    "https://apis.google.com/js/platform.js"
+  ],
+  "shimmed": [
+    "https://challenges.cloudflare.com/turnstile/v0/api.js?onload=run"
+  ],
+  "websockets": [
+    {
+      "url": "ws://prod-lnd-us-ny-1.mathstudyguides.com/ping",
+      "opened_ms": 335,
+      "ping_replies_sent": 4,
+      "frames_from_client": [
+        {
+          "ms": 372,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 399,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 424,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 449,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        }
+      ]
+    },
+    {
+      "url": "ws://prod-lnd-us-da-1.mathstudyguides.com/ping",
+      "opened_ms": 335,
+      "ping_replies_sent": 4,
+      "frames_from_client": [
+        {
+          "ms": 373,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 399,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 424,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 449,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        }
+      ]
+    },
+    {
+      "url": "ws://prod-lnd-us-la-1.mathstudyguides.com/ping",
+      "opened_ms": 335,
+      "ping_replies_sent": 4,
+      "frames_from_client": [
+        {
+          "ms": 373,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 399,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 424,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 449,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        }
+      ]
+    },
+    {
+      "url": "ws://prod-lnd-br-sp-1.mathstudyguides.com/ping",
+      "opened_ms": 335,
+      "ping_replies_sent": 4,
+      "frames_from_client": [
+        {
+          "ms": 373,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 399,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 424,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 449,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        }
+      ]
+    },
+    {
+      "url": "ws://prod-ovh-de-ff-1.mathstudyguides.com/ping",
+      "opened_ms": 335,
+      "ping_replies_sent": 4,
+      "frames_from_client": [
+        {
+          "ms": 373,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 399,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 424,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 449,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        }
+      ]
+    },
+    {
+      "url": "ws://prod-ovh-fr-pr-1.mathstudyguides.com/ping",
+      "opened_ms": 335,
+      "ping_replies_sent": 4,
+      "frames_from_client": [
+        {
+          "ms": 373,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 399,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 424,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 450,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        }
+      ]
+    },
+    {
+      "url": "ws://prod-lnd-sw-sh-1.mathstudyguides.com/ping",
+      "opened_ms": 335,
+      "ping_replies_sent": 4,
+      "frames_from_client": [
+        {
+          "ms": 373,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 399,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 424,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 450,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        }
+      ]
+    },
+    {
+      "url": "ws://prod-lnd-sg-sg-1.mathstudyguides.com/ping",
+      "opened_ms": 335,
+      "ping_replies_sent": 4,
+      "frames_from_client": [
+        {
+          "ms": 373,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 399,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 424,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 450,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        }
+      ]
+    },
+    {
+      "url": "ws://prod-lnd-au-sd-1.mathstudyguides.com/ping",
+      "opened_ms": 335,
+      "ping_replies_sent": 4,
+      "frames_from_client": [
+        {
+          "ms": 373,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 399,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 424,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        },
+        {
+          "ms": 450,
+          "bytes": 1,
+          "opcode": 255,
+          "hex": "ff",
+          "decoded": {
+            "message": "ping (type 255)"
+          }
+        }
+      ]
+    },
+    {
+      "url": "ws://prod-lnd-us-ny-1.mathstudyguides.com",
+      "opened_ms": 476,
+      "ping_replies_sent": 0,
+      "frames_from_client": [
+        {
+          "ms": 496,
+          "bytes": 11,
+          "opcode": 1,
+          "hex": "01 05 00 03 20 05 00 00 00 00 00",
+          "decoded": {
+            "message": "join (type 1)",
+            "uint16_fields": [
+              1280,
+              800,
+              1280
+            ],
+            "session_id": ""
+          }
+        },
+        {
+          "ms": 20310,
+          "bytes": 14,
+          "opcode": 113,
+          "hex": "71 05 00 03 20 00 07 6d 6f 70 65 2e 69 6f"
+        }
+      ]
+    }
+  ],
+  "console": [
+    {
+      "t": 0.51,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    },
+    {
+      "t": 0.51,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    },
+    {
+      "t": 0.52,
+      "type": "log",
+      "text": "Using a mobile device? null"
+    },
+    {
+      "t": 0.58,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    },
+    {
+      "t": 0.59,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    },
+    {
+      "t": 0.59,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    },
+    {
+      "t": 0.6,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    },
+    {
+      "t": 0.6,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": "\n\n\n"
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": "--------------------------------------------"
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": ""
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": "#    #  ####  #####  ######     #  ####"
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": "##  ## #    # #    # #          # #    #"
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": "# ## # #    # #    # #####      # #    #"
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": "#    # #    # #####  #      ### # #    #"
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": "#    # #    # #      #      ### # #    #"
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": "#    #  ####  #      ###### ### #  ####"
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": "___ Mope.io™ Copyright (2017-present) Mopeio Ltd. ___"
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": "--------------------------------------------"
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": "Is Testing mode:  false"
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": "Is beta mode:  false"
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": "-----------Game Version 296 ----------------"
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": "Account server domain became: https://prod-accounts.mathstudyguides.com"
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": "@@@@@@@@@@@@@@@ AnimFrame created for bird @@@@@@@@@@@@@@@@@@@@@@@"
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": "@@@@@@@@@@@@@@@ AnimFrame created for eagle @@@@@@@@@@@@@@@@@@@@@@@"
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": "@@@@@@@@@@@@@@@ AnimFrame created for volcano @@@@@@@@@@@@@@@@@@@@@@@"
+    },
+    {
+      "t": 0.8,
+      "type": "log",
+      "text": "---------------- started baking lake"
+    },
+    {
+      "t": 0.81,
+      "type": "log",
+      "text": "---------------- finished baking lake time taken: 1.7000ms"
+    },
+    {
+      "t": 0.81,
+      "type": "log",
+      "text": "@@@@@@@@@@@@@@@ AnimFrame created for lavalake @@@@@@@@@@@@@@@@@@@@@@@"
+    },
+    {
+      "t": 0.81,
+      "type": "log",
+      "text": "@@@@@@@@@@@@@@@ AnimFrame created for fennecfox @@@@@@@@@@@@@@@@@@@@@@@"
+    },
+    {
+      "t": 0.81,
+      "type": "log",
+      "text": "@@@@@@@@@@@@@@@ AnimFrame created for fireball @@@@@@@@@@@@@@@@@@@@@@@"
+    },
+    {
+      "t": 0.81,
+      "type": "log",
+      "text": "---------------- started baking objects"
+    },
+    {
+      "t": 0.81,
+      "type": "log",
+      "text": "---------------- finished baking objects time taken: 0.1000ms"
+    },
+    {
+      "t": 0.81,
+      "type": "log",
+      "text": "---------------- started baking objects_slow"
+    },
+    {
+      "t": 0.81,
+      "type": "log",
+      "text": "---------------- finished baking objects_slow time taken: 0.2000ms"
+    },
+    {
+      "t": 0.81,
+      "type": "log",
+      "text": "---------------- started baking honeybee"
+    },
+    {
+      "t": 0.81,
+      "type": "log",
+      "text": "---------------- finished baking honeybee time taken: 0.1000ms"
+    },
+    {
+      "t": 0.81,
+      "type": "log",
+      "text": "@@@@@@@@@@@@@@@ AnimFrame created for kd @@@@@@@@@@@@@@@@@@@@@@@"
+    },
+    {
+      "t": 0.81,
+      "type": "log",
+      "text": "ad block enabled: false"
+    },
+    {
+      "t": 0.81,
+      "type": "log",
+      "text": "Chrome version 158"
+    },
+    {
+      "t": 0.81,
+      "type": "log",
+      "text": "videoAd: 0 games since last ad!"
+    },
+    {
+      "t": 0.81,
+      "type": "log",
+      "text": "ACCOUNT SERVER START"
+    },
+    {
+      "t": 0.81,
+      "type": "log",
+      "text": "Checking what login_userId was: undefined"
+    },
+    {
+      "t": 0.82,
+      "type": "log",
+      "text": "@@@@ Mopeio Shop: v 1.0 b @@@@"
+    },
+    {
+      "t": 0.82,
+      "type": "log",
+      "text": "Loading shop items for logged in user! null"
+    },
+    {
+      "t": 0.82,
+      "type": "log",
+      "text": "@@@@@@@ Sending URL request :https://prod-accounts.mathstudyguides.com/shop/get"
+    },
+    {
+      "t": 0.83,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    },
+    {
+      "t": 0.83,
+      "type": "log",
+      "text": "AdBlock Enabled: true"
+    },
+    {
+      "t": 0.83,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    },
+    {
+      "t": 0.83,
+      "type": "log",
+      "text": "Error getting master server stats: "
+    },
+    {
+      "t": 0.83,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    },
+    {
+      "t": 0.84,
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "t": 0.84,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    },
+    {
+      "t": 0.84,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    },
+    {
+      "t": 0.84,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    },
+    {
+      "t": 0.84,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    },
+    {
+      "t": 0.84,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    },
+    {
+      "t": 0.84,
+      "type": "log",
+      "text": "Shop loading-URL error: "
+    },
+    {
+      "t": 0.84,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    },
+    {
+      "t": 0.85,
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "t": 0.85,
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "t": 0.95,
+      "type": "log",
+      "text": "@@@@  Fastest region is New York, USA with ping 25.5ms "
+    },
+    {
+      "t": 0.95,
+      "type": "log",
+      "text": "Joining best server..."
+    },
+    {
+      "t": 0.95,
+      "type": "log",
+      "text": "---not closing ws: no existing gameserver connection, ."
+    },
+    {
+      "t": 0.95,
+      "type": "log",
+      "text": "opening ws, not reconnecting sessionfalse"
+    },
+    {
+      "t": 0.95,
+      "type": "log",
+      "text": "Connecting to ws://prod-lnd-us-ny-1.mathstudyguides.com"
+    },
+    {
+      "t": 2.95,
+      "type": "log",
+      "text": "@@@@@@@@@@@@@@@@@ baking finished for bird"
+    },
+    {
+      "t": 2.96,
+      "type": "log",
+      "text": "@@@@@@@@@@@@@@@@@ baking finished for fennecfox"
+    },
+    {
+      "t": 3.31,
+      "type": "warning",
+      "text": "SHOWING ADS"
+    },
+    {
+      "t": 4.63,
+      "type": "log",
+      "text": "@@@@@@@@@@@@@@@@@ baking finished for eagle"
+    },
+    {
+      "t": 5.06,
+      "type": "log",
+      "text": "@@@@@@@@@@@@@@@@@ baking finished for fireball"
+    },
+    {
+      "t": 17.73,
+      "type": "log",
+      "text": "@@@@@@@@@@@@@@@@@ baking finished for lavalake"
+    },
+    {
+      "t": 20.78,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    },
+    {
+      "t": 20.79,
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "t": 21.96,
+      "type": "log",
+      "text": "@@@@@@@@@@@@@@@@@ baking finished for kd"
+    }
+  ],
+  "page_errors": [
+    {
+      "t": 0.84,
+      "error": "\"undefined\" is not valid JSON"
+    },
+    {
+      "t": 0.84,
+      "error": "\"undefined\" is not valid JSON"
+    },
+    {
+      "t": 0.85,
+      "error": "Unexpected token 'o', \"not in snapshot\" is not valid JSON"
+    },
+    {
+      "t": 20.79,
+      "error": "Failed to load because no supported source was found."
+    }
+  ],
+  "requests": [
+    {
+      "t": 0.48,
+      "url": "http://local.mope.io/",
+      "type": "document"
+    },
+    {
+      "t": 0.5,
+      "url": "http://local.mope.io/main_nerged.css",
+      "type": "stylesheet"
+    },
+    {
+      "t": 0.5,
+      "url": "https://s.nitropay.com/ads-2206.js",
+      "type": "script"
+    },
+    {
+      "t": 0.5,
+      "url": "http://local.mope.io/jquery_3_3_1.js",
+      "type": "script"
+    },
+    {
+      "t": 0.5,
+      "url": "https://apis.google.com/js/api:client.js",
+      "type": "script"
+    },
+    {
+      "t": 0.5,
+      "url": "http://local.mope.io/adblockdet/ads.js",
+      "type": "script"
+    },
+    {
+      "t": 0.5,
+      "url": "http://local.mope.io/shop/close.png",
+      "type": "image"
+    },
+    {
+      "t": 0.5,
+      "url": "https://apis.google.com/js/platform.js",
+      "type": "script"
+    },
+    {
+      "t": 0.51,
+      "url": "http://local.mope.io/img/logo.png",
+      "type": "image"
+    },
+    {
+      "t": 0.51,
+      "url": "http://local.mope.io/assets/s/1/skins/land/mouse/0/mouse.png",
+      "type": "image"
+    },
+    {
+      "t": 0.52,
+      "url": "http://local.mope.io/shop/mopecoin.png",
+      "type": "image"
+    },
+    {
+      "t": 0.52,
+      "url": "http://local.mope.io/shop/gem.png",
+      "type": "image"
+    },
+    {
+      "t": 0.54,
+      "url": "http://local.mope.io/dfp.js",
+      "type": "script"
+    },
+    {
+      "t": 0.54,
+      "url": "https://challenges.cloudflare.com/turnstile/v0/api.js?onload=run",
+      "type": "script"
+    },
+    {
+      "t": 0.54,
+      "url": "https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015",
+      "type": "script"
+    },
+    {
+      "t": 0.54,
+      "url": "https://www.googletagmanager.com/gtag/js?id=UA-36494583-11",
+      "type": "script"
+    },
+    {
+      "t": 0.54,
+      "url": "http://local.mope.io/img/settings.png",
+      "type": "image"
+    },
+    {
+      "t": 0.54,
+      "url": "http://local.mope.io/img/x.png",
+      "type": "image"
+    },
+    {
+      "t": 0.54,
+      "url": "http://local.mope.io/img/sound_on.png",
+      "type": "image"
+    },
+    {
+      "t": 0.54,
+      "url": "http://local.mope.io/img/appAd_ios.png",
+      "type": "image"
+    },
+    {
+      "t": 0.54,
+      "url": "http://local.mope.io/img/appAd_and.png",
+      "type": "image"
+    },
+    {
+      "t": 0.55,
+      "url": "http://b.scorecardresearch.com/beacon.js",
+      "type": "script"
+    },
+    {
+      "t": 0.59,
+      "url": "https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.pt_PT.zAEm3Mc612E.O/m=ytsubscribe/rt=j/sv=1/d=1/ed=1/rs=AHpOoo_usfALTodiJTmaKoz57As804ws7A/cb=gapi.loaded_0?le=scs,fedcm_migration_mod",
+      "type": "script"
+    },
+    {
+      "t": 0.59,
+      "url": "https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.pt_PT.zAEm3Mc612E.O/m=auth/exm=ytsubscribe/rt=j/sv=1/d=1/ed=1/rs=AHpOoo_usfALTodiJTmaKoz57As804ws7A/cb=gapi.loaded_1?le=scs,fedcm_migration_mod",
+      "type": "script"
+    },
+    {
+      "t": 0.59,
+      "url": "https://www.youtube.com/subscribe_embed?usegapi=1&channelid=UCwafGcuGGypkqpV7eZdmlSw&layout=default&theme=dark&count=default&origin=http%3A%2F%2Flocal.mope.io&gsrc=3p&ic=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.pt_PT.zAEm3Mc612E.O%2Fd%3D1%2Frs%3DAHpOoo_usfALTodiJTmaKoz57As804ws7A%2Fm%3D__features__",
+      "type": "document"
+    },
+    {
+      "t": 0.6,
+      "url": "http://local.mope.io/client.js?v=1795648751856",
+      "type": "script"
+    },
+    {
+      "t": 0.81,
+      "url": "https://api.adinplay.com/libs/aiptag/pub/LBS/mope.io/tag.min.js",
+      "type": "fetch"
+    },
+    {
+      "t": 0.81,
+      "url": "https://api.adinplay.com/libs/aiptag/pub/LBS/mope.io/tag.min.js",
+      "type": "fetch"
+    },
+    {
+      "t": 0.81,
+      "url": "https://prod-accounts.mathstudyguides.com/servers/get",
+      "type": "xhr"
+    },
+    {
+      "t": 0.81,
+      "url": "http://local.mope.io/updates.json?t=1795648752066",
+      "type": "fetch"
+    },
+    {
+      "t": 0.82,
+      "url": "https://connect.facebook.net/en_US/sdk.js",
+      "type": "script"
+    },
+    {
+      "t": 0.82,
+      "url": "https://accounts.google.com/gsi/client?hl=en&_=1795648751775",
+      "type": "script"
+    },
+    {
+      "t": 0.82,
+      "url": "https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js?_=1795648751776",
+      "type": "script"
+    },
+    {
+      "t": 0.82,
+      "url": "https://prod-accounts.mathstudyguides.com/xsolla/getPackets",
+      "type": "xhr"
+    },
+    {
+      "t": 0.82,
+      "url": "https://prod-accounts.mathstudyguides.com/xsolla/getVip",
+      "type": "xhr"
+    },
+    {
+      "t": 0.82,
+      "url": "https://prod-accounts.mathstudyguides.com/shop/get",
+      "type": "xhr"
+    },
+    {
+      "t": 0.84,
+      "url": "http://local.mope.io/audio/click.mp3",
+      "type": "media"
+    },
+    {
+      "t": 0.84,
+      "url": "http://local.mope.io/none",
+      "type": "image"
+    },
+    {
+      "t": 20.77,
+      "url": "https://api.adinplay.com/libs/aiptag/pub/LBS/mope.io/tag.min.js",
+      "type": "fetch"
+    },
+    {
+      "t": 20.78,
+      "url": "http://local.mope.io/audio/click.mp3",
+      "type": "media"
+    }
+  ]
+}

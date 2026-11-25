@@ -1,7 +1,9 @@
 requests>=2.28
 beautifulsoup4>=4.11
 tqdm>=4.64
-# rebuild_client_js.py
+# rebuild_client_js.py / extract_client_protocol.py
 jsbeautifier>=1.15
 tree-sitter>=0.23
 tree-sitter-javascript>=0.23
+# phase2_probe_client.py (uses a Chromium installed via Playwright)
+playwright>=1.48

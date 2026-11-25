@@ -1,0 +1,4310 @@
+{
+  "generated_at": "2026-11-25T23:22:00Z",
+  "extractor_version": "1.0.0",
+  "client": {
+    "path": "/home/user/magical-walkthrough/mope-april-23-2021/snapshots/2025-12-10/working/client-js/20251210042757_arquivo/client.js",
+    "sha256": "82f2028721c92d132c73a5a0b9ad364e06f74644b89576a494888cc4ee44eb63",
+    "bytes": 1638935,
+    "lines": 29322
+  },
+  "wire_format": {
+    "byte_order": "big-endian (DataView setUint16/getUint16 with littleEndian=false)",
+    "writer": [
+      "_0x2293a6"
+    ],
+    "reader": [
+      "_0x4dbf94"
+    ],
+    "notes": [
+      "Client->server strings: UInt16 byte length, then UTF-8 bytes (unescape(encodeURIComponent)).",
+      "Server->client strings: UInt16 length, then that many bytes; the client DROPS the last byte (the length includes a trailing terminator), then UTF-8-decodes the rest.",
+      "readBitGroup: bytes are read until one has bit 0 clear; bits 1-7 of each byte carry booleans / small ints (getBool, getIntWithXBits).",
+      "Every packet starts with a UInt8 message type (opcode)."
+    ]
+  },
+  "config": {
+    "gameVersion": 296,
+    "isTestingMode": false,
+    "env": "production",
+    "isBetaMode": false,
+    "isProduction": true,
+    "useDevAccountServer": false,
+    "devAccountServerUrl": "",
+    "turnstileKey": "0x4AAAAAAAxNgd99O5KdPkC7",
+    "authentication": {
+      "discord": "1282395552033669223",
+      "facebook": "482002344741952",
+      "google": "621635022753-n0ibkufm9ssukvk7c77rjv2ubn2abk80.apps.googleusercontent.com",
+      "apple": "io.mope.live.auth"
+    },
+    "gameServers": [
+      {
+        "id": "prod-lnd-us-ny-1",
+        "name": "New York 1",
+        "url": "prod-lnd-us-ny-1.mathstudyguides.com",
+        "region": "New York, USA",
+        "gm": 0
+      },
+      {
+        "id": "prod-lnd-us-da-1",
+        "name": "Dallas 1",
+        "url": "prod-lnd-us-da-1.mathstudyguides.com",
+        "region": "Dallas, USA",
+        "gm": 0
+      },
+      {
+        "id": "prod-lnd-us-la-1",
+        "name": "Los Angeles 1",
+        "url": "prod-lnd-us-la-1.mathstudyguides.com",
+        "region": "Los Angeles, USA",
+        "gm": 0
+      },
+      {
+        "id": "prod-lnd-br-sp-1",
+        "name": "Sao Paulo 1",
+        "url": "prod-lnd-br-sp-1.mathstudyguides.com",
+        "region": "Sao Paulo, Brazil",
+        "gm": 0
+      },
+      {
+        "id": "prod-ovh-de-ff-1",
+        "name": "Frankfurt 1",
+        "url": "prod-ovh-de-ff-1.mathstudyguides.com",
+        "region": "Frankfurt, Germany",
+        "gm": 0
+      },
+      {
+        "id": "prod-ovh-fr-pr-1",
+        "name": "Paris 1",
+        "url": "prod-ovh-fr-pr-1.mathstudyguides.com",
+        "region": "Paris, France",
+        "gm": 0
+      },
+      {
+        "id": "prod-lnd-sw-sh-1",
+        "name": "Stockholm 1",
+        "url": "prod-lnd-sw-sh-1.mathstudyguides.com",
+        "region": "Stockholm, Sweden",
+        "gm": 0
+      },
+      {
+        "id": "prod-lnd-sg-sg-1",
+        "name": "Singapore 1",
+        "url": "prod-lnd-sg-sg-1.mathstudyguides.com",
+        "region": "Singapore, Singapore",
+        "gm": 0
+      },
+      {
+        "id": "prod-lnd-au-sd-1",
+        "name": "Sydney 1",
+        "url": "prod-lnd-au-sd-1.mathstudyguides.com",
+        "region": "Sydney, Australia",
+        "gm": 0
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "prod-lnd-us-ny-1",
+      "name": "New York 1",
+      "url": "prod-lnd-us-ny-1.mathstudyguides.com",
+      "region": "New York, USA",
+      "gm": 0
+    },
+    {
+      "id": "prod-lnd-us-da-1",
+      "name": "Dallas 1",
+      "url": "prod-lnd-us-da-1.mathstudyguides.com",
+      "region": "Dallas, USA",
+      "gm": 0
+    },
+    {
+      "id": "prod-lnd-us-la-1",
+      "name": "Los Angeles 1",
+      "url": "prod-lnd-us-la-1.mathstudyguides.com",
+      "region": "Los Angeles, USA",
+      "gm": 0
+    },
+    {
+      "id": "prod-lnd-br-sp-1",
+      "name": "Sao Paulo 1",
+      "url": "prod-lnd-br-sp-1.mathstudyguides.com",
+      "region": "Sao Paulo, Brazil",
+      "gm": 0
+    },
+    {
+      "id": "prod-ovh-de-ff-1",
+      "name": "Frankfurt 1",
+      "url": "prod-ovh-de-ff-1.mathstudyguides.com",
+      "region": "Frankfurt, Germany",
+      "gm": 0
+    },
+    {
+      "id": "prod-ovh-fr-pr-1",
+      "name": "Paris 1",
+      "url": "prod-ovh-fr-pr-1.mathstudyguides.com",
+      "region": "Paris, France",
+      "gm": 0
+    },
+    {
+      "id": "prod-lnd-sw-sh-1",
+      "name": "Stockholm 1",
+      "url": "prod-lnd-sw-sh-1.mathstudyguides.com",
+      "region": "Stockholm, Sweden",
+      "gm": 0
+    },
+    {
+      "id": "prod-lnd-sg-sg-1",
+      "name": "Singapore 1",
+      "url": "prod-lnd-sg-sg-1.mathstudyguides.com",
+      "region": "Singapore, Singapore",
+      "gm": 0
+    },
+    {
+      "id": "prod-lnd-au-sd-1",
+      "name": "Sydney 1",
+      "url": "prod-lnd-au-sd-1.mathstudyguides.com",
+      "region": "Sydney, Australia",
+      "gm": 0
+    }
+  ],
+  "local_server_hooks": [
+    {
+      "line": 289,
+      "call": "_0x4b0a86('LOCAL', 'localhost', reg)",
+      "function": "_0x5be1b9",
+      "function_called_at_lines": []
+    }
+  ],
+  "config_uses": {
+    "authentication": [
+      {
+        "line": 6381,
+        "function": "_0x103396",
+        "context": "$config.authentication.google"
+      },
+      {
+        "line": 6457,
+        "function": "window.fbAsyncInit",
+        "context": "$config.authentication.facebook"
+      },
+      {
+        "line": 6535,
+        "function": "'run'",
+        "context": "$config.authentication.apple"
+      },
+      {
+        "line": 6603,
+        "function": "_0x205fa7",
+        "context": "$config.authentication.discord"
+      }
+    ],
+    "devAccountServerUrl": [
+      {
+        "line": 269,
+        "function": "'run'",
+        "context": "$config.useDevAccountServer ? $config.devAccountServerUrl : _0x5def44"
+      }
+    ],
+    "env": [
+      {
+        "line": 4536,
+        "function": "_0x332aab",
+        "context": "$config.env == 'development'"
+      },
+      {
+        "line": 4988,
+        "function": "_0x452b88",
+        "context": "_0xce5785.env != $config.env"
+      },
+      {
+        "line": 4988,
+        "function": "_0x452b88",
+        "context": "$config.env != 'development'"
+      },
+      {
+        "line": 6628,
+        "function": "'run'",
+        "context": "$config.env == 'development'"
+      },
+      {
+        "line": 6628,
+        "function": "'run'",
+        "context": "$config.env == 'staging'"
+      }
+    ],
+    "gameServers": [
+      {
+        "line": 3610,
+        "function": "_0x1729f1",
+        "context": "$config.gameServers.length"
+      },
+      {
+        "line": 3611,
+        "function": "_0x1729f1",
+        "context": "$config.gameServers[_0x415437]"
+      }
+    ],
+    "gameVersion": [
+      {
+        "line": 245,
+        "function": "'run'",
+        "context": "_0x453b84 = $config.gameVersion"
+      }
+    ],
+    "googleAuthClientId": [
+      {
+        "line": 6429,
+        "function": "_0x533517",
+        "context": "client_id: $config.googleAuthClientId"
+      }
+    ],
+    "isBetaMode": [
+      {
+        "line": 248,
+        "function": "'run'",
+        "context": "_0x517c11 = $config.isBetaMode"
+      }
+    ],
+    "isTestingMode": [
+      {
+        "line": 207,
+        "function": "'run'",
+        "context": "$config.isTestingMode && _0x123a7e"
+      },
+      {
+        "line": 246,
+        "function": "'run'",
+        "context": "_0x2a1150 = $config.isTestingMode"
+      }
+    ],
+    "turnstileKey": [
+      {
+        "line": 3572,
+        "function": "_0x237068",
+        "context": "($config.turnstileKey)"
+      }
+    ],
+    "useDevAccountServer": [
+      {
+        "line": 269,
+        "function": "'run'",
+        "context": "$config.useDevAccountServer ? $config.devAccountServerUrl : _0x5def44"
+      }
+    ]
+  },
+  "opcodes": [
+    {
+      "opcode": 1,
+      "client_to_server": [
+        {
+          "class": "_0x256e73",
+          "line": 2910
+        }
+      ],
+      "server_to_client": [],
+      "constant_names": []
+    },
+    {
+      "opcode": 2,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "class": "_0x461fd4",
+          "line": 2925,
+          "fields": [
+            "sessionId",
+            "gameVersion",
+            "gameMode",
+            "season",
+            "serverId",
+            "isAliveInGame"
+          ]
+        },
+        {
+          "dispatch_line": 3805,
+          "handler_classes": [
+            "_0x461fd4"
+          ]
+        }
+      ],
+      "constant_names": [
+        "_0xf2f8a2"
+      ]
+    },
+    {
+      "opcode": 3,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 3839,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x219d0a"
+      ]
+    },
+    {
+      "opcode": 4,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 4089,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x417f5b"
+      ]
+    },
+    {
+      "opcode": 5,
+      "client_to_server": [
+        {
+          "function": "_0x443ad0",
+          "line": 29035,
+          "layout": [
+            "Int16",
+            "Int16"
+          ]
+        }
+      ],
+      "server_to_client": [],
+      "constant_names": [
+        "5"
+      ]
+    },
+    {
+      "opcode": 6,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 3892,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0xf78585"
+      ]
+    },
+    {
+      "opcode": 8,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 3919,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x566382"
+      ]
+    },
+    {
+      "opcode": 10,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 3943,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x5827bb"
+      ]
+    },
+    {
+      "opcode": 11,
+      "client_to_server": [
+        {
+          "class": "_0x38d549",
+          "line": 3078
+        },
+        {
+          "function": "_0x296b08",
+          "line": 3688,
+          "layout": []
+        }
+      ],
+      "server_to_client": [
+        {
+          "dispatch_line": 4250,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x2b3974"
+      ]
+    },
+    {
+      "opcode": 14,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 4053,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x338ad9"
+      ]
+    },
+    {
+      "opcode": 16,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 4136,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x339265"
+      ]
+    },
+    {
+      "opcode": 17,
+      "client_to_server": [
+        {
+          "function": "_0x48481b",
+          "line": 28874,
+          "layout": [
+            "UInt16",
+            "UInt16",
+            "UInt16"
+          ]
+        }
+      ],
+      "server_to_client": [
+        {
+          "class": "_0x276a1c",
+          "line": 2951,
+          "fields": [
+            "gameWidth",
+            "gameHeight",
+            "camX",
+            "camY",
+            "camZoom"
+          ]
+        },
+        {
+          "dispatch_line": 3836,
+          "handler_classes": [
+            "_0x276a1c"
+          ]
+        }
+      ],
+      "constant_names": [
+        "17",
+        "_0x339758"
+      ]
+    },
+    {
+      "opcode": 18,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 3981,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x2a48c9"
+      ]
+    },
+    {
+      "opcode": 19,
+      "client_to_server": [
+        {
+          "function": "_0x417615",
+          "line": 28842,
+          "layout": [
+            "String"
+          ]
+        }
+      ],
+      "server_to_client": [
+        {
+          "dispatch_line": 4093,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "19",
+        "_0x35b552"
+      ]
+    },
+    {
+      "opcode": 20,
+      "client_to_server": [
+        {
+          "function": "_0x22cf2c",
+          "line": 28912,
+          "layout": [
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8"
+          ]
+        }
+      ],
+      "server_to_client": [],
+      "constant_names": [
+        "20"
+      ]
+    },
+    {
+      "opcode": 21,
+      "client_to_server": [
+        {
+          "function": "_0x2d3042",
+          "line": 28888,
+          "layout": [
+            "UInt8"
+          ]
+        }
+      ],
+      "server_to_client": [],
+      "constant_names": [
+        "21"
+      ]
+    },
+    {
+      "opcode": 23,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 4153,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x1310bd"
+      ]
+    },
+    {
+      "opcode": 24,
+      "client_to_server": [
+        {
+          "class": "_0x44b67f",
+          "line": 2983
+        }
+      ],
+      "server_to_client": [
+        {
+          "class": "_0x44b67f",
+          "line": 2983,
+          "fields": []
+        },
+        {
+          "dispatch_line": 3802,
+          "handler_classes": [
+            "_0x44b67f"
+          ]
+        }
+      ],
+      "constant_names": [
+        "_0x4801ed"
+      ]
+    },
+    {
+      "opcode": 25,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 4231,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x5524a8"
+      ]
+    },
+    {
+      "opcode": 26,
+      "client_to_server": [
+        {
+          "function": "_0x22cf2c",
+          "line": 28921,
+          "layout": [
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8"
+          ]
+        }
+      ],
+      "server_to_client": [],
+      "constant_names": [
+        "26"
+      ]
+    },
+    {
+      "opcode": 27,
+      "client_to_server": [
+        {
+          "function": "_0x22cf2c",
+          "line": 28928,
+          "layout": [
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8"
+          ]
+        }
+      ],
+      "server_to_client": [],
+      "constant_names": [
+        "27"
+      ]
+    },
+    {
+      "opcode": 28,
+      "client_to_server": [
+        {
+          "function": "_0x22cf2c",
+          "line": 28935,
+          "layout": [
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8"
+          ]
+        }
+      ],
+      "server_to_client": [],
+      "constant_names": [
+        "28"
+      ]
+    },
+    {
+      "opcode": 29,
+      "client_to_server": [
+        {
+          "function": "_0x22cf2c",
+          "line": 28949,
+          "layout": [
+            "UInt8"
+          ]
+        }
+      ],
+      "server_to_client": [],
+      "constant_names": [
+        "29"
+      ]
+    },
+    {
+      "opcode": 30,
+      "client_to_server": [
+        {
+          "function": "_0x22cf2c",
+          "line": 28942,
+          "layout": [
+            "UInt8",
+            "UInt8",
+            "UInt8"
+          ]
+        }
+      ],
+      "server_to_client": [],
+      "constant_names": [
+        "30"
+      ]
+    },
+    {
+      "opcode": 52,
+      "client_to_server": [
+        {
+          "function": "_0x321e64",
+          "line": 5538,
+          "layout": [
+            "UInt8"
+          ]
+        }
+      ],
+      "server_to_client": [],
+      "constant_names": [
+        "52"
+      ]
+    },
+    {
+      "opcode": 56,
+      "client_to_server": [
+        {
+          "function": "_0x298aa1.onClick",
+          "line": 4300,
+          "layout": []
+        },
+        {
+          "function": "_0x355e78",
+          "line": 28680,
+          "layout": []
+        }
+      ],
+      "server_to_client": [
+        {
+          "dispatch_line": 4288,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x2234df"
+      ]
+    },
+    {
+      "opcode": 58,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 4276,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x37a8af"
+      ]
+    },
+    {
+      "opcode": 59,
+      "client_to_server": [
+        {
+          "function": "_0x5edd56",
+          "line": 29168,
+          "layout": [
+            "UInt8"
+          ]
+        },
+        {
+          "function": "_0x5edd56",
+          "line": 29171,
+          "layout": []
+        }
+      ],
+      "server_to_client": [
+        {
+          "dispatch_line": 4282,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0xe8c130"
+      ]
+    },
+    {
+      "opcode": 60,
+      "client_to_server": [
+        {
+          "function": "_0x3960ef",
+          "line": 29073,
+          "layout": [
+            "UInt8",
+            "Int16"
+          ]
+        }
+      ],
+      "server_to_client": [],
+      "constant_names": [
+        "_0x89c88b"
+      ]
+    },
+    {
+      "opcode": 61,
+      "client_to_server": [
+        {
+          "function": "this.sendSelection",
+          "line": 5927,
+          "layout": [
+            "UInt8",
+            "UInt8"
+          ]
+        }
+      ],
+      "server_to_client": [],
+      "constant_names": [
+        "_0x28b2f1"
+      ]
+    },
+    {
+      "opcode": 62,
+      "client_to_server": [
+        {
+          "function": "_0x33a695",
+          "line": 24655,
+          "layout": [
+            "String"
+          ]
+        }
+      ],
+      "server_to_client": [
+        {
+          "dispatch_line": 3911,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "62",
+        "_0x504ee2"
+      ]
+    },
+    {
+      "opcode": 63,
+      "client_to_server": [
+        {
+          "function": "_0x2f0b41",
+          "line": 24677,
+          "layout": [
+            "String"
+          ]
+        }
+      ],
+      "server_to_client": [
+        {
+          "dispatch_line": 3956,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x5374f6"
+      ]
+    },
+    {
+      "opcode": 64,
+      "client_to_server": [
+        {
+          "function": "_0x237068",
+          "line": 3573,
+          "layout": [
+            "String"
+          ]
+        },
+        {
+          "function": "_0x32bf39",
+          "line": 24665,
+          "layout": [
+            "String"
+          ]
+        },
+        {
+          "function": "_0x32bf39",
+          "line": 24669,
+          "layout": [
+            "String"
+          ]
+        }
+      ],
+      "server_to_client": [
+        {
+          "dispatch_line": 3963,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x57b086"
+      ]
+    },
+    {
+      "opcode": 65,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 3908,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x12795c"
+      ]
+    },
+    {
+      "opcode": 66,
+      "client_to_server": [
+        {
+          "function": "_0x147067",
+          "line": 4958,
+          "layout": [
+            "UInt8",
+            "UInt8"
+          ]
+        }
+      ],
+      "server_to_client": [],
+      "constant_names": [
+        "_0x116d7f"
+      ]
+    },
+    {
+      "opcode": 67,
+      "client_to_server": [
+        {
+          "function": "_0xe43322",
+          "line": 4362,
+          "layout": [
+            "String"
+          ]
+        }
+      ],
+      "server_to_client": [
+        {
+          "dispatch_line": 3950,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x4b23c5"
+      ]
+    },
+    {
+      "opcode": 68,
+      "client_to_server": [
+        {
+          "function": "_0x1b64b7",
+          "line": 4970,
+          "layout": [
+            "UInt32"
+          ]
+        },
+        {
+          "function": "_0x22cf2c",
+          "line": 28900,
+          "layout": [
+            "UInt32",
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8",
+            "UInt8"
+          ]
+        }
+      ],
+      "server_to_client": [],
+      "constant_names": [
+        "_0x599750"
+      ]
+    },
+    {
+      "opcode": 69,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 3970,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x161e97"
+      ]
+    },
+    {
+      "opcode": 71,
+      "client_to_server": [
+        {
+          "function": "_0x978bb7.prototype.playerSettings_update",
+          "line": 16056,
+          "layout": [
+            "UInt8",
+            "String",
+            "String"
+          ]
+        }
+      ],
+      "server_to_client": [],
+      "constant_names": [
+        "71"
+      ]
+    },
+    {
+      "opcode": 72,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 3856,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0xaed614"
+      ]
+    },
+    {
+      "opcode": 81,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 3864,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x54b37a"
+      ]
+    },
+    {
+      "opcode": 100,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 4116,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0xb60e78"
+      ]
+    },
+    {
+      "opcode": 102,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 3860,
+          "handler_classes": []
+        },
+        {
+          "dispatch_line": 3902,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x5dd4d9"
+      ]
+    },
+    {
+      "opcode": 103,
+      "client_to_server": [
+        {
+          "function": "_0x3e7c4e",
+          "line": 3851,
+          "layout": [
+            "String"
+          ]
+        }
+      ],
+      "server_to_client": [
+        {
+          "dispatch_line": 3845,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x2a4caf"
+      ]
+    },
+    {
+      "opcode": 104,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 3868,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": []
+    },
+    {
+      "opcode": 105,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 3874,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": []
+    },
+    {
+      "opcode": 106,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 4142,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x4f3f8b"
+      ]
+    },
+    {
+      "opcode": 107,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 3889,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x66ebe"
+      ]
+    },
+    {
+      "opcode": 108,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 4044,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x1f565b"
+      ]
+    },
+    {
+      "opcode": 109,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 4050,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x381024"
+      ]
+    },
+    {
+      "opcode": 111,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 4149,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x2c8658"
+      ]
+    },
+    {
+      "opcode": 112,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "dispatch_line": 4084,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x27d105"
+      ]
+    },
+    {
+      "opcode": 113,
+      "client_to_server": [
+        {
+          "class": "_0x3fa1ab",
+          "line": 2971
+        }
+      ],
+      "server_to_client": [
+        {
+          "dispatch_line": 4244,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x399e1a"
+      ]
+    },
+    {
+      "opcode": 114,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "class": "_0x22f35c",
+          "line": 3088,
+          "fields": []
+        },
+        {
+          "dispatch_line": 4047,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "_0x17ca4c"
+      ]
+    },
+    {
+      "opcode": 115,
+      "client_to_server": [],
+      "server_to_client": [
+        {
+          "class": "_0xbb9642",
+          "line": 3155,
+          "fields": []
+        }
+      ],
+      "constant_names": []
+    },
+    {
+      "opcode": 255,
+      "client_to_server": [
+        {
+          "function": "this.sendPing",
+          "line": 3191,
+          "layout": []
+        },
+        {
+          "function": "_0x3e7c4e",
+          "line": 3946,
+          "layout": []
+        }
+      ],
+      "server_to_client": [
+        {
+          "dispatch_line": 3940,
+          "handler_classes": []
+        }
+      ],
+      "constant_names": [
+        "255",
+        "_0x132789"
+      ]
+    }
+  ],
+  "message_classes": [
+    {
+      "class": "_0x562d69",
+      "extends": null,
+      "type": 0,
+      "line": 2897,
+      "server_to_client": {
+        "line": 2901,
+        "reads": [],
+        "fields": []
+      }
+    },
+    {
+      "class": "_0x256071",
+      "extends": null,
+      "type": 0,
+      "line": 2903,
+      "client_to_server": {
+        "line": 2906,
+        "layout": [],
+        "parameters": "()"
+      },
+      "server_to_client": {
+        "line": 2908,
+        "reads": [],
+        "fields": []
+      }
+    },
+    {
+      "class": "_0x256e73",
+      "extends": "_0x2f14e9",
+      "type": 1,
+      "line": 2910,
+      "client_to_server": {
+        "line": 2915,
+        "layout": [
+          {
+            "op": "UInt16",
+            "value": "_0x1e1ca1",
+            "line": 2919,
+            "resolved": 0
+          },
+          {
+            "op": "UInt16",
+            "value": "_0x21816f",
+            "line": 2919,
+            "resolved": 0
+          },
+          {
+            "op": "UInt16",
+            "value": "_0x228698",
+            "line": 2919
+          },
+          {
+            "op": "String",
+            "value": "_0x3dcd69",
+            "line": 2920,
+            "flags": [
+              "conditional"
+            ]
+          },
+          {
+            "op": "String",
+            "value": "''",
+            "line": 2921,
+            "flags": [
+              "conditional"
+            ]
+          }
+        ],
+        "parameters": "(_0x490011, _0x3dcd69)"
+      }
+    },
+    {
+      "class": "_0x461fd4",
+      "extends": "_0x562d69",
+      "type": 2,
+      "line": 2925,
+      "server_to_client": {
+        "line": 2928,
+        "reads": [
+          {
+            "op": "String",
+            "line": 2929,
+            "into": "_0x2a5a3a"
+          },
+          {
+            "op": "UInt16",
+            "line": 2930,
+            "into": "_0x54af9a"
+          },
+          {
+            "op": "UInt8",
+            "line": 2931,
+            "into": "_0x4f0cb6"
+          },
+          {
+            "op": "UInt8",
+            "line": 2932,
+            "into": "_0x310178"
+          },
+          {
+            "op": "String",
+            "line": 2933,
+            "into": "_0x3d875b"
+          },
+          {
+            "op": "UInt8",
+            "line": 2934,
+            "into": "_0x4ac04a",
+            "expression": "_0x5021f4.readUInt8() == 1"
+          },
+          {
+            "op": "UInt16",
+            "line": 2935,
+            "into": "_0x17f653"
+          },
+          {
+            "op": "nested",
+            "call": "_0x468711.createStaticObj",
+            "line": 2938,
+            "flags": [
+              "in_loop"
+            ]
+          }
+        ],
+        "fields": [
+          {
+            "name": "sessionId",
+            "type": "String"
+          },
+          {
+            "name": "gameVersion",
+            "type": "UInt16"
+          },
+          {
+            "name": "gameMode",
+            "type": "UInt8"
+          },
+          {
+            "name": "season",
+            "type": "UInt8"
+          },
+          {
+            "name": "serverId",
+            "type": "String"
+          },
+          {
+            "name": "isAliveInGame",
+            "type": "UInt8"
+          }
+        ]
+      }
+    },
+    {
+      "class": "_0x38d549",
+      "extends": "_0x2f14e9",
+      "type": 11,
+      "line": 3078,
+      "client_to_server": {
+        "line": 3083,
+        "layout": [],
+        "parameters": "(_0x440c47)"
+      }
+    },
+    {
+      "class": "_0x276a1c",
+      "extends": "_0x562d69",
+      "type": 17,
+      "line": 2951,
+      "server_to_client": {
+        "line": 2956,
+        "reads": [
+          {
+            "op": "UInt16",
+            "line": 2957,
+            "into": "_0x2c4abb"
+          },
+          {
+            "op": "UInt16",
+            "line": 2958,
+            "into": "_0x22594a"
+          },
+          {
+            "op": "UInt16",
+            "line": 2959,
+            "into": "_0x5755f8"
+          },
+          {
+            "op": "UInt16",
+            "line": 2960,
+            "into": "_0x9b0774"
+          },
+          {
+            "op": "UInt16",
+            "line": 2961,
+            "into": "_0x599a5b"
+          }
+        ],
+        "fields": [
+          {
+            "name": "gameWidth",
+            "type": "UInt16"
+          },
+          {
+            "name": "gameHeight",
+            "type": "UInt16"
+          },
+          {
+            "name": "camX",
+            "type": "UInt16"
+          },
+          {
+            "name": "camY",
+            "type": "UInt16"
+          },
+          {
+            "name": "camZoom",
+            "type": "UInt16"
+          }
+        ]
+      }
+    },
+    {
+      "class": "_0x44b67f",
+      "extends": "_0x256071",
+      "type": 24,
+      "line": 2983,
+      "client_to_server": {
+        "line": 3072,
+        "layout": [
+          {
+            "op": "UInt8",
+            "value": "_0x5b4639",
+            "line": 3075
+          }
+        ],
+        "parameters": "(_0x345229, _0x5b4639)"
+      },
+      "server_to_client": {
+        "line": 3056,
+        "reads": [
+          {
+            "op": "nested",
+            "call": "_0x44b67f.readUpgradeMenu",
+            "line": 3063
+          }
+        ],
+        "fields": []
+      }
+    },
+    {
+      "class": "_0x3fa1ab",
+      "extends": "_0x2f14e9",
+      "type": 113,
+      "line": 2971,
+      "client_to_server": {
+        "line": 2976,
+        "layout": [
+          {
+            "op": "UInt16",
+            "value": "_0x5620e5",
+            "line": 2980
+          },
+          {
+            "op": "UInt16",
+            "value": "_0x3fad2c",
+            "line": 2980
+          },
+          {
+            "op": "String",
+            "value": "_0x5dcdfb",
+            "line": 2980
+          }
+        ],
+        "parameters": "(_0x3fe5eb, _0x5dcdfb, _0x5620e5, _0x3fad2c)"
+      }
+    },
+    {
+      "class": "_0x22f35c",
+      "extends": "_0x256071",
+      "type": 114,
+      "line": 3088,
+      "server_to_client": {
+        "line": 3093,
+        "reads": [
+          {
+            "op": "UInt8",
+            "line": 3095,
+            "into": "_0x442ce6"
+          },
+          {
+            "op": "UInt8",
+            "line": 3097,
+            "into": "_0x229b69",
+            "flags": [
+              "in_loop"
+            ]
+          },
+          {
+            "op": "String",
+            "line": 3098,
+            "into": "_0x3c2e2a",
+            "flags": [
+              "in_loop"
+            ]
+          },
+          {
+            "op": "UInt8",
+            "line": 3099,
+            "into": "_0x2b5f4f",
+            "expression": "_0x54f059.readUInt8() == 1",
+            "flags": [
+              "in_loop"
+            ]
+          },
+          {
+            "op": "UInt8",
+            "line": 3101,
+            "into": "_0x5d1ee1",
+            "expression": "_0x54f059.readUInt8() == 1",
+            "flags": [
+              "conditional",
+              "in_loop"
+            ]
+          },
+          {
+            "op": "UInt8",
+            "line": 3102,
+            "into": "_0x3f8731",
+            "expression": "_0x54f059.readUInt8() == 1",
+            "flags": [
+              "conditional",
+              "in_loop"
+            ]
+          },
+          {
+            "op": "String",
+            "line": 3103,
+            "into": "_0x1f2793",
+            "flags": [
+              "conditional",
+              "in_loop"
+            ]
+          },
+          {
+            "op": "String",
+            "line": 3104,
+            "into": "_0xda17ea",
+            "flags": [
+              "conditional",
+              "in_loop"
+            ]
+          }
+        ],
+        "fields": []
+      }
+    },
+    {
+      "class": "_0xbb9642",
+      "extends": "_0x256071",
+      "type": 115,
+      "line": 3155,
+      "server_to_client": {
+        "line": 3160,
+        "reads": [
+          {
+            "op": "UInt8",
+            "line": 3162,
+            "into": "_0x51b5ba"
+          },
+          {
+            "op": "UInt8",
+            "line": 3164,
+            "into": "_0x5107ce",
+            "flags": [
+              "in_loop"
+            ]
+          }
+        ],
+        "fields": []
+      }
+    }
+  ],
+  "dispatchers": [
+    {
+      "function": "_0x3e7c4e",
+      "line": 3801,
+      "discriminant": "_0xb6eaf4",
+      "reader": "_0x373a3a",
+      "cases": [
+        {
+          "opcode": 24,
+          "case": "_0x4801ed",
+          "line": 3802,
+          "handler_classes": [
+            "_0x44b67f"
+          ],
+          "calls": [
+            "_0x25fc1d"
+          ],
+          "direct_reads": [],
+          "strings": []
+        },
+        {
+          "opcode": 2,
+          "case": "_0xf2f8a2",
+          "line": 3805,
+          "handler_classes": [
+            "_0x461fd4"
+          ],
+          "calls": [
+            "_0x199c2d",
+            "_0x36fc18",
+            "_0x4fc5a0"
+          ],
+          "direct_reads": [],
+          "strings": [
+            "Old client (client ver ",
+            "mope.io has been updated! You need to refresh to get the latest version of the game! (If this keeps ",
+            "Old server (client ver "
+          ]
+        },
+        {
+          "opcode": 17,
+          "case": "_0x339758",
+          "line": 3836,
+          "handler_classes": [
+            "_0x276a1c"
+          ],
+          "calls": [
+            "_0x50ba92"
+          ],
+          "direct_reads": [],
+          "strings": []
+        },
+        {
+          "opcode": 3,
+          "case": "_0x219d0a",
+          "line": 3839,
+          "handler_classes": [],
+          "calls": [
+            "_0x376f98",
+            "_0x6e701b"
+          ],
+          "direct_reads": [],
+          "strings": []
+        },
+        {
+          "opcode": 103,
+          "case": "_0x2a4caf",
+          "line": 3845,
+          "handler_classes": [],
+          "calls": [
+            "_0x1a05cd",
+            "_0x29b2d6"
+          ],
+          "direct_reads": [
+            {
+              "op": "String",
+              "line": 3846,
+              "into": "_0x1008cb"
+            }
+          ],
+          "strings": [
+            "Provide a reason"
+          ]
+        },
+        {
+          "opcode": 72,
+          "case": "_0xaed614",
+          "line": 3856,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "Msg_sendLoginCred"
+          ]
+        },
+        {
+          "opcode": 102,
+          "case": "_0x5dd4d9",
+          "line": 3860,
+          "handler_classes": [],
+          "calls": [
+            "_0x4b35b4"
+          ],
+          "direct_reads": [],
+          "strings": [
+            "Msg_client_loadUserData"
+          ]
+        },
+        {
+          "opcode": 81,
+          "case": "_0x54b37a",
+          "line": 3864,
+          "handler_classes": [],
+          "calls": [
+            "_0x48d3c7.handleMessage"
+          ],
+          "direct_reads": [],
+          "strings": []
+        },
+        {
+          "opcode": 104,
+          "case": "104",
+          "line": 3868,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [
+            {
+              "op": "String",
+              "line": 3870,
+              "into": "_0xbdc98f"
+            }
+          ],
+          "strings": [
+            "muilink"
+          ]
+        },
+        {
+          "opcode": 105,
+          "case": "105",
+          "line": 3874,
+          "handler_classes": [],
+          "calls": [
+            "_0x5d1bae"
+          ],
+          "direct_reads": [
+            {
+              "op": "UInt16",
+              "line": 3878,
+              "into": "_0x220f4f"
+            },
+            {
+              "op": "String",
+              "line": 3880,
+              "into": "_0xdf8687",
+              "flags": [
+                "in_loop"
+              ]
+            }
+          ],
+          "strings": [
+            "------- EXTRA ANIMAL DATA --------"
+          ]
+        },
+        {
+          "opcode": 107,
+          "case": "_0x66ebe",
+          "line": 3889,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": []
+        },
+        {
+          "opcode": 6,
+          "case": "_0xf78585",
+          "line": 3892,
+          "handler_classes": [],
+          "calls": [
+            "_0x213604",
+            "_0x3f7309",
+            "_0xd2e5e4"
+          ],
+          "direct_reads": [],
+          "strings": [
+            "MsgPlayerAliveInGame",
+            "You spawned alive ingame!",
+            " games since adinplay",
+            "gamesSinceAd"
+          ]
+        },
+        {
+          "opcode": 102,
+          "case": "102",
+          "line": 3902,
+          "handler_classes": [],
+          "calls": [
+            "_0x3f7309"
+          ],
+          "direct_reads": [
+            {
+              "op": "UInt8",
+              "line": 3904,
+              "into": "_0x1272d6"
+            },
+            {
+              "op": "UInt8",
+              "line": 3905,
+              "into": "_0x472279"
+            }
+          ],
+          "strings": [
+            "msg 102"
+          ]
+        },
+        {
+          "opcode": 65,
+          "case": "_0x12795c",
+          "line": 3908,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "Msg_readyToPlay"
+          ]
+        },
+        {
+          "opcode": 62,
+          "case": "_0x504ee2",
+          "line": 3911,
+          "handler_classes": [],
+          "calls": [
+            "_0x33a695"
+          ],
+          "direct_reads": [
+            {
+              "op": "UInt16",
+              "line": 3914,
+              "into": "_0x383089"
+            },
+            {
+              "op": "String",
+              "line": 3915,
+              "into": "_0x53cc17"
+            }
+          ],
+          "strings": [
+            "Msg_adblockCheckCheck"
+          ]
+        },
+        {
+          "opcode": 8,
+          "case": "_0x566382",
+          "line": 3919,
+          "handler_classes": [],
+          "calls": [
+            "_0x137634",
+            "_0x1a61c6",
+            "_0x5953ec"
+          ],
+          "direct_reads": [
+            {
+              "op": "UInt16",
+              "line": 3922,
+              "flags": [
+                "conditional"
+              ]
+            },
+            {
+              "op": "String",
+              "line": 3923,
+              "flags": [
+                "conditional"
+              ]
+            },
+            {
+              "op": "UInt32",
+              "line": 3924,
+              "flags": [
+                "conditional"
+              ]
+            },
+            {
+              "op": "UInt8",
+              "line": 3926,
+              "into": "_0x2a2144",
+              "flags": [
+                "conditional"
+              ]
+            },
+            {
+              "op": "UInt16",
+              "line": 3930,
+              "flags": [
+                "conditional",
+                "in_loop"
+              ]
+            },
+            {
+              "op": "String",
+              "line": 3931,
+              "flags": [
+                "conditional",
+                "in_loop"
+              ]
+            },
+            {
+              "op": "UInt32",
+              "line": 3932,
+              "flags": [
+                "conditional",
+                "in_loop"
+              ]
+            }
+          ],
+          "strings": []
+        },
+        {
+          "opcode": 255,
+          "case": "_0x132789",
+          "line": 3940,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": []
+        },
+        {
+          "opcode": 10,
+          "case": "_0x5827bb",
+          "line": 3943,
+          "handler_classes": [],
+          "calls": [
+            "_0x1a05cd"
+          ],
+          "direct_reads": [
+            {
+              "op": "UInt16",
+              "line": 3944,
+              "into": "_0x3f536e"
+            },
+            {
+              "op": "UInt16",
+              "line": 3944,
+              "into": "_0x3e1619",
+              "expression": "_0x373a3a.readUInt16() / 10"
+            }
+          ],
+          "strings": []
+        },
+        {
+          "opcode": 67,
+          "case": "_0x4b23c5",
+          "line": 3950,
+          "handler_classes": [],
+          "calls": [
+            "_0xfe42a1"
+          ],
+          "direct_reads": [
+            {
+              "op": "String",
+              "line": 3952,
+              "into": "_0x53cc17"
+            }
+          ],
+          "strings": []
+        },
+        {
+          "opcode": 63,
+          "case": "_0x5374f6",
+          "line": 3956,
+          "handler_classes": [],
+          "calls": [
+            "_0x2f0b41"
+          ],
+          "direct_reads": [
+            {
+              "op": "UInt32",
+              "line": 3958,
+              "into": "_0x383089"
+            },
+            {
+              "op": "String",
+              "line": 3959,
+              "into": "_0x53cc17"
+            }
+          ],
+          "strings": []
+        },
+        {
+          "opcode": 64,
+          "case": "_0x57b086",
+          "line": 3963,
+          "handler_classes": [],
+          "calls": [
+            "_0x237068"
+          ],
+          "direct_reads": [],
+          "strings": [
+            "Err in recap msg"
+          ]
+        },
+        {
+          "opcode": 69,
+          "case": "_0x161e97",
+          "line": 3970,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [
+            {
+              "op": "String",
+              "line": 3972,
+              "into": "_0x24ae41"
+            }
+          ],
+          "strings": [
+            "<div class='pid' style='float:left; width:100px; text-align:right;'>",
+            "</div>",
+            "<div class='nick'  style='float:left; width:200px; text-align:left;'>",
+            "<div class='player'>"
+          ]
+        },
+        {
+          "opcode": 18,
+          "case": "_0x2a48c9",
+          "line": 3981,
+          "handler_classes": [],
+          "calls": [
+            "_0x2304a4",
+            "_0x24d9e7",
+            "_0x48481b",
+            "_0x49c78a"
+          ],
+          "direct_reads": [
+            {
+              "op": "UInt8",
+              "line": 3982,
+              "into": "_0x5cc62c"
+            },
+            {
+              "op": "UInt8",
+              "line": 3983,
+              "into": "_0xc8a63"
+            },
+            {
+              "op": "UInt16",
+              "line": 3984,
+              "into": "_0x1ddc1b"
+            },
+            {
+              "op": "UInt8",
+              "line": 3985,
+              "into": "_0x69bd49"
+            },
+            {
+              "op": "UInt8",
+              "line": 3987,
+              "into": "_0x38da45"
+            },
+            {
+              "op": "UInt32",
+              "line": 3987,
+              "into": "_0x1dc4d5"
+            },
+            {
+              "op": "UInt32",
+              "line": 3987
+            },
+            {
+              "op": "UInt16",
+              "line": 3987,
+              "into": "_0x4550de"
+            },
+            {
+              "op": "UInt16",
+              "line": 3987,
+              "into": "_0x260f43"
+            },
+            {
+              "op": "UInt8",
+              "line": 4011,
+              "into": "_0x2dc8e9"
+            },
+            {
+              "op": "UInt8",
+              "line": 4013,
+              "expression": "_0x373a3a.readUInt8() - 1",
+              "flags": [
+                "in_loop"
+              ]
+            },
+            {
+              "op": "UInt8",
+              "line": 4017,
+              "into": "_0x2dc8e9"
+            },
+            {
+              "op": "UInt8",
+              "line": 4019,
+              "into": "_0x362f8c",
+              "flags": [
+                "in_loop"
+              ]
+            },
+            {
+              "op": "UInt8",
+              "line": 4023,
+              "into": "_0x2dc8e9"
+            },
+            {
+              "op": "UInt8",
+              "line": 4025,
+              "expression": "_0x373a3a.readUInt8() - 1",
+              "flags": [
+                "in_loop"
+              ]
+            },
+            {
+              "op": "UInt8",
+              "line": 4029,
+              "into": "_0x2dc8e9"
+            },
+            {
+              "op": "UInt8",
+              "line": 4031,
+              "into": "_0x337b17",
+              "flags": [
+                "in_loop"
+              ]
+            }
+          ],
+          "strings": [
+            "[[[ ::: shdev ::: MsgYourAnimalChanged",
+            "::: shdev ::: abilities set above ]]]",
+            "You downgraded to ",
+            "! \nDont lose too much xp!"
+          ]
+        },
+        {
+          "opcode": 108,
+          "case": "_0x1f565b",
+          "line": 4044,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": []
+        },
+        {
+          "opcode": 114,
+          "case": "_0x17ca4c",
+          "line": 4047,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": []
+        },
+        {
+          "opcode": 109,
+          "case": "_0x381024",
+          "line": 4050,
+          "handler_classes": [],
+          "calls": [
+            "_0x3c308d"
+          ],
+          "direct_reads": [],
+          "strings": []
+        },
+        {
+          "opcode": 14,
+          "case": "_0x338ad9",
+          "line": 4053,
+          "handler_classes": [],
+          "calls": [
+            "_0x1134e7",
+            "_0x1342bd",
+            "_0x277c58",
+            "_0x3104e7",
+            "_0x5953ec"
+          ],
+          "direct_reads": [
+            {
+              "op": "UInt8",
+              "line": 4055,
+              "into": "_0xf42a8f"
+            },
+            {
+              "op": "UInt32",
+              "line": 4056,
+              "into": "_0x1c489c"
+            },
+            {
+              "op": "String",
+              "line": 4057,
+              "into": "_0x3ee44c"
+            },
+            {
+              "op": "UInt16",
+              "line": 4058,
+              "into": "_0x2c3934"
+            },
+            {
+              "op": "String",
+              "line": 4058
+            },
+            {
+              "op": "UInt32",
+              "line": 4058,
+              "into": "_0x2f3f35"
+            },
+            {
+              "op": "UInt16",
+              "line": 4058,
+              "into": "_0x465ac3"
+            },
+            {
+              "op": "UInt32",
+              "line": 4058,
+              "into": "_0x2dce0d"
+            },
+            {
+              "op": "UInt8",
+              "line": 4058,
+              "into": "_0x13de6c"
+            }
+          ],
+          "strings": [
+            "############# YOU DIED MESSAGE ###################",
+            "audio/bite.mp3",
+            "Oh no, You were eaten! \n Watch out for red-circled players!",
+            "Oh no, You died from a tail-bite!\n Watch your tail!"
+          ]
+        },
+        {
+          "opcode": 112,
+          "case": "_0x27d105",
+          "line": 4084,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "MSG_GAMEROOM_PROPERTY_UPDATE"
+          ]
+        },
+        {
+          "opcode": 4,
+          "case": "_0x417f5b",
+          "line": 4089,
+          "handler_classes": [],
+          "calls": [
+            "_0x332aab"
+          ],
+          "direct_reads": [],
+          "strings": []
+        },
+        {
+          "opcode": 19,
+          "case": "_0x35b552",
+          "line": 4093,
+          "handler_classes": [],
+          "calls": [
+            "_0x5953ec"
+          ],
+          "direct_reads": [
+            {
+              "op": "UInt32",
+              "line": 4094,
+              "into": "_0x3256d0"
+            },
+            {
+              "op": "String",
+              "line": 4097,
+              "into": "_0x3ff12b",
+              "flags": [
+                "conditional"
+              ]
+            }
+          ],
+          "strings": []
+        },
+        {
+          "opcode": 100,
+          "case": "_0xb60e78",
+          "line": 4116,
+          "handler_classes": [],
+          "calls": [
+            "_0x109e73"
+          ],
+          "direct_reads": [
+            {
+              "op": "UInt8",
+              "line": 4117,
+              "into": "_0x2d7d01"
+            }
+          ],
+          "strings": [
+            "snowfall message received:"
+          ]
+        },
+        {
+          "opcode": 16,
+          "case": "_0x339265",
+          "line": 4136,
+          "handler_classes": [],
+          "calls": [
+            "_0x4fd951"
+          ],
+          "direct_reads": [
+            {
+              "op": "String",
+              "line": 4137,
+              "into": "_0x373a3a"
+            }
+          ],
+          "strings": [
+            "success"
+          ]
+        },
+        {
+          "opcode": 106,
+          "case": "_0x4f3f8b",
+          "line": 4142,
+          "handler_classes": [],
+          "calls": [
+            "_0x4fd951"
+          ],
+          "direct_reads": [
+            {
+              "op": "String",
+              "line": 4143,
+              "into": "_0x2f76f0"
+            },
+            {
+              "op": "String",
+              "line": 4144,
+              "into": "_0x4577c4"
+            },
+            {
+              "op": "UInt8",
+              "line": 4145,
+              "into": "_0xa3fce1"
+            }
+          ],
+          "strings": []
+        },
+        {
+          "opcode": 111,
+          "case": "_0x2c8658",
+          "line": 4149,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": []
+        },
+        {
+          "opcode": 23,
+          "case": "_0x1310bd",
+          "line": 4153,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [
+            {
+              "op": "UInt8",
+              "line": 4154,
+              "into": "_0x34e56c"
+            },
+            {
+              "op": "String",
+              "line": 4161,
+              "into": "_0x1cc117",
+              "flags": [
+                "conditional"
+              ]
+            },
+            {
+              "op": "UInt16",
+              "line": 4161,
+              "into": "_0xa3fce1",
+              "expression": "_0x373a3a.readUInt16() / 100",
+              "flags": [
+                "conditional"
+              ]
+            }
+          ],
+          "strings": [
+            "white",
+            "Ouch! Your tail got bitten!",
+            "You've been stung by a jellyfish!",
+            "ZAP! You've been shocked by a STINGRAY!"
+          ]
+        },
+        {
+          "opcode": 25,
+          "case": "_0x5524a8",
+          "line": 4231,
+          "handler_classes": [],
+          "calls": [
+            "_0x4c3e48"
+          ],
+          "direct_reads": [
+            {
+              "op": "UInt8",
+              "line": 4232,
+              "into": "_0x351e60"
+            },
+            {
+              "op": "UInt32",
+              "line": 4233,
+              "into": "_0x3698e2",
+              "expression": "_0x373a3a.readUInt32() / 10"
+            }
+          ],
+          "strings": []
+        },
+        {
+          "opcode": 113,
+          "case": "_0x399e1a",
+          "line": 4244,
+          "handler_classes": [],
+          "calls": [
+            "_0x4fd951"
+          ],
+          "direct_reads": [
+            {
+              "op": "String",
+              "line": 4246,
+              "into": "_0x13ebc8"
+            }
+          ],
+          "strings": [
+            "DISCONNECT_ON_EXCEEDING_RATE_LIMIT",
+            "error"
+          ]
+        },
+        {
+          "opcode": 11,
+          "case": "_0x2b3974",
+          "line": 4250,
+          "handler_classes": [],
+          "calls": [
+            "_0x260e72",
+            "_0x34a85e",
+            "_0x4fd951"
+          ],
+          "direct_reads": [
+            {
+              "op": "UInt8",
+              "line": 4251,
+              "into": "_0x38d009"
+            },
+            {
+              "op": "String",
+              "line": 4253,
+              "into": "_0x13ebc8"
+            },
+            {
+              "op": "UInt8",
+              "line": 4254,
+              "into": "_0x484679",
+              "expression": "_0x373a3a.readUInt8() > 0"
+            }
+          ],
+          "strings": [
+            "You've been disconnected! Reason: ",
+            "error"
+          ]
+        },
+        {
+          "opcode": 58,
+          "case": "_0x37a8af",
+          "line": 4276,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [
+            {
+              "op": "UInt8",
+              "line": 4277,
+              "into": "_0x2affd8"
+            },
+            {
+              "op": "String",
+              "line": 4278,
+              "into": "_0x373a3a"
+            }
+          ],
+          "strings": [
+            "white"
+          ]
+        },
+        {
+          "opcode": 59,
+          "case": "_0xe8c130",
+          "line": 4282,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [
+            {
+              "op": "UInt8",
+              "line": 4283,
+              "into": "_0xb46a4a"
+            }
+          ],
+          "strings": []
+        },
+        {
+          "opcode": 56,
+          "case": "_0x2234df",
+          "line": 4288,
+          "handler_classes": [],
+          "calls": [
+            "_0x1a05cd",
+            "_0x3f7309"
+          ],
+          "direct_reads": [
+            {
+              "op": "UInt8",
+              "line": 4289,
+              "into": "_0x3f6b93",
+              "expression": "_0x373a3a.readUInt8() == 1"
+            }
+          ],
+          "strings": [
+            "spectate mode : ",
+            "## spectate mode turned ON ##",
+            "white",
+            "SPECTATE MODE"
+          ]
+        }
+      ],
+      "role": "message dispatcher"
+    },
+    {
+      "function": "_0x3e7c4e",
+      "line": 4159,
+      "discriminant": "_0x34e56c",
+      "reader": "_0x373a3a",
+      "cases": [
+        {
+          "opcode": 255,
+          "case": "255",
+          "line": 4160,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [
+            {
+              "op": "String",
+              "line": 4161,
+              "into": "_0x1cc117"
+            },
+            {
+              "op": "UInt16",
+              "line": 4161,
+              "into": "_0xa3fce1",
+              "expression": "_0x373a3a.readUInt16() / 100"
+            }
+          ],
+          "strings": []
+        },
+        {
+          "opcode": 33,
+          "case": "33",
+          "line": 4164,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": []
+        },
+        {
+          "opcode": 2,
+          "case": "2",
+          "line": 4167,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "Ouch! Your tail got bitten!"
+          ]
+        },
+        {
+          "opcode": 12,
+          "case": "12",
+          "line": 4171,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "You've been stung by a jellyfish!"
+          ]
+        },
+        {
+          "opcode": 3,
+          "case": "3",
+          "line": 4175,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "ZAP! You've been shocked by a STINGRAY!"
+          ]
+        },
+        {
+          "opcode": 8,
+          "case": "8",
+          "line": 4179,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "You've been inked!"
+          ]
+        },
+        {
+          "opcode": 5,
+          "case": "5",
+          "line": 4183,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "Oh no! Escape the kraken's pull!"
+          ]
+        },
+        {
+          "opcode": 6,
+          "case": "6",
+          "line": 4187,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "Ouch! Pufferfish are pointy!"
+          ]
+        },
+        {
+          "opcode": 7,
+          "case": "7",
+          "line": 4191,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "That's an octopus in disguise!"
+          ]
+        },
+        {
+          "opcode": 9,
+          "case": "9",
+          "line": 4195,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "Brrr! You've been frozen!"
+          ]
+        },
+        {
+          "opcode": 10,
+          "case": "10",
+          "line": 4199,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "Ahh! The wolf's howl scared you!"
+          ]
+        },
+        {
+          "opcode": 11,
+          "case": "11",
+          "line": 4203,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "Ouch! A VERY LOUD sound hit you!"
+          ]
+        },
+        {
+          "opcode": 13,
+          "case": "13",
+          "line": 4207,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "Ah! You're on fire!"
+          ]
+        },
+        {
+          "opcode": 14,
+          "case": "14",
+          "line": 4211,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "BAM! You got kicked by a donkey!"
+          ]
+        },
+        {
+          "opcode": 16,
+          "case": "16",
+          "line": 4215,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "Ouch! You're getting dragged by a croc!"
+          ]
+        },
+        {
+          "opcode": 17,
+          "case": "17",
+          "line": 4219,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "A fox DUG you out of the hole!"
+          ]
+        },
+        {
+          "opcode": 18,
+          "case": "18",
+          "line": 4223,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "A wave has swept you away!"
+          ]
+        }
+      ],
+      "nested_in_opcode": 23,
+      "role": "sub-switch"
+    },
+    {
+      "function": "_0x5ab805.prototype.handleMessage",
+      "line": 13152,
+      "discriminant": "_0x360f25",
+      "reader": "_0x95bd3d",
+      "cases": [
+        {
+          "opcode": 83,
+          "case": "_0x1c7c41",
+          "line": 13153,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [
+            {
+              "op": "String",
+              "line": 13154,
+              "into": "_0x7b9be1"
+            }
+          ],
+          "strings": []
+        },
+        {
+          "opcode": 82,
+          "case": "_0x3cc7f3",
+          "line": 13158,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [
+            {
+              "op": "UInt16",
+              "line": 13159,
+              "into": "this.alivePlayers"
+            },
+            {
+              "op": "String",
+              "line": 13159,
+              "into": "this.playerCountMsg"
+            }
+          ],
+          "strings": []
+        },
+        {
+          "opcode": 84,
+          "case": "_0x37c5cc",
+          "line": 13162,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [
+            {
+              "op": "UInt16",
+              "line": 13163,
+              "into": "this.timeRemain"
+            }
+          ],
+          "strings": []
+        },
+        {
+          "opcode": 33,
+          "case": "33",
+          "line": 13166,
+          "handler_classes": [],
+          "calls": [
+            "_0x1134e7"
+          ],
+          "direct_reads": [
+            {
+              "op": "UInt16",
+              "line": 13167,
+              "into": "_0x33e592"
+            }
+          ],
+          "strings": []
+        },
+        {
+          "opcode": 34,
+          "case": "34",
+          "line": 13171,
+          "handler_classes": [],
+          "calls": [
+            "_0x1134e7"
+          ],
+          "direct_reads": [],
+          "strings": [
+            "You WON!",
+            "limegreen"
+          ]
+        },
+        {
+          "opcode": 35,
+          "case": "35",
+          "line": 13175,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": []
+        },
+        {
+          "opcode": 36,
+          "case": "36",
+          "line": 13177,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [
+            {
+              "op": "UInt8",
+              "line": 13178,
+              "into": "_0x4e91c3"
+            },
+            {
+              "op": "String",
+              "line": 13182,
+              "flags": [
+                "in_loop"
+              ]
+            },
+            {
+              "op": "UInt32",
+              "line": 13183,
+              "flags": [
+                "in_loop"
+              ]
+            }
+          ],
+          "strings": []
+        },
+        {
+          "opcode": 37,
+          "case": "37",
+          "line": 13189,
+          "handler_classes": [],
+          "calls": [
+            "_0x2f1a2e",
+            "_0x534352"
+          ],
+          "direct_reads": [
+            {
+              "op": "UInt16",
+              "line": 13190,
+              "into": "_0x321c62"
+            }
+          ],
+          "strings": [
+            "Game restarts in ",
+            "Starting new game",
+            "Battle begins in ",
+            "Starting new battle!"
+          ]
+        },
+        {
+          "opcode": 38,
+          "case": "38",
+          "line": 13206,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [
+            {
+              "op": "UInt16",
+              "line": 13207,
+              "into": "this.playersJoined"
+            }
+          ],
+          "strings": []
+        },
+        {
+          "opcode": 39,
+          "case": "39",
+          "line": 13211,
+          "handler_classes": [],
+          "calls": [
+            "_0x2f1a2e",
+            "_0x534352"
+          ],
+          "direct_reads": [
+            {
+              "op": "UInt16",
+              "line": 13212,
+              "into": "_0x321c62"
+            }
+          ],
+          "strings": [
+            "Heatwave expanding in ",
+            "Heatwave expands now!",
+            "STAY SAFE!"
+          ]
+        },
+        {
+          "opcode": 40,
+          "case": "40",
+          "line": 13221,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": [
+            "You have been eliminated!",
+            "Stay in safe area!"
+          ]
+        },
+        {
+          "opcode": 41,
+          "case": "41",
+          "line": 13226,
+          "handler_classes": [],
+          "calls": [
+            "_0x3a6dfc"
+          ],
+          "direct_reads": [
+            {
+              "op": "UInt8",
+              "line": 13227,
+              "into": "this.state"
+            },
+            {
+              "op": "UInt16",
+              "line": 13227,
+              "into": "this.playersJoined"
+            }
+          ],
+          "strings": [
+            "Waiting for players"
+          ]
+        },
+        {
+          "opcode": 42,
+          "case": "42",
+          "line": 13233,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [
+            {
+              "op": "UInt8",
+              "line": 13234,
+              "into": "_0x118f9e",
+              "expression": "_0x95bd3d.readUInt8() == 1"
+            }
+          ],
+          "strings": [
+            "You WON!",
+            "You LOST!"
+          ]
+        },
+        {
+          "opcode": 43,
+          "case": "43",
+          "line": 13239,
+          "handler_classes": [],
+          "calls": [
+            "_0x53723d"
+          ],
+          "direct_reads": [],
+          "strings": []
+        },
+        {
+          "opcode": 44,
+          "case": "44",
+          "line": 13243,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [
+            {
+              "op": "String",
+              "line": 13244,
+              "into": "_0xcb58bd"
+            }
+          ],
+          "strings": []
+        },
+        {
+          "opcode": 45,
+          "case": "45",
+          "line": 13248,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [
+            {
+              "op": "UInt16",
+              "line": 13252,
+              "into": "_0x511b96",
+              "flags": [
+                "conditional"
+              ]
+            },
+            {
+              "op": "String",
+              "line": 13258,
+              "flags": [
+                "conditional",
+                "in_loop"
+              ]
+            },
+            {
+              "op": "UInt8",
+              "line": 13259,
+              "flags": [
+                "conditional",
+                "in_loop"
+              ]
+            }
+          ],
+          "strings": [
+            "Msg_battleroyal_endScreen"
+          ]
+        },
+        {
+          "opcode": 46,
+          "case": "46",
+          "line": 13265,
+          "handler_classes": [],
+          "calls": [
+            "_0x2f1a2e"
+          ],
+          "direct_reads": [
+            {
+              "op": "UInt16",
+              "line": 13266,
+              "into": "_0x321c62"
+            }
+          ],
+          "strings": [
+            "Battle Ended",
+            "Battle Ending in "
+          ]
+        },
+        {
+          "opcode": 48,
+          "case": "48",
+          "line": 13273,
+          "handler_classes": [],
+          "calls": [],
+          "direct_reads": [],
+          "strings": []
+        }
+      ],
+      "role": "sub-protocol handler"
+    }
+  ],
+  "raw_sends": [
+    {
+      "opcode": 255,
+      "opcode_expression": "255",
+      "line": 3191,
+      "function": "this.sendPing",
+      "size_expression": "1",
+      "layout": [],
+      "strings": []
+    },
+    {
+      "opcode": 64,
+      "opcode_expression": "_0x57b086",
+      "line": 3573,
+      "function": "_0x237068",
+      "size_expression": "1 + _0x29b2d6(_0x463620).length + 2",
+      "layout": [
+        {
+          "op": "String",
+          "value": "_0x463620",
+          "line": 3574
+        }
+      ],
+      "strings": [
+        "There was an issue with the captcha. Please check your internet connection!",
+        "error"
+      ]
+    },
+    {
+      "opcode": 11,
+      "opcode_expression": "_0x2b3974",
+      "line": 3688,
+      "function": "_0x296b08",
+      "size_expression": "1",
+      "layout": [],
+      "strings": [
+        "---Cleanly closing WS connection (instantly deletes player in-game)",
+        "---not closing ws: no existing gameserver connection, ."
+      ]
+    },
+    {
+      "opcode": 103,
+      "opcode_expression": "_0x2a4caf",
+      "line": 3851,
+      "function": "_0x3e7c4e",
+      "size_expression": "_0x479426",
+      "layout": [
+        {
+          "op": "String",
+          "value": "_0x574456",
+          "line": 3852,
+          "flags": [
+            "conditional"
+          ]
+        }
+      ],
+      "strings": [
+        "Old client (client ver ",
+        "mope.io has been updated! You need to refresh to get the latest version of the game! (If this keeps ",
+        "Old server (client ver ",
+        "unknown msg type? "
+      ]
+    },
+    {
+      "opcode": 255,
+      "opcode_expression": "_0x132789",
+      "line": 3946,
+      "function": "_0x3e7c4e",
+      "size_expression": "1",
+      "layout": [],
+      "strings": [
+        "Old client (client ver ",
+        "mope.io has been updated! You need to refresh to get the latest version of the game! (If this keeps ",
+        "Old server (client ver ",
+        "unknown msg type? "
+      ]
+    },
+    {
+      "opcode": 56,
+      "opcode_expression": "_0x2234df",
+      "line": 4300,
+      "function": "_0x298aa1.onClick",
+      "size_expression": "1",
+      "layout": [],
+      "strings": [
+        "spectate mode back button clicked!"
+      ]
+    },
+    {
+      "opcode": 67,
+      "opcode_expression": "_0x4b23c5",
+      "line": 4362,
+      "function": "_0xe43322",
+      "size_expression": "2 + _0x2f7489.length + 2",
+      "layout": [
+        {
+          "op": "String",
+          "value": "_0x2f7489",
+          "line": 4363
+        }
+      ],
+      "strings": [
+        "value"
+      ]
+    },
+    {
+      "opcode": 66,
+      "opcode_expression": "_0x116d7f",
+      "line": 4958,
+      "function": "_0x147067",
+      "size_expression": "3",
+      "layout": [
+        {
+          "op": "UInt8",
+          "value": "_0x25d3e6 ? 1 : 0",
+          "line": 4959,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "_0x5ecf48",
+          "line": 4959,
+          "flags": [
+            "conditional"
+          ]
+        }
+      ],
+      "strings": []
+    },
+    {
+      "opcode": 68,
+      "opcode_expression": "_0x599750",
+      "line": 4970,
+      "function": "_0x1b64b7",
+      "size_expression": "5",
+      "layout": [
+        {
+          "op": "UInt32",
+          "value": "_0x59bb10",
+          "line": 4971,
+          "resolved": 0,
+          "flags": [
+            "conditional"
+          ]
+        }
+      ],
+      "strings": []
+    },
+    {
+      "opcode": 52,
+      "opcode_expression": "52",
+      "line": 5538,
+      "function": "_0x321e64",
+      "size_expression": "2",
+      "layout": [
+        {
+          "op": "UInt8",
+          "value": "0",
+          "line": 5539,
+          "resolved": 0
+        }
+      ],
+      "strings": []
+    },
+    {
+      "opcode": 61,
+      "opcode_expression": "_0x28b2f1",
+      "line": 5927,
+      "function": "this.sendSelection",
+      "size_expression": "3",
+      "layout": [
+        {
+          "op": "UInt8",
+          "value": "this.interfaceType",
+          "line": 5928
+        },
+        {
+          "op": "UInt8",
+          "value": "_0x54761e.buttonID",
+          "line": 5928
+        }
+      ],
+      "strings": []
+    },
+    {
+      "opcode": 71,
+      "opcode_expression": "71",
+      "line": 16056,
+      "function": "_0x978bb7.prototype.playerSettings_update",
+      "size_expression": "_0x3fdb02",
+      "layout": [
+        {
+          "op": "UInt8",
+          "value": "_0x4c500b ? 1 : 0",
+          "line": 16057,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "String",
+          "value": "_0x2fe386",
+          "line": 16057,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "String",
+          "value": "_0x2605f6",
+          "line": 16057,
+          "flags": [
+            "conditional"
+          ]
+        }
+      ],
+      "strings": [
+        "Settings updated successfully!",
+        "success",
+        "alreadyowned",
+        "AccountServer: item already purchased!"
+      ]
+    },
+    {
+      "opcode": 62,
+      "opcode_expression": "62",
+      "line": 24655,
+      "function": "_0x33a695",
+      "size_expression": "2 + _0x205fb0.length + 2",
+      "layout": [
+        {
+          "op": "String",
+          "value": "_0x205fb0",
+          "line": 24656
+        }
+      ],
+      "strings": []
+    },
+    {
+      "opcode": 64,
+      "opcode_expression": "_0x57b086",
+      "line": 24665,
+      "function": "_0x32bf39",
+      "size_expression": "2 + _0x30311c.length + 2",
+      "layout": [
+        {
+          "op": "String",
+          "value": "_0x30311c",
+          "line": 24666
+        }
+      ],
+      "strings": [
+        "error",
+        "error: rec token could not received!"
+      ]
+    },
+    {
+      "opcode": 64,
+      "opcode_expression": "_0x57b086",
+      "line": 24669,
+      "function": "_0x32bf39",
+      "size_expression": "2 + _0x30311c.length + 2",
+      "layout": [
+        {
+          "op": "String",
+          "value": "_0x30311c",
+          "line": 24670
+        }
+      ],
+      "strings": [
+        "Error loading recaptcha! Reason: ",
+        "error"
+      ]
+    },
+    {
+      "opcode": 63,
+      "opcode_expression": "_0x5374f6",
+      "line": 24677,
+      "function": "_0x2f0b41",
+      "size_expression": "2 + _0x1c76a9.length + 2",
+      "layout": [
+        {
+          "op": "String",
+          "value": "_0x1c76a9",
+          "line": 24678,
+          "flags": [
+            "conditional"
+          ]
+        }
+      ],
+      "strings": []
+    },
+    {
+      "opcode": 56,
+      "opcode_expression": "_0x2234df",
+      "line": 28680,
+      "function": "_0x355e78",
+      "size_expression": "1",
+      "layout": [],
+      "strings": []
+    },
+    {
+      "opcode": 19,
+      "opcode_expression": "19",
+      "line": 28842,
+      "function": "_0x417615",
+      "size_expression": "3 + _0x29b2d6(_0x2cee4f).length",
+      "layout": [
+        {
+          "op": "String",
+          "value": "_0x2cee4f",
+          "line": 28842,
+          "flags": [
+            "conditional"
+          ]
+        }
+      ],
+      "strings": [
+        "You must login to chat!",
+        "chatinput",
+        "visible",
+        "hidden"
+      ]
+    },
+    {
+      "opcode": 17,
+      "opcode_expression": "17",
+      "line": 28874,
+      "function": "_0x48481b",
+      "size_expression": "7",
+      "layout": [
+        {
+          "op": "UInt16",
+          "value": "_0x1e1ca1",
+          "line": 28874,
+          "resolved": 0,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt16",
+          "value": "_0x21816f",
+          "line": 28874,
+          "resolved": 0,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt16",
+          "value": "_0x228698",
+          "line": 28874,
+          "flags": [
+            "conditional"
+          ]
+        }
+      ],
+      "strings": [
+        "chatinput"
+      ]
+    },
+    {
+      "opcode": 21,
+      "opcode_expression": "21",
+      "line": 28888,
+      "function": "_0x2d3042",
+      "size_expression": "2",
+      "layout": [
+        {
+          "op": "UInt8",
+          "value": "_0x5a296d ? 1 : 0",
+          "line": 28889
+        }
+      ],
+      "strings": []
+    },
+    {
+      "opcode": 68,
+      "opcode_expression": "_0x599750",
+      "line": 28900,
+      "function": "_0x22cf2c",
+      "size_expression": "5",
+      "layout": [
+        {
+          "op": "UInt32",
+          "value": "_0x59bb10",
+          "line": 28901,
+          "resolved": 0,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "20",
+          "line": 28913,
+          "resolved": 20,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28913,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "26",
+          "line": 28922,
+          "resolved": 26,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "27",
+          "line": 28929,
+          "resolved": 27,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "28",
+          "line": 28936,
+          "resolved": 28,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28936,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "30",
+          "line": 28943,
+          "resolved": 30,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28943,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "29",
+          "line": 28950,
+          "resolved": 29,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28950,
+          "flags": [
+            "conditional"
+          ]
+        }
+      ],
+      "strings": []
+    },
+    {
+      "opcode": 20,
+      "opcode_expression": "20",
+      "line": 28912,
+      "function": "_0x22cf2c",
+      "size_expression": "2",
+      "layout": [
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28913,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "26",
+          "line": 28922,
+          "resolved": 26,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "27",
+          "line": 28929,
+          "resolved": 27,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "28",
+          "line": 28936,
+          "resolved": 28,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28936,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "30",
+          "line": 28943,
+          "resolved": 30,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28943,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "29",
+          "line": 28950,
+          "resolved": 29,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28950,
+          "flags": [
+            "conditional"
+          ]
+        }
+      ],
+      "strings": []
+    },
+    {
+      "opcode": 26,
+      "opcode_expression": "26",
+      "line": 28921,
+      "function": "_0x22cf2c",
+      "size_expression": "1",
+      "layout": [
+        {
+          "op": "UInt8",
+          "value": "27",
+          "line": 28929,
+          "resolved": 27,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "28",
+          "line": 28936,
+          "resolved": 28,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28936,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "30",
+          "line": 28943,
+          "resolved": 30,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28943,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "29",
+          "line": 28950,
+          "resolved": 29,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28950,
+          "flags": [
+            "conditional"
+          ]
+        }
+      ],
+      "strings": []
+    },
+    {
+      "opcode": 27,
+      "opcode_expression": "27",
+      "line": 28928,
+      "function": "_0x22cf2c",
+      "size_expression": "1",
+      "layout": [
+        {
+          "op": "UInt8",
+          "value": "28",
+          "line": 28936,
+          "resolved": 28,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28936,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "30",
+          "line": 28943,
+          "resolved": 30,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28943,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "29",
+          "line": 28950,
+          "resolved": 29,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28950,
+          "flags": [
+            "conditional"
+          ]
+        }
+      ],
+      "strings": []
+    },
+    {
+      "opcode": 28,
+      "opcode_expression": "28",
+      "line": 28935,
+      "function": "_0x22cf2c",
+      "size_expression": "2",
+      "layout": [
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28936,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "30",
+          "line": 28943,
+          "resolved": 30,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28943,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "29",
+          "line": 28950,
+          "resolved": 29,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28950,
+          "flags": [
+            "conditional"
+          ]
+        }
+      ],
+      "strings": []
+    },
+    {
+      "opcode": 30,
+      "opcode_expression": "30",
+      "line": 28942,
+      "function": "_0x22cf2c",
+      "size_expression": "2",
+      "layout": [
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28943,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "29",
+          "line": 28950,
+          "resolved": 29,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28950,
+          "flags": [
+            "conditional"
+          ]
+        }
+      ],
+      "strings": []
+    },
+    {
+      "opcode": 29,
+      "opcode_expression": "29",
+      "line": 28949,
+      "function": "_0x22cf2c",
+      "size_expression": "2",
+      "layout": [
+        {
+          "op": "UInt8",
+          "value": "_0x3f21e3 ? 1 : 0",
+          "line": 28950,
+          "flags": [
+            "conditional"
+          ]
+        }
+      ],
+      "strings": []
+    },
+    {
+      "opcode": 5,
+      "opcode_expression": "5",
+      "line": 29035,
+      "function": "_0x443ad0",
+      "size_expression": "_0x1e82bb",
+      "layout": [
+        {
+          "op": "Int16",
+          "value": "_0x540022",
+          "line": 29035,
+          "resolved": 0,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "Int16",
+          "value": "_0x4d8e9b",
+          "line": 29035,
+          "resolved": 0,
+          "flags": [
+            "conditional"
+          ]
+        }
+      ],
+      "strings": []
+    },
+    {
+      "opcode": 60,
+      "opcode_expression": "_0x89c88b",
+      "line": 29073,
+      "function": "_0x3960ef",
+      "size_expression": "4",
+      "layout": [
+        {
+          "op": "UInt8",
+          "value": "_0x173054 == -1 ? 0 : 1",
+          "line": 29074,
+          "flags": [
+            "conditional"
+          ]
+        },
+        {
+          "op": "Int16",
+          "value": "_0x39ee1c",
+          "line": 29074,
+          "flags": [
+            "conditional"
+          ]
+        }
+      ],
+      "strings": []
+    },
+    {
+      "opcode": 59,
+      "opcode_expression": "_0xe8c130",
+      "line": 29168,
+      "function": "_0x5edd56",
+      "size_expression": "2",
+      "layout": [
+        {
+          "op": "UInt8",
+          "value": "_0xe8c130",
+          "line": 29172,
+          "resolved": 59,
+          "flags": [
+            "conditional"
+          ]
+        }
+      ],
+      "strings": []
+    },
+    {
+      "opcode": 59,
+      "opcode_expression": "_0xe8c130",
+      "line": 29171,
+      "function": "_0x5edd56",
+      "size_expression": "2",
+      "layout": [],
+      "strings": []
+    }
+  ],
+  "websockets": [
+    {
+      "line": 3186,
+      "function": "_0x497a75",
+      "url_expression": "_0x302261",
+      "url_built_as": "_0x33b2ed + this.serverObj.serverConnURL + '/ping'",
+      "handlers": [
+        "onclose",
+        "onerror",
+        "onmessage",
+        "onopen"
+      ],
+      "strings": [
+        "https:",
+        "wss://",
+        "/ping",
+        "arraybuffer"
+      ]
+    },
+    {
+      "line": 3713,
+      "function": "_0x41124e",
+      "url_expression": "_0x4432e1",
+      "url_built_as": "_0x110fff + _0x3504a7.serverConnURL",
+      "handlers": [
+        "onclose",
+        "onerror",
+        "onmessage",
+        "onopen"
+      ],
+      "strings": [
+        "server disconnected this client: ",
+        "new server: ",
+        "old server: ",
+        "-----------Reconnecting to session "
+      ]
+    }
+  ],
+  "http": [
+    {
+      "api": "fetch",
+      "line": 3304,
+      "function": "_0x24861f",
+      "url": "'https://api.adinplay.com/libs/aiptag/pub/LBS/mope.io/tag.min.js'",
+      "url_resolved": "'https://api.adinplay.com/libs/aiptag/pub/LBS/mope.io/tag.min.js'"
+    },
+    {
+      "api": "fetch",
+      "line": 3310,
+      "function": "_0xb75660",
+      "url": "'https://api.adinplay.com/libs/aiptag/pub/LBS/mope.io/tag.min.js'",
+      "url_resolved": "'https://api.adinplay.com/libs/aiptag/pub/LBS/mope.io/tag.min.js'"
+    },
+    {
+      "api": "fetch",
+      "line": 5026,
+      "function": "'run'",
+      "url": "'/updates.json?t=' + Date.now()",
+      "url_resolved": "'/updates.json?t=' + Date.now()"
+    },
+    {
+      "api": "fetch",
+      "line": 6014,
+      "function": "_0x4e2ca4",
+      "url": "_0xb17a01 + '/auth/login/' + _0x5db67a",
+      "method": "'POST'",
+      "headers": "{ 'Content-Type': 'application/json' }",
+      "body": {
+        "json": {
+          "keys": [
+            "sessionId",
+            "serverId",
+            "accessToken",
+            "platform"
+          ]
+        }
+      },
+      "url_resolved": "{ACCOUNT_SERVER} + '/auth/login/' + _0x5db67a"
+    },
+    {
+      "api": "fetch",
+      "line": 6113,
+      "function": "_0x4ba013",
+      "url": "_0xb17a01 + '/auth/logout'",
+      "method": "'POST'",
+      "headers": "{ 'Content-Type': 'application/json' }",
+      "body": {
+        "json": {
+          "keys": [
+            "userId",
+            "sessionId",
+            "serverId"
+          ]
+        }
+      },
+      "url_resolved": "{ACCOUNT_SERVER} + '/auth/logout'"
+    },
+    {
+      "api": "fetch",
+      "line": 6140,
+      "function": "_0x318dc2",
+      "url": "_0xb17a01 + '/auth/@me'",
+      "method": "'POST'",
+      "headers": "{ 'Content-Type': 'application/json;charset=UTF-8' }",
+      "body": {
+        "json": {
+          "keys": [
+            "userId",
+            "token",
+            "sessionId",
+            "serverId",
+            "isRefresh"
+          ]
+        }
+      },
+      "url_resolved": "{ACCOUNT_SERVER} + '/auth/@me'"
+    },
+    {
+      "api": "$.ajax",
+      "line": 6171,
+      "function": "_0x2ad182",
+      "url": "_0x18546f",
+      "type": "'POST'",
+      "headers": "{ 'Content-Type': 'application/json;charset=UTF-8' }",
+      "data": {
+        "json": {
+          "expression": "_0x47e758"
+        }
+      },
+      "url_resolved": "_0x18546f"
+    },
+    {
+      "api": "$.ajax",
+      "line": 6198,
+      "function": "_0x324aff",
+      "url": "_0xb17a01 + '/shop/get'",
+      "url_resolved": "{ACCOUNT_SERVER} + '/shop/get'"
+    },
+    {
+      "api": "$.ajax",
+      "line": 6217,
+      "function": "_0x31cae7",
+      "url": "_0xb17a01 + '/shop/purchases'",
+      "method": "'POST'",
+      "data": {
+        "json": {
+          "keys": [
+            "userId",
+            "token",
+            "sessionId",
+            "serverId"
+          ]
+        }
+      },
+      "headers": "{ 'Content-Type': 'application/json;charset=UTF-8' }",
+      "url_resolved": "{ACCOUNT_SERVER} + '/shop/purchases'"
+    },
+    {
+      "api": "$.ajax",
+      "line": 6246,
+      "function": "_0x5156d3",
+      "url": "_0xb17a01 + '/shop/wardrobe/save'",
+      "method": "'POST'",
+      "data": {
+        "json": {
+          "keys": [
+            "userId",
+            "token",
+            "sessionId",
+            "serverId",
+            "data"
+          ]
+        }
+      },
+      "headers": "{ 'Content-Type': 'application/json;charset=UTF-8' }",
+      "url_resolved": "{ACCOUNT_SERVER} + '/shop/wardrobe/save'"
+    },
+    {
+      "api": "$.ajax",
+      "line": 6277,
+      "function": "_0x322b0e",
+      "url": "_0xb17a01 + '/shop/buy'",
+      "method": "'POST'",
+      "data": {
+        "json": {
+          "keys": [
+            "userId",
+            "token",
+            "shopItem",
+            "sessionId",
+            "serverId"
+          ]
+        }
+      },
+      "headers": "{ 'Content-Type': 'application/json;charset=UTF-8' }",
+      "url_resolved": "{ACCOUNT_SERVER} + '/shop/buy'"
+    },
+    {
+      "api": "$.ajax",
+      "line": 6300,
+      "function": "_0x4ab4f3",
+      "url": "_0xb17a01 + '/addCoins?userId=' + _0x2fe386 + '&passwordToken=' + _0x2605f6",
+      "url_resolved": "{ACCOUNT_SERVER} + '/addCoins?userId=' + _0x2fe386 + '&passwordToken=' + _0x2605f6"
+    },
+    {
+      "api": "$.ajax",
+      "line": 6314,
+      "function": "_0x54c3ec",
+      "url": "_0xb17a01 + '/resetAccount?userId=' + _0x2fe386 + '&passwordToken=' + _0x2605f6",
+      "url_resolved": "{ACCOUNT_SERVER} + '/resetAccount?userId=' + _0x2fe386 + '&passwordToken=' + _0x2605f6"
+    },
+    {
+      "api": "$.ajax",
+      "line": 6332,
+      "function": "_0x59f0ba",
+      "url": "_0xb17a01 + '/playerSettings_update?userId=' + _0x2fe386 + '&passwordToken=' + _0x2605f6 + '&itemId=' + _0x5edfa6",
+      "url_resolved": "{ACCOUNT_SERVER} + '/playerSettings_update?userId=' + _0x2fe386 + '&passwordToken=' + _0x2605f6 + '&itemId=' + _0x5edfa6"
+    },
+    {
+      "api": "$.ajax",
+      "line": 6353,
+      "function": "_0x234260",
+      "url": "_0xb17a01 + '/servers/get'",
+      "type": "'GET'",
+      "url_resolved": "{ACCOUNT_SERVER} + '/servers/get'"
+    },
+    {
+      "api": "$.ajax",
+      "line": 6634,
+      "function": "_0x2d065f",
+      "url": "_0xb17a01 + '/xsolla/getToken'",
+      "type": "'POST'",
+      "data": {
+        "json": {
+          "keys": [
+            "userId",
+            "token",
+            "itemId",
+            "settings_ui_version",
+            "return_url"
+          ]
+        }
+      },
+      "headers": "{ 'Content-Type': 'application/json;charset=UTF-8' }",
+      "url_resolved": "{ACCOUNT_SERVER} + '/xsolla/getToken'"
+    },
+    {
+      "api": "$.ajax",
+      "line": 6662,
+      "function": "_0x2de4e6",
+      "url": "_0xb17a01 + '/xsolla/cancelSubscription'",
+      "type": "'POST'",
+      "data": {
+        "json": {
+          "keys": [
+            "userId",
+            "token"
+          ]
+        }
+      },
+      "headers": "{ 'Content-Type': 'application/json;charset=UTF-8' }",
+      "url_resolved": "{ACCOUNT_SERVER} + '/xsolla/cancelSubscription'"
+    },
+    {
+      "api": "$.ajax",
+      "line": 6678,
+      "function": "_0x8a54ff",
+      "url": "_0xb17a01 + '/xsolla/getPackets'",
+      "type": "'GET'",
+      "url_resolved": "{ACCOUNT_SERVER} + '/xsolla/getPackets'"
+    },
+    {
+      "api": "$.ajax",
+      "line": 6693,
+      "function": "_0x412418",
+      "url": "_0xb17a01 + '/xsolla/getVip'",
+      "type": "'GET'",
+      "url_resolved": "{ACCOUNT_SERVER} + '/xsolla/getVip'"
+    }
+  ],
+  "url_bases": {
+    "a0_0xab04ee": "ACCOUNT_SERVER",
+    "_0x5def44": "https://prod-accounts.mathstudyguides.com",
+    "_0xb17a01": "ACCOUNT_SERVER"
+  }
+}

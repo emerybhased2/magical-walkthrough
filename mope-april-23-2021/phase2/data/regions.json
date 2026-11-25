@@ -1,0 +1,81 @@
+{
+  "source": {
+    "path": "/home/user/magical-walkthrough/mope-april-23-2021/snapshots/2025-12-10/working/client-js/20251210042757_arquivo/client.js",
+    "sha256": "82f2028721c92d132c73a5a0b9ad364e06f74644b89576a494888cc4ee44eb63",
+    "bytes": 1638935,
+    "lines": 29322
+  },
+  "regions": [
+    {
+      "id": "prod-lnd-us-ny-1",
+      "name": "New York 1",
+      "url": "prod-lnd-us-ny-1.mathstudyguides.com",
+      "region": "New York, USA",
+      "gm": 0
+    },
+    {
+      "id": "prod-lnd-us-da-1",
+      "name": "Dallas 1",
+      "url": "prod-lnd-us-da-1.mathstudyguides.com",
+      "region": "Dallas, USA",
+      "gm": 0
+    },
+    {
+      "id": "prod-lnd-us-la-1",
+      "name": "Los Angeles 1",
+      "url": "prod-lnd-us-la-1.mathstudyguides.com",
+      "region": "Los Angeles, USA",
+      "gm": 0
+    },
+    {
+      "id": "prod-lnd-br-sp-1",
+      "name": "Sao Paulo 1",
+      "url": "prod-lnd-br-sp-1.mathstudyguides.com",
+      "region": "Sao Paulo, Brazil",
+      "gm": 0
+    },
+    {
+      "id": "prod-ovh-de-ff-1",
+      "name": "Frankfurt 1",
+      "url": "prod-ovh-de-ff-1.mathstudyguides.com",
+      "region": "Frankfurt, Germany",
+      "gm": 0
+    },
+    {
+      "id": "prod-ovh-fr-pr-1",
+      "name": "Paris 1",
+      "url": "prod-ovh-fr-pr-1.mathstudyguides.com",
+      "region": "Paris, France",
+      "gm": 0
+    },
+    {
+      "id": "prod-lnd-sw-sh-1",
+      "name": "Stockholm 1",
+      "url": "prod-lnd-sw-sh-1.mathstudyguides.com",
+      "region": "Stockholm, Sweden",
+      "gm": 0
+    },
+    {
+      "id": "prod-lnd-sg-sg-1",
+      "name": "Singapore 1",
+      "url": "prod-lnd-sg-sg-1.mathstudyguides.com",
+      "region": "Singapore, Singapore",
+      "gm": 0
+    },
+    {
+      "id": "prod-lnd-au-sd-1",
+      "name": "Sydney 1",
+      "url": "prod-lnd-au-sd-1.mathstudyguides.com",
+      "region": "Sydney, Australia",
+      "gm": 0
+    }
+  ],
+  "local_server_hooks": [
+    {
+      "line": 289,
+      "call": "_0x4b0a86('LOCAL', 'localhost', reg)",
+      "function": "_0x5be1b9",
+      "function_called_at_lines": []
+    }
+  ]
+}

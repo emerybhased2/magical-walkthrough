@@ -15,6 +15,7 @@ prettified, de-obfuscated version that is verified to be equivalent to the origi
          {'name': 1}           -> {name: 1}
          0x128                 -> 296
          ![]  /  !![]          -> false / true
+         static['type'] / ['send']() -> static type / send()
   3. Beautify (jsbeautifier).
   4. Verify: the rebuilt file's syntax tree must equal the original's, allowing only
      the rewrites listed above; `node --check` is run as well when node is installed.
@@ -200,6 +201,27 @@ def static_member(node, data: bytes):
     return None, None
 
 
+# Names whose computed and plain forms mean different things:
+# `['constructor']()` is an ordinary method, `constructor()` is the class constructor;
+# `static prototype` and plain `constructor` fields are syntax errors; `['__proto__']: x`
+# defines a property while `__proto__: x` sets the prototype.
+COMPUTED_NAME_EXCLUSIONS = {"constructor", "prototype", "__proto__"}
+
+
+def static_computed_name(node, data: bytes) -> str | None:
+    """'name' for a class member / object key written as ['name'], when unquoting is safe."""
+    if node.type != "computed_property_name" or node.parent is None or \
+            node.parent.type not in ("method_definition", "field_definition", "pair"):
+        return None
+    inner = [child for child in node.named_children]
+    if len(inner) != 1 or inner[0].type != "string":
+        return None
+    name = decode_js_string(node_text(inner[0], data))
+    if IDENT_RE.match(name) and name not in COMPUTED_NAME_EXCLUSIONS:
+        return name
+    return None
+
+
 def is_directive_candidate(node) -> bool:
     parent = node.parent
     return parent is not None and parent.type == "expression_statement"
@@ -283,6 +305,12 @@ def deobfuscate(data: bytes, parser, ascii_only: bool = True) -> tuple[bytes, Co
                     stats["object_keys"] += 1
                     stack.extend(reversed([c for c in node.children if not same_node(c, key)]))
                     continue
+        if kind == "computed_property_name":
+            name = static_computed_name(node, data)
+            if name is not None:
+                edits.append((node.start_byte, node.end_byte, name))
+                stats["computed_member_names"] += 1
+                continue
         stack.extend(reversed(node.children))
     return apply_edits(data, edits), stats
 
@@ -370,10 +398,21 @@ def canonical_stream(tree, data: bytes):
                 stack.append((("prop", name), pos))
                 stack.append(node.child_by_field_name("object"))
                 continue
+        if kind == "computed_property_name":
+            name = static_computed_name(node, data)
+            if name is not None:
+                yield ("property_identifier", name), pos
+                continue
         if kind == "pair":
             key = node.child_by_field_name("key")
-            if key is not None and key.type in ("string", "property_identifier"):
-                name = decode_js_string(node_text(key, data)) if key.type == "string" else node_text(key, data)
+            computed = static_computed_name(key, data) if key is not None else None
+            if key is not None and (key.type in ("string", "property_identifier") or computed is not None):
+                if computed is not None:
+                    name = computed
+                elif key.type == "string":
+                    name = decode_js_string(node_text(key, data))
+                else:
+                    name = node_text(key, data)
                 yield ("pair",), pos
                 value = node.child_by_field_name("value")
                 if value is not None:
