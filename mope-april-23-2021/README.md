@@ -195,3 +195,10 @@ production connections are made. Details and the 34-check verification are in
 python localstack.py up          # then open http://local.mope.io:8080/
 python phase3_verify.py          # checks against the running stack
 ```
+
+## Phase 4 — accounts and configuration
+
+A local account server (`services/account_server.py`, SQLite) implements the client's archived account API. A
+"Login with a local account" page replaces social sign-in, and all settings live in a validated `.env`
+(`.env.example`, `python localstack.py check-config`). Sandbox and developer controls are reconstructed only where
+the client shows evidence. See [`phase4/README.md`](phase4/README.md); `python phase4_verify.py` runs the 8 checks.

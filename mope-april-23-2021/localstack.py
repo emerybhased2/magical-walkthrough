@@ -5,8 +5,8 @@ localstack.py -- start, stop and inspect the local mope.io stack (Phase 3, task 
 Services (from config/local_stack.json):
   master                 master server            http://127.0.0.1:8090 (internal)
   region-<id>            one per region (9)       ws://local.mope.io:7001..7009
+  account                account server           http://127.0.0.1:8091 (internal, via the gateway)
   web                    web gateway              http://local.mope.io:8080  <- open this
-  (account               Phase 4)
 
 Every service is its own process, so each can be started and stopped independently.
 Logs: logs/services/<service>.log (+ .out for raw stdout/stderr). PIDs: run/<service>.pid.
@@ -17,6 +17,8 @@ Usage:
   python localstack.py stop  [targets...]
   python localstack.py restart [targets...]
   python localstack.py status
+  python localstack.py check-config            # validate config/local_stack.json + .env, show every setting
+  python localstack.py init                    # create .env with documented defaults
 
 Before opening the client, map the public host to your machine once:
   127.0.0.1 local.mope.io      (hosts file: /etc/hosts or C:\\Windows\\System32\\drivers\\etc\\hosts)
@@ -51,6 +53,9 @@ class Service:
 def services(config: dict) -> list[Service]:
     out = [Service("master", "master_server.py", int(config["master"]["port"]), [],
                    f"{common.master_url(config)}/master/health")]
+    if config.get("account", {}).get("enabled"):
+        out.append(Service("account", "account_server.py", int(config["account"]["port"]), [],
+                           f"http://127.0.0.1:{int(config['account']['port'])}/auth/health"))
     for region in config["regions"]:
         if region.get("enabled", True):
             out.append(Service(f"region-{region['id']}", "region_server.py", int(region["port"]),
@@ -199,14 +204,40 @@ def status(config: dict) -> int:
 
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description="Manage the local mope.io stack.")
-    parser.add_argument("command", choices=["up", "start", "stop", "restart", "status"])
+    parser.add_argument("command", choices=["up", "start", "stop", "restart", "status", "check-config", "init",
+                                            "env-example"])
     parser.add_argument("targets", nargs="*", help="all (default), master, web, regions, or a region id")
     parser.add_argument("--config", default=str(common.DEFAULT_CONFIG))
     args = parser.parse_args(argv)
     if hasattr(signal, "SIGPIPE"):
         signal.signal(signal.SIGPIPE, signal.SIG_DFL)  # quiet exit when piped into head/less
     config_path = str(Path(args.config).resolve())
-    config = common.load_stack_config(config_path)
+    from services import settings as settings_mod
+    if args.command == "env-example":
+        print(settings_mod.example_file(), end="")
+        return 0
+    if args.command == "init":
+        env = PROJECT / ".env"
+        if env.exists():
+            print(f".env already exists: {env}")
+        else:
+            env.write_text(settings_mod.example_file(), encoding="utf-8")
+            env.chmod(0o600)
+            print(f"created {env} (all defaults; edit it, then run: python localstack.py check-config)")
+        return 0
+    try:
+        config = common.load_stack_config(config_path)
+    except common.ConfigError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 2
+    if args.command == "check-config":
+        print(f"config: {config_path}")
+        print(f".env:   {PROJECT / '.env'} ({'found' if (PROJECT / '.env').exists() else 'not found; defaults used'})\n")
+        for name, value, source in settings_mod.describe(config["settings"], config["settings_sources"]):
+            print(f"  {name:<32} {value:<40} {source}")
+        print(f"\nservices: {', '.join(s.name for s in services(config))}")
+        print("configuration OK")
+        return 0
     token = common.stack_token(config, create=True)
 
     if args.command == "status":

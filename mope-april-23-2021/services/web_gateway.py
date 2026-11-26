@@ -45,6 +45,10 @@ from services import common  # noqa: E402
 
 VERSION = "1.0.0"
 TURNSTILE_RE = re.compile(rb"https://challenges\.cloudflare\.com/turnstile/v0/api\.js")
+DISCORD_BUTTON_RE = re.compile(rb'(<button id="discordLoginBtn"[^>]*>.*?</button>)', re.S)
+LOCAL_LOGIN_BUTTON = (b'\n      <button id="localLoginBtn" class="discordLoginBtn" type="button" '
+                      b'style="background:#2d8b2d" onclick="location.href=\'/auth/local\'">'
+                      b'Login with a local account</button>')
 LOCAL_TURNSTILE = b"/__local/turnstile_local.js"
 MASTER_GET = {"/servers/get", "/master/regions", "/master/client-config", "/master/health"}
 ACCOUNT_EXACT = {"/shop/get", "/shop/purchases", "/shop/buy", "/shop/wardrobe/save", "/addCoins",
@@ -108,7 +112,10 @@ class Gateway:
         self.root = common.project_path(config, config["client_root"]).resolve()
         if not (self.root / "index.html").is_file():
             raise common.ConfigError(f"client_root has no index.html: {self.root}")
-        self.rewrites = {"client_config": True, "turnstile_shim": True, **config["web"].get("rewrites", {})}
+        self.rewrites = {"client_config": True, "turnstile_shim": True, "local_login_button": True,
+                         **config["web"].get("rewrites", {})}
+        self.updates_file = Path(config.get("settings", {}).get("WEB_UPDATES_FILE", "")) \
+            if config.get("settings", {}).get("WEB_UPDATES_FILE") else None
         self.shim = PROJECT / "shims" / "turnstile_local.js"
         self.client_js = ClientConfigRewriter(self.root / "client.js", log)
         self.master = common.master_url(config)
@@ -134,8 +141,12 @@ class Gateway:
         servers = [{"id": r["id"], "name": r["name"], "url": common.region_public_url(self.config, r),
                     "region": r["region"], "gm": int(r.get("gm", 0))}
                    for r in self.config["regions"] if r.get("enabled", True)]
+        settings = self.config.get("settings", {})
+        env = settings.get("CLIENT_ENV", "production")
         return {"gameServers": servers, "useDevAccountServer": True,
-                "devAccountServerUrl": common.web_origin(self.config)}, "config"
+                "devAccountServerUrl": common.web_origin(self.config), "env": env,
+                "isProduction": env == "production", "isTestingMode": bool(settings.get("CLIENT_TESTING_MODE")),
+                "isBetaMode": bool(settings.get("CLIENT_BETA_MODE"))}, "config"
 
     def static_path(self, path: str) -> Path | None:
         rel = unquote(path).lstrip("/") or "index.html"
@@ -204,6 +215,8 @@ def make_handler(gw: Gateway):
                 overlay, source = gw.overlay()
                 return self._json(200, {"rewrites": gw.rewrites, "client_root": str(gw.root),
                                         "config_overlay": overlay, "overlay_source": source}, head)
+            if path == "/updates.json" and gw.updates_file is not None and gw.updates_file.is_file():
+                return self._send(200, gw.updates_file.read_bytes(), "application/json", head=head)
             if path == "/__local/turnstile_local.js":
                 return self._send(200, gw.shim.read_bytes(), "application/javascript", head=head)
             if path in MASTER_GET:
@@ -235,10 +248,15 @@ def make_handler(gw: Gateway):
                 return self._send(200, body, "application/javascript",
                                   {"X-Local-Rewrite": f"$config overlay from {source}"}, head)
             data = file.read_bytes()
-            if name == "index.html" and file.parent == gw.root and gw.rewrites["turnstile_shim"]:
-                data, count = TURNSTILE_RE.subn(LOCAL_TURNSTILE, data)
-                return self._send(200, data, "text/html; charset=utf-8",
-                                  {"X-Local-Rewrite": f"turnstile loader -> local shim ({count})"}, head)
+            if name == "index.html" and file.parent == gw.root:
+                notes = []
+                if gw.rewrites["turnstile_shim"]:
+                    data, count = TURNSTILE_RE.subn(LOCAL_TURNSTILE, data)
+                    notes.append(f"turnstile loader -> local shim ({count})")
+                if gw.rewrites["local_login_button"] and gw.account is not None:
+                    data, count = DISCORD_BUTTON_RE.subn(lambda m: m.group(1) + LOCAL_LOGIN_BUTTON, data, count=1)
+                    notes.append(f"local login button ({count})")
+                return self._send(200, data, "text/html; charset=utf-8", {"X-Local-Rewrite": "; ".join(notes)}, head)
             ctype = mimetypes.guess_type(name)[0] or "application/octet-stream"
             if ctype.startswith("text/") or ctype in ("application/javascript", "application/json"):
                 ctype += "; charset=utf-8" if "charset" not in ctype else ""

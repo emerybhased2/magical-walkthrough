@@ -10,7 +10,8 @@
     "allowed_origins": [],
     "rewrites": {
       "client_config": true,
-      "turnstile_shim": true
+      "turnstile_shim": true,
+      "local_login_button": true
     }
   },
   "master": {
@@ -20,7 +21,7 @@
   },
   "account": {
     "port": 8091,
-    "enabled": false
+    "enabled": true
   },
   "game": {
     "version": 296,

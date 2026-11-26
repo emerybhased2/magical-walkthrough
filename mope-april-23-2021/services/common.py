@@ -56,9 +56,17 @@ def load_stack_config(path: str | Path | None = None) -> dict:
     root = path.parent.parent if path.parent.name == "config" else path.parent
     config["_path"] = str(path)
     config["_root"] = str(root)
-    errors = validate_stack_config(config)
+    from services import settings as settings_mod  # local import: settings has no stack dependencies
+    values, sources, setting_errors = settings_mod.load_settings(root)
+    config["settings"], config["settings_sources"] = values, sources
+    if values["SANDBOX_REGION_ENABLED"]:
+        # The client's own (unused) hook: addServer('LOCAL', 'localhost', 'SANDBOX').
+        config["regions"].append({"id": "localhost", "name": "LOCAL", "region": "SANDBOX", "gm": 0,
+                                  "port": values["SANDBOX_REGION_PORT"], "enabled": True,
+                                  "origin": "client-sandbox-hook"})
+    errors = setting_errors + validate_stack_config(config)
     if errors:
-        raise ConfigError("invalid stack config:\n  - " + "\n  - ".join(errors))
+        raise ConfigError("invalid configuration:\n  - " + "\n  - ".join(errors))
     return config
 
 

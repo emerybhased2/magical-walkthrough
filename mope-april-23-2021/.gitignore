@@ -10,3 +10,4 @@ __pycache__/
 # Additional fetched snapshots (data stays local)
 snapshots/
 run/
+data/

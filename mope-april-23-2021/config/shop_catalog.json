@@ -1,0 +1,27 @@
+{
+  "_comment": "Local shop catalogue served by /shop/get. The archived catalogue (item ids, prices) lived on mope.io's servers and is not recoverable, so this starts empty. Item fields below are the ones the 2025 client reads (phase4/README.md). currencyType: 0 = coins, 1 = gems (others cannot be bought locally).",
+  "_item_schema": {
+    "id": "string - unique item id (stored in purchases)",
+    "price": "integer",
+    "currencyType": "0 coins | 1 gems",
+    "saleType": "optional truthy -> salePrice is charged",
+    "salePrice": "integer (with saleType)",
+    "itemType": "client item type",
+    "data": {
+      "itemType": "int (2 = bundle)",
+      "shopCategory": "0 skins | 1 animals | 2 deals",
+      "skinId": "int",
+      "skinName": "string",
+      "aniTypes": "[int]",
+      "season": "int",
+      "tier": "int",
+      "theme": "string",
+      "promotions": "[...]",
+      "info": "string",
+      "canBuy": "bool",
+      "currencyType": "int"
+    }
+  },
+  "items": [],
+  "settings": []
+}

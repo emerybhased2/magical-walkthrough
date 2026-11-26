@@ -133,8 +133,13 @@ class Registry:
         """$config overlay: local game servers + account server on the gateway origin."""
         servers = [{"id": r["id"], "name": r["name"], "url": r["url"], "region": r["region"], "gm": r["gm"]}
                    for r in self.snapshot() if r["enabled"]]
+        settings = self.config.get("settings", {})
+        env = settings.get("CLIENT_ENV", "production")
         return {"gameServers": servers, "useDevAccountServer": True,
-                "devAccountServerUrl": common.web_origin(self.config)}
+                "devAccountServerUrl": common.web_origin(self.config),
+                "env": env, "isProduction": env == "production",
+                "isTestingMode": bool(settings.get("CLIENT_TESTING_MODE", False)),
+                "isBetaMode": bool(settings.get("CLIENT_BETA_MODE", False))}
 
 
 def make_handler(registry: Registry, token: str, log):
