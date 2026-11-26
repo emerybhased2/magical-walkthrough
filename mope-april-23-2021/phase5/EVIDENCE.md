@@ -1,6 +1,6 @@
 # Gameplay evidence ledger (Phase 5, task 29A)
 
-Generated 2026-11-26T15:40:53Z by `extract_gameplay_evidence.py` from `snapshots/2025-12-10/working/client-js/20251210042757_arquivo/client.js` (syntax tree only; no client code runs). The JSON with every read sequence is [`data/gameplay_evidence.json`](data/gameplay_evidence.json).
+Generated 2026-11-26T15:43:37Z by `extract_gameplay_evidence.py` from `snapshots/2025-12-10/working/client-js/20251210042757_arquivo/client.js` (syntax tree only; no client code runs). The JSON with every read sequence is [`data/gameplay_evidence.json`](data/gameplay_evidence.json).
 
 ## What the client fixes exactly
 
@@ -9,7 +9,7 @@ Generated 2026-11-26T15:40:53Z by `extract_gameplay_evidence.py` from `snapshots
 | Object classes registered (`setCustomClassForGameObjType`) | 225 classes, 88 object types | 3 object types implemented (2, 3, 131) |
 | Animal classes (object type 2 + animal type) | 114 | animal types 1, 2, 3 implemented |
 | Animal table (name, skin, colour) | 73 | names used by the client itself |
-| Ability table (name, image) | 63 | none implemented |
+| Ability definitions (name, image) | 155 definitions, **118 distinct names** | none implemented |
 | Packet field switches (e.g. world-update header) | 7 | header fields 1, 3, 11, 16 sent |
 | Client -> server messages | 28 | see phase6/COMPATIBILITY.md |
 
@@ -208,53 +208,56 @@ Fields read after the common object fields when an object becomes visible (the e
 | 164 |  | `_0x4461e5` | UInt16 |  |  |
 | 165 |  | `_0x1d6fee` | UInt8, UInt8, UInt8 | 17, 18 |  |
 
-## Abilities (client table)
+## Abilities
+
+155 definitions, 118 distinct names: 62 in the ability-type table, 91 in per-animal `getAbilityInfo` methods, 2 elsewhere (the helper that adds the universal Dash).
+
+### Ability-type table
 
 | Key | Name | Image |
 |---|---|---|
-| 1 | Hold to Dig | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
-| 2 | Shell | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
-| 3 | Shock | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
-| 4 | Ink | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
-| 7 | Disguise | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
-| 8 | Slide on ice | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
-| 9 | Charge | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
-| 10 | Inflate | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
-| 12 | Howl | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
-| 13 | Throw Snow | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
+| 1 | Hold to Dig | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
+| 2 | Shell | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '2.p |
+| 3 | Shock | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
+| 4 | Ink | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
+| 7 | Disguise | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
+| 8 | Slide on ice | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
+| 9 | Charge | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
+| 10 | Inflate | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
+| 12 | Howl | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
+| 13 | Throw Snow | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
 | 14 | Claw Slash | img/ability_claw.png |
-| 15 | Extra Boost | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
+| 15 | Extra Boost | <'skins/' + _0x513c78 + _0x4c6693.skinName + '.png'> |
 | 16 | Drop Snow | img/snowball.png |
 | 17 | Roll snow | img/snowball.png |
-| 18 | Loud Noise | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
+| 18 | Loud Noise | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
 | 19 | Fire | img/fire.png |
-| 21 | Bite Drag | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
-| 22 | Burrow Hole | <'skins/' + _0x513c78 + _0x212882.animalInfo().s...> |
-| 23 | Pull from Hole | <'skins/' + _0x513c78 + _0x212882.animalInfo().s...> |
-| 24 | Throw Banana | <'skins/' + +_0x513c78 + _0x373b4f(_0x53a9dd).sk...> |
-| 25 | Dig For Food | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
-| 28 | Cause Wave | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
+| 21 | Bite Drag | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
+| 22 | Burrow Hole | <'skins/' + _0x513c78 + _0x212882.animalInfo().skinName + '. |
+| 23 | Pull from Hole | <'skins/' + _0x513c78 + _0x212882.animalInfo().skinName + '. |
+| 24 | Throw Banana | <'skins/' + +_0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.p |
+| 25 | Dig For Food | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
+| 28 | Cause Wave | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
 | 30 | Fire | img/fire.png |
-| 31 | Trunk Hit | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
-| 32 | Tail Slap | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
-| 34 | Venom Spit | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
+| 31 | Trunk Hit | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
+| 32 | Tail Slap | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
+| 34 | Venom Spit | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
 | 35 | Spin Web | img/spiderWeb.png |
-| 36 | Suffocate prey | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
-| 37 | Jaws Bite | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
+| 36 | Suffocate prey | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
+| 37 | Jaws Bite | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
 | 38 | Ambush Attack | <'skins/' + _0x513c78 + _0x4c6693.skinName + '.png'> |
-| 42 | Stomp | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
-| 46 | Jaws Bite | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
-| 47 | Fly with prey |  |
-| 48 | Stink | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
-| 49 | Spikes | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
+| 42 | Stomp | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
+| 46 | Jaws Bite | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
+| 47 | Fly with prey | <'skins/desert/gobibear/' + _0x212882.animalSpecies + '/gobi |
+| 48 | Stink | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
+| 49 | Spikes | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '2.p |
 | 51 | Arm Smash | img/ability_crabSmashSkin.png |
 | 54 | Command Babies | <'skins/' + _0x513c78 + 'ostrich/ostrich-baby.png'> |
-| 55 | Fly with water | <'skins/pelican/' + _0x212882.animalSpecies + '/...> |
-| 57 | Sky dive | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
-| 58 | Target prey | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...> |
+| 55 | Fly with water | <'skins/pelican/' + _0x212882.animalSpecies + '/ability_peli |
+| 57 | Sky dive | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
+| 58 | Target prey | <'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.pn |
 | 61 | Fire Tornado | img/firetornado.png |
 | 63 | Giant Whirlpool | <'skins/' + _0x373b4f(_0x53a9dd).skinName + '.png'> |
-| 64 | HOLD to fly | <'skins/' + _0x513c78 + _0x4c6693.skinName + '.png'> |
 | 65 | HOLD to fly | <'skins/' + _0x513c78 + _0x4c6693.skinName + '.png'> |
 | 66 | Sink Hole | <'skins/' + _0x373b4f(_0x53a9dd).skinName + '.png'> |
 | 69 | Freeze Prey | skins/monsters/icemonster/icemonster.png |
@@ -262,26 +265,139 @@ Fields read after the common object fields when an object becomes visible (the e
 | 71 | HOLD to fly
 & Mimic Animals | <'skins/' + _0x513c78 + _0x4c6693.skinName + '.png'> |
 | 72 | HOLD in water
-(find food) | <'skins/ocean/flamingo/' + _0x212882.animalSpeci...> |
+(find food) | <'skins/ocean/flamingo/' + _0x212882.animalSpecies + '/flami |
 | 73 | Front Kick
 (HOLD to Charge) | skins/cassowary/cassowary1.png |
 | 75 | HOLD to Peck
-/ Fly | <'skins/' + _0x212882.animalInfo().skinName + '....> |
+/ Fly | <'skins/' + _0x212882.animalInfo().skinName + '.png'> |
 | 76 | HOLD to Hypnotize
-/ Fly from hills | <'skins/' + _0x212882.animalInfo().skinName + '....> |
+/ Fly from hills | <'skins/' + _0x212882.animalInfo().skinName + '.png'> |
 | 77 | HOLD to Jump High
  | skins/desert/gazelle/gazelle1.png |
-| 78 | HOLD to ROLL | <'skins/desert/armadillo/' + _0x212882.animalSpe...> |
-| 79 | Spits Food! | <'skins/desert/chipmunk/' + _0x212882.animalSpec...> |
-| 80 | HOLD to Dig | <'skins/desert/meerkat/' + _0x212882.animalSpeci...> |
-| 81 | Whine! | <'skins/desert/fennecfox/' + _0x212882.animalSpe...> |
-| 82 | Bear Attack | <'skins/desert/gobibear/' + _0x212882.animalSpec...> |
+| 78 | HOLD to ROLL | <'skins/desert/armadillo/' + _0x212882.animalSpecies + '/arm |
+| 79 | Spits Food! | <'skins/desert/chipmunk/' + _0x212882.animalSpecies + '/chip |
+| 80 | HOLD to Dig | <'skins/desert/meerkat/' + _0x212882.animalSpecies + '/meerk |
+| 81 | Whine! | <'skins/desert/fennecfox/' + _0x212882.animalSpecies + '/fen |
+| 82 | Bear Attack | <'skins/desert/gobibear/' + _0x212882.animalSpecies + '/gobi |
 | 83 | Spit! | skins/desert/camel/spit.png |
 | 101 | Dive | img/ability_dive.png |
-| 134 | HOLD to Fly | <'skins/' + _0x212882.animalInfo().skinName + '....> |
-| 135 | Charge! | <'skins/' + _0x212882.animalInfo().skinName + '....> |
+| 134 | HOLD to Fly | <'skins/' + _0x212882.animalInfo().skinName + '.png'> |
+| 135 | Charge! | <'skins/' + _0x212882.animalInfo().skinName + '.png'> |
 | 143 | Glide from
- Trees & Hills | <'skins/' + _0x212882.animalInfo().skinName + '....> |
+ Trees & Hills | <'skins/' + _0x212882.animalInfo().skinName + '.png'> |
+
+### Per-animal abilities
+
+| Animal types | Class | Name | Selected when | Line |
+|---|---|---|---|---|
+| 2 | `_0x1dd509` | Dig Hole! |  | 26616 |
+| 3 | `_0x136443` | Stink cloud |  | 20697 |
+| 4 | `_0x30dce1` | Pull from Hole |  | 26562 |
+| 5 | `_0x316478` | Dig Food! |  | 20767 |
+| 6 | `_0x380cee` | Hold to Dig |  | 25367 |
+| 7 | `_0x41f91e` | Side Kick! |  | 20936 |
+| 8 | `_0x5aee2a` | <'Loud ' + (this.animalSpecies == 2 ? 'Meow' : '...> |  | 20454 |
+| 10 | `_0x174e28` | Claw Slash! |  | 21047 |
+| 11 | `_0x5dd3c2` | Bite Grab! |  | 21106 |
+| 12 | `_0x301198` | Charge! |  | 20611 |
+| 13 | `_0x65dbc4` | Loud Grown! |  | 22221 |
+| 14 | `_0x4047ee` | Fire |  | 22125 |
+| 16 | `_0x48159f` | Extra Boost! |  | 26477 |
+| 17 | `_0x302a00` | Hide in Shell! |  | 23126 |
+| 18 | `_0x26544c` | INK! |  | 22879 |
+| 19 | `_0x52ef2e` | Jaws Bite |  | 22929 |
+| 20 | `_0xdb49da` | Shock! |  | 22729 |
+| 21 | `_0x5430c0` | Hide in Shell! |  | 22989 |
+| 22 | `_0x21c898` | Dash! |  | 26383 |
+| 23 | `_0x472004` | Touch prey to sting! |  | 22649 |
+| 24 | `_0x419e58` | Whirlpool |  | 22456 |
+| 25 | `_0x2753f0` | Puff! |  | 22809 |
+| 26 | `_0x207ca1` | Cause Wave |  | 22603 |
+| 27 | `_0xb7a117` | Charge! |  | 23055 |
+| 28 | `_0xaa8dc6` | Fruit Throw! |  | 22372 |
+| 29 | `_0x266c88` | Disguise |  | 10826 |
+| 30 | `_0x69be3f` | Howl! |  | 21652 |
+| 32 | `_0x3ce401` | <'Yeti Roar' + (this.animalSpecies == 3 ? ' &\n ...> |  | 21345 |
+| 34 | `_0x60638d` | Charge! |  | 21728 |
+| 35 | `_0x1194dd` | Slide on ice |  | 21528 |
+| 36 | `_0x333baa` | Claw Slash! |  | 26895 |
+| 37 | `_0x376ff9` | Slide on ice |  | 21565 |
+| 38 | `_0x20d0f5` | Extra Boost |  | 25476 |
+| 39 | `_0x533e81` | Slide on ice |  | 21612 |
+| 40 | `_0x237809` | Dig Food! |  | 21963 |
+| 42 | `_0x287ec2` | Roar! |  | 21688 |
+| 43 | `_0x180a62` | Roll snow |  | 21444 |
+| 44 | `_0xffe93c` | Back Kick! |  | 20815 |
+| 46 | `_0x284ccb` | Multi Fireballs |  | 11812 |
+| 47 | `_0x3514b6` | Claw Slash! |  | 21491 |
+| 48 | `_0xc71e73` | Trunk Hit |  | 22178 |
+| 49 | `_0x3fc30b` | Tail Slap |  | 22518 |
+| 50 | `_0x3fe2d6` | Venom Spit |  | 12348 |
+| 51 | `_0x2cc8ca` | Suffocate prey |  | 22311 |
+| 52 | `_0x329369` | Spin Web! |  | 22264 |
+| 53 | `_0x4e32da` | Jaws Bite |  | 22022 |
+| 55 | `_0xac636e` | Stomp! |  | 25599 |
+| 56 | `_0x1e7f32` | Fly with prey | (this.animalData[this.animalSpecies] == undefined) | 10921 |
+| 57 | `_0x376b8d` | Spikes! |  | 26657 |
+| 61 | `_0x5430e0` | Arm Smash |  | 22560 |
+| 63 | `_0x467c39` | Command Babies! |  | 11114 |
+| 65 | `_0x412ede` | Sky dive |  | 11184 |
+| 66 | `_0x105fc6` | Target Prey! |  | 11346 |
+| 68 | `_0x1adb70` | Fire Tornado! |  | 11969 |
+| 70 | `_0x49c246` | Giant Whirlpool |  | 17341 |
+| 71 | `_0x2221a7` | Giant
+Sinkhole! |  | 17396 |
+| 71 | `_0x2221a7` | Giant
+Sinkhole! |  | 17454 |
+| 72 | `_0x5a8a01` | Freeze Prey! |  | 17534 |
+| 73 | `_0x25305a` | Knock in Air |  | 17659 |
+| 78 | `_0x67de7d` | Front Kick
+(Hold to Charge) |  | 18008 |
+| 79 | `_0x297495` | Run! |  | 18073 |
+| 85 | `_0x44ee97` | HOLD to Jump High
+ |  | 18525 |
+| 88 | `_0x5544bd` | Spit! |  | 18881 |
+| 88 | `_0x5544bd` | Cannon Shots! |  | 18884 |
+| 88 | `_0x5544bd` | Water Balloons! |  | 18887 |
+| 89 | `_0x26f276` | Dig Food
+Sudden Charge |  | 19020 |
+| 90 | `_0x221ae6` | Laughs! |  | 19083 |
+| 91 | `_0x37f7b7` | Rattle! |  | 19210 |
+| 92 | `_0x2169f8` | Fly/ Pickup Bones |  | 19267 |
+| 93 | `_0x443c34` | Gores! |  | 19412 |
+| 94 | `_0x40c662` | Poison Bite
+(Sweat Prey) |  | 19509 |
+| 95 | `_0x1a77e6` | Sting!
+(Shivers Prey) |  | 19723 |
+| 96 | `_0x3ff509` | Dive Attack
+(Fly with Prey) |  | 20098 |
+| 98 | `_0x1ff28a` | Spin Web & Bite
+(Sweat Prey) |  | 19847 |
+| 100 | `_0x560c40` | Firestream
+& Tail slap |  | 21269 |
+| 101 | `_0x181349` | Freeze Prey! |  | 21750 |
+| 102 | `_0x18bba5` | Fly High! |  | 26057 |
+| 102 | `_0x18bba5` | Gives Gifts! |  | 26060 |
+| 102 | `_0x18bba5` | Flying Sleigh! |  | 26063 |
+| 103 | `_0x3a9446` | Howl! |  | 26108 |
+| 105 | `_0x228b5e` | Head Butt |  | 21885 |
+| 106 | `_0x2522aa` | Throw Spear
+ (Hold for fire!) |  | 23371 |
+| 107 | `_0x4da0aa` | AI |  | 24532 |
+| 108 | `_0x5aa9f8` | Loud Caw! |  | 25033 |
+| 109 | `_0x5d0a21` | Hop! |  | 25323 |
+| 111 | `_0x5017d0` | Stomp! |  | 25637 |
+| 112 | `_0x21614e` | Hold to Fly | (this.flag_eff_isOnTree // this.flag_flying && this.flag_usingAbility) | 25662 |
+| 112 | `_0x21614e` | Shoot Eggs! | this.flag_isClimbingHill; NOT (this.flag_eff_isOnTree // this.flag_flying && this.flag_usi | 25663 |
+| 112 | `_0x21614e` | Front Kick
+(Hold to Charge) | NOT this.flag_isClimbingHill; NOT (this.flag_eff_isOnTree // this.flag_flying && this.flag | 25663 |
+| (base class: by animal type) | `_0x3447b6` | Claw Slash! | (this.animalType == 36) | 10659 |
+| (base class: by animal type) | `_0x41a1bb` | Electro Swoop & Gale Charge |  | 28205 |
+
+### Elsewhere
+
+- L1042 Dash (_0x10db9e)
+- L1385 Ability ()
 
 ## Packet field switches
 

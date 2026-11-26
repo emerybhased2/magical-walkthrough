@@ -169,7 +169,7 @@ gameplay. "Exact" has a hard limit, and the plan is built around it:
 | Object classes registered with `setCustomClassForGameObjType` | **225**, over **88** object types |
 | Animal classes (object type 2 + animal type) | **114**; all 73 animals in the table have one |
 | Object types with their own fields on appear | 106 |
-| Ability table entries (name, image) | 63 |
+| Ability definitions (name, image) | **155 definitions, 118 distinct names**: 62 in the ability-type table, 91 in per-animal `getAbilityInfo` methods (82 animal types), 2 in the helper that adds the universal Dash |
 | Packet field parsers (dispatchers, header if/else chain, property readers) | 7 |
 
 For each registered class the ledger gives the **effective** readers the server must satisfy: the

@@ -245,6 +245,102 @@ class Evidence:
                 best = rows
         return sorted(best, key=lambda r: r["id"])
 
+    # -- every ability definition ---------------------------------------------------------------------------
+    def abilities_all(self, registry: list[dict]) -> list[dict]:
+        """Every place that defines an ability name: `x.abilName = '...'` and `{abilName: '...'}`, with its
+        context (switch key, owning class -> animal types, the conditions that select it) and its image."""
+        animals_of: dict[str, list[int]] = defaultdict(list)
+        for entry in registry:
+            if entry["object_type"] == gp.OTYPE_ANIMAL and entry["subtype"] is not None:
+                animals_of[entry["class"]].append(entry["subtype"])
+        out = []
+        for node in self.src.walk():
+            name_node = None
+            if node.type == "assignment_expression":
+                left = node.child_by_field_name("left")
+                if left is not None and left.type == "member_expression" and \
+                        self.src.text(left.child_by_field_name("property")) == "abilName":
+                    name_node = node.child_by_field_name("right")
+            elif node.type == "pair":
+                key = node.child_by_field_name("key")
+                if key is not None and (self.src.string_value(key) or self.src.text(key)) == "abilName":
+                    name_node = node.child_by_field_name("value")
+            if name_node is None:
+                continue
+            row = {"name": self.src.string_value(name_node) if name_node.type == "string" else
+                   f"<{self.src.short(name_node, 50)}>", "line": self.src.line(node)}
+            image = self._sibling_value(node, "abilImg")
+            if image:
+                row["image"] = image
+            context = self._context(node)
+            row.update(context)
+            owner = context.get("class")
+            if owner:
+                row["animal_types"] = sorted(animals_of.get(owner, []))
+            out.append(row)
+        return out
+
+    def _sibling_value(self, node, key: str) -> str | None:
+        scope = node.parent
+        for _ in range(3):
+            if scope is None:
+                break
+            for inner in self.src.walk(scope):
+                if inner.type == "assignment_expression":
+                    left = inner.child_by_field_name("left")
+                    if left is not None and left.type == "member_expression" and \
+                            self.src.text(left.child_by_field_name("property")) == key:
+                        right = inner.child_by_field_name("right")
+                        return self.src.string_value(right) if right.type == "string" else f"<{self.src.short(right, 70)}>"
+                elif inner.type == "pair":
+                    k = inner.child_by_field_name("key")
+                    if k is not None and (self.src.string_value(k) or self.src.text(k)) == key:
+                        v = inner.child_by_field_name("value")
+                        return self.src.string_value(v) if v.type == "string" else f"<{self.src.short(v, 70)}>"
+            scope = scope.parent
+        return None
+
+    def _context(self, node) -> dict:
+        context: dict = {"conditions": []}
+        child, parent = node, node.parent
+        while parent is not None:
+            if parent.type == "switch_case" and "case" not in context:
+                value = parent.child_by_field_name("value")
+                key = self.ex.resolve(value) if value is not None else None
+                context["case"] = key if key is not None else self.src.short(value, 40)
+                switch = parent.parent.parent if parent.parent is not None else None
+                if switch is not None and switch.type == "switch_statement":
+                    context["switch_on"] = self.src.short(switch.child_by_field_name("value"), 50)
+            elif parent.type in ("if_statement", "ternary_expression") and len(context["conditions"]) < 3:
+                cond = parent.child_by_field_name("condition")
+                body = parent.child_by_field_name("consequence")
+                negated = body is not None and not (body.start_byte <= child.start_byte < body.end_byte)
+                if cond is not None:
+                    context["conditions"].append(("NOT " if negated else "") + self._condition_text(cond))
+            elif parent.type == "assignment_expression" and "method" not in context:
+                left, right = parent.child_by_field_name("left"), parent.child_by_field_name("right")
+                if right is not None and right.type in FUNCTION_TYPES and left is not None and left.type == "member_expression":
+                    obj = left.child_by_field_name("object")
+                    if obj is not None and obj.type == "member_expression" and \
+                            self.src.text(obj.child_by_field_name("property")) == "prototype":
+                        owner = obj.child_by_field_name("object")
+                        context["class"] = self.resolve_alias(self.src.text(owner), parent.start_byte)
+                        context["method"] = self.src.text(left.child_by_field_name("property"))
+            elif parent.type == "function_declaration" and "method" not in context:
+                context["function"] = self.src.text(parent.child_by_field_name("name"))
+            child, parent = parent, parent.parent
+        if not context["conditions"]:
+            del context["conditions"]
+        return context
+
+    def _condition_text(self, cond) -> str:
+        text = self.src.short(cond, 90)
+        for ident in set(re.findall(r"_0x[0-9a-f]+", text)):
+            values = self.ex.consts.get(ident)
+            if values and len(values) == 1:
+                text = text.replace(ident, str(next(iter(values))))
+        return text
+
     def field_switches(self, minimum_cases: int = 8) -> list[dict]:
         """Switches whose cases read packet fields (e.g. world-update header fields)."""
         out = []
@@ -321,7 +417,7 @@ def build(client: Path) -> dict:
             continue
         classes[cls] = {"chain": ev.chain(cls), **{m: ev.reader_of(cls, m) for m in READERS}}
     animals = ev.switch_tables(("aniName", "skinName", "aniCol"), "aniName")
-    abilities = ev.switch_tables(("abilName", "abilImg"), "abilName")
+    abilities = ev.abilities_all(registry)
     switches = ev.field_switches() + field_chains(ev)
     inventory = json.loads((PROJECT / "phase2" / "data" / "protocol_inventory.json").read_text(encoding="utf-8")) \
         if (PROJECT / "phase2" / "data" / "protocol_inventory.json").is_file() else {}
@@ -356,6 +452,8 @@ def build(client: Path) -> dict:
         "counts": {
             "registered_classes": len(registry), "object_types": len({e["object_type"] for e in registry}),
             "animal_classes": len(animal_registry), "animal_table": len(animals), "abilities": len(abilities),
+            "ability_definitions": len(abilities),
+            "ability_names": len({a["name"] for a in abilities}),
             "field_switches": len(switches),
             "client_to_server_opcodes": sum(1 for o in inventory.get("opcodes", []) if o.get("client_to_server")),
         },
@@ -392,7 +490,8 @@ def markdown(data: dict) -> str:
         f"| Animal classes (object type 2 + animal type) | {c['animal_classes']} | animal types "
         f"{', '.join(map(str, local['animal_types']))} implemented |",
         f"| Animal table (name, skin, colour) | {c['animal_table']} | names used by the client itself |",
-        f"| Ability table (name, image) | {c['abilities']} | none implemented |",
+        f"| Ability definitions (name, image) | {c['abilities']} definitions, **{c['ability_names']} distinct names** "
+        f"| none implemented |",
         f"| Packet field switches (e.g. world-update header) | {c['field_switches']} | header fields 1, 3, 11, 16 sent |",
         f"| Client -> server messages | {c['client_to_server_opcodes']} | see phase6/COMPATIBILITY.md |",
         "",
@@ -417,9 +516,24 @@ def markdown(data: dict) -> str:
         props = ", ".join(map(str, o["update_properties"])) if o["update_properties"] else ""
         lines.append(f"| {o['object_type']} | {o['subtype'] if o['subtype'] is not None else ''} | `{o['class']}` | "
                      f"{fields[:120]} | {props} | {'yes' if o['implemented'] else ''} |")
-    lines += ["", "## Abilities (client table)", "", "| Key | Name | Image |", "|---|---|---|"]
-    for a in data["abilities"]:
-        lines.append(f"| {a['id']} | {a.get('abilName', '')} | {str(a.get('abilImg', ''))[:60]} |")
+    abilities = data["abilities"]
+    table = [a for a in abilities if "case" in a and not a.get("class")]
+    per_animal = [a for a in abilities if a.get("class")]
+    other = [a for a in abilities if a not in table and a not in per_animal]
+    lines += ["", "## Abilities", "",
+              f"{len(abilities)} definitions, {len({a['name'] for a in abilities})} distinct names: {len(table)} in the "
+              f"ability-type table, {len(per_animal)} in per-animal `getAbilityInfo` methods, {len(other)} elsewhere "
+              "(the helper that adds the universal Dash).", "",
+              "### Ability-type table", "", "| Key | Name | Image |", "|---|---|---|"]
+    for a in sorted(table, key=lambda x: (str(type(x["case"])), x["case"])):
+        lines.append(f"| {a['case']} | {a['name']} | {str(a.get('image', ''))[:60]} |")
+    lines += ["", "### Per-animal abilities", "", "| Animal types | Class | Name | Selected when | Line |", "|---|---|---|---|---|"]
+    for a in sorted(per_animal, key=lambda x: (x.get("animal_types") or [999], x["line"])):
+        types = ", ".join(map(str, a.get("animal_types") or [])) or "(base class: by animal type)"
+        when = "; ".join(a.get("conditions", []))[:90].replace("|", "/")
+        lines.append(f"| {types} | `{a['class']}` | {a['name']} | {when} | {a['line']} |")
+    lines += ["", "### Elsewhere", ""]
+    lines += [f"- L{a['line']} {a['name']} ({a.get('function') or a.get('method') or ''})" for a in other]
     lines += ["", "## Packet field switches", ""]
     for s in data["switches"]:
         ids = ", ".join(f"{k['id']}:{'+'.join(k['reads'])}" for k in s["cases"][:40])

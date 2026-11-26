@@ -1,12 +1,14 @@
 {
- "generated_at": "2026-11-26T15:40:53Z",
+ "generated_at": "2026-11-26T15:43:37Z",
  "client": "snapshots/2025-12-10/working/client-js/20251210042757_arquivo/client.js",
  "counts": {
   "registered_classes": 225,
   "object_types": 88,
   "animal_classes": 114,
   "animal_table": 73,
-  "abilities": 63,
+  "abilities": 155,
+  "ability_definitions": 155,
+  "ability_names": 118,
   "field_switches": 7,
   "client_to_server_opcodes": 28
  },
@@ -40428,381 +40430,1380 @@
  ],
  "abilities": [
   {
-   "id": 1,
-   "line": 1248,
-   "abilName": "Hold to Dig",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Dash",
+   "line": 1042,
+   "image": "assets/abilities/Dash-Boost.svg",
+   "function": "_0x10db9e"
   },
   {
-   "id": 2,
-   "line": 1193,
-   "abilName": "Shell",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Bear Attack",
+   "line": 1162,
+   "image": "<'skins/desert/gobibear/' + _0x212882.animalSpecies + '/gobibear_att...>",
+   "case": 82,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 3,
-   "line": 1245,
-   "abilName": "Shock",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "HOLD to Fly",
+   "line": 1166,
+   "image": "<'skins/' + _0x212882.animalInfo().skinName + '.png'>",
+   "case": 134,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 4,
-   "line": 1242,
-   "abilName": "Ink",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Glide from\n Trees & Hills",
+   "line": 1170,
+   "image": "<'skins/' + _0x212882.animalInfo().skinName + '.png'>",
+   "case": 143,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 7,
-   "line": 1207,
-   "abilName": "Disguise",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Charge!",
+   "line": 1174,
+   "image": "<'skins/' + _0x212882.animalInfo().skinName + '.png'>",
+   "case": 135,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 8,
-   "line": 1269,
-   "abilName": "Slide on ice",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Spit!",
+   "line": 1178,
+   "image": "skins/desert/camel/spit.png",
+   "case": 83,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 9,
-   "line": 1218,
-   "abilName": "Charge",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Tail Slap",
+   "line": 1182,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 32,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 10,
-   "line": 1272,
-   "abilName": "Inflate",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Trunk Hit",
+   "line": 1185,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 31,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 12,
-   "line": 1251,
-   "abilName": "Howl",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Dive",
+   "line": 1188,
+   "image": "img/ability_dive.png",
+   "case": 101,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 13,
-   "line": 1230,
-   "abilName": "Throw Snow",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Dig For Food",
+   "line": 1191,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 25,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 14,
-   "line": 1239,
-   "abilName": "Claw Slash",
-   "abilImg": "img/ability_claw.png"
+   "name": "Shell",
+   "line": 1194,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '2.png'>",
+   "case": 2,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 15,
-   "line": 1260,
-   "abilName": "Extra Boost",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Bite Drag",
+   "line": 1197,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 21,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 16,
-   "line": 1233,
-   "abilName": "Drop Snow",
-   "abilImg": "img/snowball.png"
+   "name": "Suffocate prey",
+   "line": 1200,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 36,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 17,
-   "line": 1221,
-   "abilName": "Roll snow",
-   "abilImg": "img/snowball.png"
+   "name": "Fly with water",
+   "line": 1203,
+   "image": "<'skins/pelican/' + _0x212882.animalSpecies + '/ability_pelican.png'>",
+   "case": 55,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 18,
-   "line": 1236,
-   "abilName": "Loud Noise",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Disguise",
+   "line": 1208,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 7,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 19,
-   "line": 1278,
-   "abilName": "Fire",
-   "abilImg": "img/fire.png"
+   "name": "Burrow Hole",
+   "line": 1211,
+   "image": "<'skins/' + _0x513c78 + _0x212882.animalInfo().skinName + '.png'>",
+   "case": 22,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 21,
-   "line": 1196,
-   "abilName": "Bite Drag",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Pull from Hole",
+   "line": 1215,
+   "image": "<'skins/' + _0x513c78 + _0x212882.animalInfo().skinName + '.png'>",
+   "case": 23,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 22,
-   "line": 1210,
-   "abilName": "Burrow Hole",
-   "abilImg": "<'skins/' + _0x513c78 + _0x212882.animalInfo().s...>"
+   "name": "Charge",
+   "line": 1219,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 9,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 23,
-   "line": 1214,
-   "abilName": "Pull from Hole",
-   "abilImg": "<'skins/' + _0x513c78 + _0x212882.animalInfo().s...>"
+   "name": "Roll snow",
+   "line": 1222,
+   "image": "img/snowball.png",
+   "case": 17,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 24,
-   "line": 1254,
-   "abilName": "Throw Banana",
-   "abilImg": "<'skins/' + +_0x513c78 + _0x373b4f(_0x53a9dd).sk...>"
+   "name": "Venom Spit",
+   "line": 1225,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 34,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 25,
-   "line": 1190,
-   "abilName": "Dig For Food",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Spin Web",
+   "line": 1228,
+   "image": "img/spiderWeb.png",
+   "case": 35,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 28,
-   "line": 1257,
-   "abilName": "Cause Wave",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Throw Snow",
+   "line": 1231,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 13,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 30,
-   "line": 1281,
-   "abilName": "Fire",
-   "abilImg": "img/fire.png"
+   "name": "Drop Snow",
+   "line": 1234,
+   "image": "img/snowball.png",
+   "case": 16,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 31,
-   "line": 1184,
-   "abilName": "Trunk Hit",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Loud Noise",
+   "line": 1237,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 18,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 32,
-   "line": 1181,
-   "abilName": "Tail Slap",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Claw Slash",
+   "line": 1240,
+   "image": "img/ability_claw.png",
+   "case": 14,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 34,
-   "line": 1224,
-   "abilName": "Venom Spit",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Ink",
+   "line": 1243,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 4,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 35,
-   "line": 1227,
-   "abilName": "Spin Web",
-   "abilImg": "img/spiderWeb.png"
+   "name": "Shock",
+   "line": 1246,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 3,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 36,
-   "line": 1199,
-   "abilName": "Suffocate prey",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Hold to Dig",
+   "line": 1249,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 1,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 37,
-   "line": 1287,
-   "abilName": "Jaws Bite",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Howl",
+   "line": 1252,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 12,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 38,
-   "line": 1302,
-   "abilName": "Ambush Attack",
-   "abilImg": "<'skins/' + _0x513c78 + _0x4c6693.skinName + '.png'>"
+   "name": "Throw Banana",
+   "line": 1255,
+   "image": "<'skins/' + +_0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 24,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 42,
-   "line": 1310,
-   "abilName": "Stomp",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Cause Wave",
+   "line": 1258,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 28,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 46,
-   "line": 1290,
-   "abilName": "Jaws Bite",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Extra Boost",
+   "line": 1261,
+   "image": "<'skins/' + _0x513c78 + _0x4c6693.skinName + '.png'>",
+   "case": 15,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 47,
-   "line": 1313,
-   "abilName": "Fly with prey"
+   "name": "Slide on ice",
+   "line": 1270,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 8,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 48,
-   "line": 1317,
-   "abilName": "Stink",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Inflate",
+   "line": 1273,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 10,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 49,
-   "line": 1275,
-   "abilName": "Spikes",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Spikes",
+   "line": 1276,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '2.png'>",
+   "case": 49,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 51,
-   "line": 1284,
-   "abilName": "Arm Smash",
-   "abilImg": "img/ability_crabSmashSkin.png"
+   "name": "Fire",
+   "line": 1279,
+   "image": "img/fire.png",
+   "case": 19,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 54,
-   "line": 1293,
-   "abilName": "Command Babies",
-   "abilImg": "<'skins/' + _0x513c78 + 'ostrich/ostrich-baby.png'>"
+   "name": "Fire",
+   "line": 1282,
+   "image": "img/fire.png",
+   "case": 30,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 55,
-   "line": 1202,
-   "abilName": "Fly with water",
-   "abilImg": "<'skins/pelican/' + _0x212882.animalSpecies + '/...>"
+   "name": "Arm Smash",
+   "line": 1285,
+   "image": "img/ability_crabSmashSkin.png",
+   "case": 51,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 57,
-   "line": 1299,
-   "abilName": "Sky dive",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Jaws Bite",
+   "line": 1288,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 37,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 58,
-   "line": 1296,
-   "abilName": "Target prey",
-   "abilImg": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).ski...>"
+   "name": "Jaws Bite",
+   "line": 1291,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 46,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 61,
-   "line": 1369,
-   "abilName": "Fire Tornado",
-   "abilImg": "img/firetornado.png"
+   "name": "Command Babies",
+   "line": 1294,
+   "image": "<'skins/' + _0x513c78 + 'ostrich/ostrich-baby.png'>",
+   "case": 54,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 63,
-   "line": 1375,
-   "abilName": "Giant Whirlpool",
-   "abilImg": "<'skins/' + _0x373b4f(_0x53a9dd).skinName + '.png'>"
+   "name": "Target prey",
+   "line": 1297,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 58,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 64,
-   "line": 1321,
-   "abilName": "HOLD to fly",
-   "abilImg": "<'skins/' + _0x513c78 + _0x4c6693.skinName + '.png'>"
+   "name": "Sky dive",
+   "line": 1300,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 57,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 65,
-   "line": 1321,
-   "abilName": "HOLD to fly",
-   "abilImg": "<'skins/' + _0x513c78 + _0x4c6693.skinName + '.png'>"
+   "name": "Ambush Attack",
+   "line": 1303,
+   "image": "<'skins/' + _0x513c78 + _0x4c6693.skinName + '.png'>",
+   "case": 38,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 66,
-   "line": 1372,
-   "abilName": "Sink Hole",
-   "abilImg": "<'skins/' + _0x373b4f(_0x53a9dd).skinName + '.png'>"
+   "name": "Stomp",
+   "line": 1311,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 42,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 69,
-   "line": 1381,
-   "abilName": "Freeze Prey",
-   "abilImg": "skins/monsters/icemonster/icemonster.png"
+   "name": "Fly with prey",
+   "line": 1314,
+   "image": "<'skins/desert/gobibear/' + _0x212882.animalSpecies + '/gobibear_att...>",
+   "case": 47,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 70,
-   "line": 1378,
-   "abilName": "Knock In Air",
-   "abilImg": "skins/monsters/dinomonster/dinomonster.png"
+   "name": "Stink",
+   "line": 1318,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 48,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 71,
-   "line": 1328,
-   "abilName": "HOLD to fly\n& Mimic Animals",
-   "abilImg": "<'skins/' + _0x513c78 + _0x4c6693.skinName + '.png'>"
+   "name": "HOLD to fly",
+   "line": 1322,
+   "image": "<'skins/' + _0x513c78 + _0x4c6693.skinName + '.png'>",
+   "case": 65,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 72,
-   "line": 1335,
-   "abilName": "HOLD in water\n(find food)",
-   "abilImg": "<'skins/ocean/flamingo/' + _0x212882.animalSpeci...>"
+   "name": "HOLD to fly\n& Mimic Animals",
+   "line": 1329,
+   "image": "<'skins/' + _0x513c78 + _0x4c6693.skinName + '.png'>",
+   "case": 71,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 73,
-   "line": 1366,
-   "abilName": "Front Kick\n(HOLD to Charge)",
-   "abilImg": "skins/cassowary/cassowary1.png"
+   "name": "HOLD in water\n(find food)",
+   "line": 1336,
+   "image": "<'skins/ocean/flamingo/' + _0x212882.animalSpecies + '/flamingo.png'>",
+   "case": 72,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 75,
-   "line": 1339,
-   "abilName": "HOLD to Peck\n/ Fly",
-   "abilImg": "<'skins/' + _0x212882.animalInfo().skinName + '....>"
+   "name": "HOLD to Peck\n/ Fly",
+   "line": 1340,
+   "image": "<'skins/' + _0x212882.animalInfo().skinName + '.png'>",
+   "case": 75,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 76,
-   "line": 1343,
-   "abilName": "HOLD to Hypnotize\n/ Fly from hills",
-   "abilImg": "<'skins/' + _0x212882.animalInfo().skinName + '....>"
+   "name": "HOLD to Hypnotize\n/ Fly from hills",
+   "line": 1344,
+   "image": "<'skins/' + _0x212882.animalInfo().skinName + '.png'>",
+   "case": 76,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 77,
-   "line": 1347,
-   "abilName": "HOLD to Jump High\n",
-   "abilImg": "skins/desert/gazelle/gazelle1.png"
+   "name": "HOLD to Jump High\n",
+   "line": 1348,
+   "image": "skins/desert/gazelle/gazelle1.png",
+   "case": 77,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 78,
-   "line": 1350,
-   "abilName": "HOLD to ROLL",
-   "abilImg": "<'skins/desert/armadillo/' + _0x212882.animalSpe...>"
+   "name": "HOLD to ROLL",
+   "line": 1351,
+   "image": "<'skins/desert/armadillo/' + _0x212882.animalSpecies + '/armadillo1....>",
+   "case": 78,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 79,
-   "line": 1358,
-   "abilName": "Spits Food!",
-   "abilImg": "<'skins/desert/chipmunk/' + _0x212882.animalSpec...>"
+   "name": "HOLD to Dig",
+   "line": 1355,
+   "image": "<'skins/desert/meerkat/' + _0x212882.animalSpecies + '/meerkat1.png'>",
+   "case": 80,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 80,
-   "line": 1354,
-   "abilName": "HOLD to Dig",
-   "abilImg": "<'skins/desert/meerkat/' + _0x212882.animalSpeci...>"
+   "name": "Spits Food!",
+   "line": 1359,
+   "image": "<'skins/desert/chipmunk/' + _0x212882.animalSpecies + '/chipmunk1.png'>",
+   "case": 79,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 81,
-   "line": 1362,
-   "abilName": "Whine!",
-   "abilImg": "<'skins/desert/fennecfox/' + _0x212882.animalSpe...>"
+   "name": "Whine!",
+   "line": 1363,
+   "image": "<'skins/desert/fennecfox/' + _0x212882.animalSpecies + '/fennecfox1....>",
+   "case": 81,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 82,
-   "line": 1161,
-   "abilName": "Bear Attack",
-   "abilImg": "<'skins/desert/gobibear/' + _0x212882.animalSpec...>"
+   "name": "Front Kick\n(HOLD to Charge)",
+   "line": 1367,
+   "image": "skins/cassowary/cassowary1.png",
+   "case": 73,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 83,
-   "line": 1177,
-   "abilName": "Spit!",
-   "abilImg": "skins/desert/camel/spit.png"
+   "name": "Fire Tornado",
+   "line": 1370,
+   "image": "img/firetornado.png",
+   "case": 61,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 101,
-   "line": 1187,
-   "abilName": "Dive",
-   "abilImg": "img/ability_dive.png"
+   "name": "Sink Hole",
+   "line": 1373,
+   "image": "<'skins/' + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 66,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 134,
-   "line": 1165,
-   "abilName": "HOLD to Fly",
-   "abilImg": "<'skins/' + _0x212882.animalInfo().skinName + '....>"
+   "name": "Giant Whirlpool",
+   "line": 1376,
+   "image": "<'skins/' + _0x373b4f(_0x53a9dd).skinName + '.png'>",
+   "case": 63,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 135,
-   "line": 1173,
-   "abilName": "Charge!",
-   "abilImg": "<'skins/' + _0x212882.animalInfo().skinName + '....>"
+   "name": "Knock In Air",
+   "line": 1379,
+   "image": "skins/monsters/dinomonster/dinomonster.png",
+   "case": 70,
+   "switch_on": "(_0x4d1551)"
   },
   {
-   "id": 143,
-   "line": 1169,
-   "abilName": "Glide from\n Trees & Hills",
-   "abilImg": "<'skins/' + _0x212882.animalInfo().skinName + '....>"
+   "name": "Freeze Prey",
+   "line": 1382,
+   "image": "skins/monsters/icemonster/icemonster.png",
+   "case": 69,
+   "switch_on": "(_0x4d1551)"
+  },
+  {
+   "name": "Ability",
+   "line": 1385,
+   "image": "<'skins/' + _0x513c78 + _0x373b4f(_0x53a9dd).skinName + '.png'>"
+  },
+  {
+   "name": "Claw Slash!",
+   "line": 10659,
+   "image": "<'skins/arctic/bear/' + this.animalSpecies + '/clawslash.png'>",
+   "conditions": [
+    "(this.animalType == 36)"
+   ],
+   "class": "_0x3447b6",
+   "method": "getAbilityInfo",
+   "animal_types": []
+  },
+  {
+   "name": "Disguise",
+   "line": 10826,
+   "image": "<'skins/' + this.getSpeciesPath() + '/ability.png'>",
+   "class": "_0x266c88",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    29
+   ]
+  },
+  {
+   "name": "Fly with prey",
+   "line": 10921,
+   "image": "<'skins/land/eagle/' + this.animalSpecies + '/eagle.png'>",
+   "conditions": [
+    "(this.animalData[this.animalSpecies] == undefined)"
+   ],
+   "class": "_0x1e7f32",
+   "method": "animalInfo",
+   "animal_types": [
+    56
+   ]
+  },
+  {
+   "name": "Command Babies!",
+   "line": 11114,
+   "image": "<'skins/land/ostrich/' + this.animalSpecies + '/ostrich-baby.png'>",
+   "class": "_0x467c39",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    63
+   ]
+  },
+  {
+   "name": "Sky dive",
+   "line": 11184,
+   "image": "<'skins/land/falcon/' + this.animalSpecies + '/falcon_ability.png'>",
+   "class": "_0x412ede",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    65
+   ]
+  },
+  {
+   "name": "Target Prey!",
+   "line": 11346,
+   "image": "<'skins/' + this.getSpeciesPath() + '/snowyowl.png'>",
+   "class": "_0x105fc6",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    66
+   ]
+  },
+  {
+   "name": "Multi Fireballs",
+   "line": 11812,
+   "image": "<'img/fire/' + _0x5b9af2 + '/0.png'>",
+   "class": "_0x284ccb",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    46
+   ]
+  },
+  {
+   "name": "Fire Tornado!",
+   "line": 11969,
+   "image": "<'skins/volcano/phoenix/' + _0x15b9a9 + '/firetornado.png'>",
+   "class": "_0x1adb70",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    68
+   ]
+  },
+  {
+   "name": "Venom Spit",
+   "line": 12348,
+   "image": "<'skins/land/cobra/' + this.animalSpecies + '/cobra2.png'>",
+   "class": "_0x3fe2d6",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    50
+   ]
+  },
+  {
+   "name": "Giant Whirlpool",
+   "line": 17341,
+   "image": "<'skins/ocean/seamonster/' + this.animalSpecies + '/seamonster.png'>",
+   "class": "_0x49c246",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    70
+   ]
+  },
+  {
+   "name": "Giant\nSinkhole!",
+   "line": 17396,
+   "image": "<'skins/volcano/landmonster/' + this.animalSpecies + '/landmonster.png'>",
+   "class": "_0x2221a7",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    71
+   ]
+  },
+  {
+   "name": "Giant\nSinkhole!",
+   "line": 17454,
+   "image": "<'skins/volcano/landmonster/' + this.animalSpecies + '/' + this.anim...>",
+   "class": "_0x2221a7",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    71
+   ]
+  },
+  {
+   "name": "Freeze Prey!",
+   "line": 17534,
+   "image": "<'skins/arctic/icemonster/' + this.animalSpecies + '/ability.png'>",
+   "class": "_0x5a8a01",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    72
+   ]
+  },
+  {
+   "name": "Knock in Air",
+   "line": 17659,
+   "image": "<'skins/land/dinomonster/' + this.animalSpecies + '/dinomonster.png'>",
+   "class": "_0x25305a",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    73
+   ]
+  },
+  {
+   "name": "Front Kick\n(Hold to Charge)",
+   "line": 18008,
+   "image": "<'skins/land/cassowary/' + this.animalSpecies + this.getSubSpecies()...>",
+   "class": "_0x67de7d",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    78
+   ]
+  },
+  {
+   "name": "Run!",
+   "line": 18073,
+   "image": "<'skins/land/chicken/' + this.animalSpecies + '/ability.png'>",
+   "class": "_0x297495",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    79
+   ]
+  },
+  {
+   "name": "HOLD to Jump High\n",
+   "line": 18525,
+   "image": "<'skins/' + this.getSkinPath() + '/gazelle1.png'>",
+   "class": "_0x44ee97",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    85
+   ]
+  },
+  {
+   "name": "Spit!",
+   "line": 18881,
+   "case": 0,
+   "switch_on": "(this.animalSpecies)",
+   "class": "_0x5544bd",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    88
+   ]
+  },
+  {
+   "name": "Cannon Shots!",
+   "line": 18884,
+   "case": 100,
+   "switch_on": "(this.animalSpecies)",
+   "class": "_0x5544bd",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    88
+   ]
+  },
+  {
+   "name": "Water Balloons!",
+   "line": 18887,
+   "case": 201,
+   "switch_on": "(this.animalSpecies)",
+   "class": "_0x5544bd",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    88
+   ]
+  },
+  {
+   "name": "Dig Food\nSudden Charge",
+   "line": 19020,
+   "image": "<'skins/' + this.getSkinPath() + '/warthog.png'>",
+   "class": "_0x26f276",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    89
+   ]
+  },
+  {
+   "name": "Laughs!",
+   "line": 19083,
+   "image": "<'skins/' + this.getSkinPath() + '/hyena2.png'>",
+   "class": "_0x221ae6",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    90
+   ]
+  },
+  {
+   "name": "Rattle!",
+   "line": 19210,
+   "image": "<'skins/' + this.getSkinPath() + '/rattlesnake.png'>",
+   "class": "_0x37f7b7",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    91
+   ]
+  },
+  {
+   "name": "Fly/ Pickup Bones",
+   "line": 19267,
+   "image": "<'skins/' + this.getSkinPath() + '/vulture.png'>",
+   "class": "_0x2169f8",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    92
+   ]
+  },
+  {
+   "name": "Gores!",
+   "line": 19412,
+   "image": "<'skins/desert/bison/' + this.animalSpecies + this.getSubSpecies() +...>",
+   "class": "_0x443c34",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    93
+   ]
+  },
+  {
+   "name": "Poison Bite\n(Sweat Prey)",
+   "line": 19509,
+   "image": "<'skins/' + this.getSkinPath() + '/komododragon_ability.png'>",
+   "class": "_0x40c662",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    94
+   ]
+  },
+  {
+   "name": "Sting!\n(Shivers Prey)",
+   "line": 19723,
+   "image": "<'skins/desert/scorpion/' + this.animalSpecies + '/scorpion_ability....>",
+   "class": "_0x1a77e6",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    95
+   ]
+  },
+  {
+   "name": "Spin Web & Bite\n(Sweat Prey)",
+   "line": 19847,
+   "image": "<'skins/desert/blackwidow/' + this.animalSpecies + '/' + this.animal...>",
+   "class": "_0x1ff28a",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    98
+   ]
+  },
+  {
+   "name": "Dive Attack\n(Fly with Prey)",
+   "line": 20098,
+   "image": "<'skins/' + this.skinFolder() + '/pterodactyl/' + this.animalSpecies...>",
+   "class": "_0x3ff509",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    96
+   ]
+  },
+  {
+   "name": "<'Loud ' + (this.animalSpecies == 2 ? 'Meow' : '...>",
+   "line": 20454,
+   "image": "<'skins/' + this.getSpeciesPath() + '/lion_roar.png'>",
+   "class": "_0x5aee2a",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    8
+   ]
+  },
+  {
+   "name": "Charge!",
+   "line": 20611,
+   "image": "<'skins/' + this.getSpeciesPath() + '/rhino_charge.png'>",
+   "class": "_0x301198",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    12
+   ]
+  },
+  {
+   "name": "Stink cloud",
+   "line": 20697,
+   "image": "<'skins/' + this.getSpeciesPath() + '/pig.png'>",
+   "class": "_0x136443",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    3
+   ]
+  },
+  {
+   "name": "Dig Food!",
+   "line": 20767,
+   "image": "<'skins/' + this.getSpeciesPath() + '/deer.png'>",
+   "class": "_0x316478",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    5
+   ]
+  },
+  {
+   "name": "Back Kick!",
+   "line": 20815,
+   "image": "<'skins/' + this.getSpeciesPath() + '/donkey.png'>",
+   "class": "_0xffe93c",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    44
+   ]
+  },
+  {
+   "name": "Side Kick!",
+   "line": 20936,
+   "image": "<'skins/' + this.getSpeciesPath() + '/ability.png'>",
+   "class": "_0x41f91e",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    7
+   ]
+  },
+  {
+   "name": "Claw Slash!",
+   "line": 21047,
+   "image": "<'skins/' + this.getSpeciesPath() + '/slash.png'>",
+   "class": "_0x174e28",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    10
+   ]
+  },
+  {
+   "name": "Bite Grab!",
+   "line": 21106,
+   "image": "<'skins/' + this.getSpeciesPath() + '/croc.png'>",
+   "class": "_0x5dd3c2",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    11
+   ]
+  },
+  {
+   "name": "Firestream\n& Tail slap",
+   "line": 21269,
+   "image": "<'img/fire/' + _0x2a052e + '/0.png'>",
+   "class": "_0x560c40",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    100
+   ]
+  },
+  {
+   "name": "<'Yeti Roar' + (this.animalSpecies == 3 ? ' &\\n ...>",
+   "line": 21345,
+   "image": "<'skins/arctic/yeti/' + this.animalSpecies + this.getSubSpecies() + ...>",
+   "class": "_0x3ce401",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    32
+   ]
+  },
+  {
+   "name": "Roll snow",
+   "line": 21444,
+   "image": "img/snowball.png",
+   "class": "_0x180a62",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    43
+   ]
+  },
+  {
+   "name": "Claw Slash!",
+   "line": 21491,
+   "image": "<'skins/arctic/sabertooth/' + this.animalSpecies + this.getSubSpecie...>",
+   "class": "_0x3514b6",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    47
+   ]
+  },
+  {
+   "name": "Slide on ice",
+   "line": 21528,
+   "image": "<'skins/arctic/penguin/' + this.animalSpecies + this.getSubSpecies()...>",
+   "class": "_0x1194dd",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    35
+   ]
+  },
+  {
+   "name": "Slide on ice",
+   "line": 21565,
+   "image": "<'skins/arctic/seal/' + this.animalSpecies + this.getSubSpecies() + ...>",
+   "class": "_0x376ff9",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    37
+   ]
+  },
+  {
+   "name": "Slide on ice",
+   "line": 21612,
+   "image": "<'skins/arctic/walrus/' + this.animalSpecies + this.getSubSpecies() ...>",
+   "class": "_0x533e81",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    39
+   ]
+  },
+  {
+   "name": "Howl!",
+   "line": 21652,
+   "image": "<'skins/arctic/wolf/' + this.animalSpecies + this.getSubSpecies() + ...>",
+   "class": "_0x69be3f",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    30
+   ]
+  },
+  {
+   "name": "Roar!",
+   "line": 21688,
+   "image": "<'skins/arctic/wolverine/' + this.animalSpecies + this.getSubSpecies...>",
+   "class": "_0x287ec2",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    42
+   ]
+  },
+  {
+   "name": "Charge!",
+   "line": 21728,
+   "image": "<'skins/arctic/muskox/' + this.animalSpecies + '/muskox2.png'>",
+   "class": "_0x60638d",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    34
+   ]
+  },
+  {
+   "name": "Freeze Prey!",
+   "line": 21750,
+   "image": "<'skins/arctic/snowman/' + this.animalSpecies + '/ability.png'>",
+   "class": "_0x181349",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    101
+   ]
+  },
+  {
+   "name": "Head Butt",
+   "line": 21885,
+   "image": "<'skins/' + this.getSpeciesPath('markhor') + '/ability.png'>",
+   "class": "_0x228b5e",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    105
+   ]
+  },
+  {
+   "name": "Dig Food!",
+   "line": 21963,
+   "image": "<'skins/arctic/reindeer/' + this.animalSpecies + this.getSubSpecies(...>",
+   "class": "_0x237809",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    40
+   ]
+  },
+  {
+   "name": "Jaws Bite",
+   "line": 22022,
+   "image": "<'skins/' + this.getSkinName() + '.png'>",
+   "class": "_0x4e32da",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    53
+   ]
+  },
+  {
+   "name": "Fire",
+   "line": 22125,
+   "image": "<this.getSkinName() + '.png'>",
+   "class": "_0x4047ee",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    14
+   ]
+  },
+  {
+   "name": "Trunk Hit",
+   "line": 22178,
+   "image": "<'skins/' + this.getSpeciesPath() + '/elephant.png'>",
+   "class": "_0xc71e73",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    48
+   ]
+  },
+  {
+   "name": "Loud Grown!",
+   "line": 22221,
+   "image": "<'skins/' + this.getSpeciesPath() + '/hippo1.png'>",
+   "class": "_0x65dbc4",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    13
+   ]
+  },
+  {
+   "name": "Spin Web!",
+   "line": 22264,
+   "image": "img/web/0/spiderWeb.png",
+   "class": "_0x329369",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    52
+   ]
+  },
+  {
+   "name": "Suffocate prey",
+   "line": 22311,
+   "image": "<'skins/' + this.getSpeciesPath() + '/constrict.png'>",
+   "class": "_0x2cc8ca",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    51
+   ]
+  },
+  {
+   "name": "Fruit Throw!",
+   "line": 22372,
+   "image": "<'skins/' + this.getSpeciesPath() + '/gorilla.png'>",
+   "class": "_0xaa8dc6",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    28
+   ]
+  },
+  {
+   "name": "Whirlpool",
+   "line": 22456,
+   "image": "<'skins/' + this.getSpeciesPath('kraken') + '/kraken.png'>",
+   "class": "_0x419e58",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    24
+   ]
+  },
+  {
+   "name": "Tail Slap",
+   "line": 22518,
+   "image": "<'skins/' + this.getSpeciesPath() + '/ability_whaleTailHit.png'>",
+   "class": "_0x3fc30b",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    49
+   ]
+  },
+  {
+   "name": "Arm Smash",
+   "line": 22560,
+   "image": "<'skins/ocean/kingcrab/' + this.animalSpecies + '/ability_crabSmashS...>",
+   "class": "_0x5430e0",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    61
+   ]
+  },
+  {
+   "name": "Cause Wave",
+   "line": 22603,
+   "image": "<'skins/' + this.getSpeciesPath() + '/killerwhale.png'>",
+   "class": "_0x207ca1",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    26
+   ]
+  },
+  {
+   "name": "Touch prey to sting!",
+   "line": 22649,
+   "image": "<'skins/' + this.getSpeciesPath() + '/jellyfish.png'>",
+   "class": "_0x472004",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    23
+   ]
+  },
+  {
+   "name": "Shock!",
+   "line": 22729,
+   "image": "<'skins/' + this.getSpeciesPath() + '/ability.png'>",
+   "class": "_0xdb49da",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    20
+   ]
+  },
+  {
+   "name": "Puff!",
+   "line": 22809,
+   "image": "<'skins/' + this.getSpeciesPath() + '/pufferfish2.png'>",
+   "class": "_0x2753f0",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    25
+   ]
+  },
+  {
+   "name": "INK!",
+   "line": 22879,
+   "image": "<'skins/' + this.getSpeciesPath() + '/ability.png'>",
+   "class": "_0x26544c",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    18
+   ]
+  },
+  {
+   "name": "Jaws Bite",
+   "line": 22929,
+   "image": "<'skins/' + this.getSpeciesPath() + '/ability.png'>",
+   "class": "_0x52ef2e",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    19
+   ]
+  },
+  {
+   "name": "Hide in Shell!",
+   "line": 22989,
+   "image": "<'skins/' + this.getSpeciesPath() + '/turtle2.png'>",
+   "class": "_0x5430c0",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    21
+   ]
+  },
+  {
+   "name": "Charge!",
+   "line": 23055,
+   "image": "<'skins/' + this.getSpeciesPath() + '/ability.png'>",
+   "class": "_0xb7a117",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    27
+   ]
+  },
+  {
+   "name": "Hide in Shell!",
+   "line": 23126,
+   "image": "<'skins/' + this.getSpeciesPath() + '/crab2.png'>",
+   "class": "_0x302a00",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    17
+   ]
+  },
+  {
+   "name": "Throw Spear\n (Hold for fire!)",
+   "line": 23371,
+   "image": "<'skins/land/bigfoot/' + this.animalSpecies + '/ability.png'>",
+   "class": "_0x2522aa",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    106
+   ]
+  },
+  {
+   "name": "AI",
+   "line": 24532,
+   "image": "<'skins/' + _0x553a8b.skinName + '.png'>",
+   "class": "_0x4da0aa",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    107
+   ]
+  },
+  {
+   "name": "Loud Caw!",
+   "line": 25033,
+   "image": "<'skins/' + this.getSpeciesPath() + this.getSubSpecies() + '/ability...>",
+   "class": "_0x5aa9f8",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    108
+   ]
+  },
+  {
+   "name": "Hop!",
+   "line": 25323,
+   "image": "<'skins/' + this.getSpeciesPath() + this.getSubSpecies() + '/kakapo....>",
+   "class": "_0x5d0a21",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    109
+   ]
+  },
+  {
+   "name": "Hold to Dig",
+   "line": 25367,
+   "image": "<'skins/' + this.getSkinName() + '.png'>",
+   "class": "_0x380cee",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    6
+   ]
+  },
+  {
+   "name": "Extra Boost",
+   "line": 25476,
+   "image": "<'arctic/snowleopard/' + this.animalSpecies + this.getSubSpecies() +...>",
+   "class": "_0x20d0f5",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    38
+   ]
+  },
+  {
+   "name": "Stomp!",
+   "line": 25599,
+   "image": "<'skins/' + this.getSpeciesPath() + '/giraffe.png'>",
+   "class": "_0xac636e",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    55
+   ]
+  },
+  {
+   "name": "Stomp!",
+   "line": 25637,
+   "image": "<'skins/' + this.getSpeciesPath() + '/giraffe.png'>",
+   "class": "_0x5017d0",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    111
+   ]
+  },
+  {
+   "name": "Hold to Fly",
+   "line": 25662,
+   "image": "<'skins/forest/turkey/' + this.animalSpecies + '/ability_fly.png'>",
+   "conditions": [
+    "(this.flag_eff_isOnTree || this.flag_flying && this.flag_usingAbility)"
+   ],
+   "class": "_0x21614e",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    112
+   ]
+  },
+  {
+   "name": "Shoot Eggs!",
+   "line": 25663,
+   "image": "<'skins/forest/turkey/' + this.animalSpecies + '/turkeyegg.png'>",
+   "conditions": [
+    "this.flag_isClimbingHill",
+    "NOT (this.flag_eff_isOnTree || this.flag_flying && this.flag_usingAbility)"
+   ],
+   "class": "_0x21614e",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    112
+   ]
+  },
+  {
+   "name": "Front Kick\n(Hold to Charge)",
+   "line": 25663,
+   "image": "<'skins/forest/turkey/' + this.animalSpecies + '/ability.png'>",
+   "conditions": [
+    "NOT this.flag_isClimbingHill",
+    "NOT (this.flag_eff_isOnTree || this.flag_flying && this.flag_usingAbility)"
+   ],
+   "class": "_0x21614e",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    112
+   ]
+  },
+  {
+   "name": "Fly High!",
+   "line": 26057,
+   "image": "<'skins/santa/' + this.animalSpecies + '/ability_santa_flying.png'>",
+   "case": 106,
+   "switch_on": "(_0x589b3b)",
+   "class": "_0x18bba5",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    102
+   ]
+  },
+  {
+   "name": "Gives Gifts!",
+   "line": 26060,
+   "image": "<'skins/santa/' + this.animalSpecies + '/ability_santa_throwgifts.png'>",
+   "case": 107,
+   "switch_on": "(_0x589b3b)",
+   "class": "_0x18bba5",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    102
+   ]
+  },
+  {
+   "name": "Flying Sleigh!",
+   "line": 26063,
+   "image": "<'skins/santa/' + this.animalSpecies + '/ability_santa_flyingsleigh....>",
+   "case": 108,
+   "switch_on": "(_0x589b3b)",
+   "class": "_0x18bba5",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    102
+   ]
+  },
+  {
+   "name": "Howl!",
+   "line": 26108,
+   "class": "_0x3a9446",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    103
+   ]
+  },
+  {
+   "name": "Dash!",
+   "line": 26383,
+   "image": "<'skins/' + this.getSkinName() + '.png'>",
+   "class": "_0x21c898",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    22
+   ]
+  },
+  {
+   "name": "Extra Boost!",
+   "line": 26477,
+   "image": "<'skins/' + this.getSkinName() + '.png'>",
+   "class": "_0x48159f",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    16
+   ]
+  },
+  {
+   "name": "Pull from Hole",
+   "line": 26562,
+   "image": "<'skins/' + this.getSkinName() + '.png'>",
+   "class": "_0x30dce1",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    4
+   ]
+  },
+  {
+   "name": "Dig Hole!",
+   "line": 26616,
+   "image": "<'skins/' + this.getSpeciesPath() + '/rabbit.png'>",
+   "class": "_0x1dd509",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    2
+   ]
+  },
+  {
+   "name": "Spikes!",
+   "line": 26657,
+   "image": "<'skins/' + this.getSpeciesPath() + '/hedgehog2.png'>",
+   "class": "_0x376b8d",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    57
+   ]
+  },
+  {
+   "name": "Claw Slash!",
+   "line": 26895,
+   "image": "<'skins/arctic/bear/' + this.animalSpecies + '/clawslash.png'>",
+   "class": "_0x333baa",
+   "method": "getAbilityInfo",
+   "animal_types": [
+    36
+   ]
+  },
+  {
+   "name": "Electro Swoop & Gale Charge",
+   "line": 28205,
+   "image": "skins/land/birdmonster/0/birdmonster_ability.png",
+   "class": "_0x41a1bb",
+   "method": "getAbilityInfo",
+   "animal_types": []
   }
  ],
  "objects": [
