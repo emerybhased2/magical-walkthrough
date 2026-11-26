@@ -1,0 +1,874 @@
+[
+  {
+    "name": "mouse",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "chipmunk",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "kangaroo_rat",
+    "biome_folder": "desert",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "shrimp",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "lemming",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "rabbit",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "pigeon",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT",
+      "DOVE"
+    ],
+    "lava": false
+  },
+  {
+    "name": "trout",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "arctic_hare",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "desert_chipmunk",
+    "biome_folder": "desert",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "mole",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "chicken",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "crab",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "penguin",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "meerkat",
+    "biome_folder": "desert",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "pig",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT",
+      "PINKY",
+      "STINKY"
+    ],
+    "lava": false
+  },
+  {
+    "name": "woodpecker",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "sea_horse",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "seal",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "armadillo",
+    "biome_folder": "desert",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "baby_duck",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "deer",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT",
+      "DOE",
+      "MARSH"
+    ],
+    "lava": false
+  },
+  {
+    "name": "flamingo",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "squid",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "reindeer",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT",
+      "MUSK"
+    ],
+    "lava": false
+  },
+  {
+    "name": "gazelle",
+    "biome_folder": "desert",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "hedgehog",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "fox",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "peacock",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "duck",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT",
+      "FLUFFY"
+    ],
+    "lava": false
+  },
+  {
+    "name": "angry_duck",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "bee",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "frog",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "jellyfish",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "arctic_fox",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "fennec_fox",
+    "biome_folder": "desert",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "zebra",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "donkey",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT",
+      "JACKASS"
+    ],
+    "lava": false
+  },
+  {
+    "name": "macaw",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT",
+      "BLUE",
+      "SPIX"
+    ],
+    "lava": false
+  },
+  {
+    "name": "turtle",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "muskox",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "warthog",
+    "biome_folder": "desert",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "cobra",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "giraffe",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT",
+      "WHITE",
+      "FAMILY"
+    ],
+    "lava": false
+  },
+  {
+    "name": "momaffie",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "girabie",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "stingray",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "snowy_owl",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "walrus",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "camel",
+    "biome_folder": "desert",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "snail",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "cheetah",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT",
+      "JAGUAR",
+      "LEOPARD",
+      "BLACK_PANTHER"
+    ],
+    "lava": false
+  },
+  {
+    "name": "gorilla",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "toucan",
+    "biome_folder": "land",
+    "subspecies": [
+      "TOCO",
+      "CHOCO",
+      "KEEL_BILLED",
+      "FIERY",
+      "LAVA",
+      "HELMETED_HORNBILL"
+    ],
+    "lava": false
+  },
+  {
+    "name": "pufferfish",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT",
+      "YELLOW",
+      "DEMON"
+    ],
+    "lava": false
+  },
+  {
+    "name": "snow_leopard",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "rattle_snake",
+    "biome_folder": "desert",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "bear",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "tiger",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT",
+      "WHITE"
+    ],
+    "lava": false
+  },
+  {
+    "name": "pelican",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "swordfish",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "wolf",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "hyena",
+    "biome_folder": "desert",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "gobi_bear",
+    "biome_folder": "desert",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "lion",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT",
+      "BLACK_MANED",
+      "WHITE",
+      "BLACK",
+      "LIONESS",
+      "WHITE_LIONESS",
+      "BLACK_LIONESS",
+      "CUB",
+      "WHITE_CUB",
+      "BLACK_CUB"
+    ],
+    "lava": false
+  },
+  {
+    "name": "crocodile",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "falcon",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT",
+      "PREDATOR",
+      "SHAHEEN"
+    ],
+    "lava": false
+  },
+  {
+    "name": "octopus",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "polar_bear",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "vulture",
+    "biome_folder": "desert",
+    "subspecies": [
+      "DEFAULT",
+      "ARGENTAVIS"
+    ],
+    "lava": false
+  },
+  {
+    "name": "rhinoceros",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT",
+      "WHITE",
+      "BLACK"
+    ],
+    "lava": false
+  },
+  {
+    "name": "eagle",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT",
+      "GOLDEN",
+      "HARPY",
+      "GREATER_SPOTTED"
+    ],
+    "lava": false
+  },
+  {
+    "name": "shark",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "markhor",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT",
+      "BIG_GOAT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "wolverine",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "bison",
+    "biome_folder": "desert",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "hippopotamus",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "boa",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "ostrich",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "ostrich_baby",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT",
+      "CLASSIC",
+      "GOLD",
+      "RUFFLED",
+      "JOGGING",
+      "SUNSET"
+    ],
+    "lava": false
+  },
+  {
+    "name": "orca",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "sabertooth_tiger",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "komodo_dragon",
+    "biome_folder": "desert",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "elephant",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "cassowary",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "giant_spider",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "blue_whale",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "mammoth",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "black_widow",
+    "biome_folder": "desert",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "dragon",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "phoenix",
+    "biome_folder": "volcano",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "trex",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "king_crab",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "kraken",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "yeti",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT",
+      "AQUA",
+      "FORGOTTEN_ONE"
+    ],
+    "lava": false
+  },
+  {
+    "name": "pterodactyl",
+    "biome_folder": "desert",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "dino_monster",
+    "biome_folder": "land",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "lava_monster",
+    "biome_folder": "volcano",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "sea_monster",
+    "biome_folder": "ocean",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "ice_monster",
+    "biome_folder": "arctic",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "giant_scorpion",
+    "biome_folder": "desert",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "black_dragon",
+    "biome_folder": "volcano",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  },
+  {
+    "name": "king_dragon",
+    "biome_folder": "volcano",
+    "subspecies": [
+      "DEFAULT"
+    ],
+    "lava": false
+  }
+]

@@ -227,3 +227,12 @@ bun decode_images.ts            # catalogue + discover + download + decode + rep
 bun decode_images.ts --catalog-only
 bun test tests/
 ```
+
+## Live-site image snapshot (`fetch_live_assets.rb`, Ruby)
+
+The live mope.io site is a 2026 rebuild with a new file layout (WebP files under `assets/animals/…`,
+`assets/foods/…`, `assets/UI/…`). `ruby fetch_live_assets.rb` reads the site's bundles as text, derives the image
+paths from its own data (animal table, subspecies enums, part names, food list, texture names) and downloads every
+file that exists. The site serves a 200 HTML page for unknown paths, so only real image bytes count. The 2026-11-26
+snapshot holds 622 images, with files for all 103 animals. It is kept separate from the archived client's art,
+which these files do not replace. Details: [`live/README.md`](live/README.md).
