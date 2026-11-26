@@ -25,6 +25,7 @@ import os
 import re
 from dataclasses import dataclass
 from pathlib import Path
+from urllib.parse import urlsplit
 
 
 @dataclass(frozen=True)
@@ -94,6 +95,15 @@ SETTINGS: tuple[Setting, ...] = (
             "Add the client's built-in sandbox server: name 'LOCAL', id 'localhost', region 'SANDBOX'."),
     Setting("SANDBOX_REGION_PORT", "int", 7099, "Sandbox",
             "Port of the sandbox region server.", 1024, 65535),
+    # -- remote backend ---------------------------------------------------------------
+    Setting("REMOTE_BACKEND_URL", "str", "", "Remote backend",
+            "Base URL of a hosted backend (cloud.py, e.g. https://<app>.sevalla.app). When set, `localstack.py up` runs "
+            "only the web gateway and a local WebSocket relay; accounts, the master and the regions are the remote ones."),
+    Setting("REMOTE_BACKEND_KEY", "str", "", "Remote backend",
+            "Access key the hosted backend asks for (its BACKEND_ACCESS_KEY). Leave empty if it has none.",
+            secret=True),
+    Setting("REMOTE_RELAY_PORT", "int", 7000, "Remote backend",
+            "Local port of the WebSocket relay that carries game traffic to the remote backend.", 1024, 65535),
 )
 
 BY_NAME = {s.name: s for s in SETTINGS}
@@ -188,6 +198,14 @@ def load_settings(root: Path, environ: dict | None = None, env_file: Path | None
                           "(A-Z a-z 0-9 _ -)")
         elif values["DEV_TEST_ACCOUNT_SECRET"].lower() in {"local", "google", "facebook", "apple", "discord"}:
             errors.append("DEV_TEST_ACCOUNT_SECRET cannot be a login provider name")
+    remote = values["REMOTE_BACKEND_URL"]
+    if remote:
+        parts = urlsplit(remote)
+        if parts.scheme not in ("http", "https") or not parts.netloc or parts.path not in ("", "/") \
+                or parts.query or parts.fragment:
+            errors.append(f"REMOTE_BACKEND_URL must look like https://host[:port] with no path, got {remote!r}")
+        else:
+            values["REMOTE_BACKEND_URL"] = f"{parts.scheme}://{parts.netloc}"
     for key in ("ACCOUNT_SHOP_CATALOG", "WEB_UPDATES_FILE"):
         if not Path(values[key]).is_file():
             errors.append(f"{key}: file not found: {values[key]}")

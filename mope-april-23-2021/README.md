@@ -260,3 +260,8 @@ probes `s3.mope.io`, which refuses every path. It then adds the custom variants 
 (amber, sapphire, amethyst, black hole) and installs all 11 types where the archived 2025 client looks for
 them: `assets/s/1/img/pumpkin/<type>/<frame>.png` in the working snapshot. The region servers spawn pumpkins
 (object type 131) of every installed type. Details: [`pumpkins/README.md`](pumpkins/README.md).
+## Hosting the backend (Sevalla)
+
+The account, master and region servers can run in one container behind one port (`cloud.py`, `services/edge.py`,
+root `Dockerfile`). The game client stays on each player's machine and connects through a local relay when
+`REMOTE_BACKEND_URL` is set. See [`DEPLOY_SEVALLA.md`](DEPLOY_SEVALLA.md).

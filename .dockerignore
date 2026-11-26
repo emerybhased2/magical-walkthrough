@@ -1,0 +1,12 @@
+.git
+**/__pycache__
+**/*.pyc
+mope-april-23-2021/.env
+mope-april-23-2021/.venv
+mope-april-23-2021/archive
+mope-april-23-2021/working
+mope-april-23-2021/snapshots
+mope-april-23-2021/logs
+mope-april-23-2021/run
+mope-april-23-2021/data
+mope-april-23-2021/config/_cloud_stack.json

@@ -8,6 +8,11 @@ Services (from config/local_stack.json):
   account                account server           http://127.0.0.1:8091 (internal, via the gateway)
   web                    web gateway              http://local.mope.io:8080  <- open this
 
+With REMOTE_BACKEND_URL set (.env), only two services run here and the rest is the hosted
+backend (cloud.py, see DEPLOY_SEVALLA.md):
+  relay                  WebSocket relay          ws://local.mope.io:7000/r/<id> -> wss://<backend>/r/<id>
+  web                    web gateway              http://local.mope.io:8080  (API proxied to the backend)
+
 Every service is its own process, so each can be started and stopped independently.
 Logs: logs/services/<service>.log (+ .out for raw stdout/stderr). PIDs: run/<service>.pid.
 
@@ -51,6 +56,12 @@ class Service:
 
 
 def services(config: dict) -> list[Service]:
+    if config.get("remote"):
+        # Remote mode: accounts, master and regions live on the hosted backend (cloud.py).
+        relay_port = int(config["remote"]["relay_port"])
+        return [Service("relay", "edge.py", relay_port, ["relay"], f"http://127.0.0.1:{relay_port}/__edge/health"),
+                Service("web", "web_gateway.py", int(config["web"]["port"]), [],
+                        f"http://127.0.0.1:{int(config['web']['port'])}/__local/health")]
     out = [Service("master", "master_server.py", int(config["master"]["port"]), [],
                    f"{common.master_url(config)}/master/health")]
     if config.get("account", {}).get("enabled"):
@@ -198,6 +209,8 @@ def status(config: dict) -> int:
             players = str(entry["players"]) if entry else ""
         print(f"{svc.name:<26}{(pid or '-'):>8}  {svc.port:>5}  {'running' if pid else 'stopped':<8}  "
               f"{view:<12}{players:>8}")
+    if config.get("remote"):
+        print(f"\nremote backend: {config['remote']['url']}")
     print(f"\nopen: {common.web_origin(config)}/   (hosts file: 127.0.0.1 {config['public_host']})")
     return 0
 

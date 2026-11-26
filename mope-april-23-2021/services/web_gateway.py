@@ -124,8 +124,9 @@ class Gateway:
         self.shim = PROJECT / "shims" / "turnstile_local.js"
         self.client_js = ClientConfigRewriter(self.root / "client.js", log)
         self.master = common.master_url(config)
-        account = config.get("account", {})
-        self.account = f"http://127.0.0.1:{int(account['port'])}" if account.get("enabled") else None
+        self.account = common.account_url(config)
+        self.remote = config.get("remote")
+        self.upstream_headers = common.remote_headers(config)
         self.allowed_origins = set(config["web"].get("allowed_origins", [])) | {common.web_origin(config)}
         self.started_at = time.time()
         self._last_overlay = None
@@ -133,12 +134,21 @@ class Gateway:
     def overlay(self) -> tuple[dict, str]:
         """The $config overlay, from the master (fallback: last known, then static config)."""
         try:
-            status, body = common.http_json("GET", self.master + "/master/client-config", timeout=2.0)
-        except OSError as exc:  # master down / refused
+            status, _, raw = common.http_raw("GET", self.master + "/master/client-config",
+                                             headers=self.upstream_headers, timeout=5.0 if self.remote else 2.0)
+            body = json.loads(raw) if status == 200 else None
+        except (OSError, ValueError) as exc:  # master down / refused / not JSON
             status, body = f"unreachable ({exc.__class__.__name__})", None
         if status == 200 and isinstance(body, dict):
+            if self.remote:
+                # The browser reaches the remote regions through the local relay, and the
+                # account API through this gateway.
+                body = dict(body)
+                body["gameServers"] = [{**server, "url": common.region_public_url(self.config, server)}
+                                       for server in body.get("gameServers", [])]
+                body["devAccountServerUrl"] = common.web_origin(self.config)
             self._last_overlay = body
-            return body, "master"
+            return body, "remote master" if self.remote else "master"
         if self._last_overlay is not None:
             self.log.warning("master unavailable (%s); serving last known region list", status)
             return self._last_overlay, "cached"
@@ -213,8 +223,10 @@ def make_handler(gw: Gateway):
             length = int(self.headers.get("Content-Length", "0") or 0)
             body = self.rfile.read(length) if length else None
             headers = {k: v for k, v in self.headers.items() if k.lower() in ("content-type", "accept")}
+            headers.update(gw.upstream_headers)
             try:
-                status, resp_headers, data = common.http_raw(self.command, base + self.path, body, headers)
+                status, resp_headers, data = common.http_raw(self.command, base + self.path, body, headers,
+                                                             timeout=15.0 if gw.remote else 5.0)
             except OSError as exc:
                 log.warning("upstream %s unreachable: %s", base, exc)
                 return self._json(502, {"success": False, "error": "upstream service unavailable"}, head)
@@ -311,9 +323,10 @@ def main(argv=None) -> int:
     bind, port = config["bind_host"], int(config["web"]["port"])
     server = ThreadingHTTPServer((bind, port), make_handler(gw))
     server.daemon_threads = True
-    log.info("web gateway %s on http://%s:%d -> open %s/ (client root %s; rewrites %s; account server %s)",
+    log.info("web gateway %s on http://%s:%d -> open %s/ (client root %s; rewrites %s; account server %s%s)",
              VERSION, bind, port, common.web_origin(config), gw.root,
-             ", ".join(k for k, v in gw.rewrites.items() if v) or "none", gw.account or "not enabled")
+             ", ".join(k for k, v in gw.rewrites.items() if v) or "none", gw.account or "not enabled",
+             f"; REMOTE backend, game traffic via the relay on :{gw.remote['relay_port']}" if gw.remote else "")
 
     def shutdown(signum, frame):
         log.info("web gateway stopping (signal %s)", signum)
