@@ -1,0 +1,235 @@
+{
+  "generated_at": "2026-11-26T04:54:47Z",
+  "verifier_version": "1.0.0",
+  "seconds": 112.5,
+  "passed": 12,
+  "failed": 0,
+  "regions": 20,
+  "checks": [
+    {
+      "id": "C1",
+      "name": "configuration validates",
+      "ok": true,
+      "detail": "configuration OK",
+      "data": null
+    },
+    {
+      "id": "S1",
+      "name": "every service up (master, account, gateway, all regions online in the master)",
+      "ok": true,
+      "detail": "web True, master True, account True, regions online 20/20",
+      "data": null
+    },
+    {
+      "id": "R1",
+      "name": "region selection: /servers/get and the served $config.gameServers list every enabled region",
+      "ok": true,
+      "detail": "/servers/get 20/20, $config.gameServers 20/20",
+      "data": null
+    },
+    {
+      "id": "G1",
+      "name": "every region: join, Play, spawn (17, 107, 18, 6 + own animal)",
+      "ok": true,
+      "detail": "20/20 regions",
+      "data": [
+        {
+          "region": "prod-lnd-us-ny-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "prod-lnd-us-da-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "prod-lnd-us-la-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "prod-lnd-br-sp-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "prod-ovh-de-ff-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "prod-ovh-fr-pr-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "prod-lnd-sw-sh-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "prod-lnd-sg-sg-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "prod-lnd-au-sd-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "local-us-chi-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "local-us-sea-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "local-us-mia-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "local-nl-ams-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "local-uk-lon-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "local-jp-tyo-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "local-ru-mow-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "local-us-sfo-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "local-us-san-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "local-us-nh-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        },
+        {
+          "region": "local-us-bos-1",
+          "spawned": true,
+          "multiplayer": true,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "G2",
+      "name": "multiplayer in every region: two players see each other; a leaver is removed",
+      "ok": true,
+      "detail": "20/20 regions",
+      "data": null
+    },
+    {
+      "id": "A1",
+      "name": "account registration, login, @me and a refused wrong password (through the gateway)",
+      "ok": true,
+      "detail": "register 200, login 200, @me 200, wrong password 400",
+      "data": null
+    },
+    {
+      "id": "W1",
+      "name": "assets: snapshot + archived-image fallback served, season-1 sprite present, traversal refused",
+      "ok": true,
+      "detail": "/index.html 200, /img/logo.png 200 snapshot, /assets/s/1/skins/land/mouse/0/mouse.png 200 snapshot, /img/update/promo3.png 200 fallback:images/files, /skins/bear.png 200 fallback:images/files, /img/%2e%2e/%2e%2e/config.json 404",
+      "data": null
+    },
+    {
+      "id": "B1",
+      "name": "real client session: only known gaps fail, no unhandled client messages, no page errors",
+      "ok": true,
+      "detail": "known gaps ['404 /audio/click.mp3', '404 /audio/music_game.mp3', '404 /audio/nom.mp3', '404 /img/howToPlay1.png', '404 /none'], unexpected [], unhandled opcodes 0, page errors [], external hosts blocked 9",
+      "data": {
+        "failures": [
+          "404 /none",
+          "404 /audio/click.mp3",
+          "404 /audio/click.mp3",
+          "404 /img/howToPlay1.png",
+          "404 /audio/music_game.mp3",
+          "404 /audio/nom.mp3"
+        ],
+        "external_blocked": [
+          "accounts.google.com",
+          "api.adinplay.com",
+          "apis.google.com",
+          "appleid.cdn-apple.com",
+          "b.scorecardresearch.com",
+          "connect.facebook.net",
+          "s.nitropay.com",
+          "static.cloudflareinsights.com",
+          "www.googletagmanager.com"
+        ]
+      }
+    },
+    {
+      "id": "V3",
+      "name": "phase3_verify.py passes in full",
+      "ok": true,
+      "detail": "34/34 checks",
+      "data": null
+    },
+    {
+      "id": "V4",
+      "name": "phase4_verify.py passes in full",
+      "ok": true,
+      "detail": "8/8 checks",
+      "data": null
+    },
+    {
+      "id": "V5",
+      "name": "phase5_verify.py passes in full",
+      "ok": true,
+      "detail": "8/8 checks",
+      "data": null
+    },
+    {
+      "id": "U1",
+      "name": "unit tests: Python, Bun, Ruby",
+      "ok": true,
+      "detail": "python ok (93 tests), bun ok (20 tests), ruby ok (1852 tests)",
+      "data": null
+    }
+  ]
+}

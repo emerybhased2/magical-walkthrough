@@ -1,0 +1,916 @@
+{
+  "generated": "2026-11-26T04:35:39Z",
+  "tool": "fetch_live_assets.rb 1.0.0",
+  "site": "https://mope.io",
+  "snapshot": "2026-11-26",
+  "seconds": 33,
+  "requests_this_run": 37,
+  "plan_only": false,
+  "paths_checked": 4479,
+  "files_found": 622,
+  "bytes": 10341189,
+  "by_category": {
+    "abilities": 3,
+    "animals": 549,
+    "foods": 25,
+    "other": 3,
+    "terrain": 3,
+    "ui": 39
+  },
+  "by_format": {
+    "webp": 604,
+    "png": 1,
+    "svg": 17
+  },
+  "decode_problems": 0,
+  "animals_in_bundle": 103,
+  "animals_with_files": 103,
+  "part_names": 139,
+  "per_animal": [
+    {
+      "animal": "mouse",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "chipmunk",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "kangaroo_rat",
+      "biome": "desert",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 4
+    },
+    {
+      "animal": "shrimp",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "lemming",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "rabbit",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "pigeon",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT",
+        "DOVE"
+      ],
+      "files": 12
+    },
+    {
+      "animal": "trout",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "arctic_hare",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "desert_chipmunk",
+      "biome": "desert",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "mole",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "chicken",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 7
+    },
+    {
+      "animal": "crab",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "penguin",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "meerkat",
+      "biome": "desert",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "pig",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT",
+        "PINKY",
+        "STINKY"
+      ],
+      "files": 6
+    },
+    {
+      "animal": "woodpecker",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 7
+    },
+    {
+      "animal": "sea_horse",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "seal",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "armadillo",
+      "biome": "desert",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 8
+    },
+    {
+      "animal": "baby_duck",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "deer",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT",
+        "DOE",
+        "MARSH"
+      ],
+      "files": 6
+    },
+    {
+      "animal": "flamingo",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 13
+    },
+    {
+      "animal": "squid",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 4
+    },
+    {
+      "animal": "reindeer",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT",
+        "MUSK"
+      ],
+      "files": 4
+    },
+    {
+      "animal": "gazelle",
+      "biome": "desert",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 4
+    },
+    {
+      "animal": "hedgehog",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "fox",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "peacock",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 7
+    },
+    {
+      "animal": "duck",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT",
+        "FLUFFY"
+      ],
+      "files": 4
+    },
+    {
+      "animal": "angry_duck",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 6
+    },
+    {
+      "animal": "bee",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 6
+    },
+    {
+      "animal": "frog",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 4
+    },
+    {
+      "animal": "jellyfish",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "arctic_fox",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "fennec_fox",
+      "biome": "desert",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "zebra",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 4
+    },
+    {
+      "animal": "donkey",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT",
+        "JACKASS"
+      ],
+      "files": 14
+    },
+    {
+      "animal": "macaw",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT",
+        "BLUE",
+        "SPIX"
+      ],
+      "files": 18
+    },
+    {
+      "animal": "turtle",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 5
+    },
+    {
+      "animal": "muskox",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "warthog",
+      "biome": "desert",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 4
+    },
+    {
+      "animal": "cobra",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 4
+    },
+    {
+      "animal": "giraffe",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT",
+        "WHITE",
+        "FAMILY"
+      ],
+      "files": 9
+    },
+    {
+      "animal": "momaffie",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "girabie",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "stingray",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "snowy_owl",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 6
+    },
+    {
+      "animal": "walrus",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "camel",
+      "biome": "desert",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 4
+    },
+    {
+      "animal": "snail",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "cheetah",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT",
+        "JAGUAR",
+        "LEOPARD",
+        "BLACK_PANTHER"
+      ],
+      "files": 8
+    },
+    {
+      "animal": "gorilla",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "toucan",
+      "biome": "land",
+      "subspecies": [
+        "TOCO",
+        "CHOCO",
+        "KEEL_BILLED",
+        "FIERY",
+        "LAVA",
+        "HELMETED_HORNBILL"
+      ],
+      "files": 11
+    },
+    {
+      "animal": "pufferfish",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT",
+        "YELLOW",
+        "DEMON"
+      ],
+      "files": 9
+    },
+    {
+      "animal": "snow_leopard",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "rattle_snake",
+      "biome": "desert",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 6
+    },
+    {
+      "animal": "bear",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "tiger",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT",
+        "WHITE"
+      ],
+      "files": 8
+    },
+    {
+      "animal": "pelican",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 9
+    },
+    {
+      "animal": "swordfish",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "wolf",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "hyena",
+      "biome": "desert",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 4
+    },
+    {
+      "animal": "gobi_bear",
+      "biome": "desert",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "lion",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT",
+        "BLACK_MANED",
+        "WHITE",
+        "BLACK",
+        "LIONESS",
+        "WHITE_LIONESS",
+        "BLACK_LIONESS",
+        "CUB",
+        "WHITE_CUB",
+        "BLACK_CUB"
+      ],
+      "files": 34
+    },
+    {
+      "animal": "crocodile",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "falcon",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT",
+        "PREDATOR",
+        "SHAHEEN"
+      ],
+      "files": 27
+    },
+    {
+      "animal": "octopus",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 4
+    },
+    {
+      "animal": "polar_bear",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "vulture",
+      "biome": "desert",
+      "subspecies": [
+        "DEFAULT",
+        "ARGENTAVIS"
+      ],
+      "files": 14
+    },
+    {
+      "animal": "rhinoceros",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT",
+        "WHITE",
+        "BLACK"
+      ],
+      "files": 9
+    },
+    {
+      "animal": "eagle",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT",
+        "GOLDEN",
+        "HARPY",
+        "GREATER_SPOTTED"
+      ],
+      "files": 36
+    },
+    {
+      "animal": "shark",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 4
+    },
+    {
+      "animal": "markhor",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT",
+        "BIG_GOAT"
+      ],
+      "files": 16
+    },
+    {
+      "animal": "wolverine",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "bison",
+      "biome": "desert",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "hippopotamus",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "boa",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 5
+    },
+    {
+      "animal": "ostrich",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "ostrich_baby",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT",
+        "CLASSIC",
+        "GOLD",
+        "RUFFLED",
+        "JOGGING",
+        "SUNSET"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "orca",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "sabertooth_tiger",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "komodo_dragon",
+      "biome": "desert",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 4
+    },
+    {
+      "animal": "elephant",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "cassowary",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 4
+    },
+    {
+      "animal": "giant_spider",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "blue_whale",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "mammoth",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "black_widow",
+      "biome": "desert",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "dragon",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "phoenix",
+      "biome": "volcano",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "trex",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "king_crab",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 5
+    },
+    {
+      "animal": "kraken",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "yeti",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT",
+        "AQUA",
+        "FORGOTTEN_ONE"
+      ],
+      "files": 9
+    },
+    {
+      "animal": "pterodactyl",
+      "biome": "desert",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "dino_monster",
+      "biome": "land",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 4
+    },
+    {
+      "animal": "lava_monster",
+      "biome": "volcano",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "sea_monster",
+      "biome": "ocean",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "ice_monster",
+      "biome": "arctic",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 3
+    },
+    {
+      "animal": "giant_scorpion",
+      "biome": "desert",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 2
+    },
+    {
+      "animal": "black_dragon",
+      "biome": "volcano",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 8
+    },
+    {
+      "animal": "king_dragon",
+      "biome": "volcano",
+      "subspecies": [
+        "DEFAULT"
+      ],
+      "files": 5
+    }
+  ],
+  "missing_direct": [
+    "assets/UI/achievements/medal-epic-locked.webp",
+    "assets/UI/achievements/medal-epic.webp",
+    "assets/UI/achievements/medal-legendary-locked.webp",
+    "assets/UI/achievements/medal-legendary.webp",
+    "assets/UI/achievements/medal-mythic-locked.webp",
+    "assets/UI/achievements/medal-mythic.webp",
+    "assets/UI/achievements/medal-rare-locked.webp",
+    "assets/UI/achievements/medal-rare.webp",
+    "assets/UI/achievements/medal-uncommon-locked.webp",
+    "assets/UI/achievements/medal-uncommon.webp",
+    "assets/placeholder.webp"
+  ]
+}

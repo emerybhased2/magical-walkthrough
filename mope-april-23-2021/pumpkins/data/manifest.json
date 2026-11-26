@@ -1,0 +1,557 @@
+{
+  "generated": "2026-11-26T15:32:22Z",
+  "tool": "fetch_pumpkins.rb",
+  "client_path": "./assets/s/<season>/img/pumpkin/<pumpkinType>/<frame>.png (client L24937-24939)",
+  "season": 1,
+  "object_type": 131,
+  "frames": 5,
+  "live_folder": "terrain/pumpkin",
+  "s3": {
+    "base": "https://s3.mope.io/mope-prod",
+    "checked": 14,
+    "answers": {
+      "403": 14
+    },
+    "frames_used": 0
+  },
+  "note": "pumpkinType numbering is local: the original server's numbering is not in any archive",
+  "types": [
+    {
+      "type": 0,
+      "name": "normal",
+      "origin": "live mope.io (terrain/pumpkin/normal)",
+      "frames": [
+        {
+          "frame": 0,
+          "file": "assets/s/1/img/pumpkin/0/0.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/normal/0.webp",
+          "sha256": "ef2c3eee1684ee7064cb67aa818a194e7e40b280faea34b7c9f10bfdd4c5efab",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 1,
+          "file": "assets/s/1/img/pumpkin/0/1.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/normal/1.webp",
+          "sha256": "561d476d2fd56b1c6d973c8b16d9ddc1172faf0bf19175b363ff1cf3320019aa",
+          "width": 284,
+          "height": 283
+        },
+        {
+          "frame": 2,
+          "file": "assets/s/1/img/pumpkin/0/2.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/normal/2.webp",
+          "sha256": "9896cca5e61c21bb2c78d6427dcfea5b7af0da7e2d5da2ad0fd5a053bb65db2d",
+          "width": 284,
+          "height": 283
+        },
+        {
+          "frame": 3,
+          "file": "assets/s/1/img/pumpkin/0/3.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/normal/3.webp",
+          "sha256": "209361648cc3b1ab045ea0b84a87c59773dd04fcb67b86763388b00b02db1d0d",
+          "width": 284,
+          "height": 283
+        },
+        {
+          "frame": 4,
+          "file": "assets/s/1/img/pumpkin/0/4.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/normal/4.webp",
+          "sha256": "9896cca5e61c21bb2c78d6427dcfea5b7af0da7e2d5da2ad0fd5a053bb65db2d",
+          "width": 284,
+          "height": 283
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "name": "jack",
+      "origin": "live mope.io (terrain/pumpkin/jack)",
+      "frames": [
+        {
+          "frame": 0,
+          "file": "assets/s/1/img/pumpkin/1/0.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/jack/0.webp",
+          "sha256": "9d980420760761a6aac043bb9cf576894f77bc3f5abdb6313761753f3d56985f",
+          "width": 500,
+          "height": 504
+        },
+        {
+          "frame": 1,
+          "file": "assets/s/1/img/pumpkin/1/1.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/jack/1.webp",
+          "sha256": "f4780bc25d1018672c514b33d3dd1f765bea1c1c408826fa70bcf699f320bffe",
+          "width": 500,
+          "height": 504
+        },
+        {
+          "frame": 2,
+          "file": "assets/s/1/img/pumpkin/1/2.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/jack/2.webp",
+          "sha256": "5bdcc1533a8975956b6dc7641c78dce9bceb8eff739520c76f153467045e0876",
+          "width": 500,
+          "height": 504
+        },
+        {
+          "frame": 3,
+          "file": "assets/s/1/img/pumpkin/1/3.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/jack/3.webp",
+          "sha256": "9e7ae7a215a7a1832033c7bb6ad8fb2baf882d0aeb0cceec14e8a6d9b0e5d2fa",
+          "width": 500,
+          "height": 500
+        },
+        {
+          "frame": 4,
+          "file": "assets/s/1/img/pumpkin/1/4.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/jack/4.webp",
+          "sha256": "9d980420760761a6aac043bb9cf576894f77bc3f5abdb6313761753f3d56985f",
+          "width": 500,
+          "height": 504
+        }
+      ]
+    },
+    {
+      "type": 2,
+      "name": "gold",
+      "origin": "live mope.io (terrain/pumpkin/gold)",
+      "frames": [
+        {
+          "frame": 0,
+          "file": "assets/s/1/img/pumpkin/2/0.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/gold/0.webp",
+          "sha256": "3d68abb7668decc6c8163c0cccd0b0c0d676efd919d413272a5f72d8bc291ced",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 1,
+          "file": "assets/s/1/img/pumpkin/2/1.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/gold/1.webp",
+          "sha256": "6da36a19eb54e2dd8187882e6dade43475a52fead932310768dc70f3ff059168",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 2,
+          "file": "assets/s/1/img/pumpkin/2/2.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/gold/2.webp",
+          "sha256": "d4a6db146b9dfa3fe66be0d36abf088f318da1e81d4784bec8737c8f6182e6cf",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 3,
+          "file": "assets/s/1/img/pumpkin/2/3.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/gold/3.webp",
+          "sha256": "2edf58ef4e9bfe8eb8524222f76a80a54588c79b494c8e1dc6c7e2f6785e3244",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 4,
+          "file": "assets/s/1/img/pumpkin/2/4.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/gold/4.webp",
+          "sha256": "d4a6db146b9dfa3fe66be0d36abf088f318da1e81d4784bec8737c8f6182e6cf",
+          "width": 284,
+          "height": 286
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "name": "emerald",
+      "origin": "live mope.io (terrain/pumpkin/emerald)",
+      "frames": [
+        {
+          "frame": 0,
+          "file": "assets/s/1/img/pumpkin/3/0.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/emerald/0.webp",
+          "sha256": "128e550d8c300798b2cab34de249963cece8b38b4026e754ba6a06dff8bb0b3e",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 1,
+          "file": "assets/s/1/img/pumpkin/3/1.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/emerald/1.webp",
+          "sha256": "640ebab7296f60fc9748fa4e314c07e9a2cddbba2dda8bf6a0232875b1a9c5b1",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 2,
+          "file": "assets/s/1/img/pumpkin/3/2.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/emerald/2.webp",
+          "sha256": "c4319b4b7a6569f36d7a4ad30f3c6acb8dbb4794f0e08b3716665013b965cfc4",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 3,
+          "file": "assets/s/1/img/pumpkin/3/3.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/emerald/3.webp",
+          "sha256": "7752a794eaef319ecb0752c249c2fe81485348b28266a37f30e76c2982290f81",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 4,
+          "file": "assets/s/1/img/pumpkin/3/4.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/emerald/4.webp",
+          "sha256": "c4319b4b7a6569f36d7a4ad30f3c6acb8dbb4794f0e08b3716665013b965cfc4",
+          "width": 284,
+          "height": 286
+        }
+      ]
+    },
+    {
+      "type": 4,
+      "name": "ruby",
+      "origin": "live mope.io (terrain/pumpkin/ruby)",
+      "frames": [
+        {
+          "frame": 0,
+          "file": "assets/s/1/img/pumpkin/4/0.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/ruby/0.webp",
+          "sha256": "029b0467a6b5df03497a14a81f3de9eea1b5f442f293e48b1d85e06762411e5b",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 1,
+          "file": "assets/s/1/img/pumpkin/4/1.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/ruby/1.webp",
+          "sha256": "46fd4634b2f734613f71ddf90a4c31a35a258de8be77bbe52585ad9868826fa1",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 2,
+          "file": "assets/s/1/img/pumpkin/4/2.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/ruby/2.webp",
+          "sha256": "4a46b5b215ea60c1fdac5fc3d5e4aa72fb7c9ff7507e969d808742e9ce3d5029",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 3,
+          "file": "assets/s/1/img/pumpkin/4/3.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/ruby/3.webp",
+          "sha256": "bf52bd9ecfab6b0548bba429b2b79e35d3d5215c4462e83d116f862a2210d3e8",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 4,
+          "file": "assets/s/1/img/pumpkin/4/4.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/ruby/4.webp",
+          "sha256": "4a46b5b215ea60c1fdac5fc3d5e4aa72fb7c9ff7507e969d808742e9ce3d5029",
+          "width": 284,
+          "height": 286
+        }
+      ]
+    },
+    {
+      "type": 5,
+      "name": "diamond",
+      "origin": "live mope.io (terrain/pumpkin/diamond)",
+      "frames": [
+        {
+          "frame": 0,
+          "file": "assets/s/1/img/pumpkin/5/0.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/diamond/0.webp",
+          "sha256": "b8849398e72c4a0344ac8d22c2bb5d97ba88978c1dd4dd914f0b2d707da54bdc",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 1,
+          "file": "assets/s/1/img/pumpkin/5/1.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/diamond/1.webp",
+          "sha256": "f2deb22fc0c0b5e36c37ce2de564883a3e919bf30d8662ff44372fbbb040ea73",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 2,
+          "file": "assets/s/1/img/pumpkin/5/2.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/diamond/2.webp",
+          "sha256": "dbb764e3b8f3ec2699fefdd07e65788e0e6110f212f5666a27b64d1134a57890",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 3,
+          "file": "assets/s/1/img/pumpkin/5/3.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/diamond/3.webp",
+          "sha256": "28b2e061bfb806d267fe4e784fe0b8512a3c4630d364829542cef97341ac4091",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 4,
+          "file": "assets/s/1/img/pumpkin/5/4.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/diamond/4.webp",
+          "sha256": "dbb764e3b8f3ec2699fefdd07e65788e0e6110f212f5666a27b64d1134a57890",
+          "width": 284,
+          "height": 286
+        }
+      ]
+    },
+    {
+      "type": 6,
+      "name": "onyx",
+      "origin": "live mope.io (terrain/pumpkin/onyx)",
+      "frames": [
+        {
+          "frame": 0,
+          "file": "assets/s/1/img/pumpkin/6/0.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/onyx/0.webp",
+          "sha256": "a735c0a7a1346d5d557428fce28cc0f98d96c3eec7b2de5cfe3102586271560d",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 1,
+          "file": "assets/s/1/img/pumpkin/6/1.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/onyx/1.webp",
+          "sha256": "20b5831a26726f8742586abaf4c1343aca41041bf96dc9634adc690cb1531ba9",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 2,
+          "file": "assets/s/1/img/pumpkin/6/2.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/onyx/2.webp",
+          "sha256": "447af4b5f246add7a57eaf79d00324242389c4242d228f631d407ef013044228",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 3,
+          "file": "assets/s/1/img/pumpkin/6/3.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/onyx/3.webp",
+          "sha256": "04c22aa0bc6a8e59c67a8ac7ffe54d34e509ee8f1087c6559b52c08236eba48e",
+          "width": 284,
+          "height": 286
+        },
+        {
+          "frame": 4,
+          "file": "assets/s/1/img/pumpkin/6/4.png",
+          "source": "https://mope.io/assets/terrain/pumpkin/onyx/4.webp",
+          "sha256": "447af4b5f246add7a57eaf79d00324242389c4242d228f631d407ef013044228",
+          "width": 284,
+          "height": 286
+        }
+      ]
+    },
+    {
+      "type": 7,
+      "name": "amber",
+      "origin": "custom (custom_assets/pumpkins/amber.png, background removed, spin frames)",
+      "frames": [
+        {
+          "frame": 0,
+          "file": "assets/s/1/img/pumpkin/7/0.png",
+          "source": "custom_assets/pumpkins/amber.png",
+          "rotation": 0.0,
+          "sha256": "e326cbc828483b17d271426ca1bfc744030c000cf77d765482d8dfbeba4bd3f8",
+          "width": 286,
+          "height": 286
+        },
+        {
+          "frame": 1,
+          "file": "assets/s/1/img/pumpkin/7/1.png",
+          "source": "custom_assets/pumpkins/amber.png",
+          "rotation": 72.0,
+          "sha256": "5b77efb201ddbf247e5bc659d1719fc0675690d149ad7edea032cefb4bf7ff82",
+          "width": 286,
+          "height": 286
+        },
+        {
+          "frame": 2,
+          "file": "assets/s/1/img/pumpkin/7/2.png",
+          "source": "custom_assets/pumpkins/amber.png",
+          "rotation": 144.0,
+          "sha256": "ef5ed4cfd0b5b0e88996c2c82d05690df99dc66c67d4e5b545ba686e6c3fc9d5",
+          "width": 286,
+          "height": 286
+        },
+        {
+          "frame": 3,
+          "file": "assets/s/1/img/pumpkin/7/3.png",
+          "source": "custom_assets/pumpkins/amber.png",
+          "rotation": 216.0,
+          "sha256": "2e1bb4838b27bc0756b8ed33df1415d35f8449e51dd9da095ef281aafc450153",
+          "width": 286,
+          "height": 286
+        },
+        {
+          "frame": 4,
+          "file": "assets/s/1/img/pumpkin/7/4.png",
+          "source": "custom_assets/pumpkins/amber.png",
+          "rotation": 288.0,
+          "sha256": "0696d64e78220efc60bbca2cc27700b686e991df8f871d1532b0fc511ead3bd6",
+          "width": 286,
+          "height": 286
+        }
+      ]
+    },
+    {
+      "type": 8,
+      "name": "sapphire",
+      "origin": "custom (custom_assets/pumpkins/sapphire.png, background removed, spin frames)",
+      "frames": [
+        {
+          "frame": 0,
+          "file": "assets/s/1/img/pumpkin/8/0.png",
+          "source": "custom_assets/pumpkins/sapphire.png",
+          "rotation": 0.0,
+          "sha256": "9152a0ca038a606219294facdb1d094ff34a30d7fd3d09e981f098a803d36831",
+          "width": 286,
+          "height": 286
+        },
+        {
+          "frame": 1,
+          "file": "assets/s/1/img/pumpkin/8/1.png",
+          "source": "custom_assets/pumpkins/sapphire.png",
+          "rotation": 72.0,
+          "sha256": "147f4a9746100ea266a48be664754f4b759fa10f7c3fb42058dff86972d4d108",
+          "width": 286,
+          "height": 286
+        },
+        {
+          "frame": 2,
+          "file": "assets/s/1/img/pumpkin/8/2.png",
+          "source": "custom_assets/pumpkins/sapphire.png",
+          "rotation": 144.0,
+          "sha256": "60968279002f245ccc788663f0c7d3fffa53d055926ebdc925637e17e512def3",
+          "width": 286,
+          "height": 286
+        },
+        {
+          "frame": 3,
+          "file": "assets/s/1/img/pumpkin/8/3.png",
+          "source": "custom_assets/pumpkins/sapphire.png",
+          "rotation": 216.0,
+          "sha256": "d5480608c1ac281fc4acdf503a8679a761676cf18e4750ac8f208f19f651ee98",
+          "width": 286,
+          "height": 286
+        },
+        {
+          "frame": 4,
+          "file": "assets/s/1/img/pumpkin/8/4.png",
+          "source": "custom_assets/pumpkins/sapphire.png",
+          "rotation": 288.0,
+          "sha256": "aeea9ccdd8be7bc0ac05881e46ff05132ea4dc08b09e66a41cb7fe558fcd4f82",
+          "width": 286,
+          "height": 286
+        }
+      ]
+    },
+    {
+      "type": 9,
+      "name": "amethyst",
+      "origin": "custom (custom_assets/pumpkins/amethyst.png, background removed, spin frames)",
+      "frames": [
+        {
+          "frame": 0,
+          "file": "assets/s/1/img/pumpkin/9/0.png",
+          "source": "custom_assets/pumpkins/amethyst.png",
+          "rotation": 0.0,
+          "sha256": "057806c5e9cfc1c27db46adff0ff5d224f9e65af4f36498c39b78c892d6e1b57",
+          "width": 286,
+          "height": 286
+        },
+        {
+          "frame": 1,
+          "file": "assets/s/1/img/pumpkin/9/1.png",
+          "source": "custom_assets/pumpkins/amethyst.png",
+          "rotation": 72.0,
+          "sha256": "b022bd7e3feceaf2ea0e90043704cb2c4fe2277471182f5fe6b173f5369c92de",
+          "width": 286,
+          "height": 286
+        },
+        {
+          "frame": 2,
+          "file": "assets/s/1/img/pumpkin/9/2.png",
+          "source": "custom_assets/pumpkins/amethyst.png",
+          "rotation": 144.0,
+          "sha256": "1d72300936f4bc0569b2f6ac02b63c3df44ade7c4f737786b0040232279ad991",
+          "width": 286,
+          "height": 286
+        },
+        {
+          "frame": 3,
+          "file": "assets/s/1/img/pumpkin/9/3.png",
+          "source": "custom_assets/pumpkins/amethyst.png",
+          "rotation": 216.0,
+          "sha256": "e7f8ccfa8c321d1404a961ab475b7bfb9873b5fa8676deaae11177ddc6c5ab53",
+          "width": 286,
+          "height": 286
+        },
+        {
+          "frame": 4,
+          "file": "assets/s/1/img/pumpkin/9/4.png",
+          "source": "custom_assets/pumpkins/amethyst.png",
+          "rotation": 288.0,
+          "sha256": "18ec5b8e2ce5efb382c635bd1d6666cfb9ffabf4349b7a430b688e593ad2922c",
+          "width": 286,
+          "height": 286
+        }
+      ]
+    },
+    {
+      "type": 10,
+      "name": "black_hole",
+      "origin": "custom (custom_assets/pumpkins/black_hole.png, background removed, spin frames)",
+      "frames": [
+        {
+          "frame": 0,
+          "file": "assets/s/1/img/pumpkin/10/0.png",
+          "source": "custom_assets/pumpkins/black_hole.png",
+          "rotation": 0.0,
+          "sha256": "94f3abbeaf55beaf7e134f91ef9d766bad05afeb2b692205a2d312213ce44922",
+          "width": 286,
+          "height": 286
+        },
+        {
+          "frame": 1,
+          "file": "assets/s/1/img/pumpkin/10/1.png",
+          "source": "custom_assets/pumpkins/black_hole.png",
+          "rotation": 72.0,
+          "sha256": "eda6012ee1b78e0d5e7f7f0886b7099a050de716f1d2eaf518a460a8bb8a1a22",
+          "width": 286,
+          "height": 286
+        },
+        {
+          "frame": 2,
+          "file": "assets/s/1/img/pumpkin/10/2.png",
+          "source": "custom_assets/pumpkins/black_hole.png",
+          "rotation": 144.0,
+          "sha256": "4d8f144468ae5d77e6bb1564ec699e383b0984a93711416c08a2b97facde3ae8",
+          "width": 286,
+          "height": 286
+        },
+        {
+          "frame": 3,
+          "file": "assets/s/1/img/pumpkin/10/3.png",
+          "source": "custom_assets/pumpkins/black_hole.png",
+          "rotation": 216.0,
+          "sha256": "3b55a421cab7afc6726fb936c4857f7eca459aec5309acb880d7580cc820a355",
+          "width": 286,
+          "height": 286
+        },
+        {
+          "frame": 4,
+          "file": "assets/s/1/img/pumpkin/10/4.png",
+          "source": "custom_assets/pumpkins/black_hole.png",
+          "rotation": 288.0,
+          "sha256": "eecc84336a2001869dc6ee033303599c1d427e8ce5d04c1341dd509e48aa57fc",
+          "width": 286,
+          "height": 286
+        }
+      ]
+    }
+  ]
+}

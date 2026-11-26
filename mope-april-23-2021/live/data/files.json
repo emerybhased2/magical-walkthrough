@@ -1,0 +1,5600 @@
+[
+  {
+    "path": "assets/UI/S26.webp",
+    "rule": "literal",
+    "format": "webp",
+    "width": 1219,
+    "height": 448,
+    "bytes": 16974,
+    "sha256": "e275b108ca03a21c4a9c203132f3cafab182fa2bd2ea8ff5d60c2fafcb29edf5"
+  },
+  {
+    "path": "assets/UI/adblocker/adblock1.webp",
+    "rule": "literal",
+    "format": "webp",
+    "width": 300,
+    "height": 250,
+    "bytes": 31894,
+    "sha256": "db4b3b561b068ce8ed3a55625ea50997fdaea929ed66716e802e8198b3a3307d"
+  },
+  {
+    "path": "assets/UI/adblocker/adblock2.webp",
+    "rule": "literal",
+    "format": "webp",
+    "width": 728,
+    "height": 90,
+    "bytes": 27890,
+    "sha256": "100346e4354d3490d90d6740fffeef5bbe89ea762bec13c2ba4bc407719efbfb"
+  },
+  {
+    "path": "assets/UI/banners/default.webp",
+    "rule": "literal",
+    "format": "webp",
+    "width": 1600,
+    "height": 400,
+    "bytes": 34618,
+    "sha256": "4d2b10b61d403fce623e4dbb3303c1917e2c9f508117dcfef883f1ec6daa5f21"
+  },
+  {
+    "path": "assets/UI/bestiary/scene-arctic.webp",
+    "rule": "bestiary-biome",
+    "format": "webp",
+    "width": 800,
+    "height": 500,
+    "bytes": 6446,
+    "sha256": "6d84f24850babd06cd118995a9acc0fa7b6f58bfc773c4c2bccda6e237ff94ee"
+  },
+  {
+    "path": "assets/UI/bestiary/scene-desert.webp",
+    "rule": "bestiary-biome",
+    "format": "webp",
+    "width": 800,
+    "height": 500,
+    "bytes": 6400,
+    "sha256": "dc51319c8803c2e6af8a3c729846ed8e16306a31f69f3f20e4fe9080d9cea3dc"
+  },
+  {
+    "path": "assets/UI/bestiary/scene-land.webp",
+    "rule": "bestiary-biome",
+    "format": "webp",
+    "width": 800,
+    "height": 500,
+    "bytes": 6494,
+    "sha256": "08701ce63f0232a2ad0cf71853cb35a0da315a9ebeddfec69f68325e0a096fdb"
+  },
+  {
+    "path": "assets/UI/bestiary/scene-ocean.webp",
+    "rule": "bestiary-biome",
+    "format": "webp",
+    "width": 800,
+    "height": 500,
+    "bytes": 12998,
+    "sha256": "8602aad5f851555b47151ae11ed38693d3e0b643a53d7f5ecc3ce1a12d5392e4"
+  },
+  {
+    "path": "assets/UI/bestiary/scene-volcano.webp",
+    "rule": "bestiary-biome",
+    "format": "webp",
+    "width": 800,
+    "height": 500,
+    "bytes": 8906,
+    "sha256": "af43d9826f0915f54a80580b808a7a3ca6db8f6e99a95477e238bbf7c0194640"
+  },
+  {
+    "path": "assets/UI/icons/HUD/climb.webp",
+    "rule": "literal",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 53838,
+    "sha256": "6056a35252dbf598db3a86b6407e1db864f74e4fe9cb1e069a9cd02ecb24154f"
+  },
+  {
+    "path": "assets/UI/icons/HUD/dash.webp",
+    "rule": "literal",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 24490,
+    "sha256": "2bde24bead5fbc63c4abcecf37cb5d7d6c14a8e4be7951657cbd57d920f1a20a"
+  },
+  {
+    "path": "assets/UI/icons/HUD/drop.webp",
+    "rule": "literal",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15548,
+    "sha256": "afe50df7e4633fe148a0da004b40b3dad332ca7d24add6d741e0d0c9103ff79e"
+  },
+  {
+    "path": "assets/UI/icons/accounts/badges/mope_staff.webp",
+    "rule": "texture-literal",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 9428,
+    "sha256": "4c266661c834c1cfb97b41d91b79c55e3213d9dc44996f7bc27e0a9b25216bd5"
+  },
+  {
+    "path": "assets/UI/icons/app-192.png",
+    "rule": "literal",
+    "format": "png",
+    "width": 192,
+    "height": 192,
+    "bytes": 14545,
+    "sha256": "d4c907d3ee22f804dcf8604be34caeb38992d06c452a4db4ed628969ac83ad84"
+  },
+  {
+    "path": "assets/UI/icons/app_store.svg",
+    "rule": "literal",
+    "format": "svg",
+    "width": null,
+    "height": null,
+    "bytes": 9165,
+    "sha256": "ba328a41cd3f57ff921506151dd57c688202ff046d5a508a93c8d48f00c9645b"
+  },
+  {
+    "path": "assets/UI/icons/apple.svg",
+    "rule": "literal",
+    "format": "svg",
+    "width": null,
+    "height": null,
+    "bytes": 662,
+    "sha256": "360807d4c4e6936a08b1776258e5b5a152268f796343e5d425b421807ff6cc68"
+  },
+  {
+    "path": "assets/UI/icons/chat.svg",
+    "rule": "literal",
+    "format": "svg",
+    "width": null,
+    "height": null,
+    "bytes": 356,
+    "sha256": "325551c945d219d5dba7df8aba44f3602dfc4398f46b04975be453af499ad385"
+  },
+  {
+    "path": "assets/UI/icons/check.svg",
+    "rule": "literal",
+    "format": "svg",
+    "width": null,
+    "height": null,
+    "bytes": 354,
+    "sha256": "b3bf82beb36f81c77e86ee7cf8f080ba3f2715dbbde3ef71f6b6b17c78875f82"
+  },
+  {
+    "path": "assets/UI/icons/copy.svg",
+    "rule": "literal",
+    "format": "svg",
+    "width": null,
+    "height": null,
+    "bytes": 566,
+    "sha256": "82e11cfd938992b764b1ca14c452f8fe89559a172faca4af35a8d9cce8467fae"
+  },
+  {
+    "path": "assets/UI/icons/crazygames.svg",
+    "rule": "literal",
+    "format": "svg",
+    "width": null,
+    "height": null,
+    "bytes": 2795,
+    "sha256": "6f63338afa456e7b5186f56868e2e6e10147e97a2a1dbdba7478c50525b5d26e"
+  },
+  {
+    "path": "assets/UI/icons/discord.svg",
+    "rule": "literal",
+    "format": "svg",
+    "width": null,
+    "height": null,
+    "bytes": 1275,
+    "sha256": "7427b22892c5aebd054991779733a5b2c2ee27662f0e662d7ce856564dc40c31"
+  },
+  {
+    "path": "assets/UI/icons/edit.svg",
+    "rule": "literal",
+    "format": "svg",
+    "width": null,
+    "height": null,
+    "bytes": 777,
+    "sha256": "a5a46b4509a67fb309014e5696a8dbebd6bf18d1bf4afe550b8bd25ef59e1c97"
+  },
+  {
+    "path": "assets/UI/icons/facebook.svg",
+    "rule": "literal",
+    "format": "svg",
+    "width": null,
+    "height": null,
+    "bytes": 1753,
+    "sha256": "7d0ec4de6e9af694c18b9570ab1e1fe8cb3a56b0769b5e395b9cfc0ade70fc1f"
+  },
+  {
+    "path": "assets/UI/icons/fandom.svg",
+    "rule": "literal",
+    "format": "svg",
+    "width": null,
+    "height": null,
+    "bytes": 1274,
+    "sha256": "93df193d27db895d77e8a65cd04544c2ee021d7341e9ea1701335f307def635e"
+  },
+  {
+    "path": "assets/UI/icons/google.svg",
+    "rule": "literal",
+    "format": "svg",
+    "width": null,
+    "height": null,
+    "bytes": 9846,
+    "sha256": "a3feac5510a973157e3ff3d5e7933cc8bfd56835c43820b952866ab4d34303a8"
+  },
+  {
+    "path": "assets/UI/icons/google_play.svg",
+    "rule": "literal",
+    "format": "svg",
+    "width": null,
+    "height": null,
+    "bytes": 6544,
+    "sha256": "099322ec867049429443a4fa4905ee2a6756597eedcf4f21eab457191dd297fe"
+  },
+  {
+    "path": "assets/UI/icons/reddit.svg",
+    "rule": "literal",
+    "format": "svg",
+    "width": null,
+    "height": null,
+    "bytes": 3429,
+    "sha256": "9416df6874f77d46dc47a1ab107b71d147945dfa4026028b271d000551e7700b"
+  },
+  {
+    "path": "assets/UI/icons/search.svg",
+    "rule": "literal",
+    "format": "svg",
+    "width": null,
+    "height": null,
+    "bytes": 234,
+    "sha256": "cfa4f822979bdd34cc1923e71932761edb97d96e88fc0c4fdf5c557e91991e52"
+  },
+  {
+    "path": "assets/UI/icons/store/backpack.svg",
+    "rule": "literal",
+    "format": "svg",
+    "width": null,
+    "height": null,
+    "bytes": 1234,
+    "sha256": "fdd1a7bafb9434fa3ab3f6b25d1d1bb0835a63d3372a757c3865f83c50063944"
+  },
+  {
+    "path": "assets/UI/icons/store/currency/gems.webp",
+    "rule": "literal",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8630,
+    "sha256": "d2a7e566c35e0f07620d97f6371ffee3a4861af61c273bc2fe8e25ac07ad5fb5"
+  },
+  {
+    "path": "assets/UI/icons/store/currency/mopecoins.webp",
+    "rule": "literal",
+    "format": "webp",
+    "width": 106,
+    "height": 111,
+    "bytes": 2416,
+    "sha256": "a4009b48b7d8e270444d26c2d8f9476d459ea3de18652ce9ea70cc8c10b8971e"
+  },
+  {
+    "path": "assets/UI/icons/store/shop.svg",
+    "rule": "literal",
+    "format": "svg",
+    "width": null,
+    "height": null,
+    "bytes": 1418,
+    "sha256": "6583557e5352a881de3e7b57d98ccbc1aed9f9190bc742936aa45927d33d46f7"
+  },
+  {
+    "path": "assets/UI/icons/youtube.svg",
+    "rule": "literal",
+    "format": "svg",
+    "width": null,
+    "height": null,
+    "bytes": 912,
+    "sha256": "e9519664e7b91c52f545140a23eb27ab711c7490973cb663059b7ce9806936c0"
+  },
+  {
+    "path": "assets/UI/passes/anniversary.webp",
+    "rule": "literal",
+    "format": "webp",
+    "width": 1600,
+    "height": 560,
+    "bytes": 79140,
+    "sha256": "4bae451a6ba31fa5d971cf1a51f921eede923618ff3388f7b5f5657461097ad0"
+  },
+  {
+    "path": "assets/UI/passes/halloween.webp",
+    "rule": "literal",
+    "format": "webp",
+    "width": 1600,
+    "height": 560,
+    "bytes": 35788,
+    "sha256": "17720015772ea5f5ba6b723846894283bbfb2e929f566aa47bae2e1894b384a9"
+  },
+  {
+    "path": "assets/UI/passes/plain.webp",
+    "rule": "literal",
+    "format": "webp",
+    "width": 1600,
+    "height": 560,
+    "bytes": 14164,
+    "sha256": "1a0f7a41a78d2d5cea8bde57dc214f7068dfcf59b9b184d6d32758adad026883"
+  },
+  {
+    "path": "assets/UI/passes/seasonal.webp",
+    "rule": "literal",
+    "format": "webp",
+    "width": 1600,
+    "height": 560,
+    "bytes": 36442,
+    "sha256": "066957d8e431d80d5b38b40d7df6b2fce79b59ebb16a8c886babf092f88452c9"
+  },
+  {
+    "path": "assets/UI/passes/winter.webp",
+    "rule": "literal",
+    "format": "webp",
+    "width": 1600,
+    "height": 560,
+    "bytes": 46078,
+    "sha256": "b68561ac66c688e92ed5b4fada93c02aba471da939b2746151e470cdf1ab3f6a"
+  },
+  {
+    "path": "assets/UI/target_green.webp",
+    "rule": "texture-literal",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 10830,
+    "sha256": "100833e06a510ea31e5c1da2735c972624dc9ad775f9f5e781ea6e476ae2e835"
+  },
+  {
+    "path": "assets/abilities/quill/quill.webp",
+    "rule": "texture-literal",
+    "format": "webp",
+    "width": 187,
+    "height": 167,
+    "bytes": 918,
+    "sha256": "f83811360491b86c5f24e5efcba8b3f34c3a888820bfcd1de66bbf6c6115b8c9"
+  },
+  {
+    "path": "assets/abilities/rattle/circle.webp",
+    "rule": "texture-literal",
+    "format": "webp",
+    "width": 200,
+    "height": 200,
+    "bytes": 3176,
+    "sha256": "14122dc62a9958485c6607147f03bbd816cf5bdaed3d0cfac969d204b55e4643"
+  },
+  {
+    "path": "assets/abilities/wave/wave.webp",
+    "rule": "texture-literal",
+    "format": "webp",
+    "width": 219,
+    "height": 219,
+    "bytes": 4650,
+    "sha256": "5df7961e2b3d3bb0212eae657700326f09cb5519c08d0b1bdf70c6fb9a8ca4ed"
+  },
+  {
+    "path": "assets/animals/arctic/arctic_fox/arctic_fox.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15976,
+    "sha256": "7655ffefcab70a9149bd49cabd5530690b5eea1829547aaeff75628a98e5eb6e"
+  },
+  {
+    "path": "assets/animals/arctic/arctic_fox/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15976,
+    "sha256": "7655ffefcab70a9149bd49cabd5530690b5eea1829547aaeff75628a98e5eb6e"
+  },
+  {
+    "path": "assets/animals/arctic/arctic_hare/arctic_hare.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15956,
+    "sha256": "9b1857a6160cee319a75fce06a99782477f7dcfda41f50be25214b6676c5e707"
+  },
+  {
+    "path": "assets/animals/arctic/arctic_hare/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15956,
+    "sha256": "9b1857a6160cee319a75fce06a99782477f7dcfda41f50be25214b6676c5e707"
+  },
+  {
+    "path": "assets/animals/arctic/chipmunk/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 45336,
+    "sha256": "1ba675e9fa6c22a86693e08959adbf858f89277638da0040b315cea60c2b9a1f"
+  },
+  {
+    "path": "assets/animals/arctic/chipmunk/chipmunk.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 45336,
+    "sha256": "1ba675e9fa6c22a86693e08959adbf858f89277638da0040b315cea60c2b9a1f"
+  },
+  {
+    "path": "assets/animals/arctic/ice_monster/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 19518,
+    "sha256": "8ba2c3d686c1792f9a083623b8fea7f972b518b560682efb38d66a373286648a"
+  },
+  {
+    "path": "assets/animals/arctic/ice_monster/crystal.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 200,
+    "height": 250,
+    "bytes": 5408,
+    "sha256": "3987d55ef79748ebee420dd9869c336a583dfe1d76f324997bd4957a7d7b2a37"
+  },
+  {
+    "path": "assets/animals/arctic/ice_monster/ice_monster.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 27358,
+    "sha256": "6db441e7d68eeb3c3b7d38e60e53c32edca63a220061db98d22c356e10c63196"
+  },
+  {
+    "path": "assets/animals/arctic/lemming/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 41012,
+    "sha256": "816230d12dd562e1d52edd97a1743108c4a4aabb5c03fe2d5fc22e98b6b64f9e"
+  },
+  {
+    "path": "assets/animals/arctic/lemming/lemming.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 41012,
+    "sha256": "816230d12dd562e1d52edd97a1743108c4a4aabb5c03fe2d5fc22e98b6b64f9e"
+  },
+  {
+    "path": "assets/animals/arctic/mammoth/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 11818,
+    "sha256": "9f59611cbe59bd577b0c6ea77e2a09f8c065eb5b2afc48bb7a55813638dcc87c"
+  },
+  {
+    "path": "assets/animals/arctic/mammoth/mammoth.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 11818,
+    "sha256": "9f59611cbe59bd577b0c6ea77e2a09f8c065eb5b2afc48bb7a55813638dcc87c"
+  },
+  {
+    "path": "assets/animals/arctic/markhor/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 13948,
+    "sha256": "c18bb78890e25987fafd3de6d050db48b4f9f1c4a96de4964433c33e5f507104"
+  },
+  {
+    "path": "assets/animals/arctic/markhor/back_legs.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 2420,
+    "sha256": "0fa3168c39f11033db70e160bf8396e6a68b582bfe421adc1f834d12e278c451"
+  },
+  {
+    "path": "assets/animals/arctic/markhor/big_goat/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 16140,
+    "sha256": "ebb512cc7012fdd762eefc6f9859c2468dc24e6d3224a47846f8ed5cb1b27285"
+  },
+  {
+    "path": "assets/animals/arctic/markhor/big_goat/back_legs.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 2916,
+    "sha256": "fd8e737455b6af15dce379d9a62472c8ad39f4ebd53ab8fc733f16e6494950b3"
+  },
+  {
+    "path": "assets/animals/arctic/markhor/big_goat/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 16626,
+    "sha256": "ab93cbf7e8eb8138aa81067ed5eebeb1032df15c0ce6ea088b5f74db142acd7b"
+  },
+  {
+    "path": "assets/animals/arctic/markhor/big_goat/front_legs.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 4650,
+    "sha256": "a8d4a7e457b93c0be82ca3b80b7ecd2a700d04e779cfb4314ca5e4565305719c"
+  },
+  {
+    "path": "assets/animals/arctic/markhor/big_goat/markhor.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 16626,
+    "sha256": "ab93cbf7e8eb8138aa81067ed5eebeb1032df15c0ce6ea088b5f74db142acd7b"
+  },
+  {
+    "path": "assets/animals/arctic/markhor/big_goat/markhor1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 7716,
+    "sha256": "2bccd4d1a10b6f0a2de7592fda3e67055a98156d0003b16a30a0bc67508242ef"
+  },
+  {
+    "path": "assets/animals/arctic/markhor/big_goat/markhor_head.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 9268,
+    "sha256": "dcc026265064105e3857b6f731d9e4d38e9a5a1cc646dee6f4b09589a6bf71c4"
+  },
+  {
+    "path": "assets/animals/arctic/markhor/big_goat/markhor_head_charging.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 8864,
+    "sha256": "e590830934be4229824bf6c5c58bb58298704ba76fd9ca8a9e255541b7281a3b"
+  },
+  {
+    "path": "assets/animals/arctic/markhor/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 14242,
+    "sha256": "edba0d0b73c039c30ed9d2ab69218c2f592c95d258de7c0344cd0919ce2f91b9"
+  },
+  {
+    "path": "assets/animals/arctic/markhor/front_legs.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 4016,
+    "sha256": "30ab68cf066654c2408795995a66d871a487402d55bbbeb4cc2368dea23b13c6"
+  },
+  {
+    "path": "assets/animals/arctic/markhor/markhor.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 14242,
+    "sha256": "edba0d0b73c039c30ed9d2ab69218c2f592c95d258de7c0344cd0919ce2f91b9"
+  },
+  {
+    "path": "assets/animals/arctic/markhor/markhor1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 6520,
+    "sha256": "59ff20532cc7e9906131aaea0545ca3937135a28aa7af778fb718414c5c2b80f"
+  },
+  {
+    "path": "assets/animals/arctic/markhor/markhor_head.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 9018,
+    "sha256": "d2ad22a3405ec149a4270e39ca06c1d24bba48afc77b8d9109b77d752ed1ce8c"
+  },
+  {
+    "path": "assets/animals/arctic/markhor/markhor_head_charging.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 8320,
+    "sha256": "100093b9f5b939972935d194a6d87d5f05ffbc97ead4b4fcd8ef93f67c7c138b"
+  },
+  {
+    "path": "assets/animals/arctic/muskox/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 18544,
+    "sha256": "ceabcac195531748c72856bd8a0c0fdf95f931fc0ecbba97420b12a5e486e1ce"
+  },
+  {
+    "path": "assets/animals/arctic/muskox/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 18110,
+    "sha256": "349061503311fe00858cdf1cbc859c9aa751b5681e8992ba4e846229d272d4f4"
+  },
+  {
+    "path": "assets/animals/arctic/muskox/muskox.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 18110,
+    "sha256": "349061503311fe00858cdf1cbc859c9aa751b5681e8992ba4e846229d272d4f4"
+  },
+  {
+    "path": "assets/animals/arctic/penguin/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 12922,
+    "sha256": "0e064bede083dc915265fd486caef5a163afd5cdb4a36f9a4a338abf3208eb73"
+  },
+  {
+    "path": "assets/animals/arctic/penguin/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13052,
+    "sha256": "7dc07ba634422e07393f0a2fd37f2608b0f94b6d90944e4a0b8e4bdd025caee4"
+  },
+  {
+    "path": "assets/animals/arctic/penguin/penguin.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13052,
+    "sha256": "7dc07ba634422e07393f0a2fd37f2608b0f94b6d90944e4a0b8e4bdd025caee4"
+  },
+  {
+    "path": "assets/animals/arctic/polar_bear/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 257,
+    "height": 290,
+    "bytes": 938,
+    "sha256": "7dbae51d0ad2b481b2d41e46c5ca2751f1553ef6ab316ec78820455e4e7b26f5"
+  },
+  {
+    "path": "assets/animals/arctic/polar_bear/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15024,
+    "sha256": "37c08107d7e1c708a89bab032fc48f4f2a743118856b8f3fb808facb47d29044"
+  },
+  {
+    "path": "assets/animals/arctic/polar_bear/polar_bear.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15024,
+    "sha256": "37c08107d7e1c708a89bab032fc48f4f2a743118856b8f3fb808facb47d29044"
+  },
+  {
+    "path": "assets/animals/arctic/reindeer/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 23216,
+    "sha256": "c14ff7352bbc6af0fc9d50e513738a47cda6e3d36a93fbd815c7ac00a32207c7"
+  },
+  {
+    "path": "assets/animals/arctic/reindeer/musk/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 10980,
+    "sha256": "df39140447cb0f543ed64434f4bb8adb572d9c0bf276bfed58d5d3fe6ec108fc"
+  },
+  {
+    "path": "assets/animals/arctic/reindeer/musk/reindeer.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 10980,
+    "sha256": "df39140447cb0f543ed64434f4bb8adb572d9c0bf276bfed58d5d3fe6ec108fc"
+  },
+  {
+    "path": "assets/animals/arctic/reindeer/reindeer.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 23216,
+    "sha256": "c14ff7352bbc6af0fc9d50e513738a47cda6e3d36a93fbd815c7ac00a32207c7"
+  },
+  {
+    "path": "assets/animals/arctic/sabertooth_tiger/ability.webp",
+    "rule": "texture-literal",
+    "format": "webp",
+    "width": 200,
+    "height": 200,
+    "bytes": 7060,
+    "sha256": "6b04e4de5557cc8e513323f2adde5d84f60d82e97e37062964480123fc47bb6b"
+  },
+  {
+    "path": "assets/animals/arctic/sabertooth_tiger/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 19052,
+    "sha256": "a39a0484499e2d3623a9e1e339d04411a083f0a300d260feb18b72bd276ca8c7"
+  },
+  {
+    "path": "assets/animals/arctic/sabertooth_tiger/sabertooth_tiger.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 19052,
+    "sha256": "a39a0484499e2d3623a9e1e339d04411a083f0a300d260feb18b72bd276ca8c7"
+  },
+  {
+    "path": "assets/animals/arctic/seal/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13474,
+    "sha256": "12ef1f80b045cf41a7ed323862cb7a5f3e906bb5bd7c968e6c468dd85628c6fa"
+  },
+  {
+    "path": "assets/animals/arctic/seal/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13098,
+    "sha256": "1864a9beba51e1248a2401970de7e49414c24f288fe4064a8754868e1f9b62fa"
+  },
+  {
+    "path": "assets/animals/arctic/seal/seal.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13098,
+    "sha256": "1864a9beba51e1248a2401970de7e49414c24f288fe4064a8754868e1f9b62fa"
+  },
+  {
+    "path": "assets/animals/arctic/snow_leopard/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 38446,
+    "sha256": "a8c0f52b7ac44ca143c01fd5bd4badd56cdca2bde1d812903a4a65bcc4d88e3e"
+  },
+  {
+    "path": "assets/animals/arctic/snow_leopard/snow_leopard.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 38446,
+    "sha256": "a8c0f52b7ac44ca143c01fd5bd4badd56cdca2bde1d812903a4a65bcc4d88e3e"
+  },
+  {
+    "path": "assets/animals/arctic/snowy_owl/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 10946,
+    "sha256": "d6f4accea20f829a2a3ba597badd80d775dc9cce9e3939f11256028a15cbb035"
+  },
+  {
+    "path": "assets/animals/arctic/snowy_owl/snowy_owl.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 10946,
+    "sha256": "d6f4accea20f829a2a3ba597badd80d775dc9cce9e3939f11256028a15cbb035"
+  },
+  {
+    "path": "assets/animals/arctic/snowy_owl/snowyowl1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 3908,
+    "sha256": "3b3c88339563c996b057efe662af3c4cd39ef54876c1939e4bb7b66cdb311331"
+  },
+  {
+    "path": "assets/animals/arctic/snowy_owl/snowyowl_head.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 700,
+    "height": 725,
+    "bytes": 15576,
+    "sha256": "0dbfe331e27258aedd5fd3f0ac320311c2bd663578c44080150768314d43d2d9"
+  },
+  {
+    "path": "assets/animals/arctic/snowy_owl/snowyowl_wing1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 178,
+    "height": 249,
+    "bytes": 2664,
+    "sha256": "35d793a5d3a90deb10f70e37c7c00be29e257732b78594c1b7550952606713ba"
+  },
+  {
+    "path": "assets/animals/arctic/snowy_owl/snowyowl_wing2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 178,
+    "height": 249,
+    "bytes": 2606,
+    "sha256": "f7d824ab51fffc80065e1e6e10bc9f707c071b762cd81ea1cd33ee0846a35c97"
+  },
+  {
+    "path": "assets/animals/arctic/walrus/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15156,
+    "sha256": "24387b4ae62b676781d4fb6516972258ae43de07fc2b27fbbed2d1fb6ae394f8"
+  },
+  {
+    "path": "assets/animals/arctic/walrus/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15198,
+    "sha256": "a9db55d126ab48df383a09c45cf42bae5f84b54ec631791503a74631f79014bd"
+  },
+  {
+    "path": "assets/animals/arctic/walrus/walrus.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15198,
+    "sha256": "a9db55d126ab48df383a09c45cf42bae5f84b54ec631791503a74631f79014bd"
+  },
+  {
+    "path": "assets/animals/arctic/wolf/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 12756,
+    "sha256": "6d102550a7baf2a601772be250ec4f587e472b7b6e4bc8a5c8860ad483265790"
+  },
+  {
+    "path": "assets/animals/arctic/wolf/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 17026,
+    "sha256": "04eec9122329c05d6e41b6f95a1c03d6a4fc3ca54d7001f8cbaa0ada724303a9"
+  },
+  {
+    "path": "assets/animals/arctic/wolf/wolf.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 17026,
+    "sha256": "04eec9122329c05d6e41b6f95a1c03d6a4fc3ca54d7001f8cbaa0ada724303a9"
+  },
+  {
+    "path": "assets/animals/arctic/wolverine/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 16894,
+    "sha256": "c2ae212c97c20856663bb24d8ffce7cb628a661ff81e091c56779ebf6bd3eaaf"
+  },
+  {
+    "path": "assets/animals/arctic/wolverine/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14460,
+    "sha256": "09b9259a8a2500dfe51a947e4df50fbc99f19ef4f6c99db56d6b9d901def0508"
+  },
+  {
+    "path": "assets/animals/arctic/wolverine/wolverine.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14460,
+    "sha256": "09b9259a8a2500dfe51a947e4df50fbc99f19ef4f6c99db56d6b9d901def0508"
+  },
+  {
+    "path": "assets/animals/arctic/yeti/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 16586,
+    "sha256": "66192d3c5aa062618f881489fde820358fcbe78533683ce48e4faa12b72080b3"
+  },
+  {
+    "path": "assets/animals/arctic/yeti/aqua/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 21456,
+    "sha256": "ad2ffaea27dcad73ac2dedd135dd0dfc0651e71cc328f2e79c40c477efc7647f"
+  },
+  {
+    "path": "assets/animals/arctic/yeti/aqua/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 20068,
+    "sha256": "072cadab2cef44c31cb0456176558782cef7db4e881948a30d47a00c17f5d328"
+  },
+  {
+    "path": "assets/animals/arctic/yeti/aqua/yeti.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 20068,
+    "sha256": "072cadab2cef44c31cb0456176558782cef7db4e881948a30d47a00c17f5d328"
+  },
+  {
+    "path": "assets/animals/arctic/yeti/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15378,
+    "sha256": "90c4b39b68b248209896a9a8007feb6dd785b76e8fd5b6d148f95b09163badd0"
+  },
+  {
+    "path": "assets/animals/arctic/yeti/forgotten_one/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 21082,
+    "sha256": "15b5d7e6e74200ceede038000f475d0636a53ba78085ac976f0b613374e0b308"
+  },
+  {
+    "path": "assets/animals/arctic/yeti/forgotten_one/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 19624,
+    "sha256": "0d01842487c24939569eb0b8ee813c89558ef4e19e375bc742079d082479c1ce"
+  },
+  {
+    "path": "assets/animals/arctic/yeti/forgotten_one/yeti.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 19624,
+    "sha256": "0d01842487c24939569eb0b8ee813c89558ef4e19e375bc742079d082479c1ce"
+  },
+  {
+    "path": "assets/animals/arctic/yeti/yeti.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15378,
+    "sha256": "90c4b39b68b248209896a9a8007feb6dd785b76e8fd5b6d148f95b09163badd0"
+  },
+  {
+    "path": "assets/animals/desert/armadillo/ability1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 7246,
+    "sha256": "5e3188ec54071d54de767468a416f1ddc329da3150df60440d0848a9c2d8686e"
+  },
+  {
+    "path": "assets/animals/desert/armadillo/ability2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 7316,
+    "sha256": "75e5ae47f13d79a7fe5918c0739382c18015119dc68608b9464c0aae4af422f8"
+  },
+  {
+    "path": "assets/animals/desert/armadillo/ability3.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 7430,
+    "sha256": "f5cd31fbd596d7ed0dccb14dad65b08d6841a20a3281b689a7842ea31bb6dbd0"
+  },
+  {
+    "path": "assets/animals/desert/armadillo/ability4.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8168,
+    "sha256": "1afaf7620bba458ffdcb1244635aeb704504b46bcebcb36e4fe953277624caa3"
+  },
+  {
+    "path": "assets/animals/desert/armadillo/ability5.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 7938,
+    "sha256": "7f6f17d872453bf09ba5aa361d01025f3619343c6558fd5b672408d9bdf1ad1e"
+  },
+  {
+    "path": "assets/animals/desert/armadillo/ability6.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8062,
+    "sha256": "fc11ac47f24a01e2d97cc74b9fe77d5bb84ac63c50203e15f7db56edad984f9e"
+  },
+  {
+    "path": "assets/animals/desert/armadillo/armadillo.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13034,
+    "sha256": "526498695f10e383fdc3f84ea35bf263d5a4e82240055116a0c2a5b9633ad8fb"
+  },
+  {
+    "path": "assets/animals/desert/armadillo/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13034,
+    "sha256": "526498695f10e383fdc3f84ea35bf263d5a4e82240055116a0c2a5b9633ad8fb"
+  },
+  {
+    "path": "assets/animals/desert/bison/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 600,
+    "bytes": 17808,
+    "sha256": "02f49d16db1c1da2a6c3fb7fc55a1e9c834ba5788a77c8820570814f435072f9"
+  },
+  {
+    "path": "assets/animals/desert/bison/bison.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 27214,
+    "sha256": "6e9570d3efb7bc5ffb996514952ca9ee9998904f22245ce7e0cfc7be646d5ffa"
+  },
+  {
+    "path": "assets/animals/desert/bison/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 27214,
+    "sha256": "6e9570d3efb7bc5ffb996514952ca9ee9998904f22245ce7e0cfc7be646d5ffa"
+  },
+  {
+    "path": "assets/animals/desert/black_widow/black_widow.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 18740,
+    "sha256": "8552b97acd1b9294b20ce7b71f67f53021aabcc56550477f8968f8c8830153f6"
+  },
+  {
+    "path": "assets/animals/desert/black_widow/blackwidow1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 18668,
+    "sha256": "29b3c75d454c5e6b3cdf587dff59e394fced546f2ae02e14c3724572ef5eeb9c"
+  },
+  {
+    "path": "assets/animals/desert/black_widow/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 18740,
+    "sha256": "8552b97acd1b9294b20ce7b71f67f53021aabcc56550477f8968f8c8830153f6"
+  },
+  {
+    "path": "assets/animals/desert/camel/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15108,
+    "sha256": "f44e4493df4ad40c8576dbb4395b181555b113ecdde228765b3d7f870aa30a20"
+  },
+  {
+    "path": "assets/animals/desert/camel/camel.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15108,
+    "sha256": "f44e4493df4ad40c8576dbb4395b181555b113ecdde228765b3d7f870aa30a20"
+  },
+  {
+    "path": "assets/animals/desert/camel/camel1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8984,
+    "sha256": "534e249fa66c39020b9b937929725b5016eeadb3e4c22d3f2f4cbd5b11d124e7"
+  },
+  {
+    "path": "assets/animals/desert/camel/camel_head1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 6940,
+    "sha256": "d3d7e0e4b40bdd5c942fd1c131344ec26d6f3184ecd3234188ad5580538499da"
+  },
+  {
+    "path": "assets/animals/desert/desert_chipmunk/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 20746,
+    "sha256": "24be826c38ed33db4512365d678850700f1d028c59aaedb98a153abdf4b5c7bb"
+  },
+  {
+    "path": "assets/animals/desert/desert_chipmunk/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 36614,
+    "sha256": "f4f970b36fbc0e0d34456c4d5c8dc994855d22b88e1c14f4b4517a3d016e3c7f"
+  },
+  {
+    "path": "assets/animals/desert/desert_chipmunk/desert_chipmunk.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 36614,
+    "sha256": "f4f970b36fbc0e0d34456c4d5c8dc994855d22b88e1c14f4b4517a3d016e3c7f"
+  },
+  {
+    "path": "assets/animals/desert/fennec_fox/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13190,
+    "sha256": "118ab98eb38a3270e1f40a471ba4c69fb93c77c8867043e9e95c8d5df5c0cf61"
+  },
+  {
+    "path": "assets/animals/desert/fennec_fox/fennec_fox.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15510,
+    "sha256": "db0fe69d694db6fe3e66d349a0d8927e58aa5c287bfca1f3e996d4917f9aea50"
+  },
+  {
+    "path": "assets/animals/desert/gazelle/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 12824,
+    "sha256": "f36c7f1a5048493131079cd604bc31b5af0a935e2fe32de77742b422cfb0e995"
+  },
+  {
+    "path": "assets/animals/desert/gazelle/gazelle.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 12824,
+    "sha256": "f36c7f1a5048493131079cd604bc31b5af0a935e2fe32de77742b422cfb0e995"
+  },
+  {
+    "path": "assets/animals/desert/gazelle/legs0.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 2202,
+    "sha256": "baf5f47206b7961c271438585fc485b084ff7657687b3001e27a3eadb0b57411"
+  },
+  {
+    "path": "assets/animals/desert/gazelle/legs1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 1870,
+    "sha256": "c5cd4c93d4f466b6041db8090b55f4c4266b891a858ed4ad75bc789edbd82dab"
+  },
+  {
+    "path": "assets/animals/desert/giant_scorpion/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 600,
+    "bytes": 13306,
+    "sha256": "9b6f011810f93e4a1c117a20d4dda0146d3b1a8e9f3b3cb9d15aa18a23b71cdd"
+  },
+  {
+    "path": "assets/animals/desert/giant_scorpion/giant_scorpion.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 600,
+    "bytes": 13306,
+    "sha256": "9b6f011810f93e4a1c117a20d4dda0146d3b1a8e9f3b3cb9d15aa18a23b71cdd"
+  },
+  {
+    "path": "assets/animals/desert/gobi_bear/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 257,
+    "height": 290,
+    "bytes": 3220,
+    "sha256": "6934528a71542bb4869025eddf7967ca0339f5e4b147aa54bb7dd13a7fbae886"
+  },
+  {
+    "path": "assets/animals/desert/gobi_bear/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8082,
+    "sha256": "a1a267054d4295fc08b79c5213f228ecd7760d38060cb4694d5c8f4b407c1833"
+  },
+  {
+    "path": "assets/animals/desert/gobi_bear/gobi_bear.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8082,
+    "sha256": "a1a267054d4295fc08b79c5213f228ecd7760d38060cb4694d5c8f4b407c1833"
+  },
+  {
+    "path": "assets/animals/desert/hyena/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 12844,
+    "sha256": "191adf79adddac93a05da5ff5aaf27809b413d002d2fd3b97c66432c8dc47d19"
+  },
+  {
+    "path": "assets/animals/desert/hyena/hyena.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 12844,
+    "sha256": "191adf79adddac93a05da5ff5aaf27809b413d002d2fd3b97c66432c8dc47d19"
+  },
+  {
+    "path": "assets/animals/desert/hyena/hyena1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 6582,
+    "sha256": "268c1bc7727b58be20920c88f2c3bc34eb2c8ae9b0839c366868fc2774c9666d"
+  },
+  {
+    "path": "assets/animals/desert/hyena/hyena_head.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8088,
+    "sha256": "95952aef039bd8b33944fcd47dbeb1933aedc4d23992161b89a040dd92d9ba79"
+  },
+  {
+    "path": "assets/animals/desert/kangaroo_rat/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 22246,
+    "sha256": "608387359541b77aaa551821d8bc7f5c2365ab9e30f9e5c5acfeb3d2a793cfc5"
+  },
+  {
+    "path": "assets/animals/desert/kangaroo_rat/kangaroo_rat.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 22246,
+    "sha256": "608387359541b77aaa551821d8bc7f5c2365ab9e30f9e5c5acfeb3d2a793cfc5"
+  },
+  {
+    "path": "assets/animals/desert/kangaroo_rat/kangaroorat1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 18886,
+    "sha256": "2a6aa3e631c78efc21de049766b9be082a8f3fa3770dfca449bf85d4eb6e0332"
+  },
+  {
+    "path": "assets/animals/desert/kangaroo_rat/tail.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 1688,
+    "sha256": "e08bce00a0beb0626d77f8660287252f19d36729487c57e12fd03c45e2eef60d"
+  },
+  {
+    "path": "assets/animals/desert/komodo_dragon/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 600,
+    "bytes": 15324,
+    "sha256": "83a3d8ecf11baac3d62d9dbec149ed16c7120c5585ccba8e94fa7f9ce82fb33a"
+  },
+  {
+    "path": "assets/animals/desert/komodo_dragon/komodo_dragon.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 600,
+    "bytes": 15324,
+    "sha256": "83a3d8ecf11baac3d62d9dbec149ed16c7120c5585ccba8e94fa7f9ce82fb33a"
+  },
+  {
+    "path": "assets/animals/desert/komodo_dragon/komododragon_attack.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 7326,
+    "sha256": "9272344f3700e5b4086ee3a79b9ee404cf6ce54fdafddf817c70a43393b5ac6f"
+  },
+  {
+    "path": "assets/animals/desert/komodo_dragon/tongue.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 546,
+    "sha256": "80b0f6f5169275a58455d89f82d88daf7df8e13f62a0ec2af73e4205c5dc03d9"
+  },
+  {
+    "path": "assets/animals/desert/meerkat/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 28224,
+    "sha256": "c360ea4840a8d3adab3643bde0031c073b55f08d6772419fdc39737766eb6fc8"
+  },
+  {
+    "path": "assets/animals/desert/meerkat/meerkat.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 28224,
+    "sha256": "c360ea4840a8d3adab3643bde0031c073b55f08d6772419fdc39737766eb6fc8"
+  },
+  {
+    "path": "assets/animals/desert/meerkat/meerkat1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 4736,
+    "sha256": "5e97472daf789f3134487cbfd6a2a36918d0a9829b2d7de1ccbd2c7b7e94dfd6"
+  },
+  {
+    "path": "assets/animals/desert/pterodactyl/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 25068,
+    "sha256": "d64485d499ee8e02908b4b9f1f0c2b2e301c0f1b206a678f85bff89a7d2563d0"
+  },
+  {
+    "path": "assets/animals/desert/pterodactyl/legs.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 3134,
+    "sha256": "594f2090aa9c258308351eeda575a350c71d7beae9798b413c3ab539647c48a8"
+  },
+  {
+    "path": "assets/animals/desert/pterodactyl/pterodactyl.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 25068,
+    "sha256": "d64485d499ee8e02908b4b9f1f0c2b2e301c0f1b206a678f85bff89a7d2563d0"
+  },
+  {
+    "path": "assets/animals/desert/rattle_snake/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 24946,
+    "sha256": "6b659821dcd6f9cb30c3ee61acd22058a3bd886dc934ae5e5bcc0a1a0fb07ab8"
+  },
+  {
+    "path": "assets/animals/desert/rattle_snake/rattle.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 548,
+    "sha256": "1bfc6351e4420acb38c6ae934cd9af8d446a3c10ce4c8fadba1af5ca87a349bb"
+  },
+  {
+    "path": "assets/animals/desert/rattle_snake/rattle_snake.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 24946,
+    "sha256": "6b659821dcd6f9cb30c3ee61acd22058a3bd886dc934ae5e5bcc0a1a0fb07ab8"
+  },
+  {
+    "path": "assets/animals/desert/rattle_snake/rattlesnake1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 22390,
+    "sha256": "410d1cb62384fe3ea276423207eafe61bc2507834a1617502d3d8ea85146294c"
+  },
+  {
+    "path": "assets/animals/desert/rattle_snake/rattlesnake_head.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 5102,
+    "sha256": "3f1a9e04e1b705f847208ad0d180a4f373191c87d3c049863c4345d389f8a332"
+  },
+  {
+    "path": "assets/animals/desert/rattle_snake/tongue.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 514,
+    "sha256": "5650b1cdac4cfa767ef264181738cac1923dc70365018746a40c2e52f53ba9f5"
+  },
+  {
+    "path": "assets/animals/desert/vulture/argentavis/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 25096,
+    "sha256": "6b490111336fc21f2327a838f35b017ae84f4ee78e9889b95e3b6f1bd83dbcde"
+  },
+  {
+    "path": "assets/animals/desert/vulture/argentavis/vulture.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 25096,
+    "sha256": "6b490111336fc21f2327a838f35b017ae84f4ee78e9889b95e3b6f1bd83dbcde"
+  },
+  {
+    "path": "assets/animals/desert/vulture/argentavis/vulture1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15686,
+    "sha256": "a41930d695ec326b6ca46c2479b95c7dbbf2e931c9ab09c87422c807d5b6ce0c"
+  },
+  {
+    "path": "assets/animals/desert/vulture/argentavis/vulture2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15652,
+    "sha256": "44d004351950945f661c3d0bb4479b42e4ca766f27748c447b0cf7cbd3316a0d"
+  },
+  {
+    "path": "assets/animals/desert/vulture/argentavis/vulture_head1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 6074,
+    "sha256": "463d18578520298be3582429a31207381a4083a271e4ddd0e600df8d293664a6"
+  },
+  {
+    "path": "assets/animals/desert/vulture/argentavis/vulture_wing1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 321,
+    "height": 446,
+    "bytes": 8294,
+    "sha256": "e126ff2e1a525c794f73f40f9196ce4763459728fd1ab2f53409533d337b8eb2"
+  },
+  {
+    "path": "assets/animals/desert/vulture/argentavis/vulture_wing2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 321,
+    "height": 446,
+    "bytes": 8404,
+    "sha256": "561bafc9c830980cc2a6b1bec67b102e2ed4d120eb9ac6d8fb64c001decf7202"
+  },
+  {
+    "path": "assets/animals/desert/vulture/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14542,
+    "sha256": "39f08919fc5799003497aa093305081033065ed403aa969a1969749a48ca2fa1"
+  },
+  {
+    "path": "assets/animals/desert/vulture/vulture.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14542,
+    "sha256": "39f08919fc5799003497aa093305081033065ed403aa969a1969749a48ca2fa1"
+  },
+  {
+    "path": "assets/animals/desert/vulture/vulture1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 11966,
+    "sha256": "d5bb5a55ac25cfd091a0fcf337b52a3806ff3993b46442a23726ddf5141de1e5"
+  },
+  {
+    "path": "assets/animals/desert/vulture/vulture2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 12114,
+    "sha256": "5a659aa5e3c0cb1fd6f88754b14697618c2063e07d09c4172c87c0db33c66faa"
+  },
+  {
+    "path": "assets/animals/desert/vulture/vulture_head1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 5800,
+    "sha256": "fd2095821efbb3197cecd504b2ab79369c8ccbc8e50c982e35bf06bbb35be5e1"
+  },
+  {
+    "path": "assets/animals/desert/vulture/vulture_wing1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 166,
+    "height": 241,
+    "bytes": 2896,
+    "sha256": "57702994ba402655a5f904af141a5fc5108a3ac38ea267d0dd56babc3552c338"
+  },
+  {
+    "path": "assets/animals/desert/vulture/vulture_wing2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 166,
+    "height": 241,
+    "bytes": 2940,
+    "sha256": "53ed19c65c4f860b8022144d926ad6adae372bf7634b0f2b243c4c50fce77ff4"
+  },
+  {
+    "path": "assets/animals/desert/warthog/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 17396,
+    "sha256": "3fe41c5f9cca40fbda5b16aa32d4e1e70f717d5d452826f78e21681a99ef247c"
+  },
+  {
+    "path": "assets/animals/desert/warthog/leg0.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 2286,
+    "sha256": "14043884f897279809a809a9653d6db7ff30e3b6db6d9ca8c49e42971eb338db"
+  },
+  {
+    "path": "assets/animals/desert/warthog/leg1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 2646,
+    "sha256": "5124d7320eab0ba5f55024d3bc2b2521845942cf4886e459451ef297d9e4592d"
+  },
+  {
+    "path": "assets/animals/desert/warthog/warthog.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 17396,
+    "sha256": "3fe41c5f9cca40fbda5b16aa32d4e1e70f717d5d452826f78e21681a99ef247c"
+  },
+  {
+    "path": "assets/animals/land/angry_duck/angry_duck.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 16476,
+    "sha256": "d2dcbbc068cb5a6edfdbae09e4eeed620bdef23d8f7cc48895258491f1989e5f"
+  },
+  {
+    "path": "assets/animals/land/angry_duck/angry_duck1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 5344,
+    "sha256": "e2e9d865dee3a54bc60bfd8157f72e6f41e4703af925128ca18a8d799e6e2bdb"
+  },
+  {
+    "path": "assets/animals/land/angry_duck/angry_duck_head.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 5412,
+    "sha256": "d03c2e0c0759f4e18d8d009ab3eb4037d41d964599605c786b1b6ad28d140a62"
+  },
+  {
+    "path": "assets/animals/land/angry_duck/angry_duck_wing1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 166,
+    "height": 259,
+    "bytes": 3766,
+    "sha256": "c46393ab07e9b2f6c7f483c66acf131b6f2df15e112e2f19b22b4cba72d46015"
+  },
+  {
+    "path": "assets/animals/land/angry_duck/angry_duck_wing2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 166,
+    "height": 259,
+    "bytes": 3772,
+    "sha256": "ec0a84831aadfba03edd37e457497bd5c79b6e0ffbbd0e92c92173ab5885a96f"
+  },
+  {
+    "path": "assets/animals/land/angry_duck/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 16476,
+    "sha256": "d2dcbbc068cb5a6edfdbae09e4eeed620bdef23d8f7cc48895258491f1989e5f"
+  },
+  {
+    "path": "assets/animals/land/baby_duck/baby_duck.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8580,
+    "sha256": "79afdc9ef68485e2baecc26c3ecdac2be9a800804559d9d6735ba39173564993"
+  },
+  {
+    "path": "assets/animals/land/baby_duck/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8580,
+    "sha256": "79afdc9ef68485e2baecc26c3ecdac2be9a800804559d9d6735ba39173564993"
+  },
+  {
+    "path": "assets/animals/land/bear/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 257,
+    "height": 290,
+    "bytes": 1036,
+    "sha256": "bfaa33e2da6391869bcb4dd1da6c2ce5d7310bf0dd66c78d07c6510b9b744776"
+  },
+  {
+    "path": "assets/animals/land/bear/bear.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8504,
+    "sha256": "175019cfd75c4f56c00951f2106bc0863767f5ad879c95d55eb7eda6cdfa9238"
+  },
+  {
+    "path": "assets/animals/land/bear/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8504,
+    "sha256": "175019cfd75c4f56c00951f2106bc0863767f5ad879c95d55eb7eda6cdfa9238"
+  },
+  {
+    "path": "assets/animals/land/bee/bee.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 30266,
+    "sha256": "57abaaf9283e2e0a30a1a9c49f8c269e4d590cc47e434d0687c2750c30aee576"
+  },
+  {
+    "path": "assets/animals/land/bee/bee1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 28260,
+    "sha256": "d0125f7747d775c4b109e906984cd6ff2e6e547ae64bc0f8c82cbf1c21c810ca"
+  },
+  {
+    "path": "assets/animals/land/bee/bee2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 25566,
+    "sha256": "bf5407a1264db3dd9c25c642c57560de8661b9939641f49f7a7c73cbf57a2d74"
+  },
+  {
+    "path": "assets/animals/land/bee/bee_wing1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 304,
+    "height": 434,
+    "bytes": 5030,
+    "sha256": "9f4c938806a1ef61c9dfcf8fce866e4635ab86e585ea87b485e78aa3d59b0d8c"
+  },
+  {
+    "path": "assets/animals/land/bee/bee_wing2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 304,
+    "height": 434,
+    "bytes": 5018,
+    "sha256": "53a93b81453535988420b40880d9f7f58d2f92f6df05fa1b379d583557738736"
+  },
+  {
+    "path": "assets/animals/land/bee/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 27478,
+    "sha256": "ddd13f4bee3d6858982745baf8584a98d30c924691380942b8dbd4a1c07b2062"
+  },
+  {
+    "path": "assets/animals/land/boa/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 219,
+    "height": 200,
+    "bytes": 3934,
+    "sha256": "a4f0743d0987c8dc5a8073dc6f48a2216026168a0b1d2e81f0fd3b265b49d497"
+  },
+  {
+    "path": "assets/animals/land/boa/boa.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 22350,
+    "sha256": "272ec93cdfd3ed93b5275aea5b616695a439cae4fac8a266a90e3216e23f3f76"
+  },
+  {
+    "path": "assets/animals/land/boa/boaconstrictor2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15034,
+    "sha256": "7f4bf700872df9a1ce686d7d48975c7eecc4eb055ab978383a92d6720f305b9e"
+  },
+  {
+    "path": "assets/animals/land/boa/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 22350,
+    "sha256": "272ec93cdfd3ed93b5275aea5b616695a439cae4fac8a266a90e3216e23f3f76"
+  },
+  {
+    "path": "assets/animals/land/boa/tongue.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 598,
+    "sha256": "26c79f399b63b65fe51f8e38496aebd62a3c0f75697fa2cb03e3a07bc111080e"
+  },
+  {
+    "path": "assets/animals/land/cassowary/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 17740,
+    "sha256": "01349caea49eb8e919840444e7c62a7fa80f3bced211e114437c8cdb27ec60c3"
+  },
+  {
+    "path": "assets/animals/land/cassowary/cassowary.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 17740,
+    "sha256": "01349caea49eb8e919840444e7c62a7fa80f3bced211e114437c8cdb27ec60c3"
+  },
+  {
+    "path": "assets/animals/land/cassowary/cassowary1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 17210,
+    "sha256": "a64847130f32693560d72077446a2e1f31a80bc7dda8e8ff800c02f2d54a03b1"
+  },
+  {
+    "path": "assets/animals/land/cassowary/cassowary2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 22156,
+    "sha256": "1d1684e8fd864034110767f0c2fded8bb0661ae17b5b2e2f573c1fcda7878c92"
+  },
+  {
+    "path": "assets/animals/land/cheetah/black_panther/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 25408,
+    "sha256": "6627bd2e2326f79152967988282aefc25b245a8df61960d2500cd5bb4390b0b9"
+  },
+  {
+    "path": "assets/animals/land/cheetah/black_panther/cheetah.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 25408,
+    "sha256": "6627bd2e2326f79152967988282aefc25b245a8df61960d2500cd5bb4390b0b9"
+  },
+  {
+    "path": "assets/animals/land/cheetah/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 34906,
+    "sha256": "5df4b6fee7b6ba81f507a12724da159440f8cdbb19a44014983adcdf12df4be2"
+  },
+  {
+    "path": "assets/animals/land/cheetah/cheetah.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 34906,
+    "sha256": "5df4b6fee7b6ba81f507a12724da159440f8cdbb19a44014983adcdf12df4be2"
+  },
+  {
+    "path": "assets/animals/land/cheetah/jaguar/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 53800,
+    "sha256": "eaa196ccb24390d4e6b1a05da73b843bc784f80c9d123ffeb891f1759b9169cb"
+  },
+  {
+    "path": "assets/animals/land/cheetah/jaguar/cheetah.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 53800,
+    "sha256": "eaa196ccb24390d4e6b1a05da73b843bc784f80c9d123ffeb891f1759b9169cb"
+  },
+  {
+    "path": "assets/animals/land/cheetah/leopard/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 48216,
+    "sha256": "e02843454282206a2100a450c182fa9357481bdf63b1ad9734541ebfa9019168"
+  },
+  {
+    "path": "assets/animals/land/cheetah/leopard/cheetah.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 48216,
+    "sha256": "e02843454282206a2100a450c182fa9357481bdf63b1ad9734541ebfa9019168"
+  },
+  {
+    "path": "assets/animals/land/chicken/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 17940,
+    "sha256": "843893e8733c04cb62f5bc8856a8605686a2b78a06ea5d2460293f9176692658"
+  },
+  {
+    "path": "assets/animals/land/chicken/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13346,
+    "sha256": "7c788284b913787a55a3a40b4f322aa08f12fd4ecd44abd2c88d2c8afca8d353"
+  },
+  {
+    "path": "assets/animals/land/chicken/chicken.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13346,
+    "sha256": "7c788284b913787a55a3a40b4f322aa08f12fd4ecd44abd2c88d2c8afca8d353"
+  },
+  {
+    "path": "assets/animals/land/chicken/chicken1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 5188,
+    "sha256": "60d64b6058b5a94239733806f7187ec6dade8046419cf14cb865a5c1bce1ce23"
+  },
+  {
+    "path": "assets/animals/land/chicken/chicken_head.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 7526,
+    "sha256": "52ac0e41a4f967fe06c6dfff24222376b2d932f9ea4f984ba37e81b5dbe7c4b5"
+  },
+  {
+    "path": "assets/animals/land/chicken/chicken_wing1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 210,
+    "height": 266,
+    "bytes": 2914,
+    "sha256": "f43d94177b3a60196681e3c4bb080ea98fc6e9bdb228031da6b6cb9c47daf620"
+  },
+  {
+    "path": "assets/animals/land/chicken/chicken_wing2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 208,
+    "height": 266,
+    "bytes": 2880,
+    "sha256": "c3d78f6b6929e121355e03e0d564f3b3c2de45a42ff7302311988c249a978527"
+  },
+  {
+    "path": "assets/animals/land/cobra/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 22120,
+    "sha256": "25606ae8b779146aa6313c801a46dd78b45d6de63f45cfae0347a7c822902ed5"
+  },
+  {
+    "path": "assets/animals/land/cobra/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 20184,
+    "sha256": "68b5313358b0e74aa2120b8f717e8a601375118e79058ed63ce2f5536c86ca84"
+  },
+  {
+    "path": "assets/animals/land/cobra/cobra.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 20184,
+    "sha256": "68b5313358b0e74aa2120b8f717e8a601375118e79058ed63ce2f5536c86ca84"
+  },
+  {
+    "path": "assets/animals/land/cobra/tongue.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 598,
+    "sha256": "26c79f399b63b65fe51f8e38496aebd62a3c0f75697fa2cb03e3a07bc111080e"
+  },
+  {
+    "path": "assets/animals/land/crocodile/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 219,
+    "height": 200,
+    "bytes": 3710,
+    "sha256": "6c2d7e57187cff2987067d5942ee558b67cea4d60c18fde02138ad1f4019d63d"
+  },
+  {
+    "path": "assets/animals/land/crocodile/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 32730,
+    "sha256": "1dba6dedd8a0adc887df014afbe3f0a6890eb4856fc58efa9804e9997541fd14"
+  },
+  {
+    "path": "assets/animals/land/crocodile/crocodile.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 32730,
+    "sha256": "1dba6dedd8a0adc887df014afbe3f0a6890eb4856fc58efa9804e9997541fd14"
+  },
+  {
+    "path": "assets/animals/land/deer/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 11954,
+    "sha256": "1ca1eb8b2e868bee43db4009983a01e53a053e6cc9f1e328cdc22c1cd85bd7db"
+  },
+  {
+    "path": "assets/animals/land/deer/deer.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 11954,
+    "sha256": "1ca1eb8b2e868bee43db4009983a01e53a053e6cc9f1e328cdc22c1cd85bd7db"
+  },
+  {
+    "path": "assets/animals/land/deer/doe/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 10836,
+    "sha256": "7106e90e22bb47a58e1d80f91bddc447adf2bfc4e3b3a4f96e4fad9d3f891722"
+  },
+  {
+    "path": "assets/animals/land/deer/doe/deer.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 10836,
+    "sha256": "7106e90e22bb47a58e1d80f91bddc447adf2bfc4e3b3a4f96e4fad9d3f891722"
+  },
+  {
+    "path": "assets/animals/land/deer/marsh/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 13320,
+    "sha256": "198d6f952be314cebe16bb100ba2715cc646a3f9725768be1492fa379a38edfe"
+  },
+  {
+    "path": "assets/animals/land/deer/marsh/deer.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 13320,
+    "sha256": "198d6f952be314cebe16bb100ba2715cc646a3f9725768be1492fa379a38edfe"
+  },
+  {
+    "path": "assets/animals/land/dino_monster/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 600,
+    "bytes": 21354,
+    "sha256": "213a19e85818ddf6f040ef4562e7f6b6271fc8514c078aadc53fe50bce3b9488"
+  },
+  {
+    "path": "assets/animals/land/dino_monster/dino_monster.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 600,
+    "bytes": 21354,
+    "sha256": "213a19e85818ddf6f040ef4562e7f6b6271fc8514c078aadc53fe50bce3b9488"
+  },
+  {
+    "path": "assets/animals/land/dino_monster/dinomonster1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8308,
+    "sha256": "e2b515fdc4394e47649d9c32648b72a0f0fa68495559c0c148daa5feec1b61f3"
+  },
+  {
+    "path": "assets/animals/land/dino_monster/dinomonster3.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 600,
+    "bytes": 16304,
+    "sha256": "1a9c48d6619fa0e35d877cd7171c81f8bfc88dd7b6de1fe8023d5971f3675531"
+  },
+  {
+    "path": "assets/animals/land/donkey/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15032,
+    "sha256": "321fe372cf582a64180c90d235c5e566b8dc9f97b35e259a2e37f9a25ee52b47"
+  },
+  {
+    "path": "assets/animals/land/donkey/donkey.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15032,
+    "sha256": "321fe372cf582a64180c90d235c5e566b8dc9f97b35e259a2e37f9a25ee52b47"
+  },
+  {
+    "path": "assets/animals/land/donkey/donkey1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 9316,
+    "sha256": "6a9bfb17e7c19d8de957b0a456996f1453482d8091455691763b4976765c127e"
+  },
+  {
+    "path": "assets/animals/land/donkey/donkey2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 9298,
+    "sha256": "ad223033974ec0b107a9f2ea9c46dbda8de517b6cb5b175c3200ab987c06cb30"
+  },
+  {
+    "path": "assets/animals/land/donkey/donkey_head1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8468,
+    "sha256": "c7476fb57a2eba88d0c80319d67d0d010f36c94bbc6eda486b066acf32e542cb"
+  },
+  {
+    "path": "assets/animals/land/donkey/donkey_head2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8468,
+    "sha256": "c7476fb57a2eba88d0c80319d67d0d010f36c94bbc6eda486b066acf32e542cb"
+  },
+  {
+    "path": "assets/animals/land/donkey/jackass/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 503,
+    "bytes": 17552,
+    "sha256": "2bcb3740a9975746f607f3b7bd8a24a9045711ec6d5a114cd067f5cc9babbf05"
+  },
+  {
+    "path": "assets/animals/land/donkey/jackass/donkey.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 503,
+    "bytes": 17552,
+    "sha256": "2bcb3740a9975746f607f3b7bd8a24a9045711ec6d5a114cd067f5cc9babbf05"
+  },
+  {
+    "path": "assets/animals/land/donkey/jackass/donkey1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 12394,
+    "sha256": "51f41f1cc6da497ec00b65d1f8a22d72e6c21423809761cb555677d17be804b8"
+  },
+  {
+    "path": "assets/animals/land/donkey/jackass/donkey2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 12534,
+    "sha256": "b36ce7a3ffefef618286724a43f7bc998a3cc459704d14e5b7168e5533f9b922"
+  },
+  {
+    "path": "assets/animals/land/donkey/jackass/donkey_head1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 10188,
+    "sha256": "187284ada77a3eca90e0e234d363627b275defebed8f8746757dc0cd7d1f1fea"
+  },
+  {
+    "path": "assets/animals/land/donkey/jackass/donkey_head2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 10178,
+    "sha256": "a0253a1d4b77b32f2051a2a4c277f16d2fee7096e83354539deae42fa6bba95e"
+  },
+  {
+    "path": "assets/animals/land/donkey/jackass/legs.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 11622,
+    "sha256": "d34e0591434e76c6265646d39ccd4635390ac63af3bfd457350e4f6798d668ce"
+  },
+  {
+    "path": "assets/animals/land/donkey/legs.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 10522,
+    "sha256": "891472f995754510ba443fae321e670c3061a629d2730f792e7f207281eb0f4f"
+  },
+  {
+    "path": "assets/animals/land/dragon/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 11380,
+    "sha256": "b768cde7089d57d5a6bffbfc16399ec293aa9e5311144f1ec350361c63c4d1ac"
+  },
+  {
+    "path": "assets/animals/land/dragon/dragon.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 11380,
+    "sha256": "b768cde7089d57d5a6bffbfc16399ec293aa9e5311144f1ec350361c63c4d1ac"
+  },
+  {
+    "path": "assets/animals/land/duck/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 17826,
+    "sha256": "9bfc9f2bbb9b795681bc318763c56f34e38d71f5d1b25ad72c7138c62f1c0c75"
+  },
+  {
+    "path": "assets/animals/land/duck/duck.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 17826,
+    "sha256": "9bfc9f2bbb9b795681bc318763c56f34e38d71f5d1b25ad72c7138c62f1c0c75"
+  },
+  {
+    "path": "assets/animals/land/duck/fluffy/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13516,
+    "sha256": "6fdcd68c6b4bbbe05df3425be710c4a28521768d6242b431ed326be0e72652f5"
+  },
+  {
+    "path": "assets/animals/land/duck/fluffy/duck.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13516,
+    "sha256": "6fdcd68c6b4bbbe05df3425be710c4a28521768d6242b431ed326be0e72652f5"
+  },
+  {
+    "path": "assets/animals/land/eagle/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 18916,
+    "sha256": "7fcca777f203449655ebbedcbf7f31d6eec15b8ed537345c8bc4878585e0967b"
+  },
+  {
+    "path": "assets/animals/land/eagle/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14478,
+    "sha256": "a61b02650505b1a8eca9dc1e546e1b18e6884aff0df67cce831bf2f8618ce8d7"
+  },
+  {
+    "path": "assets/animals/land/eagle/eagle.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14478,
+    "sha256": "a61b02650505b1a8eca9dc1e546e1b18e6884aff0df67cce831bf2f8618ce8d7"
+  },
+  {
+    "path": "assets/animals/land/eagle/eagle1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8058,
+    "sha256": "14a3cca0d828bbe7eb22874967b9077c30a63e8476fd535338f9608521a5ef09"
+  },
+  {
+    "path": "assets/animals/land/eagle/eagle2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 4786,
+    "sha256": "884893ca0a5941d88610690f7bd2fa0c974cdbbc959aabc98b5dea2635fca2da"
+  },
+  {
+    "path": "assets/animals/land/eagle/eagle3.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 7806,
+    "sha256": "27107ee029f345bc9f4b47745a29a975215f416dcc0043b9a4e294fc7241013c"
+  },
+  {
+    "path": "assets/animals/land/eagle/eagle_head.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 6678,
+    "sha256": "c1ce4ae662e9e7bd99122932c8ed2d2305e7ffb4991b63e1829d7864a482f830"
+  },
+  {
+    "path": "assets/animals/land/eagle/eagle_wing1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 183,
+    "height": 278,
+    "bytes": 3792,
+    "sha256": "91286e91f0eb7abcdd05f194e29d975cc7c2bb4f3ce0d15e6e6cc1823bb11600"
+  },
+  {
+    "path": "assets/animals/land/eagle/eagle_wing2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 183,
+    "height": 278,
+    "bytes": 3826,
+    "sha256": "313306d30be377fd989a4686a2ac4a96123d64bec0f9790532680a017d4d5e4d"
+  },
+  {
+    "path": "assets/animals/land/eagle/golden/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 21926,
+    "sha256": "c1c0e73726acfd551c9f93d75daea6d5e597a198cb9c8d1fff6997b715d8f76e"
+  },
+  {
+    "path": "assets/animals/land/eagle/golden/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 16824,
+    "sha256": "fd2e04b00e53f618278b7c3ab21b8f77aa314d73541d03c4e69da564bdb24b8a"
+  },
+  {
+    "path": "assets/animals/land/eagle/golden/eagle.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 16824,
+    "sha256": "fd2e04b00e53f618278b7c3ab21b8f77aa314d73541d03c4e69da564bdb24b8a"
+  },
+  {
+    "path": "assets/animals/land/eagle/golden/eagle1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 9356,
+    "sha256": "9f445b5526a7978bb8449d887e69b25c9880a47a5a4d2f8d198d532a9c77649b"
+  },
+  {
+    "path": "assets/animals/land/eagle/golden/eagle2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 5384,
+    "sha256": "87e05ab784f158de9772b43db066ce678ca1a67f59c46f6caa924b0ce216affa"
+  },
+  {
+    "path": "assets/animals/land/eagle/golden/eagle3.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8470,
+    "sha256": "39215117562e2123f9641ede2a5fb1af8c181acbeb1a2d2ec0c9e3ba01c58e77"
+  },
+  {
+    "path": "assets/animals/land/eagle/golden/eagle_head.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 7768,
+    "sha256": "37c7c2997c2ccffde8036aa0c312cd30102098b7be16f670cfef64609ff5f9c7"
+  },
+  {
+    "path": "assets/animals/land/eagle/golden/eagle_wing1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 184,
+    "height": 270,
+    "bytes": 5012,
+    "sha256": "baf0e6b586b7ec4d35795847c0bf60582d4d6d82e7f9b285471688997216b1ed"
+  },
+  {
+    "path": "assets/animals/land/eagle/golden/eagle_wing2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 184,
+    "height": 270,
+    "bytes": 5300,
+    "sha256": "26dbdef6e45c0896b46d959ec03b8723c428aa5e3b38614cb701fbf5d762eec6"
+  },
+  {
+    "path": "assets/animals/land/eagle/greater_spotted/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 38072,
+    "sha256": "2764d24452ed5a1749bc16ac1fe752f670194e4e3015270eaaa6eaddf791b6ab"
+  },
+  {
+    "path": "assets/animals/land/eagle/greater_spotted/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 30922,
+    "sha256": "2afee20306d17ecf9d33e1ff111944ff94e37b56b765f357a722f970355d8d34"
+  },
+  {
+    "path": "assets/animals/land/eagle/greater_spotted/eagle.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 30922,
+    "sha256": "2afee20306d17ecf9d33e1ff111944ff94e37b56b765f357a722f970355d8d34"
+  },
+  {
+    "path": "assets/animals/land/eagle/greater_spotted/eagle1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 11672,
+    "sha256": "3fe656136c5e72c68edc8f96e6aebca3e7dd767b479605903b0ee3391972ca58"
+  },
+  {
+    "path": "assets/animals/land/eagle/greater_spotted/eagle2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8402,
+    "sha256": "57afb15b15a3ac9fb2b474457589ae1664278d294cbfee9f6de4b3ac86e502e5"
+  },
+  {
+    "path": "assets/animals/land/eagle/greater_spotted/eagle3.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 11670,
+    "sha256": "8593e4fcae0404a9905c70d2933f51513cf60af88f2df20bc2f886b44195058b"
+  },
+  {
+    "path": "assets/animals/land/eagle/greater_spotted/eagle_head.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 9864,
+    "sha256": "85aee5486208b943584b2fdf4843650d8d61a7922bd50d031201dccd85a9b62f"
+  },
+  {
+    "path": "assets/animals/land/eagle/greater_spotted/eagle_wing1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 193,
+    "height": 309,
+    "bytes": 5632,
+    "sha256": "67955e1fc3fe1f58ae8344f9150f40e4ff396d6291d7b2b0fc44c3afdf450adc"
+  },
+  {
+    "path": "assets/animals/land/eagle/greater_spotted/eagle_wing2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 193,
+    "height": 309,
+    "bytes": 5660,
+    "sha256": "6a1c6ccc065ebff6e6ff9c090ec3a37d1ec1ef2973ebcc07f8d4ef71f56c452c"
+  },
+  {
+    "path": "assets/animals/land/eagle/harpy/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 39068,
+    "sha256": "e62102086adb6421739e2fbdfe8589cb715be8aec806f8736e9b6462ab6b6dbb"
+  },
+  {
+    "path": "assets/animals/land/eagle/harpy/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 26584,
+    "sha256": "89342e33e072446947ed326eb7defb8f83b46556d61e4c1a63c062724f145c7d"
+  },
+  {
+    "path": "assets/animals/land/eagle/harpy/eagle.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 26584,
+    "sha256": "89342e33e072446947ed326eb7defb8f83b46556d61e4c1a63c062724f145c7d"
+  },
+  {
+    "path": "assets/animals/land/eagle/harpy/eagle1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 20180,
+    "sha256": "7cd5f7e1c82fead0e700aed5ee1cd7ac904ee3da09ff0c9d3315f9d6e1a4b1d0"
+  },
+  {
+    "path": "assets/animals/land/eagle/harpy/eagle2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 12474,
+    "sha256": "e2a88ee6df723b136f475f881ef45311557df2976e6647a1d6775c40445970f5"
+  },
+  {
+    "path": "assets/animals/land/eagle/harpy/eagle3.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 19880,
+    "sha256": "b5eb245b4077bd6c44b876e441ce234f050a8997b35d8a6a059b4f0d266cbaca"
+  },
+  {
+    "path": "assets/animals/land/eagle/harpy/eagle_head.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 11906,
+    "sha256": "9894eba3473ad370985bd931df871b3f60f80f1ba213b528bfbe2b6403cbcb38"
+  },
+  {
+    "path": "assets/animals/land/eagle/harpy/eagle_wing1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 192,
+    "height": 309,
+    "bytes": 5750,
+    "sha256": "291ff9adc69498917b8bb79e5c32762864c7e199da4cdda8d17af95d36114d61"
+  },
+  {
+    "path": "assets/animals/land/eagle/harpy/eagle_wing2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 192,
+    "height": 309,
+    "bytes": 5744,
+    "sha256": "0bdf1a6a4354c5b026b5a98167ecb9202291e13f62111c0f83ec0a955812b0cc"
+  },
+  {
+    "path": "assets/animals/land/elephant/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 257,
+    "height": 290,
+    "bytes": 1742,
+    "sha256": "24883e5b51411bfa0baab215fd45e1230985383e80e8c093bf84810d5c0f2ce5"
+  },
+  {
+    "path": "assets/animals/land/elephant/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 9724,
+    "sha256": "b49c9b072f1b592fb1abd82f0fd21000f82ccaa9ba72cef66056cc3e1dd4672e"
+  },
+  {
+    "path": "assets/animals/land/elephant/elephant.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 9724,
+    "sha256": "b49c9b072f1b592fb1abd82f0fd21000f82ccaa9ba72cef66056cc3e1dd4672e"
+  },
+  {
+    "path": "assets/animals/land/falcon/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 16968,
+    "sha256": "d384d9e5fdb02b139b581ab78332a28480de0717f5720633021d60414a3a8836"
+  },
+  {
+    "path": "assets/animals/land/falcon/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15898,
+    "sha256": "780ec57b921b7541a035a2eed0b22ef20c12f71f9fbd068c5c8aef4940c3eb46"
+  },
+  {
+    "path": "assets/animals/land/falcon/falcon.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15898,
+    "sha256": "780ec57b921b7541a035a2eed0b22ef20c12f71f9fbd068c5c8aef4940c3eb46"
+  },
+  {
+    "path": "assets/animals/land/falcon/falcon1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 5862,
+    "sha256": "7eaea019db776554bac87aa5b08d11062ded81e7ac499814a6b7a1e2be93463e"
+  },
+  {
+    "path": "assets/animals/land/falcon/falcon2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 5442,
+    "sha256": "34ea245813d6b2638181a3156d7790b854ab4b0620ef0634fb37ef55e0e8ae73"
+  },
+  {
+    "path": "assets/animals/land/falcon/falcon3.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8402,
+    "sha256": "d740f58ca07e14141b9d998da085a4b50bf372542454f114d7c437704d5bddb7"
+  },
+  {
+    "path": "assets/animals/land/falcon/falcon_head.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 5446,
+    "sha256": "2fe22d8dfe980c9da7155086f92da1b53bba7fd29b63b78fe47b7586b8556732"
+  },
+  {
+    "path": "assets/animals/land/falcon/falcon_wing1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 185,
+    "height": 258,
+    "bytes": 4226,
+    "sha256": "b0ecd2ca7a294c55aa3e7d8997c4fe22fcb7b161072862d8b6c4779e28402cb4"
+  },
+  {
+    "path": "assets/animals/land/falcon/falcon_wing2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 185,
+    "height": 258,
+    "bytes": 4234,
+    "sha256": "ca54f33479d0213a38795ed841a0066ffdfae4e715c7ef906debbab4387957db"
+  },
+  {
+    "path": "assets/animals/land/falcon/predator/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 21160,
+    "sha256": "a23b232f65ee426f623ce70feff131884172cc8c2278f5a69b70c398c95bbb9e"
+  },
+  {
+    "path": "assets/animals/land/falcon/predator/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 19610,
+    "sha256": "a9c566929bb75baef6f4047fc5e98df55510fefbfcc4d5a594612a0c84e65263"
+  },
+  {
+    "path": "assets/animals/land/falcon/predator/falcon.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 19610,
+    "sha256": "a9c566929bb75baef6f4047fc5e98df55510fefbfcc4d5a594612a0c84e65263"
+  },
+  {
+    "path": "assets/animals/land/falcon/predator/falcon1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 6406,
+    "sha256": "eff999887396073b6a2f6c004326803ed84415891e7464ddf32d12982a202ad4"
+  },
+  {
+    "path": "assets/animals/land/falcon/predator/falcon2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 6406,
+    "sha256": "eff999887396073b6a2f6c004326803ed84415891e7464ddf32d12982a202ad4"
+  },
+  {
+    "path": "assets/animals/land/falcon/predator/falcon3.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 9776,
+    "sha256": "469de0b1821f9bc9b16807227b20499ea56e254fd3d80661dda5c6e9c11f9ecc"
+  },
+  {
+    "path": "assets/animals/land/falcon/predator/falcon_head.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 6840,
+    "sha256": "08e9fc1ee7bcd33ac74447bc9dfb4b958bb69f599c5fc2bd1f9e08583d827d26"
+  },
+  {
+    "path": "assets/animals/land/falcon/predator/falcon_wing1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 185,
+    "height": 258,
+    "bytes": 5076,
+    "sha256": "c18bf48c8014add36fb343de684688377609e2bb9948af413cdbebc242ba3195"
+  },
+  {
+    "path": "assets/animals/land/falcon/predator/falcon_wing2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 185,
+    "height": 258,
+    "bytes": 5202,
+    "sha256": "c4cc4c8cc45f2a4696240da195867899fe17f050aea399e640be18f4733bd0ba"
+  },
+  {
+    "path": "assets/animals/land/falcon/shaheen/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 19154,
+    "sha256": "e17a83625d42c489f4d8d1b727070dcf4ffc0268da779993ad11335c6a58c47e"
+  },
+  {
+    "path": "assets/animals/land/falcon/shaheen/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 18384,
+    "sha256": "230c83629dd749aae021308b24b12ba1df064b93b4fb57ce9b72471f77e7a49a"
+  },
+  {
+    "path": "assets/animals/land/falcon/shaheen/falcon.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 18384,
+    "sha256": "230c83629dd749aae021308b24b12ba1df064b93b4fb57ce9b72471f77e7a49a"
+  },
+  {
+    "path": "assets/animals/land/falcon/shaheen/falcon1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 6936,
+    "sha256": "a98eb99e4270d1e9771c7c15d8e89a0e1c8fe6236fc0a62722b6982b9d4ac1aa"
+  },
+  {
+    "path": "assets/animals/land/falcon/shaheen/falcon2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 5412,
+    "sha256": "621da4bee247b97c81e19f45a9525b5c33f38221e9ea561fc3f83aae8cd34806"
+  },
+  {
+    "path": "assets/animals/land/falcon/shaheen/falcon3.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8978,
+    "sha256": "cd3bb73355e8c33d2cd72c8d25e331793a7973af9f04f2b3e006a4e8d423e33d"
+  },
+  {
+    "path": "assets/animals/land/falcon/shaheen/falcon_head.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 7404,
+    "sha256": "5a4e9df10886b7e515993e471993116f379e24e7ea45828e6e1389dd6d9653c1"
+  },
+  {
+    "path": "assets/animals/land/falcon/shaheen/falcon_wing1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 185,
+    "height": 258,
+    "bytes": 7498,
+    "sha256": "8d3fdafbe97868e41e6e55b4484ac42440ed7bc5954f2ec11edb4ba6b8d5d4b9"
+  },
+  {
+    "path": "assets/animals/land/falcon/shaheen/falcon_wing2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 193,
+    "height": 270,
+    "bytes": 4256,
+    "sha256": "8fdca073e073fc9c742326f5b2ed608b08fcb267ff515d85fdddbfe6a8650757"
+  },
+  {
+    "path": "assets/animals/land/fox/body.webp",
+    "rule": "literal",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 25476,
+    "sha256": "a6341d6563a4069d5a979854d91d1582a49c11250e77ee3c8fc8858761c51ae9"
+  },
+  {
+    "path": "assets/animals/land/fox/fox.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 25476,
+    "sha256": "a6341d6563a4069d5a979854d91d1582a49c11250e77ee3c8fc8858761c51ae9"
+  },
+  {
+    "path": "assets/animals/land/frog/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 676,
+    "height": 615,
+    "bytes": 26822,
+    "sha256": "fbc696b56c397a1cec52fd0549ae9bbe93fdbc2e66810c90e27419149ff8adc7"
+  },
+  {
+    "path": "assets/animals/land/frog/frog.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 676,
+    "height": 615,
+    "bytes": 26822,
+    "sha256": "fbc696b56c397a1cec52fd0549ae9bbe93fdbc2e66810c90e27419149ff8adc7"
+  },
+  {
+    "path": "assets/animals/land/frog/frog2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 776,
+    "height": 778,
+    "bytes": 47232,
+    "sha256": "bf965fb30626aae9eac948cb3f90cead88c92c13078e8c2939f5f13054ab61d1"
+  },
+  {
+    "path": "assets/animals/land/frog/frogLegs.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 777,
+    "height": 548,
+    "bytes": 28226,
+    "sha256": "479c7b27c4359fb88be2b86485727a9e11666432f0530badea27ec0f6eb95622"
+  },
+  {
+    "path": "assets/animals/land/giant_spider/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 11772,
+    "sha256": "3c32207837f3797714c599e2835aa046038090f8b7efb4dd378fc9535d4ef7a3"
+  },
+  {
+    "path": "assets/animals/land/giant_spider/giant_spider.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 11772,
+    "sha256": "3c32207837f3797714c599e2835aa046038090f8b7efb4dd378fc9535d4ef7a3"
+  },
+  {
+    "path": "assets/animals/land/girabie/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 37412,
+    "sha256": "837a4cb1ae328fcd41399e5a4d575198c2986ec140c49e9151d18f8cd9d1d0ba"
+  },
+  {
+    "path": "assets/animals/land/girabie/girabie.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 37412,
+    "sha256": "837a4cb1ae328fcd41399e5a4d575198c2986ec140c49e9151d18f8cd9d1d0ba"
+  },
+  {
+    "path": "assets/animals/land/giraffe/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 49448,
+    "sha256": "cd9c364d475a5a8226676ea8b6e3216f3b0ad6322afe94339b1efc0112c8dd5a"
+  },
+  {
+    "path": "assets/animals/land/giraffe/family/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 50742,
+    "sha256": "f941fe97f75bce983d006fa70aa9b2f58e38080a52d7e353d188aabf20124709"
+  },
+  {
+    "path": "assets/animals/land/giraffe/family/ability2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 50464,
+    "sha256": "b73a529a72a97871a56c01d832a32e342f55e2f5057e0272cfc97bcfc1f3820e"
+  },
+  {
+    "path": "assets/animals/land/giraffe/family/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 50742,
+    "sha256": "f941fe97f75bce983d006fa70aa9b2f58e38080a52d7e353d188aabf20124709"
+  },
+  {
+    "path": "assets/animals/land/giraffe/family/giraffe.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 81206,
+    "sha256": "0aed9a6dc8dee334aa3f2d56d813d02d021c590e5c9ed8d95aa29aea1d6bce40"
+  },
+  {
+    "path": "assets/animals/land/giraffe/giraffe.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 49448,
+    "sha256": "cd9c364d475a5a8226676ea8b6e3216f3b0ad6322afe94339b1efc0112c8dd5a"
+  },
+  {
+    "path": "assets/animals/land/giraffe/white/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 50742,
+    "sha256": "f941fe97f75bce983d006fa70aa9b2f58e38080a52d7e353d188aabf20124709"
+  },
+  {
+    "path": "assets/animals/land/giraffe/white/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 51680,
+    "sha256": "93169f0fc6fea65bf6a590d84fe750579cad1ee433620ec38dd6f4361c15661e"
+  },
+  {
+    "path": "assets/animals/land/giraffe/white/giraffe.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 51680,
+    "sha256": "93169f0fc6fea65bf6a590d84fe750579cad1ee433620ec38dd6f4361c15661e"
+  },
+  {
+    "path": "assets/animals/land/gorilla/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 16062,
+    "sha256": "0649dfc8f2815e27975776db2cdeaeb8fdc5bf59449ad8ba13bb5fbc3297ec0b"
+  },
+  {
+    "path": "assets/animals/land/gorilla/gorilla.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 16062,
+    "sha256": "0649dfc8f2815e27975776db2cdeaeb8fdc5bf59449ad8ba13bb5fbc3297ec0b"
+  },
+  {
+    "path": "assets/animals/land/hedgehog/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 20782,
+    "sha256": "f701d344e37c2dc4e30d90c8bbd690386e290dc603756df73cad6929ff2778d2"
+  },
+  {
+    "path": "assets/animals/land/hedgehog/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 21754,
+    "sha256": "87183db55af88408c9af50bb9a71684edc78bed956676768eedb928ff26e94a5"
+  },
+  {
+    "path": "assets/animals/land/hedgehog/hedgehog.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 21792,
+    "sha256": "198f32338d47571dbbead98fd02be07162977667d521938d6336a97e82e012dc"
+  },
+  {
+    "path": "assets/animals/land/hippopotamus/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 22156,
+    "sha256": "bd3045b50598c5f3ad533d4fc7786175a9a8e453531dabb0d66dd22245769c0d"
+  },
+  {
+    "path": "assets/animals/land/hippopotamus/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 18740,
+    "sha256": "f9f5a6802d7edeafa732170a144a8229c7ad17542c9bcd5cf3082e49c712d011"
+  },
+  {
+    "path": "assets/animals/land/hippopotamus/hippopotamus.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 18740,
+    "sha256": "f9f5a6802d7edeafa732170a144a8229c7ad17542c9bcd5cf3082e49c712d011"
+  },
+  {
+    "path": "assets/animals/land/lion/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 17934,
+    "sha256": "497fcf49cd5db54e2bdcc9ab927788b5607bd40ebabd1672aea716a8be7ba32b"
+  },
+  {
+    "path": "assets/animals/land/lion/black/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13684,
+    "sha256": "e81a99d6fa3d2e16a0b00f88e5bfd2dda534400e1fb01f1f75f8ef1269985166"
+  },
+  {
+    "path": "assets/animals/land/lion/black/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 12190,
+    "sha256": "592da999f0e75b84a324d6cedc4a79290552664a4208e95da567caa2b1c9b50c"
+  },
+  {
+    "path": "assets/animals/land/lion/black/head.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 9496,
+    "sha256": "f451215c6b9dac177b9e7d0b09af72f53c397d892352e201009a737204d1c3c1"
+  },
+  {
+    "path": "assets/animals/land/lion/black/lion.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 12190,
+    "sha256": "592da999f0e75b84a324d6cedc4a79290552664a4208e95da567caa2b1c9b50c"
+  },
+  {
+    "path": "assets/animals/land/lion/black_cub/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 10320,
+    "sha256": "91302c204b44328b3ebc8d2aefd222ac0dcdaec45598731195a280d089f07795"
+  },
+  {
+    "path": "assets/animals/land/lion/black_cub/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 9618,
+    "sha256": "4554d0f94e417d5727d60805e9134f245194f9a7dfa601deba3ca5210ae3eacf"
+  },
+  {
+    "path": "assets/animals/land/lion/black_cub/lion.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 9618,
+    "sha256": "4554d0f94e417d5727d60805e9134f245194f9a7dfa601deba3ca5210ae3eacf"
+  },
+  {
+    "path": "assets/animals/land/lion/black_lioness/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 10706,
+    "sha256": "358832239149d04936d29c5f709b0c5c90be0f35dcc2cb74365aebe12629dd88"
+  },
+  {
+    "path": "assets/animals/land/lion/black_lioness/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 9730,
+    "sha256": "114fe9e01fbc413afd1a7544e63522bf513e5eba1884055d00494d3637454cc4"
+  },
+  {
+    "path": "assets/animals/land/lion/black_lioness/lion.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 9730,
+    "sha256": "114fe9e01fbc413afd1a7544e63522bf513e5eba1884055d00494d3637454cc4"
+  },
+  {
+    "path": "assets/animals/land/lion/black_maned/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 20660,
+    "sha256": "ed07322e253bf430e243226807f4d081ed4080134c1c5bb707987d5b25963063"
+  },
+  {
+    "path": "assets/animals/land/lion/black_maned/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 19234,
+    "sha256": "e6e530df2058fbc1264f459907b95755bad0798497a7e754fed971514425df03"
+  },
+  {
+    "path": "assets/animals/land/lion/black_maned/head.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14542,
+    "sha256": "5e8d6b30bfefb6bff0519dde5d5051211dd8916986cb07e1810102f6f882b67a"
+  },
+  {
+    "path": "assets/animals/land/lion/black_maned/lion.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 19234,
+    "sha256": "e6e530df2058fbc1264f459907b95755bad0798497a7e754fed971514425df03"
+  },
+  {
+    "path": "assets/animals/land/lion/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 16732,
+    "sha256": "c4761cbcd51c03f16c2ba5f23062326a8578eb03c0c3068f231cb1448ddcc86c"
+  },
+  {
+    "path": "assets/animals/land/lion/cub/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15880,
+    "sha256": "71599f0a52716ba6359a777558758059e21ecb50d0a0ba0ca62137f1954a271b"
+  },
+  {
+    "path": "assets/animals/land/lion/cub/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14984,
+    "sha256": "8ccc8b366925a031534fb54016f3cf68a7359bfd0c162934c65ab9515e45492f"
+  },
+  {
+    "path": "assets/animals/land/lion/cub/lion.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14984,
+    "sha256": "8ccc8b366925a031534fb54016f3cf68a7359bfd0c162934c65ab9515e45492f"
+  },
+  {
+    "path": "assets/animals/land/lion/head.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 12818,
+    "sha256": "ef26d0f37155cdba7584c11bc77eb7ee03198b293e87575303ce03c7baa3b827"
+  },
+  {
+    "path": "assets/animals/land/lion/lion.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 16732,
+    "sha256": "c4761cbcd51c03f16c2ba5f23062326a8578eb03c0c3068f231cb1448ddcc86c"
+  },
+  {
+    "path": "assets/animals/land/lion/lioness/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15430,
+    "sha256": "fa9c09444ed97a080f8baf0ed08cef5fc8c3bb6d792daf3c9b339f4139e7d736"
+  },
+  {
+    "path": "assets/animals/land/lion/lioness/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14336,
+    "sha256": "5cbb3a5045e7959bfa4fcafdf3cf048e0373e75a3796c96a88dc01bb712a519e"
+  },
+  {
+    "path": "assets/animals/land/lion/lioness/lion.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14336,
+    "sha256": "5cbb3a5045e7959bfa4fcafdf3cf048e0373e75a3796c96a88dc01bb712a519e"
+  },
+  {
+    "path": "assets/animals/land/lion/white/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15314,
+    "sha256": "7ead4843a224ebc68ef73db6fbe780d7f453693abaaa6471dd40ffb178c56b0a"
+  },
+  {
+    "path": "assets/animals/land/lion/white/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14064,
+    "sha256": "7784156a0a296f4647d4b438bcf60200a55e23d5d530fbf2f082eb06f6def71e"
+  },
+  {
+    "path": "assets/animals/land/lion/white/head.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 11096,
+    "sha256": "32e419e7f2df327829f70b92845da458f0f05700cd0cdf22c72c2562f6ce5c8e"
+  },
+  {
+    "path": "assets/animals/land/lion/white/lion.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14064,
+    "sha256": "7784156a0a296f4647d4b438bcf60200a55e23d5d530fbf2f082eb06f6def71e"
+  },
+  {
+    "path": "assets/animals/land/lion/white_cub/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 11444,
+    "sha256": "e1f257460f2c38a79db7f2c236f8fcbbd4806b57602d1677b92fd7059b19e5be"
+  },
+  {
+    "path": "assets/animals/land/lion/white_cub/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 10672,
+    "sha256": "e5b194112269fd19df1b4ec79426df0f88564ce6ed66dc134e1ea810eadb3518"
+  },
+  {
+    "path": "assets/animals/land/lion/white_cub/lion.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 10672,
+    "sha256": "e5b194112269fd19df1b4ec79426df0f88564ce6ed66dc134e1ea810eadb3518"
+  },
+  {
+    "path": "assets/animals/land/lion/white_lioness/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 11726,
+    "sha256": "cdd705d75a387fa255449866cf261d26bc06ecb7fdc7336ced8613801e2478f2"
+  },
+  {
+    "path": "assets/animals/land/lion/white_lioness/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 10698,
+    "sha256": "9fe09530d85f5ac7243f73b56014989b91724c29cf1df2ec5150faf653db2be8"
+  },
+  {
+    "path": "assets/animals/land/lion/white_lioness/lion.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 10698,
+    "sha256": "9fe09530d85f5ac7243f73b56014989b91724c29cf1df2ec5150faf653db2be8"
+  },
+  {
+    "path": "assets/animals/land/macaw/blue/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13738,
+    "sha256": "fc5fe4070b76ce75857676d4eb351a849e813ea65a8c7c7270d0f0844da41048"
+  },
+  {
+    "path": "assets/animals/land/macaw/blue/macaw.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13738,
+    "sha256": "fc5fe4070b76ce75857676d4eb351a849e813ea65a8c7c7270d0f0844da41048"
+  },
+  {
+    "path": "assets/animals/land/macaw/blue/macaw1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 4524,
+    "sha256": "b03733cf01a6c7006301ccc8a711e8d584cb3497dc6038a841285c65c5f0d635"
+  },
+  {
+    "path": "assets/animals/land/macaw/blue/macaw_head.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 7078,
+    "sha256": "bda69209751797ba17a691976b97e2de8594c70c0c4457e4e0ee95b40027a70a"
+  },
+  {
+    "path": "assets/animals/land/macaw/blue/macaw_wing1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 189,
+    "height": 282,
+    "bytes": 2748,
+    "sha256": "124b2e6d53a2f00abc9361da3e10fec2bde875a0ab235ae2f831d2ee248bff61"
+  },
+  {
+    "path": "assets/animals/land/macaw/blue/macaw_wing2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 189,
+    "height": 282,
+    "bytes": 2820,
+    "sha256": "ebfbbc3cefbb7af2f432abe3cd3ca80f2b998ffe3ec2055e13e827d07ff07cae"
+  },
+  {
+    "path": "assets/animals/land/macaw/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 12472,
+    "sha256": "2d13c15b92cb80a7761d04fc70f01e25a42f7142d05b90409d27d46484bfc3d3"
+  },
+  {
+    "path": "assets/animals/land/macaw/macaw.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 12472,
+    "sha256": "2d13c15b92cb80a7761d04fc70f01e25a42f7142d05b90409d27d46484bfc3d3"
+  },
+  {
+    "path": "assets/animals/land/macaw/macaw1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 2848,
+    "sha256": "347f8e85e7caa081e2fb8bb492dd20276932a6f148ecec60ef0b611c75fc1f30"
+  },
+  {
+    "path": "assets/animals/land/macaw/macaw_head.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 6128,
+    "sha256": "b73c214112c85fdce619e3c88204d361e61e9941cd61084ec722a41447f7b1d8"
+  },
+  {
+    "path": "assets/animals/land/macaw/macaw_wing1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 189,
+    "height": 282,
+    "bytes": 2616,
+    "sha256": "ec0aa0f2ffd47f0ffd8330bd533838e5e8f0c6dfec05eb3c779cfa7aa6daf62d"
+  },
+  {
+    "path": "assets/animals/land/macaw/macaw_wing2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 189,
+    "height": 282,
+    "bytes": 2588,
+    "sha256": "89a9b8249b08f9076d82dadd5d1fb5ebf26595689250aa62b770b22d03b09992"
+  },
+  {
+    "path": "assets/animals/land/macaw/spix/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 21374,
+    "sha256": "964ea73e24600d51b0596137faee9a8fe4e424bb1b2b60e6a34fa484467275f6"
+  },
+  {
+    "path": "assets/animals/land/macaw/spix/macaw.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 21374,
+    "sha256": "964ea73e24600d51b0596137faee9a8fe4e424bb1b2b60e6a34fa484467275f6"
+  },
+  {
+    "path": "assets/animals/land/macaw/spix/macaw1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13780,
+    "sha256": "19cf43d6a3a8e9a25a308265189a07467daa2055bb7efc815a85a2f9e33ad340"
+  },
+  {
+    "path": "assets/animals/land/macaw/spix/macaw_head.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 9174,
+    "sha256": "dc9ad66572d53d449045c772478710424c4d3e87b5bec75cef82da2ad4a0a832"
+  },
+  {
+    "path": "assets/animals/land/macaw/spix/macaw_wing1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 190,
+    "height": 282,
+    "bytes": 4902,
+    "sha256": "a238e4367d2846a91bacd51d13605794997bfc317a01746b85da42df1a5377fb"
+  },
+  {
+    "path": "assets/animals/land/macaw/spix/macaw_wing2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 190,
+    "height": 282,
+    "bytes": 5290,
+    "sha256": "5b22c09624b2df16ae255222c0a5ef5a15d0e2ae0b8533fa3ee70e83bc8de6ec"
+  },
+  {
+    "path": "assets/animals/land/mole/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 17058,
+    "sha256": "efd9d00707835d65d310c03ab890b7859df9a32e60e58fcffe421402c09757df"
+  },
+  {
+    "path": "assets/animals/land/mole/mole.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 17058,
+    "sha256": "efd9d00707835d65d310c03ab890b7859df9a32e60e58fcffe421402c09757df"
+  },
+  {
+    "path": "assets/animals/land/momaffie/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 39286,
+    "sha256": "61502fbaaa666108932584afa3cf1e7b6d99800602ccc1162f94573d7113eed6"
+  },
+  {
+    "path": "assets/animals/land/momaffie/momaffie.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 39286,
+    "sha256": "61502fbaaa666108932584afa3cf1e7b6d99800602ccc1162f94573d7113eed6"
+  },
+  {
+    "path": "assets/animals/land/mouse/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 23380,
+    "sha256": "2284b6efdff4d137458a1ec088b7276b1cefeb9944e61df52ac7b23de149082f"
+  },
+  {
+    "path": "assets/animals/land/mouse/mouse.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 23380,
+    "sha256": "2284b6efdff4d137458a1ec088b7276b1cefeb9944e61df52ac7b23de149082f"
+  },
+  {
+    "path": "assets/animals/land/ostrich/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 23716,
+    "sha256": "94557124f168aca120230c699675f65340a6b785679b4e33e014248d209c6f41"
+  },
+  {
+    "path": "assets/animals/land/ostrich/ostrich.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 23716,
+    "sha256": "94557124f168aca120230c699675f65340a6b785679b4e33e014248d209c6f41"
+  },
+  {
+    "path": "assets/animals/land/ostrich_baby/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15430,
+    "sha256": "6601e0ac445eecbca67e87a84fb9d2a411decab0c22a543955a6ebc230719656"
+  },
+  {
+    "path": "assets/animals/land/ostrich_baby/ostrich_baby.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15430,
+    "sha256": "6601e0ac445eecbca67e87a84fb9d2a411decab0c22a543955a6ebc230719656"
+  },
+  {
+    "path": "assets/animals/land/peacock/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 29606,
+    "sha256": "613d0bfbc4e7024d11e2a9f6e7533f7ba339019e7b122ba4e51f963bce604714"
+  },
+  {
+    "path": "assets/animals/land/peacock/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 600,
+    "bytes": 24636,
+    "sha256": "3646713292b4d8d27cab0402d57180875e47dcec80f4dd2274943103fde29bb5"
+  },
+  {
+    "path": "assets/animals/land/peacock/peacock.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 600,
+    "bytes": 24636,
+    "sha256": "3646713292b4d8d27cab0402d57180875e47dcec80f4dd2274943103fde29bb5"
+  },
+  {
+    "path": "assets/animals/land/peacock/peacock_flying_tail.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 649,
+    "bytes": 15700,
+    "sha256": "42dbca9de8d2bc86e113140d129cbc1f3f4a27d2205483c938c699874a88e719"
+  },
+  {
+    "path": "assets/animals/land/peacock/peacock_head.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 7086,
+    "sha256": "58a8ae3d607676f26a120e73a6720ac8c42058ead320ed0aea84eac94ab861b5"
+  },
+  {
+    "path": "assets/animals/land/peacock/peacock_wing1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 176,
+    "height": 260,
+    "bytes": 3896,
+    "sha256": "6e361d71b501457cb261aed83fb7874d8c683e1a707eb207addfcacb297d6271"
+  },
+  {
+    "path": "assets/animals/land/peacock/peacock_wing2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 176,
+    "height": 260,
+    "bytes": 3958,
+    "sha256": "a64e91fc7ef83f6a7365a5d4e55917ef360266089c80684ecdbfea3d43d09108"
+  },
+  {
+    "path": "assets/animals/land/pig/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 11168,
+    "sha256": "69e8c13166fd99124fdd48015db635fb3726561c480d031a57b7c0b5e5b74c1c"
+  },
+  {
+    "path": "assets/animals/land/pig/pig.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 11168,
+    "sha256": "69e8c13166fd99124fdd48015db635fb3726561c480d031a57b7c0b5e5b74c1c"
+  },
+  {
+    "path": "assets/animals/land/pig/pinky/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 9280,
+    "sha256": "509deac45978d5beb9470d73dacd340e49e6d08d8b5c7bdadfc2c6448a15319b"
+  },
+  {
+    "path": "assets/animals/land/pig/pinky/pig.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 9280,
+    "sha256": "509deac45978d5beb9470d73dacd340e49e6d08d8b5c7bdadfc2c6448a15319b"
+  },
+  {
+    "path": "assets/animals/land/pig/stinky/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 9188,
+    "sha256": "324d812035bd96d9480e02caf454803ebc416a23977f60071141f7137fd6c32b"
+  },
+  {
+    "path": "assets/animals/land/pig/stinky/pig.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 501,
+    "height": 501,
+    "bytes": 9188,
+    "sha256": "324d812035bd96d9480e02caf454803ebc416a23977f60071141f7137fd6c32b"
+  },
+  {
+    "path": "assets/animals/land/pigeon/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15446,
+    "sha256": "13cacd7a4737e03e230d5eb01b421e267a4f6dd4a3fd43564ae0988a5c2ca0a8"
+  },
+  {
+    "path": "assets/animals/land/pigeon/dove/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14164,
+    "sha256": "c35de26cf06ab38012facc923d71f4331bc528ed7438faf0812264a1022a08a4"
+  },
+  {
+    "path": "assets/animals/land/pigeon/dove/pigeon.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14164,
+    "sha256": "c35de26cf06ab38012facc923d71f4331bc528ed7438faf0812264a1022a08a4"
+  },
+  {
+    "path": "assets/animals/land/pigeon/dove/pigeon1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 3932,
+    "sha256": "0e7dfec7412a3054c4b5b5b8fd206016c10420067d30087317da3da9419b3397"
+  },
+  {
+    "path": "assets/animals/land/pigeon/dove/pigeon_head.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 6322,
+    "sha256": "458ca36a3c093d54ca23fdbe319d2b6d210fc8fce3c34fd1fab9753a52e7d9db"
+  },
+  {
+    "path": "assets/animals/land/pigeon/dove/pigeon_wing1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 213,
+    "height": 291,
+    "bytes": 4022,
+    "sha256": "8c3006b3b8f71bb4707712217ee1ef2fb618cabb6f8b7f39b899784db4c076ce"
+  },
+  {
+    "path": "assets/animals/land/pigeon/dove/pigeon_wing2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 213,
+    "height": 291,
+    "bytes": 4020,
+    "sha256": "b2f726b5698fe17063ce2dc7ffabfd7a0d7dd1b59e08a721e999700e6c658946"
+  },
+  {
+    "path": "assets/animals/land/pigeon/pigeon.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15446,
+    "sha256": "13cacd7a4737e03e230d5eb01b421e267a4f6dd4a3fd43564ae0988a5c2ca0a8"
+  },
+  {
+    "path": "assets/animals/land/pigeon/pigeon1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 5290,
+    "sha256": "aa5ac3151308cd11b26c5bea11d6552ba78e2224a9f6b08c5d5a1e84fb611182"
+  },
+  {
+    "path": "assets/animals/land/pigeon/pigeon_head.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 6202,
+    "sha256": "0da3bd1f75158dd7dd118214536d2e4434ffb7e8b25b0e773722f2af3fcf9f5c"
+  },
+  {
+    "path": "assets/animals/land/pigeon/pigeon_wing1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 213,
+    "height": 291,
+    "bytes": 4756,
+    "sha256": "baec0b7c36d951a5f6094b24f648fdd57e8d7888e39464672314ca4408cba9c2"
+  },
+  {
+    "path": "assets/animals/land/pigeon/pigeon_wing2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 212,
+    "height": 291,
+    "bytes": 4672,
+    "sha256": "71fb3be6caa1bea2cc1b9eba2fe991438f53fb559f85f985fc0ca13ddf267c87"
+  },
+  {
+    "path": "assets/animals/land/rabbit/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 20816,
+    "sha256": "152b0f034b2599eeb42891ad612e4a3ad4c03d4f983de426a761a97c81da2fa7"
+  },
+  {
+    "path": "assets/animals/land/rabbit/rabbit.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 20816,
+    "sha256": "152b0f034b2599eeb42891ad612e4a3ad4c03d4f983de426a761a97c81da2fa7"
+  },
+  {
+    "path": "assets/animals/land/rhinoceros/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 11834,
+    "sha256": "71fb2f1713c5a9901ee36ea98bae19748338933501b6826a26c076a8131e5db1"
+  },
+  {
+    "path": "assets/animals/land/rhinoceros/black/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13528,
+    "sha256": "8506836b7c3cbb0efa3d715d527ad59731d59b3a5b4729236e5ded14e0a7e753"
+  },
+  {
+    "path": "assets/animals/land/rhinoceros/black/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13658,
+    "sha256": "04b57d3865f503ff2dcf5aa718182699025847352b46b62f36602c78ff5c3dd6"
+  },
+  {
+    "path": "assets/animals/land/rhinoceros/black/rhinoceros.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13658,
+    "sha256": "04b57d3865f503ff2dcf5aa718182699025847352b46b62f36602c78ff5c3dd6"
+  },
+  {
+    "path": "assets/animals/land/rhinoceros/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14232,
+    "sha256": "61146de4b98656fd311851c8076f996f19f0f0716ed8f8943b45ee874d0cc97b"
+  },
+  {
+    "path": "assets/animals/land/rhinoceros/rhinoceros.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14232,
+    "sha256": "61146de4b98656fd311851c8076f996f19f0f0716ed8f8943b45ee874d0cc97b"
+  },
+  {
+    "path": "assets/animals/land/rhinoceros/white/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13700,
+    "sha256": "08764c51152bd2ea7f6260ebc0ea4312abef3f738b6f60e86b6a123c1ee42f3e"
+  },
+  {
+    "path": "assets/animals/land/rhinoceros/white/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13916,
+    "sha256": "7b8668cdc69a8fe1bca847afe6d3b48918d5ea0250a5da4cf499c2c722728794"
+  },
+  {
+    "path": "assets/animals/land/rhinoceros/white/rhinoceros.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13916,
+    "sha256": "7b8668cdc69a8fe1bca847afe6d3b48918d5ea0250a5da4cf499c2c722728794"
+  },
+  {
+    "path": "assets/animals/land/tiger/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 38198,
+    "sha256": "a672baf48e9466c661c7b0ef6dd2b3ae7e8b1494174699eff38762e4c5b5f2d2"
+  },
+  {
+    "path": "assets/animals/land/tiger/ability_tigerJump.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 257,
+    "height": 290,
+    "bytes": 7024,
+    "sha256": "6e6644a2dbfbf86c9786db0e836d76e6ac150e7dedde126063515d25a772d126"
+  },
+  {
+    "path": "assets/animals/land/tiger/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 16548,
+    "sha256": "fb8842f27b0492f9af624c8a28207160fa06f33916cc489e0a7375c5f1713b49"
+  },
+  {
+    "path": "assets/animals/land/tiger/tiger.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 16548,
+    "sha256": "fb8842f27b0492f9af624c8a28207160fa06f33916cc489e0a7375c5f1713b49"
+  },
+  {
+    "path": "assets/animals/land/tiger/white/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 27020,
+    "sha256": "2d704f50e320e03da55e5f44106d88ddaad470ee7cd085486fe28edb7d227efd"
+  },
+  {
+    "path": "assets/animals/land/tiger/white/ability_tigerJump.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 6854,
+    "sha256": "6b06b2f9dc9db3c5cacc0d03d4c82f017e92122c16d565246b07bd1967cbafb8"
+  },
+  {
+    "path": "assets/animals/land/tiger/white/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15700,
+    "sha256": "c4ff262e18a6df2b2e4d042f4d8994b53db97c15140a24dc7175952fd11a9a0c"
+  },
+  {
+    "path": "assets/animals/land/tiger/white/tiger.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15700,
+    "sha256": "c4ff262e18a6df2b2e4d042f4d8994b53db97c15140a24dc7175952fd11a9a0c"
+  },
+  {
+    "path": "assets/animals/land/toucan/choco/toucan.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 501,
+    "bytes": 11962,
+    "sha256": "f75e3bf97a4b4a1c5dd7a09cd3be2d64c63dbf5415c12cd6f03fcaac6fd2e6ae"
+  },
+  {
+    "path": "assets/animals/land/toucan/fiery/toucan.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 501,
+    "bytes": 13270,
+    "sha256": "d8abc74888d550355559e37c836541fae115a6a5af11daed2a49b8cd3d44000b"
+  },
+  {
+    "path": "assets/animals/land/toucan/helmeted_hornbill/toucan.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 19982,
+    "sha256": "961fc7ed14d5ffff01d36909a05d4cd30e4f766a46a2ea435b170cb444d5b9f6"
+  },
+  {
+    "path": "assets/animals/land/toucan/helmeted_hornbill/toucan_wing1.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 172,
+    "height": 246,
+    "bytes": 3358,
+    "sha256": "e989e7725f4a6c9b70ece608a5e8c3706d153ff0d0b4d150fd085e0e82116069"
+  },
+  {
+    "path": "assets/animals/land/toucan/helmeted_hornbill/toucan_wing2.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 172,
+    "height": 246,
+    "bytes": 3566,
+    "sha256": "e860b97812ebd48e2bfda377d6d0177e803c51ac23ea1e73e0e2cd8f4ff21c92"
+  },
+  {
+    "path": "assets/animals/land/toucan/keel_billed/toucan.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 501,
+    "bytes": 12514,
+    "sha256": "ebf16ec95e277328e78a6c32f271a97e9e7282d9c5732599b063a21bc4cafe71"
+  },
+  {
+    "path": "assets/animals/land/toucan/lava/toucan.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 501,
+    "bytes": 12158,
+    "sha256": "96b10488e3873e62c5bddcf665687c79d630bab3a5b690d5e0f2020be97e3aec"
+  },
+  {
+    "path": "assets/animals/land/toucan/toco/toucan.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 501,
+    "bytes": 10686,
+    "sha256": "ef0b1aff537a96c2ab2c650cbabd39acf995c51d0be91cfe5a8da15a6faf7245"
+  },
+  {
+    "path": "assets/animals/land/toucan/toucan.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 501,
+    "bytes": 10686,
+    "sha256": "ef0b1aff537a96c2ab2c650cbabd39acf995c51d0be91cfe5a8da15a6faf7245"
+  },
+  {
+    "path": "assets/animals/land/toucan/toucan_wing1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 172,
+    "height": 247,
+    "bytes": 1778,
+    "sha256": "fd086f27a2db4757f9b6f75e599b82f9294b2e96e4905cd4f026473148830466"
+  },
+  {
+    "path": "assets/animals/land/toucan/toucan_wing2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 172,
+    "height": 246,
+    "bytes": 1790,
+    "sha256": "fb25b4dba72ee10d17166e7098ae5ab4432649f502f383c1751f7e5c43cf9b5c"
+  },
+  {
+    "path": "assets/animals/land/trex/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 600,
+    "bytes": 13606,
+    "sha256": "56878f4421fd240df43163e28fc5d2bcfcc001e476349532ddbefdfb09c4a00c"
+  },
+  {
+    "path": "assets/animals/land/trex/trex.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 600,
+    "bytes": 13606,
+    "sha256": "56878f4421fd240df43163e28fc5d2bcfcc001e476349532ddbefdfb09c4a00c"
+  },
+  {
+    "path": "assets/animals/land/woodpecker/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 17740,
+    "sha256": "245039a5961c233fd0dbc3b9ff6981254b1d071df34dc5de4e5c2719c14279ba"
+  },
+  {
+    "path": "assets/animals/land/woodpecker/woodpecker.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 17740,
+    "sha256": "245039a5961c233fd0dbc3b9ff6981254b1d071df34dc5de4e5c2719c14279ba"
+  },
+  {
+    "path": "assets/animals/land/woodpecker/woodpecker1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 5220,
+    "sha256": "5f913dc8a5c90aab7ae602fdf5c9b7b462558e7a6118386f959a9fb5ef04606e"
+  },
+  {
+    "path": "assets/animals/land/woodpecker/woodpecker_head.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 7426,
+    "sha256": "503d88915dc27de9ff0cd07a38afe9920f5b6256b9d1accbaf41db853265b08c"
+  },
+  {
+    "path": "assets/animals/land/woodpecker/woodpecker_head1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 6820,
+    "sha256": "c17516fd5952a056d7bbc11f1ec3adccb12f435948603f05a2fa84d1a8675a4c"
+  },
+  {
+    "path": "assets/animals/land/woodpecker/woodpecker_wing1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 172,
+    "height": 248,
+    "bytes": 4250,
+    "sha256": "2a6314bc9fbc8ea073e331e1872dd21c928041991a44b15d250e753814a646d2"
+  },
+  {
+    "path": "assets/animals/land/woodpecker/woodpecker_wing2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 172,
+    "height": 248,
+    "bytes": 4246,
+    "sha256": "6ab61bee66933f3aa32710aed5742a6a44ba4fa884fa17a6370be2f86f7f575a"
+  },
+  {
+    "path": "assets/animals/land/zebra/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 26536,
+    "sha256": "46c5054e5f2151eddcfb48333451d205d16d12ca4367fb9abd2ef2384668483a"
+  },
+  {
+    "path": "assets/animals/land/zebra/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 22996,
+    "sha256": "386430ec581e6f0a9dd3192c6b4512ab44f17cbf873a6c6b5f95b0c73fb4a9f4"
+  },
+  {
+    "path": "assets/animals/land/zebra/leg.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 256,
+    "height": 267,
+    "bytes": 4020,
+    "sha256": "a826d3559dfa16723da25cde19f3e9dcfbde695d0bc9bf48b99acb6511994149"
+  },
+  {
+    "path": "assets/animals/land/zebra/zebra.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 22996,
+    "sha256": "386430ec581e6f0a9dd3192c6b4512ab44f17cbf873a6c6b5f95b0c73fb4a9f4"
+  },
+  {
+    "path": "assets/animals/ocean/blue_whale/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 300,
+    "height": 300,
+    "bytes": 1536,
+    "sha256": "7101464f0d9f8b833c568a49a8203519788752f7cafde05c3f230131f5b20ad3"
+  },
+  {
+    "path": "assets/animals/ocean/blue_whale/blue_whale.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 9098,
+    "sha256": "4d2977810cd6ab1d69f81e54bf5fb7e59b0450b9977880c8f843e2a3070ccab6"
+  },
+  {
+    "path": "assets/animals/ocean/blue_whale/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 9098,
+    "sha256": "4d2977810cd6ab1d69f81e54bf5fb7e59b0450b9977880c8f843e2a3070ccab6"
+  },
+  {
+    "path": "assets/animals/ocean/crab/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 32278,
+    "sha256": "238049a884f501860f6d74bf5329b9715a0bf2f9c3ad32217872243e94047cc5"
+  },
+  {
+    "path": "assets/animals/ocean/crab/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 25942,
+    "sha256": "a3525be7b0e54966174b25e989a89df741e5be85ada52fdeb61df578f9ffa31a"
+  },
+  {
+    "path": "assets/animals/ocean/crab/crab.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 25942,
+    "sha256": "a3525be7b0e54966174b25e989a89df741e5be85ada52fdeb61df578f9ffa31a"
+  },
+  {
+    "path": "assets/animals/ocean/flamingo/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 501,
+    "bytes": 12878,
+    "sha256": "481be07ac701b85f33ae5944e189cc260c862715a2438c8b52f3733607a8c1b1"
+  },
+  {
+    "path": "assets/animals/ocean/flamingo/body_pink.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 501,
+    "bytes": 13546,
+    "sha256": "c4e38fd41c06a32645fc00da69f8c5dfe290ed77a8d6a3a4cc3dc491fc0f72fb"
+  },
+  {
+    "path": "assets/animals/ocean/flamingo/flamingo.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 501,
+    "bytes": 12878,
+    "sha256": "481be07ac701b85f33ae5944e189cc260c862715a2438c8b52f3733607a8c1b1"
+  },
+  {
+    "path": "assets/animals/ocean/flamingo/flamingo1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 3872,
+    "sha256": "b9cc477ed9d83343233b953796acc3a357ae494de0298f083680a0e7b5b5fba9"
+  },
+  {
+    "path": "assets/animals/ocean/flamingo/flamingo1_pink.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 3718,
+    "sha256": "d4fed239b476498ee7f725fd93d2571ae541e7046a6d433cf1df828d381f6fca"
+  },
+  {
+    "path": "assets/animals/ocean/flamingo/flamingo2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 5072,
+    "sha256": "58861cbc3fd7d3ee4cbea84742a145a1d11b97791d3abd4f7c6f679e161391c5"
+  },
+  {
+    "path": "assets/animals/ocean/flamingo/flamingo2_pink.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 5734,
+    "sha256": "3d483c2e1bc361a1bbe4effd3ccb195d512214399c7fa7c94a9b7203618f9639"
+  },
+  {
+    "path": "assets/animals/ocean/flamingo/flamingo_head.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 501,
+    "bytes": 4550,
+    "sha256": "b277b097dd04beee4024512ffff683a3ef88c96c61f4c4137d0921b4d52f967b"
+  },
+  {
+    "path": "assets/animals/ocean/flamingo/flamingo_head_pink.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 501,
+    "bytes": 5040,
+    "sha256": "993301432a20d70492ad4a175e7672e7fba4f7351aa96ded4b76f9dee7d29d18"
+  },
+  {
+    "path": "assets/animals/ocean/flamingo/flamingo_wing1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 176,
+    "height": 254,
+    "bytes": 3622,
+    "sha256": "b129f3531c3b1992c95c5d76d8db8f83e48ef44054d79cca238fba3ef54ecf1d"
+  },
+  {
+    "path": "assets/animals/ocean/flamingo/flamingo_wing1_pink.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 176,
+    "height": 254,
+    "bytes": 3946,
+    "sha256": "f1f16bebb41fa6cdd5a46d2b34897daf80055a4629c4304f694ea3e806137710"
+  },
+  {
+    "path": "assets/animals/ocean/flamingo/flamingo_wing2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 176,
+    "height": 254,
+    "bytes": 3682,
+    "sha256": "0b102b2f4e4270a6b9dabf6c914cdf6d7debe669533a4d8e0090606669635562"
+  },
+  {
+    "path": "assets/animals/ocean/flamingo/flamingo_wing2_pink.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 176,
+    "height": 254,
+    "bytes": 3908,
+    "sha256": "77c2e5b9d4340877ce7af01935520c22e5ab2e1e1c59f302c8562265a503217b"
+  },
+  {
+    "path": "assets/animals/ocean/jellyfish/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 600,
+    "bytes": 15452,
+    "sha256": "ee59becb0a9dd3e823a301f0173cf011c0456ec4bdeffc01720af689160fa648"
+  },
+  {
+    "path": "assets/animals/ocean/jellyfish/jellyfish.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 600,
+    "bytes": 15452,
+    "sha256": "ee59becb0a9dd3e823a301f0173cf011c0456ec4bdeffc01720af689160fa648"
+  },
+  {
+    "path": "assets/animals/ocean/king_crab/ability_crabSmash0.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 257,
+    "height": 290,
+    "bytes": 3530,
+    "sha256": "26007ca7e6f601bb470a67924954b9f52b80f4e87adc61a5985a4f5556d39969"
+  },
+  {
+    "path": "assets/animals/ocean/king_crab/ability_crabSmash1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 257,
+    "height": 290,
+    "bytes": 4358,
+    "sha256": "ffd33f378ad3a226c3ec1acaf0d1313e16772751a519493e38960ce34a806603"
+  },
+  {
+    "path": "assets/animals/ocean/king_crab/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 32118,
+    "sha256": "1690e3bd3a3809606006e2469c989c486a01f4de18b557c7d88c8b60c5fabdc4"
+  },
+  {
+    "path": "assets/animals/ocean/king_crab/king_crab.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 32118,
+    "sha256": "1690e3bd3a3809606006e2469c989c486a01f4de18b557c7d88c8b60c5fabdc4"
+  },
+  {
+    "path": "assets/animals/ocean/king_crab/king_crab1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 31438,
+    "sha256": "8e338ff0622fc3382bcc6bc9aec08c44d372f84d5da79eafa1f15ac4717566c7"
+  },
+  {
+    "path": "assets/animals/ocean/kraken/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 30042,
+    "sha256": "a77b7b01fc1053441b8000300b250c067080d9988620b32f7f5ba56d9b8b7f44"
+  },
+  {
+    "path": "assets/animals/ocean/kraken/kraken.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 30042,
+    "sha256": "a77b7b01fc1053441b8000300b250c067080d9988620b32f7f5ba56d9b8b7f44"
+  },
+  {
+    "path": "assets/animals/ocean/octopus/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 22034,
+    "sha256": "39ae1a2a9401d6a86a76d9789f167e4d0675bd4247ffa01017581b3ffabf4b7c"
+  },
+  {
+    "path": "assets/animals/ocean/octopus/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 30272,
+    "sha256": "03f3a83c9c89cf46a483ddf6661e202dba0157e021b806211d2bf11df43c9be5"
+  },
+  {
+    "path": "assets/animals/ocean/octopus/head.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 5540,
+    "sha256": "50324034597f9a472d6e2e184a78064c21af2a34747120a03b5a105ceebcfb28"
+  },
+  {
+    "path": "assets/animals/ocean/octopus/octopus.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 22034,
+    "sha256": "39ae1a2a9401d6a86a76d9789f167e4d0675bd4247ffa01017581b3ffabf4b7c"
+  },
+  {
+    "path": "assets/animals/ocean/orca/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13516,
+    "sha256": "ae4e6eb02470575051d491194130da7ad3a807a22ab438ee73b2507f28375018"
+  },
+  {
+    "path": "assets/animals/ocean/orca/orca.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 13516,
+    "sha256": "ae4e6eb02470575051d491194130da7ad3a807a22ab438ee73b2507f28375018"
+  },
+  {
+    "path": "assets/animals/ocean/pelican/ability_pelican.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 166,
+    "height": 216,
+    "bytes": 4622,
+    "sha256": "b51ea4144ce4e978bc64dd8d998910db586f9a620210727151181f29711166c8"
+  },
+  {
+    "path": "assets/animals/ocean/pelican/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14444,
+    "sha256": "72e2ecc04c5f97f2058078df099da08ace6b7e52f2aba7748ffcdefb0d172dbe"
+  },
+  {
+    "path": "assets/animals/ocean/pelican/pelican.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 14444,
+    "sha256": "72e2ecc04c5f97f2058078df099da08ace6b7e52f2aba7748ffcdefb0d172dbe"
+  },
+  {
+    "path": "assets/animals/ocean/pelican/pelican2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 8288,
+    "sha256": "7c150f7048fba2dadad098ea82a83bec2f530cc9f324e4677fc55a9a2d515a46"
+  },
+  {
+    "path": "assets/animals/ocean/pelican/pelican_head.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 7170,
+    "sha256": "8c8f463b8fb0cfd571d971a6e0fc3c791e9fed75729067c3af9d79139f629eb0"
+  },
+  {
+    "path": "assets/animals/ocean/pelican/pelican_wing1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 304,
+    "height": 434,
+    "bytes": 5228,
+    "sha256": "e79251c15436125a25d6b4c81ff09373a80f9aa28fb7cafd2dce13e70d679320"
+  },
+  {
+    "path": "assets/animals/ocean/pelican/pelican_wing11.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 199,
+    "height": 248,
+    "bytes": 4380,
+    "sha256": "f1a2cdbc5ff1ccf9a074a559b6d110430c295aadf02de526b882989860755690"
+  },
+  {
+    "path": "assets/animals/ocean/pelican/pelican_wing2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 304,
+    "height": 434,
+    "bytes": 5208,
+    "sha256": "5aa502b55e4a69363a32e2825159df9b72e635e402d46ffafb242c68e20a02b0"
+  },
+  {
+    "path": "assets/animals/ocean/pelican/pelican_wing21.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 199,
+    "height": 248,
+    "bytes": 4454,
+    "sha256": "fc6da664af02a7ac4704c98a79475a53d09a0a23784dc0e351e1476c08201080"
+  },
+  {
+    "path": "assets/animals/ocean/pufferfish/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 30106,
+    "sha256": "1905268977d8046b0a9531f1b9fa06999754ff55bc857fda092d3ec95eaa08d4"
+  },
+  {
+    "path": "assets/animals/ocean/pufferfish/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 22568,
+    "sha256": "df4a99203c02f462819129fa69ab859d836c5ae020b127e910ebae94690480a2"
+  },
+  {
+    "path": "assets/animals/ocean/pufferfish/demon/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 56192,
+    "sha256": "9567e2a0f3bac05755e6528c70b6e6e3c4d5c3921a8e3e4fe652e5e5621b782d"
+  },
+  {
+    "path": "assets/animals/ocean/pufferfish/demon/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 53878,
+    "sha256": "a2685dc32a679a2e0593b98baa9182238918890e2e251832d908d02e026499f8"
+  },
+  {
+    "path": "assets/animals/ocean/pufferfish/demon/pufferfish.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 53878,
+    "sha256": "a2685dc32a679a2e0593b98baa9182238918890e2e251832d908d02e026499f8"
+  },
+  {
+    "path": "assets/animals/ocean/pufferfish/pufferfish.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 22568,
+    "sha256": "df4a99203c02f462819129fa69ab859d836c5ae020b127e910ebae94690480a2"
+  },
+  {
+    "path": "assets/animals/ocean/pufferfish/yellow/ability.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 38220,
+    "sha256": "0c9616f954345b211819e325a6cc79b206a7a29d87bbebd06fbaa62689af27fa"
+  },
+  {
+    "path": "assets/animals/ocean/pufferfish/yellow/body.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 30000,
+    "sha256": "35d3da699177f872f250ef0885612b5eeadeabfa2e598bf0bc3fdb14ef225290"
+  },
+  {
+    "path": "assets/animals/ocean/pufferfish/yellow/pufferfish.ui.webp",
+    "rule": "subspecies-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 30000,
+    "sha256": "35d3da699177f872f250ef0885612b5eeadeabfa2e598bf0bc3fdb14ef225290"
+  },
+  {
+    "path": "assets/animals/ocean/sea_horse/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 31808,
+    "sha256": "c394abd28a3aa948472ff99b196efe602a94e0489e7b360e20f8682c4bc407d1"
+  },
+  {
+    "path": "assets/animals/ocean/sea_horse/sea_horse.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 31808,
+    "sha256": "c394abd28a3aa948472ff99b196efe602a94e0489e7b360e20f8682c4bc407d1"
+  },
+  {
+    "path": "assets/animals/ocean/sea_monster/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 26336,
+    "sha256": "1fc32089555a309045fa587a808f6e4a51af2d2166d2bbabe4c4c670b0684700"
+  },
+  {
+    "path": "assets/animals/ocean/sea_monster/sea_monster.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 26336,
+    "sha256": "1fc32089555a309045fa587a808f6e4a51af2d2166d2bbabe4c4c670b0684700"
+  },
+  {
+    "path": "assets/animals/ocean/sea_monster/seamonster-crown.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 3074,
+    "sha256": "1f5130fcd0a16bd0917e8df14413ffe985d2a4a95df31f34b4feca6369b41645"
+  },
+  {
+    "path": "assets/animals/ocean/shark/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 9800,
+    "sha256": "f21baf4c81d9fb58a6ac9fd244a48cfd7da4752578c886404f2cf37d157c3f2c"
+  },
+  {
+    "path": "assets/animals/ocean/shark/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 29478,
+    "sha256": "3e47a2741cb7016d9595186d2ff2e42b727e03b9d5bf7aef3714d210931d7860"
+  },
+  {
+    "path": "assets/animals/ocean/shark/shark.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 600,
+    "height": 700,
+    "bytes": 31982,
+    "sha256": "d7b08b9c059033319c37eb1e9a9a35eb8abcf8c54ce5e742a9e4e5060a0cc1b4"
+  },
+  {
+    "path": "assets/animals/ocean/shark/tail.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 4514,
+    "sha256": "50bbeec97fb75942cecee08a3195eb2d7b91e927b9738d50102963278c468b22"
+  },
+  {
+    "path": "assets/animals/ocean/shrimp/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 40064,
+    "sha256": "7f2ddcdda96b4c125d06da22077254a9373ccfbd4b4461a4e8d6482702081fa3"
+  },
+  {
+    "path": "assets/animals/ocean/shrimp/shrimp.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 40064,
+    "sha256": "7f2ddcdda96b4c125d06da22077254a9373ccfbd4b4461a4e8d6482702081fa3"
+  },
+  {
+    "path": "assets/animals/ocean/snail/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 25696,
+    "sha256": "63349144cc608199efd33c3f5d87f31f05abec43229bfb22dbeb0c08a86d2da5"
+  },
+  {
+    "path": "assets/animals/ocean/snail/snail.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 32454,
+    "sha256": "9c55f8197fc30bb87ec9014872488e84c4768d47ec366d16fc0ef76df31efb8a"
+  },
+  {
+    "path": "assets/animals/ocean/snail/snail_head.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 6738,
+    "sha256": "9c2effe50dd3a58dd087cfe7b6f2ef4e21294da378184173004fa991bf47c556"
+  },
+  {
+    "path": "assets/animals/ocean/squid/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 499,
+    "height": 499,
+    "bytes": 15784,
+    "sha256": "308d852fb6f56f355e909833dedd5b73a89217a85e3099b350b654d427b368cf"
+  },
+  {
+    "path": "assets/animals/ocean/squid/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 24224,
+    "sha256": "0ae07b6ad74f94f6e2c99fc988f558546273e1ceaef0de0d62e35636e904caf3"
+  },
+  {
+    "path": "assets/animals/ocean/squid/cape.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 2802,
+    "sha256": "f385d3dccaf2f990fb3b192c79d1440a974460c92ca063d5286e61ea4babd3ab"
+  },
+  {
+    "path": "assets/animals/ocean/squid/squid.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 499,
+    "height": 499,
+    "bytes": 15784,
+    "sha256": "308d852fb6f56f355e909833dedd5b73a89217a85e3099b350b654d427b368cf"
+  },
+  {
+    "path": "assets/animals/ocean/stingray/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 600,
+    "height": 700,
+    "bytes": 14188,
+    "sha256": "46b9d61bc692a671b99061eea7ebf4c7b784beac338bcb543cd9022d8c0c19e9"
+  },
+  {
+    "path": "assets/animals/ocean/stingray/stingray.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 600,
+    "height": 700,
+    "bytes": 14188,
+    "sha256": "46b9d61bc692a671b99061eea7ebf4c7b784beac338bcb543cd9022d8c0c19e9"
+  },
+  {
+    "path": "assets/animals/ocean/stingray/tail.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 2682,
+    "sha256": "2b94ea2ea8d01747234654e12dab7e0ad1209f834a0bc38fb4dff923d309e295"
+  },
+  {
+    "path": "assets/animals/ocean/swordfish/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 600,
+    "bytes": 15060,
+    "sha256": "060377c5f2d690928a903948928685ca7112c1417528427ca03e151b246621bb"
+  },
+  {
+    "path": "assets/animals/ocean/swordfish/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 600,
+    "bytes": 14990,
+    "sha256": "f119db3382f3f9672e7f5cb25077652a45fe1fd0776e0c131c7af23406896651"
+  },
+  {
+    "path": "assets/animals/ocean/swordfish/swordfish.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 600,
+    "bytes": 14990,
+    "sha256": "f119db3382f3f9672e7f5cb25077652a45fe1fd0776e0c131c7af23406896651"
+  },
+  {
+    "path": "assets/animals/ocean/trout/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 23460,
+    "sha256": "8b23f6603d29078e36dfd09bdff60b79de98cfffa360b444e474c7e47af6cd0c"
+  },
+  {
+    "path": "assets/animals/ocean/trout/trout.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 23460,
+    "sha256": "8b23f6603d29078e36dfd09bdff60b79de98cfffa360b444e474c7e47af6cd0c"
+  },
+  {
+    "path": "assets/animals/ocean/turtle/ability.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 25294,
+    "sha256": "34d5090668ceb3aff72b5bd351b9a238aa4efad0488922844c2a25de53323aa6"
+  },
+  {
+    "path": "assets/animals/ocean/turtle/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 30876,
+    "sha256": "bbbaaa4580d06b20ede714f21c0432ec52c4839c639df41fb5233f5d924d21e9"
+  },
+  {
+    "path": "assets/animals/ocean/turtle/head.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 6346,
+    "sha256": "21495cebf5a82e96974ac6c250759d629e699307976a69d891fde91595887604"
+  },
+  {
+    "path": "assets/animals/ocean/turtle/turtle.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 30876,
+    "sha256": "bbbaaa4580d06b20ede714f21c0432ec52c4839c639df41fb5233f5d924d21e9"
+  },
+  {
+    "path": "assets/animals/ocean/turtle/turtle1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 26868,
+    "sha256": "b2b6d94d9ff9d03a92259ff320c8b485ea345637c237b62d45505a5544fb6a65"
+  },
+  {
+    "path": "assets/animals/volcano/black_dragon/black_dragon.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 23038,
+    "sha256": "df24a13f1fe7c2a4e6d2af837bd3ce1aec364c2f651b7e5a2b0085650f3fe6c9"
+  },
+  {
+    "path": "assets/animals/volcano/black_dragon/black_dragon1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 11740,
+    "sha256": "ccaa2bc55de3217e2a0e8650a299b1fef951e8670f35b330949fd95fa7d14fed"
+  },
+  {
+    "path": "assets/animals/volcano/black_dragon/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 23038,
+    "sha256": "df24a13f1fe7c2a4e6d2af837bd3ce1aec364c2f651b7e5a2b0085650f3fe6c9"
+  },
+  {
+    "path": "assets/animals/volcano/black_dragon/wing1.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 192,
+    "height": 154,
+    "bytes": 7874,
+    "sha256": "1b6695749250806613662175cf147f3e2c062f349d9a9066a931af303d47892a"
+  },
+  {
+    "path": "assets/animals/volcano/black_dragon/wing1_dark.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 192,
+    "height": 154,
+    "bytes": 2322,
+    "sha256": "571ea926c2a073513d97b350acc04ca5a76b20378fd22007513a00a26380b7d4"
+  },
+  {
+    "path": "assets/animals/volcano/black_dragon/wing2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 192,
+    "height": 154,
+    "bytes": 6910,
+    "sha256": "58b5640b21a02d1369b19211ae8e8e15782aabafd4f53a258feba70a0493edcf"
+  },
+  {
+    "path": "assets/animals/volcano/black_dragon/wing2_dark.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 192,
+    "height": 154,
+    "bytes": 2350,
+    "sha256": "29550a15e8aa2dab48550094fa2bf6983e52ce3bd6cfec970b24a17197887448"
+  },
+  {
+    "path": "assets/animals/volcano/black_dragon/wings.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 4356,
+    "sha256": "6e7f1afa77520158e800f3d6090d0c3981b7ffa8fa95ec408bc3e3eed2604d9c"
+  },
+  {
+    "path": "assets/animals/volcano/king_dragon/ability2.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 106,
+    "height": 116,
+    "bytes": 1684,
+    "sha256": "b268b596b30ad91e63c9ffff1b675b09c4908d6a6bfca0efa6bbf7e483a7ea11"
+  },
+  {
+    "path": "assets/animals/volcano/king_dragon/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 24980,
+    "sha256": "3ea98eb3e7b3a97ce53c9f6235fcdc6657db8cbcb98264420994521b14e6e9e5"
+  },
+  {
+    "path": "assets/animals/volcano/king_dragon/king_dragon.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 24980,
+    "sha256": "3ea98eb3e7b3a97ce53c9f6235fcdc6657db8cbcb98264420994521b14e6e9e5"
+  },
+  {
+    "path": "assets/animals/volcano/king_dragon/tail.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 106,
+    "height": 116,
+    "bytes": 1684,
+    "sha256": "b268b596b30ad91e63c9ffff1b675b09c4908d6a6bfca0efa6bbf7e483a7ea11"
+  },
+  {
+    "path": "assets/animals/volcano/king_dragon/wings.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 3034,
+    "sha256": "f900522d543435aa0764ed0258b23fc8f99ad6cc53765d39268baab7b834b8d3"
+  },
+  {
+    "path": "assets/animals/volcano/lava_monster/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 23972,
+    "sha256": "c572ae4c5cb709132c1c282075ecb129797cd8db2320505ddfbd59fdc5fecda9"
+  },
+  {
+    "path": "assets/animals/volcano/lava_monster/lava_monster.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 23972,
+    "sha256": "c572ae4c5cb709132c1c282075ecb129797cd8db2320505ddfbd59fdc5fecda9"
+  },
+  {
+    "path": "assets/animals/volcano/phoenix/body.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 25522,
+    "sha256": "07140909b96518a57248ec9ffc9bdd9c1b489627eb2731a8f097c298726d1823"
+  },
+  {
+    "path": "assets/animals/volcano/phoenix/phoenix.ui.webp",
+    "rule": "animal-part",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 25522,
+    "sha256": "07140909b96518a57248ec9ffc9bdd9c1b489627eb2731a8f097c298726d1823"
+  },
+  {
+    "path": "assets/foods/aloevera/edible.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 497,
+    "height": 490,
+    "bytes": 30300,
+    "sha256": "2606fa9fce445c68c06e6a0202807e81270663c50ff2236893e8c78a4d29a391"
+  },
+  {
+    "path": "assets/foods/banana/banana.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 200,
+    "height": 200,
+    "bytes": 3810,
+    "sha256": "9d8bbd155088c7c8aa17fb05099f58468dc1f9d6d3a988165568a3e7721bb1f9"
+  },
+  {
+    "path": "assets/foods/bone/edible.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 5454,
+    "sha256": "148e99fb9878c99ade3f2062b7e027691505ed506ec673aa4d339809289f01cc"
+  },
+  {
+    "path": "assets/foods/cactus_pear/cactus_pear.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 300,
+    "height": 300,
+    "bytes": 7124,
+    "sha256": "ed06447eba31dbe195c83c4aa981fcc8d18b0cd0b129f067520e9f3ef61e2695"
+  },
+  {
+    "path": "assets/foods/carrot/carrot.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 300,
+    "height": 300,
+    "bytes": 7940,
+    "sha256": "1edcdcbf43e59557615b7f44c6aec572494ed2a0e66ef0604167b9ac51f5a6bc"
+  },
+  {
+    "path": "assets/foods/clam/clam.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 300,
+    "height": 300,
+    "bytes": 8604,
+    "sha256": "32bb883bee4bd38d97dd56b976af2d25006d2a3531e867498c2d382bfce7fea1"
+  },
+  {
+    "path": "assets/foods/cloud_berry/cloud_berry.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 300,
+    "height": 300,
+    "bytes": 7216,
+    "sha256": "5a590257c1a960209774a3991915070f5436e614662a9dd98b391ce4129c6915"
+  },
+  {
+    "path": "assets/foods/coconut/coconut.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 200,
+    "height": 200,
+    "bytes": 9650,
+    "sha256": "1c4591dbd45266d256d3ed85465ed7b659316f30c13c2de38a8acac52d666adf"
+  },
+  {
+    "path": "assets/foods/conch/conch.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 449,
+    "height": 449,
+    "bytes": 23660,
+    "sha256": "98de24aa3d32d87b6bfdedc66321bcc54973681f925b316cd1a6e7792bf6a82e"
+  },
+  {
+    "path": "assets/foods/date/date.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 12318,
+    "sha256": "046d419a044b407b59292a15509022cda1823dd1334bb2f352694316655ef6a4"
+  },
+  {
+    "path": "assets/foods/duck_egg/edible.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 6540,
+    "sha256": "a2901c8f107be9a18ea6b2e474b429f9b4eb3002483e9e364e0948b2cdb9c261"
+  },
+  {
+    "path": "assets/foods/flesh/edible.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 300,
+    "height": 300,
+    "bytes": 11022,
+    "sha256": "ace7533be387012d5c40d3d0d2da5fa001e8ed078e70d69c5159a0f8959b8e05"
+  },
+  {
+    "path": "assets/foods/kelp/edible.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 269,
+    "height": 269,
+    "bytes": 18606,
+    "sha256": "252fedc138d98eb19a12b68f127e9ca646692d6bc796d6a5083762068c460059"
+  },
+  {
+    "path": "assets/foods/mango/edible.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 12588,
+    "sha256": "1914116aae1f0cb556022012b6d77dd2f24dcab7a6beb78ab9730e80a08af5de"
+  },
+  {
+    "path": "assets/foods/melon/edible.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 15750,
+    "sha256": "ea516ebdb0b16885735323b8bdb72f87c34a0170107cd614e66044c6d2ea30af"
+  },
+  {
+    "path": "assets/foods/mushroom/land/edible.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 5116,
+    "sha256": "7390fa5b3d7704c8b30e80ed957b6475192ccc727b401f3ee72f056d1baeeaf8"
+  },
+  {
+    "path": "assets/foods/nut/edible.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 300,
+    "height": 300,
+    "bytes": 14970,
+    "sha256": "7f2f4f6ceb271c901edb164bb1996148f8b3c82bece4e9d1c8a8586be167daad"
+  },
+  {
+    "path": "assets/foods/orange/edible.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 12116,
+    "sha256": "cb1d3c7ffb56f04c5ae3acbdd9d6b3ef0a85802880375b60705421c42fdf9e11"
+  },
+  {
+    "path": "assets/foods/pear/edible.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 219,
+    "height": 200,
+    "bytes": 3634,
+    "sha256": "70328bfed4a3326ca23f46daecf4cba322ab869e41a69e781b762b45ab3d5fd1"
+  },
+  {
+    "path": "assets/foods/pepper/0/edible.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 300,
+    "height": 417,
+    "bytes": 6480,
+    "sha256": "48e999080bd003061b05809a967bb161d96d1977372cca8952a10651b50a322f"
+  },
+  {
+    "path": "assets/foods/raspberry/edible.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 219,
+    "height": 200,
+    "bytes": 5672,
+    "sha256": "68cca762a48dac822ed5aa2d4b7fbc6c2b7e20d494e123c20787469a47a4a2b1"
+  },
+  {
+    "path": "assets/foods/red_mushroom/land/edible.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 5124,
+    "sha256": "105518b267cd7063c2e8289e0b451bb530e4973ac54cfcd4b9997c365215e333"
+  },
+  {
+    "path": "assets/foods/sea_weed/edible.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 269,
+    "height": 269,
+    "bytes": 17536,
+    "sha256": "f821ddc40e0f7b9aee2e72f9fe572656ac313f31fce219c35d8c7005cea2e2cf"
+  },
+  {
+    "path": "assets/foods/starfish/edible.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 250,
+    "height": 250,
+    "bytes": 8820,
+    "sha256": "f1ea32cd14c5d2ae719c97d9362cf091da798d3271fde3c634c8b2f7265e8e9e"
+  },
+  {
+    "path": "assets/foods/watermelon/edible.webp",
+    "rule": "food-list",
+    "format": "webp",
+    "width": 300,
+    "height": 300,
+    "bytes": 8906,
+    "sha256": "c295050f61aea82697e930ad38f29ac94400ef3d956742840b99a4c03e22fb1a"
+  },
+  {
+    "path": "assets/light.webp",
+    "rule": "texture-literal",
+    "format": "webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 43916,
+    "sha256": "d45d4489e050dd2ae58738954bccb8e8f11e9311d50f2b2b582ac2c0836c4f2b"
+  },
+  {
+    "path": "assets/logo-flat.webp",
+    "rule": "literal",
+    "format": "webp",
+    "width": 600,
+    "height": 304,
+    "bytes": 31060,
+    "sha256": "974bebd6d28ee43ab9c6e5eed858fca21b5694f46b6170923abcbff90c88d408"
+  },
+  {
+    "path": "assets/logo.webp",
+    "rule": "literal",
+    "format": "webp",
+    "width": 600,
+    "height": 304,
+    "bytes": 807186,
+    "sha256": "c6f02b1921c834b861a3ec9506bf6965b40c60827eed85a201b8cdbfbb9c8fd3"
+  },
+  {
+    "path": "assets/terrain/desert/flytrap/flytrap.webp",
+    "rule": "texture-literal",
+    "format": "webp",
+    "width": 300,
+    "height": 300,
+    "bytes": 7234,
+    "sha256": "0290b8c04b481525c2044bdbe53c3eaf688810bc6333ce8d3a5dc4304d2c0cab"
+  },
+  {
+    "path": "assets/terrain/flow.webp",
+    "rule": "texture-literal",
+    "format": "webp",
+    "width": 100,
+    "height": 300,
+    "bytes": 2120,
+    "sha256": "50df35a5c481dac375c7a2c800fef6e50108925f7feb904e5ded0805d6f178d1"
+  },
+  {
+    "path": "assets/terrain/healing_stone/healing_stone_land.webp",
+    "rule": "texture-literal",
+    "format": "webp",
+    "width": 300,
+    "height": 300,
+    "bytes": 6358,
+    "sha256": "1b12dbc7c0cc5106c5416ef8588ff565d0abaed55e300e91179d320f48ae5ae4"
+  }
+]

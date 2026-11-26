@@ -172,6 +172,28 @@ class GatewayTests(unittest.TestCase):
         self.assertIsNone(gateway.static_path("/../../etc/passwd"))
         self.assertIsNone(gateway.static_path("/missing.js"))
 
+    def test_asset_fallbacks_come_after_the_snapshot(self):
+        (self.root / "index.html").write_text("<html></html>")
+        (self.root / "img").mkdir()
+        (self.root / "img" / "a.png").write_bytes(b"snapshot")
+        extra = self.root.parent / f"{self.root.name}-fallback"
+        (extra / "img").mkdir(parents=True)
+        (extra / "img" / "a.png").write_bytes(b"fallback")
+        (extra / "img" / "b.png").write_bytes(b"fallback")
+        try:
+            config = stack_config(client_root=str(self.root),
+                                  web={"port": 8080, "asset_fallbacks": [str(extra), str(extra / "missing-dir")]})
+            gateway = Gateway(config, LOG)
+            self.assertEqual(gateway.static_path("/img/a.png"), (self.root / "img" / "a.png").resolve())
+            self.assertEqual(gateway.static_path("/img/b.png"), (extra / "img" / "b.png").resolve())
+            self.assertTrue(gateway.source_of(gateway.static_path("/img/b.png")).startswith("fallback:"))
+            self.assertEqual(gateway.source_of(gateway.static_path("/img/a.png")), "snapshot")
+            self.assertIsNone(gateway.static_path(f"/../{extra.name}/img/b.png"))
+            self.assertIsNone(gateway.static_path("/img/c.png"))
+        finally:
+            import shutil
+            shutil.rmtree(extra)
+
 
 if __name__ == "__main__":
     unittest.main()

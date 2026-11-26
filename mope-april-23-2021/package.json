@@ -1,0 +1,17 @@
+{
+  "name": "mope-april-23-2021-tools",
+  "private": true,
+  "type": "module",
+  "description": "Bun tools for the local mope.io archive project (image catalogue and decoder).",
+  "scripts": {
+    "decode-images": "bun decode_images.ts",
+    "test": "bun test tests/"
+  },
+  "dependencies": {
+    "acorn": "8.14.0",
+    "acorn-walk": "8.3.4"
+  },
+  "devDependencies": {
+    "@types/bun": "1.2.4"
+  }
+}
