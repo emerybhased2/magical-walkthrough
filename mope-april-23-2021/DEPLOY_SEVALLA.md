@@ -75,3 +75,10 @@ curl https://<app>.sevalla.app/__edge/health                                # no
 curl -H "X-Backend-Key: <key>" https://<app>.sevalla.app/servers/get        # region player counts
 python -m unittest tests.test_cloud -v                                      # offline tests
 ```
+
+## Render
+
+`render.yaml` at the repository root is a Render Blueprint for the same container: Docker build from the root
+`Dockerfile`, health check `/__edge/health`, a 1 GB disk at `/var/lib/data` for the account database, and a
+generated `BACKEND_ACCESS_KEY`. Render sets `PORT`, and `cloud.py` uses `RENDER_EXTERNAL_HOSTNAME` as `PUBLIC_HOST`.
+In the Render dashboard choose **New > Blueprint**, pick this repository, then copy the generated key for players.
