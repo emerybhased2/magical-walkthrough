@@ -182,3 +182,16 @@ python rebuild_client_js.py --output snapshots/2025-12-10 --timestamp 2025121004
 python extract_client_protocol.py --project snapshots/2025-12-10
 python phase2_probe_client.py --project snapshots/2025-12-10 --click-play
 ```
+
+## Phase 3 — local server infrastructure
+
+The local stack (`localstack.py`, `services/`, `config/local_stack.json`) runs the 2025-12-10 client
+against a local master server, a web gateway and one region server per original region. No
+production connections are made. Details and the 23-check verification are in
+[`phase3/README.md`](phase3/README.md).
+
+```bash
+# once: add "127.0.0.1 local.mope.io" to your hosts file
+python localstack.py up          # then open http://local.mope.io:8080/
+python phase3_verify.py          # checks against the running stack
+```

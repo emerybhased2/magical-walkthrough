@@ -1,0 +1,114 @@
+{
+  "_comment": "Local mope.io stack (Phase 3). Regions come from phase2/data/regions.json (2025-12-10 client): ids, names, region labels and gm are the archived values; url is replaced by public_host:port. Add `127.0.0.1 local.mope.io` to your hosts file and open http://local.mope.io:8080/.",
+  "public_host": "local.mope.io",
+  "bind_host": "127.0.0.1",
+  "client_root": "snapshots/2025-12-10/working/client/mope.io",
+  "logs_dir": "logs",
+  "run_dir": "run",
+  "web": {
+    "port": 8080,
+    "allowed_origins": [],
+    "rewrites": {
+      "client_config": true,
+      "turnstile_shim": true
+    }
+  },
+  "master": {
+    "port": 8090,
+    "heartbeat_interval_seconds": 2,
+    "heartbeat_timeout_seconds": 6
+  },
+  "account": {
+    "port": 8091,
+    "enabled": false
+  },
+  "game": {
+    "version": 296,
+    "season": 0,
+    "join_timeout_seconds": 10,
+    "session_resume_seconds": 60
+  },
+  "regions": [
+    {
+      "id": "prod-lnd-us-ny-1",
+      "name": "New York 1",
+      "region": "New York, USA",
+      "gm": 0,
+      "port": 7001,
+      "enabled": true,
+      "original_url": "prod-lnd-us-ny-1.mathstudyguides.com"
+    },
+    {
+      "id": "prod-lnd-us-da-1",
+      "name": "Dallas 1",
+      "region": "Dallas, USA",
+      "gm": 0,
+      "port": 7002,
+      "enabled": true,
+      "original_url": "prod-lnd-us-da-1.mathstudyguides.com"
+    },
+    {
+      "id": "prod-lnd-us-la-1",
+      "name": "Los Angeles 1",
+      "region": "Los Angeles, USA",
+      "gm": 0,
+      "port": 7003,
+      "enabled": true,
+      "original_url": "prod-lnd-us-la-1.mathstudyguides.com"
+    },
+    {
+      "id": "prod-lnd-br-sp-1",
+      "name": "Sao Paulo 1",
+      "region": "Sao Paulo, Brazil",
+      "gm": 0,
+      "port": 7004,
+      "enabled": true,
+      "original_url": "prod-lnd-br-sp-1.mathstudyguides.com"
+    },
+    {
+      "id": "prod-ovh-de-ff-1",
+      "name": "Frankfurt 1",
+      "region": "Frankfurt, Germany",
+      "gm": 0,
+      "port": 7005,
+      "enabled": true,
+      "original_url": "prod-ovh-de-ff-1.mathstudyguides.com"
+    },
+    {
+      "id": "prod-ovh-fr-pr-1",
+      "name": "Paris 1",
+      "region": "Paris, France",
+      "gm": 0,
+      "port": 7006,
+      "enabled": true,
+      "original_url": "prod-ovh-fr-pr-1.mathstudyguides.com"
+    },
+    {
+      "id": "prod-lnd-sw-sh-1",
+      "name": "Stockholm 1",
+      "region": "Stockholm, Sweden",
+      "gm": 0,
+      "port": 7007,
+      "enabled": true,
+      "original_url": "prod-lnd-sw-sh-1.mathstudyguides.com"
+    },
+    {
+      "id": "prod-lnd-sg-sg-1",
+      "name": "Singapore 1",
+      "region": "Singapore, Singapore",
+      "gm": 0,
+      "port": 7008,
+      "enabled": true,
+      "original_url": "prod-lnd-sg-sg-1.mathstudyguides.com"
+    },
+    {
+      "id": "prod-lnd-au-sd-1",
+      "name": "Sydney 1",
+      "region": "Sydney, Australia",
+      "gm": 0,
+      "port": 7009,
+      "enabled": true,
+      "original_url": "prod-lnd-au-sd-1.mathstudyguides.com"
+    }
+  ]
+}

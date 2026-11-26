@@ -1,0 +1,280 @@
+{
+  "generated_at": "2026-11-26T00:25:06Z",
+  "verifier_version": "1.0.0",
+  "seconds": 44.3,
+  "passed": 23,
+  "failed": 0,
+  "checks": [
+    {
+      "id": "P1",
+      "name": "region prod-lnd-us-ny-1 (New York 1): ping, join, play",
+      "ok": true,
+      "detail": "session 741caf76ceaea342, version 296",
+      "data": {
+        "type": 2,
+        "session_id": "741caf76ceaea342",
+        "game_version": 296,
+        "game_mode": 0,
+        "season": 0,
+        "server_id": "prod-lnd-us-ny-1",
+        "alive": 0,
+        "static_objects": 0,
+        "next_type": 3
+      }
+    },
+    {
+      "id": "P1",
+      "name": "region prod-lnd-us-da-1 (Dallas 1): ping, join, play",
+      "ok": true,
+      "detail": "session b04be56689cc5641, version 296",
+      "data": {
+        "type": 2,
+        "session_id": "b04be56689cc5641",
+        "game_version": 296,
+        "game_mode": 0,
+        "season": 0,
+        "server_id": "prod-lnd-us-da-1",
+        "alive": 0,
+        "static_objects": 0,
+        "next_type": 3
+      }
+    },
+    {
+      "id": "P1",
+      "name": "region prod-lnd-us-la-1 (Los Angeles 1): ping, join, play",
+      "ok": true,
+      "detail": "session acb5e01222370f47, version 296",
+      "data": {
+        "type": 2,
+        "session_id": "acb5e01222370f47",
+        "game_version": 296,
+        "game_mode": 0,
+        "season": 0,
+        "server_id": "prod-lnd-us-la-1",
+        "alive": 0,
+        "static_objects": 0,
+        "next_type": 3
+      }
+    },
+    {
+      "id": "P1",
+      "name": "region prod-lnd-br-sp-1 (Sao Paulo 1): ping, join, play",
+      "ok": true,
+      "detail": "session 1d5eac22186bd1af, version 296",
+      "data": {
+        "type": 2,
+        "session_id": "1d5eac22186bd1af",
+        "game_version": 296,
+        "game_mode": 0,
+        "season": 0,
+        "server_id": "prod-lnd-br-sp-1",
+        "alive": 0,
+        "static_objects": 0,
+        "next_type": 3
+      }
+    },
+    {
+      "id": "P1",
+      "name": "region prod-ovh-de-ff-1 (Frankfurt 1): ping, join, play",
+      "ok": true,
+      "detail": "session 7d809b794f4e5725, version 296",
+      "data": {
+        "type": 2,
+        "session_id": "7d809b794f4e5725",
+        "game_version": 296,
+        "game_mode": 0,
+        "season": 0,
+        "server_id": "prod-ovh-de-ff-1",
+        "alive": 0,
+        "static_objects": 0,
+        "next_type": 3
+      }
+    },
+    {
+      "id": "P1",
+      "name": "region prod-ovh-fr-pr-1 (Paris 1): ping, join, play",
+      "ok": true,
+      "detail": "session 8b79be1cbdcb4ef6, version 296",
+      "data": {
+        "type": 2,
+        "session_id": "8b79be1cbdcb4ef6",
+        "game_version": 296,
+        "game_mode": 0,
+        "season": 0,
+        "server_id": "prod-ovh-fr-pr-1",
+        "alive": 0,
+        "static_objects": 0,
+        "next_type": 3
+      }
+    },
+    {
+      "id": "P1",
+      "name": "region prod-lnd-sw-sh-1 (Stockholm 1): ping, join, play",
+      "ok": true,
+      "detail": "session ed25700a3a30ac5c, version 296",
+      "data": {
+        "type": 2,
+        "session_id": "ed25700a3a30ac5c",
+        "game_version": 296,
+        "game_mode": 0,
+        "season": 0,
+        "server_id": "prod-lnd-sw-sh-1",
+        "alive": 0,
+        "static_objects": 0,
+        "next_type": 3
+      }
+    },
+    {
+      "id": "P1",
+      "name": "region prod-lnd-sg-sg-1 (Singapore 1): ping, join, play",
+      "ok": true,
+      "detail": "session 5d4c6566ec481688, version 296",
+      "data": {
+        "type": 2,
+        "session_id": "5d4c6566ec481688",
+        "game_version": 296,
+        "game_mode": 0,
+        "season": 0,
+        "server_id": "prod-lnd-sg-sg-1",
+        "alive": 0,
+        "static_objects": 0,
+        "next_type": 3
+      }
+    },
+    {
+      "id": "P1",
+      "name": "region prod-lnd-au-sd-1 (Sydney 1): ping, join, play",
+      "ok": true,
+      "detail": "session 57be3278d0bc6936, version 296",
+      "data": {
+        "type": 2,
+        "session_id": "57be3278d0bc6936",
+        "game_version": 296,
+        "game_mode": 0,
+        "season": 0,
+        "server_id": "prod-lnd-au-sd-1",
+        "alive": 0,
+        "static_objects": 0,
+        "next_type": 3
+      }
+    },
+    {
+      "id": "P2",
+      "name": "3 clients on prod-lnd-us-ny-1: master count 3, then 0 after they leave",
+      "ok": true,
+      "detail": "sessions ['ef69840b3ac57dfb', '8f35aed886ef40db', '41bdd1817665db52']",
+      "data": null
+    },
+    {
+      "id": "P3",
+      "name": "session resume: same id returned; unknown ids get a new session",
+      "ok": true,
+      "detail": "2d7c0932a59d87e5 -> 2d7c0932a59d87e5",
+      "data": null
+    },
+    {
+      "id": "P4",
+      "name": "abrupt disconnect is noticed; reconnecting works",
+      "ok": true,
+      "detail": "",
+      "data": null
+    },
+    {
+      "id": "P5",
+      "name": "stop region-prod-lnd-au-sd-1: clients told (type 11), master offline, omitted from /servers/get, connections refused",
+      "ok": true,
+      "detail": "disconnect notice: {'type': 11, 'code': 0, 'reason': \"Local region 'Sydney 1' is shutting down\", 'flag': 0}",
+      "data": null
+    },
+    {
+      "id": "P5",
+      "name": "start region-prod-lnd-au-sd-1 again: back online and listed",
+      "ok": true,
+      "detail": "",
+      "data": null
+    },
+    {
+      "id": "P6",
+      "name": "master restart: every region re-registers via heartbeat; /servers/get restored",
+      "ok": true,
+      "detail": "",
+      "data": null
+    },
+    {
+      "id": "P7",
+      "name": "gateway serves client.js with the local region list while the master is down",
+      "ok": true,
+      "detail": "$config overlay from config",
+      "data": null
+    },
+    {
+      "id": "B1",
+      "name": "client.js runs with the local $config",
+      "ok": true,
+      "detail": "9 local servers, account origin http://local.mope.io:8080",
+      "data": null
+    },
+    {
+      "id": "B2",
+      "name": "server list shows every region with player counts from the master",
+      "ok": true,
+      "detail": "New York 1 [0 players ]; Dallas 1 [0 players ]; Los Angeles 1 [0 players ] ...",
+      "data": [
+        "New York 1 [0 players ]",
+        "Dallas 1 [0 players ]",
+        "Los Angeles 1 [0 players ]",
+        "Sao Paulo 1 [0 players ]",
+        "Frankfurt 1 [0 players ]",
+        "Paris 1 [0 players ]",
+        "Stockholm 1 [0 players ]",
+        "Singapore 1 [0 players ]",
+        "Sydney 1 [0 players ]"
+      ]
+    },
+    {
+      "id": "B3",
+      "name": "ping test opened /ping on every region",
+      "ok": true,
+      "detail": "9 regions pinged",
+      "data": null
+    },
+    {
+      "id": "B4",
+      "name": "handshake completes and the master counts the player",
+      "ok": true,
+      "detail": "connected to prod-lnd-sw-sh-1",
+      "data": null
+    },
+    {
+      "id": "B5",
+      "name": "switching regions with the server list connects to each region",
+      "ok": true,
+      "detail": "9/9 regions",
+      "data": {
+        "prod-lnd-us-ny-1": true,
+        "prod-lnd-us-da-1": true,
+        "prod-lnd-us-la-1": true,
+        "prod-lnd-br-sp-1": true,
+        "prod-ovh-de-ff-1": true,
+        "prod-ovh-fr-pr-1": true,
+        "prod-lnd-sw-sh-1": true,
+        "prod-lnd-sg-sg-1": true,
+        "prod-lnd-au-sd-1": true
+      }
+    },
+    {
+      "id": "B6",
+      "name": "Play reaches the region server and its notice is shown",
+      "ok": true,
+      "detail": "",
+      "data": null
+    },
+    {
+      "id": "B7",
+      "name": "stopping the current region moves the client to another region",
+      "ok": true,
+      "detail": "prod-lnd-au-sd-1 -> prod-ovh-de-ff-1; disconnect reason shown: True",
+      "data": null
+    }
+  ]
+}
