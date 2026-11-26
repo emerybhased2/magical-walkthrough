@@ -48,6 +48,31 @@ except ImportError:  # pragma: no cover
 VERSION = "1.0.0"
 HEARTBEAT = 25.0
 KEY_ENV = "BACKEND_ACCESS_KEY"
+PUBLIC_PATHS = {"/", "/__edge/health"}   # readable without the access key
+INDEX_HTML = """<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mope.io backend</title>
+<style>
+ :root{color-scheme:light dark;--bg:#fff;--fg:#1d1d1f;--muted:#6e6e73;--ok:#1a7f37}
+ @media (prefers-color-scheme:dark){:root{--bg:#111;--fg:#f2f2f2;--muted:#a1a1a6;--ok:#3fb950}}
+ body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,sans-serif}
+ main{max-width:640px;margin:0 auto;padding:32px 16px}
+ h1{font-size:1.4rem;margin:0 0 4px} .ok{color:var(--ok);font-weight:600} p,li{color:var(--muted)}
+ code{font-size:.9em}
+</style></head><body><main>
+<h1>mope.io backend</h1>
+<p class="ok">Running &middot; {regions} regions</p>
+<p>This address is the shared <strong>server</strong> for a local mope.io archive: accounts, the region list and
+the game servers. It has no game page, so opening it in a browser shows only this note.</p>
+<p>To play, run the archived client on your own computer (it does not work on a phone) and point it here:</p>
+<ul>
+ <li>in <code>mope-april-23-2021/.env</code> set <code>REMOTE_BACKEND_URL</code> to this address and
+ <code>REMOTE_BACKEND_KEY</code> to the access key you were given</li>
+ <li>run <code>python localstack.py up</code> and open <code>http://local.mope.io:8080/</code></li>
+</ul>
+<p>Every other address here needs the access key.</p>
+</main></body></html>
+"""
 FORWARD_HEADERS = ("content-type", "accept")
 
 
@@ -107,7 +132,7 @@ class Edge:
     # -- access ------------------------------------------------------------------------
     @web.middleware
     async def guard(self, request, handler):
-        if self.mode == "cloud" and self.key and request.path != "/__edge/health":
+        if self.mode == "cloud" and self.key and request.path not in PUBLIC_PATHS:
             given = request.headers.get(common.BACKEND_KEY_HEADER, "")
             if not hmac.compare_digest(given.encode(), self.key.encode()):
                 return web.json_response({"success": False, "error": "backend access key required"}, status=401)
@@ -123,10 +148,8 @@ class Edge:
         return web.json_response(info)
 
     async def index(self, request):
-        return web.Response(text=(
-            "mope.io local-stack backend (accounts, master, regions).\n"
-            "This service does not serve the game client. Run the client on your own machine with\n"
-            "REMOTE_BACKEND_URL set to this address (see DEPLOY_SEVALLA.md).\n"))
+        return web.Response(text=INDEX_HTML.replace("{regions}", str(len(self.regions))),
+                            content_type="text/html", charset="utf-8")
 
     async def http_proxy(self, request):
         path = request.path

@@ -100,6 +100,11 @@ class EdgeTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(resp.status, 200)
         self.assertTrue((await resp.json())["access_key_required"])
 
+    async def test_index_page_needs_no_key(self):
+        resp = await self.client.get("/")
+        self.assertEqual(resp.status, 200)
+        self.assertIn("mope.io backend", await resp.text())
+
     async def test_key_required(self):
         resp = await self.client.get("/servers/get")
         self.assertEqual(resp.status, 401)
