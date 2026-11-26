@@ -138,6 +138,19 @@ class StoreTests(unittest.TestCase):
             self.store.buy(user["id"], "big", 1000, 0)
         self.assertEqual(self.store.purchases(user["id"]), ["skinA"])
 
+    def test_buy_many_is_all_or_nothing(self):
+        user = self.store.create_user("gina", "password1")
+        self.store.update_user(user["id"], coins=100, gems=5)
+        with self.assertRaisesRegex(StoreError, "Not enough gems"):
+            self.store.buy_many(user["id"], [("a", 50, 0), ("g", 6, 1)])
+        self.assertEqual((self.store.purchases(user["id"]), self.store.get_user(user["id"])["coins"]), ([], 100))
+        self.assertEqual(self.store.buy_many(user["id"], [("a", 50, 0), ("g", 5, 1), ("a", 50, 0)]), 2)
+        self.assertEqual(self.store.buy_many(user["id"], [("a", 50, 0), ("b", 50, 0)]), 1)
+        after = self.store.get_user(user["id"])
+        self.assertEqual((after["coins"], after["gems"]), (0, 0))
+        self.assertEqual(self.store.buy_many(user["id"], [("c", 10 ** 6, 0)], charge=False), 1)
+        self.assertEqual(self.store.get_user(user["id"])["coins"], 0)
+
 
 class ApiTests(unittest.TestCase):
     """The real HTTP handler on an ephemeral port."""
@@ -147,7 +160,7 @@ class ApiTests(unittest.TestCase):
         root = Path(self.tmp.name)
         settings = make_settings(root, ACCOUNT_STARTING_COINS=100, DEV_TEST_ACCOUNTS_ENABLED="true",
                                  DEV_TEST_ACCOUNT_SECRET="sekret_123", DEV_ADMIN_ENDPOINTS_ENABLED="true",
-                                 DEV_ADD_COINS_AMOUNT=7)
+                                 DEV_ADD_COINS_AMOUNT=7, ACCOUNT_INFINITE_CURRENCY="false")
         config = {"settings": settings, "public_host": "local.mope.io", "web": {"port": 8080}}
         self.service = AccountService(config, LOG, AccountStore(root / "db.sqlite3", settings))
         self.server = ThreadingHTTPServer(("127.0.0.1", 0), make_handler(self.service))
@@ -200,6 +213,25 @@ class ApiTests(unittest.TestCase):
         self.service.settings["DEV_TEST_ACCOUNT_SECRET"] = "other_secret_9"
         status, _, other = self.call("/auth/login/other_secret_9", {"accessToken": "ab"})
         self.assertEqual((status, other["data"]["userId"]), (200, "other_secret_9ab"))
+
+    def test_buy_all_charges_the_whole_order(self):
+        user_id, token = self.login()  # 100 coins, 0 gems: the gem skin makes the order unaffordable
+        status, _, body = self.call("/shop/buyAll", {"userId": user_id, "token": token})
+        self.assertEqual((status, body["success"]), (400, False))
+        self.assertEqual(self.call("/shop/purchases", {"userId": user_id, "token": token})[2]["data"]["purchases"], [])
+        self.assertEqual(self.call("/shop/buyAll", {"userId": user_id, "token": "nope"})[0], 401)
+
+    def test_infinite_currency(self):
+        self.service.settings["ACCOUNT_INFINITE_CURRENCY"] = True
+        user_id, token = self.login()
+        me = self.call("/auth/@me", {"userId": user_id, "token": token})[2]["data"]
+        self.assertEqual((me["coins"], me["gems"]), (999_999_999, 999_999_999))
+        status, _, body = self.call("/shop/buyAll", {"userId": user_id, "token": token})
+        self.assertEqual((status, body["bought"], body["skins"]), (200, 3, 3))
+        self.assertEqual(self.call("/shop/buyAll", {"userId": user_id, "token": token})[2]["bought"], 0)
+        purchases = self.call("/shop/purchases", {"userId": user_id, "token": token})[2]["data"]["purchases"]
+        self.assertEqual(sorted(purchases), ["gemSkin", "saleSkin", "skinA"])
+        self.assertEqual(self.service.store.get_user(user_id)["coins"], 100)  # stored balance untouched
 
     def test_shop_flow(self):
         user_id, token = self.login()

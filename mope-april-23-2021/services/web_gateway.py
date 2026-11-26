@@ -20,6 +20,8 @@ at /__local/rewrites and can be switched off in the stack config):
      gateway. The rest of client.js is byte-for-byte the archived file.
   2. index.html: the Cloudflare Turnstile loader is replaced by the local stand-in
      shims/turnstile_local.js (the page only starts client.js from Turnstile's onload).
+  3. index.html: a "Login with a local account" button, and shims/shop_buy_all.js, which adds a
+     BUY ALL entry to the shop's tab bar (POST /shop/buyAll on the account server).
 """
 
 from __future__ import annotations
@@ -50,9 +52,11 @@ LOCAL_LOGIN_BUTTON = (b'\n      <button id="localLoginBtn" class="discordLoginBt
                       b'style="background:#2d8b2d" onclick="location.href=\'/auth/local\'">'
                       b'Login with a local account</button>')
 LOCAL_TURNSTILE = b"/__local/turnstile_local.js"
+BUY_ALL_SCRIPT = b'<script src="/__local/shop_buy_all.js"></script>\n'
+BODY_END_RE = re.compile(rb"</body>", re.I)
 LIVE_SKIN_RE = re.compile(r"^/(?:\./)?assets/s/(\d+)/.+\.png$")
 MASTER_GET = {"/servers/get", "/master/regions", "/master/client-config", "/master/health"}
-ACCOUNT_EXACT = {"/shop/get", "/shop/purchases", "/shop/buy", "/shop/wardrobe/save", "/addCoins",
+ACCOUNT_EXACT = {"/shop/get", "/shop/purchases", "/shop/buy", "/shop/buyAll", "/shop/wardrobe/save", "/addCoins",
                  "/resetAccount", "/playerSettings_update"}
 ACCOUNT_PREFIXES = ("/auth/", "/xsolla/")
 
@@ -119,10 +123,12 @@ class Gateway:
         self.fallbacks = [common.project_path(config, d).resolve()
                           for d in config["web"].get("asset_fallbacks", ["archive/images/files/mope.io"])]
         self.rewrites = {"client_config": True, "turnstile_shim": True, "local_login_button": True,
+                         "buy_all_button": True,
                          **config["web"].get("rewrites", {})}
         self.updates_file = Path(config.get("settings", {}).get("WEB_UPDATES_FILE", "")) \
             if config.get("settings", {}).get("WEB_UPDATES_FILE") else None
         self.shim = PROJECT / "shims" / "turnstile_local.js"
+        self.buy_all_shim = PROJECT / "shims" / "shop_buy_all.js"
         self.client_js = ClientConfigRewriter(self.root / "client.js", log)
         live = config.get("settings", {}).get("SHOP_LIVE_SKINS_DIR") or ""
         self.live_dir = Path(live) if live else None
@@ -274,6 +280,8 @@ def make_handler(gw: Gateway):
                 return self._send(200, gw.updates_file.read_bytes(), "application/json", head=head)
             if path == "/__local/turnstile_local.js":
                 return self._send(200, gw.shim.read_bytes(), "application/javascript", head=head)
+            if path == "/__local/shop_buy_all.js":
+                return self._send(200, gw.buy_all_shim.read_bytes(), "application/javascript", head=head)
             if path in MASTER_GET:
                 if self.command not in ("GET", "HEAD"):
                     return self._json(405, {"error": "method not allowed"}, head)
@@ -315,6 +323,9 @@ def make_handler(gw: Gateway):
                 if gw.rewrites["local_login_button"] and gw.account is not None:
                     data, count = DISCORD_BUTTON_RE.subn(lambda m: m.group(1) + LOCAL_LOGIN_BUTTON, data, count=1)
                     notes.append(f"local login button ({count})")
+                if gw.rewrites["buy_all_button"] and gw.account is not None:
+                    data, count = BODY_END_RE.subn(lambda m: BUY_ALL_SCRIPT + m.group(0), data, count=1)
+                    notes.append(f"shop buy-all button ({count})")
                 return self._send(200, data, "text/html; charset=utf-8", {"X-Local-Rewrite": "; ".join(notes)}, head)
             ctype = mimetypes.guess_type(name)[0] or "application/octet-stream"
             if ctype.startswith("text/") or ctype in ("application/javascript", "application/json"):

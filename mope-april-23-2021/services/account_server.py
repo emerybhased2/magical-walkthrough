@@ -10,10 +10,13 @@ so the client sees them on its own origin (its $config.devAccountServerUrl).
         provider == DEV_TEST_ACCOUNT_SECRET -> the client's test-account hook (developer setting)
         google / facebook / apple / discord -> refused: social sign-in cannot work offline
   POST /auth/@me                   {userId, token, isRefresh}  -> {success, data:{coins, gems, hasVip, ...}}
+        ACCOUNT_INFINITE_CURRENCY (default on): coins and gems are shown as 999999999 and nothing is charged
   POST /auth/logout                {userId, sessionId, serverId}
   GET  /shop/get                   -> {items, settings}          (catalogue: ACCOUNT_SHOP_CATALOG)
   POST /shop/purchases             -> {success, data:{settings, purchases:[itemId], wardrobe}}
   POST /shop/buy                   {shopItem}                    -> {success, reason}
+  POST /shop/buyAll                {userId, token}               -> {success, bought, skins, coins, gems}
+                                   local addition: every skin not owned yet, in one all-or-nothing order
   POST /shop/wardrobe/save         {data}                        -> {success, data}
   GET  /playerSettings_update?userId&passwordToken&itemId -> JSON *text* (the client JSON.parse()s it)
   GET  /addCoins, /resetAccount    developer endpoints (DEV_ADMIN_ENDPOINTS_ENABLED)
@@ -84,6 +87,10 @@ class AccountService:
             self._catalog = (key, {"items": items, "settings": data.get("settings", [])})
         return self._catalog[1]
 
+    @property
+    def infinite(self) -> bool:
+        return bool(self.settings.get("ACCOUNT_INFINITE_CURRENCY"))
+
     def authed(self, body: dict) -> dict:
         user = self.store.check_token(body.get("userId"), body.get("token") or body.get("passwordToken"))
         if user is None:
@@ -95,7 +102,7 @@ class AccountService:
             return {"success": False, "error": "This account is banned.", "coins": "BANNED"}
         token = self.store.issue_token(user["id"])
         self.log.info("login ok: %s (%s, %s)", user["username"], user["id"], provider)
-        return {"success": True, "data": {**client_account_data(user), "token": token}}
+        return {"success": True, "data": {**client_account_data(user, self.infinite), "token": token}}
 
     # -- endpoints --------------------------------------------------------------------------
     def social_or_test_login(self, provider: str, body: dict) -> tuple[int, dict]:
@@ -139,7 +146,7 @@ class AccountService:
             user = self.authed(body)
         except PermissionError as exc:
             return 401, {"success": False, "error": str(exc)}
-        data = client_account_data(user)
+        data = client_account_data(user, self.infinite)
         return 200, {"success": True, "data": data, "coins": data["coins"]}
 
     def logout(self, body: dict) -> tuple[int, dict]:
@@ -155,19 +162,38 @@ class AccountService:
                                                "purchases": self.store.purchases(user["id"]),
                                                "wardrobe": self.store.wardrobe(user["id"])}}
 
+    @staticmethod
+    def charged_price(item: dict) -> int:
+        return int((item.get("salePrice") if item.get("saleType") else item.get("price")) or 0)
+
     def buy(self, body: dict) -> tuple[int, dict]:
         user = self.authed(body)
         item_id = str(body.get("shopItem", ""))
         item = next((i for i in self.catalog()["items"] if str(i.get("id")) == item_id), None)
         if item is None:
             return 404, {"success": False, "error": "That item is not in the local shop catalogue."}
-        price = item.get("salePrice") if item.get("saleType") else item.get("price")
+        price = self.charged_price(item)
         try:
-            self.store.buy(user["id"], item_id, int(price or 0), int(item.get("currencyType", 0)))
+            self.store.buy(user["id"], item_id, price, int(item.get("currencyType", 0)), charge=not self.infinite)
         except StoreError as exc:
             return 400, {"success": False, "error": str(exc)}
         self.log.info("purchase: %s bought %s for %s", user["id"], item_id, price)
         return 200, {"success": True, "reason": "purchased"}
+
+    def buy_all(self, body: dict) -> tuple[int, dict]:
+        """Buy every skin (shopCategory 0) of the catalogue the account does not own yet, in one order."""
+        user = self.authed(body)
+        skins = [i for i in self.catalog()["items"]
+                 if i.get("shopCategory", 0) == 0 and i.get("canBuy", True) and int(i.get("currencyType", 0)) in (0, 1)]
+        order = [(str(i["id"]), self.charged_price(i), int(i.get("currencyType", 0))) for i in skins]
+        try:
+            bought = self.store.buy_many(user["id"], order, charge=not self.infinite)
+        except StoreError as exc:
+            return 400, {"success": False, "error": str(exc)}
+        self.log.info("purchase: %s bought all skins (%d new of %d)", user["id"], bought, len(order))
+        data = client_account_data(self.store.get_user(user["id"]), self.infinite)
+        return 200, {"success": True, "reason": "purchased", "bought": bought, "skins": len(order),
+                     "coins": data["coins"], "gems": data["gems"]}
 
     def wardrobe_save(self, body: dict) -> tuple[int, dict]:
         user = self.authed(body)
@@ -272,6 +298,7 @@ def make_handler(service: AccountService):
                     "/auth/logout": lambda: service.logout(body),
                     "/shop/purchases": lambda: service.purchases(body),
                     "/shop/buy": lambda: service.buy(body),
+                    "/shop/buyAll": lambda: service.buy_all(body),
                     "/shop/wardrobe/save": lambda: service.wardrobe_save(body),
                 }
                 if path.startswith("/xsolla/"):

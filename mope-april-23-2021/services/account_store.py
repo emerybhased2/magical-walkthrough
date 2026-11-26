@@ -269,23 +269,41 @@ class AccountStore:
             return [r["item_id"] for r in conn.execute(
                 "SELECT item_id FROM purchases WHERE user_id = ? ORDER BY purchased_at", (user_id,))]
 
-    def buy(self, user_id: str, item_id: str, price: int, currency_type: int) -> dict:
-        column = {0: "coins", 1: "gems"}.get(int(currency_type))
-        if column is None:
-            raise StoreError("This item cannot be bought with coins or gems on the local server.")
+    def buy(self, user_id: str, item_id: str, price: int, currency_type: int, charge: bool = True) -> dict:
+        """Buy one item. charge=False (ACCOUNT_INFINITE_CURRENCY) records it without touching the balance."""
+        if self.buy_many(user_id, [(item_id, price, currency_type)], charge) == 0:
+            raise StoreError("You already own this item.")
+        return self.get_user(user_id)
+
+    def buy_many(self, user_id: str, items: list[tuple[str, int, int]], charge: bool = True) -> int:
+        """Buy every (item_id, price, currency_type) not owned yet, atomically: all or nothing.
+        Returns how many were bought. With charge, the balance must cover the whole order."""
+        columns = {0: "coins", 1: "gems"}
+        for _, _, currency in items:
+            if int(currency) not in columns:
+                raise StoreError("This item cannot be bought with coins or gems on the local server.")
         with self.db() as conn:
             conn.execute("BEGIN IMMEDIATE")
-            owned = conn.execute("SELECT 1 FROM purchases WHERE user_id = ? AND item_id = ?",
-                                 (user_id, item_id)).fetchone()
-            if owned:
-                raise StoreError("You already own this item.")
-            balance = conn.execute(f"SELECT {column} FROM users WHERE id = ?", (user_id,)).fetchone()[0]
-            if balance < price:
-                raise StoreError(f"Not enough {column} ({balance}/{price}).")
-            conn.execute(f"UPDATE users SET {column} = {column} - ? WHERE id = ?", (price, user_id))
-            conn.execute("INSERT INTO purchases VALUES (?, ?, ?, ?, ?)",
-                         (user_id, item_id, price, int(currency_type), time.time()))
-        return self.get_user(user_id)
+            owned = {r[0] for r in conn.execute("SELECT item_id FROM purchases WHERE user_id = ?", (user_id,))}
+            order, seen = [], set()
+            for item_id, price, currency in items:
+                if item_id not in owned and item_id not in seen:
+                    seen.add(item_id)
+                    order.append((item_id, max(int(price), 0), int(currency)))
+            if charge:
+                totals = {c: sum(p for _, p, cur in order if cur == c) for c in columns}
+                row = conn.execute("SELECT coins, gems FROM users WHERE id = ?", (user_id,)).fetchone()
+                for currency, column in columns.items():
+                    if row[column] < totals[currency]:
+                        raise StoreError(f"Not enough {column} ({row[column]}/{totals[currency]}).")
+                for currency, column in columns.items():
+                    if totals[currency]:
+                        conn.execute(f"UPDATE users SET {column} = {column} - ? WHERE id = ?",
+                                     (totals[currency], user_id))
+            now = time.time()
+            conn.executemany("INSERT INTO purchases VALUES (?, ?, ?, ?, ?)",
+                             [(user_id, item_id, price, currency, now) for item_id, price, currency in order])
+        return len(order)
 
     def grant_item(self, user_id: str, item_id: str) -> None:
         with self.db() as conn:
@@ -324,11 +342,16 @@ class AccountStore:
         return self.get_user(user_id)
 
 
-def client_account_data(user: dict) -> dict:
-    """The account object the client reads (coins, gems, hasVip, hasAutoRenew; login fields)."""
+INFINITE_BALANCE = 999_999_999  # shown for coins and gems when ACCOUNT_INFINITE_CURRENCY is on
+
+
+def client_account_data(user: dict, infinite: bool = False) -> dict:
+    """The account object the client reads (coins, gems, hasVip, hasAutoRenew; login fields).
+    infinite: report INFINITE_BALANCE coins and gems (ACCOUNT_INFINITE_CURRENCY); the stored balance is kept."""
+    coins, gems = (INFINITE_BALANCE, INFINITE_BALANCE) if infinite else (user["coins"], user["gems"])
     return {
         "userId": user["id"], "userName": user["username"], "avatar": user["avatar"] or "",
-        "coins": "BANNED" if user["banned"] else user["coins"], "gems": user["gems"],
+        "coins": "BANNED" if user["banned"] else coins, "gems": gems,
         "level": user["level"], "xp": user["xp"], "xpNextLvl": 0,
         "hasVip": bool(user["has_vip"]), "hasAutoRenew": bool(user["has_auto_renew"]),
         "socialNetwork": user["provider"],

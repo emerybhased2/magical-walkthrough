@@ -65,6 +65,9 @@ SETTINGS: tuple[Setting, ...] = (
             "Coins given to a new account.", 0, 10 ** 9),
     Setting("ACCOUNT_STARTING_GEMS", "int", 0, "Account server",
             "Gems given to a new account.", 0, 10 ** 9),
+    Setting("ACCOUNT_INFINITE_CURRENCY", "bool", True, "Account server",
+            "Every account has unlimited coins and gems: the client is shown 999999999 of each and purchases are "
+            "recorded without charging. The stored balances are kept (false restores them)."),
     Setting("ACCOUNT_SHOP_ENABLED", "bool", True, "Account server",
             "Serve the shop endpoints (/shop/get, /shop/purchases, /shop/buy, /shop/wardrobe/save)."),
     Setting("ACCOUNT_SHOP_CATALOG", "path", "config/shop_catalog.json", "Account server",
