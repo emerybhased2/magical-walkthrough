@@ -1,0 +1,1443 @@
+{
+ "byCategory": [
+  {
+   "category": "abilities",
+   "templates": 44,
+   "templatesWithArchivedFiles": 0,
+   "concretePaths": 9,
+   "concretePathsArchived": 0,
+   "archivedFiles": 0
+  },
+  {
+   "category": "animals",
+   "templates": 294,
+   "templatesWithArchivedFiles": 1,
+   "concretePaths": 38,
+   "concretePathsArchived": 0,
+   "archivedFiles": 43
+  },
+  {
+   "category": "cloudflare",
+   "templates": 0,
+   "templatesWithArchivedFiles": 0,
+   "concretePaths": 0,
+   "concretePathsArchived": 0,
+   "archivedFiles": 4
+  },
+  {
+   "category": "disasters",
+   "templates": 9,
+   "templatesWithArchivedFiles": 0,
+   "concretePaths": 6,
+   "concretePathsArchived": 0,
+   "archivedFiles": 0
+  },
+  {
+   "category": "food",
+   "templates": 24,
+   "templatesWithArchivedFiles": 0,
+   "concretePaths": 42,
+   "concretePathsArchived": 0,
+   "archivedFiles": 0
+  },
+  {
+   "category": "game-objects",
+   "templates": 52,
+   "templatesWithArchivedFiles": 0,
+   "concretePaths": 17,
+   "concretePathsArchived": 0,
+   "archivedFiles": 0
+  },
+  {
+   "category": "other",
+   "templates": 118,
+   "templatesWithArchivedFiles": 0,
+   "concretePaths": 5,
+   "concretePathsArchived": 0,
+   "archivedFiles": 0
+  },
+  {
+   "category": "promo",
+   "templates": 0,
+   "templatesWithArchivedFiles": 0,
+   "concretePaths": 0,
+   "concretePathsArchived": 0,
+   "archivedFiles": 15
+  },
+  {
+   "category": "shop-skins",
+   "templates": 1,
+   "templatesWithArchivedFiles": 0,
+   "concretePaths": 0,
+   "concretePathsArchived": 0,
+   "archivedFiles": 0
+  },
+  {
+   "category": "shop-ui",
+   "templates": 14,
+   "templatesWithArchivedFiles": 4,
+   "concretePaths": 13,
+   "concretePathsArchived": 5,
+   "archivedFiles": 6
+  },
+  {
+   "category": "ui",
+   "templates": 15,
+   "templatesWithArchivedFiles": 1,
+   "concretePaths": 10,
+   "concretePathsArchived": 1,
+   "archivedFiles": 14
+  },
+  {
+   "category": "world-and-effects",
+   "templates": 35,
+   "templatesWithArchivedFiles": 0,
+   "concretePaths": 22,
+   "concretePathsArchived": 0,
+   "archivedFiles": 0
+  }
+ ],
+ "concretePaths": [
+  {
+   "path": "assets/abilities/Dash-Boost.svg",
+   "category": "abilities",
+   "archived": false,
+   "lines": [
+    1041,
+    1043
+   ]
+  },
+  {
+   "path": "skins/desert/camel/spit.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    1178
+   ]
+  },
+  {
+   "path": "img/ability_dive.png",
+   "category": "abilities",
+   "archived": false,
+   "lines": [
+    1188,
+    1972
+   ]
+  },
+  {
+   "path": "img/snowball.png",
+   "category": "ui",
+   "archived": false,
+   "lines": [
+    1222,
+    1234,
+    21444
+   ]
+  },
+  {
+   "path": "img/spiderWeb.png",
+   "category": "ui",
+   "archived": false,
+   "lines": [
+    1228
+   ]
+  },
+  {
+   "path": "img/ability_claw.png",
+   "category": "abilities",
+   "archived": false,
+   "lines": [
+    1240,
+    8653
+   ]
+  },
+  {
+   "path": "img/fire.png",
+   "category": "ui",
+   "archived": false,
+   "lines": [
+    1279,
+    1282
+   ]
+  },
+  {
+   "path": "img/ability_crabSmashSkin.png",
+   "category": "abilities",
+   "archived": false,
+   "lines": [
+    1285
+   ]
+  },
+  {
+   "path": "skins/ostrich/ostrich-baby.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    1294
+   ]
+  },
+  {
+   "path": "skins/desert/gazelle/gazelle1.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    1348
+   ]
+  },
+  {
+   "path": "skins/cassowary/cassowary1.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    1367
+   ]
+  },
+  {
+   "path": "img/firetornado.png",
+   "category": "ui",
+   "archived": false,
+   "lines": [
+    1370
+   ]
+  },
+  {
+   "path": "skins/monsters/dinomonster/dinomonster.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    1379
+   ]
+  },
+  {
+   "path": "skins/monsters/icemonster/icemonster.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    1382
+   ]
+  },
+  {
+   "path": "img/ability_dive_lava.png",
+   "category": "abilities",
+   "archived": false,
+   "lines": [
+    1974
+   ]
+  },
+  {
+   "path": "img/ability_diveMud.png",
+   "category": "abilities",
+   "archived": false,
+   "lines": [
+    1975
+   ]
+  },
+  {
+   "path": "shop/mopecoin.png",
+   "category": "shop-ui",
+   "archived": true,
+   "lines": [
+    5091,
+    14304,
+    14304,
+    14687,
+    15243,
+    15972,
+    16038
+   ]
+  },
+  {
+   "path": "img/howToPlay1.png",
+   "category": "ui",
+   "archived": false,
+   "lines": [
+    5239
+   ]
+  },
+  {
+   "path": "img/disasters/tsunami.png",
+   "category": "disasters",
+   "archived": false,
+   "lines": [
+    5414,
+    24905
+   ]
+  },
+  {
+   "path": "img/disasters/dustwave.png",
+   "category": "disasters",
+   "archived": false,
+   "lines": [
+    5416,
+    24735
+   ]
+  },
+  {
+   "path": "img/disasters/heatwave.png",
+   "category": "disasters",
+   "archived": false,
+   "lines": [
+    5418,
+    5420,
+    24759
+   ]
+  },
+  {
+   "path": "img/disasters/coldwave.png",
+   "category": "disasters",
+   "archived": false,
+   "lines": [
+    5422,
+    24688
+   ]
+  },
+  {
+   "path": "img/icons/1v1.png",
+   "category": "ui",
+   "archived": false,
+   "lines": [
+    5555
+   ]
+  },
+  {
+   "path": "img/sound_off.png",
+   "category": "ui",
+   "archived": false,
+   "lines": [
+    5600
+   ]
+  },
+  {
+   "path": "img/sound_on.png",
+   "category": "ui",
+   "archived": true,
+   "lines": [
+    5600
+   ]
+  },
+  {
+   "path": "skins/volcano/blackdragon/0/blackdragon.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    5881,
+    29263
+   ]
+  },
+  {
+   "path": "skins/land/dinomonster/0/dinomonster.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    5883,
+    29265
+   ]
+  },
+  {
+   "path": "skins/arctic/icemonster/0/icemonster.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    5885,
+    29267
+   ]
+  },
+  {
+   "path": "skins/volcano/landmonster/0/0/landmonster.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    5887,
+    29269
+   ]
+  },
+  {
+   "path": "skins/ocean/seamonster/0/seamonster.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    5889,
+    29271
+   ]
+  },
+  {
+   "path": "skins/desert/scorpion/0/giantscorpion.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    5891,
+    29273
+   ]
+  },
+  {
+   "path": "skins/arctic/yeti/0/yeti.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    5893
+   ]
+  },
+  {
+   "path": "skins/land/dragon/0/0/dragon.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    5895,
+    29277
+   ]
+  },
+  {
+   "path": "skins/land/trex/0/trex.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    5897,
+    29279
+   ]
+  },
+  {
+   "path": "skins/ocean/kraken/0/0/kraken.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    5899,
+    29281
+   ]
+  },
+  {
+   "path": "skins/ocean/kingcrab/0/kingcrab.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    5901,
+    29283
+   ]
+  },
+  {
+   "path": "skins/volcano/phoenix/0/phoenix.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    5903
+   ]
+  },
+  {
+   "path": "skins/desert/pterodactyl/0/pterodactyl_ability.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    5905,
+    29287
+   ]
+  },
+  {
+   "path": "img/coconut_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7289
+   ]
+  },
+  {
+   "path": "img/coconut.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7289
+   ]
+  },
+  {
+   "path": "img/banana_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7304
+   ]
+  },
+  {
+   "path": "img/banana.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7304
+   ]
+  },
+  {
+   "path": "img/rasp_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7319
+   ]
+  },
+  {
+   "path": "img/rasp.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7319
+   ]
+  },
+  {
+   "path": "img/pear_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7334
+   ]
+  },
+  {
+   "path": "img/pear.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7334
+   ]
+  },
+  {
+   "path": "img/seaweed_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7349
+   ]
+  },
+  {
+   "path": "img/seaweed.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7349
+   ]
+  },
+  {
+   "path": "img/starfish_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7357
+   ]
+  },
+  {
+   "path": "img/starfish.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7357
+   ]
+  },
+  {
+   "path": "img/kelp_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7365
+   ]
+  },
+  {
+   "path": "img/kelp.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7365
+   ]
+  },
+  {
+   "path": "img/clam_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7373
+   ]
+  },
+  {
+   "path": "img/clam.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7373
+   ]
+  },
+  {
+   "path": "img/conch_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7381
+   ]
+  },
+  {
+   "path": "img/conch.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7381
+   ]
+  },
+  {
+   "path": "img/beehive_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7423
+   ]
+  },
+  {
+   "path": "img/beehive.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7423
+   ]
+  },
+  {
+   "path": "img/desert/anthill/anthill.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    7431
+   ]
+  },
+  {
+   "path": "img/honeycomb_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7439
+   ]
+  },
+  {
+   "path": "img/honeycomb.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7439
+   ]
+  },
+  {
+   "path": "img/quill.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    7447
+   ]
+  },
+  {
+   "path": "img/cloudberry_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7551
+   ]
+  },
+  {
+   "path": "img/cloudberry.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7551
+   ]
+  },
+  {
+   "path": "img/arcticNut_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7566
+   ]
+  },
+  {
+   "path": "img/arcticNut.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7566
+   ]
+  },
+  {
+   "path": "img/carrot_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7581
+   ]
+  },
+  {
+   "path": "img/carrot.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7581
+   ]
+  },
+  {
+   "path": "img/watermelon_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7589
+   ]
+  },
+  {
+   "path": "img/watermelon.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7589
+   ]
+  },
+  {
+   "path": "img/watermelonSlice_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7601
+   ]
+  },
+  {
+   "path": "img/watermelonSlice.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7601
+   ]
+  },
+  {
+   "path": "img/meat_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7612
+   ]
+  },
+  {
+   "path": "img/meat.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7612
+   ]
+  },
+  {
+   "path": "img/lillypad_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7642
+   ]
+  },
+  {
+   "path": "img/lillypad.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    7642
+   ]
+  },
+  {
+   "path": "img/disasters/cloud.png",
+   "category": "disasters",
+   "archived": false,
+   "lines": [
+    7763,
+    24783,
+    24812
+   ]
+  },
+  {
+   "path": "img/disasters/cloud1.png",
+   "category": "disasters",
+   "archived": false,
+   "lines": [
+    7772,
+    24792,
+    24821
+   ]
+  },
+  {
+   "path": "img/snowball.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    8054,
+    10224,
+    21364,
+    21767
+   ]
+  },
+  {
+   "path": "img/fire.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    8117
+   ]
+  },
+  {
+   "path": "img/fire2.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    8117
+   ]
+  },
+  {
+   "path": "img/ability_sabertoothJawAttack.png",
+   "category": "abilities",
+   "archived": false,
+   "lines": [
+    8640
+   ]
+  },
+  {
+   "path": "img/desert/flytrap/mouth/closed.png",
+   "category": "ui",
+   "archived": false,
+   "lines": [
+    8828
+   ]
+  },
+  {
+   "path": "img/target_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    8867,
+    27543
+   ]
+  },
+  {
+   "path": "img/target.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    8867,
+    27543
+   ]
+  },
+  {
+   "path": "img/ability_pounce2.png",
+   "category": "abilities",
+   "archived": false,
+   "lines": [
+    9015
+   ]
+  },
+  {
+   "path": "img/ability_pounce1.png",
+   "category": "abilities",
+   "archived": false,
+   "lines": [
+    9016
+   ]
+  },
+  {
+   "path": "stomp.png",
+   "category": "other",
+   "archived": false,
+   "lines": [
+    9092
+   ]
+  },
+  {
+   "path": "img/wave.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    9245,
+    27373
+   ]
+  },
+  {
+   "path": "skins/land/hippo/204/roar.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    9259
+   ]
+  },
+  {
+   "path": "img/whirlpool2.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    9284,
+    9305
+   ]
+  },
+  {
+   "path": "img/dirt/dirt_below.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    10237
+   ]
+  },
+  {
+   "path": "img/viralpandemic/mask.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    10255
+   ]
+  },
+  {
+   "path": "img/viralpandemic/mask-outline.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    10256
+   ]
+  },
+  {
+   "path": "gameobj/70/0.png",
+   "category": "game-objects",
+   "archived": false,
+   "lines": [
+    10380
+   ]
+  },
+  {
+   "path": "snowyowl_head.png",
+   "category": "other",
+   "archived": false,
+   "lines": [
+    11343
+   ]
+  },
+  {
+   "path": "skins/frog/frogLegs.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    11603
+   ]
+  },
+  {
+   "path": "pigeon_head.png",
+   "category": "other",
+   "archived": false,
+   "lines": [
+    12064
+   ]
+  },
+  {
+   "path": "assets/s/2/gameobj/78/incentive/1.png",
+   "category": "game-objects",
+   "archived": false,
+   "lines": [
+    13588
+   ]
+  },
+  {
+   "path": "assets/s/2/gameobj/78/incentive/2.png",
+   "category": "game-objects",
+   "archived": false,
+   "lines": [
+    13590
+   ]
+  },
+  {
+   "path": "assets/s/2/gameobj/78/incentive/3.png",
+   "category": "game-objects",
+   "archived": false,
+   "lines": [
+    13592
+   ]
+  },
+  {
+   "path": "assets/s/2/gameobj/78/incentive/4.png",
+   "category": "game-objects",
+   "archived": false,
+   "lines": [
+    13594
+   ]
+  },
+  {
+   "path": "assets/s/2/gameobj/78/incentive/5.png",
+   "category": "game-objects",
+   "archived": false,
+   "lines": [
+    13596
+   ]
+  },
+  {
+   "path": "assets/s/2/gameobj/78/incentive/6.png",
+   "category": "game-objects",
+   "archived": false,
+   "lines": [
+    13598
+   ]
+  },
+  {
+   "path": "assets/s/2/gameobj/78/incentive/7.png",
+   "category": "game-objects",
+   "archived": false,
+   "lines": [
+    13600
+   ]
+  },
+  {
+   "path": "assets/s/2/gameobj/78/incentive/8.png",
+   "category": "game-objects",
+   "archived": false,
+   "lines": [
+    13602
+   ]
+  },
+  {
+   "path": "assets/s/2/gameobj/78/incentive/9.png",
+   "category": "game-objects",
+   "archived": false,
+   "lines": [
+    13604
+   ]
+  },
+  {
+   "path": "assets/s/2/gameobj/78/incentive/10.png",
+   "category": "game-objects",
+   "archived": false,
+   "lines": [
+    13606
+   ]
+  },
+  {
+   "path": "assets/s/2/gameobj/78/incentive/11.png",
+   "category": "game-objects",
+   "archived": false,
+   "lines": [
+    13608
+   ]
+  },
+  {
+   "path": "assets/s/2/gameobj/78/incentive/12.png",
+   "category": "game-objects",
+   "archived": false,
+   "lines": [
+    13610
+   ]
+  },
+  {
+   "path": "assets/s/2/gameobj/78/incentive/13.png",
+   "category": "game-objects",
+   "archived": false,
+   "lines": [
+    13612
+   ]
+  },
+  {
+   "path": "shop/gem.png",
+   "category": "shop-ui",
+   "archived": true,
+   "lines": [
+    14255,
+    16861
+   ]
+  },
+  {
+   "path": "shop/mopecoin.png",
+   "category": "shop-ui",
+   "archived": true,
+   "lines": [
+    14255,
+    16861
+   ]
+  },
+  {
+   "path": "shop/gem.png",
+   "category": "shop-ui",
+   "archived": true,
+   "lines": [
+    14690,
+    15237,
+    15292
+   ]
+  },
+  {
+   "path": "shop/VIP_Pass.png",
+   "category": "shop-ui",
+   "archived": false,
+   "lines": [
+    14693
+   ]
+  },
+  {
+   "path": "shop/coins.png",
+   "category": "shop-ui",
+   "archived": false,
+   "lines": [
+    15286
+   ]
+  },
+  {
+   "path": "shop/VIP_Button.png",
+   "category": "shop-ui",
+   "archived": false,
+   "lines": [
+    15298
+   ]
+  },
+  {
+   "path": "shop/skins.png",
+   "category": "shop-ui",
+   "archived": false,
+   "lines": [
+    15302
+   ]
+  },
+  {
+   "path": "shop/features.png",
+   "category": "shop-ui",
+   "archived": false,
+   "lines": [
+    15306
+   ]
+  },
+  {
+   "path": "shop/deals/deals.png",
+   "category": "shop-ui",
+   "archived": false,
+   "lines": [
+    15310
+   ]
+  },
+  {
+   "path": "shop/clothing.png",
+   "category": "shop-ui",
+   "archived": false,
+   "lines": [
+    15320
+   ]
+  },
+  {
+   "path": "shop/back.png",
+   "category": "shop-ui",
+   "archived": false,
+   "lines": [
+    15981
+   ]
+  },
+  {
+   "path": "shop/close.png",
+   "category": "shop-ui",
+   "archived": true,
+   "lines": [
+    15987
+   ]
+  },
+  {
+   "path": "gameobj/18/0/0.png",
+   "category": "game-objects",
+   "archived": false,
+   "lines": [
+    17048,
+    17066
+   ]
+  },
+  {
+   "path": "skins/volcano/landmonster/0/204//landmonster_head.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    17462
+   ]
+  },
+  {
+   "path": "skins/volcano/landmonster/0/204//landmonster_head1.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    17470
+   ]
+  },
+  {
+   "path": "img/desert/flytrap/base.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    20149
+   ]
+  },
+  {
+   "path": "img/desert/flytrap/mouth/stem.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    20183
+   ]
+  },
+  {
+   "path": "img/desert/flytrap/mouth/bottom_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    20200
+   ]
+  },
+  {
+   "path": "img/desert/flytrap/mouth/bottom.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    20200
+   ]
+  },
+  {
+   "path": "img/desert/flytrap/mouth/closed.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    20207
+   ]
+  },
+  {
+   "path": "img/desert/flytrap/mouth/top.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    20207
+   ]
+  },
+  {
+   "path": ".png",
+   "category": "other",
+   "archived": false,
+   "lines": [
+    21924,
+    26618
+   ]
+  },
+  {
+   "path": "img/web/0/spiderWeb.png",
+   "category": "ui",
+   "archived": false,
+   "lines": [
+    22264
+   ]
+  },
+  {
+   "path": "skins/ocean/snail/snail_head.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    23180
+   ]
+  },
+  {
+   "path": "img/raindrop.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    23284
+   ]
+  },
+  {
+   "path": "gameobj/40/currentRight.png",
+   "category": "game-objects",
+   "archived": false,
+   "lines": [
+    23991
+   ]
+  },
+  {
+   "path": "img/viralpandemic/virus.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    24148
+   ]
+  },
+  {
+   "path": "img/custom/trunk2.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    24373
+   ]
+  },
+  {
+   "path": "img/custom/trunk1.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    24378
+   ]
+  },
+  {
+   "path": "img/custom/pad.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    24399
+   ]
+  },
+  {
+   "path": "img/custom/trampoline/rug_zebra.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    24442
+   ]
+  },
+  {
+   "path": "img/custom/trampoline/leg_zebra.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    24463
+   ]
+  },
+  {
+   "path": "skins/land/aiboss/sultan/left_wing.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    24552
+   ]
+  },
+  {
+   "path": "skins/land/aiboss/sultan/right_wing.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    24553
+   ]
+  },
+  {
+   "path": "skins/land/aiboss/sultan/sultan_head.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    24562
+   ]
+  },
+  {
+   "path": "skins/land/aiboss/sultan/tail.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    24575
+   ]
+  },
+  {
+   "path": "skins/land/aiboss/chandyo/chandyo_back.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    24588
+   ]
+  },
+  {
+   "path": "skins/land/aiboss/chandyo/chandyo_head.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    24594
+   ]
+  },
+  {
+   "path": "img/camera.png",
+   "category": "world-and-effects",
+   "archived": false,
+   "lines": [
+    24617
+   ]
+  },
+  {
+   "path": "img/coin/coin_e.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    25378
+   ]
+  },
+  {
+   "path": "img/coin/coin.png",
+   "category": "food",
+   "archived": false,
+   "lines": [
+    25378
+   ]
+  },
+  {
+   "path": "_head.png",
+   "category": "other",
+   "archived": false,
+   "lines": [
+    25659
+   ]
+  },
+  {
+   "path": "skins/santa/0/sleigh.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    26083
+   ]
+  },
+  {
+   "path": "skins/santa/0/rudolph",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    26123
+   ]
+  },
+  {
+   "path": "skins/santa/0/rudolph1",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    26123
+   ]
+  },
+  {
+   "path": "skins/santa/0/deer",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    26123
+   ]
+  },
+  {
+   "path": "skins/santa/0/deer1",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    26123
+   ]
+  },
+  {
+   "path": "assets/s/1/gameobj/106/snow-flake.png",
+   "category": "game-objects",
+   "archived": false,
+   "lines": [
+    28048
+   ]
+  },
+  {
+   "path": "skins/land/birdmonster/0/birdmonster_ability.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    28205
+   ]
+  },
+  {
+   "path": "skins/arctic/yeti/0/wolf.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    29275
+   ]
+  },
+  {
+   "path": "skins/phoenix/phoenix.png",
+   "category": "animals",
+   "archived": false,
+   "lines": [
+    29285
+   ]
+  }
+ ]
+}

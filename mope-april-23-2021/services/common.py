@@ -193,7 +193,10 @@ def setup_logging(config: dict, service: str, verbose: bool = False) -> logging.
     for handler in list(log.handlers):
         log.removeHandler(handler)
     fmt = logging.Formatter(f"%(asctime)s %(levelname)-7s [{service}] %(message)s")
-    file_handler = logging.FileHandler(logs / f"{service}.log", encoding="utf-8")
+    # Central log folder with rotation: logs/services/<service>.log (+ .1 ... .5), 5 MB each.
+    from logging.handlers import RotatingFileHandler
+    file_handler = RotatingFileHandler(logs / f"{service}.log", maxBytes=5 * 1024 * 1024, backupCount=5,
+                                       encoding="utf-8")
     file_handler.setLevel(logging.DEBUG)
     file_handler.setFormatter(fmt)
     console = logging.StreamHandler(sys.stderr)

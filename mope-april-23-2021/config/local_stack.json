@@ -12,7 +12,10 @@
       "client_config": true,
       "turnstile_shim": true,
       "local_login_button": true
-    }
+    },
+    "asset_fallbacks": [
+      "archive/images/files/mope.io"
+    ]
   },
   "master": {
     "port": 8090,
@@ -25,7 +28,7 @@
   },
   "game": {
     "version": 296,
-    "season": 0,
+    "season": 1,
     "join_timeout_seconds": 10,
     "session_resume_seconds": 60
   },
@@ -219,5 +222,42 @@
       "enabled": true,
       "origin": "local-addition"
     }
-  ]
+  ],
+  "gameplay": {
+    "tick_seconds": 0.1,
+    "world_width": 3000,
+    "world_height": 3000,
+    "zoom": 1.4,
+    "food_object_type": 3,
+    "food_count": 220,
+    "food_radius": 9,
+    "food_xp": 5,
+    "evolution": [
+      {
+        "animal": 1,
+        "xp": 0,
+        "radius": 16,
+        "speed": 220
+      },
+      {
+        "animal": 2,
+        "xp": 30,
+        "radius": 20,
+        "speed": 215
+      },
+      {
+        "animal": 3,
+        "xp": 90,
+        "radius": 25,
+        "speed": 205
+      }
+    ],
+    "_comment": "Phase 5 approximation: the original server's evolution order, XP thresholds, radii and speeds are not in the client. Animal ids: 1 Mouse, 2 Rabbit, 3 Pig, 4 Fox, 5 Deer, 6 Mole (client table _0x373b4f).",
+    "pumpkins": {
+      "_comment": "Pumpkins (object type 131) from fetch_pumpkins.rb: one per installed type in turn. Types come from the installed pumpkins.json unless listed here as \"types\"; count 0 disables them.",
+      "count": 44,
+      "radius": 30,
+      "rolling": true
+    }
+  }
 }

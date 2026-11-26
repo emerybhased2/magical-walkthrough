@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-11-26T03:14:00Z",
+  "verifier_version": "1.0.0",
+  "region": "prod-lnd-us-ny-1",
+  "seconds": 16.4,
+  "passed": 8,
+  "failed": 0,
+  "checks": [
+    {
+      "id": "C1",
+      "name": "configuration validates (localstack.py check-config)",
+      "ok": true,
+      "detail": "configuration OK",
+      "data": null
+    },
+    {
+      "id": "P1",
+      "name": "Play spawns the player (17, 107, 18, 6, then its own animal in a world update)",
+      "ok": true,
+      "detail": "region New York 1: order [17, 107, 18, 6], me {'id': 242, 'subtype': 1, 'nick': 'VerifyA'}",
+      "data": null
+    },
+    {
+      "id": "P2",
+      "name": "C->S 5 moves the animal toward the cursor at the configured speed",
+      "ok": true,
+      "detail": "moved 200 units in 1.0s (speed 220)",
+      "data": null
+    },
+    {
+      "id": "P3",
+      "name": "touching food removes it with the player as killer and raises the header XP",
+      "ok": true,
+      "detail": "xp 0 -> 5, water 100",
+      "data": null
+    },
+    {
+      "id": "P4",
+      "name": "evolution: S->C 18 with upgrade text, new animal type/id and next threshold; old animal removed",
+      "ok": true,
+      "detail": "animal 2 id 242->249 next 90 at xp 30",
+      "data": null
+    },
+    {
+      "id": "P5",
+      "name": "two players see each other (with nicknames); a leaving player disappears",
+      "ok": true,
+      "detail": "A sees 'VerifyB', B sees 'VerifyA', A removed for B: True",
+      "data": null
+    },
+    {
+      "id": "P6",
+      "name": "every S->C frame decodes with the client's reader layouts",
+      "ok": true,
+      "detail": "155 frames",
+      "data": null
+    },
+    {
+      "id": "B1",
+      "name": "the real client spawns, eats and evolves; no page errors besides missing audio",
+      "ok": true,
+      "detail": "spawn logged True, menu hidden True, animal 2, xp 30, 18 handled 2x, other errors []; screenshot working/phase5/phase5_ingame.png",
+      "data": null
+    }
+  ]
+}

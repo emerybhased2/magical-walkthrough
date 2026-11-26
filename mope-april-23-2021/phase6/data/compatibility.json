@@ -1,0 +1,1565 @@
+{
+  "generated_at": "2026-11-26T15:28:17Z",
+  "homepage": {
+    "anchor": {
+      "anchor_timestamp": "20210417072725",
+      "anchor_iso": "2021-04-17T07:27:25Z",
+      "provider": "commoncrawl",
+      "provider_label": "Common Crawl",
+      "url": "https://mope.io/",
+      "status": "304",
+      "mime": "warc/revisit",
+      "revisit": true,
+      "archive_link": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2021-17/segments/1618038118762.49/crawldiagnostics/CC-MAIN-20210417071833-20210417101833-00194.warc.gz (offset 13936650, length 772)",
+      "target": {
+        "date": "2021-04-23",
+        "timezone": "UTC",
+        "utc_window": [
+          "2021-04-23T00:00:00Z",
+          "2021-04-24T00:00:00Z"
+        ]
+      },
+      "on_target_date": false,
+      "deviation_days": -5.689,
+      "explicit": true,
+      "selected_at": "2026-11-26T04:39:33Z",
+      "policy": {
+        "anchor_day": {
+          "date": "2021-04-17",
+          "timezone": "UTC",
+          "utc_window": [
+            "2021-04-17T00:00:00Z",
+            "2021-04-18T00:00:00Z"
+          ]
+        },
+        "same_day_fallback": true,
+        "allow_off_date": true,
+        "max_date_distance_days": 60.0,
+        "tier_order": [
+          "anchor",
+          "same_day_at_or_before_anchor",
+          "same_day_after_anchor",
+          "off_date_nearest"
+        ]
+      },
+      "homepage_captures_on_target_date": 0
+    },
+    "archive_report": {
+      "selection": {
+        "anchor_timestamp": "20210417072725",
+        "anchor_iso": "2021-04-17T07:27:25Z",
+        "provider": "commoncrawl",
+        "provider_label": "Common Crawl",
+        "url": "https://mope.io/",
+        "status": "304",
+        "mime": "warc/revisit",
+        "revisit": true,
+        "archive_link": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2021-17/segments/1618038118762.49/crawldiagnostics/CC-MAIN-20210417071833-20210417101833-00194.warc.gz (offset 13936650, length 772)",
+        "target": {
+          "date": "2021-04-23",
+          "timezone": "UTC",
+          "utc_window": [
+            "2021-04-23T00:00:00Z",
+            "2021-04-24T00:00:00Z"
+          ]
+        },
+        "on_target_date": false,
+        "deviation_days": -5.689,
+        "explicit": true,
+        "selected_at": "2026-11-26T04:39:33Z",
+        "policy": {
+          "anchor_day": {
+            "date": "2021-04-17",
+            "timezone": "UTC",
+            "utc_window": [
+              "2021-04-17T00:00:00Z",
+              "2021-04-18T00:00:00Z"
+            ]
+          },
+          "same_day_fallback": true,
+          "allow_off_date": true,
+          "max_date_distance_days": 60.0,
+          "tier_order": [
+            "anchor",
+            "same_day_at_or_before_anchor",
+            "same_day_after_anchor",
+            "off_date_nearest"
+          ]
+        },
+        "homepage_captures_on_target_date": 0
+      },
+      "historical_fidelity": {
+        "anchor_on_target_date": false,
+        "anchor_deviation_days": -5.689,
+        "files_from_other_dates": 22,
+        "max_file_deviation_days": 49.122,
+        "statement": "NOT a pure 2021-04-23 snapshot: anchor deviation -5.7 days; 22 file(s) come from other dates (max 49.1 days)."
+      },
+      "validation": {
+        "validated_at": "2026-11-26T04:40:03Z",
+        "archive_valid": false,
+        "essential_files_ok": false,
+        "essential_files": [
+          {
+            "path": "/",
+            "present": true,
+            "url": "https://mope.io/",
+            "status": "ok",
+            "local_path": "archive/original/mope.io/index.html"
+          },
+          {
+            "path": "/client.js",
+            "present": false,
+            "url": "https://mope.io/client.js?x=",
+            "status": "not_archived",
+            "local_path": null
+          },
+          {
+            "path": "/adblockdet/ads.js",
+            "present": true,
+            "url": "https://mope.io/adblockdet/ads.js",
+            "status": "ok",
+            "local_path": "archive/original/mope.io/adblockdet/ads.js"
+          },
+          {
+            "path": "/cdn-cgi/apps/head/X2NGd4C5a3tonHwpUwe1lo9cVCc.js",
+            "present": true,
+            "url": "https://mope.io/cdn-cgi/apps/head/X2NGd4C5a3tonHwpUwe1lo9cVCc.js",
+            "status": "ok",
+            "local_path": "archive/original/mope.io/cdn-cgi/apps/head/X2NGd4C5a3tonHwpUwe1lo9cVCc.js"
+          },
+          {
+            "path": "/dfp.js",
+            "present": true,
+            "url": "https://mope.io/dfp.js",
+            "status": "ok",
+            "local_path": "archive/original/mope.io/dfp.js"
+          },
+          {
+            "path": "/jquery_3_3_1.js",
+            "present": true,
+            "url": "https://mope.io/jquery_3_3_1.js",
+            "status": "ok",
+            "local_path": "archive/original/mope.io/jquery_3_3_1.js"
+          },
+          {
+            "path": "/main_nerged.css",
+            "present": true,
+            "url": "https://mope.io/main_nerged.css?v=live.257",
+            "status": "ok",
+            "local_path": "archive/original/mope.io/main_nerged.css"
+          }
+        ],
+        "files_checked": 22,
+        "integrity_failures": [],
+        "unresolved_local_references": [
+          {
+            "from": "archive/original/mope.io/cdn-cgi/l/email-protection.html",
+            "reference": "https://mope.io/cdn-cgi/styles/cf.errors.css",
+            "relation": "stylesheet",
+            "status": "not_archived"
+          },
+          {
+            "from": "archive/original/mope.io/main_nerged.css",
+            "reference": "https://mope.io/shop/exp.png",
+            "relation": "css-url",
+            "status": "not_archived"
+          },
+          {
+            "from": "archive/original/mope.io/main_nerged.css",
+            "reference": "https://mope.io/shop/left.png",
+            "relation": "css-url",
+            "status": "not_archived"
+          },
+          {
+            "from": "archive/original/mope.io/main_nerged.css",
+            "reference": "https://mope.io/shop/right.png",
+            "relation": "css-url",
+            "status": "not_archived"
+          },
+          {
+            "from": "archive/original/mope.io/main_nerged.css",
+            "reference": "https://mope.io/shop/exp.png",
+            "relation": "css-url",
+            "status": "not_archived"
+          }
+        ],
+        "missing_required_resources": [
+          "https://mope.io/cdn-cgi/styles/cf.errors.css",
+          "https://mope.io/shop/exp.png",
+          "https://mope.io/shop/left.png",
+          "https://mope.io/shop/right.png"
+        ],
+        "missing_external_dependencies": [],
+        "baseline_present": false,
+        "baseline_modifications": [],
+        "retryable_failures": 0
+      }
+    },
+    "element_ids": {
+      "2021": 92,
+      "served_2025": 75,
+      "shared": [
+        "appAdAndroid",
+        "appAdIOS",
+        "appsDiv",
+        "btnLogin",
+        "btnLogout2",
+        "btnSpectate",
+        "button_mute",
+        "button_mute_img",
+        "cdm-zone-end",
+        "chatinput",
+        "closeBut",
+        "conimgContainer",
+        "connecting",
+        "divButtons",
+        "divLogoutBtn2",
+        "facebookLoginBtn",
+        "gCanvas",
+        "gameAreaWrapper",
+        "googleLoginBtn",
+        "graphicsBut_hd",
+        "graphics_fps",
+        "loadingAnim_xsolla",
+        "loggedInNameTxt",
+        "loggedInUserImg",
+        "loginButtons",
+        "loginCoins",
+        "loginDiv",
+        "login_coins",
+        "logo",
+        "moneyRect",
+        "moneyRectBottom",
+        "moneyRectBottomWrap",
+        "moneyRectWrap",
+        "mope-io_300x250",
+        "mope-io_728x90",
+        "mopeMenu",
+        "nickInput",
+        "nickInputContainer",
+        "notLoggedInDiv",
+        "notLoggedInTxt",
+        "onPlayReadyWrap",
+        "onconnectDiv",
+        "onloggedInDiv",
+        "optionsContainer",
+        "optionsDiv",
+        "options_graphicsButs",
+        "plusCoinsLabel",
+        "rightSide",
+        "serverResponse",
+        "serverSelect",
+        "settingsButton",
+        "shopbutton2",
+        "spawnXpLabel",
+        "startButton",
+        "startMenu",
+        "startMenuWrapper",
+        "txtServer",
+        "updates",
+        "updatesDiv",
+        "xsollaStoreAndButton",
+        "xsollaStoreCloseButton",
+        "xsollaStoreFrameWrapper",
+        "xsollaStoreInnerDiv",
+        "ytButton",
+        "ytDiv"
+      ],
+      "only_2021": [
+        "addCoins",
+        "btnRegister",
+        "cdm-zone-01",
+        "cdm-zone-02",
+        "chromebugdiv",
+        "chromebugp",
+        "graphicsBut_mid",
+        "loginTestAccBtn",
+        "loginTestAccBtn2",
+        "loginTestAccBtn3",
+        "loginTestAccBtn4",
+        "loginTestAccBtn5",
+        "loginTestAccBtn6",
+        "login_SBLabel",
+        "logoutbut",
+        "moneyRectBottomWrapUpgrade",
+        "moneyRectBottomWrapUpgrade_sidebanner",
+        "mope-io_300x600",
+        "mope-io_970x90",
+        "my-content-2",
+        "plusCoins",
+        "preroll",
+        "pvVidContainer",
+        "resetAccount",
+        "testingButs",
+        "upgradescreenads",
+        "upgradescreenads_sidebanner"
+      ],
+      "only_2025": [
+        "appleLoginBtn",
+        "btnContinueEndScreen",
+        "discordLoginBtn",
+        "graphicsBut_low",
+        "graphicsBut_med",
+        "loginGems",
+        "login_gems",
+        "moreGames",
+        "shopbutton3",
+        "turnstile-script"
+      ]
+    },
+    "resources_2021": [
+      {
+        "resource": "./img/appAd_and.png",
+        "served": true,
+        "from": "served snapshot",
+        "in_2021_archive": true
+      },
+      {
+        "resource": "./img/appAd_ios.png",
+        "served": true,
+        "from": "served snapshot",
+        "in_2021_archive": true
+      },
+      {
+        "resource": "/assets/s/1/skins/mouse.png",
+        "served": true,
+        "from": "fallback mope.io",
+        "in_2021_archive": true
+      },
+      {
+        "resource": "/cdn-cgi/apps/head/X2NGd4C5a3tonHwpUwe1lo9cVCc.js",
+        "served": false,
+        "from": null,
+        "in_2021_archive": true
+      },
+      {
+        "resource": "/dfp.js",
+        "served": true,
+        "from": "served snapshot",
+        "in_2021_archive": true
+      },
+      {
+        "resource": "adblockdet/ads.js",
+        "served": true,
+        "from": "served snapshot",
+        "in_2021_archive": true
+      },
+      {
+        "resource": "assets/s/1/skins/land/aiboss/gujjar.png",
+        "served": true,
+        "from": "fallback mope.io",
+        "in_2021_archive": true
+      },
+      {
+        "resource": "assets/s/1/skins/land/aiboss/sultan.png",
+        "served": true,
+        "from": "fallback mope.io",
+        "in_2021_archive": true
+      },
+      {
+        "resource": "favicon.ico",
+        "served": true,
+        "from": "served snapshot",
+        "in_2021_archive": true
+      },
+      {
+        "resource": "http://addictinggames.com",
+        "served": false,
+        "reason": "third-party host addictinggames.com (blocked by design)"
+      },
+      {
+        "resource": "http://www.mope.io/updates.txt",
+        "served": false,
+        "from": null,
+        "in_2021_archive": false
+      },
+      {
+        "resource": "https://apis.google.com/js/platform.js",
+        "served": false,
+        "reason": "third-party host apis.google.com (blocked by design)"
+      },
+      {
+        "resource": "https://goo.gl/i3xQWQ",
+        "served": false,
+        "reason": "third-party host goo.gl (blocked by design)"
+      },
+      {
+        "resource": "https://goo.gl/ofAUPJ",
+        "served": false,
+        "reason": "third-party host goo.gl (blocked by design)"
+      },
+      {
+        "resource": "https://iogames.space/",
+        "served": false,
+        "reason": "third-party host iogames.space (blocked by design)"
+      },
+      {
+        "resource": "https://www.addictinggames.com/sites/default/files/logo.png",
+        "served": false,
+        "reason": "third-party host www.addictinggames.com (blocked by design)"
+      },
+      {
+        "resource": "https://www.google.com/intl/en_ca/chrome/canary/",
+        "served": false,
+        "reason": "third-party host www.google.com (blocked by design)"
+      },
+      {
+        "resource": "https://www.reddit.com/r/mopeio/",
+        "served": false,
+        "reason": "third-party host www.reddit.com (blocked by design)"
+      },
+      {
+        "resource": "https://www.youtube.com/channel/UCNfK9bZk3Br2KDjXXdKuM1g/community?view_as=subscriber&ab_channel=MopeioOfficial",
+        "served": false,
+        "reason": "third-party host www.youtube.com (blocked by design)"
+      },
+      {
+        "resource": "img/logo.png",
+        "served": true,
+        "from": "served snapshot",
+        "in_2021_archive": true
+      },
+      {
+        "resource": "img/settings.png",
+        "served": true,
+        "from": "served snapshot",
+        "in_2021_archive": true
+      },
+      {
+        "resource": "img/sound_on.png",
+        "served": true,
+        "from": "served snapshot",
+        "in_2021_archive": true
+      },
+      {
+        "resource": "img/x.png",
+        "served": true,
+        "from": "served snapshot",
+        "in_2021_archive": true
+      },
+      {
+        "resource": "jquery_3_3_1.js",
+        "served": true,
+        "from": "served snapshot",
+        "in_2021_archive": true
+      },
+      {
+        "resource": "main_nerged.css?v=live.257",
+        "served": true,
+        "from": "served snapshot",
+        "in_2021_archive": true
+      },
+      {
+        "resource": "privacy/index.html",
+        "served": false,
+        "from": null,
+        "in_2021_archive": false
+      },
+      {
+        "resource": "shop/close.png",
+        "served": true,
+        "from": "served snapshot",
+        "in_2021_archive": true
+      },
+      {
+        "resource": "shop/mopecoin.png",
+        "served": true,
+        "from": "served snapshot",
+        "in_2021_archive": true
+      }
+    ],
+    "resources_served": 16
+  },
+  "protocol": {
+    "client_sends": [
+      {
+        "opcode": 1,
+        "name": "join"
+      },
+      {
+        "opcode": 5,
+        "name": "cursor position"
+      },
+      {
+        "opcode": 11,
+        "name": "leave"
+      },
+      {
+        "opcode": 17,
+        "name": "resize"
+      },
+      {
+        "opcode": 19,
+        "name": "chat"
+      },
+      {
+        "opcode": 20,
+        "name": ""
+      },
+      {
+        "opcode": 21,
+        "name": ""
+      },
+      {
+        "opcode": 24,
+        "name": ""
+      },
+      {
+        "opcode": 26,
+        "name": ""
+      },
+      {
+        "opcode": 27,
+        "name": ""
+      },
+      {
+        "opcode": 28,
+        "name": ""
+      },
+      {
+        "opcode": 29,
+        "name": ""
+      },
+      {
+        "opcode": 30,
+        "name": ""
+      },
+      {
+        "opcode": 52,
+        "name": ""
+      },
+      {
+        "opcode": 56,
+        "name": ""
+      },
+      {
+        "opcode": 59,
+        "name": ""
+      },
+      {
+        "opcode": 60,
+        "name": ""
+      },
+      {
+        "opcode": 61,
+        "name": ""
+      },
+      {
+        "opcode": 62,
+        "name": "Msg_adblockCheckCheck"
+      },
+      {
+        "opcode": 63,
+        "name": ""
+      },
+      {
+        "opcode": 64,
+        "name": "captcha token"
+      },
+      {
+        "opcode": 66,
+        "name": ""
+      },
+      {
+        "opcode": 67,
+        "name": ""
+      },
+      {
+        "opcode": 68,
+        "name": ""
+      },
+      {
+        "opcode": 71,
+        "name": ""
+      },
+      {
+        "opcode": 103,
+        "name": ""
+      },
+      {
+        "opcode": 113,
+        "name": "play"
+      },
+      {
+        "opcode": 255,
+        "name": "ping"
+      }
+    ],
+    "server_handles": [
+      {
+        "opcode": 1,
+        "name": "join"
+      },
+      {
+        "opcode": 5,
+        "name": "cursor position"
+      },
+      {
+        "opcode": 11,
+        "name": "leave"
+      },
+      {
+        "opcode": 17,
+        "name": "resize"
+      },
+      {
+        "opcode": 64,
+        "name": "captcha token"
+      },
+      {
+        "opcode": 113,
+        "name": "play"
+      },
+      {
+        "opcode": 255,
+        "name": "ping"
+      }
+    ],
+    "client_sends_unhandled": [
+      {
+        "opcode": 19,
+        "name": "chat"
+      },
+      {
+        "opcode": 20,
+        "name": ""
+      },
+      {
+        "opcode": 21,
+        "name": ""
+      },
+      {
+        "opcode": 24,
+        "name": ""
+      },
+      {
+        "opcode": 26,
+        "name": ""
+      },
+      {
+        "opcode": 27,
+        "name": ""
+      },
+      {
+        "opcode": 28,
+        "name": ""
+      },
+      {
+        "opcode": 29,
+        "name": ""
+      },
+      {
+        "opcode": 30,
+        "name": ""
+      },
+      {
+        "opcode": 52,
+        "name": ""
+      },
+      {
+        "opcode": 56,
+        "name": ""
+      },
+      {
+        "opcode": 59,
+        "name": ""
+      },
+      {
+        "opcode": 60,
+        "name": ""
+      },
+      {
+        "opcode": 61,
+        "name": ""
+      },
+      {
+        "opcode": 62,
+        "name": "Msg_adblockCheckCheck"
+      },
+      {
+        "opcode": 63,
+        "name": ""
+      },
+      {
+        "opcode": 66,
+        "name": ""
+      },
+      {
+        "opcode": 67,
+        "name": ""
+      },
+      {
+        "opcode": 68,
+        "name": ""
+      },
+      {
+        "opcode": 71,
+        "name": ""
+      },
+      {
+        "opcode": 103,
+        "name": ""
+      }
+    ],
+    "client_handles": [
+      {
+        "opcode": 2,
+        "name": "server info"
+      },
+      {
+        "opcode": 3,
+        "name": "connected"
+      },
+      {
+        "opcode": 4,
+        "name": "world update"
+      },
+      {
+        "opcode": 5,
+        "name": ""
+      },
+      {
+        "opcode": 6,
+        "name": "alive in game"
+      },
+      {
+        "opcode": 7,
+        "name": ""
+      },
+      {
+        "opcode": 8,
+        "name": ""
+      },
+      {
+        "opcode": 9,
+        "name": ""
+      },
+      {
+        "opcode": 10,
+        "name": ""
+      },
+      {
+        "opcode": 11,
+        "name": "disconnect"
+      },
+      {
+        "opcode": 12,
+        "name": ""
+      },
+      {
+        "opcode": 13,
+        "name": ""
+      },
+      {
+        "opcode": 14,
+        "name": "you died"
+      },
+      {
+        "opcode": 16,
+        "name": "notification"
+      },
+      {
+        "opcode": 17,
+        "name": "game size"
+      },
+      {
+        "opcode": 18,
+        "name": "your animal changed"
+      },
+      {
+        "opcode": 19,
+        "name": "chat message"
+      },
+      {
+        "opcode": 23,
+        "name": "hurt / effect text"
+      },
+      {
+        "opcode": 24,
+        "name": ""
+      },
+      {
+        "opcode": 25,
+        "name": ""
+      },
+      {
+        "opcode": 33,
+        "name": ""
+      },
+      {
+        "opcode": 34,
+        "name": ""
+      },
+      {
+        "opcode": 35,
+        "name": ""
+      },
+      {
+        "opcode": 36,
+        "name": ""
+      },
+      {
+        "opcode": 37,
+        "name": ""
+      },
+      {
+        "opcode": 38,
+        "name": ""
+      },
+      {
+        "opcode": 39,
+        "name": ""
+      },
+      {
+        "opcode": 40,
+        "name": ""
+      },
+      {
+        "opcode": 41,
+        "name": ""
+      },
+      {
+        "opcode": 42,
+        "name": ""
+      },
+      {
+        "opcode": 43,
+        "name": ""
+      },
+      {
+        "opcode": 44,
+        "name": ""
+      },
+      {
+        "opcode": 45,
+        "name": "Msg_battleroyal_endScreen"
+      },
+      {
+        "opcode": 46,
+        "name": ""
+      },
+      {
+        "opcode": 48,
+        "name": ""
+      },
+      {
+        "opcode": 56,
+        "name": "spectate mode"
+      },
+      {
+        "opcode": 58,
+        "name": ""
+      },
+      {
+        "opcode": 59,
+        "name": ""
+      },
+      {
+        "opcode": 62,
+        "name": "Msg_adblockCheckCheck"
+      },
+      {
+        "opcode": 63,
+        "name": ""
+      },
+      {
+        "opcode": 64,
+        "name": ""
+      },
+      {
+        "opcode": 65,
+        "name": "Msg_readyToPlay"
+      },
+      {
+        "opcode": 67,
+        "name": ""
+      },
+      {
+        "opcode": 69,
+        "name": ""
+      },
+      {
+        "opcode": 72,
+        "name": "Msg_sendLoginCred"
+      },
+      {
+        "opcode": 81,
+        "name": ""
+      },
+      {
+        "opcode": 82,
+        "name": ""
+      },
+      {
+        "opcode": 83,
+        "name": ""
+      },
+      {
+        "opcode": 84,
+        "name": ""
+      },
+      {
+        "opcode": 100,
+        "name": "snowfall"
+      },
+      {
+        "opcode": 102,
+        "name": "Msg_client_loadUserData"
+      },
+      {
+        "opcode": 103,
+        "name": ""
+      },
+      {
+        "opcode": 104,
+        "name": ""
+      },
+      {
+        "opcode": 105,
+        "name": ""
+      },
+      {
+        "opcode": 106,
+        "name": ""
+      },
+      {
+        "opcode": 107,
+        "name": "minimap"
+      },
+      {
+        "opcode": 108,
+        "name": ""
+      },
+      {
+        "opcode": 109,
+        "name": ""
+      },
+      {
+        "opcode": 111,
+        "name": ""
+      },
+      {
+        "opcode": 112,
+        "name": "MSG_GAMEROOM_PROPERTY_UPDATE"
+      },
+      {
+        "opcode": 113,
+        "name": "rate-limit disconnect"
+      },
+      {
+        "opcode": 114,
+        "name": ""
+      },
+      {
+        "opcode": 115,
+        "name": ""
+      },
+      {
+        "opcode": 255,
+        "name": "pong"
+      }
+    ],
+    "server_sends": [
+      {
+        "opcode": 2,
+        "name": "server info"
+      },
+      {
+        "opcode": 3,
+        "name": "connected"
+      },
+      {
+        "opcode": 4,
+        "name": "world update"
+      },
+      {
+        "opcode": 6,
+        "name": "alive in game"
+      },
+      {
+        "opcode": 11,
+        "name": "disconnect"
+      },
+      {
+        "opcode": 16,
+        "name": "notification"
+      },
+      {
+        "opcode": 17,
+        "name": "game size"
+      },
+      {
+        "opcode": 18,
+        "name": "your animal changed"
+      },
+      {
+        "opcode": 107,
+        "name": "minimap"
+      },
+      {
+        "opcode": 255,
+        "name": "pong"
+      }
+    ],
+    "client_handles_never_sent": [
+      {
+        "opcode": 5,
+        "name": ""
+      },
+      {
+        "opcode": 7,
+        "name": ""
+      },
+      {
+        "opcode": 8,
+        "name": ""
+      },
+      {
+        "opcode": 9,
+        "name": ""
+      },
+      {
+        "opcode": 10,
+        "name": ""
+      },
+      {
+        "opcode": 12,
+        "name": ""
+      },
+      {
+        "opcode": 13,
+        "name": ""
+      },
+      {
+        "opcode": 14,
+        "name": "you died"
+      },
+      {
+        "opcode": 19,
+        "name": "chat message"
+      },
+      {
+        "opcode": 23,
+        "name": "hurt / effect text"
+      },
+      {
+        "opcode": 24,
+        "name": ""
+      },
+      {
+        "opcode": 25,
+        "name": ""
+      },
+      {
+        "opcode": 33,
+        "name": ""
+      },
+      {
+        "opcode": 34,
+        "name": ""
+      },
+      {
+        "opcode": 35,
+        "name": ""
+      },
+      {
+        "opcode": 36,
+        "name": ""
+      },
+      {
+        "opcode": 37,
+        "name": ""
+      },
+      {
+        "opcode": 38,
+        "name": ""
+      },
+      {
+        "opcode": 39,
+        "name": ""
+      },
+      {
+        "opcode": 40,
+        "name": ""
+      },
+      {
+        "opcode": 41,
+        "name": ""
+      },
+      {
+        "opcode": 42,
+        "name": ""
+      },
+      {
+        "opcode": 43,
+        "name": ""
+      },
+      {
+        "opcode": 44,
+        "name": ""
+      },
+      {
+        "opcode": 45,
+        "name": "Msg_battleroyal_endScreen"
+      },
+      {
+        "opcode": 46,
+        "name": ""
+      },
+      {
+        "opcode": 48,
+        "name": ""
+      },
+      {
+        "opcode": 56,
+        "name": "spectate mode"
+      },
+      {
+        "opcode": 58,
+        "name": ""
+      },
+      {
+        "opcode": 59,
+        "name": ""
+      },
+      {
+        "opcode": 62,
+        "name": "Msg_adblockCheckCheck"
+      },
+      {
+        "opcode": 63,
+        "name": ""
+      },
+      {
+        "opcode": 64,
+        "name": ""
+      },
+      {
+        "opcode": 65,
+        "name": "Msg_readyToPlay"
+      },
+      {
+        "opcode": 67,
+        "name": ""
+      },
+      {
+        "opcode": 69,
+        "name": ""
+      },
+      {
+        "opcode": 72,
+        "name": "Msg_sendLoginCred"
+      },
+      {
+        "opcode": 81,
+        "name": ""
+      },
+      {
+        "opcode": 82,
+        "name": ""
+      },
+      {
+        "opcode": 83,
+        "name": ""
+      },
+      {
+        "opcode": 84,
+        "name": ""
+      },
+      {
+        "opcode": 100,
+        "name": "snowfall"
+      },
+      {
+        "opcode": 102,
+        "name": "Msg_client_loadUserData"
+      },
+      {
+        "opcode": 103,
+        "name": ""
+      },
+      {
+        "opcode": 104,
+        "name": ""
+      },
+      {
+        "opcode": 105,
+        "name": ""
+      },
+      {
+        "opcode": 106,
+        "name": ""
+      },
+      {
+        "opcode": 108,
+        "name": ""
+      },
+      {
+        "opcode": 109,
+        "name": ""
+      },
+      {
+        "opcode": 111,
+        "name": ""
+      },
+      {
+        "opcode": 112,
+        "name": "MSG_GAMEROOM_PROPERTY_UPDATE"
+      },
+      {
+        "opcode": 113,
+        "name": "rate-limit disconnect"
+      },
+      {
+        "opcode": 114,
+        "name": ""
+      },
+      {
+        "opcode": 115,
+        "name": ""
+      }
+    ],
+    "coverage": {
+      "c2s": "7/28",
+      "s2c": "10/64"
+    }
+  },
+  "assets": {
+    "client_references": 829,
+    "client_templates": 606,
+    "archived_urls": 82,
+    "archived_versions": 102,
+    "coverage": [
+      {
+        "category": "abilities",
+        "templates": 44,
+        "templatesWithArchivedFiles": 0,
+        "concretePaths": 9,
+        "concretePathsArchived": 0,
+        "archivedFiles": 0
+      },
+      {
+        "category": "animals",
+        "templates": 294,
+        "templatesWithArchivedFiles": 1,
+        "concretePaths": 38,
+        "concretePathsArchived": 0,
+        "archivedFiles": 43
+      },
+      {
+        "category": "cloudflare",
+        "templates": 0,
+        "templatesWithArchivedFiles": 0,
+        "concretePaths": 0,
+        "concretePathsArchived": 0,
+        "archivedFiles": 4
+      },
+      {
+        "category": "disasters",
+        "templates": 9,
+        "templatesWithArchivedFiles": 0,
+        "concretePaths": 6,
+        "concretePathsArchived": 0,
+        "archivedFiles": 0
+      },
+      {
+        "category": "food",
+        "templates": 24,
+        "templatesWithArchivedFiles": 0,
+        "concretePaths": 42,
+        "concretePathsArchived": 0,
+        "archivedFiles": 0
+      },
+      {
+        "category": "game-objects",
+        "templates": 52,
+        "templatesWithArchivedFiles": 0,
+        "concretePaths": 17,
+        "concretePathsArchived": 0,
+        "archivedFiles": 0
+      },
+      {
+        "category": "other",
+        "templates": 118,
+        "templatesWithArchivedFiles": 0,
+        "concretePaths": 5,
+        "concretePathsArchived": 0,
+        "archivedFiles": 0
+      },
+      {
+        "category": "promo",
+        "templates": 0,
+        "templatesWithArchivedFiles": 0,
+        "concretePaths": 0,
+        "concretePathsArchived": 0,
+        "archivedFiles": 15
+      },
+      {
+        "category": "shop-skins",
+        "templates": 1,
+        "templatesWithArchivedFiles": 0,
+        "concretePaths": 0,
+        "concretePathsArchived": 0,
+        "archivedFiles": 0
+      },
+      {
+        "category": "shop-ui",
+        "templates": 14,
+        "templatesWithArchivedFiles": 4,
+        "concretePaths": 13,
+        "concretePathsArchived": 5,
+        "archivedFiles": 6
+      },
+      {
+        "category": "ui",
+        "templates": 15,
+        "templatesWithArchivedFiles": 1,
+        "concretePaths": 10,
+        "concretePathsArchived": 1,
+        "archivedFiles": 14
+      },
+      {
+        "category": "world-and-effects",
+        "templates": 35,
+        "templatesWithArchivedFiles": 0,
+        "concretePaths": 22,
+        "concretePathsArchived": 0,
+        "archivedFiles": 0
+      }
+    ],
+    "by_category": {
+      "animals": 43,
+      "cloudflare": 4,
+      "promo": 15,
+      "shop-ui": 6,
+      "ui": 14
+    },
+    "live_2026_files": 622
+  },
+  "verification": {
+    "generated_at": "2026-11-26T04:54:47Z",
+    "passed": 12,
+    "failed": 0,
+    "checks": [
+      {
+        "id": "C1",
+        "ok": true,
+        "name": "configuration validates",
+        "detail": "configuration OK"
+      },
+      {
+        "id": "S1",
+        "ok": true,
+        "name": "every service up (master, account, gateway, all regions online in the master)",
+        "detail": "web True, master True, account True, regions online 20/20"
+      },
+      {
+        "id": "R1",
+        "ok": true,
+        "name": "region selection: /servers/get and the served $config.gameServers list every enabled region",
+        "detail": "/servers/get 20/20, $config.gameServers 20/20"
+      },
+      {
+        "id": "G1",
+        "ok": true,
+        "name": "every region: join, Play, spawn (17, 107, 18, 6 + own animal)",
+        "detail": "20/20 regions"
+      },
+      {
+        "id": "G2",
+        "ok": true,
+        "name": "multiplayer in every region: two players see each other; a leaver is removed",
+        "detail": "20/20 regions"
+      },
+      {
+        "id": "A1",
+        "ok": true,
+        "name": "account registration, login, @me and a refused wrong password (through the gateway)",
+        "detail": "register 200, login 200, @me 200, wrong password 400"
+      },
+      {
+        "id": "W1",
+        "ok": true,
+        "name": "assets: snapshot + archived-image fallback served, season-1 sprite present, traversal refused",
+        "detail": "/index.html 200, /img/logo.png 200 snapshot, /assets/s/1/skins/land/mouse/0/mouse.png 200 snapshot, /img/update/promo3.png 200 fallback:images/files, /skins/bear.png 200 fallback:images/files, /img/%2e%2e/%2e%2e/config.json 404"
+      },
+      {
+        "id": "B1",
+        "ok": true,
+        "name": "real client session: only known gaps fail, no unhandled client messages, no page errors",
+        "detail": "known gaps ['404 /audio/click.mp3', '404 /audio/music_game.mp3', '404 /audio/nom.mp3', '404 /img/howToPlay1.png', '404 /none'], unexpected [], unhandled opcodes 0, page errors [], external hosts blocked 9"
+      },
+      {
+        "id": "V3",
+        "ok": true,
+        "name": "phase3_verify.py passes in full",
+        "detail": "34/34 checks"
+      },
+      {
+        "id": "V4",
+        "ok": true,
+        "name": "phase4_verify.py passes in full",
+        "detail": "8/8 checks"
+      },
+      {
+        "id": "V5",
+        "ok": true,
+        "name": "phase5_verify.py passes in full",
+        "detail": "8/8 checks"
+      },
+      {
+        "id": "U1",
+        "ok": true,
+        "name": "unit tests: Python, Bun, Ruby",
+        "detail": "python ok (93 tests), bun ok (20 tests), ruby ok (1852 tests)"
+      }
+    ]
+  },
+  "matrix": [
+    {
+      "area": "Archive",
+      "feature": "April 2021 homepage, CSS, images (non-Wayback)",
+      "status": "partial",
+      "evidence": "Anchor 2021-04-17 (-5.7 days, Common Crawl revisit = homepage unchanged since 2021-03-06); 22 files"
+    },
+    {
+      "area": "Archive",
+      "feature": "April 2021 client.js",
+      "status": "unresolved",
+      "evidence": "Not in Arquivo.pt, Common Crawl or vefsafn.is; the stack runs the 2025-12-10 client (README 'What the archives hold')"
+    },
+    {
+      "area": "Client",
+      "feature": "Readable, verified rebuild of the archived client",
+      "status": "completed",
+      "evidence": "rebuild_client_js.py (syntax-tree equivalence)"
+    },
+    {
+      "area": "Client",
+      "feature": "Client served locally with no production traffic",
+      "status": "completed",
+      "evidence": "web gateway: $config overlay, Turnstile shim, domain lock satisfied (phase3 B checks)"
+    },
+    {
+      "area": "Master",
+      "feature": "Region registry, heartbeats, /servers/get, failover",
+      "status": "completed",
+      "evidence": "phase3_verify.py 34/34"
+    },
+    {
+      "area": "Regions",
+      "feature": "20 regions (9 archived + 11 added), join/leave/resume/shutdown",
+      "status": "completed",
+      "evidence": "phase6 S1, G1"
+    },
+    {
+      "area": "Regions",
+      "feature": "Region selection by the client (ping + server list)",
+      "status": "completed",
+      "evidence": "phase3 B checks, phase6 R1"
+    },
+    {
+      "area": "Accounts",
+      "feature": "Local registration, login, @me, logout, forged-token rejection",
+      "status": "completed",
+      "evidence": "phase4_verify.py 8/8, phase6 A1"
+    },
+    {
+      "area": "Accounts",
+      "feature": "Social sign-in (Google, Facebook, Apple, Discord)",
+      "status": "unresolved",
+      "evidence": "Needs mope.io's OAuth apps; refused with 501 and a pointer to local accounts"
+    },
+    {
+      "area": "Accounts",
+      "feature": "Shop, coins, gems (local catalogue)",
+      "status": "partial",
+      "evidence": "Catalogue is local data (config/shop_catalog.json); purchases with real payment providers are not possible"
+    },
+    {
+      "area": "Gameplay",
+      "feature": "Spawn, movement, camera, minimap, interpolation-compatible updates",
+      "status": "completed",
+      "evidence": "phase5_verify.py, phase6 G1"
+    },
+    {
+      "area": "Gameplay",
+      "feature": "Food, eating, XP and water HUD",
+      "status": "partial",
+      "evidence": "Food type 3 only; water stays at 100 % (no drinking)"
+    },
+    {
+      "area": "Gameplay",
+      "feature": "Evolution",
+      "status": "partial",
+      "evidence": "Mouse -> Rabbit -> Pig; thresholds/radii/speeds are documented approximations"
+    },
+    {
+      "area": "Gameplay",
+      "feature": "Multiplayer visibility in every region",
+      "status": "completed",
+      "evidence": "phase6 G2 (all regions)"
+    },
+    {
+      "area": "Gameplay",
+      "feature": "Animals 4+ / per-animal reader fields",
+      "status": "unresolved",
+      "evidence": "Types 7+ need their readCustomData fields"
+    },
+    {
+      "area": "Gameplay",
+      "feature": "Predators, combat, HP, death screen, respawn",
+      "status": "unresolved",
+      "evidence": "S->C 14 (you died) and HP updates not sent"
+    },
+    {
+      "area": "Gameplay",
+      "feature": "Biomes, water sources, hills, holes, mud, trees",
+      "status": "unresolved",
+      "evidence": "Single land world; minimap has no shapes"
+    },
+    {
+      "area": "Gameplay",
+      "feature": "Abilities (W / S keys)",
+      "status": "unresolved",
+      "evidence": "Ability fields of message 18 are 0; C->S ability opcodes unhandled"
+    },
+    {
+      "area": "Gameplay",
+      "feature": "Leaderboard, player count, chat, emotes, teams",
+      "status": "unresolved",
+      "evidence": "See protocol coverage below"
+    },
+    {
+      "area": "Assets",
+      "feature": "Archived images served to the client",
+      "status": "partial",
+      "evidence": "82 images (snapshot first, then archive/images fallback); most in-game sprites were never archived outside Wayback"
+    },
+    {
+      "area": "Assets",
+      "feature": "Audio",
+      "status": "unresolved",
+      "evidence": "No mope.io audio in any archive used; the client logs 404s for audio/*.mp3"
+    },
+    {
+      "area": "Config",
+      "feature": "Sandbox and developer controls",
+      "status": "partial",
+      "evidence": "Reconstructed only where the client shows evidence (phase4/README.md); server-side dev tools unknown"
+    },
+    {
+      "area": "Config",
+      "feature": "Original server-side balance data (XP tables, speeds, spawn rates)",
+      "status": "unresolved",
+      "evidence": "Not in the client; local values are configuration, marked as approximations"
+    },
+    {
+      "area": "Operations",
+      "feature": "start-all.sh: setup, .env, start/stop/restart/status/logs/verify",
+      "status": "completed",
+      "evidence": "phase6/README.md"
+    }
+  ]
+}

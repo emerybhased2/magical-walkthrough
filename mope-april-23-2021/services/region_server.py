@@ -11,7 +11,11 @@ archived 2025 client expects it (phase2/README.md, task 12):
       C->S  1   join (canvasW, canvasH, innerWidth, sessionId)
       S->C  2   server info (sessionId, gameVersion, gameMode, season, serverId, alive, 0 objects)
       S->C  3   connected  -> the client hides "Connecting..." and shows the menu
-      C->S  113 play (w, h, nickname)  -> S->C 16 notice (gameplay arrives in Phase 5)
+      C->S  113 play (w, h, nickname)  -> S->C 16 notice, then the Phase 5 spawn:
+                S->C 17 world size, 107 minimap, 18 your animal, 6 alive
+      C->S  5   cursor world position -> the player's animal moves toward it
+      S->C  4   world update every game.tick_seconds (services/game_world.py, game_protocol.py)
+      S->C  18  again on evolution ("UPGRADED to ..." text in the client)
       C->S  11  clean leave
   shutdown: S->C 11 disconnect(code 0, reason) -> the client re-joins the best other server
 
@@ -36,6 +40,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from services import common  # noqa: E402
+from services import game_protocol as gp  # noqa: E402
+from services.game_world import World  # noqa: E402
 
 try:
     from websockets.asyncio.server import serve
@@ -65,12 +71,16 @@ class RegionServer:
         self.token = token
         game = config["game"]
         self.game_version = int(game.get("version", 296))
-        self.season = int(game.get("season", 0))
+        # Server-info season = the client's default asset folder ./assets/s/<season>/ (client default 1, L2166;
+        # every archived season asset is under assets/s/1/).
+        self.season = int(game.get("season", 1))
         self.join_timeout = float(game.get("join_timeout_seconds", 10))
         self.resume_window = float(game.get("session_resume_seconds", 60))
         self.connections: dict[object, Connection] = {}
         self.resumable: dict[str, float] = {}
         self.opcodes = Counter()
+        self.world = World(config)
+        self.tick_seconds = float(config.get("gameplay", {}).get("tick_seconds", 0.1))
         self.started_at = time.time()
         self.stopping = False
         self.master_ok = None
@@ -152,6 +162,7 @@ class RegionServer:
         except ConnectionClosed:
             pass
         finally:
+            self.world.remove_player(ws)
             self.connections.pop(ws, None)
             self.resumable[session_id] = time.time() + self.resume_window
             self.log.info("leave session=%s after %.1fs players=%d", session_id,
@@ -177,7 +188,23 @@ class RegionServer:
             if not conn.notified:
                 conn.notified = True
                 await conn.ws.send(common.msg_notification(
-                    f"Connected to local region {self.region['name']}. Gameplay is not rebuilt yet (Phase 5)."))
+                    f"Local region {self.region['name']}: early gameplay - eat food to evolve (Phase 5)."))
+            if conn.ws not in self.world.players:
+                await self._spawn(conn, play)
+            return False
+        if opcode == gp.OP_RESIZE:
+            try:
+                width, height, _ = gp.parse_resize(data)
+            except ValueError:
+                return False
+            self.world.resize(conn.ws, width, height)
+            return False
+        if opcode == gp.OP_INPUT_POS:
+            try:
+                x, y = gp.parse_input_pos(data)
+            except ValueError:
+                return False
+            self.world.set_target(conn.ws, x, y)
             return False
         if opcode == common.OP_PING:
             await conn.ws.send(bytes([common.OP_PING]))
@@ -189,6 +216,49 @@ class RegionServer:
         level("session=%s opcode %d not handled yet (%d bytes): %s", conn.session_id, opcode, len(data),
               data[:48].hex(" "))
         return False
+
+    # -- gameplay (Phase 5) ---------------------------------------------------------
+    async def _spawn(self, conn: Connection, play: dict) -> None:
+        canvas = (conn.join["canvas_width"], conn.join["canvas_height"])
+        player = self.world.spawn_player(conn.ws, play["nickname"], canvas)
+        ent = player.entity
+        await conn.ws.send(gp.msg_game_size(self.world.width, self.world.height, ent.x, ent.y, self.world.zoom))
+        await conn.ws.send(gp.msg_minimap(self.world.width, self.world.height))
+        await conn.ws.send(self._animal_msg(player, change_kind=2))
+        player.announce_animal = False
+        await conn.ws.send(gp.msg_alive())
+        self.log.info("session=%s spawned as animal type %d id=%d at (%.0f, %.0f)", conn.session_id,
+                      player.animal_type, ent.id, ent.x, ent.y)
+
+    def _animal_msg(self, player, change_kind: int) -> bytes:
+        return gp.msg_your_animal(player.animal_type, player.entity.id, change_kind=change_kind,
+                                  value=self.world.next_xp(player),
+                                  edible_objects=self.world.edible_object_types())
+
+    async def tick_loop(self):
+        last = time.monotonic()
+        while not self.stopping:
+            await asyncio.sleep(self.tick_seconds)
+            now = time.monotonic()
+            self.world.tick(min(now - last, 0.5))
+            last = now
+            for ws, player in list(self.world.players.items()):
+                if player.announce_animal:
+                    player.announce_animal = False
+                    self.log.info("player %s evolved to animal type %d (xp %d)", player.entity.nick or "?",
+                                  player.animal_type, player.xp)
+                    try:
+                        await ws.send(self._animal_msg(player, change_kind=1))
+                    except ConnectionClosed:
+                        continue
+                update = self.world.build_update(ws)
+                if update is None:
+                    continue
+                try:
+                    await ws.send(update)
+                except ConnectionClosed:
+                    pass
+            self.world.end_tick()
 
     # -- master registration -----------------------------------------------------
     def _payload(self) -> dict:
@@ -246,8 +316,10 @@ async def run(config: dict, region: dict, log, token: str) -> None:
         for sig in (signal.SIGTERM, signal.SIGINT):
             loop.add_signal_handler(sig, lambda: asyncio.ensure_future(app.shutdown(server)))
         heartbeat = asyncio.create_task(app.heartbeat_loop())
+        ticker = asyncio.create_task(app.tick_loop())
         await server.wait_closed()
         heartbeat.cancel()
+        ticker.cancel()
     log.info("region %s stopped", region["id"])
 
 

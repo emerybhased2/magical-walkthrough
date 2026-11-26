@@ -428,7 +428,7 @@ class Browser:
 
             # B6: press Play
             page.locator("#startButton").click(timeout=5000)
-            shown = self.pump(page, cdp, 6, lambda: ev("document.body.innerText.includes('Gameplay is not rebuilt yet')"))
+            shown = self.pump(page, cdp, 6, lambda: ev("document.body.innerText.includes('early gameplay')"))
             self.checks.record("B6", "Play reaches the region server and its notice is shown", bool(shown))
             page.screenshot(path=str(self.screenshot_dir / "phase3_client_connected.png"))
 

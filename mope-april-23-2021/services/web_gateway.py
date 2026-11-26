@@ -113,6 +113,11 @@ class Gateway:
         self.root = common.project_path(config, config["client_root"]).resolve()
         if not (self.root / "index.html").is_file():
             raise common.ConfigError(f"client_root has no index.html: {self.root}")
+        # Folders searched after the snapshot for files it does not hold (Phase 6): by default the
+        # images decode_images.ts recovered from Arquivo.pt (archive/images/files/mope.io). Missing
+        # folders are skipped, so the stack also runs before that script has been run.
+        self.fallbacks = [common.project_path(config, d).resolve()
+                          for d in config["web"].get("asset_fallbacks", ["archive/images/files/mope.io"])]
         self.rewrites = {"client_config": True, "turnstile_shim": True, "local_login_button": True,
                          **config["web"].get("rewrites", {})}
         self.updates_file = Path(config.get("settings", {}).get("WEB_UPDATES_FILE", "")) \
@@ -187,14 +192,25 @@ class Gateway:
 
     def static_path(self, path: str) -> Path | None:
         rel = unquote(path).lstrip("/") or "index.html"
+        if ".." in rel.replace("\\", "/").split("/"):
+            return None   # no parent-directory segments at all
         if rel.endswith("/"):
             rel += "index.html"
-        candidate = (self.root / rel).resolve()
-        if candidate != self.root and self.root not in candidate.parents:
-            return None
-        if candidate.is_dir():
-            candidate = candidate / "index.html"
-        return candidate if candidate.is_file() else None
+        for root in [self.root, *self.fallbacks]:
+            candidate = (root / rel).resolve()
+            if candidate != root and root not in candidate.parents:
+                continue   # never outside the root
+            if candidate.is_dir():
+                candidate = candidate / "index.html"
+            if candidate.is_file():
+                return candidate
+        return None
+
+    def source_of(self, file: Path) -> str:
+        for root in self.fallbacks:
+            if root in file.parents:
+                return f"fallback:{root.name if root.name != 'mope.io' else root.parent.parent.name + '/' + root.parent.name}"
+        return "snapshot"
 
 
 def make_handler(gw: Gateway):
@@ -303,7 +319,7 @@ def make_handler(gw: Gateway):
             ctype = mimetypes.guess_type(name)[0] or "application/octet-stream"
             if ctype.startswith("text/") or ctype in ("application/javascript", "application/json"):
                 ctype += "; charset=utf-8" if "charset" not in ctype else ""
-            return self._send(200, data, ctype, head=head)
+            return self._send(200, data, ctype, {"X-Local-Source": gw.source_of(file)}, head)
 
         def do_GET(self):
             self._route()

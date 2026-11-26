@@ -203,6 +203,63 @@ A local account server (`services/account_server.py`, SQLite) implements the cli
 (`.env.example`, `python localstack.py check-config`). Sandbox and developer controls are reconstructed only where
 the client shows evidence. See [`phase4/README.md`](phase4/README.md); `python phase4_verify.py` runs the 8 checks.
 
+## Phase 5 — local gameplay (first playable milestone)
+
+Every local region now simulates a world. Pressing Play in the archived client spawns a mouse that follows the
+cursor, eats food, gains XP and evolves (Mouse → Rabbit → Pig by default), and players in the same region see each
+other. Message layouts (spawn 17/107/18/6, world update 4, cursor 5) come from the client's own reader code. The
+evolution chain, thresholds and food settings are configurable approximations, because the original server
+decided them. See [`phase5/README.md`](phase5/README.md); `python phase5_verify.py` runs the 8 checks, including
+the real client evolving in Chromium.
+
+## Image catalogue and decoder (`decode_images.ts`, Bun)
+
+`bun decode_images.ts` decodes every image path the archived client can build: animals, food, game objects,
+abilities, disasters, shop and UI. It then fetches every archived version of those images from Arquivo.pt and
+Common Crawl (vefsafn.is is used for discovery only; no Wayback Machine). Each file is decoded from its own
+bytes (PNG data inflated and CRC-checked; JPEG, GIF, WebP, SVG and ICO structure checked), and the files are
+sorted by category and animal. Images stay local in `archive/images/` (git-ignored). Results and coverage are in
+[`images/README.md`](images/README.md).
+
+```bash
+bun install                     # acorn (JavaScript parser)
+bun decode_images.ts            # catalogue + discover + download + decode + report
+bun decode_images.ts --catalog-only
+bun test tests/
+```
+
+## Live-site image snapshot (`fetch_live_assets.rb`, Ruby)
+
+The live mope.io site is a 2026 rebuild with a new file layout (WebP files under `assets/animals/…`,
+`assets/foods/…`, `assets/UI/…`). `ruby fetch_live_assets.rb` reads the site's bundles as text, derives the image
+paths from its own data (animal table, subspecies enums, part names, food list, texture names) and downloads every
+file that exists. The site serves a 200 HTML page for unknown paths, so only real image bytes count. The 2026-11-26
+snapshot holds 622 images, with files for all 103 animals. It is kept separate from the archived client's art,
+which these files do not replace. Details: [`live/README.md`](live/README.md).
+
+## Phase 6 — integration, final verification, startup and maintenance
+
+```bash
+./start-all.sh              # setup (venv, requirements, .env, checks) + start everything + status
+./start-all.sh logs -f      # central logs, merged
+./start-all.sh verify       # all unit tests + phase6_verify.py (every region, multiplayer, accounts, assets, real client)
+./start-all.sh stop         # graceful shutdown
+.venv/bin/python phase6_compat.py   # regenerate phase6/COMPATIBILITY.md
+```
+
+Integration found and repaired two incompatibilities: the asset season the server sent, and the client's
+unhandled resize message. The gateway now serves the archived images after the snapshot.
+[`phase6/README.md`](phase6/README.md) covers installation, startup, troubleshooting and maintenance.
+[`phase6/COMPATIBILITY.md`](phase6/COMPATIBILITY.md) measures the stack against the April 2021 archive and lists every
+feature as completed, partial or unresolved.
+
+## Pumpkin variants (`fetch_pumpkins.rb`, Ruby)
+
+`ruby fetch_pumpkins.rb` reads the live site's pumpkin class and fetches its 7 variants × 5 frames. It also
+probes `s3.mope.io`, which refuses every path. It then adds the custom variants in `custom_assets/pumpkins/`
+(amber, sapphire, amethyst, black hole) and installs all 11 types where the archived 2025 client looks for
+them: `assets/s/1/img/pumpkin/<type>/<frame>.png` in the working snapshot. The region servers spawn pumpkins
+(object type 131) of every installed type. Details: [`pumpkins/README.md`](pumpkins/README.md).
 ## Hosting the backend (Sevalla)
 
 The account, master and region servers can run in one container behind one port (`cloud.py`, `services/edge.py`,
