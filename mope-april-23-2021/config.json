@@ -1,0 +1,83 @@
+{
+  "project": "mope-april-23-2021",
+  "domain": "mope.io",
+  "snapshot_date": "2021-04-23",
+  "snapshot_timezone": "UTC",
+  "anchor_timestamp": null,
+  "output_directory": "archive/original",
+  "workers": 4,
+  "request_timeout": 30,
+  "max_retries": 3,
+  "resume_downloads": true,
+  "calculate_sha256": true,
+  "discover_subdomains": true,
+  "discover_external_assets": true,
+  "same_day_fallback": true,
+  "preserve_original_files": true,
+  "allow_off_date": false,
+  "max_date_distance_days": 60,
+  "discovery_window_days": 60,
+  "rate_limit_seconds": 0.5,
+  "retry_backoff_seconds": 2.0,
+  "max_crawl_depth": 4,
+  "max_candidates_per_resource": 4,
+  "include_target_date_captures": true,
+  "homepage_paths": [
+    "/",
+    "/index.html"
+  ],
+  "essential_paths": [
+    "/",
+    "/client.js"
+  ],
+  "analysis_exclude_patterns": [
+    "jquery",
+    "adblockdet",
+    "dfp.js",
+    "pubfig",
+    "/cdn-cgi/",
+    "platform.js"
+  ],
+  "user_agent": "mope-archive-fetcher/1.0 (historical preservation research; python-requests)",
+  "providers": [
+    {
+      "name": "arquivo",
+      "type": "pywb",
+      "label": "Arquivo.pt",
+      "enabled": true,
+      "priority": 1,
+      "cdx_url": "https://arquivo.pt/wayback/cdx",
+      "replay_url": "https://arquivo.pt/wayback",
+      "replay": true,
+      "cdx_limit": 50000
+    },
+    {
+      "name": "commoncrawl",
+      "type": "commoncrawl",
+      "label": "Common Crawl",
+      "enabled": true,
+      "priority": 2,
+      "index_url": "https://index.commoncrawl.org",
+      "data_url": "https://data.commoncrawl.org",
+      "index_mode": "auto",
+      "collections": [
+        "CC-MAIN-2021-10",
+        "CC-MAIN-2021-17",
+        "CC-MAIN-2021-21"
+      ],
+      "lookup_external": false,
+      "replay": true
+    },
+    {
+      "name": "vefsafn",
+      "type": "pywb",
+      "label": "Icelandic Web Archive (vefsafn.is)",
+      "enabled": true,
+      "priority": 3,
+      "cdx_url": "https://vefsafn.is/is/cdx",
+      "replay_url": "https://vefsafn.is/is",
+      "replay": false,
+      "cdx_limit": 50000
+    }
+  ]
+}

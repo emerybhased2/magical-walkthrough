@@ -1,0 +1,26 @@
+[
+  {
+    "env": "production",
+    "date": "2026-11-26T00:00:00Z",
+    "title": "Local server",
+    "description": [
+      "You are playing on a local reconstruction of mope.io (client from 2025-12-10).",
+      "Accounts are local: use 'Login with a local account'.",
+      {
+        "title": "Status",
+        "description": [
+          "Regions, server list and accounts: working",
+          "Gameplay: being rebuilt (Phase 5)"
+        ]
+      }
+    ]
+  },
+  {
+    "env": "development",
+    "date": "2026-11-26T00:00:00Z",
+    "title": "Development build",
+    "description": [
+      "Shown only when CLIENT_ENV=development."
+    ]
+  }
+]

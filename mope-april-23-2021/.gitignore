@@ -1,0 +1,13 @@
+# Downloaded archive content, working copies and logs stay local.
+archive/
+working/
+logs/
+.env
+.venv/
+__pycache__/
+*.pyc
+
+# Additional fetched snapshots (data stays local)
+snapshots/
+run/
+/data/

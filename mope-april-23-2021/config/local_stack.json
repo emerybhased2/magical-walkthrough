@@ -1,0 +1,223 @@
+{
+  "_comment": "Local mope.io stack. Regions with origin 'archived-2025-12-10' come from phase2/data/regions.json (ids, names, labels, gm as archived; url replaced by public_host:port). Regions with origin 'local-addition' were added for this local project and do not exist in any archive. Add `127.0.0.1 local.mope.io` to your hosts file and open http://local.mope.io:8080/.",
+  "public_host": "local.mope.io",
+  "bind_host": "127.0.0.1",
+  "client_root": "snapshots/2025-12-10/working/client/mope.io",
+  "logs_dir": "logs",
+  "run_dir": "run",
+  "web": {
+    "port": 8080,
+    "allowed_origins": [],
+    "rewrites": {
+      "client_config": true,
+      "turnstile_shim": true,
+      "local_login_button": true
+    }
+  },
+  "master": {
+    "port": 8090,
+    "heartbeat_interval_seconds": 2,
+    "heartbeat_timeout_seconds": 6
+  },
+  "account": {
+    "port": 8091,
+    "enabled": true
+  },
+  "game": {
+    "version": 296,
+    "season": 0,
+    "join_timeout_seconds": 10,
+    "session_resume_seconds": 60
+  },
+  "regions": [
+    {
+      "id": "prod-lnd-us-ny-1",
+      "name": "New York 1",
+      "region": "New York, USA",
+      "gm": 0,
+      "port": 7001,
+      "enabled": true,
+      "original_url": "prod-lnd-us-ny-1.mathstudyguides.com",
+      "origin": "archived-2025-12-10"
+    },
+    {
+      "id": "prod-lnd-us-da-1",
+      "name": "Dallas 1",
+      "region": "Dallas, USA",
+      "gm": 0,
+      "port": 7002,
+      "enabled": true,
+      "original_url": "prod-lnd-us-da-1.mathstudyguides.com",
+      "origin": "archived-2025-12-10"
+    },
+    {
+      "id": "prod-lnd-us-la-1",
+      "name": "Los Angeles 1",
+      "region": "Los Angeles, USA",
+      "gm": 0,
+      "port": 7003,
+      "enabled": true,
+      "original_url": "prod-lnd-us-la-1.mathstudyguides.com",
+      "origin": "archived-2025-12-10"
+    },
+    {
+      "id": "prod-lnd-br-sp-1",
+      "name": "Sao Paulo 1",
+      "region": "Sao Paulo, Brazil",
+      "gm": 0,
+      "port": 7004,
+      "enabled": true,
+      "original_url": "prod-lnd-br-sp-1.mathstudyguides.com",
+      "origin": "archived-2025-12-10"
+    },
+    {
+      "id": "prod-ovh-de-ff-1",
+      "name": "Frankfurt 1",
+      "region": "Frankfurt, Germany",
+      "gm": 0,
+      "port": 7005,
+      "enabled": true,
+      "original_url": "prod-ovh-de-ff-1.mathstudyguides.com",
+      "origin": "archived-2025-12-10"
+    },
+    {
+      "id": "prod-ovh-fr-pr-1",
+      "name": "Paris 1",
+      "region": "Paris, France",
+      "gm": 0,
+      "port": 7006,
+      "enabled": true,
+      "original_url": "prod-ovh-fr-pr-1.mathstudyguides.com",
+      "origin": "archived-2025-12-10"
+    },
+    {
+      "id": "prod-lnd-sw-sh-1",
+      "name": "Stockholm 1",
+      "region": "Stockholm, Sweden",
+      "gm": 0,
+      "port": 7007,
+      "enabled": true,
+      "original_url": "prod-lnd-sw-sh-1.mathstudyguides.com",
+      "origin": "archived-2025-12-10"
+    },
+    {
+      "id": "prod-lnd-sg-sg-1",
+      "name": "Singapore 1",
+      "region": "Singapore, Singapore",
+      "gm": 0,
+      "port": 7008,
+      "enabled": true,
+      "original_url": "prod-lnd-sg-sg-1.mathstudyguides.com",
+      "origin": "archived-2025-12-10"
+    },
+    {
+      "id": "prod-lnd-au-sd-1",
+      "name": "Sydney 1",
+      "region": "Sydney, Australia",
+      "gm": 0,
+      "port": 7009,
+      "enabled": true,
+      "original_url": "prod-lnd-au-sd-1.mathstudyguides.com",
+      "origin": "archived-2025-12-10"
+    },
+    {
+      "id": "local-us-chi-1",
+      "name": "Chicago 1",
+      "region": "Chicago, USA",
+      "gm": 0,
+      "port": 7010,
+      "enabled": true,
+      "origin": "local-addition"
+    },
+    {
+      "id": "local-us-sea-1",
+      "name": "Seattle 1",
+      "region": "Seattle, USA",
+      "gm": 0,
+      "port": 7011,
+      "enabled": true,
+      "origin": "local-addition"
+    },
+    {
+      "id": "local-us-mia-1",
+      "name": "Miami 1",
+      "region": "Miami, USA",
+      "gm": 0,
+      "port": 7012,
+      "enabled": true,
+      "origin": "local-addition"
+    },
+    {
+      "id": "local-nl-ams-1",
+      "name": "Amsterdam 1",
+      "region": "Amsterdam, Netherlands",
+      "gm": 0,
+      "port": 7013,
+      "enabled": true,
+      "origin": "local-addition"
+    },
+    {
+      "id": "local-uk-lon-1",
+      "name": "London 1",
+      "region": "London, United Kingdom",
+      "gm": 0,
+      "port": 7014,
+      "enabled": true,
+      "origin": "local-addition"
+    },
+    {
+      "id": "local-jp-tyo-1",
+      "name": "Tokyo 1",
+      "region": "Tokyo, Japan",
+      "gm": 0,
+      "port": 7015,
+      "enabled": true,
+      "origin": "local-addition"
+    },
+    {
+      "id": "local-ru-mow-1",
+      "name": "Moscow 1",
+      "region": "Moscow, Russia",
+      "gm": 0,
+      "port": 7016,
+      "enabled": true,
+      "origin": "local-addition"
+    },
+    {
+      "id": "local-us-sfo-1",
+      "name": "San Francisco 1",
+      "region": "San Francisco, USA",
+      "gm": 0,
+      "port": 7017,
+      "enabled": true,
+      "origin": "local-addition"
+    },
+    {
+      "id": "local-us-san-1",
+      "name": "San Diego 1",
+      "region": "San Diego, USA",
+      "gm": 0,
+      "port": 7018,
+      "enabled": true,
+      "origin": "local-addition"
+    },
+    {
+      "id": "local-us-nh-1",
+      "name": "New Hampshire 1",
+      "region": "New Hampshire, USA",
+      "gm": 0,
+      "port": 7019,
+      "enabled": true,
+      "origin": "local-addition"
+    },
+    {
+      "id": "local-us-bos-1",
+      "name": "Boston 1",
+      "region": "Boston, USA",
+      "gm": 0,
+      "port": 7020,
+      "enabled": true,
+      "origin": "local-addition"
+    }
+  ]
+}

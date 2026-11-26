@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Local account</title>
+<style>
+  :root { --bg: #2d8b2d; --panel: #1f6f1f; --ink: #ffffff; --muted: #cfe8cf; --accent: #f0b400;
+          --accent-ink: #1a1a1a; --error: #ffd2d2; --field: #ffffff; --field-ink: #1a1a1a; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 16px;
+         background: var(--bg); color: var(--ink); font: 16px/1.4 system-ui, sans-serif; }
+  main { width: 100%; max-width: 360px; background: var(--panel); border-radius: 10px; padding: 24px;
+         box-shadow: 0 6px 24px rgba(0,0,0,.25); }
+  h1 { margin: 0 0 4px; font-size: 1.4rem; }
+  p { margin: 0 0 16px; color: var(--muted); font-size: .9rem; }
+  label { display: block; font-size: .85rem; margin: 12px 0 4px; }
+  input { width: 100%; padding: 10px; border-radius: 6px; border: 0; font-size: 1rem;
+          background: var(--field); color: var(--field-ink); }
+  .buttons { display: flex; gap: 8px; margin-top: 18px; }
+  button { flex: 1; padding: 10px; border: 0; border-radius: 6px; font-weight: 700; cursor: pointer;
+           font-size: .95rem; }
+  #login { background: var(--accent); color: var(--accent-ink); }
+  #register { background: #ffffff; color: #1f6f1f; }
+  button:disabled { opacity: .6; cursor: wait; }
+  #status { min-height: 1.4em; margin-top: 14px; font-size: .9rem; color: var(--error); }
+  #current { margin-bottom: 14px; font-size: .9rem; }
+  a { color: #ffffff; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Local account</h1>
+  <p>Accounts on this local mope.io server. Social sign-in (Google, Facebook, Apple, Discord) cannot work offline.</p>
+  <div id="current" hidden>Signed in as <strong id="currentName"></strong> · <a href="#" id="signout">sign out</a></div>
+  <form id="form" autocomplete="on">
+    <label for="username">Username</label>
+    <input id="username" name="username" autocomplete="username" maxlength="15" required>
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" autocomplete="current-password" required>
+    <div class="buttons">
+      <button id="login" type="submit">Log in</button>
+      <button id="register" type="button">Create account</button>
+    </div>
+    <div id="status" role="status" aria-live="polite"></div>
+  </form>
+  <p style="margin:16px 0 0"><a href="/">Back to the game</a></p>
+</main>
+<script>
+(() => {
+  // The archived client keeps its login under these localStorage keys and re-checks them
+  // with /auth/@me whenever it connects to a game server.
+  const KEYS = ['login_userId', 'login_passwordToken', 'login_name', 'login_profilePicURL', 'login_socialNetworkName'];
+  const $ = id => document.getElementById(id);
+  const status = text => { $('status').textContent = text || ''; };
+
+  function showCurrent() {
+    let name = null;
+    try { name = localStorage.getItem('login_userId') ? localStorage.getItem('login_name') : null; } catch (e) {}
+    $('current').hidden = !name;
+    $('currentName').textContent = name || '';
+  }
+
+  async function submit(path) {
+    status('');
+    $('login').disabled = $('register').disabled = true;
+    try {
+      const response = await fetch(path, {method: 'POST', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({username: $('username').value, password: $('password').value})});
+      const result = await response.json().catch(() => ({success: false, error: 'Unexpected server response.'}));
+      if (!result.success) { status(result.error || 'Login failed.'); return; }
+      const d = result.data;
+      const values = [d.userId, d.token, d.userName, d.avatar || '', 'local'];
+      KEYS.forEach((key, i) => localStorage.setItem(key, values[i]));
+      location.href = '/';
+    } catch (e) {
+      status('Could not reach the account server.');
+    } finally {
+      $('login').disabled = $('register').disabled = false;
+    }
+  }
+
+  $('form').addEventListener('submit', event => { event.preventDefault(); submit('/auth/local/login'); });
+  $('register').addEventListener('click', () => {
+    if ($('form').reportValidity()) submit('/auth/local/register');
+  });
+  $('signout').addEventListener('click', event => {
+    event.preventDefault();
+    KEYS.forEach(key => localStorage.removeItem(key));
+    showCurrent();
+  });
+  showCurrent();
+})();
+</script>
+</body>
+</html>
