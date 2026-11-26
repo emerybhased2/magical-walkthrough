@@ -265,3 +265,10 @@ them: `assets/s/1/img/pumpkin/<type>/<frame>.png` in the working snapshot. The r
 The account, master and region servers can run in one container behind one port (`cloud.py`, `services/edge.py`,
 root `Dockerfile`). The game client stays on each player's machine and connects through a local relay when
 `REMOTE_BACKEND_URL` is set. See [`DEPLOY_SEVALLA.md`](DEPLOY_SEVALLA.md).
+
+## Client version history (`compare_builds.py`)
+
+`python rebuild_client_js.py --all-captures && python compare_builds.py` rebuilds every archived client build
+(2017-02-13, 2018-04-21, 2025-09-05, 2025-12-10) and compares them with the Phase 2 and Phase 5 extractors. It covers
+protocol opcodes, animals (with probable renames), ability names, object types, regions and `$config`. It also compares
+2025-12 with the live 2026 site by name. Results: [`history/README.md`](history/README.md).
