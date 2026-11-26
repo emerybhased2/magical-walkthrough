@@ -52,6 +52,22 @@ way. Leave `DEV_*` off on a public backend.
 
 ## Players: connect to the backend
 
+### One command: `play.py`
+
+Put the `mope.env` file you were given next to `play.py` (or in Downloads), then run:
+
+```bash
+python play.py                 # or double-click play.bat (Windows) / play.command (macOS)
+python play.py --check         # only report what is ready
+```
+
+It checks Python 3.10+, copies `mope.env` to `.env`, installs `requirements-play.txt`,
+checks the `127.0.0.1 local.mope.io` hosts entry (`--add-hosts` writes it when run as
+administrator / sudo), downloads the 2025-12-10 snapshot once, checks the backend accepts
+your key, then runs `localstack.py up` and opens `http://local.mope.io:8080/`. Ctrl-C stops it.
+
+### By hand
+
 Each player needs the Phase 2 snapshot (`snapshots/2025-12-10/`) and the hosts-file
 entry from `phase3/README.md`. Then, in `mope-april-23-2021/.env`:
 

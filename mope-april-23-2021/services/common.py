@@ -346,6 +346,9 @@ def build_play(nickname: str = "mope.io", width: int = 1280, height: int = 800) 
 # =============================================================================
 
 _OPENER = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+# Hosting platforms' bot filters (Cloudflare on Sevalla) reject Python's default "Python-urllib/x.y".
+USER_AGENT = "mope-local-stack/1.0"
+_OPENER.addheaders = [("User-Agent", USER_AGENT)]
 
 
 def http_json(method: str, url: str, payload: dict | None = None, token: str | None = None,
