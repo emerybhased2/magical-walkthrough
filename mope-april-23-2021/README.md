@@ -202,3 +202,12 @@ A local account server (`services/account_server.py`, SQLite) implements the cli
 "Login with a local account" page replaces social sign-in, and all settings live in a validated `.env`
 (`.env.example`, `python localstack.py check-config`). Sandbox and developer controls are reconstructed only where
 the client shows evidence. See [`phase4/README.md`](phase4/README.md); `python phase4_verify.py` runs the 8 checks.
+
+## Phase 5 — local gameplay (first playable milestone)
+
+Every local region now simulates a world. Pressing Play in the archived client spawns a mouse that follows the
+cursor, eats food, gains XP and evolves (Mouse → Rabbit → Pig by default), and players in the same region see each
+other. Message layouts (spawn 17/107/18/6, world update 4, cursor 5) come from the client's own reader code. The
+evolution chain, thresholds and food settings are configurable approximations, because the original server
+decided them. See [`phase5/README.md`](phase5/README.md); `python phase5_verify.py` runs the 8 checks, including
+the real client evolving in Chromium.
