@@ -25,6 +25,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG = PROJECT_ROOT / "config" / "local_stack.json"
 TOKEN_ENV = "LOCAL_STACK_TOKEN"
+BACKEND_KEY_HEADER = "X-Backend-Key"
 
 # Opcodes used by the Phase 3 servers (see phase2/OPCODES.md).
 OP_JOIN = 1                # C->S  canvasW, canvasH, innerWidth (UInt16 x3), sessionId (String)
@@ -64,6 +65,10 @@ def load_stack_config(path: str | Path | None = None) -> dict:
         config["regions"].append({"id": "localhost", "name": "LOCAL", "region": "SANDBOX", "gm": 0,
                                   "port": values["SANDBOX_REGION_PORT"], "enabled": True,
                                   "origin": "client-sandbox-hook"})
+    if values["REMOTE_BACKEND_URL"]:
+        # Remote mode: only the web gateway and the WebSocket relay run on this machine.
+        config["remote"] = {"url": values["REMOTE_BACKEND_URL"], "key": values["REMOTE_BACKEND_KEY"],
+                            "relay_port": int(values["REMOTE_RELAY_PORT"])}
     errors = setting_errors + validate_stack_config(config)
     if errors:
         raise ConfigError("invalid configuration:\n  - " + "\n  - ".join(errors))
@@ -81,6 +86,11 @@ def validate_stack_config(config: dict) -> list[str]:
     for name in ("web", "master", "account"):
         if name in config and config[name].get("port"):
             ports.setdefault(int(config[name]["port"]), []).append(name)
+    if config.get("remote"):
+        ports.setdefault(int(config["remote"]["relay_port"]), []).append("relay")
+        # regions are remote: their local ports are unused
+        for users in ports.values():
+            users[:] = [u for u in users if u in ("web", "master", "account", "relay")]
     ids = set()
     for region in config["regions"]:
         for key in ("id", "name", "region", "port"):
@@ -117,12 +127,36 @@ def web_origin(config: dict) -> str:
 
 
 def region_public_url(config: dict, region: dict) -> str:
-    """The `url` the client puts after ws:// -- host[:port], no path."""
+    """The `url` the client puts after ws(s):// (it appends /ping for the ping socket).
+
+    local (default):  host:port, one port per region
+    remote mode:      host:<relay port>/r/<id>, the local relay forwards to the remote backend
+    path routing:     host/r/<id>, the hosted backend's single public port (cloud.py)
+    """
+    if config.get("remote"):
+        return f"{config['public_host']}:{int(config['remote']['relay_port'])}/r/{region['id']}"
+    if config.get("region_routing") == "path":
+        return f"{config['public_host']}/r/{region['id']}"
     return f"{config['public_host']}:{int(region['port'])}"
 
 
 def master_url(config: dict) -> str:
+    if config.get("remote"):
+        return config["remote"]["url"]
     return f"http://127.0.0.1:{int(config['master']['port'])}"
+
+
+def account_url(config: dict) -> str | None:
+    if config.get("remote"):
+        return config["remote"]["url"]
+    account = config.get("account", {})
+    return f"http://127.0.0.1:{int(account['port'])}" if account.get("enabled") else None
+
+
+def remote_headers(config: dict) -> dict:
+    """Headers for requests to a remote backend (its access key, when one is set)."""
+    remote = config.get("remote") or {}
+    return {BACKEND_KEY_HEADER: remote["key"]} if remote.get("key") else {}
 
 
 def run_dir(config: dict) -> Path:

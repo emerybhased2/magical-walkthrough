@@ -1,0 +1,3 @@
+# Hosted backend only (cloud.py / Dockerfile): master, account, region servers and the edge
+websockets>=13
+aiohttp>=3.9

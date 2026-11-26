@@ -9,3 +9,5 @@ tree-sitter-javascript>=0.23
 playwright>=1.48
 # local stack (Phase 3)
 websockets>=13
+# hosted backend edge and local relay (cloud.py, services/edge.py)
+aiohttp>=3.9
