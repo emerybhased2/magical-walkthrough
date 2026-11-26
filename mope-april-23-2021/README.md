@@ -252,3 +252,11 @@ unhandled resize message. The gateway now serves the archived images after the s
 [`phase6/README.md`](phase6/README.md) covers installation, startup, troubleshooting and maintenance.
 [`phase6/COMPATIBILITY.md`](phase6/COMPATIBILITY.md) measures the stack against the April 2021 archive and lists every
 feature as completed, partial or unresolved.
+
+## Pumpkin variants (`fetch_pumpkins.rb`, Ruby)
+
+`ruby fetch_pumpkins.rb` reads the live site's pumpkin class and fetches its 7 variants × 5 frames. It also
+probes `s3.mope.io`, which refuses every path. It then adds the custom variants in `custom_assets/pumpkins/`
+(amber, sapphire, amethyst, black hole) and installs all 11 types where the archived 2025 client looks for
+them: `assets/s/1/img/pumpkin/<type>/<frame>.png` in the working snapshot. The region servers spawn pumpkins
+(object type 131) of every installed type. Details: [`pumpkins/README.md`](pumpkins/README.md).

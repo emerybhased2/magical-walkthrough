@@ -275,9 +275,13 @@ def unit_tests(checks: Checks) -> None:
         passed = re.search(r"(\d+) pass", out)
         results.append(("bun", code == 0, f"{passed.group(1) if passed else '?'} tests"))
     if shutil.which("ruby"):
-        code, out = run(["ruby", "tests/test_live_assets.rb"], 300)
-        runs = re.search(r"(\d+) runs", out)
-        results.append(("ruby", code == 0, f"{runs.group(1) if runs else '?'} tests"))
+        total, ok = 0, True
+        for test in ("tests/test_live_assets.rb", "tests/test_pumpkins.rb"):
+            code, out = run(["ruby", test], 300)
+            runs = re.search(r"(\d+) runs", out)
+            total += int(runs.group(1)) if runs else 0
+            ok = ok and code == 0
+        results.append(("ruby", ok, f"{total} tests"))
     checks.record("U1", "unit tests: Python, Bun, Ruby", all(ok for _, ok, _ in results),
                   ", ".join(f"{name} {'ok' if ok else 'FAILED'} ({n})" for name, ok, n in results))
 

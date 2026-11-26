@@ -23,11 +23,12 @@ sources and drinking, hills and hiding holes, abilities, the leaderboard and pla
 
 from __future__ import annotations
 
+import json
 import math
 import random
 from dataclasses import dataclass, field
 
-from services import game_protocol as gp
+from services import common, game_protocol as gp
 
 
 @dataclass
@@ -45,6 +46,8 @@ class Entity:
     sub_species: int = 0
     hurt: bool = False
     season: int = 1            # mopeSeasonID: the client loads this object's images from ./assets/s/<season>/
+    pumpkin_type: int | None = None   # pumpkins (object type 131): image folder img/pumpkin/<type>/
+    rolling: bool = False             # the client cycles frames 0-4 while rolling
 
 
 @dataclass
@@ -85,6 +88,11 @@ class World:
             {"animal": 2, "xp": 30, "radius": 20, "speed": 215},
             {"animal": 3, "xp": 90, "radius": 25, "speed": 205},
         ]
+        pumpkins = game.get("pumpkins", {})
+        self.pumpkin_count = int(pumpkins.get("count", 0))
+        self.pumpkin_rad = float(pumpkins.get("radius", 30))
+        self.pumpkin_rolling = bool(pumpkins.get("rolling", True))
+        self.pumpkin_types = self._pumpkin_types(config, pumpkins)
         self.rng = rng or random.Random()
         self.entities: dict[int, Entity] = {}
         self.players: dict[object, Player] = {}
@@ -93,6 +101,24 @@ class World:
         self._next_id = 1
         for _ in range(self.food_count):
             self.spawn_food()
+        for index in range(self.pumpkin_count if self.pumpkin_types else 0):
+            self.spawn_pumpkin(self.pumpkin_types[index % len(self.pumpkin_types)])
+
+    @staticmethod
+    def _pumpkin_types(config: dict, pumpkins: dict) -> list[int]:
+        """Pumpkin types whose images are installed (pumpkins.json written by fetch_pumpkins.rb)."""
+        if "types" in pumpkins:
+            return [int(t) for t in pumpkins["types"]]
+        if "client_root" not in config:
+            return []
+        season = int(config.get("game", {}).get("season", 1))
+        manifest = common.project_path(config, config["client_root"]) / "assets" / "s" / str(season) / "img" / \
+            "pumpkin" / "pumpkins.json"
+        try:
+            data = json.loads(manifest.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            return []
+        return [int(t["type"]) for t in data.get("types", []) if all(f.get("file") for f in t.get("frames", []))]
 
     # -- entities -----------------------------------------------------------------------
     def new_id(self) -> int:
@@ -107,6 +133,13 @@ class World:
         food = Entity(self.new_id(), self.food_type, x, y, self.food_rad, angle=self.rng.uniform(0, 360))
         self.entities[food.id] = food
         return food
+
+    def spawn_pumpkin(self, pumpkin_type: int) -> Entity:
+        x, y = self.random_point(80)
+        pumpkin = Entity(self.new_id(), gp.OTYPE_PUMPKIN, x, y, self.pumpkin_rad, angle=self.rng.uniform(0, 360),
+                         pumpkin_type=pumpkin_type, rolling=self.pumpkin_rolling)
+        self.entities[pumpkin.id] = pumpkin
+        return pumpkin
 
     def remove(self, entity_id: int, killer: int | None = None) -> None:
         if self.entities.pop(entity_id, None) is not None:

@@ -252,6 +252,12 @@
         "speed": 205
       }
     ],
-    "_comment": "Phase 5 approximation: the original server's evolution order, XP thresholds, radii and speeds are not in the client. Animal ids: 1 Mouse, 2 Rabbit, 3 Pig, 4 Fox, 5 Deer, 6 Mole (client table _0x373b4f)."
+    "_comment": "Phase 5 approximation: the original server's evolution order, XP thresholds, radii and speeds are not in the client. Animal ids: 1 Mouse, 2 Rabbit, 3 Pig, 4 Fox, 5 Deer, 6 Mole (client table _0x373b4f).",
+    "pumpkins": {
+      "_comment": "Pumpkins (object type 131) from fetch_pumpkins.rb: one per installed type in turn. Types come from the installed pumpkins.json unless listed here as \"types\"; count 0 disables them.",
+      "count": 44,
+      "radius": 30,
+      "rolling": true
+    }
   }
 }

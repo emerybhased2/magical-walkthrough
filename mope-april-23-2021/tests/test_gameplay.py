@@ -125,6 +125,14 @@ class MessageTests(unittest.TestCase):
         world.resize("a", 1600, 900)
         self.assertEqual((world.views["a"].width, world.views["a"].height), (1600, 900))
 
+    def test_pumpkin_custom_data(self):
+        pumpkin = Entity(9, gp.OTYPE_PUMPKIN, 300, 400, 30, angle=90, pumpkin_type=10, rolling=True)
+        data = gp.encode_new_object(pumpkin)
+        self.assertEqual(data[-2:], bytes([1, 10]))           # isRolling, pumpkinType (L24957)
+        update = gp.decode_world_update(gp.msg_world_update((0, 0), 1, True, [pumpkin], [], []))
+        obj = update["new"][0]
+        self.assertEqual((obj["otype"], obj["pumpkin_type"], obj["rolling"], obj["season"]), (131, 10, True, 1))
+
     def test_input_pos(self):
         data = common.PacketWriter(gp.OP_INPUT_POS).i16(-5).i16(1200).bytes()
         self.assertEqual(gp.parse_input_pos(data), (-5, 1200))
@@ -143,6 +151,23 @@ class WorldTests(unittest.TestCase):
         self.assertEqual((player.animal_type, player.entity.subtype, player.entity.rad), (1, 1, 16))
         self.assertIs(self.world.spawn_player("a", "Pip", (1280, 800)), player)   # Play twice: same animal
         self.assertEqual(self.world.next_xp(player), 10)
+
+    def test_pumpkins_cycle_through_installed_types(self):
+        import json
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp) / "client" / "assets" / "s" / "1" / "img" / "pumpkin"
+            folder.mkdir(parents=True)
+            types = [{"type": t, "frames": [{"file": f"{t}/0.png"}]} for t in (0, 3, 10)]
+            types.append({"type": 11, "frames": [{"missing": "404"}]})       # incomplete: not spawned
+            (folder / "pumpkins.json").write_text(json.dumps({"types": types}))
+            config = game_config(pumpkins={"count": 6, "radius": 25})
+            config.update({"client_root": "client", "_root": tmp, "game": {"season": 1}})
+            world = World(config, rng=random.Random(5))
+        pumpkins = [e for e in world.entities.values() if e.otype == gp.OTYPE_PUMPKIN]
+        self.assertEqual(sorted(p.pumpkin_type for p in pumpkins), [0, 0, 3, 3, 10, 10])
+        self.assertTrue(all(p.rolling and p.rad == 25 for p in pumpkins))
+        self.assertEqual(World(game_config(pumpkins={"count": 5}), rng=random.Random(1)).pumpkin_types, [])
 
     def test_movement_speed_and_clamp(self):
         player = self.world.spawn_player("a", "Pip", (1280, 800))

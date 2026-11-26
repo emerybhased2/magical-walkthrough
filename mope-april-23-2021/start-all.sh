@@ -236,7 +236,10 @@ cmd_verify() {
   say "${B}Unit tests${N}"
   "$PY" -m unittest discover -s tests 2>&1 | tail -n 3
   if command -v bun >/dev/null 2>&1 && [[ -d node_modules ]]; then bun test tests/ 2>&1 | grep -E "pass|fail" | head -n 2; fi
-  if command -v ruby >/dev/null 2>&1; then ruby tests/test_live_assets.rb 2>&1 | tail -n 1; fi
+  if command -v ruby >/dev/null 2>&1; then
+    ruby tests/test_live_assets.rb 2>&1 | tail -n 1
+    ruby tests/test_pumpkins.rb 2>&1 | tail -n 1
+  fi
   say "${B}Integration checks (phase6_verify.py)${N}"
   "$PY" phase6_verify.py "$@"
 }

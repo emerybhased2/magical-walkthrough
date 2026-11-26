@@ -16,7 +16,11 @@ module LiveAssets
     attr_reader :requests
 
     # rate_per_second: 0 means no global rate cap (the number of workers is the only limit).
-    def initialize(rate_per_second: 3.0, retries: 4, timeout: 60, max_refusals: 10, log: ->(m) { warn m })
+    # forbidden_is_final: a 403 is the answer (e.g. an object store that refuses unknown keys), not
+    # throttling: it is returned at once and does not count towards the refusal limit.
+    def initialize(rate_per_second: 3.0, retries: 4, timeout: 60, max_refusals: 10, forbidden_is_final: false,
+                   log: ->(m) { warn m })
+      @forbidden_is_final = forbidden_is_final
       @interval = rate_per_second.to_f.positive? ? 1.0 / rate_per_second : 0.0
       @retries = retries
       @timeout = timeout
@@ -97,6 +101,10 @@ module LiveAssets
           next
         end
         code = response.code.to_i
+        if code == 403 && @forbidden_is_final
+          @lock.synchronize { @refusals = 0 }
+          return [code, response["content-type"].to_s, response.body.to_s.b, url]
+        end
         if code == 429 || code == 403 || code >= 500
           @lock.synchronize { @refusals += 1 } if code == 429 || code == 403
           attempt += 1

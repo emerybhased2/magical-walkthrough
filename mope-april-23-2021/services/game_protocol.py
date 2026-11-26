@@ -32,6 +32,7 @@ OP_INPUT_POS = 5
 OP_RESIZE = 17          # C->S window resize (_0x48481b, L28874): UInt16 w, UInt16 h, UInt16 (S->C 17 is game size)
 
 OTYPE_ANIMAL = 2
+OTYPE_PUMPKIN = 131     # setCustomClassForGameObjType(_0x20f7aa, 131), L24964
 # Object types that read an extra UInt16 sub-type right after the type (_0x174e3c, L690).
 CUSTOM_SUBTYPE_OTYPES = {2, 14, 117, 128}
 INNER_RAD_OTYPES = {5, 9, 13}          # base readCustomData_onNewlyVisible (L8267)
@@ -150,6 +151,10 @@ def encode_new_object(obj) -> bytes:
     w.u8(0).u8(0)                              # specType, specType2 (properties 6 and 7)
     if obj.otype in INNER_RAD_OTYPES:
         w.u16(_u16(obj.rad * 4))
+    if obj.otype == OTYPE_PUMPKIN:
+        # readCustomData_onNewlyVisible (L24956): UInt8 isRolling, UInt8 pumpkinType ->
+        # ./assets/s/<season>/img/pumpkin/<pumpkinType>/<frame>.png, frames 0-4 while rolling (L24937)
+        w.u8(1 if getattr(obj, "rolling", False) else 0).u8(int(getattr(obj, "pumpkin_type", 0) or 0))
     if obj.otype == OTYPE_ANIMAL:
         w.string_s2c(obj.nick or "")
         # premium skin, skinThemeID, mopeSeasonID, isVip (L10577): the season picks ./assets/s/<season>/
@@ -265,6 +270,8 @@ def _decode_new_object(r: PacketReader) -> dict:
     r.u8(), r.u8()
     if obj["otype"] in INNER_RAD_OTYPES:
         r.u16()
+    if obj["otype"] == OTYPE_PUMPKIN:
+        obj["rolling"], obj["pumpkin_type"] = r.u8() == 1, r.u8()
     if obj["otype"] == OTYPE_ANIMAL:
         obj["nick"] = r.string_s2c()
         obj["species"], obj["sub_species"] = r.u16(), r.u16()
