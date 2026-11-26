@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-11-26T00:40:54Z",
+  "verifier_version": "1.0.0",
+  "seconds": 11.0,
+  "passed": 8,
+  "failed": 0,
+  "checks": [
+    {
+      "id": "C1",
+      "name": "configuration validates (localstack.py check-config)",
+      "ok": true,
+      "detail": "configuration OK",
+      "data": null
+    },
+    {
+      "id": "A1",
+      "name": "account API via the gateway: register, @me, wrong password, social refused, dev endpoints off, /updates.json",
+      "ok": true,
+      "detail": "user v23145c (local_507ffdf70628af45); social: google sign-in is not available on the local server - use 'L",
+      "data": null
+    },
+    {
+      "id": "B1",
+      "name": "the client's login popup offers 'Login with a local account'",
+      "ok": true,
+      "detail": "['Login with a local account', True]",
+      "data": null
+    },
+    {
+      "id": "B2",
+      "name": "local registration signs the client in (name + coins from /auth/@me shown)",
+      "ok": true,
+      "detail": "shown name 'pe0903f', coins '0'",
+      "data": null
+    },
+    {
+      "id": "B3",
+      "name": "the shop opens with data from the local account server",
+      "ok": true,
+      "detail": "",
+      "data": null
+    },
+    {
+      "id": "B4",
+      "name": "logging out through the client clears the login",
+      "ok": true,
+      "detail": "",
+      "data": null
+    },
+    {
+      "id": "B5",
+      "name": "forged stored credentials are rejected and cleared by the client",
+      "ok": true,
+      "detail": "",
+      "data": null
+    },
+    {
+      "id": "B6",
+      "name": "the client's test-account hook logs in test-ab (userId = secret + user)",
+      "ok": true,
+      "detail": "stored userId matches: True",
+      "data": null
+    }
+  ]
+}
