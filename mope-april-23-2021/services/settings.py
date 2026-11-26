@@ -70,7 +70,7 @@ SETTINGS: tuple[Setting, ...] = (
     Setting("ACCOUNT_SHOP_CATALOG", "path", "config/shop_catalog.json", "Account server",
             "Shop catalogue served by /shop/get (the archived catalogue was server-side and is not recoverable)."),
     Setting("SHOP_LIVE_SKINS_DIR", "path", "snapshots/2025-12-10/live-skins", "Account server",
-            "Output of import_live_skins.py. If it exists, its catalog.json items are added to /shop/get and the "
+            "Output of import_live_skins.rb. If it exists, its catalog.json items are added to /shop/get and the "
             "web gateway serves its skin pictures. Empty to turn off."),
     # -- client-facing ($config overlay) ------------------------------------------------
     Setting("CLIENT_ENV", "choice", "production", "Client",

@@ -168,7 +168,7 @@ class Gateway:
                 "isBetaMode": bool(settings.get("CLIENT_BETA_MODE"))}, "config"
 
     def live_skin(self, path: str) -> Path | None:
-        """/assets/s/<season>/....png for a season assigned by import_live_skins.py -> its picture."""
+        """/assets/s/<season>/....png for a season assigned by import_live_skins.rb -> its picture."""
         match = LIVE_SKIN_RE.match(path)
         if not match or self.live_dir is None:
             return None

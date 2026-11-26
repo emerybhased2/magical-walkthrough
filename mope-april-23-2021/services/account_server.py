@@ -65,7 +65,7 @@ class AccountService:
 
     # -- helpers ------------------------------------------------------------------------
     def catalog(self) -> dict:
-        """ACCOUNT_SHOP_CATALOG plus, when present, the live skins from import_live_skins.py."""
+        """ACCOUNT_SHOP_CATALOG plus, when present, the live skins from import_live_skins.rb."""
         path = Path(self.settings["ACCOUNT_SHOP_CATALOG"])
         live = self.live_catalog if self.live_catalog and self.live_catalog.is_file() else None
         key = (path.stat().st_mtime, live.stat().st_mtime if live else None)

@@ -260,6 +260,41 @@ probes `s3.mope.io`, which refuses every path. It then adds the custom variants 
 (amber, sapphire, amethyst, black hole) and installs all 11 types where the archived 2025 client looks for
 them: `assets/s/1/img/pumpkin/<type>/<frame>.png` in the working snapshot. The region servers spawn pumpkins
 (object type 131) of every installed type. Details: [`pumpkins/README.md`](pumpkins/README.md).
+
+## Live shop skins (`import_live_skins.rb`, Ruby)
+
+`ruby import_live_skins.rb` puts every skin of the live shop (`api.mope.io/store`: the catalogue, the shelves
+and the skins inside bundles) into the archived 2025 client's shop. On 2026-11-26 that was **356 skins for 93
+animals, all imported** (336 for coins, 20 for gems, 6 on sale).
+
+How the 2025 client is fed without changing it (rebuilt `client.js`, shop load and `getImage`):
+
+- Each skin becomes a `/shop/get` item with `shopCategory 0`, `canBuy: true` (the Skins tab hides anything
+  else), the 2025 `animalType` of its animal and the live price, currency and sale price (`saleType 2`).
+- The animal table is read from the snapshot's own `client.js` (constants, `getAnimalName()`, `animalInfo()`,
+  the premium-skin table). Live names that differ are mapped: crocodile → croc, hippopotamus → hippo,
+  rhinoceros → rhino, boa → boa constrictor, orca → killer whale, lava monster → land monster.
+- The client builds the picture path itself (`assets/s/<season>/skins/<animal>.ui.png`), so each skin gets a
+  season number of its own (1000 and up, kept stable between runs). The web gateway answers that path with the
+  skin's picture from `s3.mope.io/mope-prod/items/<itemId>/<animal>.ui.webp`.
+
+```bash
+ruby import_live_skins.rb                  # read the live shop, download missing pictures (~1.5 min the first time)
+ruby import_live_skins.rb --dry-run        # print the animal mapping only
+ruby import_live_skins.rb --refresh-images # download every picture again
+./start-all.sh restart                     # the account server and gateway pick the files up
+ruby tests/test_live_skins.rb
+```
+
+Output goes to `snapshots/2025-12-10/live-skins/` (`SHOP_LIVE_SKINS_DIR`, git-ignored): `catalog.json`,
+`manifest.json`, `images/` and `report.json`. Checked in Chromium against the running stack: all 356 tiles
+in the Skins tab (72 pages) with their pictures, no client errors. Buying charges the sale price and checks
+coins and gems.
+
+Limits: a tile shows the animal's name, not the skin's (the client overwrites `skinName`). Its season badge
+shows the assigned number (S1000–S1355). Bought skins cannot be worn in a game yet. Live bundles are not
+offered as Deals.
+
 ## Hosting the backend (Sevalla)
 
 The account, master and region servers can run in one container behind one port (`cloud.py`, `services/edge.py`,
