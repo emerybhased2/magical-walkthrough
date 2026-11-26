@@ -1,0 +1,38 @@
+{
+  "generated": "2026-11-26T23:12:25Z",
+  "tool": "fetch_ability_frames.rb",
+  "site": "https://mope.io",
+  "s3": "https://s3.mope.io/mope-prod",
+  "store": "https://api.mope.io/store",
+  "requests": 0,
+  "checked": 4097,
+  "missing": 3672,
+  "found": 425,
+  "bytes": 5796950,
+  "by_group": {
+    "effect": 194,
+    "animal": 73,
+    "skin": 158
+  },
+  "animals_with_frames": 41,
+  "animal_folders_with_frames": 64,
+  "skins_with_frames": 140,
+  "shop_skins": 356,
+  "effects": {
+    "bite": 8,
+    "camel": 1,
+    "claw": 5,
+    "constrict": 5,
+    "fire_tornado": 10,
+    "fireball": 145,
+    "giant_whirlpool": 1,
+    "ice_crystal": 8,
+    "laugh": 2,
+    "quill": 1,
+    "rattle": 1,
+    "sinkhole": 1,
+    "spider_web": 3,
+    "stomp": 2,
+    "wave": 1
+  }
+}

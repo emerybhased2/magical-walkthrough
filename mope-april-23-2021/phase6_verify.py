@@ -276,7 +276,8 @@ def unit_tests(checks: Checks) -> None:
         results.append(("bun", code == 0, f"{passed.group(1) if passed else '?'} tests"))
     if shutil.which("ruby"):
         total, ok = 0, True
-        for test in ("tests/test_live_assets.rb", "tests/test_pumpkins.rb", "tests/test_live_skins.rb"):
+        for test in ("tests/test_live_assets.rb", "tests/test_pumpkins.rb", "tests/test_live_skins.rb",
+                     "tests/test_ability_frames.rb"):
             code, out = run(["ruby", test], 300)
             runs = re.search(r"(\d+) runs", out)
             total += int(runs.group(1)) if runs else 0

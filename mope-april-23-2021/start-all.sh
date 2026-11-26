@@ -149,7 +149,7 @@ check_hosts() {
 
 check_tools() {
   if command -v bun >/dev/null 2>&1; then ok "bun $(bun --version) (decode_images.ts)"; else warn "bun not installed (only needed for decode_images.ts)"; fi
-  if command -v ruby >/dev/null 2>&1; then ok "ruby $(ruby -e 'print RUBY_VERSION') (fetch_live_assets.rb, fetch_pumpkins.rb, import_live_skins.rb)"; else warn "ruby not installed (only needed for the Ruby fetch/import scripts)"; fi
+  if command -v ruby >/dev/null 2>&1; then ok "ruby $(ruby -e 'print RUBY_VERSION') (fetch_live_assets.rb, fetch_pumpkins.rb, import_live_skins.rb, fetch_ability_frames.rb)"; else warn "ruby not installed (only needed for the Ruby fetch/import scripts)"; fi
   if "$PY" -c 'import playwright' 2>/dev/null; then ok "playwright (browser checks in the verifiers)"; else warn "playwright not importable (browser checks will fail)"; fi
 }
 
@@ -240,6 +240,7 @@ cmd_verify() {
     ruby tests/test_live_assets.rb 2>&1 | tail -n 1
     ruby tests/test_pumpkins.rb 2>&1 | tail -n 1
     ruby tests/test_live_skins.rb 2>&1 | tail -n 1
+    ruby tests/test_ability_frames.rb 2>&1 | tail -n 1
   fi
   say "${B}Integration checks (phase6_verify.py)${N}"
   "$PY" phase6_verify.py "$@"

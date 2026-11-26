@@ -295,6 +295,14 @@ Limits: a tile shows the animal's name, not the skin's (the client overwrites `s
 shows the assigned number (S1000–S1355). Bought skins cannot be worn in a game yet. Live bundles are not
 offered as Deals.
 
+## Ability frames (`fetch_ability_frames.rb`, Ruby)
+
+`ruby fetch_ability_frames.rb` downloads every ability image of the live game: the HUD ability frames of every
+animal and subspecies (`mope.io`), those of every shop skin (`s3.mope.io/mope-prod/items/<itemId>/ability*.webp`)
+and the ability effect sprites (fireball, fire tornado, bite, claw, stomp, ...). Every path is derived from the live
+bundle and shop, and numbered files are followed to their last frame. On 2026-11-26: 425 images. Details:
+[`abilities/README.md`](abilities/README.md).
+
 ## Hosting the backend (Sevalla)
 
 The account, master and region servers can run in one container behind one port (`cloud.py`, `services/edge.py`,
