@@ -11,3 +11,4 @@ __pycache__/
 snapshots/
 run/
 /data/
+config/_cloud_stack.json

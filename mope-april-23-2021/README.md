@@ -202,3 +202,9 @@ A local account server (`services/account_server.py`, SQLite) implements the cli
 "Login with a local account" page replaces social sign-in, and all settings live in a validated `.env`
 (`.env.example`, `python localstack.py check-config`). Sandbox and developer controls are reconstructed only where
 the client shows evidence. See [`phase4/README.md`](phase4/README.md); `python phase4_verify.py` runs the 8 checks.
+
+## Hosting the backend (Sevalla)
+
+The account, master and region servers can run in one container behind one port (`cloud.py`, `services/edge.py`,
+root `Dockerfile`). The game client stays on each player's machine and connects through a local relay when
+`REMOTE_BACKEND_URL` is set. See [`DEPLOY_SEVALLA.md`](DEPLOY_SEVALLA.md).
