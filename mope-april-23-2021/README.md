@@ -186,8 +186,8 @@ python phase2_probe_client.py --project snapshots/2025-12-10 --click-play
 ## Phase 3 — local server infrastructure
 
 The local stack (`localstack.py`, `services/`, `config/local_stack.json`) runs the 2025-12-10 client
-against a local master server, a web gateway and one region server per original region. No
-production connections are made. Details and the 23-check verification are in
+against a local master server, a web gateway and one region server per region (9 archived + 11 local additions). No
+production connections are made. Details and the 34-check verification are in
 [`phase3/README.md`](phase3/README.md).
 
 ```bash

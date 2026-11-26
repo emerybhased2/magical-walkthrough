@@ -1,8 +1,8 @@
 # Phase 3 — Local server infrastructure
 
 Phase 3 runs the archived **2025-12-10** client (the Phase 2 baseline) against local
-servers only. It covers the master server, one gameplay server per original region, and a
-web gateway. **Verification: 23/23 checks pass** ([`data/verify_report.json`](data/verify_report.json)).
+servers only. It covers the master server, one gameplay server per region (9 archived +
+11 local additions), and a web gateway. **Verification: 34/34 checks pass** ([`data/verify_report.json`](data/verify_report.json)).
 Gameplay itself is Phase 5. For now Play reaches the region server and gets a notice back.
 
 ## Quick start
@@ -25,7 +25,7 @@ The snapshot must exist first (`snapshots/2025-12-10/`, see `phase2/README.md`).
  browser ── http://local.mope.io:8080 ──► web gateway ──┬─► static client (snapshot working copy)
     │                                    (web_gateway)  ├─► /servers/get, /master/* ──► master server :8090
     │                                                   └─► /auth/*, /shop/*, ... ──► account server :8091 (Phase 4)
-    └── ws://local.mope.io:7001..7009 ──► region servers (one process per region)
+    └── ws://local.mope.io:7001..7020 ──► region servers (one process per region)
                                               └── register + heartbeat every 2 s ──► master
 ```
 
@@ -33,7 +33,7 @@ The snapshot must exist first (`snapshots/2025-12-10/`, see `phase2/README.md`).
 |---|---|---|---|
 | `web` | `services/web_gateway.py` | 8080 | Serves the client and acts as the client's account-server origin. Applies the serve-time rewrites below and routes the API. |
 | `master` | `services/master_server.py` | 8090 (loopback) | Region registry and status, `/servers/get`, client config overlay, registration and heartbeats |
-| `region-<id>` ×9 | `services/region_server.py --region <id>` | 7001–7009 | Gameplay server per original region: ping, handshake, sessions, Play notice, graceful shutdown |
+| `region-<id>` ×20 | `services/region_server.py --region <id>` | 7001–7020 | Gameplay server per original region: ping, handshake, sessions, Play notice, graceful shutdown |
 | `account` | Phase 4 | 8091 | Not enabled yet; account routes answer `503 {"success": false}` |
 
 **Conventions:**
@@ -63,6 +63,29 @@ archived values; only the address changes.
 | prod-lnd-sw-sh-1 | Stockholm 1 | Stockholm, Sweden | `local.mope.io:7007` | prod-lnd-sw-sh-1.mathstudyguides.com |
 | prod-lnd-sg-sg-1 | Singapore 1 | Singapore, Singapore | `local.mope.io:7008` | prod-lnd-sg-sg-1.mathstudyguides.com |
 | prod-lnd-au-sd-1 | Sydney 1 | Sydney, Australia | `local.mope.io:7009` | prod-lnd-au-sd-1.mathstudyguides.com |
+
+**Local additions.** These 11 regions were added for this project. They do **not**
+exist in any archive, so they use a `local-` id prefix and `"origin": "local-addition"`
+in the config. The 9 archived regions carry `"origin": "archived-2025-12-10"`. Both
+appear in `/master/regions`.
+
+| Region id | Name | Region | Local address |
+|---|---|---|---|
+| local-us-chi-1 | Chicago 1 | Chicago, USA | `local.mope.io:7010` |
+| local-us-sea-1 | Seattle 1 | Seattle, USA | `local.mope.io:7011` |
+| local-us-mia-1 | Miami 1 | Miami, USA | `local.mope.io:7012` |
+| local-nl-ams-1 | Amsterdam 1 | Amsterdam, Netherlands | `local.mope.io:7013` |
+| local-uk-lon-1 | London 1 | London, United Kingdom | `local.mope.io:7014` |
+| local-jp-tyo-1 | Tokyo 1 | Tokyo, Japan | `local.mope.io:7015` |
+| local-ru-mow-1 | Moscow 1 | Moscow, Russia | `local.mope.io:7016` |
+| local-us-sfo-1 | San Francisco 1 | San Francisco, USA | `local.mope.io:7017` |
+| local-us-san-1 | San Diego 1 | San Diego, USA | `local.mope.io:7018` |
+| local-us-nh-1 | New Hampshire 1 | New Hampshire, USA | `local.mope.io:7019` |
+| local-us-bos-1 | Boston 1 | Boston, USA | `local.mope.io:7020` |
+
+To add another region, append an entry with a free port to `config/local_stack.json` and
+restart the master and web (`python localstack.py restart master web`). Then start the
+new region (`python localstack.py start <id>`).
 
 Each region is its own process and can be stopped or started alone:
 
@@ -133,18 +156,18 @@ two documented rewrites while serving; they are listed live at
 
 | Check | Result |
 |---|---|
-| P1 every region: ping echo, join → 2 + 3 (correct id, version, mode), play → notice | 9/9 pass |
+| P1 every region: ping echo, join → 2 + 3 (correct id, version, mode), play → notice | 20/20 pass |
 | P2 3 clients on one region; master count 3, then 0 after they leave | pass |
 | P3 session resume with the id from message 2; unknown ids get a new session | pass |
 | P4 abrupt disconnect detected; reconnect works | pass |
-| P5 stop a region: clients get type 11 "Local region 'Sydney 1' is shutting down", master marks it offline, `/servers/get` omits it, new connections are refused; start it: back online | pass |
-| P6 restart the master: all 9 regions re-register via heartbeat, discovery restored | pass |
+| P5 stop a region: clients get type 11 "Local region 'Boston 1' is shutting down", master marks it offline, `/servers/get` omits it, new connections are refused; start it: back online | pass |
+| P6 restart the master: all 20 regions re-register via heartbeat, discovery restored | pass |
 | P7 master down: gateway still serves `client.js` with the local region list | pass |
-| B1 archived client runs with the local `$config` (9 local servers, local account origin) | pass |
+| B1 archived client runs with the local `$config` (20 local servers, local account origin) | pass |
 | B2 server list shows every region with player counts from the master | pass |
 | B3 ping test reaches every region | pass |
 | B4 handshake completes ("Connecting…" hidden); master counts the player | pass |
-| B5 switching through the client's own server list connects to each of the 9 regions | 9/9 pass |
+| B5 switching through the client's own server list connects to each of the 20 regions | 20/20 pass |
 | B6 Play reaches the region; its notice appears in the client | pass |
 | B7 stopping the current region: the client shows the reason and moves to another region by itself | pass |
 

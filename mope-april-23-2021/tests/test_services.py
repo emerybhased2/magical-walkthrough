@@ -83,8 +83,12 @@ class ConfigTests(unittest.TestCase):
 
     def test_repo_config_is_valid(self):
         config = common.load_stack_config()
-        self.assertEqual(len(config["regions"]), 9)
-        self.assertEqual(config["regions"][0]["id"], "prod-lnd-us-ny-1")
+        archived = [r for r in config["regions"] if r["origin"] == "archived-2025-12-10"]
+        added = [r for r in config["regions"] if r["origin"] == "local-addition"]
+        self.assertEqual(len(archived), 9)
+        self.assertEqual(archived[0]["id"], "prod-lnd-us-ny-1")
+        self.assertEqual(len(added), 11)
+        self.assertTrue(all(r["id"].startswith("local-") for r in added))
 
 
 class RegistryTests(unittest.TestCase):

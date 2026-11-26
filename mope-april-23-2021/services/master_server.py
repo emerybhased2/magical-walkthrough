@@ -58,7 +58,7 @@ class Registry:
                 "gm": int(region.get("gm", 0)), "port": int(region["port"]),
                 "enabled": bool(region.get("enabled", True)),
                 "url": common.region_public_url(config, region),
-                "original_url": region.get("original_url"),
+                "original_url": region.get("original_url"), "origin": region.get("origin", "unspecified"),
                 "registered": False, "deregistered": False, "pid": None, "version": None,
                 "players": 0, "sessions": 0, "registered_at": None, "last_heartbeat": None,
                 "registrations": 0,
