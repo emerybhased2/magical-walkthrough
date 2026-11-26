@@ -60,14 +60,28 @@ class AccountService:
         self.log = log
         self.store = store or AccountStore(self.settings["ACCOUNT_DB_PATH"], self.settings)
         self._catalog = (None, None)
+        live = self.settings.get("SHOP_LIVE_SKINS_DIR") or ""
+        self.live_catalog = Path(live) / "catalog.json" if live else None
 
     # -- helpers ------------------------------------------------------------------------
     def catalog(self) -> dict:
+        """ACCOUNT_SHOP_CATALOG plus, when present, the live skins from import_live_skins.py."""
         path = Path(self.settings["ACCOUNT_SHOP_CATALOG"])
-        mtime = path.stat().st_mtime
-        if self._catalog[0] != mtime:
+        live = self.live_catalog if self.live_catalog and self.live_catalog.is_file() else None
+        key = (path.stat().st_mtime, live.stat().st_mtime if live else None)
+        if self._catalog[0] != key:
             data = json.loads(path.read_text(encoding="utf-8"))
-            self._catalog = (mtime, {"items": data.get("items", []), "settings": data.get("settings", [])})
+            items = list(data.get("items", []))
+            if live:
+                try:
+                    known = {str(i.get("id")) for i in items}
+                    extra = [i for i in json.loads(live.read_text(encoding="utf-8")).get("items", [])
+                             if str(i.get("id")) not in known]
+                    items += extra
+                    self.log.info("shop: %d live skins added from %s", len(extra), live)
+                except (OSError, ValueError) as exc:
+                    self.log.error("shop: cannot read %s (%s); serving the base catalogue only", live, exc)
+            self._catalog = (key, {"items": items, "settings": data.get("settings", [])})
         return self._catalog[1]
 
     def authed(self, body: dict) -> dict:
