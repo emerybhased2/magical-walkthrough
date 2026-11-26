@@ -10,10 +10,11 @@ Steps (each is skipped when already done):
   2. .env with REMOTE_BACKEND_URL / REMOTE_BACKEND_KEY (copies a downloaded mope.env if it finds one,
      or use --env PATH)
   3. Python packages (requirements-play.txt)
-  4. hosts entry 127.0.0.1 local.mope.io (--add-hosts writes it when run as administrator / sudo)
+  4. the public host resolves to this computer: nothing to do for the default `localhost`; for
+     local.mope.io a hosts entry (--add-hosts writes it when run as administrator / sudo)
   5. the 2025-12-10 client snapshot (downloaded once from Arquivo.pt, ~1-3 minutes)
   6. the backend answers with your key
-  7. `localstack.py up` (local web gateway + WebSocket relay), then opens http://local.mope.io:8080/
+  7. `localstack.py up` (local web gateway + WebSocket relay), then opens http://localhost:8080/
 Ctrl-C stops everything.
 """
 
@@ -36,7 +37,15 @@ import webbrowser
 from pathlib import Path
 
 PROJECT = Path(__file__).resolve().parent
-HOST = "local.mope.io"
+def _public_host() -> str:
+    """config/local_stack.json public_host: "localhost" by default (no hosts entry needed)."""
+    try:
+        return json.loads((Path(__file__).resolve().parent / "config" / "local_stack.json").read_text())["public_host"]
+    except (OSError, ValueError, KeyError):
+        return "localhost"
+
+
+HOST = _public_host()
 SNAPSHOT = PROJECT / "snapshots" / "2025-12-10"
 CLIENT = SNAPSHOT / "working" / "client" / "mope.io"
 FETCH = [sys.executable, "fetch_mope_archive.py", "--date", "2025-12-10", "--output", "snapshots/2025-12-10",

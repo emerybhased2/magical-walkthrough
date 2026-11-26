@@ -52,8 +52,10 @@ Optional data:
   the snapshot.
 - `ruby fetch_live_assets.rb` saves the live 2026 site's images, for reference only.
 
-Map the public host once, in `/etc/hosts`, or on Windows in
-`C:\Windows\System32\drivers\etc\hosts`:
+The stack runs on `http://localhost:8080/` with no hosts-file entry: the web gateway injects
+`shims/domain_lock_local.js`, which satisfies the client's domain guard. Only if you set `public_host` to
+`local.mope.io` in `config/local_stack.json`, map it once in `/etc/hosts` (Windows:
+`C:\Windows\System32\drivers\etc\hosts`):
 
 ```
 127.0.0.1 local.mope.io
@@ -98,7 +100,7 @@ Each process's PID is kept in `run/<service>.pid`.
 | `[fail] configuration invalid` | `.venv/bin/python localstack.py check-config` lists every setting with its source and the failing rule |
 | A service shows `stopped` or `offline` | `./start-all.sh logs <service> -n 80`, then `./start-all.sh restart <service>` |
 | `port … is used by another program` | another process holds the port: stop it, or change the port in `config/local_stack.json` / `.env` |
-| The browser shows a blank page | open `http://local.mope.io:8080/`, not `127.0.0.1`: the archived client only runs on an allowed host name, and the hosts entry above provides it |
+| The browser shows a blank page | the client's domain guard rejected the host name: open `http://localhost:8080/` (not `127.0.0.1`), and keep the `domain_lock_shim` rewrite on in `config/local_stack.json` |
 | "Connecting…" never ends | `./start-all.sh status`: the master must list at least one region as `online` |
 | Sign-in buttons fail | social sign-in cannot work offline; use **Login with a local account** |
 | Missing sprites or sounds | expected for files no archive holds; the client draws fallback shapes, and `phase6/COMPATIBILITY.md` lists them |

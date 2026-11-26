@@ -1,6 +1,6 @@
 {
-  "_comment": "Local mope.io stack. Regions with origin 'archived-2025-12-10' come from phase2/data/regions.json (ids, names, labels, gm as archived; url replaced by public_host:port). Regions with origin 'local-addition' were added for this local project and do not exist in any archive. Add `127.0.0.1 local.mope.io` to your hosts file and open http://local.mope.io:8080/.",
-  "public_host": "local.mope.io",
+  "_comment": "Local mope.io stack. Regions with origin 'archived-2025-12-10' come from phase2/data/regions.json (ids, names, labels, gm as archived; url replaced by public_host:port). Regions with origin 'local-addition' were added for this local project and do not exist in any archive. Open http://localhost:8080/ (the gateway injects shims/domain_lock_local.js so the client's domain guard accepts localhost; public_host local.mope.io with a hosts-file entry also works).",
+  "public_host": "localhost",
   "bind_host": "127.0.0.1",
   "client_root": "snapshots/2025-12-10/working/client/mope.io",
   "logs_dir": "logs",
@@ -12,7 +12,8 @@
       "client_config": true,
       "turnstile_shim": true,
       "local_login_button": true,
-      "buy_all_button": true
+      "buy_all_button": true,
+      "domain_lock_shim": true
     },
     "asset_fallbacks": [
       "archive/images/files/mope.io"

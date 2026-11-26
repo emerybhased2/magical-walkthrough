@@ -4,14 +4,14 @@ localstack.py -- start, stop and inspect the local mope.io stack (Phase 3, task 
 
 Services (from config/local_stack.json):
   master                 master server            http://127.0.0.1:8090 (internal)
-  region-<id>            one per region (20)      ws://local.mope.io:7001..7020
+  region-<id>            one per region (20)      ws://localhost:7001..7020
   account                account server           http://127.0.0.1:8091 (internal, via the gateway)
-  web                    web gateway              http://local.mope.io:8080  <- open this
+  web                    web gateway              http://localhost:8080  <- open this
 
 With REMOTE_BACKEND_URL set (.env), only two services run here and the rest is the hosted
 backend (cloud.py, see DEPLOY_SEVALLA.md):
-  relay                  WebSocket relay          ws://local.mope.io:7000/r/<id> -> wss://<backend>/r/<id>
-  web                    web gateway              http://local.mope.io:8080  (API proxied to the backend)
+  relay                  WebSocket relay          ws://localhost:7000/r/<id> -> wss://<backend>/r/<id>
+  web                    web gateway              http://localhost:8080  (API proxied to the backend)
 
 Every service is its own process, so each can be started and stopped independently.
 Logs: logs/services/<service>.log (+ .out for raw stdout/stderr). PIDs: run/<service>.pid.
@@ -25,8 +25,9 @@ Usage:
   python localstack.py check-config            # validate config/local_stack.json + .env, show every setting
   python localstack.py init                    # create .env with documented defaults
 
-Before opening the client, map the public host to your machine once:
-  127.0.0.1 local.mope.io      (hosts file: /etc/hosts or C:\\Windows\\System32\\drivers\\etc\\hosts)
+Open http://localhost:8080/. No hosts-file entry is needed: the gateway injects
+shims/domain_lock_local.js so the client's domain guard accepts localhost. (With public_host
+"local.mope.io" in config/local_stack.json, add `127.0.0.1 local.mope.io` to the hosts file.)
 """
 
 from __future__ import annotations
@@ -211,7 +212,8 @@ def status(config: dict) -> int:
               f"{view:<12}{players:>8}")
     if config.get("remote"):
         print(f"\nremote backend: {config['remote']['url']}")
-    print(f"\nopen: {common.web_origin(config)}/   (hosts file: 127.0.0.1 {config['public_host']})")
+    print(f"\nopen: {common.web_origin(config)}/" + ("" if config["public_host"] == "localhost"
+                                                      else f"   (hosts file: 127.0.0.1 {config['public_host']})"))
     return 0
 
 
@@ -261,7 +263,8 @@ def main(argv=None) -> int:
             stop(config, svc)
     if args.command in ("start", "restart", "up"):
         ok = all([start(config, svc, config_path, token) for svc in chosen])
-        print(f"\nopen: {common.web_origin(config)}/   (hosts file: 127.0.0.1 {config['public_host']})")
+        print(f"\nopen: {common.web_origin(config)}/" + ("" if config["public_host"] == "localhost"
+                                                      else f"   (hosts file: 127.0.0.1 {config['public_host']})"))
         if args.command != "up":
             return 0 if ok else 1
         print("stack is up; press Ctrl-C to stop everything")

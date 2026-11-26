@@ -9,11 +9,10 @@ Gameplay itself is Phase 5. For now Play reaches the region server and gets a no
 
 ```bash
 pip install -r requirements.txt
-# once, map the public host to your machine (domain lock: the client only runs on *.mope.io):
-#   Linux/macOS: echo "127.0.0.1 local.mope.io" | sudo tee -a /etc/hosts
-#   Windows:     add "127.0.0.1 local.mope.io" to C:\Windows\System32\drivers\etc\hosts
 python localstack.py up            # or: start / stop / restart / status [targets]
-# open http://local.mope.io:8080/
+# open http://localhost:8080/  (since 2026-11-26 the gateway's domain-lock shim lets the client run on
+# localhost; the tables below were written when the default host was local.mope.io, which still works
+# with a hosts entry "127.0.0.1 local.mope.io" and public_host set back in config/local_stack.json)
 python phase3_verify.py            # task 20 checks against the running stack
 ```
 

@@ -3,7 +3,7 @@
 web_gateway.py -- Phase 3 (tasks 18-19): the HTTP front door of the local stack.
 
 Serves the archived client (the snapshot's working copy) on http://<public_host>:<port>/
--- by default http://local.mope.io:8080/, so the client's domain lock accepts it -- and is
+-- by default http://localhost:8080/ (the domain-lock shim below lets the client run there) -- and is
 also the client's "account server" origin, routing API paths to the right service:
 
   /servers/get, GET /master/{regions,client-config,health}  -> master server
@@ -20,7 +20,8 @@ at /__local/rewrites and can be switched off in the stack config):
      gateway. The rest of client.js is byte-for-byte the archived file.
   2. index.html: the Cloudflare Turnstile loader is replaced by the local stand-in
      shims/turnstile_local.js (the page only starts client.js from Turnstile's onload).
-  3. index.html: a "Login with a local account" button, and shims/shop_buy_all.js, which adds a
+  3. index.html: shims/domain_lock_local.js first in <head>, so the client's domain guard accepts
+     http://localhost:<port>/ (no hosts-file entry); a "Login with a local account" button, and shims/shop_buy_all.js, which adds a
      BUY ALL entry to the shop's tab bar (POST /shop/buyAll on the account server).
 """
 
@@ -52,6 +53,8 @@ LOCAL_LOGIN_BUTTON = (b'\n      <button id="localLoginBtn" class="discordLoginBt
                       b'style="background:#2d8b2d" onclick="location.href=\'/auth/local\'">'
                       b'Login with a local account</button>')
 LOCAL_TURNSTILE = b"/__local/turnstile_local.js"
+DOMAIN_SHIM_SCRIPT = b'<script src="/__local/domain_lock_local.js"></script>\n'
+HEAD_START_RE = re.compile(rb"<head[^>]*>", re.I)
 BUY_ALL_SCRIPT = b'<script src="/__local/shop_buy_all.js"></script>\n'
 BODY_END_RE = re.compile(rb"</body>", re.I)
 LIVE_SKIN_RE = re.compile(r"^/(?:\./)?assets/s/(\d+)/.+\.png$")
@@ -123,12 +126,13 @@ class Gateway:
         self.fallbacks = [common.project_path(config, d).resolve()
                           for d in config["web"].get("asset_fallbacks", ["archive/images/files/mope.io"])]
         self.rewrites = {"client_config": True, "turnstile_shim": True, "local_login_button": True,
-                         "buy_all_button": True,
+                         "buy_all_button": True, "domain_lock_shim": True,
                          **config["web"].get("rewrites", {})}
         self.updates_file = Path(config.get("settings", {}).get("WEB_UPDATES_FILE", "")) \
             if config.get("settings", {}).get("WEB_UPDATES_FILE") else None
         self.shim = PROJECT / "shims" / "turnstile_local.js"
         self.buy_all_shim = PROJECT / "shims" / "shop_buy_all.js"
+        self.domain_shim = PROJECT / "shims" / "domain_lock_local.js"
         self.client_js = ClientConfigRewriter(self.root / "client.js", log)
         live = config.get("settings", {}).get("SHOP_LIVE_SKINS_DIR") or ""
         self.live_dir = Path(live) if live else None
@@ -195,6 +199,23 @@ class Gateway:
             return None
         file = (self.live_dir / rel).resolve()
         return file if self.live_dir.resolve() in file.parents and file.is_file() else None
+
+    def rewrite_index(self, data: bytes) -> tuple[bytes, list[str]]:
+        """The archived index.html with the local shims and buttons (each a switchable rewrite)."""
+        notes = []
+        if self.rewrites["domain_lock_shim"]:
+            data, count = HEAD_START_RE.subn(lambda m: m.group(0) + b"\n" + DOMAIN_SHIM_SCRIPT, data, count=1)
+            notes.append(f"domain-lock shim ({count})")
+        if self.rewrites["turnstile_shim"]:
+            data, count = TURNSTILE_RE.subn(LOCAL_TURNSTILE, data)
+            notes.append(f"turnstile loader -> local shim ({count})")
+        if self.rewrites["local_login_button"] and self.account is not None:
+            data, count = DISCORD_BUTTON_RE.subn(lambda m: m.group(1) + LOCAL_LOGIN_BUTTON, data, count=1)
+            notes.append(f"local login button ({count})")
+        if self.rewrites["buy_all_button"] and self.account is not None:
+            data, count = BODY_END_RE.subn(lambda m: BUY_ALL_SCRIPT + m.group(0), data, count=1)
+            notes.append(f"shop buy-all button ({count})")
+        return data, notes
 
     def static_path(self, path: str) -> Path | None:
         rel = unquote(path).lstrip("/") or "index.html"
@@ -280,6 +301,8 @@ def make_handler(gw: Gateway):
                 return self._send(200, gw.updates_file.read_bytes(), "application/json", head=head)
             if path == "/__local/turnstile_local.js":
                 return self._send(200, gw.shim.read_bytes(), "application/javascript", head=head)
+            if path == "/__local/domain_lock_local.js":
+                return self._send(200, gw.domain_shim.read_bytes(), "application/javascript", head=head)
             if path == "/__local/shop_buy_all.js":
                 return self._send(200, gw.buy_all_shim.read_bytes(), "application/javascript", head=head)
             if path in MASTER_GET:
@@ -316,16 +339,7 @@ def make_handler(gw: Gateway):
                                   {"X-Local-Rewrite": f"$config overlay from {source}"}, head)
             data = file.read_bytes()
             if name == "index.html" and file.parent == gw.root:
-                notes = []
-                if gw.rewrites["turnstile_shim"]:
-                    data, count = TURNSTILE_RE.subn(LOCAL_TURNSTILE, data)
-                    notes.append(f"turnstile loader -> local shim ({count})")
-                if gw.rewrites["local_login_button"] and gw.account is not None:
-                    data, count = DISCORD_BUTTON_RE.subn(lambda m: m.group(1) + LOCAL_LOGIN_BUTTON, data, count=1)
-                    notes.append(f"local login button ({count})")
-                if gw.rewrites["buy_all_button"] and gw.account is not None:
-                    data, count = BODY_END_RE.subn(lambda m: BUY_ALL_SCRIPT + m.group(0), data, count=1)
-                    notes.append(f"shop buy-all button ({count})")
+                data, notes = gw.rewrite_index(data)
                 return self._send(200, data, "text/html; charset=utf-8", {"X-Local-Rewrite": "; ".join(notes)}, head)
             ctype = mimetypes.guess_type(name)[0] or "application/octet-stream"
             if ctype.startswith("text/") or ctype in ("application/javascript", "application/json"):

@@ -194,6 +194,24 @@ class GatewayTests(unittest.TestCase):
             import shutil
             shutil.rmtree(extra)
 
+    def test_index_gets_the_domain_shim_first_and_the_local_scripts(self):
+        (self.root / "index.html").write_text("<html><head><meta charset=utf-8></head><body></body></html>")
+        gateway = Gateway(stack_config(client_root=str(self.root)), LOG)
+        gateway.account = "http://127.0.0.1:8091"
+        page, notes = gateway.rewrite_index((self.root / "index.html").read_bytes())
+        head = page.index(b"<head>")
+        self.assertEqual(page.index(b"/__local/domain_lock_local.js"), head + len(b"<head>\n") + len(b'<script src="'))
+        self.assertLess(page.index(b"/__local/shop_buy_all.js"), page.index(b"</body>"))
+        self.assertIn("domain-lock shim (1)", notes)
+        gateway.rewrites["domain_lock_shim"] = False
+        self.assertNotIn(b"domain_lock_local", gateway.rewrite_index(b"<html><head></head></html>")[0])
+
+    def test_domain_shim_property_is_enumerable(self):
+        # the client's guard finds document.domain with for...in; a non-enumerable own property hides it
+        shim = (Path(__file__).resolve().parents[1] / "shims" / "domain_lock_local.js").read_text()
+        self.assertIn("enumerable: true", shim)
+        self.assertIn("localhost.mope.io", shim)
+
 
 if __name__ == "__main__":
     unittest.main()

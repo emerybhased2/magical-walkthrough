@@ -13,7 +13,7 @@ offline tests (`tests/test_gameplay.py`).
 
 ```bash
 python localstack.py up          # or: python localstack.py restart regions
-# http://local.mope.io:8080/ -> type a nickname -> PLAY
+# http://localhost:8080/ -> type a nickname -> PLAY
 python phase5_verify.py          # --region <id>, --no-browser
 python -m unittest tests.test_gameplay -v
 ```

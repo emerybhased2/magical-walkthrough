@@ -10,7 +10,7 @@ the offline unit tests (`tests/test_accounts.py`).
 python localstack.py init            # creates .env with documented defaults (optional)
 python localstack.py check-config    # validates config/local_stack.json + .env, shows every value and its source
 python localstack.py up              # master, account, 20 regions, web
-# http://local.mope.io:8080/ -> LOGIN -> "Login with a local account"
+# http://localhost:8080/ -> LOGIN -> "Login with a local account"
 python phase4_verify.py
 ```
 

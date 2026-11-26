@@ -191,8 +191,7 @@ production connections are made. Details and the 34-check verification are in
 [`phase3/README.md`](phase3/README.md).
 
 ```bash
-# once: add "127.0.0.1 local.mope.io" to your hosts file
-python localstack.py up          # then open http://local.mope.io:8080/
+python localstack.py up          # then open http://localhost:8080/ (no hosts-file entry needed)
 python phase3_verify.py          # checks against the running stack
 ```
 

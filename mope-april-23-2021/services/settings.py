@@ -88,7 +88,7 @@ SETTINGS: tuple[Setting, ...] = (
             "JSON served as /updates.json for the client's Updates panel."),
     # -- developer --------------------------------------------------------------------
     Setting("DEV_TEST_ACCOUNTS_ENABLED", "bool", False, "Developer",
-            "Enable the client's test-account hook: http://local.mope.io:8080/?testAccountSecret=<secret>&user=<1-2 chars>."),
+            "Enable the client's test-account hook: http://localhost:8080/?testAccountSecret=<secret>&user=<1-2 chars>."),
     Setting("DEV_TEST_ACCOUNT_SECRET", "str", "", "Developer",
             "Secret for the test-account hook (8-64 of A-Z a-z 0-9 _ -). Required when test accounts are enabled.",
             secret=True),

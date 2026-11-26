@@ -68,7 +68,7 @@ the game servers. It has no game page, so opening it in a browser shows only thi
 <ul>
  <li>in <code>mope-april-23-2021/.env</code> set <code>REMOTE_BACKEND_URL</code> to this address and
  <code>REMOTE_BACKEND_KEY</code> to the access key you were given</li>
- <li>run <code>python localstack.py up</code> and open <code>http://local.mope.io:8080/</code></li>
+ <li>run <code>python localstack.py up</code> and open <code>http://localhost:8080/</code></li>
 </ul>
 <p>Every other address here needs the access key.</p>
 </main></body></html>

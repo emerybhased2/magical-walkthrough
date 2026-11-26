@@ -34,7 +34,8 @@ from urllib.parse import urlsplit
 PROJECT = Path(__file__).resolve().parent
 sys.path.insert(0, str(PROJECT))
 
-from services import common  # noqa: E402
+from services import common
+from services.account_store import INFINITE_BALANCE  # noqa: E402
 from phase3_verify import BRIDGE_JS, KEEP_CONSOLE_JS, Bridge, Checks, localstack, sync_playwright  # noqa: E402
 
 VERSION = "1.0.0"
@@ -134,8 +135,10 @@ def browser_checks(config: dict, checks: Checks) -> None:
         client.page.wait_for_url(common.web_origin(config) + "/", timeout=10000)
         # The name alone comes from localStorage; the coins are written from the /auth/@me answer.
         coins_text = "document.getElementById('loginCoins').textContent.trim()"
+        expected_coins = (INFINITE_BALANCE if config["settings"].get("ACCOUNT_INFINITE_CURRENCY")
+                          else config["settings"]["ACCOUNT_STARTING_COINS"])
         signed_in = client.pump(20, lambda: client.logged_in_name() == name and
-                                client.ev(coins_text) == str(config["settings"]["ACCOUNT_STARTING_COINS"]))
+                                client.ev(coins_text) == str(expected_coins))
         coins = client.ev(coins_text)
         stored = client.ev("localStorage.getItem('login_name')")
         checks.record("B2", "local registration signs the client in (name + coins from /auth/@me shown)",
