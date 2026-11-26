@@ -145,6 +145,73 @@ evidence can replace them without code changes.
 Phases 3 and 4 still pass in full (34/34 and 8/8); Phase 3 check B6 now expects the
 "early gameplay" notice.
 
+## Phase 5 expansion — full gameplay reconstruction
+
+The first Phase 5 milestone made the archived client playable. The expansion aims at **exact**
+gameplay. "Exact" has a hard limit, and the plan is built around it:
+
+- **Exact, from the client.** Every message and object layout, every object and animal class, the
+  animal and ability tables, the header fields, and every client-side rule (for example what the HUD
+  shows, or when an animation plays). The client's own code defines these, so they can be matched
+  byte for byte.
+- **Not in the client.** The original server's numbers: speeds per animal, XP thresholds and
+  rewards, damage and HP regeneration, spawn rates, food values, ability cooldowns. No archive used
+  holds the server. These stay configuration, marked as approximations, and each one is listed in
+  the ledger.
+
+### Task 29A — Gameplay evidence ledger (done)
+
+`extract_gameplay_evidence.py` reads the client's syntax tree (no client code runs) and writes
+[`EVIDENCE.md`](EVIDENCE.md) + [`data/gameplay_evidence.json`](data/gameplay_evidence.json):
+
+| Evidence | Found |
+|---|---|
+| Object classes registered with `setCustomClassForGameObjType` | **225**, over **88** object types |
+| Animal classes (object type 2 + animal type) | **114**; all 73 animals in the table have one |
+| Object types with their own fields on appear | 106 |
+| Ability table entries (name, image) | 63 |
+| Packet field parsers (dispatchers, header if/else chain, property readers) | 7 |
+
+For each registered class the ledger gives the **effective** readers the server must satisfy: the
+fields read when the object appears (`readCustomData_onNewlyVisible`), the property ids its updates
+accept (`readUpdatedProperty`), and its update flags. Superclass calls are resolved through the
+obfuscator's alias variables (`var _0x244a35 = Class, _0x3c3358 = Parent`), which are resolved by
+source position.
+
+The ledger reproduces every layout Phase 5 had confirmed by hand:
+
+- the animal appear fields;
+- the pumpkin's `isRolling` + `pumpkinType`;
+- the 20 world-update header fields (1–21, except 18).
+
+`tests/test_gameplay_evidence.py` covers the alias resolution, the registry, the effective readers,
+the tables and the field chains.
+
+### Task 30A — Protocol-exact object and animal coverage (next)
+
+- **Goal.** Generate the object encoders from the ledger instead of writing them by hand, so every
+  object type and every animal type can be sent with exactly the fields its class reads.
+- **Tests.** A conformance test replays each class's read sequence against the encoder's bytes, for
+  all 225 classes.
+- **World.** The world can spawn any object and evolve into any of the 73 animals.
+- **Done when:**
+  - every registered class encodes and decodes with no bytes left over;
+  - the real client renders a sample of every object type and every animal without page errors.
+
+### Task 30B — Survival loop (after 30A)
+
+- **Predation.** Uses the dangerous and edible lists of S→C 18: who may eat whom.
+- **HP.** HP updates (property 4) and the hurt flag.
+- **Death and respawn.** Death sends S→C 14 with the client's own death reasons; then respawn from
+  the menu.
+- **Water.** Drinking, with the header 16 water level and its low-water warning.
+- **Biomes.** Biome ids on objects, plus header-field biome rules.
+- **Feedback.** Leaderboard and player count.
+- **Exactness.** Rules follow the client wherever it shows them (texts, thresholds it checks
+  itself, such as LOW WATER at 25 % or below); the server's own numbers are configuration.
+- **Done when:** a verifier plays a full life through the real client (eat, grow, get eaten, see
+  the death screen, respawn), and every message involved decodes with the client's layouts.
+
 ## Not reconstructed yet (open work)
 
 - Animals past the default chain, and the classes with extra reader fields (types 7 and up
