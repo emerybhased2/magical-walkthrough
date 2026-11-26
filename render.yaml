@@ -1,0 +1,29 @@
+# Render Blueprint: the mope.io local-stack BACKEND only (account, master and 20 region
+# servers behind one port). The archived game client is not deployed; players run it
+# locally with REMOTE_BACKEND_URL pointing here. See mope-april-23-2021/DEPLOY_SEVALLA.md
+# (same setup; only the host differs).
+services:
+  - type: web
+    name: mope-backend
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    # All 20 regions use ~600-750 MB. "starter" (512 MB) is too small unless CLOUD_REGIONS
+    # limits the regions; persistent disks also need a paid plan.
+    plan: standard
+    numInstances: 1          # SQLite on a disk: exactly one instance
+    healthCheckPath: /__edge/health
+    autoDeploy: false
+    disk:
+      name: accounts
+      mountPath: /var/lib/data
+      sizeGB: 1
+    envVars:
+      - key: ACCOUNT_DB_PATH
+        value: /var/lib/data/accounts.sqlite3
+      # Players put this value in REMOTE_BACKEND_KEY (copy it from the Render dashboard).
+      - key: BACKEND_ACCESS_KEY
+        generateValue: true
+      # Optional: run fewer regions on a smaller plan, e.g.
+      # - key: CLOUD_REGIONS
+      #   value: prod-lnd-us-ny-1,prod-ovh-de-ff-1,prod-lnd-sg-sg-1
