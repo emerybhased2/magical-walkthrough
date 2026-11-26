@@ -1,6 +1,6 @@
 # Gameplay evidence ledger (Phase 5, task 29A)
 
-Generated 2026-11-26T15:43:37Z by `extract_gameplay_evidence.py` from `snapshots/2025-12-10/working/client-js/20251210042757_arquivo/client.js` (syntax tree only; no client code runs). The JSON with every read sequence is [`data/gameplay_evidence.json`](data/gameplay_evidence.json).
+Generated 2026-11-26T15:49:11Z by `extract_gameplay_evidence.py` from `snapshots/2025-12-10/working/client-js/20251210042757_arquivo/client.js` (syntax tree only; no client code runs). The JSON with every read sequence is [`data/gameplay_evidence.json`](data/gameplay_evidence.json).
 
 ## What the client fixes exactly
 
@@ -92,6 +92,169 @@ Exact means the byte layout and meaning come from the client's own reader code. 
 | 73 | Dino Monster | `dinomonster` | `_0x25305a` | 9 |  |
 | 74 | Pigeon | `pigeon/pigeon` | `_0x59e21b` | 9 |  |
 | 75 | Toucan | `toucan/toucan` | `_0x5bc7be` | 9 |  |
+
+## Object catalogue (every object type id the client uses)
+
+156 object type ids: animal 1, effect 16, food 56, object 60, terrain 23. The label comes from the asset names the client draws for the type; *food* = it has an edible-outline (`_e`) variant; *terrain* = shown on the minimap or drawn with a biome skin; *effect* = drawn from an animal's or a disaster's assets (not placed in the world on its own).
+
+| Type | Category | Label (client assets) | Class | Extra fields on appear | Minimap colour |
+|---|---|---|---|---|---|
+| 1 | terrain |  | base | - | #1aad41 |
+| 2 | animal |  | `_0x30f58c` | - |  |
+| 3 | food |  | base | - | #1aad41 |
+| 4 | terrain |  | base | - | #4E66E4 |
+| 5 | terrain |  | base | - |  |
+| 6 | food |  | base | - |  |
+| 7 | terrain |  | base | - | #907A33 |
+| 8 | food |  | base | - | #8C9688 |
+| 9 | terrain |  | base | - |  |
+| 10 | terrain |  | `_0x1a129c` | UInt8+UInt8+UInt16+UInt16?+UInt16? | _0x209a1f |
+| 11 | terrain |  | base | - | #b0a13b |
+| 12 | terrain |  | base | - | _0x209a1f |
+| 13 | object |  | `_0x48724b` | UInt16? |  |
+| 14 | effect | ability_claw, ability_pounce1, ability_pounce2 | `_0x43af39` | UInt8+UInt8+UInt8+UInt8 |  |
+| 15 | terrain |  | base | - | #09992F |
+| 16 | terrain |  | base | - | white |
+| 17 | terrain |  | base | - | #7BB7BB |
+| 18 | object | fire, fire2 | `_0x96739a` | UInt16?+UInt16+UInt16 |  |
+| 19 | object | snowball | base | - |  |
+| 20 | object |  | base | - |  |
+| 21 | food |  | base | - |  |
+| 22 | food |  | base | - |  |
+| 23 | food | lillypad | base | - |  |
+| 24 | food |  | base | - |  |
+| 25 | food |  | base | - |  |
+| 26 | object |  | base | - |  |
+| 27 | food |  | base | - | #F35F53 |
+| 28 | object |  | base | - |  |
+| 29 | food | banana | base | - |  |
+| 30 | food | coconut | base | - |  |
+| 31 | food | rasp | base | - |  |
+| 32 | food | pear | base | - |  |
+| 33 | terrain |  | base | - | #bfaf43 |
+| 34 | object |  | base | - |  |
+| 35 | food | seaweed | base | - |  |
+| 36 | food | starfish | base | - |  |
+| 37 | food | kelp | base | - |  |
+| 38 | food | clam | base | - |  |
+| 39 | food | conch | base | - |  |
+| 40 | terrain | riverCurrent | `_0x473063` | UInt16? | _0x209a1f |
+| 42 | terrain | arcticano | `_0x378d83` | UInt16?+UInt8+UInt8+UInt8+UInt16 | #604729 |
+| 44 | terrain |  | base | - | #ff6000 |
+| 46 | food | healingStone | base | - |  |
+| 47 | terrain |  | base | - | #604729 |
+| 48 | food | arcticNut | base | - |  |
+| 49 | food | carrot | base | - |  |
+| 50 | food | watermelon | base | - |  |
+| 51 | food | watermelonSlice | base | - |  |
+| 52 | food | meat | base | - |  |
+| 53 | food | meat | base | - |  |
+| 54 | food | meat | base | - |  |
+| 55 | object |  | base | - |  |
+| 56 | food |  | base | - |  |
+| 57 | object | web | `_0x193dec` | UInt8+UInt8 |  |
+| 58 | object |  | base | - |  |
+| 59 | food |  | base | - |  |
+| 60 | food | cloudberry | base | - |  |
+| 61 | object |  | base | - |  |
+| 62 | object |  | base | - |  |
+| 63 | food |  | base | - |  |
+| 64 | effect | sleigh | `_0x4be5fa` | UInt16? |  |
+| 65 | object | quill | base | - |  |
+| 66 | food | ostrich | `_0x4f84a8` | UInt16?+UInt32+UInt8 |  |
+| 67 | object |  | base | - |  |
+| 68 | food | beehive | base | - |  |
+| 69 | food | honeycomb | base | - |  |
+| 70 | object | gameobj/70 | `_0x36268a` | UInt16?+UInt16+UInt16 |  |
+| 71 | effect | phoenix | base | - |  |
+| 72 | object |  | `_0x2bcd55` | UInt16? |  |
+| 74 | object | gameobj/74 | `_0x4920b8` | UInt8+UInt16+UInt8+String+UInt8+UInt16? |  |
+| 75 | food | gameobj/75 | `_0x262393` | UInt8 |  |
+| 76 | object |  | `_0x5b3c48` | UInt32 |  |
+| 78 | object | gameobj/78 | `_0x54eee1` | UInt16?+UInt8 |  |
+| 79 | terrain |  | base | - | #c8b745 |
+| 80 | effect | icemonster | `_0x4d6017` | UInt16?+UInt8 |  |
+| 81 | effect | camel | `_0x523fd5` | UInt16? |  |
+| 82 | food | gameobj/82 | `_0x469375` | UInt16? |  |
+| 83 | object |  | `_0x6e4cfd` | UInt16? |  |
+| 84 | object | gameobj/84 | `_0x2b4455` | UInt16? |  |
+| 85 | object |  | `_0x1bd7c2` | UInt16? |  |
+| 86 | object |  | `_0x316e54` | UInt16? |  |
+| 87 | object |  | `_0x8170ef` | UInt16? |  |
+| 88 | object |  | `_0xd39084` | UInt16?+BitGroup+UInt16+UInt16 |  |
+| 89 | food | gameobj/89 | `_0x30c90d` | UInt16? |  |
+| 90 | food | gameobj/90 | `_0x482208` | UInt16? |  |
+| 91 | food | gameobj/91 | `_0x10ad4a` | UInt16? |  |
+| 92 | food | gameobj/92 | `_0x3f37e5` | UInt16? |  |
+| 93 | food | gameobj/93 | `_0x38402e` | UInt16? |  |
+| 95 | food | gameobj/95 | `_0x395126` | UInt16? |  |
+| 96 | food | gameobj/96 | `_0x560027` | UInt16? |  |
+| 97 | food | gameobj/97 | `_0x5476e3` | UInt16? |  |
+| 98 | object | anthill | base | - |  |
+| 99 | terrain |  | `_0x3865d9` | UInt16? | #b0a13b |
+| 100 | terrain |  | `_0x5195e8` | UInt16?+UInt8+UInt16? | #007fa9 |
+| 101 | terrain | gameobj/101 | `_0x4d3d89` | UInt16+UInt8+UInt8 | #00b01a |
+| 102 | object |  | base | - |  |
+| 103 | effect | disasters | `_0x4218b5` | UInt8 |  |
+| 104 | object |  | base | - |  |
+| 105 | effect | cloud, cloud1 | `_0x5983fa` | UInt8 |  |
+| 106 | object | snowball | `_0x4fedbe` | - |  |
+| 107 | object |  | base | - |  |
+| 108 | object |  | base | - |  |
+| 109 | object |  | base | - |  |
+| 110 | effect | cloud, cloud1 | `_0x1c7dba` | UInt16? |  |
+| 111 | effect | raindrop | `_0x2844c8` | UInt16? |  |
+| 112 | object | gameobj/112 | `_0xd9a02b` | UInt16? |  |
+| 113 | object |  | base | - |  |
+| 114 | object |  | `_0x58f1c4` | UInt16?+UInt16 |  |
+| 115 | object |  | `_0x3d2bb6` | UInt16?+UInt16 |  |
+| 116 | object |  | base | - |  |
+| 117 | effect | segment_ | `_0x34b56d` | - |  |
+| 118 | terrain |  | `_0xb57184` | UInt16? | #07631f |
+| 119 | object |  | `_0x3ebe4d` | UInt16? |  |
+| 121 | effect | bigfoot | `_0x129406` | UInt16? |  |
+| 122 | object |  | base | - |  |
+| 123 | effect | virus | `_0x54ce24` | UInt16? |  |
+| 125 | food | viralpandemic | `_0x38f253` | UInt8 |  |
+| 126 | object |  | `_0x2b23c1` | UInt16? |  |
+| 127 | food | camera | `_0x28e049` | UInt16? |  |
+| 128 | object | leg_zebra, pad, rug_zebra | `_0x1ffbc1` | UInt16? |  |
+| 129 | object |  | `_0x14e52a` | UInt32+String |  |
+| 130 | object |  | `_0x3c2aec` | String+String+UInt8+BitGroup+UInt8? |  |
+| 131 | object | pumpkin | `_0x20f7aa` | UInt8+UInt8 |  |
+| 132 | food | coin | `_0x534412` | UInt16? |  |
+| 133 | effect | skins | `_0x480d6f` | UInt16? |  |
+| 134 | food | turkey | `_0x2eefba` | UInt16? |  |
+| 135 | food | gameobj/135 | `_0x149ca1` | UInt16? |  |
+| 136 | food | gameobj/136 | `_0x3354c3` | UInt16? |  |
+| 137 | food | gameobj/137 | `_0x411b29` | UInt16? |  |
+| 138 | terrain | gameobj/138 | `_0x32fdd9` | UInt16? | brown |
+| 139 | object |  | `_0x566472` | UInt16? |  |
+| 140 | terrain | gameobj/140 | `_0x2dcb47` | UInt16? | brown |
+| 141 | object |  | `_0xd5c49d` | UInt16? |  |
+| 142 | food | gameobj/142 | `_0x3fc490` | UInt8 |  |
+| 143 | food | xmasgifts | `_0x3b0492` | UInt8+UInt8 |  |
+| 144 | object | floaters | `_0x2067a8` | UInt8 |  |
+| 145 | object | beachball | `_0x5e5982` | UInt8+UInt8+UInt8 |  |
+| 146 | object | umbrella | `_0x31652d` | UInt8+UInt8+UInt8 |  |
+| 147 | object | gameobj/147 | `_0x427869` | UInt8+String+UInt16+BitGroup |  |
+| 148 | object | wave | `_0x221fb6` | UInt8 |  |
+| 149 | object |  | `_0x1bc9ab` | UInt8 |  |
+| 150 | object |  | base | - |  |
+| 151 | object | gameobj/151 | `_0x16c7ec` | UInt16? |  |
+| 152 | food | outline, upgradeshell | `_0x23f0f` | UInt16?+UInt32+String? |  |
+| 153 | object | shellpart | `_0x43501b` | UInt16? |  |
+| 154 | effect | gameobj/154 | `_0xc8112f` | UInt16? |  |
+| 155 | object | gameobj/155 | `_0x57b98e` | UInt16? |  |
+| 157 | object | gameobj/157 | `_0x2acd17` | UInt16? |  |
+| 158 | food | gameobj/158 | `_0x2be80e` | UInt16?+UInt16+UInt16 |  |
+| 159 | food | gameobj/159 | `_0x505f66` | UInt16?+UInt16+UInt16 |  |
+| 160 | food | gameobj/160 | `_0x3d60bc` | UInt8 |  |
+| 161 | object |  | `_0x23fab6` | UInt8 |  |
+| 162 | object |  | `_0x3e84b5` | UInt16? |  |
+| 163 | effect | birdmonster | `_0x2052c4` | UInt16? |  |
+| 164 | effect | birdmonster | `_0x4461e5` | UInt16? |  |
+| 165 | object | gameobj/165 | `_0x1d6fee` | UInt8+UInt8+UInt8 |  |
 
 ## Object types: class and exact custom fields
 

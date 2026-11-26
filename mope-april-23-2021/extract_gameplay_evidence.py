@@ -365,6 +365,147 @@ class Evidence:
         return out
 
 
+ASSET = re.compile(r"^(img|gameobj|skins|assets)/|\.(png|jpg|svg)$")
+
+
+def object_catalogue(ev: Evidence, registry: list[dict], classes: dict) -> list[dict]:
+    """Every object type id the client uses, with the evidence that says what it is:
+    its class and exact appear fields, the asset names drawn for it, an edible-outline variant (food),
+    its minimap colour (terrain shown on the minimap) and its biome-skin case."""
+    src = ev.src
+    strings: dict[str, str] = {}
+    for node in src.walk():
+        if node.type == "variable_declarator":
+            name, value = node.child_by_field_name("name"), node.child_by_field_name("value")
+            if name is not None and value is not None and value.type == "string":
+                strings.setdefault(src.text(name), src.string_value(value))
+    info: dict[int, dict] = defaultdict(lambda: {"assets": set(), "edible_variant": False, "uses": 0,
+                                                  "minimap": None, "biome_skin": False})
+
+    def scan(body, types: list[int]):
+        assets, edible = set(), False
+        for n in src.walk(body):
+            if n.type == "string":
+                v = src.string_value(n) or ""
+                if ASSET.search(v) and len(v) > 4:
+                    assets.add(v)
+            elif n.type == "identifier" and src.text(n) == "isEdibleOutlined":
+                edible = True
+            elif n.type == "property_identifier" and src.text(n) == "isEdibleOutlined":
+                edible = True
+        for t in types:
+            info[t]["assets"] |= assets
+            info[t]["edible_variant"] |= edible or any(a.endswith("_e") or "_e." in a for a in assets)
+            info[t]["uses"] += 1
+
+    for node in src.walk():
+        if node.type == "switch_statement" and "oType" in src.text(node.child_by_field_name("value")):
+            fn = ecp.enclosing(node, FUNCTION_TYPES + ("method_definition",))
+            fn_name = ecp.function_name(src, fn) if fn else ""
+            pending: list[int] = []
+            for case in node.child_by_field_name("body").named_children:
+                if case.type != "switch_case":
+                    continue
+                value = ev.ex.resolve(case.child_by_field_name("value"))
+                if isinstance(value, int):
+                    pending.append(value)
+                    if fn_name and "getBiomeSkin" in fn_name:
+                        info[value]["biome_skin"] = True
+                statements = [c for c in case.named_children if c != case.child_by_field_name("value")]
+                if statements:
+                    for stmt in statements:
+                        scan(stmt, pending)
+                    pending = []
+        elif node.type == "binary_expression":
+            op = next((c for c in node.children if c.type in ("==", "===")), None)
+            if op is None:
+                continue
+            left, right = node.child_by_field_name("left"), node.child_by_field_name("right")
+            if left is None or right is None or not src.text(left).endswith(".oType"):
+                continue
+            value = ev.ex.resolve(right)
+            if not isinstance(value, int):
+                continue
+            guard = node.parent
+            while guard is not None and guard.type in ("parenthesized_expression", "binary_expression"):
+                guard = guard.parent
+            body = None
+            if guard is not None and guard.type == "if_statement":
+                body = guard.child_by_field_name("consequence")
+            if body is not None and body.end_byte - body.start_byte < 3000:
+                scan(body, [value])
+            else:
+                info[value]["uses"] += 1
+    # minimap colours (getColorForObjType)
+    for node in src.walk():
+        if node.type == "method_definition" and src.text(node.child_by_field_name("name")) == "getColorForObjType":
+            switch = next((n for n in src.walk(node) if n.type == "switch_statement"), None)
+            pending = []
+            for case in switch.child_by_field_name("body").named_children if switch else []:
+                value = ev.ex.resolve(case.child_by_field_name("value")) if case.type == "switch_case" else None
+                if isinstance(value, int):
+                    pending.append(value)
+                ret = next((n for n in src.walk(case) if n.type == "return_statement"), None)
+                if ret is not None and pending:
+                    colours = []
+                    for n in src.walk(case):
+                        if n.type == "return_statement" and n.named_children:
+                            v = n.named_children[0]
+                            colours.append(src.string_value(v) if v.type == "string" else strings.get(src.text(v), src.text(v)))
+                    for t in pending:
+                        info[t]["minimap"] = colours[-1] if colours else None
+                        if len(colours) > 1:
+                            info[t]["minimap_by_biome"] = colours[:-1]
+                    pending = []
+    # classes: their own image names
+    by_type: dict[int, list[dict]] = defaultdict(list)
+    for entry in registry:
+        by_type[entry["object_type"]].append(entry)
+    for t, entries in by_type.items():
+        if t == gp.OTYPE_ANIMAL:
+            continue
+        for entry in entries:
+            for fn in ev.methods.get(entry["class"], {}).values():
+                scan(fn, [t])
+    rows = []
+    for t in sorted(set(info) | set(by_type)):
+        entries = by_type.get(t, [])
+        cls = entries[0]["class"] if entries else None
+        reader = classes.get(cls, {}).get("readCustomData_onNewlyVisible") if cls else None
+        assets = sorted(info[t]["assets"])
+        names = sorted({re.sub(r"(_e)?\.(png|jpg|svg)$", "", a.split("/")[-1]) or a.split("/")[-2]
+                        for a in assets if a.startswith(("img/", "skins/", "assets/"))} - {""})
+        rows.append({
+            "object_type": t, "classes": [e["class"] for e in entries], "subtypes": sorted(e["subtype"] for e in entries
+                                                                                          if e["subtype"] is not None),
+            "appear_reads": [dict(op=r["op"], **({"flags": r["flags"]} if r.get("flags") else {}))
+                             for r in flatten(reader)] if reader else [],
+            "assets": assets[:12], "label": ", ".join(names[:3]) if names else
+            (f"gameobj/{t}" if any(a.startswith("gameobj/") for a in assets) else ""),
+            "edible_variant": info[t]["edible_variant"], "minimap": info[t]["minimap"],
+            **({"minimap_by_biome": info[t]["minimap_by_biome"]} if "minimap_by_biome" in info[t] else {}),
+            "biome_skin": info[t]["biome_skin"], "references": info[t]["uses"],
+        })
+    for row in rows:
+        row["category"] = categorise_object(row)
+    return rows
+
+
+def categorise_object(row: dict) -> str:
+    t, assets = row["object_type"], " ".join(row["assets"])
+    if t == gp.OTYPE_ANIMAL:
+        return "animal"
+    if row["edible_variant"]:
+        return "food"
+    if row["minimap"] is not None:
+        return "terrain"
+    if re.search(r"skins/|abilit|disasters/|raindrop|spit|meteorite|viralpandemic|camera", assets):
+        return "effect"
+    if row["biome_skin"]:
+        return "terrain"
+    return "object"
+
+
 def field_chains(ev: Evidence, minimum: int = 6) -> list[dict]:
     """Functions (field, reader) that read packet fields in an if/else chain on the field id
     (the world-update header parser is written this way)."""
@@ -418,6 +559,7 @@ def build(client: Path) -> dict:
         classes[cls] = {"chain": ev.chain(cls), **{m: ev.reader_of(cls, m) for m in READERS}}
     animals = ev.switch_tables(("aniName", "skinName", "aniCol"), "aniName")
     abilities = ev.abilities_all(registry)
+    catalogue = object_catalogue(ev, registry, classes)
     switches = ev.field_switches() + field_chains(ev)
     inventory = json.loads((PROJECT / "phase2" / "data" / "protocol_inventory.json").read_text(encoding="utf-8")) \
         if (PROJECT / "phase2" / "data" / "protocol_inventory.json").is_file() else {}
@@ -452,6 +594,7 @@ def build(client: Path) -> dict:
         "counts": {
             "registered_classes": len(registry), "object_types": len({e["object_type"] for e in registry}),
             "animal_classes": len(animal_registry), "animal_table": len(animals), "abilities": len(abilities),
+            "object_type_ids": len(catalogue),
             "ability_definitions": len(abilities),
             "ability_names": len({a["name"] for a in abilities}),
             "field_switches": len(switches),
@@ -463,6 +606,7 @@ def build(client: Path) -> dict:
         "animals": ledger_animals,
         "abilities": abilities,
         "objects": objects,
+        "catalogue": catalogue,
         "switches": switches,
     }
 
@@ -505,6 +649,21 @@ def markdown(data: dict) -> str:
     for a in data["animals"]:
         lines.append(f"| {a['id']} | {a['name']} | `{a['skin']}` | `{a['class'] or '-'}` | {a['custom_reads']} | "
                      f"{'yes' if a['implemented'] else ''} |")
+    cat = data["catalogue"]
+    counts = defaultdict(int)
+    for row in cat:
+        counts[row["category"]] += 1
+    lines += ["", "## Object catalogue (every object type id the client uses)", "",
+              f"{len(cat)} object type ids: " + ", ".join(f"{k} {v}" for k, v in sorted(counts.items())) + ". The label comes "
+              "from the asset names the client draws for the type; *food* = it has an edible-outline (`_e`) variant; "
+              "*terrain* = shown on the minimap or drawn with a biome skin; *effect* = drawn from an animal's or a "
+              "disaster's assets (not placed in the world on its own).", "",
+              "| Type | Category | Label (client assets) | Class | Extra fields on appear | Minimap colour |",
+              "|---|---|---|---|---|---|"]
+    for row in cat:
+        reads = "+".join(r["op"] + ("?" if r.get("flags") else "") for r in row["appear_reads"]) or "-"
+        lines.append(f"| {row['object_type']} | {row['category']} | {row['label'][:50]} | "
+                     f"{'`' + row['classes'][0] + '`' if row['classes'] else 'base'} | {reads[:60]} | {row['minimap'] or ''} |")
     lines += ["", "## Object types: class and exact custom fields", "",
               "Fields read after the common object fields when an object becomes visible (the effective "
               "`readCustomData_onNewlyVisible`, superclass calls resolved), and the property ids its "

@@ -170,6 +170,7 @@ gameplay. "Exact" has a hard limit, and the plan is built around it:
 | Animal classes (object type 2 + animal type) | **114**; all 73 animals in the table have one |
 | Object types with their own fields on appear | 106 |
 | Ability definitions (name, image) | **155 definitions, 118 distinct names**: 62 in the ability-type table, 91 in per-animal `getAbilityInfo` methods (82 animal types), 2 in the helper that adds the universal Dash |
+| Object type ids used by the client (object catalogue: label, category, fields, minimap colour) | 156: 56 food, 23 terrain, 16 effect, 60 other, 1 animal |
 | Packet field parsers (dispatchers, header if/else chain, property readers) | 7 |
 
 For each registered class the ledger gives the **effective** readers the server must satisfy: the
@@ -187,7 +188,7 @@ The ledger reproduces every layout Phase 5 had confirmed by hand:
 `tests/test_gameplay_evidence.py` covers the alias resolution, the registry, the effective readers,
 the tables and the field chains.
 
-### Task 30A — Protocol-exact object and animal coverage (next)
+### Task 30A — Protocol-exact object and animal coverage (not implemented)
 
 - **Goal.** Generate the object encoders from the ledger instead of writing them by hand, so every
   object type and every animal type can be sent with exactly the fields its class reads.
@@ -198,7 +199,7 @@ the tables and the field chains.
   - every registered class encodes and decodes with no bytes left over;
   - the real client renders a sample of every object type and every animal without page errors.
 
-### Task 30B — Survival loop (after 30A)
+### Task 30B — Survival loop (not implemented)
 
 - **Predation.** Uses the dangerous and edible lists of S→C 18: who may eat whom.
 - **HP.** HP updates (property 4) and the hurt flag.

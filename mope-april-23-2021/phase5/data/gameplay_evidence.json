@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T15:43:37Z",
+ "generated_at": "2026-11-26T15:49:11Z",
  "client": "snapshots/2025-12-10/working/client-js/20251210042757_arquivo/client.js",
  "counts": {
   "registered_classes": 225,
@@ -7,6 +7,7 @@
   "animal_classes": 114,
   "animal_table": 73,
   "abilities": 155,
+  "object_type_ids": 156,
   "ability_definitions": 155,
   "ability_names": 118,
   "field_switches": 7,
@@ -43226,6 +43227,3435 @@
     18
    ],
    "implemented": false
+  }
+ ],
+ "catalogue": [
+  {
+   "object_type": 1,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": "#1aad41",
+   "biome_skin": false,
+   "references": 4,
+   "category": "terrain"
+  },
+  {
+   "object_type": 2,
+   "classes": [
+    "_0x30f58c",
+    "_0x3447b6",
+    "_0x41a1bb",
+    "_0x446242",
+    "_0x1dd509",
+    "_0x136443",
+    "_0x30dce1",
+    "_0x316478",
+    "_0x380cee",
+    "_0x41f91e",
+    "_0x5aee2a",
+    "_0x4ff4b7",
+    "_0x174e28",
+    "_0x5dd3c2",
+    "_0x301198",
+    "_0x65dbc4",
+    "_0x4047ee",
+    "_0x57d88f",
+    "_0x48159f",
+    "_0x302a00",
+    "_0x26544c",
+    "_0x52ef2e",
+    "_0xdb49da",
+    "_0x5430c0",
+    "_0x21c898",
+    "_0x472004",
+    "_0x419e58",
+    "_0x2753f0",
+    "_0x207ca1",
+    "_0xb7a117",
+    "_0xaa8dc6",
+    "_0x266c88",
+    "_0x69be3f",
+    "_0x54d09b",
+    "_0x3ce401",
+    "_0x1af7a0",
+    "_0x60638d",
+    "_0x1194dd",
+    "_0x333baa",
+    "_0x376ff9",
+    "_0x20d0f5",
+    "_0x533e81",
+    "_0x237809",
+    "_0xccf2d3",
+    "_0x287ec2",
+    "_0x180a62",
+    "_0xffe93c",
+    "_0x30563c",
+    "_0x284ccb",
+    "_0x3514b6",
+    "_0xc71e73",
+    "_0x3fc30b",
+    "_0x3fe2d6",
+    "_0x2cc8ca",
+    "_0x329369",
+    "_0x4e32da",
+    "_0x5f3139",
+    "_0xac636e",
+    "_0x1e7f32",
+    "_0x376b8d",
+    "_0x4979b7",
+    "_0x561c96",
+    "_0x363756",
+    "_0x5430e0",
+    "_0x62a818",
+    "_0x467c39",
+    "_0x53b4f8",
+    "_0x412ede",
+    "_0x105fc6",
+    "_0x1beb47",
+    "_0x1adb70",
+    "_0x48bd6b",
+    "_0x49c246",
+    "_0x2221a7",
+    "_0x5a8a01",
+    "_0x25305a",
+    "_0x59e21b",
+    "_0x5bc7be",
+    "_0x8c0531",
+    "_0x3c157d",
+    "_0x67de7d",
+    "_0x297495",
+    "_0x55f47d",
+    "_0x4fd77b",
+    "_0x55e785",
+    "_0x15f43b",
+    "_0x26b15c",
+    "_0x44ee97",
+    "_0x3a1172",
+    "_0x2a58cd",
+    "_0x5544bd",
+    "_0x26f276",
+    "_0x221ae6",
+    "_0x37f7b7",
+    "_0x2169f8",
+    "_0x443c34",
+    "_0x40c662",
+    "_0x1a77e6",
+    "_0x3ff509",
+    "_0x4a194a",
+    "_0x1ff28a",
+    "_0x4b87ef",
+    "_0x560c40",
+    "_0x181349",
+    "_0x18bba5",
+    "_0x3a9446",
+    "_0x228b5e",
+    "_0x2522aa",
+    "_0x4da0aa",
+    "_0x5aa9f8",
+    "_0x5d0a21",
+    "_0x2b6b30",
+    "_0x5017d0",
+    "_0x21614e",
+    "_0x482cd1",
+    "_0x546278",
+    "_0x36f2a3"
+   ],
+   "subtypes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    121
+   ],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 9,
+   "category": "animal"
+  },
+  {
+   "object_type": 3,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": true,
+   "minimap": "#1aad41",
+   "biome_skin": true,
+   "references": 9,
+   "category": "food"
+  },
+  {
+   "object_type": 4,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": "#4E66E4",
+   "biome_skin": true,
+   "references": 9,
+   "category": "terrain"
+  },
+  {
+   "object_type": 5,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": true,
+   "references": 15,
+   "category": "terrain"
+  },
+  {
+   "object_type": 6,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": true,
+   "references": 11,
+   "category": "food"
+  },
+  {
+   "object_type": 7,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": "#907A33",
+   "biome_skin": false,
+   "references": 4,
+   "category": "terrain"
+  },
+  {
+   "object_type": 8,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": true,
+   "minimap": "#8C9688",
+   "biome_skin": true,
+   "references": 9,
+   "category": "food"
+  },
+  {
+   "object_type": 9,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": true,
+   "references": 15,
+   "category": "terrain"
+  },
+  {
+   "object_type": 10,
+   "classes": [
+    "_0x1a129c"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt16"
+    },
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    },
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": "_0x209a1f",
+   "biome_skin": false,
+   "references": 11,
+   "category": "terrain"
+  },
+  {
+   "object_type": 11,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": "#b0a13b",
+   "biome_skin": false,
+   "references": 8,
+   "category": "terrain"
+  },
+  {
+   "object_type": 12,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": "_0x209a1f",
+   "biome_skin": false,
+   "references": 4,
+   "category": "terrain"
+  },
+  {
+   "object_type": 13,
+   "classes": [
+    "_0x48724b"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 10,
+   "category": "object"
+  },
+  {
+   "object_type": 14,
+   "classes": [
+    "_0x43af39",
+    "_0x1b0fc2",
+    "_0x14f5eb",
+    "_0x3cba74",
+    "_0xe7ba69",
+    "_0x272bc0",
+    "_0x232bbf",
+    "_0x624c25",
+    "_0x2b15d5",
+    "_0xb5bcd8",
+    "_0x9bac4b",
+    "_0x681f9f",
+    "_0x5f13a8",
+    "_0x2a0976",
+    "_0x41bb71",
+    "_0x55566d",
+    "_0x187391"
+   ],
+   "subtypes": [
+    31,
+    59,
+    62,
+    68,
+    86,
+    87,
+    92,
+    101,
+    102,
+    104,
+    105,
+    112,
+    125,
+    128,
+    144,
+    145
+   ],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "/ability.png",
+    "/ability_boabite.png",
+    "/ability_elephantTrunkSmack.png",
+    "/ability_tigerJump.png",
+    "/ability_trexBite.png",
+    "/ability_whaleTailHit.png",
+    "/arm2.png",
+    "/circle.png",
+    "/laugh.png",
+    "/slash.png",
+    "/spear.png",
+    "/spear2.png"
+   ],
+   "label": "ability_claw, ability_pounce1, ability_pounce2",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 89,
+   "category": "effect"
+  },
+  {
+   "object_type": 15,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": "#09992F",
+   "biome_skin": false,
+   "references": 4,
+   "category": "terrain"
+  },
+  {
+   "object_type": 16,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": "white",
+   "biome_skin": false,
+   "references": 4,
+   "category": "terrain"
+  },
+  {
+   "object_type": 17,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": "#7BB7BB",
+   "biome_skin": false,
+   "references": 4,
+   "category": "terrain"
+  },
+  {
+   "object_type": 18,
+   "classes": [
+    "_0x96739a"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    },
+    {
+     "op": "UInt16"
+    },
+    {
+     "op": "UInt16"
+    }
+   ],
+   "assets": [
+    "/0.png",
+    "gameobj/",
+    "img/fire.png",
+    "img/fire2.png"
+   ],
+   "label": "fire, fire2",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 9,
+   "category": "object"
+  },
+  {
+   "object_type": 19,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/snowball.png"
+   ],
+   "label": "snowball",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "object"
+  },
+  {
+   "object_type": 20,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 7,
+   "category": "object"
+  },
+  {
+   "object_type": 21,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": true,
+   "references": 11,
+   "category": "food"
+  },
+  {
+   "object_type": 22,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": true,
+   "references": 10,
+   "category": "food"
+  },
+  {
+   "object_type": 23,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/lillypad"
+   ],
+   "label": "lillypad",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 7,
+   "category": "food"
+  },
+  {
+   "object_type": 24,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": true,
+   "references": 12,
+   "category": "food"
+  },
+  {
+   "object_type": 25,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": true,
+   "references": 10,
+   "category": "food"
+  },
+  {
+   "object_type": 26,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 7,
+   "category": "object"
+  },
+  {
+   "object_type": 27,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": true,
+   "minimap": "#F35F53",
+   "biome_skin": true,
+   "references": 10,
+   "category": "food"
+  },
+  {
+   "object_type": 28,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 5,
+   "category": "object"
+  },
+  {
+   "object_type": 29,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/banana"
+   ],
+   "label": "banana",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 10,
+   "category": "food"
+  },
+  {
+   "object_type": 30,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/coconut"
+   ],
+   "label": "coconut",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 10,
+   "category": "food"
+  },
+  {
+   "object_type": 31,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/rasp"
+   ],
+   "label": "rasp",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 7,
+   "category": "food"
+  },
+  {
+   "object_type": 32,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/pear"
+   ],
+   "label": "pear",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 7,
+   "category": "food"
+  },
+  {
+   "object_type": 33,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": "#bfaf43",
+   "biome_skin": false,
+   "references": 4,
+   "category": "terrain"
+  },
+  {
+   "object_type": 34,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 4,
+   "category": "object"
+  },
+  {
+   "object_type": 35,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/seaweed"
+   ],
+   "label": "seaweed",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 8,
+   "category": "food"
+  },
+  {
+   "object_type": 36,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/starfish"
+   ],
+   "label": "starfish",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 7,
+   "category": "food"
+  },
+  {
+   "object_type": 37,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/kelp"
+   ],
+   "label": "kelp",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 7,
+   "category": "food"
+  },
+  {
+   "object_type": 38,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/clam"
+   ],
+   "label": "clam",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 7,
+   "category": "food"
+  },
+  {
+   "object_type": 39,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/conch"
+   ],
+   "label": "conch",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 7,
+   "category": "food"
+  },
+  {
+   "object_type": 40,
+   "classes": [
+    "_0x473063"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/40/current",
+    "gameobj/40/currentRight.png",
+    "img/riverCurrent"
+   ],
+   "label": "riverCurrent",
+   "edible_variant": false,
+   "minimap": "_0x209a1f",
+   "biome_skin": false,
+   "references": 24,
+   "category": "terrain"
+  },
+  {
+   "object_type": 42,
+   "classes": [
+    "_0x378d83"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    },
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt16"
+    }
+   ],
+   "assets": [
+    "img/arcticano/"
+   ],
+   "label": "arcticano",
+   "edible_variant": false,
+   "minimap": "#604729",
+   "biome_skin": false,
+   "references": 11,
+   "category": "terrain"
+  },
+  {
+   "object_type": 44,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": "#ff6000",
+   "biome_skin": false,
+   "references": 4,
+   "category": "terrain"
+  },
+  {
+   "object_type": 46,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/healingStone"
+   ],
+   "label": "healingStone",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": true,
+   "references": 9,
+   "category": "food"
+  },
+  {
+   "object_type": 47,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": "#604729",
+   "biome_skin": false,
+   "references": 4,
+   "category": "terrain"
+  },
+  {
+   "object_type": 48,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/arcticNut"
+   ],
+   "label": "arcticNut",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 7,
+   "category": "food"
+  },
+  {
+   "object_type": 49,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/carrot"
+   ],
+   "label": "carrot",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 7,
+   "category": "food"
+  },
+  {
+   "object_type": 50,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/watermelon"
+   ],
+   "label": "watermelon",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 7,
+   "category": "food"
+  },
+  {
+   "object_type": 51,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/watermelonSlice"
+   ],
+   "label": "watermelonSlice",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 7,
+   "category": "food"
+  },
+  {
+   "object_type": 52,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/meat"
+   ],
+   "label": "meat",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 7,
+   "category": "food"
+  },
+  {
+   "object_type": 53,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/meat"
+   ],
+   "label": "meat",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 7,
+   "category": "food"
+  },
+  {
+   "object_type": 54,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/meat"
+   ],
+   "label": "meat",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 7,
+   "category": "food"
+  },
+  {
+   "object_type": 55,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 4,
+   "category": "object"
+  },
+  {
+   "object_type": 56,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 4,
+   "category": "food"
+  },
+  {
+   "object_type": 57,
+   "classes": [
+    "_0x193dec"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "/spiderWeb.png",
+    "img/web/"
+   ],
+   "label": "web",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 11,
+   "category": "object"
+  },
+  {
+   "object_type": 58,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 4,
+   "category": "object"
+  },
+  {
+   "object_type": 59,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 6,
+   "category": "food"
+  },
+  {
+   "object_type": 60,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/cloudberry"
+   ],
+   "label": "cloudberry",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 7,
+   "category": "food"
+  },
+  {
+   "object_type": 61,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 1,
+   "category": "object"
+  },
+  {
+   "object_type": 62,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 1,
+   "category": "object"
+  },
+  {
+   "object_type": 63,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": true,
+   "references": 9,
+   "category": "food"
+  },
+  {
+   "object_type": 64,
+   "classes": [
+    "_0x4be5fa"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "skins/santa/0/sleigh.png"
+   ],
+   "label": "sleigh",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "effect"
+  },
+  {
+   "object_type": 65,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/quill.png"
+   ],
+   "label": "quill",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 6,
+   "category": "object"
+  },
+  {
+   "object_type": 66,
+   "classes": [
+    "_0x4f84a8"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    },
+    {
+     "op": "UInt32"
+    },
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "skins/land/ostrich/"
+   ],
+   "label": "ostrich",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 9,
+   "category": "food"
+  },
+  {
+   "object_type": 67,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 8,
+   "category": "object"
+  },
+  {
+   "object_type": 68,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/beehive"
+   ],
+   "label": "beehive",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 10,
+   "category": "food"
+  },
+  {
+   "object_type": 69,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/honeycomb"
+   ],
+   "label": "honeycomb",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 9,
+   "category": "food"
+  },
+  {
+   "object_type": 70,
+   "classes": [
+    "_0x36268a"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    },
+    {
+     "op": "UInt16"
+    },
+    {
+     "op": "UInt16"
+    }
+   ],
+   "assets": [
+    "/0.png",
+    "gameobj/"
+   ],
+   "label": "gameobj/70",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 3,
+   "category": "object"
+  },
+  {
+   "object_type": 71,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "/firetornado.png",
+    "skins/volcano/phoenix/"
+   ],
+   "label": "phoenix",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 4,
+   "category": "effect"
+  },
+  {
+   "object_type": 72,
+   "classes": [
+    "_0x2bcd55"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "object"
+  },
+  {
+   "object_type": 74,
+   "classes": [
+    "_0x4920b8"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt16"
+    },
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "String"
+    },
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/74",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 8,
+   "category": "object"
+  },
+  {
+   "object_type": 75,
+   "classes": [
+    "_0x262393"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/75",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 4,
+   "category": "food"
+  },
+  {
+   "object_type": 76,
+   "classes": [
+    "_0x5b3c48"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt32"
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 6,
+   "category": "object"
+  },
+  {
+   "object_type": 78,
+   "classes": [
+    "_0x54eee1"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    },
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "/stone_undefended.png",
+    "gameobj/"
+   ],
+   "label": "gameobj/78",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 7,
+   "category": "object"
+  },
+  {
+   "object_type": 79,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": "#c8b745",
+   "biome_skin": false,
+   "references": 4,
+   "category": "terrain"
+  },
+  {
+   "object_type": 80,
+   "classes": [
+    "_0x4d6017"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    },
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "/crystalfire.png",
+    "skins/arctic/icemonster/"
+   ],
+   "label": "icemonster",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 4,
+   "category": "effect"
+  },
+  {
+   "object_type": 81,
+   "classes": [
+    "_0x523fd5"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "/spit.png",
+    "skins/desert/camel/"
+   ],
+   "label": "camel",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 3,
+   "category": "effect"
+  },
+  {
+   "object_type": 82,
+   "classes": [
+    "_0x469375"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/82",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 5,
+   "category": "food"
+  },
+  {
+   "object_type": 83,
+   "classes": [
+    "_0x6e4cfd"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "object"
+  },
+  {
+   "object_type": 84,
+   "classes": [
+    "_0x2b4455"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/84",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "object"
+  },
+  {
+   "object_type": 85,
+   "classes": [
+    "_0x1bd7c2"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "object"
+  },
+  {
+   "object_type": 86,
+   "classes": [
+    "_0x316e54"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "object"
+  },
+  {
+   "object_type": 87,
+   "classes": [
+    "_0x8170ef"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "/base.png"
+   ],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 3,
+   "category": "object"
+  },
+  {
+   "object_type": 88,
+   "classes": [
+    "_0xd39084"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    },
+    {
+     "op": "BitGroup"
+    },
+    {
+     "op": "UInt16"
+    },
+    {
+     "op": "UInt16"
+    }
+   ],
+   "assets": [
+    "/mouth/stem.png"
+   ],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 6,
+   "category": "object"
+  },
+  {
+   "object_type": 89,
+   "classes": [
+    "_0x30c90d"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/89",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 5,
+   "category": "food"
+  },
+  {
+   "object_type": 90,
+   "classes": [
+    "_0x482208"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/90",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 5,
+   "category": "food"
+  },
+  {
+   "object_type": 91,
+   "classes": [
+    "_0x10ad4a"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/91",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 5,
+   "category": "food"
+  },
+  {
+   "object_type": 92,
+   "classes": [
+    "_0x3f37e5"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/92",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 5,
+   "category": "food"
+  },
+  {
+   "object_type": 93,
+   "classes": [
+    "_0x38402e"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/93",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": true,
+   "references": 7,
+   "category": "food"
+  },
+  {
+   "object_type": 95,
+   "classes": [
+    "_0x395126"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/95",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "food"
+  },
+  {
+   "object_type": 96,
+   "classes": [
+    "_0x560027"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/96",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "food"
+  },
+  {
+   "object_type": 97,
+   "classes": [
+    "_0x5476e3"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/97",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "food"
+  },
+  {
+   "object_type": 98,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "img/desert/anthill/anthill.png"
+   ],
+   "label": "anthill",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 4,
+   "category": "object"
+  },
+  {
+   "object_type": 99,
+   "classes": [
+    "_0x3865d9"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": "#b0a13b",
+   "biome_skin": false,
+   "references": 3,
+   "category": "terrain"
+  },
+  {
+   "object_type": 100,
+   "classes": [
+    "_0x5195e8"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    },
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": "#007fa9",
+   "biome_skin": false,
+   "references": 5,
+   "category": "terrain"
+  },
+  {
+   "object_type": 101,
+   "classes": [
+    "_0x4d3d89"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16"
+    },
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "gameobj/101/"
+   ],
+   "label": "gameobj/101",
+   "edible_variant": false,
+   "minimap": "#00b01a",
+   "minimap_by_biome": [
+    "#8f822e",
+    "white"
+   ],
+   "biome_skin": false,
+   "references": 14,
+   "category": "terrain"
+  },
+  {
+   "object_type": 102,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 1,
+   "category": "object"
+  },
+  {
+   "object_type": 103,
+   "classes": [
+    "_0x4218b5"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "img/disasters/"
+   ],
+   "label": "disasters",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 5,
+   "category": "effect"
+  },
+  {
+   "object_type": 104,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 1,
+   "category": "object"
+  },
+  {
+   "object_type": 105,
+   "classes": [
+    "_0x5983fa"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "img/disasters/cloud.png",
+    "img/disasters/cloud1.png"
+   ],
+   "label": "cloud, cloud1",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 16,
+   "category": "effect"
+  },
+  {
+   "object_type": 106,
+   "classes": [
+    "_0x4fedbe"
+   ],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "/snow-flake.png",
+    "gameobj/",
+    "img/snowball.png"
+   ],
+   "label": "snowball",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 6,
+   "category": "object"
+  },
+  {
+   "object_type": 107,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 9,
+   "category": "object"
+  },
+  {
+   "object_type": 108,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 1,
+   "category": "object"
+  },
+  {
+   "object_type": 109,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 1,
+   "category": "object"
+  },
+  {
+   "object_type": 110,
+   "classes": [
+    "_0x1c7dba"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "img/disasters/cloud.png",
+    "img/disasters/cloud1.png"
+   ],
+   "label": "cloud, cloud1",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 15,
+   "category": "effect"
+  },
+  {
+   "object_type": 111,
+   "classes": [
+    "_0x2844c8"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "img/raindrop.png"
+   ],
+   "label": "raindrop",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 3,
+   "category": "effect"
+  },
+  {
+   "object_type": 112,
+   "classes": [
+    "_0xd9a02b"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "/0.png",
+    "gameobj/"
+   ],
+   "label": "gameobj/112",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "object"
+  },
+  {
+   "object_type": 113,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "object"
+  },
+  {
+   "object_type": 114,
+   "classes": [
+    "_0x58f1c4"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    },
+    {
+     "op": "UInt16"
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 9,
+   "category": "object"
+  },
+  {
+   "object_type": 115,
+   "classes": [
+    "_0x3d2bb6"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    },
+    {
+     "op": "UInt16"
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 9,
+   "category": "object"
+  },
+  {
+   "object_type": 116,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 1,
+   "category": "object"
+  },
+  {
+   "object_type": 117,
+   "classes": [
+    "_0x34b56d",
+    "_0x395f7f"
+   ],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [
+    "skins/deathworm/segment_"
+   ],
+   "label": "segment_",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 3,
+   "category": "effect"
+  },
+  {
+   "object_type": 118,
+   "classes": [
+    "_0xb57184"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": "#07631f",
+   "biome_skin": false,
+   "references": 3,
+   "category": "terrain"
+  },
+  {
+   "object_type": 119,
+   "classes": [
+    "_0x3ebe4d"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "object"
+  },
+  {
+   "object_type": 121,
+   "classes": [
+    "_0x129406"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "/firewood.png",
+    "skins/land/bigfoot/"
+   ],
+   "label": "bigfoot",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 3,
+   "category": "effect"
+  },
+  {
+   "object_type": 122,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 3,
+   "category": "object"
+  },
+  {
+   "object_type": 123,
+   "classes": [
+    "_0x54ce24"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "img/viralpandemic/virus.png"
+   ],
+   "label": "virus",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 3,
+   "category": "effect"
+  },
+  {
+   "object_type": 125,
+   "classes": [
+    "_0x38f253"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "_e.png",
+    "img/viralpandemic/"
+   ],
+   "label": "viralpandemic",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 4,
+   "category": "food"
+  },
+  {
+   "object_type": 126,
+   "classes": [
+    "_0x2b23c1"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 3,
+   "category": "object"
+  },
+  {
+   "object_type": 127,
+   "classes": [
+    "_0x28e049"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "img/camera.png"
+   ],
+   "label": "camera",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 3,
+   "category": "food"
+  },
+  {
+   "object_type": 128,
+   "classes": [
+    "_0x1ffbc1",
+    "_0x5881e5",
+    "_0x40e1f7",
+    "_0x1786fc",
+    "_0x1a4a75"
+   ],
+   "subtypes": [
+    1,
+    2,
+    4,
+    5
+   ],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "img/custom/pad.png",
+    "img/custom/trampoline/leg_zebra.png",
+    "img/custom/trampoline/rug_zebra.png",
+    "img/custom/trunk1.png",
+    "img/custom/trunk2.png"
+   ],
+   "label": "leg_zebra, pad, rug_zebra",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 21,
+   "category": "object"
+  },
+  {
+   "object_type": 129,
+   "classes": [
+    "_0x14e52a"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt32"
+    },
+    {
+     "op": "String"
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 3,
+   "category": "object"
+  },
+  {
+   "object_type": 130,
+   "classes": [
+    "_0x3c2aec"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "String"
+    },
+    {
+     "op": "String"
+    },
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "BitGroup"
+    },
+    {
+     "op": "UInt8",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 6,
+   "category": "object"
+  },
+  {
+   "object_type": 131,
+   "classes": [
+    "_0x20f7aa"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "img/pumpkin/"
+   ],
+   "label": "pumpkin",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 5,
+   "category": "object"
+  },
+  {
+   "object_type": 132,
+   "classes": [
+    "_0x534412"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "img/coin/coin",
+    "shop/mopecoin.png"
+   ],
+   "label": "coin",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 6,
+   "category": "food"
+  },
+  {
+   "object_type": 133,
+   "classes": [
+    "_0x480d6f"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "_body.png",
+    "_head.png",
+    "skins/"
+   ],
+   "label": "skins",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 6,
+   "category": "effect"
+  },
+  {
+   "object_type": 134,
+   "classes": [
+    "_0x2eefba"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "skins/forest/turkey/"
+   ],
+   "label": "turkey",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 3,
+   "category": "food"
+  },
+  {
+   "object_type": 135,
+   "classes": [
+    "_0x149ca1"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/135",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "food"
+  },
+  {
+   "object_type": 136,
+   "classes": [
+    "_0x3354c3"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/136",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "food"
+  },
+  {
+   "object_type": 137,
+   "classes": [
+    "_0x411b29"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/137",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "food"
+  },
+  {
+   "object_type": 138,
+   "classes": [
+    "_0x32fdd9"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/138",
+   "edible_variant": false,
+   "minimap": "brown",
+   "minimap_by_biome": [
+    "#8f822e",
+    "red",
+    "#198ebd"
+   ],
+   "biome_skin": false,
+   "references": 4,
+   "category": "terrain"
+  },
+  {
+   "object_type": 139,
+   "classes": [
+    "_0x566472"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "object"
+  },
+  {
+   "object_type": 140,
+   "classes": [
+    "_0x2dcb47"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "/cave_bottom.png",
+    "/cave_top.png",
+    "gameobj/"
+   ],
+   "label": "gameobj/140",
+   "edible_variant": false,
+   "minimap": "brown",
+   "minimap_by_biome": [
+    "#8f822e",
+    "red",
+    "#198ebd"
+   ],
+   "biome_skin": false,
+   "references": 4,
+   "category": "terrain"
+  },
+  {
+   "object_type": 141,
+   "classes": [
+    "_0xd5c49d"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "object"
+  },
+  {
+   "object_type": 142,
+   "classes": [
+    "_0x3fc490"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/142",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 3,
+   "category": "food"
+  },
+  {
+   "object_type": 143,
+   "classes": [
+    "_0x3b0492"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "/gift_e.png",
+    "img/xmasgifts/"
+   ],
+   "label": "xmasgifts",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 3,
+   "category": "food"
+  },
+  {
+   "object_type": 144,
+   "classes": [
+    "_0x2067a8"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "_ripple.png",
+    "img/floaters/"
+   ],
+   "label": "floaters",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 6,
+   "category": "object"
+  },
+  {
+   "object_type": 145,
+   "classes": [
+    "_0x5e5982"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "img/beachball/"
+   ],
+   "label": "beachball",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 5,
+   "category": "object"
+  },
+  {
+   "object_type": 146,
+   "classes": [
+    "_0x31652d"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "img/umbrella/"
+   ],
+   "label": "umbrella",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 4,
+   "category": "object"
+  },
+  {
+   "object_type": 147,
+   "classes": [
+    "_0x427869"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "String"
+    },
+    {
+     "op": "UInt16"
+    },
+    {
+     "op": "BitGroup"
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/147",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 19,
+   "category": "object"
+  },
+  {
+   "object_type": 148,
+   "classes": [
+    "_0x221fb6"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "img/wave.png"
+   ],
+   "label": "wave",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 4,
+   "category": "object"
+  },
+  {
+   "object_type": 149,
+   "classes": [
+    "_0x1bc9ab"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 4,
+   "category": "object"
+  },
+  {
+   "object_type": 150,
+   "classes": [],
+   "subtypes": [],
+   "appear_reads": [],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 5,
+   "category": "object"
+  },
+  {
+   "object_type": 151,
+   "classes": [
+    "_0x16c7ec"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/151",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 4,
+   "category": "object"
+  },
+  {
+   "object_type": 152,
+   "classes": [
+    "_0x23f0f"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    },
+    {
+     "op": "UInt32"
+    },
+    {
+     "op": "String",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "img/upgradeshell/",
+    "img/upgradeshell/outline"
+   ],
+   "label": "outline, upgradeshell",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 9,
+   "category": "food"
+  },
+  {
+   "object_type": 153,
+   "classes": [
+    "_0x43501b"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "img/upgradeshell/shellpart"
+   ],
+   "label": "shellpart",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "object"
+  },
+  {
+   "object_type": 154,
+   "classes": [
+    "_0xc8112f"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "/meteorite.png",
+    "gameobj/"
+   ],
+   "label": "gameobj/154",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 4,
+   "category": "effect"
+  },
+  {
+   "object_type": 155,
+   "classes": [
+    "_0x57b98e"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/155",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "object"
+  },
+  {
+   "object_type": 157,
+   "classes": [
+    "_0x2acd17"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/157",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "object"
+  },
+  {
+   "object_type": 158,
+   "classes": [
+    "_0x2be80e"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    },
+    {
+     "op": "UInt16"
+    },
+    {
+     "op": "UInt16"
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/158",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 3,
+   "category": "food"
+  },
+  {
+   "object_type": 159,
+   "classes": [
+    "_0x505f66"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    },
+    {
+     "op": "UInt16"
+    },
+    {
+     "op": "UInt16"
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/159",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 3,
+   "category": "food"
+  },
+  {
+   "object_type": 160,
+   "classes": [
+    "_0x3d60bc"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/160",
+   "edible_variant": true,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 3,
+   "category": "food"
+  },
+  {
+   "object_type": 161,
+   "classes": [
+    "_0x23fab6"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 4,
+   "category": "object"
+  },
+  {
+   "object_type": 162,
+   "classes": [
+    "_0x3e84b5"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [],
+   "label": "",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "object"
+  },
+  {
+   "object_type": 163,
+   "classes": [
+    "_0x2052c4"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "/tornado.png",
+    "skins/land/birdmonster/"
+   ],
+   "label": "birdmonster",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "effect"
+  },
+  {
+   "object_type": 164,
+   "classes": [
+    "_0x4461e5"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt16",
+     "flags": [
+      "conditional"
+     ]
+    }
+   ],
+   "assets": [
+    "/electric-charge.png",
+    "skins/land/birdmonster/"
+   ],
+   "label": "birdmonster",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 2,
+   "category": "effect"
+  },
+  {
+   "object_type": 165,
+   "classes": [
+    "_0x1d6fee"
+   ],
+   "subtypes": [],
+   "appear_reads": [
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt8"
+    },
+    {
+     "op": "UInt8"
+    }
+   ],
+   "assets": [
+    "gameobj/"
+   ],
+   "label": "gameobj/165",
+   "edible_variant": false,
+   "minimap": null,
+   "biome_skin": false,
+   "references": 4,
+   "category": "object"
   }
  ],
  "switches": [
