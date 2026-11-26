@@ -50,6 +50,7 @@ LOCAL_LOGIN_BUTTON = (b'\n      <button id="localLoginBtn" class="discordLoginBt
                       b'style="background:#2d8b2d" onclick="location.href=\'/auth/local\'">'
                       b'Login with a local account</button>')
 LOCAL_TURNSTILE = b"/__local/turnstile_local.js"
+LIVE_SKIN_RE = re.compile(r"^/(?:\./)?assets/s/(\d+)/.+\.png$")
 MASTER_GET = {"/servers/get", "/master/regions", "/master/client-config", "/master/health"}
 ACCOUNT_EXACT = {"/shop/get", "/shop/purchases", "/shop/buy", "/shop/wardrobe/save", "/addCoins",
                  "/resetAccount", "/playerSettings_update"}
@@ -118,6 +119,9 @@ class Gateway:
             if config.get("settings", {}).get("WEB_UPDATES_FILE") else None
         self.shim = PROJECT / "shims" / "turnstile_local.js"
         self.client_js = ClientConfigRewriter(self.root / "client.js", log)
+        live = config.get("settings", {}).get("SHOP_LIVE_SKINS_DIR") or ""
+        self.live_dir = Path(live) if live else None
+        self._live = (None, {})
         self.master = common.master_url(config)
         self.account = common.account_url(config)
         self.remote = config.get("remote")
@@ -157,6 +161,29 @@ class Gateway:
                 "devAccountServerUrl": common.web_origin(self.config), "env": env,
                 "isProduction": env == "production", "isTestingMode": bool(settings.get("CLIENT_TESTING_MODE")),
                 "isBetaMode": bool(settings.get("CLIENT_BETA_MODE"))}, "config"
+
+    def live_skin(self, path: str) -> Path | None:
+        """/assets/s/<season>/....png for a season assigned by import_live_skins.py -> its picture."""
+        match = LIVE_SKIN_RE.match(path)
+        if not match or self.live_dir is None:
+            return None
+        manifest = self.live_dir / "manifest.json"
+        try:
+            mtime = manifest.stat().st_mtime
+        except OSError:
+            return None
+        if self._live[0] != mtime:
+            try:
+                seasons = json.loads(manifest.read_text(encoding="utf-8")).get("seasons", {})
+            except (OSError, ValueError) as exc:
+                self.log.error("live skins: cannot read %s (%s)", manifest, exc)
+                seasons = {}
+            self._live = (mtime, seasons)
+        rel = self._live[1].get(match.group(1))
+        if not rel:
+            return None
+        file = (self.live_dir / rel).resolve()
+        return file if self.live_dir.resolve() in file.parents and file.is_file() else None
 
     def static_path(self, path: str) -> Path | None:
         rel = unquote(path).lstrip("/") or "index.html"
@@ -245,6 +272,10 @@ def make_handler(gw: Gateway):
             return self._static(path, head)
 
         def _static(self, path: str, head: bool):
+            live = gw.live_skin(path)
+            if live is not None:
+                return self._send(200, live.read_bytes(), "image/webp", {"X-Local-Rewrite": "live skin picture"},
+                                  head)
             file = gw.static_path(path)
             if file is None:
                 return self._send(404, b"not in the archived snapshot\n", "text/plain", head=head)
