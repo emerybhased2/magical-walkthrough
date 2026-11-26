@@ -111,6 +111,20 @@ class MessageTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             view.feed(gp.msg_world_update((0, 0), 1, True, [], [(ghost, {gp.PROP_POS: (2, 2)})], []))
 
+    def test_season_bytes_select_the_asset_folder(self):
+        me = Entity(5, gp.OTYPE_ANIMAL, 1, 1, 16, subtype=1, nick="")
+        food = Entity(6, 3, 1, 1, 9)
+        update = gp.decode_world_update(gp.msg_world_update((0, 0), 1, True, [me, food], [], []))
+        self.assertEqual([o["season"] for o in update["new"]], [1, 1])
+
+    def test_resize(self):
+        data = common.PacketWriter(gp.OP_RESIZE).u16(1600).u16(900).u16(1600).bytes()
+        self.assertEqual(gp.parse_resize(data), (1600, 900, 1600))
+        world = World(game_config(), rng=random.Random(2))
+        world.spawn_player("a", "A", (1280, 800))
+        world.resize("a", 1600, 900)
+        self.assertEqual((world.views["a"].width, world.views["a"].height), (1600, 900))
+
     def test_input_pos(self):
         data = common.PacketWriter(gp.OP_INPUT_POS).i16(-5).i16(1200).bytes()
         self.assertEqual(gp.parse_input_pos(data), (-5, 1200))

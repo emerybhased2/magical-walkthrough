@@ -236,3 +236,19 @@ paths from its own data (animal table, subspecies enums, part names, food list, 
 file that exists. The site serves a 200 HTML page for unknown paths, so only real image bytes count. The 2026-11-26
 snapshot holds 622 images, with files for all 103 animals. It is kept separate from the archived client's art,
 which these files do not replace. Details: [`live/README.md`](live/README.md).
+
+## Phase 6 — integration, final verification, startup and maintenance
+
+```bash
+./start-all.sh              # setup (venv, requirements, .env, checks) + start everything + status
+./start-all.sh logs -f      # central logs, merged
+./start-all.sh verify       # all unit tests + phase6_verify.py (every region, multiplayer, accounts, assets, real client)
+./start-all.sh stop         # graceful shutdown
+.venv/bin/python phase6_compat.py   # regenerate phase6/COMPATIBILITY.md
+```
+
+Integration found and repaired two incompatibilities: the asset season the server sent, and the client's
+unhandled resize message. The gateway now serves the archived images after the snapshot.
+[`phase6/README.md`](phase6/README.md) covers installation, startup, troubleshooting and maintenance.
+[`phase6/COMPATIBILITY.md`](phase6/COMPATIBILITY.md) measures the stack against the April 2021 archive and lists every
+feature as completed, partial or unresolved.

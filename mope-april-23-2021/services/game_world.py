@@ -44,6 +44,7 @@ class Entity:
     species: int = 0
     sub_species: int = 0
     hurt: bool = False
+    season: int = 1            # mopeSeasonID: the client loads this object's images from ./assets/s/<season>/
 
 
 @dataclass
@@ -130,6 +131,12 @@ class World:
         self.views.pop(conn_key, None)
         if player is not None:
             self.remove(player.entity.id)
+
+    def resize(self, conn_key, width: int, height: int) -> None:
+        """C->S 17: the client's canvas changed size, so its view rectangle does too."""
+        view = self.views.get(conn_key)
+        if view is not None and width > 0 and height > 0:
+            view.width, view.height = min(width, 8192), min(height, 8192)
 
     def set_target(self, conn_key, x: float, y: float) -> None:
         player = self.players.get(conn_key)

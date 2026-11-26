@@ -71,7 +71,9 @@ class RegionServer:
         self.token = token
         game = config["game"]
         self.game_version = int(game.get("version", 296))
-        self.season = int(game.get("season", 0))
+        # Server-info season = the client's default asset folder ./assets/s/<season>/ (client default 1, L2166;
+        # every archived season asset is under assets/s/1/).
+        self.season = int(game.get("season", 1))
         self.join_timeout = float(game.get("join_timeout_seconds", 10))
         self.resume_window = float(game.get("session_resume_seconds", 60))
         self.connections: dict[object, Connection] = {}
@@ -189,6 +191,13 @@ class RegionServer:
                     f"Local region {self.region['name']}: early gameplay - eat food to evolve (Phase 5)."))
             if conn.ws not in self.world.players:
                 await self._spawn(conn, play)
+            return False
+        if opcode == gp.OP_RESIZE:
+            try:
+                width, height, _ = gp.parse_resize(data)
+            except ValueError:
+                return False
+            self.world.resize(conn.ws, width, height)
             return False
         if opcode == gp.OP_INPUT_POS:
             try:

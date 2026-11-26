@@ -4,7 +4,7 @@ localstack.py -- start, stop and inspect the local mope.io stack (Phase 3, task 
 
 Services (from config/local_stack.json):
   master                 master server            http://127.0.0.1:8090 (internal)
-  region-<id>            one per region (9)       ws://local.mope.io:7001..7009
+  region-<id>            one per region (20)      ws://local.mope.io:7001..7020
   account                account server           http://127.0.0.1:8091 (internal, via the gateway)
   web                    web gateway              http://local.mope.io:8080  <- open this
 

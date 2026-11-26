@@ -29,6 +29,7 @@ OP_WORLD_UPDATE = 4
 OP_GAME_SIZE = 17
 OP_YOUR_ANIMAL = 18
 OP_INPUT_POS = 5
+OP_RESIZE = 17          # C->S window resize (_0x48481b, L28874): UInt16 w, UInt16 h, UInt16 (S->C 17 is game size)
 
 OTYPE_ANIMAL = 2
 # Object types that read an extra UInt16 sub-type right after the type (_0x174e3c, L690).
@@ -140,8 +141,9 @@ def encode_new_object(obj) -> bytes:
     if obj.otype in CUSTOM_SUBTYPE_OTYPES:
         w.u16(obj.subtype)
     w.u32(obj.id).u32(int(round(obj.rad * 4))).u16(_u16(obj.x * 4)).u16(_u16(obj.y * 4)).u8(obj.biome)
+    season = getattr(obj, "season", 1)
     if obj.otype != OTYPE_ANIMAL:
-        w.u8(0).u16(0).u16(0).u16(0)           # season, animalType, speciesType, speciesSubType
+        w.u8(season).u16(0).u16(0).u16(0)      # mopeSeasonID (L8287), animalType, speciesType, speciesSubType
     gets_angle = obj.otype == OTYPE_ANIMAL
     w.buf += bit_group([False, False, gets_angle, False])   # spawnedBy, isRect, getsAngleUpdate, batchDraw
     w.u8(angle_u8(obj.angle))
@@ -150,7 +152,8 @@ def encode_new_object(obj) -> bytes:
         w.u16(_u16(obj.rad * 4))
     if obj.otype == OTYPE_ANIMAL:
         w.string_s2c(obj.nick or "")
-        w.u16(obj.species).u16(obj.sub_species).u8(0).u8(0).u8(0).u8(0)   # premium skin, theme, season, vip
+        # premium skin, skinThemeID, mopeSeasonID, isVip (L10577): the season picks ./assets/s/<season>/
+        w.u16(obj.species).u16(obj.sub_species).u8(0).u8(0).u8(season).u8(0)
         w.buf += bit_group([False] * ANIMAL_FLAG_BITS)
         w.u16(0)                               # property 63: wins1v1
         w.u8(0)                                # property 108: teamID
@@ -214,6 +217,13 @@ def msg_world_update(camera: tuple[float, float], zoom: float, alive: bool, new_
 
 # -- C->S -------------------------------------------------------------------------------
 
+def parse_resize(data: bytes) -> tuple[int, int, int]:
+    reader = PacketReader(data)
+    if reader.u8() != OP_RESIZE:
+        raise ValueError("not a resize packet")
+    return reader.u16(), reader.u16(), reader.u16()
+
+
 def parse_input_pos(data: bytes) -> tuple[int, int]:
     reader = PacketReader(data)
     if reader.u8() != OP_INPUT_POS:
@@ -248,7 +258,8 @@ def _decode_new_object(r: PacketReader) -> dict:
     obj["subtype"] = r.u16() if obj["otype"] in CUSTOM_SUBTYPE_OTYPES else 0
     obj.update(id=r.u32(), rad=r.u32() / 4, x=r.u16() / 4, y=r.u16() / 4, biome=r.u8())
     if obj["otype"] != OTYPE_ANIMAL:
-        r.u8(), r.u16(), r.u16(), r.u16()
+        obj["season"] = r.u8()
+        r.u16(), r.u16(), r.u16()
     read_bit_group(r)
     obj["angle"] = r.u8() * 2
     r.u8(), r.u8()
@@ -257,7 +268,9 @@ def _decode_new_object(r: PacketReader) -> dict:
     if obj["otype"] == OTYPE_ANIMAL:
         obj["nick"] = r.string_s2c()
         obj["species"], obj["sub_species"] = r.u16(), r.u16()
-        r.u8(), r.u8(), r.u8(), r.u8()
+        r.u8(), r.u8()
+        obj["season"] = r.u8()
+        r.u8()
         read_bit_group(r)
         r.u16(), r.u8()
     return obj
