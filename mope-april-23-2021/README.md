@@ -211,3 +211,19 @@ other. Message layouts (spawn 17/107/18/6, world update 4, cursor 5) come from t
 evolution chain, thresholds and food settings are configurable approximations, because the original server
 decided them. See [`phase5/README.md`](phase5/README.md); `python phase5_verify.py` runs the 8 checks, including
 the real client evolving in Chromium.
+
+## Image catalogue and decoder (`decode_images.ts`, Bun)
+
+`bun decode_images.ts` decodes every image path the archived client can build: animals, food, game objects,
+abilities, disasters, shop and UI. It then fetches every archived version of those images from Arquivo.pt and
+Common Crawl (vefsafn.is is used for discovery only; no Wayback Machine). Each file is decoded from its own
+bytes (PNG data inflated and CRC-checked; JPEG, GIF, WebP, SVG and ICO structure checked), and the files are
+sorted by category and animal. Images stay local in `archive/images/` (git-ignored). Results and coverage are in
+[`images/README.md`](images/README.md).
+
+```bash
+bun install                     # acorn (JavaScript parser)
+bun decode_images.ts            # catalogue + discover + download + decode + report
+bun decode_images.ts --catalog-only
+bun test tests/
+```

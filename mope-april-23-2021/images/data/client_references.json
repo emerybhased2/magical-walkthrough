@@ -1,0 +1,10619 @@
+{
+ "generated": "2026-11-26T04:03:37.353Z",
+ "tool": "decode_images.ts 1.0.0",
+ "client": "snapshots/2025-12-10/working/client-js/20251210042757_arquivo/client.js",
+ "constants": 1310,
+ "classes": 238,
+ "loaders": [
+  "_0x25f30f",
+  "_0x43952a"
+ ],
+ "templatesByCategory": {
+  "abilities": 44,
+  "animals": 294,
+  "ui": 15,
+  "other": 118,
+  "shop-ui": 14,
+  "disasters": 9,
+  "world-and-effects": 35,
+  "food": 24,
+  "game-objects": 52,
+  "shop-skins": 1
+ },
+ "templates": [
+  {
+   "template": "assets/abilities/Dash-Boost.svg",
+   "alternatives": [
+    "assets/abilities/Dash-Boost.svg"
+   ],
+   "holes": [],
+   "category": "abilities",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1041,
+    1043
+   ]
+  },
+  {
+   "template": "skins/desert/gobibear/{_0x212882.animalSpecies}/gobibear_attack.png",
+   "alternatives": [
+    "skins/desert/gobibear/{_0x212882.animalSpecies}/gobibear_attack.png"
+   ],
+   "holes": [
+    "_0x212882.animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1163
+   ]
+  },
+  {
+   "template": "skins/{expr}.png",
+   "alternatives": [
+    "skins/{expr}.png"
+   ],
+   "holes": [
+    "expr"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImagePath"
+   ],
+   "lines": [
+    1167,
+    1171,
+    1175,
+    1182,
+    1185,
+    1191,
+    1197,
+    1200,
+    1208,
+    1212,
+    1216,
+    1219,
+    1225,
+    1231,
+    1237,
+    1243,
+    1246,
+    1249,
+    1252,
+    1258,
+    1267,
+    1270,
+    1273,
+    1288,
+    1291,
+    1297,
+    1300,
+    1311,
+    1318,
+    1341,
+    1345,
+    1373,
+    1376,
+    1385,
+    9740,
+    15930
+   ]
+  },
+  {
+   "template": "skins/desert/camel/spit.png",
+   "alternatives": [
+    "skins/desert/camel/spit.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1178
+   ]
+  },
+  {
+   "template": "img/ability_dive.png",
+   "alternatives": [
+    "img/ability_dive.png"
+   ],
+   "holes": [],
+   "category": "abilities",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1188,
+    1972
+   ]
+  },
+  {
+   "template": "skins/{expr}2.png",
+   "alternatives": [
+    "skins/{expr}2.png"
+   ],
+   "holes": [
+    "expr"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1194,
+    1276
+   ]
+  },
+  {
+   "template": "skins/pelican/{_0x212882.animalSpecies}/ability_pelican.png",
+   "alternatives": [
+    "skins/pelican/{_0x212882.animalSpecies}/ability_pelican.png"
+   ],
+   "holes": [
+    "_0x212882.animalSpecies"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1205
+   ]
+  },
+  {
+   "template": "img/snowball.png",
+   "alternatives": [
+    "img/snowball.png"
+   ],
+   "holes": [],
+   "category": "ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1222,
+    1234,
+    21444
+   ]
+  },
+  {
+   "template": "img/spiderWeb.png",
+   "alternatives": [
+    "img/spiderWeb.png"
+   ],
+   "holes": [],
+   "category": "ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1228
+   ]
+  },
+  {
+   "template": "img/ability_claw.png",
+   "alternatives": [
+    "img/ability_claw.png"
+   ],
+   "holes": [],
+   "category": "abilities",
+   "base": "inferred",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    1240,
+    8653
+   ]
+  },
+  {
+   "template": "skins/{expr}{expr}.png",
+   "alternatives": [
+    "skins/{expr}{expr}.png"
+   ],
+   "holes": [
+    "expr"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1255
+   ]
+  },
+  {
+   "template": "skins/{_0x4c6693.skinName}.png",
+   "alternatives": [
+    "skins/{_0x4c6693.skinName}.png"
+   ],
+   "holes": [
+    "_0x4c6693.skinName"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1265,
+    1307,
+    1325,
+    1332
+   ]
+  },
+  {
+   "template": "img/fire.png",
+   "alternatives": [
+    "img/fire.png"
+   ],
+   "holes": [],
+   "category": "ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1279,
+    1282
+   ]
+  },
+  {
+   "template": "img/ability_crabSmashSkin.png",
+   "alternatives": [
+    "img/ability_crabSmashSkin.png"
+   ],
+   "holes": [],
+   "category": "abilities",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1285
+   ]
+  },
+  {
+   "template": "skins/ostrich/ostrich-baby.png",
+   "alternatives": [
+    "skins/ostrich/ostrich-baby.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1294
+   ]
+  },
+  {
+   "template": "skins/ocean/flamingo/{_0x212882.animalSpecies}/flamingo.png",
+   "alternatives": [
+    "skins/ocean/flamingo/{_0x212882.animalSpecies}/flamingo.png"
+   ],
+   "holes": [
+    "_0x212882.animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1337
+   ]
+  },
+  {
+   "template": "skins/desert/gazelle/gazelle1.png",
+   "alternatives": [
+    "skins/desert/gazelle/gazelle1.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1348
+   ]
+  },
+  {
+   "template": "skins/desert/armadillo/{_0x212882.animalSpecies}/armadillo1.png",
+   "alternatives": [
+    "skins/desert/armadillo/{_0x212882.animalSpecies}/armadillo1.png"
+   ],
+   "holes": [
+    "_0x212882.animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1352
+   ]
+  },
+  {
+   "template": "skins/desert/meerkat/{_0x212882.animalSpecies}/meerkat1.png",
+   "alternatives": [
+    "skins/desert/meerkat/{_0x212882.animalSpecies}/meerkat1.png"
+   ],
+   "holes": [
+    "_0x212882.animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1356
+   ]
+  },
+  {
+   "template": "skins/desert/chipmunk/{_0x212882.animalSpecies}/chipmunk1.png",
+   "alternatives": [
+    "skins/desert/chipmunk/{_0x212882.animalSpecies}/chipmunk1.png"
+   ],
+   "holes": [
+    "_0x212882.animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1360
+   ]
+  },
+  {
+   "template": "skins/desert/fennecfox/{_0x212882.animalSpecies}/fennecfox1.png",
+   "alternatives": [
+    "skins/desert/fennecfox/{_0x212882.animalSpecies}/fennecfox1.png"
+   ],
+   "holes": [
+    "_0x212882.animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1364
+   ]
+  },
+  {
+   "template": "skins/cassowary/cassowary1.png",
+   "alternatives": [
+    "skins/cassowary/cassowary1.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1367
+   ]
+  },
+  {
+   "template": "img/firetornado.png",
+   "alternatives": [
+    "img/firetornado.png"
+   ],
+   "holes": [],
+   "category": "ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1370
+   ]
+  },
+  {
+   "template": "skins/monsters/dinomonster/dinomonster.png",
+   "alternatives": [
+    "skins/monsters/dinomonster/dinomonster.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1379
+   ]
+  },
+  {
+   "template": "skins/monsters/icemonster/icemonster.png",
+   "alternatives": [
+    "skins/monsters/icemonster/icemonster.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1382
+   ]
+  },
+  {
+   "template": "{_0x2566bc}/gameobj/18/{_0x1f2486.speciesType}/{cond}.png",
+   "alternatives": [
+    "{_0x2566bc}/gameobj/18/{_0x1f2486.speciesType}/{cond}.png"
+   ],
+   "holes": [
+    "_0x2566bc",
+    "_0x1f2486.speciesType",
+    "cond"
+   ],
+   "category": "other",
+   "base": "root",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    1944
+   ]
+  },
+  {
+   "template": "{_0x1f6d1a}",
+   "alternatives": [
+    "{_0x1f6d1a}"
+   ],
+   "holes": [
+    "_0x1f6d1a"
+   ],
+   "category": "other",
+   "base": "root",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    1960
+   ]
+  },
+  {
+   "template": "img/ability_dive_lava.png",
+   "alternatives": [
+    "img/ability_dive_lava.png"
+   ],
+   "holes": [],
+   "category": "abilities",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1974
+   ]
+  },
+  {
+   "template": "img/ability_diveMud.png",
+   "alternatives": [
+    "img/ability_diveMud.png"
+   ],
+   "holes": [],
+   "category": "abilities",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    1975
+   ]
+  },
+  {
+   "template": "{_0x2206f7}",
+   "alternatives": [
+    "{_0x2206f7}"
+   ],
+   "holes": [
+    "_0x2206f7"
+   ],
+   "category": "other",
+   "base": "root",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    2587
+   ]
+  },
+  {
+   "template": "assets/powerups/powerup-{_0x28b13a.name}.png",
+   "alternatives": [
+    "assets/powerups/powerup-{_0x28b13a.name}.png"
+   ],
+   "holes": [
+    "_0x28b13a.name"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    3138
+   ]
+  },
+  {
+   "template": "shop/mopecoin.png",
+   "alternatives": [
+    "shop/mopecoin.png"
+   ],
+   "holes": [],
+   "category": "shop-ui",
+   "base": "root",
+   "via": [
+    "loader",
+    "expression"
+   ],
+   "lines": [
+    5091,
+    14304,
+    14304,
+    14687,
+    15243,
+    15972,
+    16038
+   ]
+  },
+  {
+   "template": "img/howToPlay1.png",
+   "alternatives": [
+    "img/howToPlay1.png"
+   ],
+   "holes": [],
+   "category": "ui",
+   "base": "root",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    5239
+   ]
+  },
+  {
+   "template": "assets/s/{_0x29f1de}/img/disasters/{_0xfa5361()}.png",
+   "alternatives": [
+    "assets/s/{_0x29f1de}/img/disasters/{_0xfa5361()}.png"
+   ],
+   "holes": [
+    "_0x29f1de",
+    "_0xfa5361()"
+   ],
+   "category": "disasters",
+   "base": "absolute",
+   "via": [
+    "expression",
+    "loader"
+   ],
+   "lines": [
+    5388,
+    5389
+   ]
+  },
+  {
+   "template": "img/disasters/tsunami.png",
+   "alternatives": [
+    "img/disasters/tsunami.png"
+   ],
+   "holes": [],
+   "category": "disasters",
+   "base": "inferred",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    5414,
+    24905
+   ]
+  },
+  {
+   "template": "img/disasters/dustwave.png",
+   "alternatives": [
+    "img/disasters/dustwave.png"
+   ],
+   "holes": [],
+   "category": "disasters",
+   "base": "inferred",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    5416,
+    24735
+   ]
+  },
+  {
+   "template": "img/disasters/heatwave.png",
+   "alternatives": [
+    "img/disasters/heatwave.png"
+   ],
+   "holes": [],
+   "category": "disasters",
+   "base": "inferred",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    5418,
+    5420,
+    24759
+   ]
+  },
+  {
+   "template": "img/disasters/coldwave.png",
+   "alternatives": [
+    "img/disasters/coldwave.png"
+   ],
+   "holes": [],
+   "category": "disasters",
+   "base": "inferred",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    5422,
+    24688
+   ]
+  },
+  {
+   "template": "assets/s/{_0x29f1de}/{_0x333419()}",
+   "alternatives": [
+    "assets/s/{_0x29f1de}/{_0x333419()}"
+   ],
+   "holes": [
+    "_0x29f1de",
+    "_0x333419()"
+   ],
+   "category": "other",
+   "base": "absolute",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    5429
+   ]
+  },
+  {
+   "template": "assets/s/{_0x29f1de}/img/pumpkin/{_0xcb80ef.specType}/0.png",
+   "alternatives": [
+    "assets/s/{_0x29f1de}/img/pumpkin/{_0xcb80ef.specType}/0.png"
+   ],
+   "holes": [
+    "_0x29f1de",
+    "_0xcb80ef.specType"
+   ],
+   "category": "world-and-effects",
+   "base": "absolute",
+   "via": [
+    "expression",
+    "loader"
+   ],
+   "lines": [
+    5446,
+    5447
+   ]
+  },
+  {
+   "template": "img/icons/1v1.png",
+   "alternatives": [
+    "img/icons/1v1.png"
+   ],
+   "holes": [],
+   "category": "ui",
+   "base": "root",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    5555
+   ]
+  },
+  {
+   "template": "img/sound_off.png",
+   "alternatives": [
+    "img/sound_off.png"
+   ],
+   "holes": [],
+   "category": "ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    5600
+   ]
+  },
+  {
+   "template": "img/sound_on.png",
+   "alternatives": [
+    "img/sound_on.png"
+   ],
+   "holes": [],
+   "category": "ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    5600
+   ]
+  },
+  {
+   "template": "{getSkinForAniKills()}",
+   "alternatives": [
+    "{getSkinForAniKills()}"
+   ],
+   "holes": [
+    "getSkinForAniKills()"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    5830
+   ]
+  },
+  {
+   "template": "skins/volcano/blackdragon/0/blackdragon.png",
+   "alternatives": [
+    "skins/volcano/blackdragon/0/blackdragon.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    5881,
+    29263
+   ]
+  },
+  {
+   "template": "skins/land/dinomonster/0/dinomonster.png",
+   "alternatives": [
+    "skins/land/dinomonster/0/dinomonster.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    5883,
+    29265
+   ]
+  },
+  {
+   "template": "skins/arctic/icemonster/0/icemonster.png",
+   "alternatives": [
+    "skins/arctic/icemonster/0/icemonster.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    5885,
+    29267
+   ]
+  },
+  {
+   "template": "skins/volcano/landmonster/0/0/landmonster.png",
+   "alternatives": [
+    "skins/volcano/landmonster/0/0/landmonster.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    5887,
+    29269
+   ]
+  },
+  {
+   "template": "skins/ocean/seamonster/0/seamonster.png",
+   "alternatives": [
+    "skins/ocean/seamonster/0/seamonster.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    5889,
+    29271
+   ]
+  },
+  {
+   "template": "skins/desert/scorpion/0/giantscorpion.png",
+   "alternatives": [
+    "skins/desert/scorpion/0/giantscorpion.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    5891,
+    29273
+   ]
+  },
+  {
+   "template": "skins/arctic/yeti/0/yeti.png",
+   "alternatives": [
+    "skins/arctic/yeti/0/yeti.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    5893
+   ]
+  },
+  {
+   "template": "skins/land/dragon/0/0/dragon.png",
+   "alternatives": [
+    "skins/land/dragon/0/0/dragon.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    5895,
+    29277
+   ]
+  },
+  {
+   "template": "skins/land/trex/0/trex.png",
+   "alternatives": [
+    "skins/land/trex/0/trex.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    5897,
+    29279
+   ]
+  },
+  {
+   "template": "skins/ocean/kraken/0/0/kraken.png",
+   "alternatives": [
+    "skins/ocean/kraken/0/0/kraken.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    5899,
+    29281
+   ]
+  },
+  {
+   "template": "skins/ocean/kingcrab/0/kingcrab.png",
+   "alternatives": [
+    "skins/ocean/kingcrab/0/kingcrab.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    5901,
+    29283
+   ]
+  },
+  {
+   "template": "skins/volcano/phoenix/0/phoenix.png",
+   "alternatives": [
+    "skins/volcano/phoenix/0/phoenix.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    5903
+   ]
+  },
+  {
+   "template": "skins/desert/pterodactyl/0/pterodactyl_ability.png",
+   "alternatives": [
+    "skins/desert/pterodactyl/0/pterodactyl_ability.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    5905,
+    29287
+   ]
+  },
+  {
+   "template": "assets/s/{_0x1db560.mopeSeasonID}/{_0x1db560.abilImg}",
+   "alternatives": [
+    "assets/s/{_0x1db560.mopeSeasonID}/{_0x1db560.abilImg}"
+   ],
+   "holes": [
+    "_0x1db560.mopeSeasonID",
+    "_0x1db560.abilImg"
+   ],
+   "category": "other",
+   "base": "absolute",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    5973
+   ]
+  },
+  {
+   "template": "{objSkinPath}",
+   "alternatives": [
+    "{objSkinPath}"
+   ],
+   "holes": [
+    "objSkinPath"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7087,
+    12562,
+    23607,
+    25380
+   ]
+  },
+  {
+   "template": "img/coconut[_e|].png",
+   "alternatives": [
+    "img/coconut_e.png",
+    "img/coconut.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7289
+   ]
+  },
+  {
+   "template": "img/banana[_e|].png",
+   "alternatives": [
+    "img/banana_e.png",
+    "img/banana.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7304
+   ]
+  },
+  {
+   "template": "img/rasp[_e|].png",
+   "alternatives": [
+    "img/rasp_e.png",
+    "img/rasp.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7319
+   ]
+  },
+  {
+   "template": "img/pear[_e|].png",
+   "alternatives": [
+    "img/pear_e.png",
+    "img/pear.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7334
+   ]
+  },
+  {
+   "template": "img/seaweed[_e|].png",
+   "alternatives": [
+    "img/seaweed_e.png",
+    "img/seaweed.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7349
+   ]
+  },
+  {
+   "template": "img/starfish[_e|].png",
+   "alternatives": [
+    "img/starfish_e.png",
+    "img/starfish.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7357
+   ]
+  },
+  {
+   "template": "img/kelp[_e|].png",
+   "alternatives": [
+    "img/kelp_e.png",
+    "img/kelp.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7365
+   ]
+  },
+  {
+   "template": "img/clam[_e|].png",
+   "alternatives": [
+    "img/clam_e.png",
+    "img/clam.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7373
+   ]
+  },
+  {
+   "template": "img/conch[_e|].png",
+   "alternatives": [
+    "img/conch_e.png",
+    "img/conch.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7381
+   ]
+  },
+  {
+   "template": "skins/land/ostrich/{speciesType}/ostrichEgg[_e|].png",
+   "alternatives": [
+    "skins/land/ostrich/{speciesType}/ostrichEgg_e.png",
+    "skins/land/ostrich/{speciesType}/ostrichEgg.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7393
+   ]
+  },
+  {
+   "template": "img/{_0x15df92}[_e|].png",
+   "alternatives": [
+    "img/{_0x15df92}_e.png",
+    "img/{_0x15df92}.png"
+   ],
+   "holes": [
+    "_0x15df92"
+   ],
+   "category": "food",
+   "base": "inferred",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7414,
+    7415
+   ]
+  },
+  {
+   "template": "img/beehive[_e|].png",
+   "alternatives": [
+    "img/beehive_e.png",
+    "img/beehive.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7423
+   ]
+  },
+  {
+   "template": "img/desert/anthill/anthill.png",
+   "alternatives": [
+    "img/desert/anthill/anthill.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7431
+   ]
+  },
+  {
+   "template": "img/honeycomb[_e|].png",
+   "alternatives": [
+    "img/honeycomb_e.png",
+    "img/honeycomb.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7439
+   ]
+  },
+  {
+   "template": "img/quill.png",
+   "alternatives": [
+    "img/quill.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7447
+   ]
+  },
+  {
+   "template": "img/healingStone{_0x7b8209}.png",
+   "alternatives": [
+    "img/healingStone{_0x7b8209}.png"
+   ],
+   "holes": [
+    "_0x7b8209"
+   ],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7472
+   ]
+  },
+  {
+   "template": "img/cloudberry[_e|].png",
+   "alternatives": [
+    "img/cloudberry_e.png",
+    "img/cloudberry.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7551
+   ]
+  },
+  {
+   "template": "img/arcticNut[_e|].png",
+   "alternatives": [
+    "img/arcticNut_e.png",
+    "img/arcticNut.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7566
+   ]
+  },
+  {
+   "template": "img/carrot[_e|].png",
+   "alternatives": [
+    "img/carrot_e.png",
+    "img/carrot.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7581
+   ]
+  },
+  {
+   "template": "img/watermelon[_e|].png",
+   "alternatives": [
+    "img/watermelon_e.png",
+    "img/watermelon.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7589
+   ]
+  },
+  {
+   "template": "img/watermelonSlice[_e|].png",
+   "alternatives": [
+    "img/watermelonSlice_e.png",
+    "img/watermelonSlice.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7601
+   ]
+  },
+  {
+   "template": "img/meat[_e|].png",
+   "alternatives": [
+    "img/meat_e.png",
+    "img/meat.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7612
+   ]
+  },
+  {
+   "template": "img/lillypad[_e|].png",
+   "alternatives": [
+    "img/lillypad_e.png",
+    "img/lillypad.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7642
+   ]
+  },
+  {
+   "template": "img/disasters/cloud.png",
+   "alternatives": [
+    "img/disasters/cloud.png"
+   ],
+   "holes": [],
+   "category": "disasters",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7763,
+    24783,
+    24812
+   ]
+  },
+  {
+   "template": "img/disasters/cloud1.png",
+   "alternatives": [
+    "img/disasters/cloud1.png"
+   ],
+   "holes": [],
+   "category": "disasters",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7772,
+    24792,
+    24821
+   ]
+  },
+  {
+   "template": "img/riverCurrent{riverSpecT}.png",
+   "alternatives": [
+    "img/riverCurrent{riverSpecT}.png"
+   ],
+   "holes": [
+    "riverSpecT"
+   ],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    7992
+   ]
+  },
+  {
+   "template": "img/snowball.png",
+   "alternatives": [
+    "img/snowball.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj",
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    8054,
+    10224,
+    21364,
+    21767
+   ]
+  },
+  {
+   "template": "skins/volcano/phoenix/{_0x101592}/firetornado.png",
+   "alternatives": [
+    "skins/volcano/phoenix/{_0x101592}/firetornado.png"
+   ],
+   "holes": [
+    "_0x101592"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    8078,
+    8080
+   ]
+  },
+  {
+   "template": "img/fire[|2].png",
+   "alternatives": [
+    "img/fire.png",
+    "img/fire2.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    8117
+   ]
+  },
+  {
+   "template": "gameobj/{oType}{getObjSpecies()}/{_0x3e75b8}.png",
+   "alternatives": [
+    "gameobj/{oType}{getObjSpecies()}/{_0x3e75b8}.png"
+   ],
+   "holes": [
+    "oType",
+    "getObjSpecies()",
+    "_0x3e75b8"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    8160
+   ]
+  },
+  {
+   "template": "{_0x5e109c}",
+   "alternatives": [
+    "{_0x5e109c}"
+   ],
+   "holes": [
+    "_0x5e109c"
+   ],
+   "category": "other",
+   "base": "root",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    8507
+   ]
+  },
+  {
+   "template": "{_0xe554b1}",
+   "alternatives": [
+    "{_0xe554b1}"
+   ],
+   "holes": [
+    "_0xe554b1"
+   ],
+   "category": "other",
+   "base": "root",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    8513
+   ]
+  },
+  {
+   "template": "assets/s/{_0x6d9e98}/{_0x18b466}",
+   "alternatives": [
+    "assets/s/{_0x6d9e98}/{_0x18b466}"
+   ],
+   "holes": [
+    "_0x6d9e98",
+    "_0x18b466"
+   ],
+   "category": "other",
+   "base": "absolute",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    8517
+   ]
+  },
+  {
+   "template": "img/ability_sabertoothJawAttack.png",
+   "alternatives": [
+    "img/ability_sabertoothJawAttack.png"
+   ],
+   "holes": [],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    8640
+   ]
+  },
+  {
+   "template": "skins/volcano/kingdragon/{speciesType}/tail.png",
+   "alternatives": [
+    "skins/volcano/kingdragon/{speciesType}/tail.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    8667
+   ]
+  },
+  {
+   "template": "{_0x5996b1}/ability_whaleTailHit.png",
+   "alternatives": [
+    "{_0x5996b1}/ability_whaleTailHit.png"
+   ],
+   "holes": [
+    "_0x5996b1"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    8689
+   ]
+  },
+  {
+   "template": "skins/[arctic|land]/bear/{speciesType}/ability.png",
+   "alternatives": [
+    "skins/arctic/bear/{speciesType}/ability.png",
+    "skins/land/bear/{speciesType}/ability.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    8718,
+    8719
+   ]
+  },
+  {
+   "template": "{_0x5996b1}.png",
+   "alternatives": [
+    "{_0x5996b1}.png"
+   ],
+   "holes": [
+    "_0x5996b1"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    8751
+   ]
+  },
+  {
+   "template": "img/desert/flytrap/mouth/closed.png",
+   "alternatives": [
+    "img/desert/flytrap/mouth/closed.png"
+   ],
+   "holes": [],
+   "category": "ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    8828
+   ]
+  },
+  {
+   "template": "{_0x11476c}",
+   "alternatives": [
+    "{_0x11476c}"
+   ],
+   "holes": [
+    "_0x11476c"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj",
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    8829,
+    8844,
+    8851
+   ]
+  },
+  {
+   "template": "skins/desert/camel/201/spit{specType}_pop1{Math.trunc()}.png",
+   "alternatives": [
+    "skins/desert/camel/201/spit{specType}_pop1{Math.trunc()}.png"
+   ],
+   "holes": [
+    "specType",
+    "Math.trunc()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    8843
+   ]
+  },
+  {
+   "template": "skins/desert/camel/201/spit{specType}_pop4.png",
+   "alternatives": [
+    "skins/desert/camel/201/spit{specType}_pop4.png"
+   ],
+   "holes": [
+    "specType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    8850
+   ]
+  },
+  {
+   "template": "img/target[_e|].png",
+   "alternatives": [
+    "img/target_e.png",
+    "img/target.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    8867,
+    27543
+   ]
+  },
+  {
+   "template": "{_0x5996b1}/ability_crabSmash{specType}.png",
+   "alternatives": [
+    "{_0x5996b1}/ability_crabSmash{specType}.png"
+   ],
+   "holes": [
+    "_0x5996b1",
+    "specType"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    8888
+   ]
+  },
+  {
+   "template": "{_0x5996b1}/ability_elephantTrunkSmack.png",
+   "alternatives": [
+    "{_0x5996b1}/ability_elephantTrunkSmack.png"
+   ],
+   "holes": [
+    "_0x5996b1"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    8912
+   ]
+  },
+  {
+   "template": "skins/land/croc/{speciesType}/{speciesSubType}/ability.png",
+   "alternatives": [
+    "skins/land/croc/{speciesType}/{speciesSubType}/ability.png"
+   ],
+   "holes": [
+    "speciesType",
+    "speciesSubType"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    8936
+   ]
+  },
+  {
+   "template": "{_0x5996b1}/ability_boabite.png",
+   "alternatives": [
+    "{_0x5996b1}/ability_boabite.png"
+   ],
+   "holes": [
+    "_0x5996b1"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    8966
+   ]
+  },
+  {
+   "template": "{_0x5996b1}/tiger/{speciesType}/ability_tigerJump.png",
+   "alternatives": [
+    "{_0x5996b1}/tiger/{speciesType}/ability_tigerJump.png"
+   ],
+   "holes": [
+    "_0x5996b1",
+    "speciesType"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    8995
+   ]
+  },
+  {
+   "template": "img/ability_pounce2.png",
+   "alternatives": [
+    "img/ability_pounce2.png"
+   ],
+   "holes": [],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    9015
+   ]
+  },
+  {
+   "template": "img/ability_pounce1.png",
+   "alternatives": [
+    "img/ability_pounce1.png"
+   ],
+   "holes": [],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    9016
+   ]
+  },
+  {
+   "template": "skins/land/tiger/{speciesType}/ability_tigerSlash{specType}.png",
+   "alternatives": [
+    "skins/land/tiger/{speciesType}/ability_tigerSlash{specType}.png"
+   ],
+   "holes": [
+    "speciesType",
+    "specType"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    9043,
+    9044
+   ]
+  },
+  {
+   "template": "skins/land/zebra/{speciesType}/kick[|{specType}].png",
+   "alternatives": [
+    "skins/land/zebra/{speciesType}/kick.png",
+    "skins/land/zebra/{speciesType}/kick{specType}.png"
+   ],
+   "holes": [
+    "speciesType",
+    "specType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    9067,
+    9068
+   ]
+  },
+  {
+   "template": "stomp.png",
+   "alternatives": [
+    "stomp.png"
+   ],
+   "holes": [],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    9092
+   ]
+  },
+  {
+   "template": "{_0x268465}",
+   "alternatives": [
+    "{_0x268465}"
+   ],
+   "holes": [
+    "_0x268465"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    9093
+   ]
+  },
+  {
+   "template": "skins/ocean/shark/{speciesType}/ability.png",
+   "alternatives": [
+    "skins/ocean/shark/{speciesType}/ability.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    9115
+   ]
+  },
+  {
+   "template": "skins/pelican/{speciesType}/ability_pelican.png",
+   "alternatives": [
+    "skins/pelican/{speciesType}/ability_pelican.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    9159
+   ]
+  },
+  {
+   "template": "skins/land/trex/{speciesType}/ability_trexBite.png",
+   "alternatives": [
+    "skins/land/trex/{speciesType}/ability_trexBite.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    9180
+   ]
+  },
+  {
+   "template": "skins/land/trex/{speciesType}/trex-head.png",
+   "alternatives": [
+    "skins/land/trex/{speciesType}/trex-head.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    9200
+   ]
+  },
+  {
+   "template": "img/wave.png",
+   "alternatives": [
+    "img/wave.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    9245,
+    27373
+   ]
+  },
+  {
+   "template": "skins/land/hippo/204/roar.png",
+   "alternatives": [
+    "skins/land/hippo/204/roar.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    9259
+   ]
+  },
+  {
+   "template": "img/whirlpool2.png",
+   "alternatives": [
+    "img/whirlpool2.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    9284,
+    9305
+   ]
+  },
+  {
+   "template": "{_0x312bee}/ability_elephantTrunkSmack.png",
+   "alternatives": [
+    "{_0x312bee}/ability_elephantTrunkSmack.png"
+   ],
+   "holes": [
+    "_0x312bee"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    9393
+   ]
+  },
+  {
+   "template": "arctic/bear/{aniSpecies}/slash.png",
+   "alternatives": [
+    "arctic/bear/{aniSpecies}/slash.png"
+   ],
+   "holes": [
+    "aniSpecies"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    9429
+   ]
+  },
+  {
+   "template": "land/bear/{speciesType}/{speciesSubType}/ability.png",
+   "alternatives": [
+    "land/bear/{speciesType}/{speciesSubType}/ability.png"
+   ],
+   "holes": [
+    "speciesType",
+    "speciesSubType"
+   ],
+   "category": "abilities",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    9429
+   ]
+  },
+  {
+   "template": "{_0x466054}",
+   "alternatives": [
+    "{_0x466054}"
+   ],
+   "holes": [
+    "_0x466054"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    9430
+   ]
+  },
+  {
+   "template": "{_0x4288a8}",
+   "alternatives": [
+    "{_0x4288a8}"
+   ],
+   "holes": [
+    "_0x4288a8"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    9449
+   ]
+  },
+  {
+   "template": "skins/{getSkinName()}.png",
+   "alternatives": [
+    "skins/{getSkinName()}.png"
+   ],
+   "holes": [
+    "getSkinName()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj",
+    "getSkinImageObjAsync"
+   ],
+   "lines": [
+    9704,
+    9707
+   ]
+  },
+  {
+   "template": "skins/{getSkinName()}",
+   "alternatives": [
+    "skins/{getSkinName()}"
+   ],
+   "holes": [
+    "getSkinName()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImagePath"
+   ],
+   "lines": [
+    9739
+   ]
+  },
+  {
+   "template": "{getSkinImagePath()}.png",
+   "alternatives": [
+    "{getSkinImagePath()}.png"
+   ],
+   "holes": [
+    "getSkinImagePath()"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    9739
+   ]
+  },
+  {
+   "template": "img/{_0x3fbb2f}.png",
+   "alternatives": [
+    "img/{_0x3fbb2f}.png"
+   ],
+   "holes": [
+    "_0x3fbb2f"
+   ],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    9896
+   ]
+  },
+  {
+   "template": "skins/land/birdmonster/0/stun/{cond}.png",
+   "alternatives": [
+    "skins/land/birdmonster/0/stun/{cond}.png"
+   ],
+   "holes": [
+    "cond"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    9907,
+    9908
+   ]
+  },
+  {
+   "template": "props/{animalType}/{_0xaa119f}/{_0x56cd67}.png",
+   "alternatives": [
+    "props/{animalType}/{_0xaa119f}/{_0x56cd67}.png"
+   ],
+   "holes": [
+    "animalType",
+    "_0xaa119f",
+    "_0x56cd67"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    9924
+   ]
+  },
+  {
+   "template": "img/dirt/dirt_below.png",
+   "alternatives": [
+    "img/dirt/dirt_below.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getImageObjForPath"
+   ],
+   "lines": [
+    10237
+   ]
+  },
+  {
+   "template": "img/viralpandemic/mask.png",
+   "alternatives": [
+    "img/viralpandemic/mask.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    10255
+   ]
+  },
+  {
+   "template": "img/viralpandemic/mask-outline.png",
+   "alternatives": [
+    "img/viralpandemic/mask-outline.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    10256
+   ]
+  },
+  {
+   "template": "gameobj/70/0/{cond}.png",
+   "alternatives": [
+    "gameobj/70/0/{cond}.png"
+   ],
+   "holes": [
+    "cond"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "getImageObjForPath"
+   ],
+   "lines": [
+    10363,
+    10364
+   ]
+  },
+  {
+   "template": "gameobj/70/0.png",
+   "alternatives": [
+    "gameobj/70/0.png"
+   ],
+   "holes": [],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "getImageObjForPath"
+   ],
+   "lines": [
+    10380
+   ]
+  },
+  {
+   "template": "img/web/{eff_webStuckType}/spiderWeb_stuck.png",
+   "alternatives": [
+    "img/web/{eff_webStuckType}/spiderWeb_stuck.png"
+   ],
+   "holes": [
+    "eff_webStuckType"
+   ],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getImageObjForPath"
+   ],
+   "lines": [
+    10485
+   ]
+  },
+  {
+   "template": "{_0x481f69}/constrict.png",
+   "alternatives": [
+    "{_0x481f69}/constrict.png"
+   ],
+   "holes": [
+    "_0x481f69"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    10503
+   ]
+  },
+  {
+   "template": "img/dirt/{eff_dirtType}/0.png",
+   "alternatives": [
+    "img/dirt/{eff_dirtType}/0.png"
+   ],
+   "holes": [
+    "eff_dirtType"
+   ],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getImageObjForPath"
+   ],
+   "lines": [
+    10520
+   ]
+  },
+  {
+   "template": "img/dirt/{eff_dirtType}/1.png",
+   "alternatives": [
+    "img/dirt/{eff_dirtType}/1.png"
+   ],
+   "holes": [
+    "eff_dirtType"
+   ],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getImageObjForPath"
+   ],
+   "lines": [
+    10526
+   ]
+  },
+  {
+   "template": "{_0x49d506}_wing{_0xe58372}.png",
+   "alternatives": [
+    "{_0x49d506}_wing{_0xe58372}.png"
+   ],
+   "holes": [
+    "_0x49d506",
+    "_0xe58372"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    10538
+   ]
+  },
+  {
+   "template": "{_0x469eac}_head.png",
+   "alternatives": [
+    "{_0x469eac}_head.png"
+   ],
+   "holes": [
+    "_0x469eac"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    10541
+   ]
+  },
+  {
+   "template": "skins/arctic/bear/{animalSpecies}/clawslash.png",
+   "alternatives": [
+    "skins/arctic/bear/{animalSpecies}/clawslash.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    10659,
+    26895
+   ]
+  },
+  {
+   "template": "{_0x2b7503}",
+   "alternatives": [
+    "{_0x2b7503}"
+   ],
+   "holes": [
+    "_0x2b7503"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImagePath"
+   ],
+   "lines": [
+    10729
+   ]
+  },
+  {
+   "template": "{getSkinImagePath()}",
+   "alternatives": [
+    "{getSkinImagePath()}"
+   ],
+   "holes": [
+    "getSkinImagePath()"
+   ],
+   "category": "other",
+   "base": "root",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    10730,
+    10735
+   ]
+  },
+  {
+   "template": "{_0x5c7601}",
+   "alternatives": [
+    "{_0x5c7601}"
+   ],
+   "holes": [
+    "_0x5c7601"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImagePath"
+   ],
+   "lines": [
+    10734
+   ]
+  },
+  {
+   "template": "{_0x45ee30}",
+   "alternatives": [
+    "{_0x45ee30}"
+   ],
+   "holes": [
+    "_0x45ee30"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getImagePath"
+   ],
+   "lines": [
+    10741
+   ]
+  },
+  {
+   "template": "assets/s/{[mopeSeasonID|_0x291a24]}/{_0x45ee30}",
+   "alternatives": [
+    "assets/s/{mopeSeasonID}/{_0x45ee30}",
+    "assets/s/{_0x291a24}/{_0x45ee30}"
+   ],
+   "holes": [
+    "mopeSeasonID",
+    "_0x45ee30",
+    "_0x291a24"
+   ],
+   "category": "other",
+   "base": "absolute",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    10742
+   ]
+  },
+  {
+   "template": "skins/deathworm/segment_{segmentNum}.png",
+   "alternatives": [
+    "skins/deathworm/segment_{segmentNum}.png"
+   ],
+   "holes": [
+    "segmentNum"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    10755
+   ]
+  },
+  {
+   "template": "img/web/{webType}/spiderWeb.png",
+   "alternatives": [
+    "img/web/{webType}/spiderWeb.png"
+   ],
+   "holes": [
+    "webType"
+   ],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    10778,
+    19898
+   ]
+  },
+  {
+   "template": "skins/ocean/octopus/{animalSpecies}{getSubSpecies()}/ability.png",
+   "alternatives": [
+    "skins/ocean/octopus/{animalSpecies}{getSubSpecies()}/ability.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    10826
+   ]
+  },
+  {
+   "template": "skins/ocean/octopus/{animalSpecies}{getSubSpecies()}/head.png",
+   "alternatives": [
+    "skins/ocean/octopus/{animalSpecies}{getSubSpecies()}/head.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    10830
+   ]
+  },
+  {
+   "template": "skins/land/eagle/{animalSpecies}/eagle.png",
+   "alternatives": [
+    "skins/land/eagle/{animalSpecies}/eagle.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    10922
+   ]
+  },
+  {
+   "template": "skins/land/eagle/{animalSpecies}/[{animalSubSpecies}/|]eagle_wing1.png",
+   "alternatives": [
+    "skins/land/eagle/{animalSpecies}/{animalSubSpecies}/eagle_wing1.png",
+    "skins/land/eagle/{animalSpecies}/eagle_wing1.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    10932
+   ]
+  },
+  {
+   "template": "skins/land/eagle/{animalSpecies}/[{animalSubSpecies}/|]eagle_wing2.png",
+   "alternatives": [
+    "skins/land/eagle/{animalSpecies}/{animalSubSpecies}/eagle_wing2.png",
+    "skins/land/eagle/{animalSpecies}/eagle_wing2.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    10933
+   ]
+  },
+  {
+   "template": "skins/land/eagle/{animalSpecies}/[{animalSubSpecies}/|]eagle_head.png",
+   "alternatives": [
+    "skins/land/eagle/{animalSpecies}/{animalSubSpecies}/eagle_head.png",
+    "skins/land/eagle/{animalSpecies}/eagle_head.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    10934
+   ]
+  },
+  {
+   "template": "skins/land/eagle/{animalSpecies}/[{animalSubSpecies}/|]eagle_head1.png",
+   "alternatives": [
+    "skins/land/eagle/{animalSpecies}/{animalSubSpecies}/eagle_head1.png",
+    "skins/land/eagle/{animalSpecies}/eagle_head1.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    10935
+   ]
+  },
+  {
+   "template": "skins/land/eagle/{animalSpecies}/[{animalSubSpecies}/|]eagle_head2.png",
+   "alternatives": [
+    "skins/land/eagle/{animalSpecies}/{animalSubSpecies}/eagle_head2.png",
+    "skins/land/eagle/{animalSpecies}/eagle_head2.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    10936
+   ]
+  },
+  {
+   "template": "{this.animalData[].skin.wing1}",
+   "alternatives": [
+    "{this.animalData[].skin.wing1}"
+   ],
+   "holes": [
+    "this.animalData[].skin.wing1"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    10959,
+    10999,
+    11033
+   ]
+  },
+  {
+   "template": "{this.animalData[].skin.wing2}",
+   "alternatives": [
+    "{this.animalData[].skin.wing2}"
+   ],
+   "holes": [
+    "this.animalData[].skin.wing2"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    10973,
+    11013,
+    11047
+   ]
+  },
+  {
+   "template": "{getHead()}",
+   "alternatives": [
+    "{getHead()}"
+   ],
+   "holes": [
+    "getHead()"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    11067,
+    11578,
+    12252,
+    28254
+   ]
+  },
+  {
+   "template": "skins/land/ostrich/{animalSpecies}/ostrich-baby.png",
+   "alternatives": [
+    "skins/land/ostrich/{animalSpecies}/ostrich-baby.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    11114
+   ]
+  },
+  {
+   "template": "{_0x589931}",
+   "alternatives": [
+    "{_0x589931}"
+   ],
+   "holes": [
+    "_0x589931"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    11117
+   ]
+  },
+  {
+   "template": "{_0x5332cb}",
+   "alternatives": [
+    "{_0x5332cb}"
+   ],
+   "holes": [
+    "_0x5332cb"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    11137
+   ]
+  },
+  {
+   "template": "{_0x2e2d0d}_wing{_0x16372f}.png",
+   "alternatives": [
+    "{_0x2e2d0d}_wing{_0x16372f}.png"
+   ],
+   "holes": [
+    "_0x2e2d0d",
+    "_0x16372f"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    11177
+   ]
+  },
+  {
+   "template": "{_0x28cf84}_head.png",
+   "alternatives": [
+    "{_0x28cf84}_head.png"
+   ],
+   "holes": [
+    "_0x28cf84"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    11181
+   ]
+  },
+  {
+   "template": "skins/land/falcon/{animalSpecies}/falcon_ability.png",
+   "alternatives": [
+    "skins/land/falcon/{animalSpecies}/falcon_ability.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    11184
+   ]
+  },
+  {
+   "template": "skins/land/{getSpeciesPath()}/falcon_wing1.png",
+   "alternatives": [
+    "skins/land/{getSpeciesPath()}/falcon_wing1.png"
+   ],
+   "holes": [
+    "getSpeciesPath()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    11194,
+    11228,
+    11262
+   ]
+  },
+  {
+   "template": "skins/land/{getSpeciesPath()}/falcon_wing2.png",
+   "alternatives": [
+    "skins/land/{getSpeciesPath()}/falcon_wing2.png"
+   ],
+   "holes": [
+    "getSpeciesPath()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    11208,
+    11242,
+    11276
+   ]
+  },
+  {
+   "template": "skins/land/{getSpeciesPath()}//falcon_head.png",
+   "alternatives": [
+    "skins/land/{getSpeciesPath()}//falcon_head.png"
+   ],
+   "holes": [
+    "getSpeciesPath()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    11295
+   ]
+  },
+  {
+   "template": "snowyowl_wing{_0x41081e}.png",
+   "alternatives": [
+    "snowyowl_wing{_0x41081e}.png"
+   ],
+   "holes": [
+    "_0x41081e"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    11340
+   ]
+  },
+  {
+   "template": "snowyowl_head.png",
+   "alternatives": [
+    "snowyowl_head.png"
+   ],
+   "holes": [],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    11343
+   ]
+  },
+  {
+   "template": "skins/arctic/snowyowl/{animalSpecies}{getSubSpecies()}/snowyowl.png",
+   "alternatives": [
+    "skins/arctic/snowyowl/{animalSpecies}{getSubSpecies()}/snowyowl.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    11346
+   ]
+  },
+  {
+   "template": "skins/arctic/snowyowl/{animalSpecies}{getSubSpecies()}/snowyowl_wing1.png",
+   "alternatives": [
+    "skins/arctic/snowyowl/{animalSpecies}{getSubSpecies()}/snowyowl_wing1.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    11355,
+    11389,
+    11423
+   ]
+  },
+  {
+   "template": "skins/arctic/snowyowl/{animalSpecies}{getSubSpecies()}/snowyowl_wing2.png",
+   "alternatives": [
+    "skins/arctic/snowyowl/{animalSpecies}{getSubSpecies()}/snowyowl_wing2.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    11369,
+    11403,
+    11437
+   ]
+  },
+  {
+   "template": "skins/arctic/snowyowl/{animalSpecies}{getSubSpecies()}/snowyowl_head.png",
+   "alternatives": [
+    "skins/arctic/snowyowl/{animalSpecies}{getSubSpecies()}/snowyowl_head.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    11456
+   ]
+  },
+  {
+   "template": "{getWing()}",
+   "alternatives": [
+    "{getWing()}"
+   ],
+   "holes": [
+    "getWing()"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    11501,
+    11515,
+    11536,
+    11550,
+    12221,
+    12235,
+    18169,
+    18183,
+    20018
+   ]
+  },
+  {
+   "template": "skins/pelican/{animalSpecies}/ability_pelican.png",
+   "alternatives": [
+    "skins/pelican/{animalSpecies}/ability_pelican.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    11569,
+    11570
+   ]
+  },
+  {
+   "template": "skins/frog/frogLegs.png",
+   "alternatives": [
+    "skins/frog/frogLegs.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    11603
+   ]
+  },
+  {
+   "template": "skins/duck/{animalSpecies}/duck_wing1.png",
+   "alternatives": [
+    "skins/duck/{animalSpecies}/duck_wing1.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    11633,
+    11649
+   ]
+  },
+  {
+   "template": "skins/duck/{animalSpecies}/duck_wing2.png",
+   "alternatives": [
+    "skins/duck/{animalSpecies}/duck_wing2.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    11634,
+    11650
+   ]
+  },
+  {
+   "template": "skins/duck/{animalSpecies}/duck_head.png",
+   "alternatives": [
+    "skins/duck/{animalSpecies}/duck_head.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    11635,
+    11651
+   ]
+  },
+  {
+   "template": "{this.objSkinPath[].wing1}",
+   "alternatives": [
+    "{this.objSkinPath[].wing1}"
+   ],
+   "holes": [
+    "this.objSkinPath[].wing1"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    11665,
+    11707
+   ]
+  },
+  {
+   "template": "{this.objSkinPath[].wing2}",
+   "alternatives": [
+    "{this.objSkinPath[].wing2}"
+   ],
+   "holes": [
+    "this.objSkinPath[].wing2"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    11679,
+    11721
+   ]
+  },
+  {
+   "template": "{this.objSkinPath[].head}",
+   "alternatives": [
+    "{this.objSkinPath[].head}"
+   ],
+   "holes": [
+    "this.objSkinPath[].head"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    11693,
+    11738
+   ]
+  },
+  {
+   "template": "skins/volcano/blackdragon/{animalSpecies}/wings.png",
+   "alternatives": [
+    "skins/volcano/blackdragon/{animalSpecies}/wings.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    11778
+   ]
+  },
+  {
+   "template": "img/fire/{_0x5b9af2}/0.png",
+   "alternatives": [
+    "img/fire/{_0x5b9af2}/0.png"
+   ],
+   "holes": [
+    "_0x5b9af2"
+   ],
+   "category": "ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    11828
+   ]
+  },
+  {
+   "template": "skins/honeybee/0/{animalSubSpecies}/honeybee_wing2.png",
+   "alternatives": [
+    "skins/honeybee/0/{animalSubSpecies}/honeybee_wing2.png"
+   ],
+   "holes": [
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    11848,
+    11887
+   ]
+  },
+  {
+   "template": "skins/honeybee/0/{animalSubSpecies}/honeybee_wing1.png",
+   "alternatives": [
+    "skins/honeybee/0/{animalSubSpecies}/honeybee_wing1.png"
+   ],
+   "holes": [
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    11861,
+    11874
+   ]
+  },
+  {
+   "template": "{_0x5d986b}",
+   "alternatives": [
+    "{_0x5d986b}"
+   ],
+   "holes": [
+    "_0x5d986b"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    11965
+   ]
+  },
+  {
+   "template": "skins/volcano/phoenix/{_0x15b9a9}/firetornado.png",
+   "alternatives": [
+    "skins/volcano/phoenix/{_0x15b9a9}/firetornado.png"
+   ],
+   "holes": [
+    "_0x15b9a9"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    11969
+   ]
+  },
+  {
+   "template": "skins/volcano/phoenix/{_0x10c347}/{_0x1939da}.png",
+   "alternatives": [
+    "skins/volcano/phoenix/{_0x10c347}/{_0x1939da}.png"
+   ],
+   "holes": [
+    "_0x10c347",
+    "_0x1939da"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    11975
+   ]
+  },
+  {
+   "template": "pigeon_wing{_0x2c28ef}.png",
+   "alternatives": [
+    "pigeon_wing{_0x2c28ef}.png"
+   ],
+   "holes": [
+    "_0x2c28ef"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    12061
+   ]
+  },
+  {
+   "template": "pigeon_head.png",
+   "alternatives": [
+    "pigeon_head.png"
+   ],
+   "holes": [],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    12064
+   ]
+  },
+  {
+   "template": "skins/land/pigeon/{animalSpecies}{getSubSpecies()}/pigeon_wing1.png",
+   "alternatives": [
+    "skins/land/pigeon/{animalSpecies}{getSubSpecies()}/pigeon_wing1.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    12075
+   ]
+  },
+  {
+   "template": "skins/land/pigeon/{animalSpecies}{getSubSpecies()}/pigeon_wing2.png",
+   "alternatives": [
+    "skins/land/pigeon/{animalSpecies}{getSubSpecies()}/pigeon_wing2.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    12089
+   ]
+  },
+  {
+   "template": "skins/land/pigeon/{animalSpecies}{getSubSpecies()}/pigeon_head.png",
+   "alternatives": [
+    "skins/land/pigeon/{animalSpecies}{getSubSpecies()}/pigeon_head.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    12106
+   ]
+  },
+  {
+   "template": "{_0x90e65}_wing1.png",
+   "alternatives": [
+    "{_0x90e65}_wing1.png"
+   ],
+   "holes": [
+    "_0x90e65"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    12140
+   ]
+  },
+  {
+   "template": "{_0x90e65}_wing2.png",
+   "alternatives": [
+    "{_0x90e65}_wing2.png"
+   ],
+   "holes": [
+    "_0x90e65"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    12143
+   ]
+  },
+  {
+   "template": "skins//land/toucan/{animalSpecies}/[{animalSubSpecies}/|]toucan_beak.png",
+   "alternatives": [
+    "skins//land/toucan/{animalSpecies}/{animalSubSpecies}/toucan_beak.png",
+    "skins//land/toucan/{animalSpecies}/toucan_beak.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    12272,
+    12273
+   ]
+  },
+  {
+   "template": "{_0x1fb918}",
+   "alternatives": [
+    "{_0x1fb918}"
+   ],
+   "holes": [
+    "_0x1fb918"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    12318
+   ]
+  },
+  {
+   "template": "skins/land/cobra/{animalSpecies}/cobra2.png",
+   "alternatives": [
+    "skins/land/cobra/{animalSpecies}/cobra2.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    12348
+   ]
+  },
+  {
+   "template": "skins/land/cobra/{animalSpecies}{getSubSpecies()}/tongue.png",
+   "alternatives": [
+    "skins/land/cobra/{animalSpecies}{getSubSpecies()}/tongue.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    12363,
+    12364
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/{speciesType}/{cond}.png",
+   "alternatives": [
+    "gameobj/{oType}/{speciesType}/{cond}.png"
+   ],
+   "holes": [
+    "oType",
+    "speciesType",
+    "cond"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    12381,
+    12382,
+    12421,
+    12422
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/{speciesType}/0.png",
+   "alternatives": [
+    "gameobj/{oType}/{speciesType}/0.png"
+   ],
+   "holes": [
+    "oType",
+    "speciesType"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    12393,
+    12394,
+    12437,
+    12438
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/{carcassType}.png",
+   "alternatives": [
+    "gameobj/{oType}/{carcassType}.png"
+   ],
+   "holes": [
+    "oType",
+    "carcassType"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    12476
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/{chilliType}/{_0xa0e0e3}.png",
+   "alternatives": [
+    "gameobj/{oType}/{chilliType}/{_0xa0e0e3}.png"
+   ],
+   "holes": [
+    "oType",
+    "chilliType",
+    "_0xa0e0e3"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    12559
+   ]
+  },
+  {
+   "template": "assets/s/2/gameobj/78/incentive/1.png",
+   "alternatives": [
+    "assets/s/2/gameobj/78/incentive/1.png"
+   ],
+   "holes": [],
+   "category": "game-objects",
+   "base": "absolute",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    13588
+   ]
+  },
+  {
+   "template": "assets/s/2/gameobj/78/incentive/2.png",
+   "alternatives": [
+    "assets/s/2/gameobj/78/incentive/2.png"
+   ],
+   "holes": [],
+   "category": "game-objects",
+   "base": "absolute",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    13590
+   ]
+  },
+  {
+   "template": "assets/s/2/gameobj/78/incentive/3.png",
+   "alternatives": [
+    "assets/s/2/gameobj/78/incentive/3.png"
+   ],
+   "holes": [],
+   "category": "game-objects",
+   "base": "absolute",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    13592
+   ]
+  },
+  {
+   "template": "assets/s/2/gameobj/78/incentive/4.png",
+   "alternatives": [
+    "assets/s/2/gameobj/78/incentive/4.png"
+   ],
+   "holes": [],
+   "category": "game-objects",
+   "base": "absolute",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    13594
+   ]
+  },
+  {
+   "template": "assets/s/2/gameobj/78/incentive/5.png",
+   "alternatives": [
+    "assets/s/2/gameobj/78/incentive/5.png"
+   ],
+   "holes": [],
+   "category": "game-objects",
+   "base": "absolute",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    13596
+   ]
+  },
+  {
+   "template": "assets/s/2/gameobj/78/incentive/6.png",
+   "alternatives": [
+    "assets/s/2/gameobj/78/incentive/6.png"
+   ],
+   "holes": [],
+   "category": "game-objects",
+   "base": "absolute",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    13598
+   ]
+  },
+  {
+   "template": "assets/s/2/gameobj/78/incentive/7.png",
+   "alternatives": [
+    "assets/s/2/gameobj/78/incentive/7.png"
+   ],
+   "holes": [],
+   "category": "game-objects",
+   "base": "absolute",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    13600
+   ]
+  },
+  {
+   "template": "assets/s/2/gameobj/78/incentive/8.png",
+   "alternatives": [
+    "assets/s/2/gameobj/78/incentive/8.png"
+   ],
+   "holes": [],
+   "category": "game-objects",
+   "base": "absolute",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    13602
+   ]
+  },
+  {
+   "template": "assets/s/2/gameobj/78/incentive/9.png",
+   "alternatives": [
+    "assets/s/2/gameobj/78/incentive/9.png"
+   ],
+   "holes": [],
+   "category": "game-objects",
+   "base": "absolute",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    13604
+   ]
+  },
+  {
+   "template": "assets/s/2/gameobj/78/incentive/10.png",
+   "alternatives": [
+    "assets/s/2/gameobj/78/incentive/10.png"
+   ],
+   "holes": [],
+   "category": "game-objects",
+   "base": "absolute",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    13606
+   ]
+  },
+  {
+   "template": "assets/s/2/gameobj/78/incentive/11.png",
+   "alternatives": [
+    "assets/s/2/gameobj/78/incentive/11.png"
+   ],
+   "holes": [],
+   "category": "game-objects",
+   "base": "absolute",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    13608
+   ]
+  },
+  {
+   "template": "assets/s/2/gameobj/78/incentive/12.png",
+   "alternatives": [
+    "assets/s/2/gameobj/78/incentive/12.png"
+   ],
+   "holes": [],
+   "category": "game-objects",
+   "base": "absolute",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    13610
+   ]
+  },
+  {
+   "template": "assets/s/2/gameobj/78/incentive/13.png",
+   "alternatives": [
+    "assets/s/2/gameobj/78/incentive/13.png"
+   ],
+   "holes": [],
+   "category": "game-objects",
+   "base": "absolute",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    13612
+   ]
+  },
+  {
+   "template": "assets/s/2/{_0x49fdc7}",
+   "alternatives": [
+    "assets/s/2/{_0x49fdc7}"
+   ],
+   "holes": [
+    "_0x49fdc7"
+   ],
+   "category": "other",
+   "base": "absolute",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    13751
+   ]
+  },
+  {
+   "template": "assets/s/2/gameobj/78/stone{_0x152e11}.png",
+   "alternatives": [
+    "assets/s/2/gameobj/78/stone{_0x152e11}.png"
+   ],
+   "holes": [
+    "_0x152e11"
+   ],
+   "category": "game-objects",
+   "base": "absolute",
+   "via": [
+    "expression",
+    "loader"
+   ],
+   "lines": [
+    13754,
+    13755
+   ]
+  },
+  {
+   "template": "shop/[gem|mopecoin].png",
+   "alternatives": [
+    "shop/gem.png",
+    "shop/mopecoin.png"
+   ],
+   "holes": [],
+   "category": "shop-ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    14255,
+    16861
+   ]
+  },
+  {
+   "template": "{_0x2abcb0}.png",
+   "alternatives": [
+    "{_0x2abcb0}.png"
+   ],
+   "holes": [
+    "_0x2abcb0"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    14564
+   ]
+  },
+  {
+   "template": "shop/gem.png",
+   "alternatives": [
+    "shop/gem.png"
+   ],
+   "holes": [],
+   "category": "shop-ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    14690,
+    15237,
+    15292
+   ]
+  },
+  {
+   "template": "shop/VIP_Pass.png",
+   "alternatives": [
+    "shop/VIP_Pass.png"
+   ],
+   "holes": [],
+   "category": "shop-ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    14693
+   ]
+  },
+  {
+   "template": "{_0x387bcb.skinName}",
+   "alternatives": [
+    "{_0x387bcb.skinName}"
+   ],
+   "holes": [
+    "_0x387bcb.skinName"
+   ],
+   "category": "shop-skins",
+   "base": "shop",
+   "via": [
+    "getSkinImagePathForShop"
+   ],
+   "lines": [
+    15181
+   ]
+  },
+  {
+   "template": "{_0x75cd55}.ui.png",
+   "alternatives": [
+    "{_0x75cd55}.ui.png"
+   ],
+   "holes": [
+    "_0x75cd55"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    15182
+   ]
+  },
+  {
+   "template": "shop/coins.png",
+   "alternatives": [
+    "shop/coins.png"
+   ],
+   "holes": [],
+   "category": "shop-ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    15286
+   ]
+  },
+  {
+   "template": "shop/VIP_Button.png",
+   "alternatives": [
+    "shop/VIP_Button.png"
+   ],
+   "holes": [],
+   "category": "shop-ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    15298
+   ]
+  },
+  {
+   "template": "shop/skins.png",
+   "alternatives": [
+    "shop/skins.png"
+   ],
+   "holes": [],
+   "category": "shop-ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    15302
+   ]
+  },
+  {
+   "template": "shop/features.png",
+   "alternatives": [
+    "shop/features.png"
+   ],
+   "holes": [],
+   "category": "shop-ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    15306
+   ]
+  },
+  {
+   "template": "shop/deals/deals.png",
+   "alternatives": [
+    "shop/deals/deals.png"
+   ],
+   "holes": [],
+   "category": "shop-ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    15310
+   ]
+  },
+  {
+   "template": "shop/clothing.png",
+   "alternatives": [
+    "shop/clothing.png"
+   ],
+   "holes": [],
+   "category": "shop-ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    15320
+   ]
+  },
+  {
+   "template": "assets/s/{_0x586bb2.mopeSeasonID}/skins/{_0x586bb2.getSkinName()}.ui.png?w=1&v={_0x453b84}",
+   "alternatives": [
+    "assets/s/{_0x586bb2.mopeSeasonID}/skins/{_0x586bb2.getSkinName()}.ui.png?w=1&v={_0x453b84}"
+   ],
+   "holes": [
+    "_0x586bb2.mopeSeasonID",
+    "_0x586bb2.getSkinName()",
+    "_0x453b84"
+   ],
+   "category": "animals",
+   "base": "absolute",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    15415,
+    15438
+   ]
+  },
+  {
+   "template": "props/1/beards/{this.props.beardsColor}.png",
+   "alternatives": [
+    "props/1/beards/{this.props.beardsColor}.png"
+   ],
+   "holes": [
+    "this.props.beardsColor"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    15931
+   ]
+  },
+  {
+   "template": "props/1/hats/{this.props.hatsColor}.png",
+   "alternatives": [
+    "props/1/hats/{this.props.hatsColor}.png"
+   ],
+   "holes": [
+    "this.props.hatsColor"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    15932
+   ]
+  },
+  {
+   "template": "props/1/scarfs/{this.props.scarfsColor}.png",
+   "alternatives": [
+    "props/1/scarfs/{this.props.scarfsColor}.png"
+   ],
+   "holes": [
+    "this.props.scarfsColor"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    15933
+   ]
+  },
+  {
+   "template": "props/1/glasses/{this.props.glassesColor}.png",
+   "alternatives": [
+    "props/1/glasses/{this.props.glassesColor}.png"
+   ],
+   "holes": [
+    "this.props.glassesColor"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    15934
+   ]
+  },
+  {
+   "template": "shop/back.png",
+   "alternatives": [
+    "shop/back.png"
+   ],
+   "holes": [],
+   "category": "shop-ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    15981
+   ]
+  },
+  {
+   "template": "shop/close.png",
+   "alternatives": [
+    "shop/close.png"
+   ],
+   "holes": [],
+   "category": "shop-ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    15987
+   ]
+  },
+  {
+   "template": "shop/deals/{itemId.toLowerCase()}.png",
+   "alternatives": [
+    "shop/deals/{itemId.toLowerCase()}.png"
+   ],
+   "holes": [
+    "itemId.toLowerCase()"
+   ],
+   "category": "shop-ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    16830,
+    16833
+   ]
+  },
+  {
+   "template": "shop/feature/{itemId.toLowerCase()}.png",
+   "alternatives": [
+    "shop/feature/{itemId.toLowerCase()}.png"
+   ],
+   "holes": [
+    "itemId.toLowerCase()"
+   ],
+   "category": "shop-ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    16892,
+    16895
+   ]
+  },
+  {
+   "template": "gameobj/18/0/0.png",
+   "alternatives": [
+    "gameobj/18/0/0.png"
+   ],
+   "holes": [],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    17048,
+    17066
+   ]
+  },
+  {
+   "template": "skins/ocean/seamonster/{animalSpecies}/seamonster.png",
+   "alternatives": [
+    "skins/ocean/seamonster/{animalSpecies}/seamonster.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    17341
+   ]
+  },
+  {
+   "template": "skins/{getSkinName()}-crown.png",
+   "alternatives": [
+    "skins/{getSkinName()}-crown.png"
+   ],
+   "holes": [
+    "getSkinName()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    17351
+   ]
+  },
+  {
+   "template": "skins/ocean/seamonster/220//anim/1{cond}.png",
+   "alternatives": [
+    "skins/ocean/seamonster/220//anim/1{cond}.png"
+   ],
+   "holes": [
+    "cond"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    17366
+   ]
+  },
+  {
+   "template": "skins/volcano/landmonster/{animalSpecies}/landmonster.png",
+   "alternatives": [
+    "skins/volcano/landmonster/{animalSpecies}/landmonster.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    17396
+   ]
+  },
+  {
+   "template": "skins/volcano/landmonster/{animalSpecies}/{animalSubSpecies}/landmonster.png",
+   "alternatives": [
+    "skins/volcano/landmonster/{animalSpecies}/{animalSubSpecies}/landmonster.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    17454
+   ]
+  },
+  {
+   "template": "skins/volcano/landmonster/0/204//landmonster_head.png",
+   "alternatives": [
+    "skins/volcano/landmonster/0/204//landmonster_head.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    17462
+   ]
+  },
+  {
+   "template": "skins/volcano/landmonster/0/204//fire1{cond}.png",
+   "alternatives": [
+    "skins/volcano/landmonster/0/204//fire1{cond}.png"
+   ],
+   "holes": [
+    "cond"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    17468
+   ]
+  },
+  {
+   "template": "skins/volcano/landmonster/0/204//landmonster_head1.png",
+   "alternatives": [
+    "skins/volcano/landmonster/0/204//landmonster_head1.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    17470
+   ]
+  },
+  {
+   "template": "skins/arctic/icemonster/{animalSpecies}/ability.png",
+   "alternatives": [
+    "skins/arctic/icemonster/{animalSpecies}/ability.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    17534
+   ]
+  },
+  {
+   "template": "skins/arctic/icemonster/201/icemonster{_0x497726}.png",
+   "alternatives": [
+    "skins/arctic/icemonster/201/icemonster{_0x497726}.png"
+   ],
+   "holes": [
+    "_0x497726"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    17590,
+    17591
+   ]
+  },
+  {
+   "template": "skins/arctic/icemonster/{animalSpecies}/crystal.png",
+   "alternatives": [
+    "skins/arctic/icemonster/{animalSpecies}/crystal.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    17608
+   ]
+  },
+  {
+   "template": "skins/land/dinomonster/{animalSpecies}/dinomonster.png",
+   "alternatives": [
+    "skins/land/dinomonster/{animalSpecies}/dinomonster.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    17659
+   ]
+  },
+  {
+   "template": "{_0x41435b}.png",
+   "alternatives": [
+    "{_0x41435b}.png"
+   ],
+   "holes": [
+    "_0x41435b"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    17664
+   ]
+  },
+  {
+   "template": "skins/arctic/icemonster/{speciesType}/crystalfire.png",
+   "alternatives": [
+    "skins/arctic/icemonster/{speciesType}/crystalfire.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    17680
+   ]
+  },
+  {
+   "template": "{_0x20e9ee}",
+   "alternatives": [
+    "{_0x20e9ee}"
+   ],
+   "holes": [
+    "_0x20e9ee"
+   ],
+   "category": "other",
+   "base": "root",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    17689
+   ]
+  },
+  {
+   "template": "skins/land/ostrich/{speciesType}/ostrichEgg[edible|].png",
+   "alternatives": [
+    "skins/land/ostrich/{speciesType}/ostrichEggedible.png",
+    "skins/land/ostrich/{speciesType}/ostrichEgg.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    17720
+   ]
+  },
+  {
+   "template": "{_0x369e82}",
+   "alternatives": [
+    "{_0x369e82}"
+   ],
+   "holes": [
+    "_0x369e82"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    17728
+   ]
+  },
+  {
+   "template": "{_0x1e746b}_wing{_0xdfb977}.png",
+   "alternatives": [
+    "{_0x1e746b}_wing{_0xdfb977}.png"
+   ],
+   "holes": [
+    "_0x1e746b",
+    "_0xdfb977"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    17767
+   ]
+  },
+  {
+   "template": "{_0x4823c0}_head.png",
+   "alternatives": [
+    "{_0x4823c0}_head.png"
+   ],
+   "holes": [
+    "_0x4823c0"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    17770
+   ]
+  },
+  {
+   "template": "skins/land/macaw/{animalSpecies}/macaw_wing1.png",
+   "alternatives": [
+    "skins/land/macaw/{animalSpecies}/macaw_wing1.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    17798
+   ]
+  },
+  {
+   "template": "skins/land/macaw/{animalSpecies}/macaw_wing2.png",
+   "alternatives": [
+    "skins/land/macaw/{animalSpecies}/macaw_wing2.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    17811
+   ]
+  },
+  {
+   "template": "skins/land/macaw/{animalSpecies}/macaw_head.png",
+   "alternatives": [
+    "skins/land/macaw/{animalSpecies}/macaw_head.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    17827
+   ]
+  },
+  {
+   "template": "{_0x60d59d}_wing{_0x38a56c}.png",
+   "alternatives": [
+    "{_0x60d59d}_wing{_0x38a56c}.png"
+   ],
+   "holes": [
+    "_0x60d59d",
+    "_0x38a56c"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    17900
+   ]
+  },
+  {
+   "template": "{_0x35505f}_head.png",
+   "alternatives": [
+    "{_0x35505f}_head.png"
+   ],
+   "holes": [
+    "_0x35505f"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    17903
+   ]
+  },
+  {
+   "template": "{_0x299177}.png",
+   "alternatives": [
+    "{_0x299177}.png"
+   ],
+   "holes": [
+    "_0x299177"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    17911
+   ]
+  },
+  {
+   "template": "skins/ocean/flamingo/{animalSpecies}/flamingo_wing1.png",
+   "alternatives": [
+    "skins/ocean/flamingo/{animalSpecies}/flamingo_wing1.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    17930
+   ]
+  },
+  {
+   "template": "skins/ocean/flamingo/{animalSpecies}/flamingo_wing2.png",
+   "alternatives": [
+    "skins/ocean/flamingo/{animalSpecies}/flamingo_wing2.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    17944
+   ]
+  },
+  {
+   "template": "skins/ocean/flamingo/{animalSpecies}/flamingo_head.png",
+   "alternatives": [
+    "skins/ocean/flamingo/{animalSpecies}/flamingo_head.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    17960
+   ]
+  },
+  {
+   "template": "skins/land/cassowary/{animalSpecies}{getSubSpecies()}/cassowary2.png",
+   "alternatives": [
+    "skins/land/cassowary/{animalSpecies}{getSubSpecies()}/cassowary2.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    18008
+   ]
+  },
+  {
+   "template": "{_0x4a003e}_wing{_0x1e8b13}.png",
+   "alternatives": [
+    "{_0x4a003e}_wing{_0x1e8b13}.png"
+   ],
+   "holes": [
+    "_0x4a003e",
+    "_0x1e8b13"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    18067
+   ]
+  },
+  {
+   "template": "{_0x4037c9}_head.png",
+   "alternatives": [
+    "{_0x4037c9}_head.png"
+   ],
+   "holes": [
+    "_0x4037c9"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    18070
+   ]
+  },
+  {
+   "template": "skins/land/chicken/{animalSpecies}/ability.png",
+   "alternatives": [
+    "skins/land/chicken/{animalSpecies}/ability.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    18073
+   ]
+  },
+  {
+   "template": "skins/land/{getSpeciesPath()}/chicken_wing1.png",
+   "alternatives": [
+    "skins/land/{getSpeciesPath()}/chicken_wing1.png"
+   ],
+   "holes": [
+    "getSpeciesPath()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18080
+   ]
+  },
+  {
+   "template": "skins/land/{getSpeciesPath()}/chicken_wing2.png",
+   "alternatives": [
+    "skins/land/{getSpeciesPath()}/chicken_wing2.png"
+   ],
+   "holes": [
+    "getSpeciesPath()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18094
+   ]
+  },
+  {
+   "template": "skins/land/{getSpeciesPath()}/chicken_head.png",
+   "alternatives": [
+    "skins/land/{getSpeciesPath()}/chicken_head.png"
+   ],
+   "holes": [
+    "getSpeciesPath()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18108
+   ]
+  },
+  {
+   "template": "{_0x131aa0}_head[1|].png",
+   "alternatives": [
+    "{_0x131aa0}_head1.png",
+    "{_0x131aa0}_head.png"
+   ],
+   "holes": [
+    "_0x131aa0"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    18146
+   ]
+  },
+  {
+   "template": "skins/land/woodpecker/{animalSpecies}/woodpecker_head[1|].png",
+   "alternatives": [
+    "skins/land/woodpecker/{animalSpecies}/woodpecker_head1.png",
+    "skins/land/woodpecker/{animalSpecies}/woodpecker_head.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18199
+   ]
+  },
+  {
+   "template": "{_0x1198c1}_wing{_0x3220a7}.png",
+   "alternatives": [
+    "{_0x1198c1}_wing{_0x3220a7}.png"
+   ],
+   "holes": [
+    "_0x1198c1",
+    "_0x3220a7"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    18260
+   ]
+  },
+  {
+   "template": "{_0x486b16}_head.png",
+   "alternatives": [
+    "{_0x486b16}_head.png"
+   ],
+   "holes": [
+    "_0x486b16"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    18263
+   ]
+  },
+  {
+   "template": "{_0x3089bd}",
+   "alternatives": [
+    "{_0x3089bd}"
+   ],
+   "holes": [
+    "_0x3089bd"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    18269
+   ]
+  },
+  {
+   "template": "skins/land/peacock/{animalSpecies}/peacock_top.png",
+   "alternatives": [
+    "skins/land/peacock/{animalSpecies}/peacock_top.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18277,
+    18307
+   ]
+  },
+  {
+   "template": "skins/land/peacock/{animalSpecies}/{_0x46d086}.png",
+   "alternatives": [
+    "skins/land/peacock/{animalSpecies}/{_0x46d086}.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "_0x46d086"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18289,
+    18298
+   ]
+  },
+  {
+   "template": "skins/land/peacock/{animalSpecies}/peacock_ability.png",
+   "alternatives": [
+    "skins/land/peacock/{animalSpecies}/peacock_ability.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18318
+   ]
+  },
+  {
+   "template": "skins/land/peacock/{animalSpecies}/peacock_wing1.png",
+   "alternatives": [
+    "skins/land/peacock/{animalSpecies}/peacock_wing1.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18334,
+    18379,
+    18422
+   ]
+  },
+  {
+   "template": "skins/land/peacock/{animalSpecies}/peacock_wing2.png",
+   "alternatives": [
+    "skins/land/peacock/{animalSpecies}/peacock_wing2.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18348,
+    18393,
+    18436
+   ]
+  },
+  {
+   "template": "skins/land/peacock/{animalSpecies}/peacock_head.png",
+   "alternatives": [
+    "skins/land/peacock/{animalSpecies}/peacock_head.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18364,
+    18455
+   ]
+  },
+  {
+   "template": "skins/desert/gazelle/{animalSpecies}{getSubSpecies()}/legs0.png",
+   "alternatives": [
+    "skins/desert/gazelle/{animalSpecies}{getSubSpecies()}/legs0.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18503,
+    18505
+   ]
+  },
+  {
+   "template": "skins/desert/gazelle/{animalSpecies}{getSubSpecies()}/legs1.png",
+   "alternatives": [
+    "skins/desert/gazelle/{animalSpecies}{getSubSpecies()}/legs1.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18504,
+    18506
+   ]
+  },
+  {
+   "template": "skins/desert/gazelle/{animalSpecies}{getSubSpecies()}/gazelle1.png",
+   "alternatives": [
+    "skins/desert/gazelle/{animalSpecies}{getSubSpecies()}/gazelle1.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    18525
+   ]
+  },
+  {
+   "template": "skins/desert/armadillo/{animalSpecies}{getSubSpecies()}/armadillo{frameNumber}.png",
+   "alternatives": [
+    "skins/desert/armadillo/{animalSpecies}{getSubSpecies()}/armadillo{frameNumber}.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()",
+    "frameNumber"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18558,
+    18559
+   ]
+  },
+  {
+   "template": "skins/desert/kangaroorat/{animalSpecies}{getSubSpecies()}/tail.png",
+   "alternatives": [
+    "skins/desert/kangaroorat/{animalSpecies}{getSubSpecies()}/tail.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18614,
+    18615
+   ]
+  },
+  {
+   "template": "skins/desert/meerkat/{animalSpecies}{getSubSpecies()}/meerkat1.png",
+   "alternatives": [
+    "skins/desert/meerkat/{animalSpecies}{getSubSpecies()}/meerkat1.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    18717
+   ]
+  },
+  {
+   "template": "{_0x272f18}",
+   "alternatives": [
+    "{_0x272f18}"
+   ],
+   "holes": [
+    "_0x272f18"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18718
+   ]
+  },
+  {
+   "template": "skins/desert/fennecfox/{animalSpecies}{getSubSpecies()}/ears{_0x598759}.png",
+   "alternatives": [
+    "skins/desert/fennecfox/{animalSpecies}{getSubSpecies()}/ears{_0x598759}.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()",
+    "_0x598759"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18775,
+    18776
+   ]
+  },
+  {
+   "template": "skins/desert/gobibear/{animalSpecies}{getSubSpecies()}/gobibear_head1.png",
+   "alternatives": [
+    "skins/desert/gobibear/{animalSpecies}{getSubSpecies()}/gobibear_head1.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18823
+   ]
+  },
+  {
+   "template": "skins/desert/camel/{animalSpecies}{getSubSpecies()}/spit.png",
+   "alternatives": [
+    "skins/desert/camel/{animalSpecies}{getSubSpecies()}/spit.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    18890
+   ]
+  },
+  {
+   "template": "skins/desert/camel/{animalSpecies}{getSubSpecies()}/camel_head1.png",
+   "alternatives": [
+    "skins/desert/camel/{animalSpecies}{getSubSpecies()}/camel_head1.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18898,
+    18899
+   ]
+  },
+  {
+   "template": "skins/desert/camel/{speciesType}/spit{specType}.png",
+   "alternatives": [
+    "skins/desert/camel/{speciesType}/spit{specType}.png"
+   ],
+   "holes": [
+    "speciesType",
+    "specType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    18923
+   ]
+  },
+  {
+   "template": "skins/desert/camel/{speciesType}/spit.png",
+   "alternatives": [
+    "skins/desert/camel/{speciesType}/spit.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    18924
+   ]
+  },
+  {
+   "template": "{_0x2fee28}",
+   "alternatives": [
+    "{_0x2fee28}"
+   ],
+   "holes": [
+    "_0x2fee28"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    18925
+   ]
+  },
+  {
+   "template": "{_0x51a83c}",
+   "alternatives": [
+    "{_0x51a83c}"
+   ],
+   "holes": [
+    "_0x51a83c"
+   ],
+   "category": "other",
+   "base": "root",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    18934
+   ]
+  },
+  {
+   "template": "skins/desert/warthog/{animalSpecies}{getSubSpecies()}/leg{_0x335b70}.png",
+   "alternatives": [
+    "skins/desert/warthog/{animalSpecies}{getSubSpecies()}/leg{_0x335b70}.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()",
+    "_0x335b70"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19010,
+    19011
+   ]
+  },
+  {
+   "template": "skins/desert/warthog/{animalSpecies}{getSubSpecies()}/warthog.png",
+   "alternatives": [
+    "skins/desert/warthog/{animalSpecies}{getSubSpecies()}/warthog.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    19020
+   ]
+  },
+  {
+   "template": "skins/desert/hyena/{animalSpecies}{getSubSpecies()}/hyena_head.png",
+   "alternatives": [
+    "skins/desert/hyena/{animalSpecies}{getSubSpecies()}/hyena_head.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19068
+   ]
+  },
+  {
+   "template": "skins/desert/hyena/{animalSpecies}{getSubSpecies()}/hyena2.png",
+   "alternatives": [
+    "skins/desert/hyena/{animalSpecies}{getSubSpecies()}/hyena2.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    19083
+   ]
+  },
+  {
+   "template": "{_0x493d17}",
+   "alternatives": [
+    "{_0x493d17}"
+   ],
+   "holes": [
+    "_0x493d17"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    19086
+   ]
+  },
+  {
+   "template": "skins/desert/hyena/{speciesType}/laugh.png",
+   "alternatives": [
+    "skins/desert/hyena/{speciesType}/laugh.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19099
+   ]
+  },
+  {
+   "template": "{_0x37e12}",
+   "alternatives": [
+    "{_0x37e12}"
+   ],
+   "holes": [
+    "_0x37e12"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    19138
+   ]
+  },
+  {
+   "template": "skins/desert/rattlesnake/{animalSpecies}{getSubSpecies()}/tongue.png",
+   "alternatives": [
+    "skins/desert/rattlesnake/{animalSpecies}{getSubSpecies()}/tongue.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19172
+   ]
+  },
+  {
+   "template": "skins/desert/rattlesnake/{animalSpecies}{getSubSpecies()}/rattlesnake_head.png",
+   "alternatives": [
+    "skins/desert/rattlesnake/{animalSpecies}{getSubSpecies()}/rattlesnake_head.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19185
+   ]
+  },
+  {
+   "template": "skins/desert/rattlesnake/{animalSpecies}{getSubSpecies()}/rattle.png",
+   "alternatives": [
+    "skins/desert/rattlesnake/{animalSpecies}{getSubSpecies()}/rattle.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19200
+   ]
+  },
+  {
+   "template": "skins/desert/rattlesnake/{animalSpecies}{getSubSpecies()}/rattlesnake.png",
+   "alternatives": [
+    "skins/desert/rattlesnake/{animalSpecies}{getSubSpecies()}/rattlesnake.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    19210
+   ]
+  },
+  {
+   "template": "skins/desert/rattlesnake/{speciesType}/circle.png",
+   "alternatives": [
+    "skins/desert/rattlesnake/{speciesType}/circle.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19223
+   ]
+  },
+  {
+   "template": "{_0x49b28b}",
+   "alternatives": [
+    "{_0x49b28b}"
+   ],
+   "holes": [
+    "_0x49b28b"
+   ],
+   "category": "other",
+   "base": "root",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    19240
+   ]
+  },
+  {
+   "template": "skins/desert/vulture/{animalSpecies}{getSubSpecies()}/vulture.png",
+   "alternatives": [
+    "skins/desert/vulture/{animalSpecies}{getSubSpecies()}/vulture.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    19267
+   ]
+  },
+  {
+   "template": "skins/desert/vulture/{animalSpecies}{getSubSpecies()}/vulture_head1.png",
+   "alternatives": [
+    "skins/desert/vulture/{animalSpecies}{getSubSpecies()}/vulture_head1.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19291,
+    19353
+   ]
+  },
+  {
+   "template": "skins/desert/vulture/{animalSpecies}{getSubSpecies()}/vulture_wing{_0x17787a}.png",
+   "alternatives": [
+    "skins/desert/vulture/{animalSpecies}{getSubSpecies()}/vulture_wing{_0x17787a}.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()",
+    "_0x17787a"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    19294
+   ]
+  },
+  {
+   "template": "skins/desert/vulture/{animalSpecies}{getSubSpecies()}/vulture_wing[|2]1.png",
+   "alternatives": [
+    "skins/desert/vulture/{animalSpecies}{getSubSpecies()}/vulture_wing1.png",
+    "skins/desert/vulture/{animalSpecies}{getSubSpecies()}/vulture_wing21.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19319
+   ]
+  },
+  {
+   "template": "skins/desert/vulture/{animalSpecies}{getSubSpecies()}/vulture_wing2[|2].png",
+   "alternatives": [
+    "skins/desert/vulture/{animalSpecies}{getSubSpecies()}/vulture_wing2.png",
+    "skins/desert/vulture/{animalSpecies}{getSubSpecies()}/vulture_wing22.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19335
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/{oType}.png",
+   "alternatives": [
+    "gameobj/{oType}/{oType}.png"
+   ],
+   "holes": [
+    "oType"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19374,
+    19375,
+    25838,
+    27688,
+    27689,
+    28091
+   ]
+  },
+  {
+   "template": "skins/desert/bison/{animalSpecies}{getSubSpecies()}/bison_ability.png",
+   "alternatives": [
+    "skins/desert/bison/{animalSpecies}{getSubSpecies()}/bison_ability.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    19412
+   ]
+  },
+  {
+   "template": "skins/desert/bison/{animalSpecies}{getSubSpecies()}/body_front.png",
+   "alternatives": [
+    "skins/desert/bison/{animalSpecies}{getSubSpecies()}/body_front.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19429
+   ]
+  },
+  {
+   "template": "skins/desert/bison/{animalSpecies}{getSubSpecies()}/bison_head{specType}.png",
+   "alternatives": [
+    "skins/desert/bison/{animalSpecies}{getSubSpecies()}/bison_head{specType}.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()",
+    "specType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19438
+   ]
+  },
+  {
+   "template": "skins/desert/bison/{animalSpecies}{getSubSpecies()}/{_0x117d5e}_legs.png",
+   "alternatives": [
+    "skins/desert/bison/{animalSpecies}{getSubSpecies()}/{_0x117d5e}_legs.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()",
+    "_0x117d5e"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19457
+   ]
+  },
+  {
+   "template": "skins/desert/komododragon/{animalSpecies}{getSubSpecies()}/komododragon_ability.png",
+   "alternatives": [
+    "skins/desert/komododragon/{animalSpecies}{getSubSpecies()}/komododragon_ability.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    19509
+   ]
+  },
+  {
+   "template": "skins/desert/komododragon/{animalSpecies}{getSubSpecies()}/tongue.png",
+   "alternatives": [
+    "skins/desert/komododragon/{animalSpecies}{getSubSpecies()}/tongue.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19538
+   ]
+  },
+  {
+   "template": "skins/desert/komododragon/{animalSpecies}{getSubSpecies()}/komododragon_neck.png",
+   "alternatives": [
+    "skins/desert/komododragon/{animalSpecies}{getSubSpecies()}/komododragon_neck.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19553
+   ]
+  },
+  {
+   "template": "skins/desert/komododragon/{animalSpecies}{getSubSpecies()}/komododragon_tail.png",
+   "alternatives": [
+    "skins/desert/komododragon/{animalSpecies}{getSubSpecies()}/komododragon_tail.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    19566,
+    19587
+   ]
+  },
+  {
+   "template": "{_0x527806}",
+   "alternatives": [
+    "{_0x527806}"
+   ],
+   "holes": [
+    "_0x527806"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19567,
+    19588,
+    19603,
+    19610
+   ]
+  },
+  {
+   "template": "skins/desert/komododragon/{animalSpecies}{getSubSpecies()}/komododragon_attack.png",
+   "alternatives": [
+    "skins/desert/komododragon/{animalSpecies}{getSubSpecies()}/komododragon_attack.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19575,
+    19594
+   ]
+  },
+  {
+   "template": "skins/desert/komododragon/{animalSpecies}{getSubSpecies()}/licked_face.png",
+   "alternatives": [
+    "skins/desert/komododragon/{animalSpecies}{getSubSpecies()}/licked_face.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    19602
+   ]
+  },
+  {
+   "template": "skins/desert/komododragon/{animalSpecies}{getSubSpecies()}/komododragon_head.png",
+   "alternatives": [
+    "skins/desert/komododragon/{animalSpecies}{getSubSpecies()}/komododragon_head.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    19609
+   ]
+  },
+  {
+   "template": "skins/desert/komododragon/{animalSpecies}{getSubSpecies()}/tongue{_0x422f28}.png",
+   "alternatives": [
+    "skins/desert/komododragon/{animalSpecies}{getSubSpecies()}/tongue{_0x422f28}.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()",
+    "_0x422f28"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19627
+   ]
+  },
+  {
+   "template": "skins/desert/scorpion/{animalSpecies}/scorpion_ability.png",
+   "alternatives": [
+    "skins/desert/scorpion/{animalSpecies}/scorpion_ability.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    19723
+   ]
+  },
+  {
+   "template": "skins/desert/scorpion/{animalSpecies}/tail_back.png",
+   "alternatives": [
+    "skins/desert/scorpion/{animalSpecies}/tail_back.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19771,
+    19772
+   ]
+  },
+  {
+   "template": "skins/desert/scorpion/{this.forObj.animalSpecies}/arms.png",
+   "alternatives": [
+    "skins/desert/scorpion/{this.forObj.animalSpecies}/arms.png"
+   ],
+   "holes": [
+    "this.forObj.animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    19788
+   ]
+  },
+  {
+   "template": "skins/desert/scorpion/{this.forObj.animalSpecies}/arms-grabbed.png",
+   "alternatives": [
+    "skins/desert/scorpion/{this.forObj.animalSpecies}/arms-grabbed.png"
+   ],
+   "holes": [
+    "this.forObj.animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    19789
+   ]
+  },
+  {
+   "template": "{_0x4139b7}",
+   "alternatives": [
+    "{_0x4139b7}"
+   ],
+   "holes": [
+    "_0x4139b7"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19790
+   ]
+  },
+  {
+   "template": "skins/desert/scorpion/{animalSpecies}/scorpion1.png",
+   "alternatives": [
+    "skins/desert/scorpion/{animalSpecies}/scorpion1.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19809
+   ]
+  },
+  {
+   "template": "skins/desert/scorpion/{animalSpecies}/stinger_normal.png",
+   "alternatives": [
+    "skins/desert/scorpion/{animalSpecies}/stinger_normal.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19809
+   ]
+  },
+  {
+   "template": "skins/desert/scorpion/{animalSpecies}/stinger_tail.png",
+   "alternatives": [
+    "skins/desert/scorpion/{animalSpecies}/stinger_tail.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19809
+   ]
+  },
+  {
+   "template": "skins/desert/scorpion/{animalSpecies}/attack_tail.png",
+   "alternatives": [
+    "skins/desert/scorpion/{animalSpecies}/attack_tail.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19809
+   ]
+  },
+  {
+   "template": "skins/desert/scorpion/{animalSpecies}/attack_stinger_dull.png",
+   "alternatives": [
+    "skins/desert/scorpion/{animalSpecies}/attack_stinger_dull.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19809
+   ]
+  },
+  {
+   "template": "skins/desert/scorpion/{animalSpecies}/attack_stinger_full.png",
+   "alternatives": [
+    "skins/desert/scorpion/{animalSpecies}/attack_stinger_full.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19809
+   ]
+  },
+  {
+   "template": "skins/desert/scorpion/{animalSpecies}/normal_stinger_dull.png",
+   "alternatives": [
+    "skins/desert/scorpion/{animalSpecies}/normal_stinger_dull.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19809
+   ]
+  },
+  {
+   "template": "skins/desert/scorpion/{animalSpecies}/normal_stinger_full.png",
+   "alternatives": [
+    "skins/desert/scorpion/{animalSpecies}/normal_stinger_full.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19809
+   ]
+  },
+  {
+   "template": "skins/desert/blackwidow/{animalSpecies}/{animalSubSpecies}/blackwidow.png",
+   "alternatives": [
+    "skins/desert/blackwidow/{animalSpecies}/{animalSubSpecies}/blackwidow.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    19847
+   ]
+  },
+  {
+   "template": "skins/desert//{_0x569d3a}/{animalSpecies}/{_0x569d3a}_head.png",
+   "alternatives": [
+    "skins/desert//{_0x569d3a}/{animalSpecies}/{_0x569d3a}_head.png"
+   ],
+   "holes": [
+    "_0x569d3a",
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    19947
+   ]
+  },
+  {
+   "template": "skins/desert//{_0x2f85ed}/{animalSpecies}/{_0x2f85ed}_wing{_0x2ebb02}{_0x2ebb02}_nohand.png",
+   "alternatives": [
+    "skins/desert//{_0x2f85ed}/{animalSpecies}/{_0x2f85ed}_wing{_0x2ebb02}{_0x2ebb02}_nohand.png"
+   ],
+   "holes": [
+    "_0x2f85ed",
+    "animalSpecies",
+    "_0x2ebb02"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    19956
+   ]
+  },
+  {
+   "template": "skins/desert//{_0x451715}/{animalSpecies}/{_0x451715}_wing{_0x287c12}{_0x287c12}_bones.png",
+   "alternatives": [
+    "skins/desert//{_0x451715}/{animalSpecies}/{_0x451715}_wing{_0x287c12}{_0x287c12}_bones.png"
+   ],
+   "holes": [
+    "_0x451715",
+    "animalSpecies",
+    "_0x287c12"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    19960
+   ]
+  },
+  {
+   "template": "skins/desert//{_0x5e59dd}/{animalSpecies}/{_0x5e59dd}_hand{_0x387917}.png",
+   "alternatives": [
+    "skins/desert//{_0x5e59dd}/{animalSpecies}/{_0x5e59dd}_hand{_0x387917}.png"
+   ],
+   "holes": [
+    "_0x5e59dd",
+    "animalSpecies",
+    "_0x387917"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    19965
+   ]
+  },
+  {
+   "template": "skins/desert//pterodactyl/{animalSpecies}/legs[2|].png",
+   "alternatives": [
+    "skins/desert//pterodactyl/{animalSpecies}/legs2.png",
+    "skins/desert//pterodactyl/{animalSpecies}/legs.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19970
+   ]
+  },
+  {
+   "template": "{_0x4cbb3e}",
+   "alternatives": [
+    "{_0x4cbb3e}"
+   ],
+   "holes": [
+    "_0x4cbb3e"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19984,
+    20005
+   ]
+  },
+  {
+   "template": "skins/desert/pterodactyl/100/mouth/pterodactyl_head{_0x2b57a3}.png",
+   "alternatives": [
+    "skins/desert/pterodactyl/100/mouth/pterodactyl_head{_0x2b57a3}.png"
+   ],
+   "holes": [
+    "_0x2b57a3"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    19996
+   ]
+  },
+  {
+   "template": "{getWingBone()}",
+   "alternatives": [
+    "{getWingBone()}"
+   ],
+   "holes": [
+    "getWingBone()"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    20035
+   ]
+  },
+  {
+   "template": "{getHand()}",
+   "alternatives": [
+    "{getHand()}"
+   ],
+   "holes": [
+    "getHand()"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    20056
+   ]
+  },
+  {
+   "template": "skins/desert//pterodactyl/{animalSpecies}/pterodactyl_ability.png",
+   "alternatives": [
+    "skins/desert//pterodactyl/{animalSpecies}/pterodactyl_ability.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    20098
+   ]
+  },
+  {
+   "template": "skins/desert/bulletant/{animalSpecies}/head.png",
+   "alternatives": [
+    "skins/desert/bulletant/{animalSpecies}/head.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    20116,
+    20117
+   ]
+  },
+  {
+   "template": "skins/desert/bulletant/{animalSpecies}/abdomen.png",
+   "alternatives": [
+    "skins/desert/bulletant/{animalSpecies}/abdomen.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    20126,
+    20127
+   ]
+  },
+  {
+   "template": "img/desert/flytrap/base.png",
+   "alternatives": [
+    "img/desert/flytrap/base.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    20149
+   ]
+  },
+  {
+   "template": "img/desert/flytrap/mouth/stem.png",
+   "alternatives": [
+    "img/desert/flytrap/mouth/stem.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    20183
+   ]
+  },
+  {
+   "template": "img/desert/flytrap/mouth/bottom[_e|].png",
+   "alternatives": [
+    "img/desert/flytrap/mouth/bottom_e.png",
+    "img/desert/flytrap/mouth/bottom.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    20200
+   ]
+  },
+  {
+   "template": "img/desert/flytrap/mouth/[closed|top].png",
+   "alternatives": [
+    "img/desert/flytrap/mouth/closed.png",
+    "img/desert/flytrap/mouth/top.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    20207
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/[e|{oType}].png",
+   "alternatives": [
+    "gameobj/{oType}/e.png",
+    "gameobj/{oType}/{oType}.png"
+   ],
+   "holes": [
+    "oType"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    20233,
+    20250,
+    20302,
+    20336,
+    20353,
+    20370
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/[e|0].png",
+   "alternatives": [
+    "gameobj/{oType}/e.png",
+    "gameobj/{oType}/0.png"
+   ],
+   "holes": [
+    "oType"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    20267
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/{_0x4b5960}.png",
+   "alternatives": [
+    "gameobj/{oType}/{_0x4b5960}.png"
+   ],
+   "holes": [
+    "oType",
+    "_0x4b5960"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    20284
+   ]
+  },
+  {
+   "template": "{_0x4b5960}",
+   "alternatives": [
+    "{_0x4b5960}"
+   ],
+   "holes": [
+    "_0x4b5960"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    20285
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/{specType}/[e|{oType}].png",
+   "alternatives": [
+    "gameobj/{oType}/{specType}/e.png",
+    "gameobj/{oType}/{specType}/{oType}.png"
+   ],
+   "holes": [
+    "oType",
+    "specType"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    20319
+   ]
+  },
+  {
+   "template": "skins/land/lion/{animalSpecies}{getSubSpecies()}/lion_roar.png",
+   "alternatives": [
+    "skins/land/lion/{animalSpecies}{getSubSpecies()}/lion_roar.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    20457
+   ]
+  },
+  {
+   "template": "skins/land/lion/{animalSpecies}{getSubSpecies()}/lion_head1.png",
+   "alternatives": [
+    "skins/land/lion/{animalSpecies}{getSubSpecies()}/lion_head1.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    20550,
+    20551
+   ]
+  },
+  {
+   "template": "skins/land/rhino/{animalSpecies}{getSubSpecies()}/rhino_charge.png",
+   "alternatives": [
+    "skins/land/rhino/{animalSpecies}{getSubSpecies()}/rhino_charge.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    20611
+   ]
+  },
+  {
+   "template": "skins/land/rhino/{animalSpecies}{getSubSpecies()}/rhino_head1.png",
+   "alternatives": [
+    "skins/land/rhino/{animalSpecies}{getSubSpecies()}/rhino_head1.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    20630
+   ]
+  },
+  {
+   "template": "skins/land/pig/{animalSpecies}{getSubSpecies()}/pig.png",
+   "alternatives": [
+    "skins/land/pig/{animalSpecies}{getSubSpecies()}/pig.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    20697
+   ]
+  },
+  {
+   "template": "skins/land/deer/{animalSpecies}{getSubSpecies()}/deer.png",
+   "alternatives": [
+    "skins/land/deer/{animalSpecies}{getSubSpecies()}/deer.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    20767
+   ]
+  },
+  {
+   "template": "skins/land/donkey/{animalSpecies}{getSubSpecies()}/donkey.png",
+   "alternatives": [
+    "skins/land/donkey/{animalSpecies}{getSubSpecies()}/donkey.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    20815
+   ]
+  },
+  {
+   "template": "skins/land/donkey/{animalSpecies}{getSubSpecies()}/legs.png",
+   "alternatives": [
+    "skins/land/donkey/{animalSpecies}{getSubSpecies()}/legs.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    20835,
+    20836
+   ]
+  },
+  {
+   "template": "skins/land/donkey/{animalSpecies}{getSubSpecies()}/donkey_head{cond}.png",
+   "alternatives": [
+    "skins/land/donkey/{animalSpecies}{getSubSpecies()}/donkey_head{cond}.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()",
+    "cond"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    20855
+   ]
+  },
+  {
+   "template": "skins/land/donkey/{animalSpecies}{getSubSpecies()}/donkey_head{specType}.png",
+   "alternatives": [
+    "skins/land/donkey/{animalSpecies}{getSubSpecies()}/donkey_head{specType}.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()",
+    "specType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    20874
+   ]
+  },
+  {
+   "template": "{_0x2fb4df}",
+   "alternatives": [
+    "{_0x2fb4df}"
+   ],
+   "holes": [
+    "_0x2fb4df"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    20933
+   ]
+  },
+  {
+   "template": "skins/land/zebra/{animalSpecies}{getSubSpecies()}/ability.png",
+   "alternatives": [
+    "skins/land/zebra/{animalSpecies}{getSubSpecies()}/ability.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    20936
+   ]
+  },
+  {
+   "template": "skins/land/bear/{animalSpecies}/{animalSubSpecies}/slash.png",
+   "alternatives": [
+    "skins/land/bear/{animalSpecies}/{animalSubSpecies}/slash.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    21047
+   ]
+  },
+  {
+   "template": "skins/land/croc/{animalSpecies}/{animalSubSpecies}/croc.png",
+   "alternatives": [
+    "skins/land/croc/{animalSpecies}/{animalSubSpecies}/croc.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    21106
+   ]
+  },
+  {
+   "template": "skins/volcano/kingdragon/{animalSpecies}/left_wing.png",
+   "alternatives": [
+    "skins/volcano/kingdragon/{animalSpecies}/left_wing.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    21133
+   ]
+  },
+  {
+   "template": "skins/volcano/kingdragon/{animalSpecies}/right_wing.png",
+   "alternatives": [
+    "skins/volcano/kingdragon/{animalSpecies}/right_wing.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    21134
+   ]
+  },
+  {
+   "template": "skins/volcano/kingdragon/{animalSpecies}/left_wing_tips.png",
+   "alternatives": [
+    "skins/volcano/kingdragon/{animalSpecies}/left_wing_tips.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    21142
+   ]
+  },
+  {
+   "template": "skins/volcano/kingdragon/{animalSpecies}/right_wing_tips.png",
+   "alternatives": [
+    "skins/volcano/kingdragon/{animalSpecies}/right_wing_tips.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    21143
+   ]
+  },
+  {
+   "template": "skins/volcano/kingdragon/{animalSpecies}/left_wing1.png",
+   "alternatives": [
+    "skins/volcano/kingdragon/{animalSpecies}/left_wing1.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    21151
+   ]
+  },
+  {
+   "template": "skins/volcano/kingdragon/{animalSpecies}/right_wing2.png",
+   "alternatives": [
+    "skins/volcano/kingdragon/{animalSpecies}/right_wing2.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    21152
+   ]
+  },
+  {
+   "template": "skins/volcano/kingdragon/{animalSpecies}/nostrils.png",
+   "alternatives": [
+    "skins/volcano/kingdragon/{animalSpecies}/nostrils.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    21162
+   ]
+  },
+  {
+   "template": "skins/volcano/kingdragon/{animalSpecies}/bone1.png",
+   "alternatives": [
+    "skins/volcano/kingdragon/{animalSpecies}/bone1.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    21173
+   ]
+  },
+  {
+   "template": "skins/volcano/kingdragon/{animalSpecies}/bone3.png",
+   "alternatives": [
+    "skins/volcano/kingdragon/{animalSpecies}/bone3.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    21184
+   ]
+  },
+  {
+   "template": "skins/volcano/kingdragon/{animalSpecies}/bone2.png",
+   "alternatives": [
+    "skins/volcano/kingdragon/{animalSpecies}/bone2.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    21194,
+    21203
+   ]
+  },
+  {
+   "template": "img/fire/{_0x2a052e}/0.png",
+   "alternatives": [
+    "img/fire/{_0x2a052e}/0.png"
+   ],
+   "holes": [
+    "_0x2a052e"
+   ],
+   "category": "ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    21297
+   ]
+  },
+  {
+   "template": "skins/arctic/yeti/{animalSpecies}/[{animalSubSpecies}/|]ability.png",
+   "alternatives": [
+    "skins/arctic/yeti/{animalSpecies}/{animalSubSpecies}/ability.png",
+    "skins/arctic/yeti/{animalSpecies}/ability.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    21345
+   ]
+  },
+  {
+   "template": "skins/arctic/yeti/{animalSpecies}/yeti_head1.png",
+   "alternatives": [
+    "skins/arctic/yeti/{animalSpecies}/yeti_head1.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    21380,
+    21381
+   ]
+  },
+  {
+   "template": "skins/arctic/sabertooth/{animalSpecies}{getSubSpecies()}/sabertooth.png",
+   "alternatives": [
+    "skins/arctic/sabertooth/{animalSpecies}{getSubSpecies()}/sabertooth.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    21491
+   ]
+  },
+  {
+   "template": "skins/arctic/penguin/{animalSpecies}{getSubSpecies()}/penguin1.png",
+   "alternatives": [
+    "skins/arctic/penguin/{animalSpecies}{getSubSpecies()}/penguin1.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    21528
+   ]
+  },
+  {
+   "template": "skins/arctic/seal/{animalSpecies}{getSubSpecies()}/seal1.png",
+   "alternatives": [
+    "skins/arctic/seal/{animalSpecies}{getSubSpecies()}/seal1.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    21565
+   ]
+  },
+  {
+   "template": "skins/arctic/walrus/{animalSpecies}{getSubSpecies()}/walrus1.png",
+   "alternatives": [
+    "skins/arctic/walrus/{animalSpecies}{getSubSpecies()}/walrus1.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    21612
+   ]
+  },
+  {
+   "template": "skins/arctic/wolf/{animalSpecies}{getSubSpecies()}/wolf1.png",
+   "alternatives": [
+    "skins/arctic/wolf/{animalSpecies}{getSubSpecies()}/wolf1.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    21652
+   ]
+  },
+  {
+   "template": "skins/arctic/wolverine/{animalSpecies}{getSubSpecies()}/wolverine1.png",
+   "alternatives": [
+    "skins/arctic/wolverine/{animalSpecies}{getSubSpecies()}/wolverine1.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    21688
+   ]
+  },
+  {
+   "template": "skins/arctic/muskox/{animalSpecies}/muskox2.png",
+   "alternatives": [
+    "skins/arctic/muskox/{animalSpecies}/muskox2.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    21728
+   ]
+  },
+  {
+   "template": "skins/arctic/snowman/{animalSpecies}/ability.png",
+   "alternatives": [
+    "skins/arctic/snowman/{animalSpecies}/ability.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    21750
+   ]
+  },
+  {
+   "template": "skins/arctic/snowman/{animalSpecies}/carrot_nose.png",
+   "alternatives": [
+    "skins/arctic/snowman/{animalSpecies}/carrot_nose.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    21778
+   ]
+  },
+  {
+   "template": "skins/arctic/snowman/{animalSpecies}/snow[girl|man]_head1.png",
+   "alternatives": [
+    "skins/arctic/snowman/{animalSpecies}/snowgirl_head1.png",
+    "skins/arctic/snowman/{animalSpecies}/snowman_head1.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    21793,
+    21794
+   ]
+  },
+  {
+   "template": "{_0x43fdba}",
+   "alternatives": [
+    "{_0x43fdba}"
+   ],
+   "holes": [
+    "_0x43fdba"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    21882
+   ]
+  },
+  {
+   "template": "skins/arctic/markhor/{animalSpecies}/{animalSubSpecies}/ability.png",
+   "alternatives": [
+    "skins/arctic/markhor/{animalSpecies}/{animalSubSpecies}/ability.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    21885
+   ]
+  },
+  {
+   "template": "skins/arctic/markhor/{animalSpecies}/{animalSubSpecies}/front_legs.png",
+   "alternatives": [
+    "skins/arctic/markhor/{animalSpecies}/{animalSubSpecies}/front_legs.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    21899,
+    21901
+   ]
+  },
+  {
+   "template": "skins/arctic/markhor/{animalSpecies}/{animalSubSpecies}/back_legs.png",
+   "alternatives": [
+    "skins/arctic/markhor/{animalSpecies}/{animalSubSpecies}/back_legs.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    21900,
+    21902
+   ]
+  },
+  {
+   "template": "skins/arctic/markhor/{animalSpecies}/{animalSubSpecies}/markhor_head.png",
+   "alternatives": [
+    "skins/arctic/markhor/{animalSpecies}/{animalSubSpecies}/markhor_head.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    21915
+   ]
+  },
+  {
+   "template": ".png",
+   "alternatives": [
+    ".png"
+   ],
+   "holes": [],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    21924,
+    26618
+   ]
+  },
+  {
+   "template": "skins/arctic/reindeer/{animalSpecies}{getSubSpecies()}/reindeer.png",
+   "alternatives": [
+    "skins/arctic/reindeer/{animalSpecies}{getSubSpecies()}/reindeer.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    21963
+   ]
+  },
+  {
+   "template": "skins/land/trex/{animalSpecies}/[{animalSubSpecies}/|]trex.png",
+   "alternatives": [
+    "skins/land/trex/{animalSpecies}/{animalSubSpecies}/trex.png",
+    "skins/land/trex/{animalSpecies}/trex.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    22022
+   ]
+  },
+  {
+   "template": "land/dragon/{animalSpecies}/{animalSubSpecies}/dragon.png",
+   "alternatives": [
+    "land/dragon/{animalSpecies}/{animalSubSpecies}/dragon.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    22125
+   ]
+  },
+  {
+   "template": "skins/land/elephant/{animalSpecies}/{animalSubSpecies}/elephant.png",
+   "alternatives": [
+    "skins/land/elephant/{animalSpecies}/{animalSubSpecies}/elephant.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    22178
+   ]
+  },
+  {
+   "template": "skins/land/hippo/{animalSpecies}{getSubSpecies()}/hippo1.png",
+   "alternatives": [
+    "skins/land/hippo/{animalSpecies}{getSubSpecies()}/hippo1.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    22221
+   ]
+  },
+  {
+   "template": "img/web/0/spiderWeb.png",
+   "alternatives": [
+    "img/web/0/spiderWeb.png"
+   ],
+   "holes": [],
+   "category": "ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    22264
+   ]
+  },
+  {
+   "template": "skins/land/boaconstrictor/{animalSpecies}{getSubSpecies()}/constrict.png",
+   "alternatives": [
+    "skins/land/boaconstrictor/{animalSpecies}{getSubSpecies()}/constrict.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    22311
+   ]
+  },
+  {
+   "template": "skins/land/boaconstrictor/{animalSpecies}{getSubSpecies()}/tongue.png",
+   "alternatives": [
+    "skins/land/boaconstrictor/{animalSpecies}{getSubSpecies()}/tongue.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    22321
+   ]
+  },
+  {
+   "template": "{_0x37b26c}",
+   "alternatives": [
+    "{_0x37b26c}"
+   ],
+   "holes": [
+    "_0x37b26c"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    22328
+   ]
+  },
+  {
+   "template": "skins/land/gorilla/{animalSpecies}/{animalSubSpecies}/gorilla.png",
+   "alternatives": [
+    "skins/land/gorilla/{animalSpecies}/{animalSubSpecies}/gorilla.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    22372
+   ]
+  },
+  {
+   "template": "skins/land/gorilla/{animalSpecies}/{animalSubSpecies}/gorilla_head.png",
+   "alternatives": [
+    "skins/land/gorilla/{animalSpecies}/{animalSubSpecies}/gorilla_head.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    22385
+   ]
+  },
+  {
+   "template": "skins/land/gorilla/{animalSpecies}/{animalSubSpecies}/fire1{cond}.png",
+   "alternatives": [
+    "skins/land/gorilla/{animalSpecies}/{animalSubSpecies}/fire1{cond}.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies",
+    "cond"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    22388
+   ]
+  },
+  {
+   "template": "skins/ocean/kraken/{animalSpecies}/[{animalSubSpecies}/|]kraken.png",
+   "alternatives": [
+    "skins/ocean/kraken/{animalSpecies}/{animalSubSpecies}/kraken.png",
+    "skins/ocean/kraken/{animalSpecies}/kraken.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    22456
+   ]
+  },
+  {
+   "template": "skins/ocean/bluewhale/{animalSpecies}/{animalSubSpecies}/ability_whaleTailHit.png",
+   "alternatives": [
+    "skins/ocean/bluewhale/{animalSpecies}/{animalSubSpecies}/ability_whaleTailHit.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    22518
+   ]
+  },
+  {
+   "template": "{_0x21cc9c}",
+   "alternatives": [
+    "{_0x21cc9c}"
+   ],
+   "holes": [
+    "_0x21cc9c"
+   ],
+   "category": "other",
+   "base": "root",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    22555
+   ]
+  },
+  {
+   "template": "skins/ocean/kingcrab/{animalSpecies}/ability_crabSmashSkin.png",
+   "alternatives": [
+    "skins/ocean/kingcrab/{animalSpecies}/ability_crabSmashSkin.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    22560
+   ]
+  },
+  {
+   "template": "skins/ocean/killerwhale/{animalSpecies}{getSubSpecies()}/killerwhale.png",
+   "alternatives": [
+    "skins/ocean/killerwhale/{animalSpecies}{getSubSpecies()}/killerwhale.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    22603
+   ]
+  },
+  {
+   "template": "skins/ocean/jellyfish/{animalSpecies}{getSubSpecies()}/jellyfish.png",
+   "alternatives": [
+    "skins/ocean/jellyfish/{animalSpecies}{getSubSpecies()}/jellyfish.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    22649
+   ]
+  },
+  {
+   "template": "{_0x3dfb6a}",
+   "alternatives": [
+    "{_0x3dfb6a}"
+   ],
+   "holes": [
+    "_0x3dfb6a"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    22662
+   ]
+  },
+  {
+   "template": "skins/ocean/jellyfish/{animalSpecies}{getSubSpecies()}/jellyfish_shine.png",
+   "alternatives": [
+    "skins/ocean/jellyfish/{animalSpecies}{getSubSpecies()}/jellyfish_shine.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    22678
+   ]
+  },
+  {
+   "template": "skins/ocean/stingray/{animalSpecies}{getSubSpecies()}/ability.png",
+   "alternatives": [
+    "skins/ocean/stingray/{animalSpecies}{getSubSpecies()}/ability.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    22729
+   ]
+  },
+  {
+   "template": "skins/ocean/stingray/{animalSpecies}{getSubSpecies()}/tail.png",
+   "alternatives": [
+    "skins/ocean/stingray/{animalSpecies}{getSubSpecies()}/tail.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    22745
+   ]
+  },
+  {
+   "template": "skins/ocean/stingray/{animalSpecies}{getSubSpecies()}/tail2.png",
+   "alternatives": [
+    "skins/ocean/stingray/{animalSpecies}{getSubSpecies()}/tail2.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    22754
+   ]
+  },
+  {
+   "template": "skins/ocean/stingray/{animalSpecies}{getSubSpecies()}/leftwing.png",
+   "alternatives": [
+    "skins/ocean/stingray/{animalSpecies}{getSubSpecies()}/leftwing.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    22762
+   ]
+  },
+  {
+   "template": "skins/ocean/stingray/{animalSpecies}{getSubSpecies()}/rightwing.png",
+   "alternatives": [
+    "skins/ocean/stingray/{animalSpecies}{getSubSpecies()}/rightwing.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    22769
+   ]
+  },
+  {
+   "template": "skins/ocean/pufferfish/{animalSpecies}{getSubSpecies()}/pufferfish2.png",
+   "alternatives": [
+    "skins/ocean/pufferfish/{animalSpecies}{getSubSpecies()}/pufferfish2.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    22809
+   ]
+  },
+  {
+   "template": "skins/ocean/pufferfish/{animalSpecies}{getSubSpecies()}/tail.png",
+   "alternatives": [
+    "skins/ocean/pufferfish/{animalSpecies}{getSubSpecies()}/tail.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    22827
+   ]
+  },
+  {
+   "template": "skins/ocean/squid/{animalSpecies}{getSubSpecies()}/ability.png",
+   "alternatives": [
+    "skins/ocean/squid/{animalSpecies}{getSubSpecies()}/ability.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    22879
+   ]
+  },
+  {
+   "template": "skins/ocean/squid/{animalSpecies}{getSubSpecies()}/cape.png",
+   "alternatives": [
+    "skins/ocean/squid/{animalSpecies}{getSubSpecies()}/cape.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    22883
+   ]
+  },
+  {
+   "template": "skins/ocean/shark/{animalSpecies}{getSubSpecies()}/ability.png",
+   "alternatives": [
+    "skins/ocean/shark/{animalSpecies}{getSubSpecies()}/ability.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    22929
+   ]
+  },
+  {
+   "template": "{_0x169199}",
+   "alternatives": [
+    "{_0x169199}"
+   ],
+   "holes": [
+    "_0x169199"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    22942
+   ]
+  },
+  {
+   "template": "skins/ocean/shark/{animalSpecies}{getSubSpecies()}/tail.png",
+   "alternatives": [
+    "skins/ocean/shark/{animalSpecies}{getSubSpecies()}/tail.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    22948
+   ]
+  },
+  {
+   "template": "skins/ocean/turtle/{animalSpecies}{getSubSpecies()}/turtle2.png",
+   "alternatives": [
+    "skins/ocean/turtle/{animalSpecies}{getSubSpecies()}/turtle2.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    22989
+   ]
+  },
+  {
+   "template": "skins/ocean/turtle/{animalSpecies}{getSubSpecies()}/head.png",
+   "alternatives": [
+    "skins/ocean/turtle/{animalSpecies}{getSubSpecies()}/head.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23006
+   ]
+  },
+  {
+   "template": "skins/ocean/swordfish/{animalSpecies}/{animalSubSpecies}/ability.png",
+   "alternatives": [
+    "skins/ocean/swordfish/{animalSpecies}/{animalSubSpecies}/ability.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    23055
+   ]
+  },
+  {
+   "template": "skins/ocean/swordfish/{animalSpecies}/{animalSubSpecies}/nose.png",
+   "alternatives": [
+    "skins/ocean/swordfish/{animalSpecies}/{animalSubSpecies}/nose.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23079
+   ]
+  },
+  {
+   "template": "skins/ocean/swordfish/{animalSpecies}/{animalSubSpecies}/tail.png",
+   "alternatives": [
+    "skins/ocean/swordfish/{animalSpecies}/{animalSubSpecies}/tail.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23085
+   ]
+  },
+  {
+   "template": "{_0x53937d}",
+   "alternatives": [
+    "{_0x53937d}"
+   ],
+   "holes": [
+    "_0x53937d"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObjForSeason"
+   ],
+   "lines": [
+    23093
+   ]
+  },
+  {
+   "template": "skins/ocean/crab/{animalSpecies}{getSubSpecies()}/crab2.png",
+   "alternatives": [
+    "skins/ocean/crab/{animalSpecies}{getSubSpecies()}/crab2.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    23126
+   ]
+  },
+  {
+   "template": "skins/ocean/snail/snail_head.png",
+   "alternatives": [
+    "skins/ocean/snail/snail_head.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23180
+   ]
+  },
+  {
+   "template": "img/arcticano/{_0x4f3a61}.png",
+   "alternatives": [
+    "img/arcticano/{_0x4f3a61}.png"
+   ],
+   "holes": [
+    "_0x4f3a61"
+   ],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23263
+   ]
+  },
+  {
+   "template": "img/raindrop.png",
+   "alternatives": [
+    "img/raindrop.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23284
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/{cond}.png",
+   "alternatives": [
+    "gameobj/{oType}/{cond}.png"
+   ],
+   "holes": [
+    "oType",
+    "cond"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23319
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/0.png",
+   "alternatives": [
+    "gameobj/{oType}/0.png"
+   ],
+   "holes": [
+    "oType"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23334
+   ]
+  },
+  {
+   "template": "skins/land/bigfoot/{animalSpecies}/ability.png",
+   "alternatives": [
+    "skins/land/bigfoot/{animalSpecies}/ability.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    23371
+   ]
+  },
+  {
+   "template": "skins/land/bigfoot/{animalSpecies}/arm21.png",
+   "alternatives": [
+    "skins/land/bigfoot/{animalSpecies}/arm21.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23387,
+    23508
+   ]
+  },
+  {
+   "template": "skins/land/bigfoot/{animalSpecies}/mouth{oogaBoogaFrame}.png",
+   "alternatives": [
+    "skins/land/bigfoot/{animalSpecies}/mouth{oogaBoogaFrame}.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "oogaBoogaFrame"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23427
+   ]
+  },
+  {
+   "template": "skins/land/bigfoot/{animalSpecies}/head[2|].png",
+   "alternatives": [
+    "skins/land/bigfoot/{animalSpecies}/head2.png",
+    "skins/land/bigfoot/{animalSpecies}/head.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23451
+   ]
+  },
+  {
+   "template": "skins/land/bigfoot/{animalSpecies}/arm2.png",
+   "alternatives": [
+    "skins/land/bigfoot/{animalSpecies}/arm2.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23461
+   ]
+  },
+  {
+   "template": "skins/land/bigfoot/{animalSpecies}/arm2-fire.png",
+   "alternatives": [
+    "skins/land/bigfoot/{animalSpecies}/arm2-fire.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23475
+   ]
+  },
+  {
+   "template": "skins/land/bigfoot/{animalSpecies}/arm1.png",
+   "alternatives": [
+    "skins/land/bigfoot/{animalSpecies}/arm1.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23488
+   ]
+  },
+  {
+   "template": "skins/land/bigfoot/{speciesType}/spear.png",
+   "alternatives": [
+    "skins/land/bigfoot/{speciesType}/spear.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23540
+   ]
+  },
+  {
+   "template": "skins/land/bigfoot/{speciesType}/spear2.png",
+   "alternatives": [
+    "skins/land/bigfoot/{speciesType}/spear2.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23549
+   ]
+  },
+  {
+   "template": "skins/land/bigfoot/{speciesType}/arm2.png",
+   "alternatives": [
+    "skins/land/bigfoot/{speciesType}/arm2.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23558
+   ]
+  },
+  {
+   "template": "skins/land/bigfoot/{speciesType}/firewood.png",
+   "alternatives": [
+    "skins/land/bigfoot/{speciesType}/firewood.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    23603
+   ]
+  },
+  {
+   "template": "gameobj/101/{getTreeName()}/trunk.png",
+   "alternatives": [
+    "gameobj/101/{getTreeName()}/trunk.png"
+   ],
+   "holes": [
+    "getTreeName()"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23630
+   ]
+  },
+  {
+   "template": "{treeCanopySkin}",
+   "alternatives": [
+    "{treeCanopySkin}"
+   ],
+   "holes": [
+    "treeCanopySkin"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23645
+   ]
+  },
+  {
+   "template": "gameobj/101/{_0x2f06c7}/xmas/{_0x55e4c3}.png",
+   "alternatives": [
+    "gameobj/101/{_0x2f06c7}/xmas/{_0x55e4c3}.png"
+   ],
+   "holes": [
+    "_0x2f06c7",
+    "_0x55e4c3"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23667,
+    23668
+   ]
+  },
+  {
+   "template": "gameobj/101/{_0x2e9442}/{_0x2ea1d2}_{eventType}.png",
+   "alternatives": [
+    "gameobj/101/{_0x2e9442}/{_0x2ea1d2}_{eventType}.png"
+   ],
+   "holes": [
+    "_0x2e9442",
+    "_0x2ea1d2",
+    "eventType"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23671,
+    23672
+   ]
+  },
+  {
+   "template": "gameobj/101/{_0x5a4103}/{_0x55569f}_{eventType}.png",
+   "alternatives": [
+    "gameobj/101/{_0x5a4103}/{_0x55569f}_{eventType}.png"
+   ],
+   "holes": [
+    "_0x5a4103",
+    "_0x55569f",
+    "eventType"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23675,
+    23676
+   ]
+  },
+  {
+   "template": "gameobj/101/{_0xe97a5c}/{_0x4f7fd3}.png",
+   "alternatives": [
+    "gameobj/101/{_0xe97a5c}/{_0x4f7fd3}.png"
+   ],
+   "holes": [
+    "_0xe97a5c",
+    "_0x4f7fd3"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    23740
+   ]
+  },
+  {
+   "template": "gameobj/40/current{_0xafa15e[]}.png",
+   "alternatives": [
+    "gameobj/40/current{_0xafa15e[]}.png"
+   ],
+   "holes": [
+    "_0xafa15e[]"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23837
+   ]
+  },
+  {
+   "template": "gameobj/40/currentRight.png",
+   "alternatives": [
+    "gameobj/40/currentRight.png"
+   ],
+   "holes": [],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    23991
+   ]
+  },
+  {
+   "template": "img/viralpandemic/virus.png",
+   "alternatives": [
+    "img/viralpandemic/virus.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    24148
+   ]
+  },
+  {
+   "template": "img/viralpandemic/{getImmunityFoodName()}_e.png",
+   "alternatives": [
+    "img/viralpandemic/{getImmunityFoodName()}_e.png"
+   ],
+   "holes": [
+    "getImmunityFoodName()"
+   ],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    24172
+   ]
+  },
+  {
+   "template": "img/custom/trunk2.png",
+   "alternatives": [
+    "img/custom/trunk2.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    24373
+   ]
+  },
+  {
+   "template": "img/custom/trunk1.png",
+   "alternatives": [
+    "img/custom/trunk1.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    24378
+   ]
+  },
+  {
+   "template": "img/custom/pad.png",
+   "alternatives": [
+    "img/custom/pad.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    24399
+   ]
+  },
+  {
+   "template": "img/custom/trampoline/rug_zebra.png",
+   "alternatives": [
+    "img/custom/trampoline/rug_zebra.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    24442
+   ]
+  },
+  {
+   "template": "img/custom/trampoline/leg_zebra.png",
+   "alternatives": [
+    "img/custom/trampoline/leg_zebra.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    24463
+   ]
+  },
+  {
+   "template": "skins/{_0x553a8b.skinName}.png",
+   "alternatives": [
+    "skins/{_0x553a8b.skinName}.png"
+   ],
+   "holes": [
+    "_0x553a8b.skinName"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    24532
+   ]
+  },
+  {
+   "template": "skins/land/aiboss/sultan/left_wing.png",
+   "alternatives": [
+    "skins/land/aiboss/sultan/left_wing.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    24552
+   ]
+  },
+  {
+   "template": "skins/land/aiboss/sultan/right_wing.png",
+   "alternatives": [
+    "skins/land/aiboss/sultan/right_wing.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    24553
+   ]
+  },
+  {
+   "template": "skins/land/aiboss/sultan/sultan_head.png",
+   "alternatives": [
+    "skins/land/aiboss/sultan/sultan_head.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    24562
+   ]
+  },
+  {
+   "template": "skins/land/aiboss/sultan/tail.png",
+   "alternatives": [
+    "skins/land/aiboss/sultan/tail.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    24575
+   ]
+  },
+  {
+   "template": "skins/land/aiboss/chandyo/chandyo_back.png",
+   "alternatives": [
+    "skins/land/aiboss/chandyo/chandyo_back.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    24588
+   ]
+  },
+  {
+   "template": "skins/land/aiboss/chandyo/chandyo_head.png",
+   "alternatives": [
+    "skins/land/aiboss/chandyo/chandyo_head.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    24594
+   ]
+  },
+  {
+   "template": "img/camera.png",
+   "alternatives": [
+    "img/camera.png"
+   ],
+   "holes": [],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    24617
+   ]
+  },
+  {
+   "template": "img/disasters/{tornadoType}.png",
+   "alternatives": [
+    "img/disasters/{tornadoType}.png"
+   ],
+   "holes": [
+    "tornadoType"
+   ],
+   "category": "disasters",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    24842
+   ]
+  },
+  {
+   "template": "{_0x409ee6}",
+   "alternatives": [
+    "{_0x409ee6}"
+   ],
+   "holes": [
+    "_0x409ee6"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    24843,
+    24866
+   ]
+  },
+  {
+   "template": "img/disasters/{tornadoFace}.png",
+   "alternatives": [
+    "img/disasters/{tornadoFace}.png"
+   ],
+   "holes": [
+    "tornadoFace"
+   ],
+   "category": "disasters",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    24865
+   ]
+  },
+  {
+   "template": "img/pumpkin/{pumpkinType}/{frameNumber}.png",
+   "alternatives": [
+    "img/pumpkin/{pumpkinType}/{frameNumber}.png"
+   ],
+   "holes": [
+    "pumpkinType",
+    "frameNumber"
+   ],
+   "category": "ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    24938
+   ]
+  },
+  {
+   "template": "img/pumpkin/{pumpkinType}/{frameNumber}.png",
+   "alternatives": [
+    "img/pumpkin/{pumpkinType}/{frameNumber}.png"
+   ],
+   "holes": [
+    "pumpkinType",
+    "frameNumber"
+   ],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    24939
+   ]
+  },
+  {
+   "template": "skins/forest/raven/{animalSpecies}{getSubSpecies()}/ability.png",
+   "alternatives": [
+    "skins/forest/raven/{animalSpecies}{getSubSpecies()}/ability.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25033
+   ]
+  },
+  {
+   "template": "{_0xb1c21c}_wing{_0xe01c94}.png",
+   "alternatives": [
+    "{_0xb1c21c}_wing{_0xe01c94}.png"
+   ],
+   "holes": [
+    "_0xb1c21c",
+    "_0xe01c94"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25045
+   ]
+  },
+  {
+   "template": "{_0x28b032}_head.png",
+   "alternatives": [
+    "{_0x28b032}_head.png"
+   ],
+   "holes": [
+    "_0x28b032"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25048
+   ]
+  },
+  {
+   "template": "skins/forest/raven/{animalSpecies}/raven_head1.png",
+   "alternatives": [
+    "skins/forest/raven/{animalSpecies}/raven_head1.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25062
+   ]
+  },
+  {
+   "template": "skins/forest/raven/{animalSpecies}/raven_wing1.png",
+   "alternatives": [
+    "skins/forest/raven/{animalSpecies}/raven_wing1.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25067,
+    25110
+   ]
+  },
+  {
+   "template": "skins/forest/raven/{animalSpecies}/raven_wing2.png",
+   "alternatives": [
+    "skins/forest/raven/{animalSpecies}/raven_wing2.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25081,
+    25124
+   ]
+  },
+  {
+   "template": "skins/forest/raven/{animalSpecies}/raven_head.png",
+   "alternatives": [
+    "skins/forest/raven/{animalSpecies}/raven_head.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25141
+   ]
+  },
+  {
+   "template": "{_0x5270d3}_wing{_0x56da3b}.png",
+   "alternatives": [
+    "{_0x5270d3}_wing{_0x56da3b}.png"
+   ],
+   "holes": [
+    "_0x5270d3",
+    "_0x56da3b"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25215
+   ]
+  },
+  {
+   "template": "{_0x48888e}_head.png",
+   "alternatives": [
+    "{_0x48888e}_head.png"
+   ],
+   "holes": [
+    "_0x48888e"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25218
+   ]
+  },
+  {
+   "template": "skins/forest/kakapo/{animalSpecies}/kakapo_head.png",
+   "alternatives": [
+    "skins/forest/kakapo/{animalSpecies}/kakapo_head.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25232,
+    25311
+   ]
+  },
+  {
+   "template": "skins/forest/kakapo/{animalSpecies}/kakapo_wing1.png",
+   "alternatives": [
+    "skins/forest/kakapo/{animalSpecies}/kakapo_wing1.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25237,
+    25280
+   ]
+  },
+  {
+   "template": "skins/forest/kakapo/{animalSpecies}/kakapo_wing2.png",
+   "alternatives": [
+    "skins/forest/kakapo/{animalSpecies}/kakapo_wing2.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25251,
+    25294
+   ]
+  },
+  {
+   "template": "skins/forest/kakapo/{animalSpecies}{getSubSpecies()}/kakapo.png",
+   "alternatives": [
+    "skins/forest/kakapo/{animalSpecies}{getSubSpecies()}/kakapo.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25323
+   ]
+  },
+  {
+   "template": "skins/land/mole/{animalSpecies}{getSubSpecies()}/mole.png",
+   "alternatives": [
+    "skins/land/mole/{animalSpecies}{getSubSpecies()}/mole.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25367
+   ]
+  },
+  {
+   "template": "img/coin/coin[_e|].png",
+   "alternatives": [
+    "img/coin/coin_e.png",
+    "img/coin/coin.png"
+   ],
+   "holes": [],
+   "category": "food",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25378
+   ]
+  },
+  {
+   "template": "arctic/snowleopard/{animalSpecies}{getSubSpecies()}/snowleopard.png",
+   "alternatives": [
+    "arctic/snowleopard/{animalSpecies}{getSubSpecies()}/snowleopard.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25476
+   ]
+  },
+  {
+   "template": "skins/battleduck/{speciesType}/battleduck_body.png",
+   "alternatives": [
+    "skins/battleduck/{speciesType}/battleduck_body.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25496
+   ]
+  },
+  {
+   "template": "skins/battleduck/{speciesType}/battleduck_wing1.png",
+   "alternatives": [
+    "skins/battleduck/{speciesType}/battleduck_wing1.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25500
+   ]
+  },
+  {
+   "template": "skins/battleduck/{speciesType}/battleduck_wing2.png",
+   "alternatives": [
+    "skins/battleduck/{speciesType}/battleduck_wing2.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25514
+   ]
+  },
+  {
+   "template": "skins/battleduck/{speciesType}/battleduck_head.png",
+   "alternatives": [
+    "skins/battleduck/{speciesType}/battleduck_head.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25528
+   ]
+  },
+  {
+   "template": "{_0x178b7a}_wing{_0x4c0199}.png",
+   "alternatives": [
+    "{_0x178b7a}_wing{_0x4c0199}.png"
+   ],
+   "holes": [
+    "_0x178b7a",
+    "_0x4c0199"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25539
+   ]
+  },
+  {
+   "template": "{_0x4b586b}_body.png",
+   "alternatives": [
+    "{_0x4b586b}_body.png"
+   ],
+   "holes": [
+    "_0x4b586b"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25542
+   ]
+  },
+  {
+   "template": "{_0x46e160}_head.png",
+   "alternatives": [
+    "{_0x46e160}_head.png"
+   ],
+   "holes": [
+    "_0x46e160"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25545
+   ]
+  },
+  {
+   "template": "skins/land/giraffe/{animalSpecies}{getSubSpecies()}/giraffe.png",
+   "alternatives": [
+    "skins/land/giraffe/{animalSpecies}{getSubSpecies()}/giraffe.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25599
+   ]
+  },
+  {
+   "template": "skins/forest/whitegiraffe/{animalSpecies}{getSubSpecies()}/giraffe.png",
+   "alternatives": [
+    "skins/forest/whitegiraffe/{animalSpecies}{getSubSpecies()}/giraffe.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25637
+   ]
+  },
+  {
+   "template": "_wing{_0x11ab3a}.png",
+   "alternatives": [
+    "_wing{_0x11ab3a}.png"
+   ],
+   "holes": [
+    "_0x11ab3a"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25656
+   ]
+  },
+  {
+   "template": "_head.png",
+   "alternatives": [
+    "_head.png"
+   ],
+   "holes": [],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25659
+   ]
+  },
+  {
+   "template": "skins/forest/turkey/{animalSpecies}/ability_fly.png",
+   "alternatives": [
+    "skins/forest/turkey/{animalSpecies}/ability_fly.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25662
+   ]
+  },
+  {
+   "template": "skins/forest/turkey/{animalSpecies}/turkeyegg.png",
+   "alternatives": [
+    "skins/forest/turkey/{animalSpecies}/turkeyegg.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25663
+   ]
+  },
+  {
+   "template": "skins/forest/turkey/{animalSpecies}/ability.png",
+   "alternatives": [
+    "skins/forest/turkey/{animalSpecies}/ability.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25663
+   ]
+  },
+  {
+   "template": "skins/forest/turkey/{animalSpecies}/{_0x15e58a}.png",
+   "alternatives": [
+    "skins/forest/turkey/{animalSpecies}/{_0x15e58a}.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "_0x15e58a"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    25688
+   ]
+  },
+  {
+   "template": "{_0x15e58a}",
+   "alternatives": [
+    "{_0x15e58a}"
+   ],
+   "holes": [
+    "_0x15e58a"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25689
+   ]
+  },
+  {
+   "template": "skins/forest/turkey/{animalSpecies}/turkey_wing1.png",
+   "alternatives": [
+    "skins/forest/turkey/{animalSpecies}/turkey_wing1.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25706
+   ]
+  },
+  {
+   "template": "skins/forest/turkey/{animalSpecies}/turkey_wing2.png",
+   "alternatives": [
+    "skins/forest/turkey/{animalSpecies}/turkey_wing2.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25720
+   ]
+  },
+  {
+   "template": "skins/forest/turkey/{animalSpecies}/turkey_head.png",
+   "alternatives": [
+    "skins/forest/turkey/{animalSpecies}/turkey_head.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25737
+   ]
+  },
+  {
+   "template": "skins/forest/turkey/{speciesType}/turkeyegg[_e|].png",
+   "alternatives": [
+    "skins/forest/turkey/{speciesType}/turkeyegg_e.png",
+    "skins/forest/turkey/{speciesType}/turkeyegg.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25756
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/{oType}[_e|].png",
+   "alternatives": [
+    "gameobj/{oType}/{oType}_e.png",
+    "gameobj/{oType}/{oType}.png"
+   ],
+   "holes": [
+    "oType"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25774,
+    25775,
+    25793,
+    25794,
+    25813,
+    25814
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/{curBiome}/cave_bottom.png",
+   "alternatives": [
+    "gameobj/{oType}/{curBiome}/cave_bottom.png"
+   ],
+   "holes": [
+    "oType",
+    "curBiome"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25900,
+    25917
+   ]
+  },
+  {
+   "template": "{_0x1c929d}",
+   "alternatives": [
+    "{_0x1c929d}"
+   ],
+   "holes": [
+    "_0x1c929d"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25901,
+    25909
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/{curBiome}/cave_top.png",
+   "alternatives": [
+    "gameobj/{oType}/{curBiome}/cave_top.png"
+   ],
+   "holes": [
+    "oType",
+    "curBiome"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25908,
+    25924
+   ]
+  },
+  {
+   "template": "skins/santa/{animalSpecies}/hat.png",
+   "alternatives": [
+    "skins/santa/{animalSpecies}/hat.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    25988
+   ]
+  },
+  {
+   "template": "skins/santa/{animalSpecies}/bellhand.png",
+   "alternatives": [
+    "skins/santa/{animalSpecies}/bellhand.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    26013
+   ]
+  },
+  {
+   "template": "skins/santa/{animalSpecies}/santa_mouth{cond}.png",
+   "alternatives": [
+    "skins/santa/{animalSpecies}/santa_mouth{cond}.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "cond"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    26032
+   ]
+  },
+  {
+   "template": "skins/santa/{animalSpecies}/santa_head{_0x382d7d}.png",
+   "alternatives": [
+    "skins/santa/{animalSpecies}/santa_head{_0x382d7d}.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "_0x382d7d"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    26047
+   ]
+  },
+  {
+   "template": "skins/santa/{animalSpecies}/ability_santa_flying.png",
+   "alternatives": [
+    "skins/santa/{animalSpecies}/ability_santa_flying.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    26057
+   ]
+  },
+  {
+   "template": "skins/santa/{animalSpecies}/ability_santa_throwgifts.png",
+   "alternatives": [
+    "skins/santa/{animalSpecies}/ability_santa_throwgifts.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    26060
+   ]
+  },
+  {
+   "template": "skins/santa/{animalSpecies}/ability_santa_flyingsleigh.png",
+   "alternatives": [
+    "skins/santa/{animalSpecies}/ability_santa_flyingsleigh.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "abilities",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    26063
+   ]
+  },
+  {
+   "template": "skins/santa/0/sleigh.png",
+   "alternatives": [
+    "skins/santa/0/sleigh.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    26083
+   ]
+  },
+  {
+   "template": "skins/santa/0/[rudolph|rudolph1|deer|deer1]",
+   "alternatives": [
+    "skins/santa/0/rudolph",
+    "skins/santa/0/rudolph1",
+    "skins/santa/0/deer",
+    "skins/santa/0/deer1"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImagePath"
+   ],
+   "lines": [
+    26123
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/{oType}_{foodType}[_e|].png",
+   "alternatives": [
+    "gameobj/{oType}/{oType}_{foodType}_e.png",
+    "gameobj/{oType}/{oType}_{foodType}.png"
+   ],
+   "holes": [
+    "oType",
+    "foodType"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    26238,
+    26239,
+    28125,
+    28126
+   ]
+  },
+  {
+   "template": "img/xmasgifts/{giftColor}/gift_e.png",
+   "alternatives": [
+    "img/xmasgifts/{giftColor}/gift_e.png"
+   ],
+   "holes": [
+    "giftColor"
+   ],
+   "category": "food",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    26259
+   ]
+  },
+  {
+   "template": "skins/ocean/seahorse/{animalSpecies}{getSubSpecies()}/seahorse.png",
+   "alternatives": [
+    "skins/ocean/seahorse/{animalSpecies}{getSubSpecies()}/seahorse.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    26383
+   ]
+  },
+  {
+   "template": "skins/ocean/trout/{animalSpecies}/{animalSubSpecies}/trout.png",
+   "alternatives": [
+    "skins/ocean/trout/{animalSpecies}/{animalSubSpecies}/trout.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "animalSubSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    26477
+   ]
+  },
+  {
+   "template": "skins/land/fox/{animalSpecies}{getSubSpecies()}/fox.png",
+   "alternatives": [
+    "skins/land/fox/{animalSpecies}{getSubSpecies()}/fox.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    26562
+   ]
+  },
+  {
+   "template": "skins/land/{_0x3fa981}/{animalSpecies}{getSubSpecies()}/rabbit.png",
+   "alternatives": [
+    "skins/land/{_0x3fa981}/{animalSpecies}{getSubSpecies()}/rabbit.png"
+   ],
+   "holes": [
+    "_0x3fa981",
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    26616
+   ]
+  },
+  {
+   "template": "land/{_0x3fa981}/{animalSpecies}{getSubSpecies()}/rabbit[.png|]",
+   "alternatives": [
+    "land/{_0x3fa981}/{animalSpecies}{getSubSpecies()}/rabbit.png",
+    "land/{_0x3fa981}/{animalSpecies}{getSubSpecies()}/rabbit"
+   ],
+   "holes": [
+    "_0x3fa981",
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    26618
+   ]
+  },
+  {
+   "template": "skins/land/hedgehog/{animalSpecies}{getSubSpecies()}/hedgehog2.png",
+   "alternatives": [
+    "skins/land/hedgehog/{animalSpecies}{getSubSpecies()}/hedgehog2.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "getSubSpecies()"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    26657
+   ]
+  },
+  {
+   "template": "img/floaters/{floaterType}.png",
+   "alternatives": [
+    "img/floaters/{floaterType}.png"
+   ],
+   "holes": [
+    "floaterType"
+   ],
+   "category": "ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    26670
+   ]
+  },
+  {
+   "template": "{_0x26fcd6}",
+   "alternatives": [
+    "{_0x26fcd6}"
+   ],
+   "holes": [
+    "_0x26fcd6"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    26674
+   ]
+  },
+  {
+   "template": "img/floaters/{floaterType}_ripple.png",
+   "alternatives": [
+    "img/floaters/{floaterType}_ripple.png"
+   ],
+   "holes": [
+    "floaterType"
+   ],
+   "category": "ui",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    26690
+   ]
+  },
+  {
+   "template": "img/beachball/{pumpkinType}/{frameNumber}.png",
+   "alternatives": [
+    "img/beachball/{pumpkinType}/{frameNumber}.png"
+   ],
+   "holes": [
+    "pumpkinType",
+    "frameNumber"
+   ],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    26735
+   ]
+  },
+  {
+   "template": "img/umbrella/{umbrellaType}/{umbrellaColor}/umbrella[-closed|].png",
+   "alternatives": [
+    "img/umbrella/{umbrellaType}/{umbrellaColor}/umbrella-closed.png",
+    "img/umbrella/{umbrellaType}/{umbrellaColor}/umbrella.png"
+   ],
+   "holes": [
+    "umbrellaType",
+    "umbrellaColor"
+   ],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    26776
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/{curBiome}_{_0x1b40dd}.jpg",
+   "alternatives": [
+    "gameobj/{oType}/{curBiome}_{_0x1b40dd}.jpg"
+   ],
+   "holes": [
+    "oType",
+    "curBiome",
+    "_0x1b40dd"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    27336,
+    27337
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/{curBiome}_{_0x254a31.img}.png",
+   "alternatives": [
+    "gameobj/{oType}/{curBiome}_{_0x254a31.img}.png"
+   ],
+   "holes": [
+    "oType",
+    "curBiome",
+    "_0x254a31.img"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    27348,
+    27349
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/{oType}_{speciesSubType}_{hasPopped}.png",
+   "alternatives": [
+    "gameobj/{oType}/{oType}_{speciesSubType}_{hasPopped}.png"
+   ],
+   "holes": [
+    "oType",
+    "speciesSubType",
+    "hasPopped"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    27409
+   ]
+  },
+  {
+   "template": "img/upgradeshell/{_0x5827ef}.png",
+   "alternatives": [
+    "img/upgradeshell/{_0x5827ef}.png"
+   ],
+   "holes": [
+    "_0x5827ef"
+   ],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    27478
+   ]
+  },
+  {
+   "template": "img/upgradeshell/outline{curBiome}.png",
+   "alternatives": [
+    "img/upgradeshell/outline{curBiome}.png"
+   ],
+   "holes": [
+    "curBiome"
+   ],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    27479
+   ]
+  },
+  {
+   "template": "img/upgradeshell/shellpart{speciesSubType}.png",
+   "alternatives": [
+    "img/upgradeshell/shellpart{speciesSubType}.png"
+   ],
+   "holes": [
+    "speciesSubType"
+   ],
+   "category": "world-and-effects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    27519
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/stone{_0x14b730}.png",
+   "alternatives": [
+    "gameobj/{oType}/stone{_0x14b730}.png"
+   ],
+   "holes": [
+    "oType",
+    "_0x14b730"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    27598
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/stone_undefended.png",
+   "alternatives": [
+    "gameobj/{oType}/stone_undefended.png"
+   ],
+   "holes": [
+    "oType"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    27604
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/incentive/{stoneIncentive}.png",
+   "alternatives": [
+    "gameobj/{oType}/incentive/{stoneIncentive}.png"
+   ],
+   "holes": [
+    "oType",
+    "stoneIncentive"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    27610
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/{oType}_{frame}.png",
+   "alternatives": [
+    "gameobj/{oType}/{oType}_{frame}.png"
+   ],
+   "holes": [
+    "oType",
+    "frame"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    27663,
+    27703,
+    27704
+   ]
+  },
+  {
+   "template": "{_0x58dece}",
+   "alternatives": [
+    "{_0x58dece}"
+   ],
+   "holes": [
+    "_0x58dece"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    27664,
+    27668
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/meteorite.png",
+   "alternatives": [
+    "gameobj/{oType}/meteorite.png"
+   ],
+   "holes": [
+    "oType"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    27668
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/{oType}_{speciesType}[_e|].png",
+   "alternatives": [
+    "gameobj/{oType}/{oType}_{speciesType}_e.png",
+    "gameobj/{oType}/{oType}_{speciesType}.png"
+   ],
+   "holes": [
+    "oType",
+    "speciesType"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    27724,
+    28030
+   ]
+  },
+  {
+   "template": "{_0x21b8fe}_wing{_0x5c2710}.png",
+   "alternatives": [
+    "{_0x21b8fe}_wing{_0x5c2710}.png"
+   ],
+   "holes": [
+    "_0x21b8fe",
+    "_0x5c2710"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    27762
+   ]
+  },
+  {
+   "template": "{_0x3b3352}_head.png",
+   "alternatives": [
+    "{_0x3b3352}_head.png"
+   ],
+   "holes": [
+    "_0x3b3352"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    27765
+   ]
+  },
+  {
+   "template": "skins/forest/pheasant/{animalSpecies}/tail.png",
+   "alternatives": [
+    "skins/forest/pheasant/{animalSpecies}/tail.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    27770,
+    27771
+   ]
+  },
+  {
+   "template": "skins/forest/pheasant/{animalSpecies}/pheasant_wing1.png",
+   "alternatives": [
+    "skins/forest/pheasant/{animalSpecies}/pheasant_wing1.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    27789,
+    27834
+   ]
+  },
+  {
+   "template": "skins/forest/pheasant/{animalSpecies}/pheasant_wing2.png",
+   "alternatives": [
+    "skins/forest/pheasant/{animalSpecies}/pheasant_wing2.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    27803,
+    27848
+   ]
+  },
+  {
+   "template": "skins/forest/pheasant/{animalSpecies}/pheasant_head.png",
+   "alternatives": [
+    "skins/forest/pheasant/{animalSpecies}/pheasant_head.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    27820,
+    27862
+   ]
+  },
+  {
+   "template": "_{_0x45fa98}.png",
+   "alternatives": [
+    "_{_0x45fa98}.png"
+   ],
+   "holes": [
+    "_0x45fa98"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    27899
+   ]
+  },
+  {
+   "template": "skins/forest/flyinglizard/{animalSpecies}/flyinglizard_{_0x37cba0}.png",
+   "alternatives": [
+    "skins/forest/flyinglizard/{animalSpecies}/flyinglizard_{_0x37cba0}.png"
+   ],
+   "holes": [
+    "animalSpecies",
+    "_0x37cba0"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    27906
+   ]
+  },
+  {
+   "template": "skins/forest/chukar/{animalSpecies}/chukar_wing1.png",
+   "alternatives": [
+    "skins/forest/chukar/{animalSpecies}/chukar_wing1.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    27977
+   ]
+  },
+  {
+   "template": "skins/forest/chukar/{animalSpecies}/chukar_wing2.png",
+   "alternatives": [
+    "skins/forest/chukar/{animalSpecies}/chukar_wing2.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    27991
+   ]
+  },
+  {
+   "template": "skins/forest/chukar/{animalSpecies}/chukar_head.png",
+   "alternatives": [
+    "skins/forest/chukar/{animalSpecies}/chukar_head.png"
+   ],
+   "holes": [
+    "animalSpecies"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    28008
+   ]
+  },
+  {
+   "template": "_{_0x3a590c}.png",
+   "alternatives": [
+    "_{_0x3a590c}.png"
+   ],
+   "holes": [
+    "_0x3a590c"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    28018
+   ]
+  },
+  {
+   "template": "assets/s/1/gameobj/106/snow-flake.png",
+   "alternatives": [
+    "assets/s/1/gameobj/106/snow-flake.png"
+   ],
+   "holes": [],
+   "category": "game-objects",
+   "base": "absolute",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    28048
+   ]
+  },
+  {
+   "template": "{path}",
+   "alternatives": [
+    "{path}"
+   ],
+   "holes": [
+    "path"
+   ],
+   "category": "other",
+   "base": "root",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    28058
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/snow-flake.png",
+   "alternatives": [
+    "gameobj/{oType}/snow-flake.png"
+   ],
+   "holes": [
+    "oType"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    28082
+   ]
+  },
+  {
+   "template": "{_0x181aab}",
+   "alternatives": [
+    "{_0x181aab}"
+   ],
+   "holes": [
+    "_0x181aab"
+   ],
+   "category": "other",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    28083,
+    28092
+   ]
+  },
+  {
+   "template": "{_0x2488d8}_wing{_0x3890bb}.png",
+   "alternatives": [
+    "{_0x2488d8}_wing{_0x3890bb}.png"
+   ],
+   "holes": [
+    "_0x2488d8",
+    "_0x3890bb"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    28189
+   ]
+  },
+  {
+   "template": "{_0x228fbf}_head{headType}.png",
+   "alternatives": [
+    "{_0x228fbf}_head{headType}.png"
+   ],
+   "holes": [
+    "_0x228fbf",
+    "headType"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    28194
+   ]
+  },
+  {
+   "template": "tailwind/{_0x40afb3}.png",
+   "alternatives": [
+    "tailwind/{_0x40afb3}.png"
+   ],
+   "holes": [
+    "_0x40afb3"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    28198
+   ]
+  },
+  {
+   "template": "charge/{_0x118280}.png",
+   "alternatives": [
+    "charge/{_0x118280}.png"
+   ],
+   "holes": [
+    "_0x118280"
+   ],
+   "category": "other",
+   "base": "inferred",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    28202
+   ]
+  },
+  {
+   "template": "skins/land/birdmonster/0/birdmonster_ability.png",
+   "alternatives": [
+    "skins/land/birdmonster/0/birdmonster_ability.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    28205
+   ]
+  },
+  {
+   "template": "skins/land/{getSpeciesPath()}/charge/{cond}.png",
+   "alternatives": [
+    "skins/land/{getSpeciesPath()}/charge/{cond}.png"
+   ],
+   "holes": [
+    "getSpeciesPath()",
+    "cond"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    28266
+   ]
+  },
+  {
+   "template": "skins/land/{getSpeciesPath()}/{_0x1fc47e}_wing{_0x579482}.png",
+   "alternatives": [
+    "skins/land/{getSpeciesPath()}/{_0x1fc47e}_wing{_0x579482}.png"
+   ],
+   "holes": [
+    "getSpeciesPath()",
+    "_0x1fc47e",
+    "_0x579482"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    28274
+   ]
+  },
+  {
+   "template": "skins/land/{getSpeciesPath()}/tailwind/1{cond}.png",
+   "alternatives": [
+    "skins/land/{getSpeciesPath()}/tailwind/1{cond}.png"
+   ],
+   "holes": [
+    "getSpeciesPath()",
+    "cond"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "getSkinImageObj"
+   ],
+   "lines": [
+    28305
+   ]
+  },
+  {
+   "template": "skins/land/birdmonster/{speciesType}/crater{curBiome}.png",
+   "alternatives": [
+    "skins/land/birdmonster/{speciesType}/crater{curBiome}.png"
+   ],
+   "holes": [
+    "speciesType",
+    "curBiome"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    28342,
+    28343
+   ]
+  },
+  {
+   "template": "{_0xa7c01c}",
+   "alternatives": [
+    "{_0xa7c01c}"
+   ],
+   "holes": [
+    "_0xa7c01c"
+   ],
+   "category": "other",
+   "base": "root",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    28353
+   ]
+  },
+  {
+   "template": "skins/land/birdmonster/{speciesType}/tornado.png",
+   "alternatives": [
+    "skins/land/birdmonster/{speciesType}/tornado.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    28370,
+    28371
+   ]
+  },
+  {
+   "template": "skins/land/birdmonster/{speciesType}/electric-charge.png",
+   "alternatives": [
+    "skins/land/birdmonster/{speciesType}/electric-charge.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    28404,
+    28405
+   ]
+  },
+  {
+   "template": "skins/land/birdmonster/{speciesType}/wind.png",
+   "alternatives": [
+    "skins/land/birdmonster/{speciesType}/wind.png"
+   ],
+   "holes": [
+    "speciesType"
+   ],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    28424,
+    28425
+   ]
+  },
+  {
+   "template": "gameobj/{oType}/{biomeType}/{frameNumber}.png",
+   "alternatives": [
+    "gameobj/{oType}/{biomeType}/{frameNumber}.png"
+   ],
+   "holes": [
+    "oType",
+    "biomeType",
+    "frameNumber"
+   ],
+   "category": "game-objects",
+   "base": "season",
+   "via": [
+    "expression",
+    "getSkinImageObj"
+   ],
+   "lines": [
+    28459,
+    28460
+   ]
+  },
+  {
+   "template": "{_0x1945b9()}",
+   "alternatives": [
+    "{_0x1945b9()}"
+   ],
+   "holes": [
+    "_0x1945b9()"
+   ],
+   "category": "other",
+   "base": "root",
+   "via": [
+    "loader"
+   ],
+   "lines": [
+    29234
+   ]
+  },
+  {
+   "template": "skins/arctic/yeti/0/wolf.png",
+   "alternatives": [
+    "skins/arctic/yeti/0/wolf.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    29275
+   ]
+  },
+  {
+   "template": "skins/phoenix/phoenix.png",
+   "alternatives": [
+    "skins/phoenix/phoenix.png"
+   ],
+   "holes": [],
+   "category": "animals",
+   "base": "season",
+   "via": [
+    "expression"
+   ],
+   "lines": [
+    29285
+   ]
+  }
+ ]
+}

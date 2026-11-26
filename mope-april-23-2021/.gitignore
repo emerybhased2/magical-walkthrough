@@ -11,3 +11,6 @@ __pycache__/
 snapshots/
 run/
 /data/
+
+# Bun dependencies
+node_modules/

@@ -1,0 +1,164 @@
+{
+ "generated": "2026-11-26T04:03:43.083Z",
+ "tool": "decode_images.ts 1.0.0",
+ "seconds": 6,
+ "targetDate": "2021-04-23",
+ "providers": [
+  "arquivo",
+  "commoncrawl",
+  "vefsafn"
+ ],
+ "client": "snapshots/2025-12-10/working/client-js/20251210042757_arquivo/client.js",
+ "clientReferences": 829,
+ "clientTemplates": 606,
+ "animalsInClientTable": 73,
+ "imageCaptures": 419,
+ "distinctUrls": 82,
+ "urlsWithImage": 82,
+ "versionsStored": 102,
+ "versionsDecodedOk": 102,
+ "rejectedNotImages": 0,
+ "digestVerified": 102,
+ "failedUrls": 0,
+ "discoveryOnlyUrls": [
+  "mope.io/assets/t/1/skins/arctic/markhor/markhor.png",
+  "mope.io/assets/t/1/skins/arctic/muskox/muskox.png",
+  "mope.io/assets/t/1/skins/desert/bison/bison.png",
+  "mope.io/assets/t/1/skins/desert/vulture/vulture.png",
+  "mope.io/assets/t/1/skins/land/lion/0/lion.png",
+  "mope.io/assets/t/1/skins/ocean/crab/crab.png",
+  "mope.io/assets/t/1/skins/ocean/shark/0/shark_shop.png",
+  "mope.io/assets/t/1/skins/peacock/peacock.png",
+  "mope.io/img/update/20200911/pumpkin-soccer.png",
+  "mope.io/img/update/20200925/item-sale.png",
+  "mope.io/img/update/20200925/new-deals.png",
+  "mope.io/s/1/skins/forest/kakapo/kakapo.png",
+  "mope.io/s/1/skins/forest/raven/raven.png",
+  "mope.io/s/1/skins/mouse.png"
+ ],
+ "byCategory": {
+  "animals": 43,
+  "cloudflare": 4,
+  "promo": 15,
+  "shop-ui": 6,
+  "ui": 14
+ },
+ "byAnimal": {
+  "Bear": 1,
+  "Black Dragon": 1,
+  "CHEETAH": 1,
+  "Dragon": 1,
+  "Giraffe": 4,
+  "Lion": 5,
+  "Mouse": 5,
+  "Pufferfish": 1,
+  "Rhino": 1,
+  "Shark": 2,
+  "Shrimp": 1,
+  "Snow leopard": 1
+ },
+ "byFormat": {
+  "ico": 3,
+  "png": 96,
+  "gif": 2,
+  "jpeg": 1
+ },
+ "coverage": [
+  {
+   "category": "abilities",
+   "templates": 44,
+   "templatesWithArchivedFiles": 0,
+   "concretePaths": 9,
+   "concretePathsArchived": 0,
+   "archivedFiles": 0
+  },
+  {
+   "category": "animals",
+   "templates": 294,
+   "templatesWithArchivedFiles": 1,
+   "concretePaths": 38,
+   "concretePathsArchived": 0,
+   "archivedFiles": 43
+  },
+  {
+   "category": "cloudflare",
+   "templates": 0,
+   "templatesWithArchivedFiles": 0,
+   "concretePaths": 0,
+   "concretePathsArchived": 0,
+   "archivedFiles": 4
+  },
+  {
+   "category": "disasters",
+   "templates": 9,
+   "templatesWithArchivedFiles": 0,
+   "concretePaths": 6,
+   "concretePathsArchived": 0,
+   "archivedFiles": 0
+  },
+  {
+   "category": "food",
+   "templates": 24,
+   "templatesWithArchivedFiles": 0,
+   "concretePaths": 42,
+   "concretePathsArchived": 0,
+   "archivedFiles": 0
+  },
+  {
+   "category": "game-objects",
+   "templates": 52,
+   "templatesWithArchivedFiles": 0,
+   "concretePaths": 17,
+   "concretePathsArchived": 0,
+   "archivedFiles": 0
+  },
+  {
+   "category": "other",
+   "templates": 118,
+   "templatesWithArchivedFiles": 0,
+   "concretePaths": 5,
+   "concretePathsArchived": 0,
+   "archivedFiles": 0
+  },
+  {
+   "category": "promo",
+   "templates": 0,
+   "templatesWithArchivedFiles": 0,
+   "concretePaths": 0,
+   "concretePathsArchived": 0,
+   "archivedFiles": 15
+  },
+  {
+   "category": "shop-skins",
+   "templates": 1,
+   "templatesWithArchivedFiles": 0,
+   "concretePaths": 0,
+   "concretePathsArchived": 0,
+   "archivedFiles": 0
+  },
+  {
+   "category": "shop-ui",
+   "templates": 14,
+   "templatesWithArchivedFiles": 4,
+   "concretePaths": 13,
+   "concretePathsArchived": 5,
+   "archivedFiles": 6
+  },
+  {
+   "category": "ui",
+   "templates": 15,
+   "templatesWithArchivedFiles": 1,
+   "concretePaths": 10,
+   "concretePathsArchived": 1,
+   "archivedFiles": 14
+  },
+  {
+   "category": "world-and-effects",
+   "templates": 35,
+   "templatesWithArchivedFiles": 0,
+   "concretePaths": 22,
+   "concretePathsArchived": 0,
+   "archivedFiles": 0
+  }
+ ]
+}

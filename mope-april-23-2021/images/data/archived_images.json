@@ -1,0 +1,1944 @@
+[
+ {
+  "url": "http://beta.mope.io/favicon.ico",
+  "category": "ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20191010213530",
+    "sha256": "5aa2784666c5966002a223ec84036d6882c0c84a38c7d463b37d9cdb0aa49f50",
+    "bytes": 15086,
+    "format": "ico",
+    "width": 16,
+    "height": 16,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://beta.mope.io/skins/ocean/pufferfish/1/pufferfish.png",
+  "category": "animals",
+  "animal": "Pufferfish",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20191010213526",
+    "sha256": "fc2dc9b6399cc7665a636fb6938ac54e9d357393ecd45dae10574e2399d71f63",
+    "bytes": 41340,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/assets/s/1/skins/forest/turkey/0/turkey_full.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "season",
+  "season": "1",
+  "clientTemplate": "skins/forest/turkey/{animalSpecies}/{_0x15e58a}.png",
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20201212122609",
+    "sha256": "8f275fbfef38fc115f7d1fd839ed4a0d4ad8507ed4b800b7c906e20e4c31081a",
+    "bytes": 94818,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/assets/s/1/skins/forest/turkey/pumpkinpie.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "season",
+  "season": "1",
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20201212122623",
+    "sha256": "55121d73a41818ffd4cbbf3132eab0a529903282843b1b40f776f26a72082e19",
+    "bytes": 85179,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/assets/s/1/skins/forest/turkey/turkeybaked.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "season",
+  "season": "1",
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20201212122618",
+    "sha256": "c6989182fe20972c94ef41d6153702714b034876c9db3fd7de0e647799f04b34",
+    "bytes": 92491,
+    "format": "png",
+    "width": 452,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/assets/s/1/skins/forest/turkey/turkeyleg.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "season",
+  "season": "1",
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20201212122626",
+    "sha256": "2b85aca453b53c801e56441908d71d973837887bb60acc2a87340669dd584d23",
+    "bytes": 36680,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/assets/s/1/skins/forest/whitegiraffe/1/giraffe.png",
+  "category": "animals",
+  "animal": "Giraffe",
+  "layout": "season",
+  "season": "1",
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20201212122614",
+    "sha256": "eaf90c8d9702ad726fe8d08bebb3457a8688c51245fcb928e6d8218dbbb93525",
+    "bytes": 101212,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/assets/s/1/skins/forest/whitegiraffe/2/giraffe_family.png",
+  "category": "animals",
+  "animal": "Giraffe",
+  "layout": "season",
+  "season": "1",
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20201212122631",
+    "sha256": "b3ef0904b50e65b6c28ab3e873ca89604905b25912309543c6f22bfc287faca2",
+    "bytes": 124436,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/assets/s/1/skins/land/aiboss/gujjar.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "season",
+  "season": "1",
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20210310091752",
+    "sha256": "955af9134410576802847d88f2490c0298be1ba39445296ed734740864ff5743",
+    "bytes": 120380,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/assets/s/1/skins/land/aiboss/sultan.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "season",
+  "season": "1",
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20210310091757",
+    "sha256": "81c561a72e90c82dbaa5b03067640b9b75df9e1ae5d7c8ee0f7de12709395298",
+    "bytes": 87040,
+    "format": "png",
+    "width": 500,
+    "height": 550,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/assets/s/1/skins/land/giraffe/3/giraffe_family.png",
+  "category": "animals",
+  "animal": "Giraffe",
+  "layout": "season",
+  "season": "1",
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20201212122635",
+    "sha256": "2d47a78b764a029702c218e19023e3e6fe40c6477f08512aad00e0af008d3ec6",
+    "bytes": 83620,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/assets/s/1/skins/land/mouse/0/mouse.png",
+  "category": "animals",
+  "animal": "Mouse",
+  "layout": "season",
+  "season": "1",
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20250315124219",
+    "sha256": "8f00fe894aa3dc48829d4ee8e2d2d5de6bb00330ddae45976c70b1d7b1ddc733",
+    "bytes": 48182,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/assets/s/1/skins/mouse.png",
+  "category": "animals",
+  "animal": "Mouse",
+  "layout": "season",
+  "season": "1",
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20210310091811",
+    "sha256": "8f00fe894aa3dc48829d4ee8e2d2d5de6bb00330ddae45976c70b1d7b1ddc733",
+    "bytes": 48182,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/cdn-cgi/images/browser-bar.png?1376755637",
+  "category": "cloudflare",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20220601201058",
+    "sha256": "8c873472f4925d5d47521db4d52532d2983e9cb1bde8b43143a6cc6db56c35db",
+    "bytes": 715,
+    "format": "png",
+    "width": 960,
+    "height": 53,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/cdn-cgi/images/cf-no-screenshot-warn.png",
+  "category": "cloudflare",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20220601201101",
+    "sha256": "d4eb829b9da3417d1cde6b2f3cbf24cd125fb6805adc22b37191e7a1bf0a543b",
+    "bytes": 2592,
+    "format": "png",
+    "width": 178,
+    "height": 158,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/cdn-cgi/images/trace/captcha/nojs/h/transparent.gif?ray=714a98794bcf03ba",
+  "category": "cloudflare",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20220601201101",
+    "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
+    "bytes": 42,
+    "format": "gif",
+    "width": 1,
+    "height": 1,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/cdn-cgi/images/trace/managed/js/transparent.gif?ray=714a98794bcf03ba",
+  "category": "cloudflare",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20220601201058",
+    "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
+    "bytes": 42,
+    "format": "gif",
+    "width": 1,
+    "height": 1,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/favicon.ico",
+  "category": "ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20210604001248",
+    "sha256": "f35b9418795eca0b0aa4e43c34955806e52e2657975d9cf6260f67a022209e39",
+    "bytes": 15406,
+    "format": "ico",
+    "width": 16,
+    "height": 16,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20201203172100",
+    "sha256": "5aa2784666c5966002a223ec84036d6882c0c84a38c7d463b37d9cdb0aa49f50",
+    "bytes": 15086,
+    "format": "ico",
+    "width": 16,
+    "height": 16,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/img/appAd_and.png",
+  "category": "ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20210310091831",
+    "sha256": "298bcdb242285a0ecf86a70c3f390ba12f5f0e8707dc38d49058e0940dbd4f0b",
+    "bytes": 2547,
+    "format": "png",
+    "width": 132,
+    "height": 52,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20250315124240",
+    "sha256": "09d131837d536aad814211242941f5583f7f12d293e62a6d93da50305d974fce",
+    "bytes": 3024,
+    "format": "png",
+    "width": 132,
+    "height": 52,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/img/appAd_ios.png",
+  "category": "ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20210310091827",
+    "sha256": "bfaabf34384d1ffadca42f0592e6803f8b0c1b5508cc7f3ff9dc8ec1bf16e00f",
+    "bytes": 3351,
+    "format": "png",
+    "width": 133,
+    "height": 82,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/img/blocked.png",
+  "category": "ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20180421014410",
+    "sha256": "fad6b8783f92ec7ea3de450b23abd43e34845b650dbea515f4117821346b331a",
+    "bytes": 14603,
+    "format": "png",
+    "width": 300,
+    "height": 214,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/img/logo.png",
+  "category": "ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20210310091802",
+    "sha256": "9dca9eefd37c255ea5a0235a027e66862f2ea61f546d131a7476b90a701a5627",
+    "bytes": 12605,
+    "format": "png",
+    "width": 350,
+    "height": 99,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20170213101026",
+    "sha256": "91de1adeb80ba1eee0fe358370eca2b144e35d943b47e67ddc02354ceb0d5ba2",
+    "bytes": 13173,
+    "format": "png",
+    "width": 350,
+    "height": 178,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/img/mode_norm.png",
+  "category": "ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20170213101039",
+    "sha256": "ee70e8bddfc04846b37f3123b15ba6c7db8061496b43dbfc4d9cd58dd88000bf",
+    "bytes": 1879,
+    "format": "png",
+    "width": 124,
+    "height": 48,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/img/mode_sandbox.png",
+  "category": "ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20170213101050",
+    "sha256": "b3ada08fe3fa88fbb8772f43240eaa15eb516af10c6555553140065b35768d8a",
+    "bytes": 2320,
+    "format": "png",
+    "width": 124,
+    "height": 48,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/img/newconfirmmsg.png",
+  "category": "ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200910235616",
+    "sha256": "28d3e5f56b6bdfd6dbfd9f983fa0c1fb595928691287506689a45c2da096fa51",
+    "bytes": 131072,
+    "format": "png",
+    "width": 698,
+    "height": 389,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/img/promo_areaops.png",
+  "category": "promo",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200910235624",
+    "sha256": "a7a31c6e4a53421f2e37bf73f6dd557a14f67933475dfe1c123fc2865987421c",
+    "bytes": 160525,
+    "format": "png",
+    "width": 500,
+    "height": 537,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/img/promo_coins.png",
+  "category": "promo",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200910235627",
+    "sha256": "cd6091cf7b53153f2e21307ff5247a9b4f18ecc32bab8900923fa7cd71d53fc0",
+    "bytes": 15897,
+    "format": "png",
+    "width": 150,
+    "height": 109,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/img/promo_hidhole.png",
+  "category": "promo",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200910235620",
+    "sha256": "8570bd3e0c0f25cc8f9f2cead63584a44984f71fdb96f455ee8077a81300a99d",
+    "bytes": 260886,
+    "format": "png",
+    "width": 702,
+    "height": 696,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/img/promo_yt.png",
+  "category": "promo",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613164927",
+    "sha256": "092e66dcf12b0b4dfb1f1d7a312aedc96511926a14367d23469fc749df6de5ce",
+    "bytes": 324663,
+    "format": "png",
+    "width": 899,
+    "height": 357,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/img/settings.png",
+  "category": "ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20210310091807",
+    "sha256": "ec0a0e82050a0fb6604834ada350a528f85cb7cb6907173695fe45dd563b1713",
+    "bytes": 956,
+    "format": "png",
+    "width": 30,
+    "height": 30,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20170213101102",
+    "sha256": "f4c5e28c0337d85292102c5e7f181749fed68a8cb2036406754c337853ef71eb",
+    "bytes": 957,
+    "format": "png",
+    "width": 30,
+    "height": 30,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/img/share_banner.jpg",
+  "category": "ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20191010213555",
+    "sha256": "f12e5e476d9da9c7f3ac463874b124069834df66705ce5fc78acee9cc4a8a058",
+    "bytes": 18608,
+    "format": "jpeg",
+    "width": 515,
+    "height": 231,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/img/sound_on.png",
+  "category": "ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": "img/sound_on.png",
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20210310091823",
+    "sha256": "2a9a25bc4b2825d073d24ae1069db23ea51affac42503b1e0005b41f4191b4ee",
+    "bytes": 1224,
+    "format": "png",
+    "width": 30,
+    "height": 31,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/img/splixpromo.png",
+  "category": "ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20170213101203",
+    "sha256": "0a00166ae6c1193b4d48e42082fc57a0f3dc1dda6112dc672c22f0484c09ea45",
+    "bytes": 10510,
+    "format": "png",
+    "width": 180,
+    "height": 180,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/img/update/promo10.png",
+  "category": "promo",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613164931",
+    "sha256": "15118beca90009a9042fd31ae6ce3ecdb0ddaefbdf85f9d6ae737b7a38fbb6bc",
+    "bytes": 15173,
+    "format": "png",
+    "width": 176,
+    "height": 132,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20200314110423",
+    "sha256": "15212353d2fcd9b0e3bedada9e4e4616231c2f1d6caa13f6ad08698139115a71",
+    "bytes": 15170,
+    "format": "png",
+    "width": 176,
+    "height": 132,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/img/update/promo3.png",
+  "category": "promo",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613164944",
+    "sha256": "8951c70605b3801a5c32c3f900005094fbe3fedd80e9b8e0103f8c933867c644",
+    "bytes": 310819,
+    "format": "png",
+    "width": 2200,
+    "height": 1896,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/img/update/promo4.png",
+  "category": "promo",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613165008",
+    "sha256": "1d15f5d322a053d57e94502b167f310506f456627c4961b0a2f9ebc2258d351d",
+    "bytes": 79518,
+    "format": "png",
+    "width": 1066,
+    "height": 408,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/img/update/promo5.png",
+  "category": "promo",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613165011",
+    "sha256": "06f5d88567d2eb4568cce7570624268c596b66953ade5412c27658c2f81a1894",
+    "bytes": 83286,
+    "format": "png",
+    "width": 830,
+    "height": 424,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/img/update/promoimg.png",
+  "category": "promo",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613164939",
+    "sha256": "3b88dca0c025cc0f56f64cff969ce3c91a8f527021ab4f44739d344ed4fa4b83",
+    "bytes": 36074,
+    "format": "png",
+    "width": 446,
+    "height": 346,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/img/update/promoimg2.png",
+  "category": "promo",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613164935",
+    "sha256": "19605c3329aeea6ac52736abde519af40f7201776c8dc0cecb0db02d80c390ec",
+    "bytes": 168068,
+    "format": "png",
+    "width": 956,
+    "height": 737,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/img/update/upd_skins.png",
+  "category": "promo",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613165024",
+    "sha256": "dbeac2907c52e49332499575a880cd5f7ee61ba9294726696224ca183b836775",
+    "bytes": 55437,
+    "format": "png",
+    "width": 666,
+    "height": 298,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20191230093623",
+    "sha256": "635f9c9adfb369b7d01effb5b7816ad999f133fa01e72ec7f30b72803c344aa9",
+    "bytes": 63920,
+    "format": "png",
+    "width": 666,
+    "height": 298,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/img/update/volcanic-eruption.png",
+  "category": "promo",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613165036",
+    "sha256": "7895f97bc6e2926c3acaeab4a1e44b4d16d5cb7aa4453de82bc5c80ebfcc7716",
+    "bytes": 131072,
+    "format": "png",
+    "width": 944,
+    "height": 638,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/img/updates/20201126/arena-options1.png",
+  "category": "promo",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20201212122649",
+    "sha256": "c3539aae9a067c821534dfe16af39f12ce3aaaa7712c45c1026bb8c7682c47b7",
+    "bytes": 26581,
+    "format": "png",
+    "width": 566,
+    "height": 213,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/img/updates/20201126/arena-options2.png",
+  "category": "promo",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20201212122644",
+    "sha256": "95cbd352faae1a2461ac5253e18d9fd4632c2b370b05d0e4c078942be87603de",
+    "bytes": 20099,
+    "format": "png",
+    "width": 566,
+    "height": 108,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/img/updates/20201126/ocean-islands.png",
+  "category": "promo",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20201212122639",
+    "sha256": "135b367ee986440022aeb7b6a2c35a89e5333503ab9e1864d639a824421f6f2d",
+    "bytes": 524288,
+    "format": "png",
+    "width": 955,
+    "height": 653,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/img/x.png",
+  "category": "ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20210310091819",
+    "sha256": "a83937addbfdbc1c6db10f6e49589b1d0e81a59a311ad1bbf2dd1c95378adefc",
+    "bytes": 2200,
+    "format": "png",
+    "width": 50,
+    "height": 51,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20170213101127",
+    "sha256": "4ae1f40093b461c1bdd1f3db61f66228acd77bda59904e257bdca42ef9574a1d",
+    "bytes": 2843,
+    "format": "png",
+    "width": 50,
+    "height": 51,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/shop/close.png",
+  "category": "shop-ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": "shop/close.png",
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20210310091748",
+    "sha256": "41c320ec8a9287c80688091727b62a0cc4148f90d4a5cd94db9132fbb95a5cf1",
+    "bytes": 3480,
+    "format": "png",
+    "width": 50,
+    "height": 51,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/shop/exp.png",
+  "category": "shop-ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20250905144119",
+    "sha256": "3e51169df4ca763988697334d062a500f3d55a683d19fd78c8dce6c310edae8e",
+    "bytes": 31425,
+    "format": "png",
+    "width": 448,
+    "height": 426,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/shop/gem.png",
+  "category": "shop-ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": "shop/[gem|mopecoin].png",
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20250905144046",
+    "sha256": "bc438576a8bf595f95f90d62845cae291fb43f50a2bac7002455d53e27ffc125",
+    "bytes": 25679,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/shop/left.png",
+  "category": "shop-ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20250905144122",
+    "sha256": "214647c8bc737a26e6594cd1d531d3618c16e0ec3e58d1a88c46b9fa4baa3a04",
+    "bytes": 2965,
+    "format": "png",
+    "width": 50,
+    "height": 150,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/shop/mopecoin.png",
+  "category": "shop-ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": "shop/[gem|mopecoin].png",
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20210310091815",
+    "sha256": "9b538a509353acb39dff0e94ef4b3ccd267250992485b6ceb6db5a3573689084",
+    "bytes": 9705,
+    "format": "png",
+    "width": 106,
+    "height": 111,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613165054",
+    "sha256": "8d8aa282853e2b8fe0f9fe679b3f920fbf534b61d4cc48e03f636d54b06dba32",
+    "bytes": 8232,
+    "format": "png",
+    "width": 106,
+    "height": 111,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20200314110536",
+    "sha256": "c69a35cea79a8502616161621f9abe1ff4d35cdd1904cdaa77e3569a651ca7ff",
+    "bytes": 8113,
+    "format": "png",
+    "width": 106,
+    "height": 111,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/shop/right.png",
+  "category": "shop-ui",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20250905144125",
+    "sha256": "1e29a959cd46eae1bc7e350437f74ccf1f25f26326d3a78575d717abc9cd3009",
+    "bytes": 2910,
+    "format": "png",
+    "width": 50,
+    "height": 150,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/arctic/snowleopard.png",
+  "category": "animals",
+  "animal": "Snow leopard",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190601020509",
+    "sha256": "8ba8f8cfacdc08062ea86bb11a1f56689d96fa7aea4a3e62d6055ce2a51defc9",
+    "bytes": 30533,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/skins/arctic/snowman/snowman.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613165040",
+    "sha256": "70d45a02c00bf7f01bebee40301c286916f38063725b88604a89102126684d04",
+    "bytes": 24276,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20200314110522",
+    "sha256": "69fed69632fc72be0e58da2c424a75b16107d748bfc15b6e12f473102f6ab280",
+    "bytes": 24291,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/skins/bear.png",
+  "category": "animals",
+  "animal": "Bear",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20191230093629",
+    "sha256": "0c4e6c3d25ddd0cb346dbe59eb009d687f80d7599c93696e2921536432fa2dc6",
+    "bytes": 14141,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/blackdragon/1/kingdragon.png",
+  "category": "animals",
+  "animal": "Black Dragon",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190601020431",
+    "sha256": "59dda6c994cbb239b81e5e8ad60ae1e66fbc9a746167948b2cb841617eab0c77",
+    "bytes": 39695,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/cassowary/cassowary.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190414003512",
+    "sha256": "eb4d52b767c3bd650540af40bdcc97d0098735b70cb96464512169007850d110",
+    "bytes": 19613,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/chicken/chicken.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190414003457",
+    "sha256": "02e6e471ff0cd337137fbbe3fd9f38553490fa4c3c69ac7695fd2c2a0bea95e9",
+    "bytes": 20453,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/skins/desert/scorpion/1/giantscorpion.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613165019",
+    "sha256": "4ad40d478da85ae387fe57659535ae1088056633641a1338ace7279f1374e9b3",
+    "bytes": 98004,
+    "format": "png",
+    "width": 500,
+    "height": 600,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20200314110505",
+    "sha256": "ddb1ac2059ba3e77d24692e4e0b3a1df411b2d73693e3d6f6344b2e61647cdd9",
+    "bytes": 113728,
+    "format": "png",
+    "width": 500,
+    "height": 600,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/flamingo/flamingo.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190414003522",
+    "sha256": "222eb835c712b2f59ddacc17644bbc0ce35869db7e4e9d123d0f8b6599e429cf",
+    "bytes": 20418,
+    "format": "png",
+    "width": 500,
+    "height": 501,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/giraffe.png",
+  "category": "animals",
+  "animal": "Giraffe",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20180421014423",
+    "sha256": "523cc4ec9c2aedb0b81cd9f710d3265d608524237cf96033731342b79f8a8d36",
+    "bytes": 31674,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/land/bigcat/blackpanther.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190601020505",
+    "sha256": "1d16cfe937d25e25ac454eeec193a375e229d879afef2dd75c83f24ddf64219b",
+    "bytes": 25210,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/land/bigcat/cheetah.png",
+  "category": "animals",
+  "animal": "CHEETAH",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190601020442",
+    "sha256": "1298b341887a597635a9eb3eeecfe24126172d866a4060d9b2b1d62c2edd9d2a",
+    "bytes": 24122,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/land/bigcat/jaguar.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190601020458",
+    "sha256": "e7caac707d9bf0e3d9f17b72bdd426b42ead68b4c386b0908d6ba37d9e44e128",
+    "bytes": 35151,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/land/bigcat/leopard.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190601020502",
+    "sha256": "893a0acf4640adfc0e25679235071659202ec55b7c0237a2da812d46f99bf5b3",
+    "bytes": 31280,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/skins/land/dragon/1/dragon.png",
+  "category": "animals",
+  "animal": "Dragon",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613165015",
+    "sha256": "db19dbe32dd06d56b9c97b1caa72221ac9663f05e3bea86700e9e0d331832ec5",
+    "bytes": 20695,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20200314110501",
+    "sha256": "a572abff5bc65139fafb9684f32408ffc6fbe6bb98caf779dfda02310cb56122",
+    "bytes": 20643,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/land/lion/1/0/lion.png",
+  "category": "animals",
+  "animal": "Lion",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190601020451",
+    "sha256": "ff1080e407cbd0f2d5be2682f57191e2309d0836836e6bba63fbc3e3c2e0a3dc",
+    "bytes": 20355,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/land/lion/2/0/lion.png",
+  "category": "animals",
+  "animal": "Lion",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190601020455",
+    "sha256": "b320e58d8f1995243ca1e92bb7590a00bcfda64c260123c9e2ec74f9bbdd38c7",
+    "bytes": 20948,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/land/lion/3/lion.png",
+  "category": "animals",
+  "animal": "Lion",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190601020445",
+    "sha256": "44fb4e08c8632571b8a853ae38c539822b6586ff216449d01a5ad8b3e115f8cd",
+    "bytes": 27398,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/land/lion/4/lion.png",
+  "category": "animals",
+  "animal": "Lion",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190601020448",
+    "sha256": "2dd0999c01310a641bb6f8918ea8fb5beb94a7279e10e3f8c06ceaf178a13e39",
+    "bytes": 22693,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/land/lion/5/lion.png",
+  "category": "animals",
+  "animal": "Lion",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190601020435",
+    "sha256": "c8689223d70e7deffff4d1e031ced4c1570c32b7191510928f713deba5d1accd",
+    "bytes": 16677,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/skins/land/mouse/1/mouse.png",
+  "category": "animals",
+  "animal": "Mouse",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613164957",
+    "sha256": "f79cf006161284a70e7eaa94d5e1de3cfff93bca87a56a5867ffe21e25fe9720",
+    "bytes": 38020,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20200314110444",
+    "sha256": "30ec267cba973d33d04268ac94b984d5fb7096c6f2ef4cc4ca91b6bdef328508",
+    "bytes": 37500,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/skins/land/mouse/2/mouse.png",
+  "category": "animals",
+  "animal": "Mouse",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613164952",
+    "sha256": "b90187631567206143932195928620e616bd1ab376591a869f48c277f74e677e",
+    "bytes": 41034,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20200314110441",
+    "sha256": "0c4450fb87af0e980378d3e03c85c93a32914e92841469ec7ba7fac466eeb181",
+    "bytes": 40449,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/land/rhino/1/rhino.png",
+  "category": "animals",
+  "animal": "Rhino",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190601020438",
+    "sha256": "c75bc2d5900925b34d8dd9f21b74edce413e881419760f80f77d85ff5933c3a2",
+    "bytes": 24310,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/macaw/0/macaw.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190414003515",
+    "sha256": "aeecd73c50275c971fbcb4bfa50137e66d16f05d1f4f90b1e36f1e3fcf47f812",
+    "bytes": 25386,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/macaw/1/macaw.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190414003519",
+    "sha256": "30c38449402aa81ef869310b7f116d501070851351cd718ce2bbf70c4296a3bf",
+    "bytes": 22864,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/mouse.png",
+  "category": "animals",
+  "animal": "Mouse",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200910235639",
+    "sha256": "8f00fe894aa3dc48829d4ee8e2d2d5de6bb00330ddae45976c70b1d7b1ddc733",
+    "bytes": 48182,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613165051",
+    "sha256": "9af225cef93e5a21057f36788e6e6f74546cafc12359a7abb28e16b79792bdeb",
+    "bytes": 38704,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20200314110533",
+    "sha256": "9d3dc11571c289ace7831e13e245783f4cff5343a43224ab943b4c763f92e506",
+    "bytes": 38600,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20190619015633",
+    "sha256": "9a72c6e2ea2912258ded541425bc6488686a863650602d2484f275bd5f67c317",
+    "bytes": 8119,
+    "format": "png",
+    "width": 300,
+    "height": 300,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/skins/ocean/shark/1/tigershark.png",
+  "category": "animals",
+  "animal": "Shark",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613165001",
+    "sha256": "42d05c56b103fe2886644bf06f368c9271ef2d51639d90e9d1173609df483e1f",
+    "bytes": 35857,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20200314110447",
+    "sha256": "243d345a11a9fe378d0cedb1bfbf88a3f969f2e8836bb61d62a41501624084be",
+    "bytes": 38376,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/skins/ocean/shark/2/hammerhead.png",
+  "category": "animals",
+  "animal": "Shark",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613165004",
+    "sha256": "23ac29247d4b4ad12c5550e4bbf8f80de111acf9b763bacdaa2b64c108aab668",
+    "bytes": 48805,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20200314110450",
+    "sha256": "f480b78a1c7319491bf634fa4c1294104c571067a63b43b7ccd68c377410d09e",
+    "bytes": 45859,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/peacock/peacock_ability.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190414003508",
+    "sha256": "3a0a6d5f84f294178da5f91ba187805489761e94e6a2bceca193fab6d9936208",
+    "bytes": 45718,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/peacock/peacock.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190414003504",
+    "sha256": "f4942a5923b8ca6402f67e6ac1011de69bbc902fc014344d8c22bdb085c4e250",
+    "bytes": 37782,
+    "format": "png",
+    "width": 500,
+    "height": 600,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "https://mope.io/skins/shrimp.png",
+  "category": "animals",
+  "animal": "Shrimp",
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20200613165028",
+    "sha256": "7f0c0ad51172f37699d9c2f5ff060d9cebcf7d65880df4809d0962f400308e4d",
+    "bytes": 66785,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   },
+   {
+    "provider": "arquivo",
+    "timestamp": "20200314110511",
+    "sha256": "81a03d62b058a80d27593d9d41f73fb099cd9552549e245cfbb8e4be8e241372",
+    "bytes": 61917,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ },
+ {
+  "url": "http://mope.io/skins/woodpecker/woodpecker.png",
+  "category": "animals",
+  "animal": null,
+  "layout": "root",
+  "season": null,
+  "clientTemplate": null,
+  "versions": [
+   {
+    "provider": "arquivo",
+    "timestamp": "20190414003500",
+    "sha256": "85d4839f5a0477241426f0ba4adb621b92b7bbfa897d666f430a9f3509f2d1e9",
+    "bytes": 27608,
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "ok": true,
+    "digestVerified": true
+   }
+  ]
+ }
+]

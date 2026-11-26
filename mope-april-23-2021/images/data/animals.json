@@ -1,0 +1,513 @@
+[
+ {
+  "id": 1,
+  "constant": "_0x4a84db",
+  "aniName": "Mouse",
+  "skinName": "mouse",
+  "aniCol": "#9BA9B9"
+ },
+ {
+  "id": 2,
+  "constant": "_0x4e3a32",
+  "aniName": "Rabbit",
+  "skinName": "rabbit",
+  "aniCol": "#AA937E"
+ },
+ {
+  "id": 3,
+  "constant": "_0x326dd5",
+  "aniName": "Pig",
+  "skinName": "pig",
+  "aniCol": "#DD6BD4"
+ },
+ {
+  "id": 4,
+  "constant": "_0xb6aa37",
+  "aniName": "Fox",
+  "skinName": "fox",
+  "aniCol": "#FF9D43"
+ },
+ {
+  "id": 5,
+  "constant": "_0x57ece9",
+  "aniName": "Deer",
+  "skinName": "deer",
+  "aniCol": "#C4773E"
+ },
+ {
+  "id": 6,
+  "constant": "_0x3799bf",
+  "aniName": "Mole",
+  "skinName": "mole",
+  "aniCol": "#4C4A45"
+ },
+ {
+  "id": 7,
+  "constant": "_0x10f388",
+  "aniName": "Zebra",
+  "skinName": "zebra",
+  "aniCol": "#FFFFFF"
+ },
+ {
+  "id": 8,
+  "constant": "_0x1caf9a",
+  "aniName": "Lion",
+  "skinName": "lion",
+  "aniCol": "#f8c923"
+ },
+ {
+  "id": 9,
+  "constant": "_0x3e2e6b",
+  "aniName": "CHEETAH",
+  "skinName": "bigcat/cheetah",
+  "aniCol": "#CAC05B"
+ },
+ {
+  "id": 10,
+  "constant": "_0xf1f713",
+  "aniName": "Bear",
+  "skinName": "bear",
+  "aniCol": "#99591C"
+ },
+ {
+  "id": 11,
+  "constant": "_0x18c9b5",
+  "aniName": "Croc",
+  "skinName": "croc",
+  "aniCol": "#30F51C"
+ },
+ {
+  "id": 12,
+  "constant": "_0x4e166c",
+  "aniName": "Rhino",
+  "skinName": "rhino",
+  "aniCol": "#94a3a9"
+ },
+ {
+  "id": 13,
+  "constant": "_0x4456d3",
+  "aniName": "Hippo",
+  "skinName": "hippo",
+  "aniCol": "#945A99"
+ },
+ {
+  "id": 14,
+  "constant": "_0x4d04c1",
+  "aniName": "Dragon",
+  "skinName": "dragon",
+  "aniCol": "#22FF8A"
+ },
+ {
+  "id": 15,
+  "constant": "_0x3c9d0d",
+  "aniName": "Shrimp",
+  "skinName": "shrimp",
+  "aniCol": "#f88e37"
+ },
+ {
+  "id": 16,
+  "constant": "_0x4e1212",
+  "aniName": "Trout",
+  "skinName": "trout",
+  "aniCol": "#ac8686"
+ },
+ {
+  "id": 17,
+  "constant": "_0x5cd2f2",
+  "aniName": "Crab",
+  "skinName": "crab",
+  "aniCol": "#bf2408"
+ },
+ {
+  "id": 18,
+  "constant": "_0x5fc788",
+  "aniName": "Squid",
+  "skinName": "squid",
+  "aniCol": "#40dda4"
+ },
+ {
+  "id": 19,
+  "constant": "_0x3bac92",
+  "aniName": "Shark",
+  "skinName": "shark",
+  "aniCol": "#999fc6"
+ },
+ {
+  "id": 20,
+  "constant": "_0x2d1082",
+  "aniName": "Stingray",
+  "skinName": "stingray",
+  "aniCol": "#164336"
+ },
+ {
+  "id": 21,
+  "constant": "_0x4195ac",
+  "aniName": "Turtle",
+  "skinName": "turtle",
+  "aniCol": "#502E1A"
+ },
+ {
+  "id": 22,
+  "constant": "_0x459227",
+  "aniName": "Sea-horse",
+  "skinName": "seahorse",
+  "aniCol": "#73BE2F"
+ },
+ {
+  "id": 23,
+  "constant": "_0x44dd89",
+  "aniName": "Jellyfish",
+  "skinName": "jellyfish",
+  "aniCol": "#FDB9BA"
+ },
+ {
+  "id": 24,
+  "constant": "_0x1cbfc5",
+  "aniName": "The Kraken",
+  "skinName": "kraken",
+  "aniCol": "#64a034"
+ },
+ {
+  "id": 25,
+  "constant": "_0x25c709",
+  "aniName": "Pufferfish",
+  "skinName": "pufferfish",
+  "aniCol": "#6C5C2C"
+ },
+ {
+  "id": 26,
+  "constant": "_0x58de17",
+  "aniName": "Killer Whale",
+  "skinName": "killerwhale",
+  "aniCol": "#141414"
+ },
+ {
+  "id": 27,
+  "constant": "_0xae91d6",
+  "aniName": "Swordfish",
+  "skinName": "swordfish",
+  "aniCol": "#689CD7"
+ },
+ {
+  "id": 28,
+  "constant": "_0x38b04a",
+  "aniName": "Gorilla",
+  "skinName": "gorilla",
+  "aniCol": "#323232"
+ },
+ {
+  "id": 29,
+  "constant": "_0x20fa5c",
+  "aniName": "Octopus",
+  "skinName": "octopus",
+  "aniCol": "#ff8340"
+ },
+ {
+  "id": 30,
+  "constant": "_0x374165",
+  "aniName": "Wolf",
+  "skinName": "arctic/wolf",
+  "aniCol": "#6B6B6B"
+ },
+ {
+  "id": 31,
+  "constant": "_0x347c4e",
+  "aniName": "Arctic Hare",
+  "skinName": "arctic/arctichare",
+  "aniCol": "#D5D5D5"
+ },
+ {
+  "id": 32,
+  "constant": "_0x1ba48b",
+  "aniName": "The Yeti!",
+  "skinName": "arctic/yeti",
+  "aniCol": "#839eb5"
+ },
+ {
+  "id": 33,
+  "constant": "_0x38e749",
+  "aniName": "Chipmunk",
+  "skinName": "arctic/chipmunk",
+  "aniCol": "#A77C30"
+ },
+ {
+  "id": 34,
+  "constant": "_0x15dd86",
+  "aniName": "Muskox",
+  "skinName": "arctic/muskox",
+  "aniCol": "#231f18"
+ },
+ {
+  "id": 35,
+  "constant": "_0x597571",
+  "aniName": "Penguin",
+  "skinName": "arctic/penguin",
+  "aniCol": "#FFFFFF"
+ },
+ {
+  "id": 36,
+  "constant": "_0x58c163",
+  "aniName": "Polar Bear",
+  "skinName": "arctic/bear/bear",
+  "aniCol": "#e4e4e4"
+ },
+ {
+  "id": 37,
+  "constant": "_0x54c578",
+  "aniName": "Seal",
+  "skinName": "arctic/seal",
+  "aniCol": "#cfcfcf"
+ },
+ {
+  "id": 38,
+  "constant": "_0x3e7ffc",
+  "aniName": "Snow leopard",
+  "skinName": "arctic/snowleopard",
+  "aniCol": "#cfcfcf"
+ },
+ {
+  "id": 39,
+  "constant": "_0x4fbd49",
+  "aniName": "Walrus",
+  "skinName": "arctic/walrus",
+  "aniCol": "#633838"
+ },
+ {
+  "id": 40,
+  "constant": "_0x4b8d4b",
+  "aniName": "Reindeer",
+  "skinName": "arctic/reindeer",
+  "aniCol": "#a68976"
+ },
+ {
+  "id": 41,
+  "constant": "_0x58588b",
+  "aniName": "Arctic Fox",
+  "skinName": "arctic/arcticfox",
+  "aniCol": "#CFCFCF"
+ },
+ {
+  "id": 42,
+  "constant": "_0xfc7834",
+  "aniName": "Wolverine",
+  "skinName": "arctic/wolverine",
+  "aniCol": "#843A0F"
+ },
+ {
+  "id": 43,
+  "constant": "_0x44d795",
+  "aniName": "Mammoth",
+  "skinName": "arctic/mammoth",
+  "aniCol": "#9d4717"
+ },
+ {
+  "id": 44,
+  "constant": "_0x3582c6",
+  "aniName": "Donkey",
+  "skinName": "donkey",
+  "aniCol": "#8c7c64"
+ },
+ {
+  "id": 45,
+  "constant": "_0x3a3438",
+  "aniName": "Snail",
+  "skinName": "snail",
+  "aniCol": "#fcc02b"
+ },
+ {
+  "id": 46,
+  "constant": "_0x156c3c",
+  "aniName": "Black Dragon",
+  "skinName": "blackdragon",
+  "aniCol": "black"
+ },
+ {
+  "id": 47,
+  "constant": "_0x3e35ec",
+  "aniName": "Sabertooth Tiger",
+  "skinName": "sabertoothtiger",
+  "aniCol": "#945A99"
+ },
+ {
+  "id": 48,
+  "constant": "_0x79868f",
+  "aniName": "Elephant",
+  "skinName": "elephant",
+  "aniCol": "#945A99"
+ },
+ {
+  "id": 49,
+  "constant": "_0x443a00",
+  "aniName": "Blue Whale",
+  "skinName": "bluewhale",
+  "aniCol": "#945A99"
+ },
+ {
+  "id": 50,
+  "constant": "_0x145eee",
+  "aniName": "Cobra",
+  "skinName": "cobra",
+  "aniCol": "black"
+ },
+ {
+  "id": 51,
+  "constant": "_0x511091",
+  "aniName": "Boa Constrictor",
+  "skinName": "boaConstrictor",
+  "aniCol": "black"
+ },
+ {
+  "id": 52,
+  "constant": "_0x3f3d77",
+  "aniName": "Giant Spider",
+  "skinName": "giantSpider",
+  "aniCol": "black"
+ },
+ {
+  "id": 53,
+  "constant": "_0x3ab232",
+  "aniName": "T-REX",
+  "skinName": "trex",
+  "aniCol": "#862A2A"
+ },
+ {
+  "id": 54,
+  "constant": "_0x4a1747",
+  "aniName": "Tiger",
+  "skinName": "tiger",
+  "aniCol": "#FF9000"
+ },
+ {
+  "id": 55,
+  "constant": "_0x35bdae",
+  "aniName": "Giraffe",
+  "skinName": "giraffe",
+  "aniCol": "#E9BD23"
+ },
+ {
+  "id": 56,
+  "constant": "_0x3078e8",
+  "aniName": "Eagle",
+  "skinName": "eagle",
+  "aniCol": "#5b400d"
+ },
+ {
+  "id": 57,
+  "constant": "_0x883a42",
+  "aniName": "Hedgehog",
+  "skinName": "hedgehog",
+  "aniCol": "#5b400d"
+ },
+ {
+  "id": 59,
+  "constant": "_0xb4cf14",
+  "aniName": "Duckling",
+  "skinName": "duck/duckling",
+  "aniCol": "#FF9000"
+ },
+ {
+  "id": 60,
+  "constant": "_0x579df3",
+  "aniName": "Lemming",
+  "skinName": "arctic/lemming",
+  "aniCol": "#A77C30"
+ },
+ {
+  "id": 61,
+  "constant": "_0x5bdad5",
+  "aniName": "King Crab",
+  "skinName": "kingcrab",
+  "aniCol": "#971f0e"
+ },
+ {
+  "id": 62,
+  "constant": "_0x554477",
+  "aniName": "Frog",
+  "skinName": "frog/frog",
+  "aniCol": "#FF9000"
+ },
+ {
+  "id": 63,
+  "constant": "_0x5039aa",
+  "aniName": "Ostrich",
+  "skinName": "ostrich/ostrich",
+  "aniCol": "#FF9000"
+ },
+ {
+  "id": 64,
+  "constant": "_0x32c0c2",
+  "aniName": "Pelican",
+  "skinName": "pelican/pelican",
+  "aniCol": "#FF9000"
+ },
+ {
+  "id": 65,
+  "constant": "_0x4b8001",
+  "aniName": "Falcon",
+  "skinName": "falcon/falcon",
+  "aniCol": "#FF9000"
+ },
+ {
+  "id": 66,
+  "constant": "_0x189696",
+  "aniName": "Snowy Owl",
+  "skinName": "snowyowl/snowyowl",
+  "aniCol": "#FF9000"
+ },
+ {
+  "id": 68,
+  "constant": "_0x304d09",
+  "aniName": "Phoenix",
+  "skinName": "phoenix/phoenix",
+  "aniCol": "#FF9000"
+ },
+ {
+  "id": 69,
+  "constant": "_0x4e7978",
+  "aniName": "Baby Ostrich",
+  "skinName": "ostrich/baby-ostrich",
+  "aniCol": "#FF9000"
+ },
+ {
+  "id": 70,
+  "constant": "_0xa4cf9a",
+  "aniName": "Sea Monster",
+  "skinName": "seamonster",
+  "aniCol": "#FF9000"
+ },
+ {
+  "id": 71,
+  "constant": "_0x13e6cd",
+  "aniName": "Land Monster",
+  "skinName": "landmonster",
+  "aniCol": "#FF9000"
+ },
+ {
+  "id": 72,
+  "constant": "_0x4c1b1b",
+  "aniName": "Ice Monster",
+  "skinName": "icemonster",
+  "aniCol": "#FF9000"
+ },
+ {
+  "id": 73,
+  "constant": "_0x344e75",
+  "aniName": "Dino Monster",
+  "skinName": "dinomonster",
+  "aniCol": "#FF9000"
+ },
+ {
+  "id": 74,
+  "constant": "_0x1cfcd5",
+  "aniName": "Pigeon",
+  "skinName": "pigeon/pigeon",
+  "aniCol": "#FF9000"
+ },
+ {
+  "id": 75,
+  "constant": "_0x264439",
+  "aniName": "Toucan",
+  "skinName": "toucan/toucan",
+  "aniCol": "#FF9000"
+ }
+]
